@@ -49,7 +49,7 @@ __0E648B51_xlocale DB 01H
 __1597A171_xiosbase DB 01H
 __90E3ED46_xlocnum DB 01H
 __165C22CB_ios DB 01H
-__D94D2CD2_LoggerHandler@hpp DB 01H
+__7B3B09F4_LoggerHandler@hpp DB 01H
 __03665793_xtree DB 01H
 __88EC1446_fstream DB 01H
 __BB81F87E_xlocmon DB 01H
@@ -57,10 +57,10 @@ __8AA3BE86_time@h DB 01H
 __886F7F70_xloctime DB 01H
 __66FC323F_ratio DB 01H
 __966A0CA6_chrono DB 01H
-__BDF0AB3A_SimpleLogger@hpp DB 01H
-__0A7163E8_SimpleDB@hpp DB 01H
-__B2075A27_PersistenceHandler@hpp DB 01H
-__06248C09_SimpleDB@cpp DB 01H
+__ACA4FF19_SimpleLogger@hpp DB 01H
+__1B2537CB_SimpleDB@hpp DB 01H
+__291698C8_PersistenceHandler@hpp DB 01H
+__1770D82A_SimpleDB@cpp DB 01H
 __43822A97_initializer_list DB 01H
 __BF2A7ACC_vector DB 01H
 __CF1C1A3F_utility DB 01H
@@ -673,14 +673,13 @@ PUBLIC	??_C@_0BB@DIDJNGIG@Component?4Logger@		; `string'
 PUBLIC	??_C@_09NMAKHIEJ@Simple?5UI@			; `string'
 PUBLIC	??_C@_0N@GNLLJOEH@Component?4UI@		; `string'
 PUBLIC	??_C@_0CA@BHOLIMIF@Simple?5DB?5shutdown?5successfully@ ; `string'
-PUBLIC	??_C@_08GDNLHFAJ@Borrower@			; `string'
-PUBLIC	??_C@_09DFPFBBHL@Librarian@			; `string'
-PUBLIC	??_C@_0O@PMKNNGMO@Administrator@		; `string'
-PUBLIC	??_C@_0L@ENAJINDB@Management@			; `string'
+PUBLIC	??_C@_09JDLGGIJM@Assistant@			; `string'
+PUBLIC	??_C@_0M@FHFJHGNJ@Salesperson@			; `string'
+PUBLIC	??_C@_0O@MJAOLBNB@Sales?5Manager@		; `string'
+PUBLIC	??_C@_08KIJEALLB@IT?5Admin@			; `string'
+PUBLIC	??_C@_0BB@NANNIDAN@Security?5Officer@		; `string'
 PUBLIC	??_C@_03JAMCBOB@Tom@				; `string'
-PUBLIC	??_C@_0BA@HIONGBMM@CPSC?5462?5Rocks?$CB@	; `string'
-PUBLIC	??_C@_07NBLFFMAO@Barbara@			; `string'
-PUBLIC	??_C@_0P@LDMLBJA@Why?5am?5I?5here?$DP@		; `string'
+PUBLIC	??_C@_04FICNKJPG@CPSC@				; `string'
 PUBLIC	??_C@_06HIBGKFBP@Amanda@			; `string'
 PUBLIC	??_C@_0OA@CKEAIMJA@struct?5TechnicalServices?3?3Persi@ ; `string'
 PUBLIC	??_C@_08MNBGHMON@?$CC?5failed@			; `string'
@@ -2107,8 +2106,8 @@ $pdata$?dtor$11@?0???0SimpleDB@Persistence@TechnicalServices@@QEAA@XZ@4HA DD ima
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ DD imagerel $LN10
-	DD	imagerel $LN10+335
+$pdata$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ DD imagerel $LN11
+	DD	imagerel $LN11+355
 	DD	imagerel $unwind$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -2131,20 +2130,26 @@ $pdata$?dtor$2@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$ve
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA DD imagerel ?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
-	DD	imagerel ?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA+57
-	DD	imagerel $unwind$?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
+$pdata$?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA DD imagerel ?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
+	DD	imagerel ?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA+39
+	DD	imagerel $unwind$?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA DD imagerel ?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
-	DD	imagerel ?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA+59
+	DD	imagerel ?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA+57
 	DD	imagerel $unwind$?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z DD imagerel $LN35
-	DD	imagerel $LN35+1472
+$pdata$?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA DD imagerel ?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
+	DD	imagerel ?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA+59
+	DD	imagerel $unwind$?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z DD imagerel $LN28
+	DD	imagerel $LN28+1239
 	DD	imagerel $unwind$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2167,15 +2172,15 @@ $pdata$?dtor$2@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
-	DD	imagerel $unwind$?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+$pdata$?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DD	imagerel ?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+57
+	DD	imagerel $unwind$?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+57
-	DD	imagerel $unwind$?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+$pdata$?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DD	imagerel ?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
+	DD	imagerel $unwind$?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2191,27 +2196,15 @@ $pdata$?dtor$8@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
-	DD	imagerel $unwind$?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+57
-	DD	imagerel $unwind$?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+$pdata$?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DD	imagerel ?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+57
+	DD	imagerel $unwind$?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
+	DD	imagerel ?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+57
 	DD	imagerel $unwind$?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
-	DD	imagerel $unwind$?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2221,33 +2214,15 @@ $pdata$?dtor$15@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DD	imagerel ?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
+	DD	imagerel $unwind$?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+57
+	DD	imagerel ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
 	DD	imagerel $unwind$?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+57
-	DD	imagerel $unwind$?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
-	DD	imagerel $unwind$?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
-	DD	imagerel $unwind$?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD imagerel ?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DD	imagerel ?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA+39
-	DD	imagerel $unwind$?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2755,15 +2730,15 @@ $pdata$??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??0ignore@?A0x10ee63b5@@QEAA@D@Z DD imagerel ??0ignore@?A0x10ee63b5@@QEAA@D@Z
-	DD	imagerel ??0ignore@?A0x10ee63b5@@QEAA@D@Z+91
-	DD	imagerel $unwind$??0ignore@?A0x10ee63b5@@QEAA@D@Z
+$pdata$??0ignore@?A0x608d2071@@QEAA@D@Z DD imagerel ??0ignore@?A0x608d2071@@QEAA@D@Z
+	DD	imagerel ??0ignore@?A0x608d2071@@QEAA@D@Z+91
+	DD	imagerel $unwind$??0ignore@?A0x608d2071@@QEAA@D@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z DD imagerel ??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z
-	DD	imagerel ??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z+131
-	DD	imagerel $unwind$??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z
+$pdata$??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z DD imagerel ??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z
+	DD	imagerel ??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z+131
+	DD	imagerel $unwind$??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -5896,37 +5871,33 @@ CONST	ENDS
 CONST	SEGMENT
 ??_C@_06HIBGKFBP@Amanda@ DB 'Amanda', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@LDMLBJA@Why?5am?5I?5here?$DP@
+;	COMDAT ??_C@_04FICNKJPG@CPSC@
 CONST	SEGMENT
-??_C@_0P@LDMLBJA@Why?5am?5I?5here?$DP@ DB 'Why am I here?', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_07NBLFFMAO@Barbara@
-CONST	SEGMENT
-??_C@_07NBLFFMAO@Barbara@ DB 'Barbara', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BA@HIONGBMM@CPSC?5462?5Rocks?$CB@
-CONST	SEGMENT
-??_C@_0BA@HIONGBMM@CPSC?5462?5Rocks?$CB@ DB 'CPSC 462 Rocks!', 00H ; `string'
+??_C@_04FICNKJPG@CPSC@ DB 'CPSC', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03JAMCBOB@Tom@
 CONST	SEGMENT
 ??_C@_03JAMCBOB@Tom@ DB 'Tom', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@ENAJINDB@Management@
+;	COMDAT ??_C@_0BB@NANNIDAN@Security?5Officer@
 CONST	SEGMENT
-??_C@_0L@ENAJINDB@Management@ DB 'Management', 00H	; `string'
+??_C@_0BB@NANNIDAN@Security?5Officer@ DB 'Security Officer', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@PMKNNGMO@Administrator@
+;	COMDAT ??_C@_08KIJEALLB@IT?5Admin@
 CONST	SEGMENT
-??_C@_0O@PMKNNGMO@Administrator@ DB 'Administrator', 00H ; `string'
+??_C@_08KIJEALLB@IT?5Admin@ DB 'IT Admin', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09DFPFBBHL@Librarian@
+;	COMDAT ??_C@_0O@MJAOLBNB@Sales?5Manager@
 CONST	SEGMENT
-??_C@_09DFPFBBHL@Librarian@ DB 'Librarian', 00H		; `string'
+??_C@_0O@MJAOLBNB@Sales?5Manager@ DB 'Sales Manager', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08GDNLHFAJ@Borrower@
+;	COMDAT ??_C@_0M@FHFJHGNJ@Salesperson@
 CONST	SEGMENT
-??_C@_08GDNLHFAJ@Borrower@ DB 'Borrower', 00H		; `string'
+??_C@_0M@FHFJHGNJ@Salesperson@ DB 'Salesperson', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_09JDLGGIJM@Assistant@
+CONST	SEGMENT
+??_C@_09JDLGGIJM@Assistant@ DB 'Assistant', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@BHOLIMIF@Simple?5DB?5shutdown?5successfully@
 CONST	SEGMENT
@@ -12095,14 +12066,14 @@ $unwind$??$make_unique@VSimpleLogger@Logging@TechnicalServices@@$$V$0A@@std@@YA?
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z DD 025052f01H
+$unwind$??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z DD 025052f01H
 	DD	01132318H
 	DD	0700c001fH
 	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??0ignore@?A0x10ee63b5@@QEAA@D@Z DD 025052e01H
+$unwind$??0ignore@?A0x608d2071@@QEAA@D@Z DD 025052e01H
 	DD	01122317H
 	DD	0700b001dH
 	DD	0500aH
@@ -13662,31 +13633,13 @@ CONST	SEGMENT
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $unwind$?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -13698,25 +13651,13 @@ $unwind$?dtor$15@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalService
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $unwind$?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
+$unwind$?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -13734,13 +13675,13 @@ $unwind$?dtor$7@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
+$unwind$?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
+$unwind$?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -13764,7 +13705,7 @@ $unwind$?dtor$0@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z DB '4'
+$ip2state$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z DB '('
 	DB	00H
 	DB	00H
 	DB	'y', 02H
@@ -13775,52 +13716,40 @@ $ip2state$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AU
 	DB	06H
 	DB	'N'
 	DB	08H
-	DB	'('
-	DB	0aH
 	DB	0ceH
+	DB	0cH
+	DB	'('
 	DB	0eH
 	DB	'('
 	DB	010H
-	DB	'('
-	DB	012H
 	DB	'N'
-	DB	014H
+	DB	012H
 	DB	0ceH
 	DB	018H
-	DB	'('
-	DB	01aH
-	DB	'('
-	DB	01cH
-	DB	'N'
-	DB	01eH
 	DB	0ceH
-	DB	'&'
-	DB	0ceH
-	DB	'$'
+	DB	016H
 	DB	'>'
-	DB	'"'
-	DB	'>'
-	DB	0cH
+	DB	0aH
 	DB	'>'
 	DB	02H
 	DB	'V'
 	DB	00H
 	DB	0b1H, 02H
-	DB	'('
-	DB	'^'
-	DB	'*'
-	DB	'^'
-	DB	','
-	DB	'('
-	DB	'*'
 	DB	01aH
+	DB	'^'
+	DB	01cH
+	DB	'^'
+	DB	01eH
 	DB	'('
+	DB	01cH
+	DB	01aH
+	DB	01aH
 	DB	0fcH
 	DB	00H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$stateUnwindMap$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z DB 02cH
+$stateUnwindMap$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z DB 01eH
 	DB	0eH
 	DD	imagerel ?dtor$0@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 	DB	02eH
@@ -13828,45 +13757,30 @@ $stateUnwindMap$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@U
 	DB	02eH
 	DD	imagerel ?dtor$2@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 	DB	02eH
-	DD	imagerel ?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	056H
-	DD	imagerel ?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	0ceH
-	DD	imagerel ?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DD	imagerel ?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DB	0a6H
+	DD	imagerel ?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DB	02eH
+	DD	imagerel ?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 	DB	02eH
 	DD	imagerel ?dtor$7@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 	DB	02eH
 	DD	imagerel ?dtor$8@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 	DB	02eH
-	DD	imagerel ?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	02eH
-	DD	imagerel ?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DD	imagerel ?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 	DB	0a6H
-	DD	imagerel ?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DD	imagerel ?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DB	0f6H
+	DD	imagerel ?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 	DB	02eH
 	DD	imagerel ?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	02eH
-	DD	imagerel ?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	02eH
-	DD	imagerel ?dtor$15@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	02eH
-	DD	imagerel ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	0a6H
-	DD	imagerel ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	07dH
+	DB	0ddH
 	DB	03H
-	DD	imagerel ?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DD	imagerel ?dtor$15@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 	DB	036H
+	DD	imagerel ?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
+	DB	02eH
 	DD	imagerel ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	02eH
-	DD	imagerel ?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	01dH
-	DB	06H
-	DD	imagerel ?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	036H
-	DD	imagerel ?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
-	DB	02eH
-	DD	imagerel ?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -13878,11 +13792,11 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z DD 025064619H
 	DD	0119231eH
-	DD	07012013eH
+	DD	0701200f4H
 	DD	050106011H
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
-	DD	09eaH
+	DD	079aH
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
@@ -13905,13 +13819,19 @@ CONST	SEGMENT
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA DD 031001H
+$unwind$?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -13935,7 +13855,7 @@ $unwind$?dtor$0@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$v
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ DB 0cH
+$ip2state$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ DB 0eH
 	DB	00H
 	DB	00H
 	DB	0daH
@@ -13946,22 +13866,26 @@ $ip2state$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$
 	DB	08H
 	DB	'('
 	DB	0aH
+	DB	'('
+	DB	0cH
 	DB	0eaH
 	DB	02H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$stateUnwindMap$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ DB 0aH
+$stateUnwindMap$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ DB 0cH
 	DB	0eH
-	DD	imagerel ?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
+	DD	imagerel ?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
 	DB	02eH
 	DD	imagerel ?dtor$0@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
 	DB	02eH
 	DD	imagerel ?dtor$1@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
 	DB	02eH
 	DD	imagerel ?dtor$2@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
-	DB	0a6H
-	DD	imagerel ?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
+	DB	02eH
+	DD	imagerel ?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
+	DB	0ceH
+	DD	imagerel ?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -13973,7 +13897,7 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ DD 025063011H
 	DD	01142319H
-	DD	0700d004eH
+	DD	0700d0054H
 	DD	0500b600cH
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ
@@ -22440,7 +22364,7 @@ $LN3:
 ??$forward_as_tuple@$$V@std@@YA?AV?$tuple@$$V@0@XZ ENDP	; std::forward_as_tuple<>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ??0?$tuple@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@$$QEAV01@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -22459,7 +22383,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rdx, QWORD PTR __that$[rbp]
 	mov	rcx, QWORD PTR this$[rbp]
@@ -32615,7 +32539,7 @@ $LN3:
 ??1?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@QEAA@XZ ENDP ; std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::~pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ??0?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@QEAA@AEBU01@@Z
 _TEXT	SEGMENT
 tv79 = 192
@@ -32636,7 +32560,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv70[rbp], rax
@@ -38047,14 +37971,14 @@ __$ReturnUdt$ = 320
 ?dtor$0@?0???$make_unique@VSimpleLogger@Logging@TechnicalServices@@$$V$0A@@std@@YA?AV?$unique_ptr@VSimpleLogger@Logging@TechnicalServices@@U?$default_delete@VSimpleLogger@Logging@TechnicalServices@@@std@@@0@XZ@4HA ENDP ; `std::make_unique<TechnicalServices::Logging::SimpleLogger,0>'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
-;	COMDAT ??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+;	COMDAT ??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z
 _TEXT	SEGMENT
 tv74 = 192
 tv72 = 200
 s$ = 240
 delimiter$ = 248
-??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z PROC ; `anonymous namespace'::operator>>, COMDAT
+??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z PROC ; `anonymous namespace'::operator>>, COMDAT
 
 ; 29   :   {
 
@@ -38069,7 +37993,7 @@ delimiter$ = 248
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 30   :     s.ignore( std::numeric_limits<std::streamsize>::max(), delimiter._seperator );
@@ -38094,15 +38018,15 @@ delimiter$ = 248
 	pop	rdi
 	pop	rbp
 	ret	0
-??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z ENDP ; `anonymous namespace'::operator>>
+??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z ENDP ; `anonymous namespace'::operator>>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
-;	COMDAT ??0ignore@?A0x10ee63b5@@QEAA@D@Z
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+;	COMDAT ??0ignore@?A0x608d2071@@QEAA@D@Z
 _TEXT	SEGMENT
 this$ = 224
 delimiter$ = 232
-??0ignore@?A0x10ee63b5@@QEAA@D@Z PROC			; `anonymous namespace'::ignore::ignore, COMDAT
+??0ignore@?A0x608d2071@@QEAA@D@Z PROC			; `anonymous namespace'::ignore::ignore, COMDAT
 
 ; 25   :     ignore( char delimiter = '\n' ) : _seperator( delimiter ) {}
 
@@ -38117,7 +38041,7 @@ delimiter$ = 232
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	movzx	ecx, BYTE PTR delimiter$[rbp]
@@ -38127,7 +38051,7 @@ delimiter$ = 232
 	pop	rdi
 	pop	rbp
 	ret	0
-??0ignore@?A0x10ee63b5@@QEAA@D@Z ENDP			; `anonymous namespace'::ignore::ignore
+??0ignore@?A0x608d2071@@QEAA@D@Z ENDP			; `anonymous namespace'::ignore::ignore
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
@@ -40079,7 +40003,7 @@ $LN2@scalar:
 ??_GSimpleLogger@Logging@TechnicalServices@@UEAAPEAXI@Z ENDP ; TechnicalServices::Logging::SimpleLogger::`scalar deleting destructor'
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
 ;	COMDAT ??1SimpleLogger@Logging@TechnicalServices@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -40100,7 +40024,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__BDF0AB3A_SimpleLogger@hpp
+	lea	rcx, OFFSET FLAT:__ACA4FF19_SimpleLogger@hpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7SimpleLogger@Logging@TechnicalServices@@6B@
@@ -40133,7 +40057,7 @@ $LN3:
 ??1SimpleLogger@Logging@TechnicalServices@@UEAA@XZ ENDP	; TechnicalServices::Logging::SimpleLogger::~SimpleLogger
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
 ;	COMDAT ??6SimpleLogger@Logging@TechnicalServices@@UEAAAEAV012@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
 _TEXT	SEGMENT
 now$ = 8
@@ -40163,7 +40087,7 @@ $LN3:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__BDF0AB3A_SimpleLogger@hpp
+	lea	rcx, OFFSET FLAT:__ACA4FF19_SimpleLogger@hpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 60   :     auto now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
@@ -40226,7 +40150,7 @@ $LN3:
 ??6SimpleLogger@Logging@TechnicalServices@@UEAAAEAV012@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z ENDP ; TechnicalServices::Logging::SimpleLogger::operator<<
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
 ;	COMDAT ??0SimpleLogger@Logging@TechnicalServices@@QEAA@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -40250,7 +40174,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__BDF0AB3A_SimpleLogger@hpp
+	lea	rcx, OFFSET FLAT:__ACA4FF19_SimpleLogger@hpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0LoggerHandler@Logging@TechnicalServices@@QEAA@XZ
@@ -44669,7 +44593,7 @@ $LN4@operator:
 ??R?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@QEBAXPEAVLoggerHandler@Logging@TechnicalServices@@@Z ENDP ; std::default_delete<TechnicalServices::Logging::LoggerHandler>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ??1SimpleDB@Persistence@TechnicalServices@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -44691,7 +44615,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+344]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7SimpleDB@Persistence@TechnicalServices@@6B@
@@ -44736,7 +44660,7 @@ $LN3:
 ??1SimpleDB@Persistence@TechnicalServices@@UEAA@XZ ENDP	; TechnicalServices::Persistence::SimpleDB::~SimpleDB
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ??ASimpleDB@Persistence@TechnicalServices@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@@Z
 _TEXT	SEGMENT
 pair$ = 8
@@ -44762,7 +44686,7 @@ this$ = 656
 key$ = 664
 ??ASimpleDB@Persistence@TechnicalServices@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@@Z PROC ; TechnicalServices::Persistence::SimpleDB::operator[], COMDAT
 
-; 121  :   {
+; 129  :   {
 
 $LN10:
 	mov	QWORD PTR [rsp+16], rdx
@@ -44779,10 +44703,10 @@ $LN10:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 
-; 122  :     auto pair = _adaptablePairs.find( key );
+; 130  :     auto pair = _adaptablePairs.find( key );
 
 	mov	edx, 24
 	lea	rcx, QWORD PTR pair$[rbp]
@@ -44796,7 +44720,7 @@ $LN10:
 	call	?find@?$_Tree@V?$_Tmap_traits@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@$0A@@std@@@std@@QEBA?AV?$_Tree_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@std@@@std@@@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z ; std::_Tree<std::_Tmap_traits<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,0> >::find
 	npad	1
 
-; 123  :     if( pair != _adaptablePairs.cend() ) return pair->second;
+; 131  :     if( pair != _adaptablePairs.cend() ) return pair->second;
 
 	mov	rax, QWORD PTR this$[rbp]
 	add	rax, 24
@@ -44826,16 +44750,16 @@ $LN10:
 	jmp	$LN3@operator
 $LN2@operator:
 
-; 124  : 
-; 125  :     // Key not found - error
-; 126  :     std::string message = __func__;
+; 132  : 
+; 133  :     // Key not found - error
+; 134  :     std::string message = __func__;
 
 	lea	rdx, OFFSET FLAT:??_C@_0BAE@KNCHKPDC@const?5class?5std?3?3basic_string?$DMc@
 	lea	rcx, QWORD PTR message$[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 
-; 127  :     message += " attempt to access adaptation data with Key = \"" + key + "\" failed, no such Key";
+; 135  :     message += " attempt to access adaptation data with Key = \"" + key + "\" failed, no such Key";
 
 	mov	r8, QWORD PTR key$[rbp]
 	lea	rdx, OFFSET FLAT:??_C@_0DA@BNFLCIAL@?5attempt?5to?5access?5adaptation?5d@
@@ -44861,8 +44785,8 @@ $LN2@operator:
 	lea	rcx, QWORD PTR $T8[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 128  : 
-; 129  :     _logger << message;
+; 136  : 
+; 137  :     _logger << message;
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+16]
@@ -44876,7 +44800,7 @@ $LN2@operator:
 	mov	rcx, QWORD PTR tv158[rbp]
 	call	QWORD PTR tv160[rbp]
 
-; 130  :     throw NoSuchProperty( message );
+; 138  :     throw NoSuchProperty( message );
 
 	lea	rdx, QWORD PTR message$[rbp]
 	lea	rcx, QWORD PTR $T10[rbp]
@@ -44886,7 +44810,7 @@ $LN2@operator:
 	call	_CxxThrowException
 	npad	1
 
-; 131  :   }
+; 139  :   }
 
 	lea	rcx, QWORD PTR message$[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -45295,7 +45219,7 @@ key$ = 664
 ?dtor$4@?0???ASimpleDB@Persistence@TechnicalServices@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::operator[]'::`1'::dtor$4
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
 _TEXT	SEGMENT
 <range>$L1$4 = 8
@@ -45303,67 +45227,61 @@ _TEXT	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z PROC ; TechnicalServices::Persistence::SimpleDB::findCredentialsByName, COMDAT
 
 ; 98   :   {
 
-$LN35:
+$LN28:
 	mov	QWORD PTR [rsp+24], r8
 	mov	QWORD PTR [rsp+16], rdx
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
 	push	rsi
 	push	rdi
-	sub	rsp, 2544				; 000009f0H
+	sub	rsp, 1952				; 000007a0H
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
-	mov	ecx, 636				; 0000027cH
+	mov	ecx, 488				; 000001e8H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	mov	rcx, QWORD PTR [rsp+2584]
+	mov	rcx, QWORD PTR [rsp+1992]
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	mov	DWORD PTR $T27[rbp], 0
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	mov	DWORD PTR $T23[rbp], 0
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 99   :     static std::vector<UserCredentials> storedUsers =
@@ -45385,29 +45303,25 @@ $LN35:
 	call	?__autoclassinit2@?$vector@UUserCredentials@Persistence@TechnicalServices@@V?$allocator@UUserCredentials@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
 	lea	rcx, QWORD PTR $T8[rbp]
 	call	??0?$allocator@UUserCredentials@Persistence@TechnicalServices@@@std@@QEAA@XZ ; std::allocator<TechnicalServices::Persistence::UserCredentials>::allocator<TechnicalServices::Persistence::UserCredentials>
-	mov	QWORD PTR tv224[rbp], rax
+	mov	QWORD PTR tv188[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_03JAMCBOB@Tom@
-	lea	rcx, QWORD PTR $T28[rbp]
+	lea	rcx, QWORD PTR $T24[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_0BA@HIONGBMM@CPSC?5462?5Rocks?$CB@
-	lea	rcx, QWORD PTR $T28[rbp+40]
+	lea	rdx, OFFSET FLAT:??_C@_04FICNKJPG@CPSC@
+	lea	rcx, QWORD PTR $T24[rbp+40]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR $T9[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	mov	QWORD PTR tv146[rbp], rax
-	lea	rdx, OFFSET FLAT:??_C@_08GDNLHFAJ@Borrower@
-	lea	rcx, QWORD PTR $T31[rbp]
+	mov	QWORD PTR tv142[rbp], rax
+	lea	rdx, OFFSET FLAT:??_C@_08KIJEALLB@IT?5Admin@
+	lea	rcx, QWORD PTR $T26[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_0L@ENAJINDB@Management@
-	lea	rcx, QWORD PTR $T31[rbp+40]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	npad	1
-	lea	rax, QWORD PTR $T31[rbp+80]
+	lea	rax, QWORD PTR $T26[rbp+40]
 	mov	r8, rax
-	lea	rdx, QWORD PTR $T31[rbp]
+	lea	rdx, QWORD PTR $T26[rbp]
 	lea	rcx, QWORD PTR $T10[rbp]
 	call	??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	lea	rcx, QWORD PTR $T11[rbp]
@@ -45415,35 +45329,35 @@ $LN35:
 	mov	rsi, rax
 	mov	ecx, 16
 	rep movsb
-	lea	rax, QWORD PTR $T23[rbp]
+	lea	rax, QWORD PTR $T20[rbp]
 	lea	rcx, QWORD PTR $T11[rbp]
 	mov	rdi, rax
 	mov	rsi, rcx
 	mov	ecx, 16
 	rep movsb
-	mov	r8, QWORD PTR tv146[rbp]
-	lea	rdx, QWORD PTR $T23[rbp]
-	lea	rcx, QWORD PTR $T28[rbp+80]
+	mov	r8, QWORD PTR tv142[rbp]
+	lea	rdx, QWORD PTR $T20[rbp]
+	lea	rcx, QWORD PTR $T24[rbp+80]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_07NBLFFMAO@Barbara@
-	lea	rcx, QWORD PTR $T28[rbp+112]
+	lea	rdx, OFFSET FLAT:??_C@_06HIBGKFBP@Amanda@
+	lea	rcx, QWORD PTR $T24[rbp+112]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_0P@LDMLBJA@Why?5am?5I?5here?$DP@
-	lea	rcx, QWORD PTR $T28[rbp+152]
+	lea	rdx, OFFSET FLAT:??_C@_00CNPNBAHC@@
+	lea	rcx, QWORD PTR $T24[rbp+152]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR $T12[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	mov	QWORD PTR tv178[rbp], rax
-	lea	rdx, OFFSET FLAT:??_C@_08GDNLHFAJ@Borrower@
-	lea	rcx, QWORD PTR $T30[rbp]
+	mov	QWORD PTR tv174[rbp], rax
+	lea	rdx, OFFSET FLAT:??_C@_09JDLGGIJM@Assistant@
+	lea	rcx, QWORD PTR $T25[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rax, QWORD PTR $T30[rbp+40]
+	lea	rax, QWORD PTR $T25[rbp+40]
 	mov	r8, rax
-	lea	rdx, QWORD PTR $T30[rbp]
+	lea	rdx, QWORD PTR $T25[rbp]
 	lea	rcx, QWORD PTR $T13[rbp]
 	call	??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	lea	rcx, QWORD PTR $T14[rbp]
@@ -45451,96 +45365,54 @@ $LN35:
 	mov	rsi, rax
 	mov	ecx, 16
 	rep movsb
-	lea	rax, QWORD PTR $T24[rbp]
+	lea	rax, QWORD PTR $T21[rbp]
 	lea	rcx, QWORD PTR $T14[rbp]
 	mov	rdi, rax
 	mov	rsi, rcx
 	mov	ecx, 16
 	rep movsb
-	mov	r8, QWORD PTR tv178[rbp]
+	mov	r8, QWORD PTR tv174[rbp]
+	lea	rdx, QWORD PTR $T21[rbp]
+	lea	rcx, QWORD PTR $T24[rbp+192]
+	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	npad	1
+	lea	rax, QWORD PTR $T24[rbp+224]
+	mov	r8, rax
 	lea	rdx, QWORD PTR $T24[rbp]
-	lea	rcx, QWORD PTR $T28[rbp+192]
-	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_06HIBGKFBP@Amanda@
-	lea	rcx, QWORD PTR $T28[rbp+224]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_00CNPNBAHC@@
-	lea	rcx, QWORD PTR $T28[rbp+264]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	npad	1
 	lea	rcx, QWORD PTR $T15[rbp]
-	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	mov	QWORD PTR tv210[rbp], rax
-	lea	rdx, OFFSET FLAT:??_C@_0O@PMKNNGMO@Administrator@
-	lea	rcx, QWORD PTR $T29[rbp]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	npad	1
-	lea	rax, QWORD PTR $T29[rbp+40]
-	mov	r8, rax
-	lea	rdx, QWORD PTR $T29[rbp]
-	lea	rcx, QWORD PTR $T16[rbp]
-	call	??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	lea	rcx, QWORD PTR $T17[rbp]
-	mov	rdi, rcx
-	mov	rsi, rax
-	mov	ecx, 16
-	rep movsb
-	lea	rax, QWORD PTR $T25[rbp]
-	lea	rcx, QWORD PTR $T17[rbp]
-	mov	rdi, rax
-	mov	rsi, rcx
-	mov	ecx, 16
-	rep movsb
-	mov	r8, QWORD PTR tv210[rbp]
-	lea	rdx, QWORD PTR $T25[rbp]
-	lea	rcx, QWORD PTR $T28[rbp+304]
-	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-	npad	1
-	lea	rax, QWORD PTR $T28[rbp+336]
-	mov	r8, rax
-	lea	rdx, QWORD PTR $T28[rbp]
-	lea	rcx, QWORD PTR $T18[rbp]
 	call	??0?$initializer_list@UUserCredentials@Persistence@TechnicalServices@@@std@@QEAA@PEBUUserCredentials@Persistence@TechnicalServices@@0@Z ; std::initializer_list<TechnicalServices::Persistence::UserCredentials>::initializer_list<TechnicalServices::Persistence::UserCredentials>
-	lea	rcx, QWORD PTR $T19[rbp]
+	lea	rcx, QWORD PTR $T16[rbp]
 	mov	rdi, rcx
 	mov	rsi, rax
 	mov	ecx, 16
 	rep movsb
-	lea	rax, QWORD PTR $T26[rbp]
-	lea	rcx, QWORD PTR $T19[rbp]
+	lea	rax, QWORD PTR $T22[rbp]
+	lea	rcx, QWORD PTR $T16[rbp]
 	mov	rdi, rax
 	mov	rsi, rcx
 	mov	ecx, 16
 	rep movsb
-	mov	r8, QWORD PTR tv224[rbp]
-	lea	rdx, QWORD PTR $T26[rbp]
+	mov	r8, QWORD PTR tv188[rbp]
+	lea	rdx, QWORD PTR $T22[rbp]
 	lea	rcx, OFFSET FLAT:?storedUsers@?1??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@34@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4V?$vector@UUserCredentials@Persistence@TechnicalServices@@V?$allocator@UUserCredentials@Persistence@TechnicalServices@@@std@@@7@A
 	call	??0?$vector@UUserCredentials@Persistence@TechnicalServices@@V?$allocator@UUserCredentials@Persistence@TechnicalServices@@@std@@@std@@QEAA@V?$initializer_list@UUserCredentials@Persistence@TechnicalServices@@@1@AEBV?$allocator@UUserCredentials@Persistence@TechnicalServices@@@1@@Z ; std::vector<TechnicalServices::Persistence::UserCredentials,std::allocator<TechnicalServices::Persistence::UserCredentials> >::vector<TechnicalServices::Persistence::UserCredentials,std::allocator<TechnicalServices::Persistence::UserCredentials> >
 	npad	1
 	lea	r9, OFFSET FLAT:??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
-	mov	r8d, 3
-	mov	edx, 112				; 00000070H
-	lea	rcx, QWORD PTR $T28[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
-	npad	1
-	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 1
-	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T29[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
-	npad	1
-	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 1
-	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T30[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
-	npad	1
-	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 2
+	mov	edx, 112				; 00000070H
+	lea	rcx, QWORD PTR $T24[rbp]
+	call	??_M@YAXPEAX_K1P6AX0@Z@Z
+	npad	1
+	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T31[rbp]
+	lea	rcx, QWORD PTR $T25[rbp]
+	call	??_M@YAXPEAX_K1P6AX0@Z@Z
+	npad	1
+	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	mov	r8d, 1
+	mov	edx, 40					; 00000028H
+	lea	rcx, QWORD PTR $T26[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	lea	rcx, OFFSET FLAT:??__FstoredUsers@?1??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@YAXXZ ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`2'::`dynamic atexit destructor for 'storedUsers''
 	call	atexit
@@ -45551,12 +45423,15 @@ $LN2@findCreden:
 
 ; 100  :     {
 ; 101  :     // Username    Pass Phrase         Authorized roles
-; 102  :       {"Tom",     "CPSC 462 Rocks!",  {"Borrower",     "Management"}},
-; 103  :       {"Barbara", "Why am I here?",   {"Borrower"                  }},
-; 104  :       {"Amanda",  "",                 {"Administrator"             }}
-; 105  :     };
-; 106  : 
-; 107  :     for( const auto & user : storedUsers ) if( user.userName == name ) return user;
+; 102  :       //{"Tom",     "CPSC 462 Rocks!",  {"Borrower",     "Management"}},
+; 103  :       //{"Barbara", "Why am I here?",   {"Borrower"                  }},
+; 104  :       //{"Amanda",  "",                 {"Administrator"             }}
+; 105  : 
+; 106  :         { "Tom", "CPSC", { "IT Admin" } },
+; 107  :         { "Amanda", "", { "Assistant" } }
+; 108  :     };
+; 109  : 
+; 110  :     for( const auto & user : storedUsers ) if( user.userName == name ) return user;
 
 	lea	rax, OFFSET FLAT:?storedUsers@?1??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@34@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4V?$vector@UUserCredentials@Persistence@TechnicalServices@@V?$allocator@UUserCredentials@Persistence@TechnicalServices@@@std@@@7@A
 	mov	QWORD PTR <range>$L1$4[rbp], rax
@@ -45587,76 +45462,76 @@ $LN5@findCreden:
 	mov	rdx, QWORD PTR user$7[rbp]
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??0UserCredentials@Persistence@TechnicalServices@@QEAA@AEBU012@@Z
-	mov	eax, DWORD PTR $T27[rbp]
+	mov	eax, DWORD PTR $T23[rbp]
 	or	eax, 1
-	mov	DWORD PTR $T27[rbp], eax
+	mov	DWORD PTR $T23[rbp], eax
 	mov	rax, QWORD PTR __$ReturnUdt$[rbp]
 	jmp	$LN7@findCreden
 $LN6@findCreden:
 	jmp	SHORT $LN3@findCreden
 $LN4@findCreden:
 
-; 108  : 
-; 109  :     // Name not found, log the error and throw something
-; 110  :     std::string message = __func__;
+; 111  : 
+; 112  :     // Name not found, log the error and throw something
+; 113  :     std::string message = __func__;
 
 	lea	rdx, OFFSET FLAT:??_C@_0OA@CKEAIMJA@struct?5TechnicalServices?3?3Persi@
 	lea	rcx, QWORD PTR message$[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 
-; 111  :     message += " attempt to find user \"" + name + "\" failed";
+; 114  :     message += " attempt to find user \"" + name + "\" failed";
 
 	mov	r8, QWORD PTR name$[rbp]
 	lea	rdx, OFFSET FLAT:??_C@_0BI@CAAODGOO@?5attempt?5to?5find?5user?5?$CC@
-	lea	rcx, QWORD PTR $T20[rbp]
+	lea	rcx, QWORD PTR $T17[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv244[rbp], rax
-	mov	rax, QWORD PTR tv244[rbp]
-	mov	QWORD PTR tv349[rbp], rax
+	mov	QWORD PTR tv208[rbp], rax
+	mov	rax, QWORD PTR tv208[rbp]
+	mov	QWORD PTR tv303[rbp], rax
 	lea	r8, OFFSET FLAT:??_C@_08MNBGHMON@?$CC?5failed@
-	mov	rdx, QWORD PTR tv349[rbp]
-	lea	rcx, QWORD PTR $T21[rbp]
+	mov	rdx, QWORD PTR tv303[rbp]
+	lea	rcx, QWORD PTR $T18[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@QEBD@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv187[rbp], rax
-	mov	rax, QWORD PTR tv187[rbp]
-	mov	QWORD PTR tv351[rbp], rax
-	mov	rdx, QWORD PTR tv351[rbp]
+	mov	QWORD PTR tv151[rbp], rax
+	mov	rax, QWORD PTR tv151[rbp]
+	mov	QWORD PTR tv305[rbp], rax
+	mov	rdx, QWORD PTR tv305[rbp]
 	lea	rcx, QWORD PTR message$[rbp]
 	call	??Y?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@AEBV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator+=
 	npad	1
-	lea	rcx, QWORD PTR $T21[rbp]
+	lea	rcx, QWORD PTR $T18[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR $T20[rbp]
+	lea	rcx, QWORD PTR $T17[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 112  : 
-; 113  :     _logger << message;
+; 115  : 
+; 116  :     _logger << message;
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+16]
-	mov	QWORD PTR tv303[rbp], rax
+	mov	QWORD PTR tv235[rbp], rax
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+16]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv305[rbp], rax
+	mov	QWORD PTR tv237[rbp], rax
 	lea	rdx, QWORD PTR message$[rbp]
-	mov	rcx, QWORD PTR tv303[rbp]
-	call	QWORD PTR tv305[rbp]
+	mov	rcx, QWORD PTR tv235[rbp]
+	call	QWORD PTR tv237[rbp]
 
-; 114  :     throw PersistenceHandler::NoSuchUser( message );
+; 117  :     throw PersistenceHandler::NoSuchUser( message );
 
 	lea	rdx, QWORD PTR message$[rbp]
-	lea	rcx, QWORD PTR $T22[rbp]
+	lea	rcx, QWORD PTR $T19[rbp]
 	call	??0NoSuchUser@PersistenceHandler@Persistence@TechnicalServices@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
 	lea	rdx, OFFSET FLAT:_TI4?AUNoSuchUser@PersistenceHandler@Persistence@TechnicalServices@@
-	lea	rcx, QWORD PTR $T22[rbp]
+	lea	rcx, QWORD PTR $T19[rbp]
 	call	_CxxThrowException
 	npad	1
 
-; 115  :   }
+; 118  :   }
 
 	lea	rcx, QWORD PTR message$[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -45670,12 +45545,12 @@ $LN7@findCreden:
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
 	xor	rcx, rbp
 	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+2512]
+	lea	rsp, QWORD PTR [rbp+1920]
 	pop	rdi
 	pop	rsi
 	pop	rbp
 	ret	0
-$LN34@findCreden:
+$LN27@findCreden:
 ?findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z ENDP ; TechnicalServices::Persistence::SimpleDB::findCredentialsByName
 _TEXT	ENDS
 ;	COMDAT text$x
@@ -45685,44 +45560,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$0@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -45745,44 +45614,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$1@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -45790,7 +45653,7 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp]
+	lea	rcx, QWORD PTR $T24[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -45805,44 +45668,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$2@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -45850,7 +45707,7 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+40]
+	lea	rcx, QWORD PTR $T24[rbp+40]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -45865,105 +45722,39 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$3
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T31[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$3
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$5
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
+?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$4
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -45971,15 +45762,15 @@ name$ = 2560
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 2
+	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T31[rbp]
+	lea	rcx, QWORD PTR $T26[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$5
+?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$4
 text$x	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -45988,44 +45779,92 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
+?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$6
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T24[rbp]
+	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$6
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+<range>$L1$4 = 8
+<begin>$L1$5 = 40
+<end>$L1$6 = 72
+user$7 = 104
+message$ = 136
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$7@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -46033,8 +45872,8 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp]
-	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	lea	rcx, QWORD PTR $T24[rbp+112]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -46048,44 +45887,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$8@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$8
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -46093,7 +45926,7 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+112]
+	lea	rcx, QWORD PTR $T24[rbp+152]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -46108,105 +45941,39 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$9
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+152]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$9
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$11
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
+?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$10
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -46216,13 +45983,13 @@ name$ = 2560
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T30[rbp]
+	lea	rcx, QWORD PTR $T25[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$11
+?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$10
 text$x	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -46231,44 +45998,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$13
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -46276,8 +46037,11 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+112]
-	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	lea	r9, OFFSET FLAT:??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	mov	r8d, 2
+	mov	edx, 112				; 00000070H
+	lea	rcx, QWORD PTR $T24[rbp]
+	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -46291,104 +46055,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$14
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+224]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$14
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$15@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -46396,7 +46094,7 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+264]
+	lea	rcx, QWORD PTR message$[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -46411,44 +46109,92 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
+?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$16
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T17[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$16
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+<range>$L1$4 = 8
+<begin>$L1$5 = 40
+<end>$L1$6 = 72
+user$7 = 104
+message$ = 136
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$17
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -46456,259 +46202,13 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 1
-	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T29[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
+	lea	rcx, QWORD PTR $T18[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
 ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$17
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$20
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	r9, OFFSET FLAT:??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
-	mov	r8d, 3
-	mov	edx, 112				; 00000070H
-	lea	rcx, QWORD PTR $T28[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$20
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$22
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR message$[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$22
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$23
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T20[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$23
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$24
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T21[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$24
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -46718,44 +46218,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$0@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -46779,44 +46273,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$1@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -46824,7 +46312,7 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp]
+	lea	rcx, QWORD PTR $T24[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -46840,44 +46328,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$2@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -46885,7 +46367,7 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+40]
+	lea	rcx, QWORD PTR $T24[rbp+40]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -46901,106 +46383,39 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$3
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T31[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$3@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$3
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$5
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
+?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$4
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -47008,15 +46423,15 @@ name$ = 2560
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 2
+	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T31[rbp]
+	lea	rcx, QWORD PTR $T26[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$5@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$5
+?dtor$4@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$4
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -47026,44 +46441,93 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
+?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$6
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T24[rbp]
+	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$6@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$6
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+<range>$L1$4 = 8
+<begin>$L1$5 = 40
+<end>$L1$6 = 72
+user$7 = 104
+message$ = 136
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$7@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -47071,8 +46535,8 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp]
-	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	lea	rcx, QWORD PTR $T24[rbp+112]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -47087,44 +46551,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$8@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$8
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -47132,7 +46590,7 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+112]
+	lea	rcx, QWORD PTR $T24[rbp+152]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -47148,106 +46606,39 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$9
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+152]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$9@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$9
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$11
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
+?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$10
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -47257,13 +46648,13 @@ name$ = 2560
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T30[rbp]
+	lea	rcx, QWORD PTR $T25[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$11@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$11
+?dtor$10@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$10
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -47273,44 +46664,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$13@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$13
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -47318,8 +46703,11 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+112]
-	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	lea	r9, OFFSET FLAT:??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	mov	r8d, 2
+	mov	edx, 112				; 00000070H
+	lea	rcx, QWORD PTR $T24[rbp]
+	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -47334,105 +46722,38 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$14
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+224]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$14@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$14
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$15@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -47440,7 +46761,7 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T28[rbp+264]
+	lea	rcx, QWORD PTR message$[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -47456,44 +46777,93 @@ text$x	SEGMENT
 <end>$L1$6 = 72
 user$7 = 104
 message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
+?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$16
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T17[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$16@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$16
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+<range>$L1$4 = 8
+<begin>$L1$5 = 40
+<end>$L1$6 = 72
+user$7 = 104
+message$ = 136
+$T8 = 772
+$T9 = 804
+$T10 = 840
+$T11 = 888
+$T12 = 932
+$T13 = 968
+$T14 = 1016
+$T15 = 1064
+$T16 = 1112
+$T17 = 1160
+$T18 = 1224
+$T19 = 1288
+$T20 = 1344
+$T21 = 1392
+$T22 = 1440
+$T23 = 1476
+$T24 = 1520
+$T25 = 1768
+$T26 = 1832
+tv235 = 1880
+tv208 = 1880
+tv188 = 1880
+tv303 = 1888
+tv237 = 1888
+tv142 = 1888
+tv174 = 1896
+tv151 = 1896
+tv305 = 1904
+__$ArrayPad$ = 1912
+this$ = 1952
+__$ReturnUdt$ = 1960
+name$ = 1968
 ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$17
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -47501,11 +46871,8 @@ name$ = 2560
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 1
-	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T29[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
+	lea	rcx, QWORD PTR $T18[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -47513,254 +46880,7 @@ name$ = 2560
 ?dtor$17@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$17
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$20
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	r9, OFFSET FLAT:??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
-	mov	r8d, 3
-	mov	edx, 112				; 00000070H
-	lea	rcx, QWORD PTR $T28[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$20@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$20
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$22
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR message$[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$22@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$22
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$23
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T20[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$23@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$23
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-<range>$L1$4 = 8
-<begin>$L1$5 = 40
-<end>$L1$6 = 72
-user$7 = 104
-message$ = 136
-$T8 = 964
-$T9 = 996
-$T10 = 1032
-$T11 = 1080
-$T12 = 1124
-$T13 = 1160
-$T14 = 1208
-$T15 = 1252
-$T16 = 1288
-$T17 = 1336
-$T18 = 1384
-$T19 = 1432
-$T20 = 1480
-$T21 = 1544
-$T22 = 1608
-$T23 = 1664
-$T24 = 1712
-$T25 = 1760
-$T26 = 1808
-$T27 = 1844
-$T28 = 1888
-$T29 = 2248
-$T30 = 2312
-$T31 = 2384
-tv303 = 2472
-tv244 = 2472
-tv224 = 2472
-tv349 = 2480
-tv305 = 2480
-tv146 = 2480
-tv187 = 2488
-tv178 = 2488
-tv351 = 2496
-tv210 = 2496
-__$ArrayPad$ = 2504
-this$ = 2544
-__$ReturnUdt$ = 2552
-name$ = 2560
-?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$24
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T21[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$24@?0??findCredentialsByName@SimpleDB@Persistence@TechnicalServices@@UEAA?AUUserCredentials@23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findCredentialsByName'::`1'::dtor$24
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ
 _TEXT	SEGMENT
 $T1 = 196
@@ -47769,52 +46889,56 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ PROC ; TechnicalServices::Persistence::SimpleDB::findRoles, COMDAT
 
 ; 90   :   {
 
-$LN10:
+$LN11:
 	mov	QWORD PTR [rsp+16], rdx
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
 	push	rsi
 	push	rdi
-	sub	rsp, 624				; 00000270H
+	sub	rsp, 672				; 000002a0H
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
-	mov	ecx, 156				; 0000009cH
+	mov	ecx, 168				; 000000a8H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	mov	rcx, QWORD PTR [rsp+664]
+	mov	rcx, QWORD PTR [rsp+712]
 	mov	DWORD PTR $T5[rbp], 0
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 
-; 91   :     return { "Borrower", "Librarian", "Administrator", "Management" };
+; 91   :     return { "Assistant", "Salesperson", "Sales Manager", "IT Admin", "Security Officer" };
 
 	lea	rcx, QWORD PTR $T1[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	mov	QWORD PTR tv128[rbp], rax
-	lea	rdx, OFFSET FLAT:??_C@_08GDNLHFAJ@Borrower@
+	mov	QWORD PTR tv132[rbp], rax
+	lea	rdx, OFFSET FLAT:??_C@_09JDLGGIJM@Assistant@
 	lea	rcx, QWORD PTR $T6[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_09DFPFBBHL@Librarian@
+	lea	rdx, OFFSET FLAT:??_C@_0M@FHFJHGNJ@Salesperson@
 	lea	rcx, QWORD PTR $T6[rbp+40]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_0O@PMKNNGMO@Administrator@
+	lea	rdx, OFFSET FLAT:??_C@_0O@MJAOLBNB@Sales?5Manager@
 	lea	rcx, QWORD PTR $T6[rbp+80]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, OFFSET FLAT:??_C@_0L@ENAJINDB@Management@
+	lea	rdx, OFFSET FLAT:??_C@_08KIJEALLB@IT?5Admin@
 	lea	rcx, QWORD PTR $T6[rbp+120]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rax, QWORD PTR $T6[rbp+160]
+	lea	rdx, OFFSET FLAT:??_C@_0BB@NANNIDAN@Security?5Officer@
+	lea	rcx, QWORD PTR $T6[rbp+160]
+	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rax, QWORD PTR $T6[rbp+200]
 	mov	r8, rax
 	lea	rdx, QWORD PTR $T6[rbp]
 	lea	rcx, QWORD PTR $T2[rbp]
@@ -47830,7 +46954,7 @@ $LN10:
 	mov	rsi, rcx
 	mov	ecx, 16
 	rep movsb
-	mov	r8, QWORD PTR tv128[rbp]
+	mov	r8, QWORD PTR tv132[rbp]
 	lea	rdx, QWORD PTR $T4[rbp]
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
@@ -47838,7 +46962,7 @@ $LN10:
 	or	eax, 1
 	mov	DWORD PTR $T5[rbp], eax
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 4
+	mov	r8d, 5
 	mov	edx, 40					; 00000028H
 	lea	rcx, QWORD PTR $T6[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
@@ -47846,7 +46970,7 @@ $LN10:
 
 ; 92   :   }
 
-	lea	rsp, QWORD PTR [rbp+592]
+	lea	rsp, QWORD PTR [rbp+640]
 	pop	rdi
 	pop	rsi
 	pop	rbp
@@ -47862,9 +46986,9 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?dtor$0@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -47888,9 +47012,9 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?dtor$1@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -47914,9 +47038,9 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?dtor$2@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -47940,26 +47064,23 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
-?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$4
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
+?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$3
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 4
-	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T6[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
+	lea	rcx, QWORD PTR $T6[rbp+120]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$4
+?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$3
 text$x	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -47969,10 +47090,39 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$5
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	mov	r8d, 5
+	mov	edx, 40					; 00000028H
+	lea	rcx, QWORD PTR $T6[rbp]
+	call	??_M@YAXPEAX_K1P6AX0@Z@Z
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$5
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 196
+$T2 = 232
+$T3 = 280
+$T4 = 336
+$T5 = 372
+$T6 = 416
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
+?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -47982,16 +47132,16 @@ __$ReturnUdt$ = 632
 	mov	eax, DWORD PTR $T5[rbp]
 	and	eax, 1
 	test	eax, eax
-	je	SHORT $LN9@dtor$5
+	je	SHORT $LN10@dtor$6
 	and	DWORD PTR $T5[rbp], -2
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-$LN9@dtor$5:
+$LN10@dtor$6:
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$5
+?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$6
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -48002,9 +47152,9 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?dtor$0@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -48029,9 +47179,9 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?dtor$1@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -48056,9 +47206,9 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?dtor$2@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -48083,26 +47233,23 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
-?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$4
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
+?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$3
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	r8d, 4
-	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T6[rbp]
-	call	??_M@YAXPEAX_K1P6AX0@Z@Z
+	lea	rcx, QWORD PTR $T6[rbp+120]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$4@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$4
+?dtor$3@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$3
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -48113,10 +47260,40 @@ $T3 = 280
 $T4 = 336
 $T5 = 372
 $T6 = 416
-tv128 = 584
-this$ = 624
-__$ReturnUdt$ = 632
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
 ?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$5
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	mov	r8d, 5
+	mov	edx, 40					; 00000028H
+	lea	rcx, QWORD PTR $T6[rbp]
+	call	??_M@YAXPEAX_K1P6AX0@Z@Z
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$5
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 196
+$T2 = 232
+$T3 = 280
+$T4 = 336
+$T5 = 372
+$T6 = 416
+tv132 = 632
+this$ = 672
+__$ReturnUdt$ = 680
+?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA PROC ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -48126,21 +47303,21 @@ __$ReturnUdt$ = 632
 	mov	eax, DWORD PTR $T5[rbp]
 	and	eax, 1
 	test	eax, eax
-	je	SHORT $LN9@dtor$5
+	je	SHORT $LN10@dtor$6
 	and	DWORD PTR $T5[rbp], -2
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-$LN9@dtor$5:
+$LN10@dtor$6:
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$5@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$5
+?dtor$6@?0??findRoles@SimpleDB@Persistence@TechnicalServices@@UEAA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::findRoles'::`1'::dtor$6
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.hpp
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ??0SimpleDB@Persistence@TechnicalServices@@QEAA@XZ
 _TEXT	SEGMENT
 adaptationDataFile$ = 16
@@ -48190,7 +47367,7 @@ $LN19:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0PersistenceHandler@Persistence@TechnicalServices@@QEAA@XZ ; TechnicalServices::Persistence::PersistenceHandler::PersistenceHandler
@@ -48213,7 +47390,7 @@ $LN19:
 	npad	1
 	lea	rcx, QWORD PTR $T8[rbp]
 	call	??1?$unique_ptr@VSimpleLogger@Logging@TechnicalServices@@U?$default_delete@VSimpleLogger@Logging@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::unique_ptr<TechnicalServices::Logging::SimpleLogger,std::default_delete<TechnicalServices::Logging::SimpleLogger> >::~unique_ptr<TechnicalServices::Logging::SimpleLogger,std::default_delete<TechnicalServices::Logging::SimpleLogger> >
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.hpp
 
 ; 37   :       TechnicalServices::Logging::LoggerHandler & _logger = *_loggerPtr;
 
@@ -48223,7 +47400,7 @@ $LN19:
 	call	??D?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@QEBAAEAVLoggerHandler@Logging@TechnicalServices@@XZ ; std::unique_ptr<TechnicalServices::Logging::LoggerHandler,std::default_delete<TechnicalServices::Logging::LoggerHandler> >::operator*
 	mov	rcx, QWORD PTR this$[rbp]
 	mov	QWORD PTR [rcx+16], rax
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 
 ; 48   :   {
 
@@ -48309,11 +47486,11 @@ $LN2@SimpleDB:
 	mov	QWORD PTR tv199[rbp], rax
 	mov	dl, 61					; 0000003dH
 	lea	rcx, QWORD PTR $T13[rbp]
-	call	??0ignore@?A0x10ee63b5@@QEAA@D@Z	; `anonymous namespace'::ignore::ignore
+	call	??0ignore@?A0x608d2071@@QEAA@D@Z	; `anonymous namespace'::ignore::ignore
 	mov	QWORD PTR tv201[rbp], rax
 	mov	rdx, QWORD PTR tv201[rbp]
 	mov	rcx, QWORD PTR tv199[rbp]
-	call	??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z ; `anonymous namespace'::operator>>
+	call	??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z ; `anonymous namespace'::operator>>
 	mov	QWORD PTR tv204[rbp], rax
 	mov	r9b, 92					; 0000005cH
 	mov	r8b, 34					; 00000022H
@@ -48327,11 +47504,11 @@ $LN2@SimpleDB:
 	mov	QWORD PTR tv209[rbp], rax
 	mov	dl, 10
 	lea	rcx, QWORD PTR $T11[rbp]
-	call	??0ignore@?A0x10ee63b5@@QEAA@D@Z	; `anonymous namespace'::ignore::ignore
+	call	??0ignore@?A0x608d2071@@QEAA@D@Z	; `anonymous namespace'::ignore::ignore
 	mov	QWORD PTR tv211[rbp], rax
 	mov	rdx, QWORD PTR tv211[rbp]
 	mov	rcx, QWORD PTR tv209[rbp]
-	call	??5?A0x10ee63b5@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z ; `anonymous namespace'::operator>>
+	call	??5?A0x608d2071@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV12@$$QEAUignore@0@@Z ; `anonymous namespace'::operator>>
 	mov	QWORD PTR $T10[rbp], rax
 	mov	rax, QWORD PTR $T10[rbp]
 	mov	rax, QWORD PTR [rax]
@@ -49369,7 +48546,7 @@ this$ = 1728
 ?dtor$11@?0???0SimpleDB@Persistence@TechnicalServices@@QEAA@XZ@4HA ENDP ; `TechnicalServices::Persistence::SimpleDB::SimpleDB'::`1'::dtor$11
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ??0PersistenceHandler@Persistence@TechnicalServices@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -49388,7 +48565,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7PersistenceHandler@Persistence@TechnicalServices@@6B@
@@ -51369,7 +50546,7 @@ $LN3:
 ??0LoggerHandler@Logging@TechnicalServices@@QEAA@XZ ENDP ; TechnicalServices::Logging::LoggerHandler::LoggerHandler
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp
 ;	COMDAT ??1LoggerHandler@Logging@TechnicalServices@@UEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -51388,7 +50565,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__D94D2CD2_LoggerHandler@hpp
+	lea	rcx, OFFSET FLAT:__7B3B09F4_LoggerHandler@hpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7LoggerHandler@Logging@TechnicalServices@@6B@
@@ -58977,7 +58154,7 @@ $LN3:
 ??2@YAPEAX_KPEAX@Z ENDP					; operator new
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -58998,7 +58175,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -59008,7 +58185,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -59027,7 +58204,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -59037,7 +58214,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -59056,7 +58233,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -59066,7 +58243,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -59083,7 +58260,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__06248C09_SimpleDB@cpp
+	lea	rcx, OFFSET FLAT:__1770D82A_SimpleDB@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]

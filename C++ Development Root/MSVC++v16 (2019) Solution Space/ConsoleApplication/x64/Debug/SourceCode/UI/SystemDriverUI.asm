@@ -49,11 +49,11 @@ __1597A171_xiosbase DB 01H
 __90E3ED46_xlocnum DB 01H
 __165C22CB_ios DB 01H
 __3AFA803E_string DB 01H
-__D94D2CD2_LoggerHandler@hpp DB 01H
+__7B3B09F4_LoggerHandler@hpp DB 01H
 __E181AB2C_any DB 01H
 __03665793_xtree DB 01H
-__AA35AA2D_SystemDriverUI@hpp DB 01H
-__A66045CC_SystemDriverUI@cpp DB 01H
+__256E0651_SystemDriverUI@hpp DB 01H
+__293BE9B0_SystemDriverUI@cpp DB 01H
 __43822A97_initializer_list DB 01H
 __BF2A7ACC_vector DB 01H
 __7EA464AF_istream DB 01H
@@ -9014,7 +9014,7 @@ $LN4@operator:
 ??R?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@QEBAXPEAVLoggerHandler@Logging@TechnicalServices@@@Z ENDP ; std::default_delete<TechnicalServices::Logging::LoggerHandler>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
 ;	COMDAT ??1SystemDriverUI@UI@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -9036,7 +9036,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+344]
-	lea	rcx, OFFSET FLAT:__A66045CC_SystemDriverUI@cpp
+	lea	rcx, OFFSET FLAT:__293BE9B0_SystemDriverUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7SystemDriverUI@UI@@6B@
@@ -9077,7 +9077,7 @@ $LN3:
 ??1SystemDriverUI@UI@@UEAA@XZ ENDP			; UI::SystemDriverUI::~SystemDriverUI
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
 ;	COMDAT ?launch@SystemDriverUI@UI@@UEAAXXZ
 _TEXT	SEGMENT
 session$6 = 8
@@ -9129,7 +9129,7 @@ $LN20:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__A66045CC_SystemDriverUI@cpp
+	lea	rcx, OFFSET FLAT:__293BE9B0_SystemDriverUI@cpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 34   :     {
@@ -10686,9 +10686,9 @@ this$ = 1808
 ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$16
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.hpp
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
 ;	COMDAT ??0SystemDriverUI@UI@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -10710,7 +10710,7 @@ $LN6:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+344]
-	lea	rcx, OFFSET FLAT:__A66045CC_SystemDriverUI@cpp
+	lea	rcx, OFFSET FLAT:__293BE9B0_SystemDriverUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0UserInterfaceHandler@UI@@QEAA@XZ
@@ -10727,7 +10727,7 @@ $LN6:
 	mov	rcx, rax
 	call	?create@LoggerHandler@Logging@TechnicalServices@@SA?AV?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@5@@Z ; TechnicalServices::Logging::LoggerHandler::create
 	npad	1
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.hpp
 
 ; 42   :     TechnicalServices::Logging::LoggerHandler & _logger = *_loggerPtr;
 
@@ -10737,7 +10737,7 @@ $LN6:
 	call	??D?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@QEBAAEAVLoggerHandler@Logging@TechnicalServices@@XZ ; std::unique_ptr<TechnicalServices::Logging::LoggerHandler,std::default_delete<TechnicalServices::Logging::LoggerHandler> >::operator*
 	mov	rcx, QWORD PTR this$[rbp]
 	mov	QWORD PTR [rcx+16], rax
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
 
 ; 16   :     _logger << "Contracted UI being used and has been successfully initialized";
 
@@ -14190,7 +14190,7 @@ $LN3:
 ??2@YAPEAX_KPEAX@Z ENDP					; operator new
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -14211,7 +14211,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__A66045CC_SystemDriverUI@cpp
+	lea	rcx, OFFSET FLAT:__293BE9B0_SystemDriverUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -14221,7 +14221,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -14240,7 +14240,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__A66045CC_SystemDriverUI@cpp
+	lea	rcx, OFFSET FLAT:__293BE9B0_SystemDriverUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -14250,7 +14250,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -14269,7 +14269,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__A66045CC_SystemDriverUI@cpp
+	lea	rcx, OFFSET FLAT:__293BE9B0_SystemDriverUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -14279,7 +14279,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\UI\SystemDriverUI.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SystemDriverUI.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -14296,7 +14296,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__A66045CC_SystemDriverUI@cpp
+	lea	rcx, OFFSET FLAT:__293BE9B0_SystemDriverUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]

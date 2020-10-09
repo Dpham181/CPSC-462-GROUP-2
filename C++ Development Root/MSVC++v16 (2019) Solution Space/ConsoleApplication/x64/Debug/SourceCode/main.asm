@@ -52,7 +52,7 @@ __22687C2D_xlocmes DB 01H
 __BB81F87E_xlocmon DB 01H
 __8AA3BE86_time@h DB 01H
 __886F7F70_xloctime DB 01H
-__7F28673A_main@cpp DB 01H
+__1F958CA1_main@cpp DB 01H
 __E5C4F40F_locale DB 01H
 __7EA464AF_istream DB 01H
 __1D745195_ostream DB 01H
@@ -136,7 +136,7 @@ PUBLIC	_CT??_R0?AVbad_cast@std@@@8??0bad_cast@std@@QEAA@AEBV01@@Z24
 PUBLIC	??_C@_0GI@DEICPIDJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
 PUBLIC	?__LINE__Var@?0??_Maklocwcs@std@@YAPEA_WPEB_W@Z@4JA ; `std::_Maklocwcs'::`1'::__LINE__Var
 PUBLIC	??_C@_0GI@LHMPPKJI@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
-PUBLIC	??_C@_0CN@CLEDGKFE@?6Library?5Inventory?5system?5initi@ ; `string'
+PUBLIC	??_C@_0CL@CDNJEIGC@?6Money?5Trail?5CRM?5system?5initial@ ; `string'
 PUBLIC	??_C@_0CI@OPNOBPOD@?6Initialization?5completed?5succe@ ; `string'
 PUBLIC	??_C@_0DF@IPBKNIOF@Ready?5to?5transition?5into?5Operat@ ; `string'
 PUBLIC	??_C@_0CI@IJOIBBJE@?6Program?5complete?0?5initiating?5s@ ; `string'
@@ -765,10 +765,10 @@ CONST	SEGMENT
 ??_C@_0CI@OPNOBPOD@?6Initialization?5completed?5succe@ DB 0aH, 'Initializ'
 	DB	'ation completed successfully', 0aH, 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CN@CLEDGKFE@?6Library?5Inventory?5system?5initi@
+;	COMDAT ??_C@_0CL@CDNJEIGC@?6Money?5Trail?5CRM?5system?5initial@
 CONST	SEGMENT
-??_C@_0CN@CLEDGKFE@?6Library?5Inventory?5system?5initi@ DB 0aH, 'Library '
-	DB	'Inventory system initializing ...', 0aH, 0aH, 00H ; `string'
+??_C@_0CL@CDNJEIGC@?6Money?5Trail?5CRM?5system?5initial@ DB 0aH, 'Money T'
+	DB	'rail CRM system initializing ...', 0aH, 0aH, 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0GI@LHMPPKJI@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 CONST	SEGMENT
@@ -5028,7 +5028,7 @@ __catch$??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D
 ?catch$1@?0???$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z@4HA ENDP ; `std::operator<<<std::char_traits<char> >'::`1'::catch$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\main.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\main.cpp
 ;	COMDAT main
 _TEXT	SEGMENT
 userInterface$7 = 8
@@ -5066,15 +5066,15 @@ $LN24:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__7F28673A_main@cpp
+	lea	rcx, OFFSET FLAT:__1F958CA1_main@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 
 ; 12   :   try
 ; 13   :   {
-; 14   :     std::cout << "\nLibrary Inventory system initializing ...\n\n";
+; 14   :     std::cout << "\nMoney Trail CRM system initializing ...\n\n";
 
-	lea	rdx, OFFSET FLAT:??_C@_0CN@CLEDGKFE@?6Library?5Inventory?5system?5initi@
+	lea	rdx, OFFSET FLAT:??_C@_0CL@CDNJEIGC@?6Money?5Trail?5CRM?5system?5initial@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
@@ -7663,7 +7663,7 @@ $LN3:
 ??0exception@std@@QEAA@QEBDH@Z ENDP			; std::exception::exception
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\main.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\main.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -7684,7 +7684,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__7F28673A_main@cpp
+	lea	rcx, OFFSET FLAT:__1F958CA1_main@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -7694,7 +7694,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\main.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\main.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -7713,7 +7713,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__7F28673A_main@cpp
+	lea	rcx, OFFSET FLAT:__1F958CA1_main@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -7723,7 +7723,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\main.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\main.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -7742,7 +7742,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__7F28673A_main@cpp
+	lea	rcx, OFFSET FLAT:__1F958CA1_main@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -7752,7 +7752,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\main.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\main.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -7769,7 +7769,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__7F28673A_main@cpp
+	lea	rcx, OFFSET FLAT:__1F958CA1_main@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]

@@ -63,26 +63,32 @@ namespace UI
       std::cout << "  pass phrase: ";
       std::getline( std::cin, credentials.passPhrase );
 
-      unsigned menuSelection;
-      do
-      {
-        for( unsigned i = 0; i != roleLegalValues.size(); ++i )   std::cout << std::setw( 2 ) << i << " - " << roleLegalValues[i] << '\n';
-        std::cout << "  role (0-" << roleLegalValues.size()-1 << "): ";
-        std::cin  >> menuSelection;
-      } while( menuSelection >= roleLegalValues.size() );
-      selectedRole = roleLegalValues[menuSelection];
+      //unsigned menuSelection;
+      //do
+      //{
+      //  for( unsigned i = 0; i != roleLegalValues.size(); ++i )   std::cout << std::setw( 2 ) << i << " - " << roleLegalValues[i] << '\n';
+      //  std::cout << "  role (0-" << roleLegalValues.size()-1 << "): ";
+      //  std::cin  >> menuSelection;
+      //} while( menuSelection >= roleLegalValues.size() );
+      //selectedRole = roleLegalValues[menuSelection];
 
+      // Added 10/7/2020
+      // 2.5) Add find userCredentials and assign credential roles.
+      //Domain::Session::UserCredentials checkcred = _persistentData.findCredentialsByName(credentials.userName);
+      //credentials.roles[0]                       = checkcred.roles[0];
 
       // 3) Validate user is authorized for this role, and if so create session
       sessionControl = Domain::Session::SessionHandler::createSession( credentials );
       if( sessionControl != nullptr )
       {
-        _logger << "Login Successful for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
+        //_logger << "Login Successful for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
+        //_logger << "Login Successful for \"" + credentials.userName + "\" as role \"" + checkcred.roles[0] + "\"";
         break;
       }
 
       std::cout << "** Login failed\n";
-      _logger << "Login failure for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
+      //_logger << "Login failure for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
+      //_logger << "Login failure for \"" + credentials.userName + "\" as a user. ";    //+ "\"";
 
     } while( true );
 

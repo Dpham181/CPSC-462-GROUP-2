@@ -88,7 +88,7 @@ namespace TechnicalServices::Persistence
 
   std::vector<std::string> SimpleDB::findRoles()
   {
-    return { "Borrower", "Librarian", "Administrator", "Management" };
+    return { "Assistant", "Salesperson", "Sales Manager", "IT Admin", "Security Officer" };
   }
 
 
@@ -99,9 +99,12 @@ namespace TechnicalServices::Persistence
     static std::vector<UserCredentials> storedUsers =
     {
     // Username    Pass Phrase         Authorized roles
-      {"Tom",     "CPSC 462 Rocks!",  {"Borrower",     "Management"}},
-      {"Barbara", "Why am I here?",   {"Borrower"                  }},
-      {"Amanda",  "",                 {"Administrator"             }}
+      //{"Tom",     "CPSC 462 Rocks!",  {"Borrower",     "Management"}},
+      //{"Barbara", "Why am I here?",   {"Borrower"                  }},
+      //{"Amanda",  "",                 {"Administrator"             }}
+
+        { "Tom", "CPSC", { "IT Admin" } },
+        { "Amanda", "", { "Assistant" } }
     };
 
     for( const auto & user : storedUsers ) if( user.userName == name ) return user;
@@ -114,7 +117,12 @@ namespace TechnicalServices::Persistence
     throw PersistenceHandler::NoSuchUser( message );
   }
 
-
+  // TDUFF
+  // Return the user's role
+  //std::string UsersRole(UserCredentials user) {
+  //  if 
+  //  return user.roles[0];
+  //}
 
 
   const std::string & SimpleDB::operator[]( const std::string & key ) const

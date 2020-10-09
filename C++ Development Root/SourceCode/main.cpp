@@ -11,7 +11,7 @@ int main( /*int argc, char argv[] */ )
 {
   try
   {
-    std::cout << "\nLibrary Inventory system initializing ...\n\n";
+    std::cout << "\nMoney Trail CRM system initializing ...\n\n";
 
     // Smart pointer (for proper, exception safe memory management) to interface set to new instance of a configurable
     // implementation of the interface.

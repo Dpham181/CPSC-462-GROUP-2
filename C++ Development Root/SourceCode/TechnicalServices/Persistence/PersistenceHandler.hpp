@@ -47,7 +47,6 @@ namespace TechnicalServices::Persistence
       // Throws NoSuchProperty
       virtual const std::string & operator[]( const std::string & key ) const = 0;
 
-
       // Destructor
       // Pure virtual destructor helps force the class to be abstract, but must still be implemented
       virtual ~PersistenceHandler() noexcept = 0;

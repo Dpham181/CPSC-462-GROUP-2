@@ -49,15 +49,15 @@ __1597A171_xiosbase DB 01H
 __90E3ED46_xlocnum DB 01H
 __165C22CB_ios DB 01H
 __3AFA803E_string DB 01H
-__D94D2CD2_LoggerHandler@hpp DB 01H
+__7B3B09F4_LoggerHandler@hpp DB 01H
 __66FC323F_ratio DB 01H
 __8AA3BE86_time@h DB 01H
 __966A0CA6_chrono DB 01H
 __BB81F87E_xlocmon DB 01H
 __886F7F70_xloctime DB 01H
-__BDF0AB3A_SimpleLogger@hpp DB 01H
+__ACA4FF19_SimpleLogger@hpp DB 01H
 __03665793_xtree DB 01H
-__D518C333_LoggerHandler@cpp DB 01H
+__776EE615_LoggerHandler@cpp DB 01H
 __7EA464AF_istream DB 01H
 __1D745195_ostream DB 01H
 __6FFBAAB7_streambuf DB 01H
@@ -12876,7 +12876,7 @@ $LN2@scalar:
 ??_GSimpleLogger@Logging@TechnicalServices@@UEAAPEAXI@Z ENDP ; TechnicalServices::Logging::SimpleLogger::`scalar deleting destructor'
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
 ;	COMDAT ??1SimpleLogger@Logging@TechnicalServices@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -12897,7 +12897,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__BDF0AB3A_SimpleLogger@hpp
+	lea	rcx, OFFSET FLAT:__ACA4FF19_SimpleLogger@hpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7SimpleLogger@Logging@TechnicalServices@@6B@
@@ -12930,7 +12930,7 @@ $LN3:
 ??1SimpleLogger@Logging@TechnicalServices@@UEAA@XZ ENDP	; TechnicalServices::Logging::SimpleLogger::~SimpleLogger
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
 ;	COMDAT ??6SimpleLogger@Logging@TechnicalServices@@UEAAAEAV012@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
 _TEXT	SEGMENT
 now$ = 8
@@ -12960,7 +12960,7 @@ $LN3:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__BDF0AB3A_SimpleLogger@hpp
+	lea	rcx, OFFSET FLAT:__ACA4FF19_SimpleLogger@hpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 60   :     auto now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
@@ -13023,7 +13023,7 @@ $LN3:
 ??6SimpleLogger@Logging@TechnicalServices@@UEAAAEAV012@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z ENDP ; TechnicalServices::Logging::SimpleLogger::operator<<
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp
 ;	COMDAT ??0SimpleLogger@Logging@TechnicalServices@@QEAA@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -13047,7 +13047,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__BDF0AB3A_SimpleLogger@hpp
+	lea	rcx, OFFSET FLAT:__ACA4FF19_SimpleLogger@hpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0LoggerHandler@Logging@TechnicalServices@@QEAA@XZ
@@ -13761,7 +13761,7 @@ $LN3:
 ??0LoggerHandler@Logging@TechnicalServices@@QEAA@XZ ENDP ; TechnicalServices::Logging::LoggerHandler::LoggerHandler
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp
 ;	COMDAT ??1LoggerHandler@Logging@TechnicalServices@@UEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -13780,7 +13780,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__D94D2CD2_LoggerHandler@hpp
+	lea	rcx, OFFSET FLAT:__7B3B09F4_LoggerHandler@hpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7LoggerHandler@Logging@TechnicalServices@@6B@
@@ -13792,7 +13792,7 @@ $LN3:
 ??1LoggerHandler@Logging@TechnicalServices@@UEAA@XZ ENDP ; TechnicalServices::Logging::LoggerHandler::~LoggerHandler
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
 ;	COMDAT ?create@LoggerHandler@Logging@TechnicalServices@@SA?AV?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@5@@Z
 _TEXT	SEGMENT
 persistantData$ = 8
@@ -13835,7 +13835,7 @@ $LN13:
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
 	mov	DWORD PTR $T10[rbp], 0
-	lea	rcx, OFFSET FLAT:__D518C333_LoggerHandler@cpp
+	lea	rcx, OFFSET FLAT:__776EE615_LoggerHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 12   :     auto & persistantData  = TechnicalServices::Persistence::PersistenceHandler::instance();
@@ -20087,7 +20087,7 @@ $LN3:
 ??2@YAPEAX_KPEAX@Z ENDP					; operator new
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -20108,7 +20108,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__D518C333_LoggerHandler@cpp
+	lea	rcx, OFFSET FLAT:__776EE615_LoggerHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -20118,7 +20118,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -20137,7 +20137,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__D518C333_LoggerHandler@cpp
+	lea	rcx, OFFSET FLAT:__776EE615_LoggerHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -20147,7 +20147,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -20166,7 +20166,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__D518C333_LoggerHandler@cpp
+	lea	rcx, OFFSET FLAT:__776EE615_LoggerHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -20176,7 +20176,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\Christopher Ta\Cal State Fullerton\Fall 2020\CPSC 462\C++ Development Root SampleSourceCode\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
+; File D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -20193,7 +20193,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__D518C333_LoggerHandler@cpp
+	lea	rcx, OFFSET FLAT:__776EE615_LoggerHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]

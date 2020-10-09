@@ -45,16 +45,16 @@ namespace Domain::Session
       // with many roles combined, I may have to revisit this approach.  But for now, this is good enough.
       if(    credentials.userName   == credentialsFromDB.userName
           && credentials.passPhrase == credentialsFromDB.passPhrase
-          && std::any_of( credentialsFromDB.roles.cbegin(), credentialsFromDB.roles.cend(),
-                          [&]( const std::string & role ) { return credentials.roles.size() > 0 && credentials.roles[0] == role; }
-                        )
+          //&& std::any_of( credentialsFromDB.roles.cbegin(), credentialsFromDB.roles.cend(),
+          //                [&]( const std::string & role ) { return credentials.roles.size() > 0 && credentials.roles[0] == role; }
+          //              )
         )
       {
         // 2) If authenticated user is authorized for the selected role, create a session specific for that role
-        if( credentials.roles[0] == "Borrower"      ) return std::make_unique<Domain::Session::BorrowerSession>     ( credentials );
-        if( credentials.roles[0] == "Librarian"     ) return std::make_unique<Domain::Session::LibrarianSession>    ( credentials );
-        if( credentials.roles[0] == "Administrator" ) return std::make_unique<Domain::Session::AdministratorSession>( credentials );
-        if( credentials.roles[0] == "Management"    ) return std::make_unique<Domain::Session::ManagementSession>   ( credentials );
+        if( credentialsFromDB.roles[0] == "Assistant"      ) return std::make_unique<Domain::Session::AssistantSession>     ( credentials );
+        if( credentialsFromDB.roles[0] == "Salesperson" ) return std::make_unique<Domain::Session::SalespersonSession>( credentials );
+        if( credentialsFromDB.roles[0] == "IT Admin" ) return std::make_unique<Domain::Session::ITAdministratorSession>( credentials );
+        if( credentialsFromDB.roles[0] == "Sales Manager"    ) return std::make_unique<Domain::Session::SalesManagerSession>   ( credentials );
 
         throw std::logic_error( "Invalid role requested in function " + std::string(__func__) ); // Oops, should never get here but ...  Throw something
       }

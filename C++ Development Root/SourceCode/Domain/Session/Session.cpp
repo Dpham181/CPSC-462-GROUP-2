@@ -10,14 +10,37 @@ namespace  // anonymous (private) working area
   #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
 
-  STUB( bugPeople    )
-  STUB( collectFines )
-  STUB( help         )
-  STUB( openArchives )
-  STUB( payFines     )
-  STUB( resetAccount )
-  STUB( returnBook   )
-  STUB( shutdown     )
+  //STUB( bugPeople    )
+  //STUB( collectFines )
+  //STUB( help         )
+  //STUB( openArchives )
+  //STUB( payFines     )
+  //STUB( resetAccount )
+  //STUB( returnBook   )
+  //STUB( shutdown     )
+
+    // Assistant actions
+  STUB( addNewClient )
+  STUB( modifyClient)
+  STUB( askHelp )
+  STUB( scheduleEvent )
+  STUB( attachClientDocument )
+  STUB( inviteClient )
+
+ 
+    // Salesperson actions
+  STUB( makeSale )
+
+    // Sales Manager actions
+  STUB( manageSubscription )
+
+    // IT Admin actions
+  STUB( addNewAccount )
+  STUB( backupDB )
+  
+    // Security Officer actions
+  STUB( blockAccount )
+  
 
 
   std::any checkoutBook( Domain::Session::SessionBase & session, const std::vector<std::string> & args )
@@ -98,48 +121,57 @@ namespace Domain::Session
 
 
 
-
-
-
-
-
   // 2) Now map the above system events to roles authorized to make such a request.  Many roles can request the same event, and many
   //    events can be requested by a single role.
-  AdministratorSession::AdministratorSession( const UserCredentials & credentials ) : SessionBase( "Administrator", credentials )
+  ITAdministratorSession::ITAdministratorSession( const UserCredentials & credentials ) : SessionBase( "IT Admin", credentials )
   {
-    _commandDispatch = { {"Help",            help        },
-                         {"Reset Account",   resetAccount},
-                         {"Shutdown System", shutdown    } };
+    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"IT Admin\".";
+
+    _commandDispatch = { {"Add New Account",   addNewAccount },
+                         {"Back-up Database",   backupDB }//,
+                         //{"Shutdown System", shutdown    } 
+    };
   }
 
 
 
 
-  BorrowerSession::BorrowerSession( const UserCredentials & credentials ) : SessionBase( "Borrower", credentials )
+  AssistantSession::AssistantSession( const UserCredentials & credentials ) : SessionBase( "Assistant", credentials )
   {
-    _commandDispatch = { {"Checkout Book", checkoutBook},
-                         {"Help",          help        },
-                         {"Pay Fines",     payFines    },
-                         {"Return Book",   returnBook  } };
+    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Assistant\".";
+
+    _commandDispatch = { {"Add New Client", addNewClient},
+                         {"Modify Client",          modifyClient        },
+                         {"Ask IT for Help",     askHelp    },
+                         {"Schedule Event",   scheduleEvent  },
+                         { "Attach Client Document", attachClientDocument },
+                         { "Invite Client", inviteClient },
+    };
   }
 
 
 
 
-  LibrarianSession::LibrarianSession( const UserCredentials & credentials ) : SessionBase( "Librarian", credentials )
+  SalespersonSession::SalespersonSession( const UserCredentials & credentials ) : SessionBase( "Salesperson", credentials )
   {
-    _commandDispatch = { {"Checkout Book", checkoutBook},
-                         {"Collect Fines", collectFines},
-                         {"Help",          help        },
-                         {"Open Archives", openArchives} };
+    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Salesperson\".";
+
+    _commandDispatch = { {"Make Sale", makeSale}//,
+                         //{"Collect Fines", collectFines},
+                         //{"Help",          help        },
+                         //{"Open Archives", openArchives} 
+    };
   }
 
 
 
 
-  ManagementSession::ManagementSession( const UserCredentials & credentials ) : SessionBase( "Management", credentials )
+  SalesManagerSession::SalesManagerSession( const UserCredentials & credentials ) : SessionBase( "Sales Manager", credentials )
   {
-    _commandDispatch = { {"Bug People", bugPeople},
-                         {"Help",       help} };
+    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Sales Manager\".";
+
+    _commandDispatch = { {"Manage Subscription", manageSubscription}//,
+                         //{"Help",       help} 
+    };
   }
 }    // namespace Domain::Session

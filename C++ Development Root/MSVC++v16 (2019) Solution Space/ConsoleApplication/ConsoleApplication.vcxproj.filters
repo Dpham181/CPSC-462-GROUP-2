@@ -18,12 +18,6 @@
     <ClCompile Include="..\..\SourceCode\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\SourceCode\Domain\Session\Session.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\SourceCode\Domain\Session\SessionHandler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -42,20 +36,14 @@
     <ClCompile Include="..\..\SourceCode\UI\UserInterfaceHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Domain\Session\Session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Domain\Session\SessionHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\SourceCode\Domain\Library\Books.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SourceCode\Domain\Library\MaintainBooksHandler.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SourceCode\Domain\Session\Session.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\SourceCode\Domain\Session\SessionHandler.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -75,6 +63,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SourceCode\UI\UserInterfaceHandler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Domain\Library\Books.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Domain\Library\MaintainBooksHandler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Domain\Session\Session.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Domain\Session\SessionHandler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

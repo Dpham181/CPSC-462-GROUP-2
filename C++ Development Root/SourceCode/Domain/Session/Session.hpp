@@ -41,9 +41,9 @@ namespace Domain::Session
   };    // class SessionBase
 
 
-  struct AdministratorSession : SessionBase{ AdministratorSession( const UserCredentials & credentials ); };
-  struct BorrowerSession      : SessionBase{ BorrowerSession     ( const UserCredentials & credentials ); };
-  struct LibrarianSession     : SessionBase{ LibrarianSession    ( const UserCredentials & credentials ); };
-  struct ManagementSession    : SessionBase{ ManagementSession   ( const UserCredentials & credentials ); };
+  struct ITAdministratorSession : SessionBase{ ITAdministratorSession( const UserCredentials & credentials ); };
+  struct AssistantSession      : SessionBase{ AssistantSession     ( const UserCredentials & credentials ); };
+  struct SalespersonSession    : SessionBase{ SalespersonSession    ( const UserCredentials & credentials ); };
+  struct SalesManagerSession    : SessionBase{ SalesManagerSession   ( const UserCredentials & credentials ); };
 
 } // namespace Domain::Session
