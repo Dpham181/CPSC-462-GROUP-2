@@ -1,2 +1,24 @@
-﻿  main.cpp
-  ConsoleApplication.vcxproj -> D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe
+﻿  SimpleUI.cpp
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\Domain\Client\ClientHandler.hpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,39): error C2039: 'Client': is not a member of 'Domain::Client'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\Domain\Client\ClientHandler.hpp(5): message : see declaration of 'Domain::Client'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,45): error C2065: 'Client': undeclared identifier
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,12): error C2923: 'std::unique_ptr': 'Client' is not a valid template type argument for parameter '_Ty'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,12): error C2976: 'std::unique_ptr': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory(2437): message : see declaration of 'std::unique_ptr'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,47): error C2955: 'std::unique_ptr': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory(2437): message : see declaration of 'std::unique_ptr'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.cpp(140,9): error C2065: 'newClient': undeclared identifier
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.cpp(142,14): error C2143: syntax error: missing ';' before 'std::cout'
+  UserInterfaceHandler.cpp
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\Domain\Client\ClientHandler.hpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,39): error C2039: 'Client': is not a member of 'Domain::Client'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\Domain\Client\ClientHandler.hpp(5): message : see declaration of 'Domain::Client'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,45): error C2065: 'Client': undeclared identifier
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,12): error C2923: 'std::unique_ptr': 'Client' is not a valid template type argument for parameter '_Ty'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,12): error C2976: 'std::unique_ptr': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory(2437): message : see declaration of 'std::unique_ptr'
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\Money Trail CRM\SourceCode\UI\SimpleUI.hpp(42,47): error C2955: 'std::unique_ptr': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory(2437): message : see declaration of 'std::unique_ptr'
+  Compiling...
+  Generating Code...

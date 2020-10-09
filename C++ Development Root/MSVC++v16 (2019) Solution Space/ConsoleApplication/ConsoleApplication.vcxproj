@@ -30,6 +30,8 @@
     <ClCompile Include="..\..\SourceCode\UI\UserInterfaceHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\SourceCode\Domain\Client\Client.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Client\ClientHandler.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Library\Books.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Library\MaintainBooksHandler.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Session\Session.hpp" />
