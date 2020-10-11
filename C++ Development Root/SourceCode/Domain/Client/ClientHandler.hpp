@@ -1,30 +1,52 @@
 #pragma once
 
-#include <string>;
+#include <string>
+#include <vector>
+#include <stdexcept>    // domain_error, runtime_error
 
 namespace Domain::Client
 {
-    struct ClientProfile
-    {
-      int         clientID;
-      std::string client_name;
-      std::string DOB;
-      int         phone;
-      int         income;
-      std:: string Creator; 
-    };
-
+  struct Client
+  {
+    std::string Creator;
+    int         ClientId;
+  };
+  struct ClientProfile
+  {
+    std::string Client_Name;
+    int         Client_Id;
+    std::string DOB;
+    int         InCome;
+    int         Phone;
+  };
   // Library Package within the Domain Layer Abstract class
   class ClientHandler
   {
     public:
+      struct ClientException : std::runtime_error   {using runtime_error       ::runtime_error;};
+      struct   NoSuchClient         : ClientException {using ClientException::ClientException;};
+      struct   NoSuchProperty     : ClientException {using ClientException::ClientException;};
+
+
+      // Creation (Singleton)
+      ClientHandler()                                  = default;
+      ClientHandler( const ClientHandler & ) = delete;
+      ClientHandler &             operator=( const ClientHandler & ) = delete;
+      static ClientHandler & instance();
+
 
 
       // Operations
-      //   Work in progress ...
-      virtual ClientProfile newClient( const std::string & key );
-      virtual ClientProfile modifyClientInformation( const std::string client_name, const std::string DOB, const int phone, const int income );
+      
+      virtual int GenerateClientId(std::string & User_name) = 0;
+      virtual ClientProfile addClientInformation(int clientID, std::string client_name, std::string DOB, int income, int phone) = 0;
+      virtual std::vector<Client> ShowAllClient()=0; 
+      virtual ClientProfile SearchforClientinfor( int ClientID )=0;
 
+
+      // Adaptation Data read only access.  Adaptation data is a Key/Value pair
+      // Throws NoSuchProperty
+      virtual const std::string & operator[]( const std::string & key ) const = 0;
 
 
       // Destructor
@@ -36,7 +58,7 @@ namespace Domain::Client
       ClientHandler & operator=( const ClientHandler &  rhs ) = default;  // copy assignment
       ClientHandler & operator=(       ClientHandler && rhs ) = default;  // move assignment
 
-  };    // class MaintainBooksHandler
+  };    // class ClientHandler
 
 
 
@@ -48,4 +70,4 @@ namespace Domain::Client
   inline ClientHandler::~ClientHandler() noexcept = default;
 
 
-} // namespace Domain::Library
+} // namespace Domain::Client

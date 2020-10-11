@@ -1,4 +1,5 @@
 #include "TechnicalServices/Persistence/SimpleDB.hpp"
+#include "TechnicalServices/Persistence/ClientDB.hpp"
 
 #include <fstream>    // streamsize
 #include <iomanip>    // quoted()
@@ -10,7 +11,6 @@
 #include "TechnicalServices/Logging/SimpleLogger.hpp"
 #include "TechnicalServices/Persistence/PersistenceHandler.hpp"
 
-#include "Domain/Client/ClientHandler.hpp"
 
 
 
@@ -36,7 +36,7 @@ namespace
 
 
 
-namespace TechnicalServices::Persistence 
+namespace TechnicalServices::Persistence
 {
   // Design decision/Programming note:
   //  - The persistence database contains adaptation data, and one of the adaptable items is which Logger component to use
@@ -93,9 +93,11 @@ namespace TechnicalServices::Persistence
   }
 
 
- 
-
-
+   std::vector<Client> ClientDB::findRoles()
+  {
+    return { "Assistant", "Salesperson", "Sales Manager", "IT Admin", "Security Officer" };
+  }
+  
 
   UserCredentials SimpleDB::findCredentialsByName( const std::string & name )
   {
@@ -143,35 +145,3 @@ namespace TechnicalServices::Persistence
 } // namespace TechnicalServices::Persistence
 
 
-
-
-
-
-// ClientDB___________________________________________________
-
-
-
-
-
-
-
-namespace Domain::Client
-{
-  ClientProfile SimpleDB::newClient( const std::string & key )
-  {
-    static std::vector<ClientProfile> storedClients =
-        {
-            
-
-            { 1, "A", "1/1/1", 1234456789, 20000 , "Amanda" }
-
-        };
-    for( const auto & client : storedClients )
-      return client;
-
-   
-  }
-  
-
- 
-}    

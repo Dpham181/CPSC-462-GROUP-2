@@ -10,7 +10,6 @@
 
 #include "Domain/Library/Books.hpp"    // Include for now - will replace next increment
 #include "Domain/Session/SessionHandler.hpp"
-#include "Domain/Client/Client.hpp"
 
 #include "TechnicalServices/Logging/LoggerHandler.hpp"
 #include "TechnicalServices/Persistence/PersistenceHandler.hpp"
@@ -22,8 +21,7 @@ namespace UI
 {
   // Default constructor
   SimpleUI::SimpleUI()
-  : //_bookHandler   ( std::make_unique<Domain::Library::Books>()                     ),   // will replace these with factory calls in the next increment
-      _clientData  ( std::make_unique<Domain::Client::Client>()),
+  : _bookHandler   ( std::make_unique<Domain::Library::Books>()                     ),   // will replace these with factory calls in the next increment
     _loggerPtr     ( TechnicalServices::Logging::LoggerHandler::create()            ),
     _persistentData( TechnicalServices::Persistence::PersistenceHandler::instance() )
   {
@@ -123,24 +121,16 @@ namespace UI
       **     no coupling. This can be achieved in a variety of ways, but one common way is to pass strings instead of strong typed
       **     parameters.
       ******************************************************************************************************************************/
-      //if( selectedCommand == "Checkout Book" )
-      //{
-      //  std::vector<std::string> parameters( 3 );
-
-      //  std::cout << " Enter book's title:  ";  std::cin >> std::ws;  std::getline( std::cin, parameters[0] );
-      //  std::cout << " Enter book's author: ";  std::cin >> std::ws;  std::getline( std::cin, parameters[1] );
-      //  std::cout << " Enter book's ISBN:   ";  std::cin >> std::ws;  std::getline( std::cin, parameters[2] );
-
-      //  auto results = sessionControl->executeCommand( selectedCommand, parameters );
-      //  if( results.has_value() ) _logger << "Received reply: \"" + std::any_cast<const std::string &>( results ) + '"';
-      //}
-      if (selectedCommand == "Add New Client")
+      if( selectedCommand == "Checkout Book" )
       {
-        Domain::Client::ClientProfile client;
+        std::vector<std::string> parameters( 3 );
 
-      /*  client.clientID = 
-        std::cout << "Enter client name:  ";*/
-        std::cin >> client.client_name;
+        std::cout << " Enter book's title:  ";  std::cin >> std::ws;  std::getline( std::cin, parameters[0] );
+        std::cout << " Enter book's author: ";  std::cin >> std::ws;  std::getline( std::cin, parameters[1] );
+        std::cout << " Enter book's ISBN:   ";  std::cin >> std::ws;  std::getline( std::cin, parameters[2] );
+
+        auto results = sessionControl->executeCommand( selectedCommand, parameters );
+        if( results.has_value() ) _logger << "Received reply: \"" + std::any_cast<const std::string &>( results ) + '"';
       }
 
       else if( selectedCommand == "Another command" ) /* ... */ {}
