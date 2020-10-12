@@ -132,6 +132,12 @@ namespace UI
         auto results = sessionControl->executeCommand( selectedCommand, parameters );
         if( results.has_value() ) _logger << "Received reply: \"" + std::any_cast<const std::string &>( results ) + '"';
       }
+      else if (selectedCommand == "Show All Clients")
+      {
+        std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClient();
+         for( const auto & c : ClientsFromDB )
+            _logger << "ClientID:  " + std::to_string(c.clientid) << "Creator:" + c.creator;
+      }
 
       else if( selectedCommand == "Another command" ) /* ... */ {}
 

@@ -22,6 +22,7 @@ namespace  // anonymous (private) working area
   //STUB( shutdown     )
 
     // Assistant actions
+  STUB(ShowAllClients )
   STUB( addNewClient )
   STUB( modifyClient)
   STUB( askHelp )
@@ -52,14 +53,8 @@ namespace  // anonymous (private) working area
     session._logger << "checkoutBook:  " + results;
     return results;
   }
-  std::any ShowAllClients( Domain::Session::SessionBase & session, const std::vector<std::string> & args )
-  {
-    std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = persistentData.ShowAllClient();
-    for( const auto & c : ClientsFromDB )
-      session._logger << "ClientID:  " + std::to_string(c.clientid) << "Creator:" + c.creator;
-    //system( "pause" );
-    return ClientsFromDB;
-  }
+  
+  
 }    // anonymous (private) working area
 
 
