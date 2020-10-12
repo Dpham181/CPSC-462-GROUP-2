@@ -1,18 +1,4 @@
-﻿  ClientHandler.cpp
-  Session.cpp
-  SessionHandler.cpp
-  Compiling...
-  Generating Code...
-  main.cpp
-  LoggerHandler.cpp
-  PersistenceHandler.cpp
-  SimpleDB.cpp
-  Compiling...
-  Generating Code...
-  SimpleUI.cpp
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(52,38): warning C4189: 'selectedRole': local variable is initialized but not referenced
-  SystemDriverUI.cpp
-  UserInterfaceHandler.cpp
-  Compiling...
-  Generating Code...
+﻿  SimpleUI.cpp
+C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(159,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(59,38): warning C4189: 'selectedRole': local variable is initialized but not referenced
   ConsoleApplication.vcxproj -> C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe

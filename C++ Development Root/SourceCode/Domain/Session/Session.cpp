@@ -23,7 +23,6 @@ namespace  // anonymous (private) working area
 
     // Assistant actions
   STUB(ShowAllClients )
-  STUB( addNewClient )
   STUB( modifyClient)
   STUB( askHelp )
   STUB( scheduleEvent )
@@ -53,7 +52,14 @@ namespace  // anonymous (private) working area
     session._logger << "checkoutBook:  " + results;
     return results;
   }
-  
+  std::any addNewClient(Domain::Session::SessionBase& session, const std::vector<std::string>& args)
+  {
+      // TO-DO  Verify there is such a book and the mark the book as being checked out by user
+      std::string results = args[0];
+      session._logger << "Client Id Already Generated: " + results;
+      return results;
+  }
+
   
 }    // anonymous (private) working area
 

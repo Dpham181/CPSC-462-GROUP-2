@@ -38,19 +38,27 @@ namespace UI
   }
 
 
+ void line()
+    {
+        for (int i = 1; i < 41; i++)
+            std::cout << "--";
+        std::cout << "\n";
 
-
+    }
+    
   // Operations
   void SimpleUI::launch()
   {
     // 1) Fetch Role legal value list
     std::vector<std::string> roleLegalValues = _persistentData.findRoles();
+    std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClient();
 
 
     // 2) Present login screen to user and get username, password, and valid role
     Domain::Session::UserCredentials credentials  = {"", "", {""}};           // ensures roles[0] exists
     auto &                           selectedRole = credentials.roles[0];     // convenience alias
 
+   
     std::unique_ptr<Domain::Session::SessionHandler> sessionControl;
 
     do
@@ -134,9 +142,29 @@ namespace UI
       }
       else if (selectedCommand == "Show All Clients")
       {
-        std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClient();
+        line();
+        std::cout << std::setw(49) << "List Of Clients \n";
+        line();
+        std::cout <<std::setw(15) << "Client ID  " <<std::setw(15) << " Creator \n" ;
+        line();
+
          for( const auto & c : ClientsFromDB )
-            _logger << "ClientID:  " + std::to_string(c.clientid) << "Creator:" + c.creator;
+            std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator <<std::endl;
+        line();
+
+
+      }
+      else if (selectedCommand == "Add New Client")
+      {
+          int sizeofClientDB = ClientsFromDB.size();
+
+          std::vector<std::string> parameters(2);
+
+           parameters[0] = std::to_string(sizeofClientDB + 1);
+           parameters[1] = credentials.userName;
+          // ClientsFromDB.push_back({ parameters[0] ,parameters[1] });
+          auto results = sessionControl->executeCommand(selectedCommand, parameters);
+          if (results.has_value()) _logger << "Received reply: \"" + std::any_cast<const std::string&>(results) + '"';
       }
 
       else if( selectedCommand == "Another command" ) /* ... */ {}
