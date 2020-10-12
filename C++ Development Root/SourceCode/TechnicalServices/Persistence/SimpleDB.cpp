@@ -1,5 +1,4 @@
 #include "TechnicalServices/Persistence/SimpleDB.hpp"
-#include "TechnicalServices/Persistence/ClientDB.hpp"
 
 #include <fstream>    // streamsize
 #include <iomanip>    // quoted()
@@ -93,9 +92,9 @@ namespace TechnicalServices::Persistence
   }
 
 
-   std::vector<Client> ClientDB::findRoles()
+   std::vector<Client> SimpleDB::ShowAllClient()
   {
-    return { "Assistant", "Salesperson", "Sales Manager", "IT Admin", "Security Officer" };
+     return { { "A", 1 }, { "B", 2 } };
   }
   
 

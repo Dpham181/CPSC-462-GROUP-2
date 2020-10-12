@@ -17,7 +17,19 @@ namespace TechnicalServices::Persistence
     std::string               passPhrase;
     std::vector<std::string>  roles;
   };
-
+  struct Client
+  {
+    std::string creator;
+    int         clientid;
+  };
+  struct Clientprofile
+  {
+    std::string client_name;
+    int         client_id;
+    std::string dob;
+    int         income;
+    int         phone;
+  };
 
 
 
@@ -41,6 +53,13 @@ namespace TechnicalServices::Persistence
       // Operations
       virtual std::vector<std::string> findRoles()                                       = 0;   // Returns list of all legal roles
       virtual UserCredentials          findCredentialsByName( const std::string & name ) = 0;   // Returns credentials for specified user, throws NoSuchUser if user not found
+      
+      // client operations
+      
+      // virtual int                      GenerateClientId( std::string & User_name )       = 0;
+      //virtual ClientProfile addClientInformation(int clientID, std::string client_name, std::string DOB, int income, int phone) = 0;
+        virtual std::vector<Client> ShowAllClient() = 0;
+      //virtual ClientProfile SearchforClientinfor( int ClientID )=0;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

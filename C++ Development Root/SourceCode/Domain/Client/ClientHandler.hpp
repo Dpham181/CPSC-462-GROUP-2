@@ -3,22 +3,13 @@
 #include <string>
 #include <vector>
 #include <stdexcept>    // domain_error, runtime_error
+#include "TechnicalServices/Persistence/PersistenceHandler.hpp"
+#include <any>
 
 namespace Domain::Client
 {
-  struct Client
-  {
-    std::string Creator;
-    int         ClientId;
-  };
-  struct ClientProfile
-  {
-    std::string Client_Name;
-    int         Client_Id;
-    std::string DOB;
-    int         InCome;
-    int         Phone;
-  };
+  
+    using TechnicalServices::Persistence::Client; 
   // Library Package within the Domain Layer Abstract class
   class ClientHandler
   {
@@ -27,47 +18,33 @@ namespace Domain::Client
       struct   NoSuchClient         : ClientException {using ClientException::ClientException;};
       struct   NoSuchProperty     : ClientException {using ClientException::ClientException;};
 
-
-      // Creation (Singleton)
-      ClientHandler()                                  = default;
-      ClientHandler( const ClientHandler & ) = delete;
-      ClientHandler &             operator=( const ClientHandler & ) = delete;
-      static ClientHandler & instance();
+      // object return user with creator 
+      static std::unique_ptr<ClientHandler> createClient( const Client & client );
 
 
+      // 
+       virtual std::vector<std::string> getCommands()                                                                        = 0;    // retrieves the list of actions (commands)
+      virtual std::any                 executeCommand( const std::string & command, const std::vector<std::string> & args ) = 0;    // Throws BadCommand
 
+  
       // Operations
       
-      virtual int GenerateClientId(std::string & User_name) = 0;
-      virtual ClientProfile addClientInformation(int clientID, std::string client_name, std::string DOB, int income, int phone) = 0;
-      virtual std::vector<Client> ShowAllClient()=0; 
-      virtual ClientProfile SearchforClientinfor( int ClientID )=0;
 
-
-      // Adaptation Data read only access.  Adaptation data is a Key/Value pair
-      // Throws NoSuchProperty
-      virtual const std::string & operator[]( const std::string & key ) const = 0;
-
-
-      // Destructor
-      // Pure virtual destructor helps force the class to be abstract, but must still be implemented
       virtual ~ClientHandler() noexcept = 0;
 
-    protected:
-      // Copy assignment operators, protected to prevent mix derived-type assignments
-      ClientHandler & operator=( const ClientHandler &  rhs ) = default;  // copy assignment
-      ClientHandler & operator=(       ClientHandler && rhs ) = default;  // move assignment
+
+      protected :
+        // Copy assignment operators, protected to prevent mix derived-type assignments
+        ClientHandler &
+        operator=( const ClientHandler & rhs ) = default;                // copy assignment
+        ClientHandler & operator=( ClientHandler && rhs ) = default;    // move assignment
+ 
 
   };    // class ClientHandler
 
 
 
 
-
-  /*****************************************************************************
-  ** Inline implementations
-  ******************************************************************************/
-  inline ClientHandler::~ClientHandler() noexcept = default;
 
 
 } // namespace Domain::Client

@@ -6,6 +6,8 @@
 
 namespace  // anonymous (private) working area
 {
+  auto & persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+
   // 1)  First define all system events (commands, actions, requests, etc.)
   #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
@@ -50,6 +52,14 @@ namespace  // anonymous (private) working area
     session._logger << "checkoutBook:  " + results;
     return results;
   }
+  std::any ShowAllClients( Domain::Session::SessionBase & session, const std::vector<std::string> & args )
+  {
+    std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = persistentData.ShowAllClient();
+    for( const auto & c : ClientsFromDB )
+      session._logger << "ClientID:  " + std::to_string(c.clientid) << "Creator:" + c.creator;
+    //system( "pause" );
+    return ClientsFromDB;
+  }
 }    // anonymous (private) working area
 
 
@@ -69,7 +79,7 @@ namespace Domain::Session
   }
 
 
-
+ 
 
   SessionBase::~SessionBase() noexcept
   {
@@ -140,12 +150,14 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Assistant\".";
 
-    _commandDispatch = { {"Add New Client", addNewClient},
+    _commandDispatch = {
+                         { "Show All Clients", ShowAllClients },
+                        {"Add New Client", addNewClient},
                          {"Modify Client",          modifyClient        },
                          {"Ask IT for Help",     askHelp    },
                          {"Schedule Event",   scheduleEvent  },
                          { "Attach Client Document", attachClientDocument },
-                         { "Invite Client", inviteClient },
+                         { "Invite Client", inviteClient }//,
     };
   }
 
