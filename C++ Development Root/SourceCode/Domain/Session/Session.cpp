@@ -22,7 +22,7 @@ namespace  // anonymous (private) working area
   //STUB( shutdown     )
 
     // Assistant actions
-  STUB(ShowAllClients )
+  //STUB(ShowAllClients )
   STUB( modifyClient)
   STUB( askHelp )
   STUB( scheduleEvent )
@@ -52,11 +52,19 @@ namespace  // anonymous (private) working area
     session._logger << "checkoutBook:  " + results;
     return results;
   }
+  std::any ShowAllClients(Domain::Session::SessionBase& session, const std::vector<std::string>& args)
+  {
+      std::string results = "done";
+      return results;
+  }
   std::any addNewClient(Domain::Session::SessionBase& session, const std::vector<std::string>& args)
   {
       // TO-DO  Verify there is such a book and the mark the book as being checked out by user
       std::string results = args[0];
-      session._logger << "Client Id Already Generated: " + results;
+      std::string username = session._credentials.userName;
+     std::vector<TechnicalServices::Persistence::Client> test = persistentData.ShowAllClient(persistentData.GenerateClientId(username));
+      session._logger << "Client Id Already Generated: " + args[0] + "By" + username;
+      
       return results;
   }
 

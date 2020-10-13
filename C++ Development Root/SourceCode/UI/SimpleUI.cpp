@@ -51,8 +51,8 @@ namespace UI
   {
     // 1) Fetch Role legal value list
     std::vector<std::string> roleLegalValues = _persistentData.findRoles();
-    std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClient();
 
+    std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClient({});
 
     // 2) Present login screen to user and get username, password, and valid role
     Domain::Session::UserCredentials credentials  = {"", "", {""}};           // ensures roles[0] exists
@@ -141,7 +141,15 @@ namespace UI
         if( results.has_value() ) _logger << "Received reply: \"" + std::any_cast<const std::string &>( results ) + '"';
       }
       else if (selectedCommand == "Show All Clients")
+
       {
+        std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClient({});
+          std::vector<std::string> parameters(1);
+
+       auto results = sessionControl->executeCommand(selectedCommand, parameters);
+
+       parameters[0] = "";
+
         line();
         std::cout << std::setw(49) << "List Of Clients \n";
         line();
@@ -151,7 +159,7 @@ namespace UI
          for( const auto & c : ClientsFromDB )
             std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator <<std::endl;
         line();
-
+        if (results.has_value()) _logger << "Received reply: \"" + std::any_cast<const std::string&>(results) + '"';
 
       }
       else if (selectedCommand == "Add New Client")

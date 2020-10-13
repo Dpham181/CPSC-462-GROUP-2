@@ -94,9 +94,15 @@ namespace TechnicalServices::Persistence
 
    std::vector<Client> SimpleDB::ShowAllClient()
   {
+      
      return { { "A", 1 }, { "B", 2 } };
   }
-  
+   Client SimpleDB::GenerateClientId(const std::string& name) {
+       _logger << "executed";
+       int increment = ShowAllClient({}).size() + 1;       
+    
+       return { name,increment };
+  }
 
   UserCredentials SimpleDB::findCredentialsByName( const std::string & name )
   {

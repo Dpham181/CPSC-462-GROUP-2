@@ -13847,7 +13847,7 @@ $LN13:
 
 	mov	rax, QWORD PTR persistantData$[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+24]
+	mov	rax, QWORD PTR [rax+32]
 	mov	QWORD PTR tv77[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BB@DIDJNGIG@Component?4Logger@
 	lea	rcx, QWORD PTR $T4[rbp]

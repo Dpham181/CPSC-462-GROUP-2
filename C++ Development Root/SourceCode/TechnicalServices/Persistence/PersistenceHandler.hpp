@@ -56,9 +56,9 @@ namespace TechnicalServices::Persistence
       
       // client operations
       
-      // virtual int                      GenerateClientId( std::string & User_name )       = 0;
+       virtual Client                      GenerateClientId( const std::string & User_name )       = 0;
       //virtual ClientProfile addClientInformation(int clientID, std::string client_name, std::string DOB, int income, int phone) = 0;
-        virtual std::vector<Client> ShowAllClient() = 0;
+        virtual std::vector<Client> ShowAllClient(const Client &c ) = 0;
       //virtual ClientProfile SearchforClientinfor( int ClientID )=0;
 
 
