@@ -1,27 +1,48 @@
-//#include "Domain/Client/ClientHandler.hpp"
-//#include "Domain/Client/ClientDB.hpp"
-//
-//namespace Domain::Client
-//{
-//  ClientHandler::~ClientHandler() noexcept = default;
-//
-//
-//
-//
-//  ClientHandler & ClientHandler::instance()
-//  {
-//    // Can't read the DB component preference from the database because the DB has not yet been created. So choosing the database
-//    // implementation is really a configuration item (set by the vendor before delivery), not an adaptable item (set by the end-user
-//    // after delivery)
-//    using SelectedDatabase = ClientDB;
-//
-//    static SelectedDatabase instance;    // Note the creation of a DB specialization (derived class), but returning a reference to
-//                                         // the generalization (base class). Since SimpleDB is-a PersistenceHandler, we can return a
-//                                         // reference to the base class that refers to a specific derived class.  SimpleDB is
-//                                         // accessed polymorphicly through the PersistenceHandler interface.  This source file knows
-//                                         // about the specific SimpleDB derived class, but that's okay.  This source file is not
-//                                         // delivered with the interface and remains That is, PersistenceHandler.hpp is given to the
-//                                         // upper architectural layers, but not PersistenceHandler.cpp.
-//    return instance;
-//  }
-//}    // namespace TechnicalServices::Persistence
+// this one if u want to check condition like sesstion handler cpp
+
+#include "Domain/Session/SessionHandler.hpp"
+
+#include <algorithm>    // std::any_of()
+#include <memory>       // unique_ptr, make_unique<>()
+#include <stdexcept>    // logic_error
+#include <string>
+
+#include "Domain/Client/Client.hpp"
+
+#include "TechnicalServices/Persistence/PersistenceHandler.hpp"
+
+
+
+
+namespace Domain::Client
+{
+    ClientHandler::~ClientHandler() noexcept = default;
+
+
+
+
+    // returns a specialized object specific to the specified role
+    std::unique_ptr<ClientHandler> ClientHandler::createClient(const Client& client)
+    {
+        // Just as a smart defensive strategy, one should verify this role is one of the roles in the DB's legal value list.  I'll come
+        // back to that
+
+        // This is a good example of a Factory - the function takes the "order" (role) and builds the "product" (session) to fulfill the
+        // order. This, however, still leaks knowledge of the kinds of sessions to the client, after all the client needs to specify
+        // with role.
+
+        // ToDo: Make this an Abstract Factory by:
+        //  1) removing the parameter from the function's signature :  std::unique_ptr<SessionHandler>  SessionHandler::createSession();
+        //  2) read the role from a proprieties files or (preferred) look up the role in the persistent data
+
+        // Authenticate the requester
+        try
+        {
+            auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+           
+        }
+        catch (const TechnicalServices::Persistence::PersistenceHandler::NoSuchUser&) {}  // Catch and ignore this anticipated condition
+
+        return nullptr;
+    }
+} // namespace Domain::Session

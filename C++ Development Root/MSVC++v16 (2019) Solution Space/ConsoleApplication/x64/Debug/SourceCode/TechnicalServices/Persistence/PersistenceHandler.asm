@@ -6,15 +6,15 @@ INCLUDELIB MSVCRTD
 INCLUDELIB OLDNAMES
 
 msvcjmc	SEGMENT
-__8906660C_vcruntime_new@h DB 01H
-__5DDA4519_cstddef DB 01H
+__FC8B975D_vcruntime_new@h DB 01H
+__F4CA4DDB_cstddef DB 01H
 __09340588_corecrt_math@h DB 01H
 __24E9E95F_stdlib@h DB 01H
-__F8119FB4_cstdlib DB 01H
-__85A9AA98_type_traits DB 01H
+__51019776_cstdlib DB 01H
+__B236D4B0_type_traits DB 01H
 __B0C4CEA9_malloc@h DB 01H
-__E75714E4_vcruntime_exception@h DB 01H
-__E4152856_exception DB 01H
+__18D87206_vcruntime_exception@h DB 01H
+__1302BCB8_exception DB 01H
 __F66CEB67_corecrt_stdio_config@h DB 01H
 __101834BA_corecrt_wstdio@h DB 01H
 __AD6A91B7_stdio@h DB 01H
@@ -27,39 +27,39 @@ __4442441F_corecrt_wio@h DB 01H
 __45F4AF76_corecrt_wtime@h DB 01H
 __186FF47F_stat@h DB 01H
 __534C724A_wchar@h DB 01H
-__FB364CBD_vcruntime_typeinfo@h DB 01H
-__33FB35AA_typeinfo DB 01H
-__F2870A2C_limits DB 01H
-__4324C6B3_xutility DB 01H
-__A58979FC_xmemory DB 01H
-__4E2906A2_memory DB 01H
-__AC6CB2D0_tuple DB 01H
-__E0552A5D_xpolymorphic_allocator@h DB 01H
-__D15AFF60_xstring DB 01H
+__7B3ADE64_vcruntime_typeinfo@h DB 01H
+__4638863E_typeinfo DB 01H
+__5E219BC0_limits DB 01H
+__36E77527_xutility DB 01H
+__0C99713E_xmemory DB 01H
+__E28F974E_memory DB 01H
+__B6041EFB_tuple DB 01H
+__04937CFC_xpolymorphic_allocator@h DB 01H
+__784AF7A2_xstring DB 01H
 __7242C389_ctype@h DB 01H
-__3AFA803E_string DB 01H
-__6D5B120B_stdexcept DB 01H
-__0A4FAB91_cmath DB 01H
-__160863A3_xcall_once@h DB 01H
-__99B256EE_atomic DB 01H
-__A9557183_system_error DB 01H
-__626C51AD_xfacet DB 01H
-__2C72D662_xlocinfo DB 01H
-__0E648B51_xlocale DB 01H
-__1597A171_xiosbase DB 01H
-__90E3ED46_xlocnum DB 01H
-__165C22CB_ios DB 01H
-__F122B7CE_LoggerHandler@hpp DB 01H
-__03665793_xtree DB 01H
-__104D1753_PersistenceHandler@cpp DB 01H
-__7EA464AF_istream DB 01H
-__1D745195_ostream DB 01H
-__6FFBAAB7_streambuf DB 01H
-__3E6EDFAA_iosfwd DB 01H
-__CF1C1A3F_utility DB 01H
-__528871F3_iterator DB 01H
-__38038D2D_xstddef DB 01H
-__EE19A480_xatomic@h DB 01H
+__965C11D2_string DB 01H
+__9A4C86E5_stdexcept DB 01H
+__102707BA_cmath DB 01H
+__238A5427_xcall_once@h DB 01H
+__3514C702_atomic DB 01H
+__9CD74607_system_error DB 01H
+__CECAC041_xfacet DB 01H
+__59B165F6_xlocinfo DB 01H
+__A7748393_xlocale DB 01H
+__605412E5_xiosbase DB 01H
+__39F3E584_xlocnum DB 01H
+__D3011E72_ios DB 01H
+__9705A642_LoggerHandler@hpp DB 01H
+__190EFBB8_xtree DB 01H
+__F48A3EE8_PersistenceHandler@cpp DB 01H
+__D7B46C6D_istream DB 01H
+__B4645957_ostream DB 01H
+__98EC3E59_streambuf DB 01H
+__92C84E46_iosfwd DB 01H
+__660C12FD_utility DB 01H
+__274BC267_iterator DB 01H
+__911385EF_xstddef DB 01H
+__190E306E_xatomic@h DB 01H
 msvcjmc	ENDS
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
@@ -90,7 +90,7 @@ EXTRN	_Init_thread_epoch:DWORD
 EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
 EXTRN	_tls_index:DWORD
 _BSS	SEGMENT
-?instance@?1??0PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4VSimpleDB@23@A DB 030H DUP (?) ; `TechnicalServices::Persistence::PersistenceHandler::instance'::`2'::instance
+?instance@?1??0PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4VSimpleDB@23@A DB 050H DUP (?) ; `TechnicalServices::Persistence::PersistenceHandler::instance'::`2'::instance
 ?$TSS0@?1??instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV234@XZ@4HA DD 01H DUP (?) ; `TechnicalServices::Persistence::PersistenceHandler::instance'::`2'::$TSS0
 _BSS	ENDS
 ;	COMDAT pdata
@@ -195,7 +195,6 @@ rdata$r	ENDS
 ;	COMDAT ??_7PersistenceHandler@Persistence@TechnicalServices@@6B@
 CONST	SEGMENT
 ??_7PersistenceHandler@Persistence@TechnicalServices@@6B@ DQ FLAT:??_R4PersistenceHandler@Persistence@TechnicalServices@@6B@ ; TechnicalServices::Persistence::PersistenceHandler::`vftable'
-	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
@@ -409,7 +408,7 @@ $LN3:
 ?__autoclassinit2@SimpleDB@Persistence@TechnicalServices@@QEAAX_K@Z ENDP ; TechnicalServices::Persistence::SimpleDB::__autoclassinit2
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ??1PersistenceHandler@Persistence@TechnicalServices@@UEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -428,7 +427,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__104D1753_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__F48A3EE8_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7PersistenceHandler@Persistence@TechnicalServices@@6B@
@@ -440,7 +439,7 @@ $LN3:
 ??1PersistenceHandler@Persistence@TechnicalServices@@UEAA@XZ ENDP ; TechnicalServices::Persistence::PersistenceHandler::~PersistenceHandler
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ
 _TEXT	SEGMENT
 ?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ PROC ; TechnicalServices::Persistence::PersistenceHandler::instance, COMDAT
@@ -456,7 +455,7 @@ $LN5:
 	mov	ecx, 58					; 0000003aH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__104D1753_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__F48A3EE8_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 13   :     // Can't read the DB component preference from the database because the DB has not yet been created. So choosing the database
@@ -478,7 +477,7 @@ $LN5:
 	call	_Init_thread_header
 	cmp	DWORD PTR ?$TSS0@?1??instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV234@XZ@4HA, -1
 	jne	SHORT $LN2@instance
-	mov	edx, 48					; 00000030H
+	mov	edx, 80					; 00000050H
 	lea	rcx, OFFSET FLAT:?instance@?1??0PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4VSimpleDB@23@A
 	call	?__autoclassinit2@SimpleDB@Persistence@TechnicalServices@@QEAAX_K@Z
 	lea	rcx, OFFSET FLAT:?instance@?1??0PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4VSimpleDB@23@A
@@ -544,7 +543,7 @@ text$x	SEGMENT
 ?dtor$0@?0??instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4HA ENDP ; `TechnicalServices::Persistence::PersistenceHandler::instance'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -565,7 +564,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__104D1753_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__F48A3EE8_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -575,7 +574,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -594,7 +593,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__104D1753_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__F48A3EE8_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -604,7 +603,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -623,7 +622,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__104D1753_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__F48A3EE8_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -633,7 +632,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -650,7 +649,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__104D1753_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__F48A3EE8_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
