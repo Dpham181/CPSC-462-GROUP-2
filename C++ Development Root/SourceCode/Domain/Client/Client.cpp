@@ -1,4 +1,4 @@
-#include "Domain/Client/Client.hpp"
+#include "domain/client/client.hpp"
 
 #include <string>
 #include <any>
@@ -6,42 +6,42 @@
 
 namespace  // anonymous (private) working area
 {
-  auto & persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+  auto & persistentdata = technicalservices::persistence::persistencehandler::instance();
 
   
-  #define STUBCLIENT(functionName)  std::any functionName( Domain::Client::Clientsection & /*session*/, const std::vector<std::string> & /*args*/ ) \
-                              { return {}; }  // Stubbed for now
-  //STUB( bugPeople    )
-  //STUB( collectFines )
-  //STUB( help         )
-  //STUB( openArchives )
-  //STUB( payFines     )
-  //STUB( resetAccount )
-  //STUB( returnBook   )
-  //STUB( shutdown     )
+  #define stubclient(functionname)  std::any functionname( domain::client::clientsection & /*session*/, const std::vector<std::string> & /*args*/ ) \
+                              { return {}; }  // stubbed for now
+  stub( bugpeople    )
+  stub( collectfines )
+  stub( help         )
+  stub( openarchives )
+  stub( payfines     )
+  stub( resetaccount )
+  stub( returnbook   )
+  stub( shutdown     )
 
 
 
-  std::any checkoutBook( Domain::Session::SessionBase & session, const std::vector<std::string> & args )
+  std::any checkoutbook( domain::session::sessionbase & session, const std::vector<std::string> & args )
   {
-    // TO-DO  Verify there is such a book and the mark the book as being checked out by user
-    std::string results = "Title \"" + args[0] + "\" checkout by \"" + session._credentials.userName + '"';
-    session._logger << "checkoutBook:  " + results;
+     to-do  verify there is such a book and the mark the book as being checked out by user
+    std::string results = "title \"" + args[0] + "\" checkout by \"" + session._credentials.username + '"';
+    session._logger << "checkoutbook:  " + results;
     return results;
   }
-  std::any ShowAllClients(Domain::Session::SessionBase& session, const std::vector<std::string>& args)
+  std::any showallclients(domain::session::sessionbase& session, const std::vector<std::string>& args)
   {
       std::string results = "done";
       return results;
   }
-  std::any addNewClient(Domain::Session::SessionBase& session, const std::vector<std::string>& args)
+  std::any addnewclient(domain::session::sessionbase& session, const std::vector<std::string>& args)
   {
-      // TO-DO  Verify there is such a book and the mark the book as being checked out by user
+       to-do  verify there is such a book and the mark the book as being checked out by user
       std::string results = args[0];
-      std::string username = session._credentials.userName;
-      TechnicalServices::Persistence::Client NewClient = persistentData.GenerateClientId(username);
+      std::string username = session._credentials.username;
+      technicalservices::persistence::client newclient = persistentdata.generateclientid(username);
 
-      session._logger << "Client Id Already Generated: " + args[0] + "By" + username;
+      session._logger << "client id already generated: " + args[0] + "by" + username;
       
       return results;
   }
@@ -58,59 +58,59 @@ namespace  // anonymous (private) working area
 
 
 
-namespace Domain::Client
+namespace domain::client
 {
-    Clientsection::Clientsection( const std::string & description, const Client & client ) : _ClientID( clie ), _name( description )
+    clientsection::clientsection( const std::string & description, const client & client ) : _clientid( clie ), _name( description )
   {
-    _logger << "Session \"" + _name + "\" being used and has been successfully initialized";
+    _logger << "session \"" + _name + "\" being used and has been successfully initialized";
   }
 
 
  
 
-  SessionBase::~SessionBase() noexcept
+  sessionbase::~sessionbase() noexcept
   {
-    _logger << "Session \"" + _name + "\" shutdown successfully";
+    _logger << "session \"" + _name + "\" shutdown successfully";
   }
 
 
 
 
-  std::vector<std::string> SessionBase::getCommands()
+  std::vector<std::string> sessionbase::getcommands()
   {
-    std::vector<std::string> availableCommands;
-    availableCommands.reserve( _commandDispatch.size() );
+    std::vector<std::string> availablecommands;
+    availablecommands.reserve( _commanddispatch.size() );
 
-    for( const auto & [command, function] : _commandDispatch ) availableCommands.emplace_back( command );
+    for( const auto & [command, function] : _commanddispatch ) availablecommands.emplace_back( command );
 
-    return availableCommands;
+    return availablecommands;
   }
 
 
 
 
-  std::any SessionBase::executeCommand( const std::string & command, const std::vector<std::string> & args )
+  std::any sessionbase::executecommand( const std::string & command, const std::vector<std::string> & args )
   {
     std::string parameters;
     for( const auto & arg : args )  parameters += '"' + arg + "\"  ";
-    _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+    _logger << "responding to \"" + command + "\" request with parameters: " + parameters;
 
-    auto it = _commandDispatch.find( command );
-    if( it == _commandDispatch.end() )
+    auto it = _commanddispatch.find( command );
+    if( it == _commanddispatch.end() )
     {
       std::string message = __func__;
       message += " attempt to execute \"" + command + "\" failed, no such command";
 
       _logger << message;
-      throw BadCommand( message );
+      throw badcommand( message );
     }
 
     auto results = it->second( *this, args);
 
     if( results.has_value() )
     {
-      // The type of result depends on function called.  Let's assume strings for now ...
-      _logger << "Responding with: \"" + std::any_cast<const std::string &>( results ) + '"';
+       the type of result depends on function called.  let's assume strings for now ...
+      _logger << "responding with: \"" + std::any_cast<const std::string &>( results ) + '"';
     }
 
     return results;
@@ -118,59 +118,59 @@ namespace Domain::Client
 
 
 
-  // 2) Now map the above system events to roles authorized to make such a request.  Many roles can request the same event, and many
-  //    events can be requested by a single role.
-  ITAdministratorSession::ITAdministratorSession( const UserCredentials & credentials ) : SessionBase( "IT Admin", credentials )
+   2) now map the above system events to roles authorized to make such a request.  many roles can request the same event, and many
+      events can be requested by a single role.
+  itadministratorsession::itadministratorsession( const usercredentials & credentials ) : sessionbase( "it admin", credentials )
   {
-    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"IT Admin\".";
+    _logger << "login successful for \"" + credentials.username + "\" as role \"it admin\".";
 
-    _commandDispatch = { {"Add New Account",   addNewAccount },
-                         {"Back-up Database",   backupDB }//,
-                         //{"Shutdown System", shutdown    } 
+    _commanddispatch = { {"add new account",   addnewaccount },
+                         {"back-up database",   backupdb }//,
+                         {"shutdown system", shutdown    } 
     };
   }
 
 
 
 
-  AssistantSession::AssistantSession( const UserCredentials & credentials ) : SessionBase( "Assistant", credentials )
+  assistantsession::assistantsession( const usercredentials & credentials ) : sessionbase( "assistant", credentials )
   {
-    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Assistant\".";
+    _logger << "login successful for \"" + credentials.username + "\" as role \"assistant\".";
 
-    _commandDispatch = {
-                         { "Show All Clients", ShowAllClients },
-                        {"Add New Client", addNewClient},
-                         {"Modify Client",          modifyClient        },
-                         {"Ask IT for Help",     askHelp    },
-                         {"Schedule Event",   scheduleEvent  },
-                         { "Attach Client Document", attachClientDocument },
-                         { "Invite Client", inviteClient }//,
+    _commanddispatch = {
+                         { "show all clients", showallclients },
+                        {"add new client", addnewclient},
+                         {"modify client",          modifyclient        },
+                         {"ask it for help",     askhelp    },
+                         {"schedule event",   scheduleevent  },
+                         { "attach client document", attachclientdocument },
+                         { "invite client", inviteclient }//,
     };
   }
 
 
 
 
-  SalespersonSession::SalespersonSession( const UserCredentials & credentials ) : SessionBase( "Salesperson", credentials )
+  salespersonsession::salespersonsession( const usercredentials & credentials ) : sessionbase( "salesperson", credentials )
   {
-    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Salesperson\".";
+    _logger << "login successful for \"" + credentials.username + "\" as role \"salesperson\".";
 
-    _commandDispatch = { {"Make Sale", makeSale}//,
-                         //{"Collect Fines", collectFines},
-                         //{"Help",          help        },
-                         //{"Open Archives", openArchives} 
+    _commanddispatch = { {"make sale", makesale}//,
+                         {"collect fines", collectfines},
+                         {"help",          help        },
+                         {"open archives", openarchives} 
     };
   }
 
 
 
 
-  SalesManagerSession::SalesManagerSession( const UserCredentials & credentials ) : SessionBase( "Sales Manager", credentials )
+  salesmanagersession::salesmanagersession( const usercredentials & credentials ) : sessionbase( "sales manager", credentials )
   {
-    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Sales Manager\".";
+    _logger << "login successful for \"" + credentials.username + "\" as role \"sales manager\".";
 
-    _commandDispatch = { {"Manage Subscription", manageSubscription}//,
-                         //{"Help",       help} 
+    _commanddispatch = { {"manage subscription", managesubscription}//,
+                         {"help",       help} 
     };
   }
-}    // namespace Domain::Session
+}    // namespace domain::session

@@ -12,8 +12,7 @@ namespace  // anonymous (private) working area
   // 1)  First define all system events (commands, actions, requests, etc.)
   #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
-  #define STUBCLIENT(functionName)  std::any functionName( Domain::Client::Clientsection & /*session*/, const std::vector<std::string> & /*args*/ ) \
-                              { return {}; }  // Stubbed for now
+   
   //STUB( bugPeople    )
   //STUB( collectFines )
   //STUB( help         )
@@ -22,9 +21,9 @@ namespace  // anonymous (private) working area
   //STUB( resetAccount )
   //STUB( returnBook   )
   //STUB( shutdown     )
-
+ 
     // Assistant actions
-  //STUB(ShowAllClients )
+  STUB(ShowAllClients )
   STUB( modifyClient)
   STUB( askHelp )
   STUB( scheduleEvent )
@@ -54,29 +53,70 @@ namespace  // anonymous (private) working area
     session._logger << "checkoutBook:  " + results;
     return results;
   }
-  std::any ShowAllClients(Domain::Session::SessionBase& session, const std::vector<std::string>& args)
-  {
-      std::string results = "done";
-      return results;
-  }
-  std::any addNewClient(Domain::Session::SessionBase& session, const std::vector<std::string>& args)
-  {
-      // TO-DO  Verify there is such a book and the mark the book as being checked out by user
-      std::string results = args[0];
-      std::string username = session._credentials.userName;
-      TechnicalServices::Persistence::Client NewClient = persistentData.GenerateClientId(username);
+  std::any addNewClient(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
+      return "test";
 
-      session._logger << "Client Id Already Generated: " + args[0] + "By" + username;
-      
-      return results;
   }
+  
 
   
 }    // anonymous (private) working area
 
 
 
-
+//namespace domain::client
+//{
+//    clientsection::clientsection(const std::string& description, const client& client) : _client(client), _name(description)
+//    {
+//        _logger << "session \"" + _name + "\" being used and has been successfully initialized";
+//    }
+//    
+//    std::vector<std::string> clientsection::getcommands()
+//    {
+//        std::vector<std::string> availablecommands;
+//        availablecommands.reserve(_commanddispatch.size());
+//
+//        for (const auto& [command, function] : _commanddispatch) availablecommands.emplace_back(command);
+//
+//        return availablecommands;
+//    }
+//
+//
+//
+//
+//   client clientsection::executecommand(const std::string& command, const std::vector<std::string>& args)
+//    {
+//       client newclient;
+//        std::string parameters;
+//        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+//        _logger << "responding to \"" + command + "\" request with parameters: " + parameters;
+//
+//        auto it = _commanddispatch.find(command);
+//        if (it == _commanddispatch.end())
+//        {
+//            std::string message = __func__;
+//            message += " attempt to execute \"" + command + "\" failed, no such command";
+//
+//            _logger << message;
+//            throw badcommand(message);
+//        }
+//
+//       auto results = it->second(*this, args);
+//
+//        if (results.has_value())
+//        {
+//         newclient = { args[0],std::atoi(args[1].c_str()) };
+//             
+//            _logger << "responding with: \"" + std::any_cast<const std::string&>(results) + '"';
+//        }
+//
+//        return newclient;
+//    }
+//
+//  
+//
+//
+//}
 
 
 

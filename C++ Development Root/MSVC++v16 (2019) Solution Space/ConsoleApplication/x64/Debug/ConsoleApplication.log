@@ -1,7 +1,4 @@
-﻿  SimpleDB.cpp
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp(95,62): warning C4100: 'c': unreferenced formal parameter
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp(102,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  SimpleUI.cpp
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(166,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(59,38): warning C4189: 'selectedRole': local variable is initialized but not referenced
-  ConsoleApplication.vcxproj -> C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe
+﻿  SimpleUI.cpp
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(150,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(64,38): warning C4189: 'selectedRole': local variable is initialized but not referenced
+  ConsoleApplication.vcxproj -> C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe

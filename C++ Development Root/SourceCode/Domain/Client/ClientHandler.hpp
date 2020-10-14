@@ -19,12 +19,11 @@ namespace Domain::Client
       struct   NoSuchProperty     : ClientException {using ClientException::ClientException;};
 
       // object return user with creator 
-      static std::unique_ptr<ClientHandler> createClient( const Client & client );
+     static std::unique_ptr<ClientHandler> createClient( const Client & client );
 
 
       // 
-       virtual std::vector<std::string> getCommands()                                                                        = 0;    // retrieves the list of actions (commands)
-      virtual std::any                 executeCommand( const std::string & command, const std::vector<std::string> & args ) = 0;    // Throws BadCommand
+      virtual Client                 GetbackClient( const Client& client) = 0;   
 
   
       // Operations

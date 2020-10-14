@@ -56,10 +56,8 @@ namespace TechnicalServices::Persistence
       
       // client operations
       
-       virtual Client                      GenerateClientId( const std::string & User_name )       = 0;
-      //virtual ClientProfile addClientInformation(int clientID, std::string client_name, std::string DOB, int income, int phone) = 0;
-        virtual std::vector<Client> ShowAllClient(const Client &c ) = 0;
-      //virtual ClientProfile SearchforClientinfor( int ClientID )=0;
+     
+       virtual std::vector<Client> ShowAllClients() = 0;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair
