@@ -46,6 +46,9 @@
     <ClInclude Include="..\..\SourceCode\UI\SystemDriverUI.hpp" />
     <ClInclude Include="..\..\SourceCode\UI\UserInterfaceHandler.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\SourceCode\Library_System_AdaptableData.dat" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{DE35C98A-D9E8-4D54-A963-49312CCD2D63}</ProjectGuid>

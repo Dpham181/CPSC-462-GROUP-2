@@ -143,7 +143,6 @@ namespace UI
       else if (selectedCommand == "Show All Clients")
 
       {
-        std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClient({});
           std::vector<std::string> parameters(1);
 
        auto results = sessionControl->executeCommand(selectedCommand, parameters);

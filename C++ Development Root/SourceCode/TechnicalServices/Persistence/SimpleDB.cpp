@@ -92,7 +92,7 @@ namespace TechnicalServices::Persistence
   }
 
 
-   std::vector<Client> SimpleDB::ShowAllClient()
+   std::vector<Client> SimpleDB::ShowAllClient(const Client &c)
   {
       
      return { { "A", 1 }, { "B", 2 } };

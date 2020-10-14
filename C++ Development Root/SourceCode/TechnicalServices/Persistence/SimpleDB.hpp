@@ -41,6 +41,7 @@ namespace TechnicalServices::Persistence
       ~SimpleDB() noexcept override;
 
     private:
+        std::vector<Client> ClientDB;
       std::unique_ptr<TechnicalServices::Logging::LoggerHandler> _loggerPtr;
 
       // convenience reference object enabling standard insertion syntax

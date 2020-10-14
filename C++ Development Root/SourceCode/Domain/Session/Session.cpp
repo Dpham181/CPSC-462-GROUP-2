@@ -1,4 +1,5 @@
 #include "Domain/Session/Session.hpp"
+#include "Domain/Client/Client.hpp"
 
 #include <string>
 #include <any>
@@ -11,7 +12,8 @@ namespace  // anonymous (private) working area
   // 1)  First define all system events (commands, actions, requests, etc.)
   #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
-
+  #define STUBCLIENT(functionName)  std::any functionName( Domain::Client::Clientsection & /*session*/, const std::vector<std::string> & /*args*/ ) \
+                              { return {}; }  // Stubbed for now
   //STUB( bugPeople    )
   //STUB( collectFines )
   //STUB( help         )
@@ -62,7 +64,8 @@ namespace  // anonymous (private) working area
       // TO-DO  Verify there is such a book and the mark the book as being checked out by user
       std::string results = args[0];
       std::string username = session._credentials.userName;
-     std::vector<TechnicalServices::Persistence::Client> test = persistentData.ShowAllClient(persistentData.GenerateClientId(username));
+      TechnicalServices::Persistence::Client NewClient = persistentData.GenerateClientId(username);
+
       session._logger << "Client Id Already Generated: " + args[0] + "By" + username;
       
       return results;
@@ -70,8 +73,6 @@ namespace  // anonymous (private) working area
 
   
 }    // anonymous (private) working area
-
-
 
 
 

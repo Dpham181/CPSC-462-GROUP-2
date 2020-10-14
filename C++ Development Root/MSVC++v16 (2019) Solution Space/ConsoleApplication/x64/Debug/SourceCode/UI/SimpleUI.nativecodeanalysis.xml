@@ -1,24 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DEFECTS>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
-      <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>146</LINE>
-      <COLUMN>60</COLUMN>
-    </SFA>
-    <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'ClientsFromDB' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '55' of 'c:\users\danhp\onedrive\documents\github\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
-    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
-    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
-    <FUNCLINE>50</FUNCLINE>
-    <PATH>
-      <SFA>
-        <FILEPATH>C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
-        <FILENAME>SimpleUI.cpp</FILENAME>
-        <LINE>55</LINE>
-        <COLUMN>56</COLUMN>
-      </SFA>
-    </PATH>
-  </DEFECT>
-</DEFECTS>
+<DEFECTS></DEFECTS>
