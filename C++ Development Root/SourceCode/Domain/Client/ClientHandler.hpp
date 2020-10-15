@@ -12,7 +12,7 @@ namespace Domain::Client
     using TechnicalServices::Persistence::Client; 
     using TechnicalServices::Persistence::Clientprofile;
 
-  // Library Package within the Domain Layer Abstract class
+  // Client Package within the Domain Layer Abstract class
   class ClientHandler
   {
     public:
@@ -27,6 +27,7 @@ namespace Domain::Client
       // 
 
      virtual std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) =0;
+     virtual std::vector<Clientprofile>          ClientsPDB(const std::vector<Clientprofile>& ClientsPDB) = 0;
 
      virtual std::vector<Client>                 addClient(const Client& Client) =0;
      virtual Clientprofile                       UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) = 0;

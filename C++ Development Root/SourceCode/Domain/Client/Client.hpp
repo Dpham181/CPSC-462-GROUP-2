@@ -12,31 +12,31 @@ namespace Domain::Client
     public:
         
         ClientDomain(const std::string& description, const Client& Client);
-        //ClientDomain(const std::string username, const int ID);  // inherit constructors
 
 
       // Operations
       virtual std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) override;
+      virtual std::vector<Clientprofile>          ClientsPDB(const std::vector<Clientprofile>& ClientsPDB) override;
 
       virtual std::vector<Client>                 addClient(const Client &Client  ) override;
       virtual Clientprofile                       UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) override ;
 
       ~ClientDomain() noexcept override = 0 ;
   protected:
-  public:  // Dispatched functions need access to these attributes, so for now make these public instead of protected
-    // Types
+  public:  
       friend class Policy;
 
       // Instance Attributes
       std::unique_ptr<TechnicalServices::Logging::LoggerHandler> _loggerPtr = TechnicalServices::Logging::LoggerHandler::create();
       TechnicalServices::Logging::LoggerHandler& _logger = *_loggerPtr;
       std::vector<Client>                               _UpdatedDB;
+      std::vector<Clientprofile>                        _UpdatedprofileDB;
+      std::string     const                             _name = "Undefined";
       Client const                                      _Client;
-      std::string     const                                      _name = "Undefined";
       Clientprofile                                     _Clientprofile;
   private:
       
-  }; // class Books
+  }; // class Client
 
 
   /*****************************************************************************
@@ -51,4 +51,4 @@ namespace Domain::Client
 
  
 
-}  // namespace Domain::Library
+}  // namespace Domain::Client

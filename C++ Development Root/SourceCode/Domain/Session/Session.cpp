@@ -82,17 +82,22 @@ namespace Domain::Client
     {
         _logger << "Session \"" + _name + "\" being used and has been successfully initialized";
     }
-
+    // get updating the static data of Client and Client Profile
     std::vector<Client> ClientDomain::ClientsDB(const std::vector<Client>& ClientsDB) {
         _UpdatedDB = ClientsDB;
 
         return _UpdatedDB;
     }
+    std::vector<Clientprofile> ClientDomain::ClientsPDB(const std::vector<Clientprofile>& ClientprofileDB) {
+        _UpdatedprofileDB = ClientprofileDB;
 
+        return _UpdatedprofileDB;
+    }
 
+    // ADDING NEW CLIENT TO THE MEMORY DATABASE 
     std::vector<Client> ClientDomain::addClient(const Client& Client) {
-        _UpdatedDB.push_back(Client);
-
+        _UpdatedDB.push_back(Client); // add new client to list of static client 
+        // generating the result in updating table 
         line();
         std::cout << std::setw(49) << "List Of Clients Updated Table\n";
         line();
@@ -104,7 +109,7 @@ namespace Domain::Client
         line();
         return  _UpdatedDB;
     }
-
+    // Updating the Client profile
     Clientprofile ClientDomain::UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) {
         Clientprofile newcp = { "", 0, "", 0, 0 };
         newcp.client_id = ClientID;
@@ -119,7 +124,7 @@ namespace Domain::Client
     }
 
 
-    ClientSession::ClientSession(const Client& Client) : ClientDomain("Client Genarated", Client)
+    ClientSession::ClientSession(const Client& Client) : ClientDomain("Client ID Genarated", Client)
     {
         _logger << " Client ID: \"" + std::to_string(Client.clientid) ;
 
