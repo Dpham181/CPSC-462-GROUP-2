@@ -2,6 +2,7 @@
 #include <string>
 
 #include "Domain/Client/ClientHandler.hpp"
+#include "TechnicalServices/Logging/LoggerHandler.hpp"
 
 namespace Domain::Client
 {
@@ -9,18 +10,29 @@ namespace Domain::Client
   class ClientDomain : public ClientHandler
   {
     public:
-        // object return user with creator 
-        static std::unique_ptr<ClientHandler> createClient(const Client& client);
-
-        //using ClientHandler::ClientHandler;
+        
+        ClientDomain(const std::string& description, const Client& Client);
         //ClientDomain(const std::string username, const int ID);  // inherit constructors
-      // Operations
 
-      //virtual Client                 GetbackClient(const std::string username, const int ID) override;
+
+      // Operations
+      virtual std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) override;
+
+      virtual std::vector<Client>                 addClient(const Client &Client  ) override;
 
 
       ~ClientDomain() noexcept override = 0 ;
+  protected:
+  public:  // Dispatched functions need access to these attributes, so for now make these public instead of protected
+    // Types
+      friend class Policy;
 
+      // Instance Attributes
+      std::unique_ptr<TechnicalServices::Logging::LoggerHandler> _loggerPtr = TechnicalServices::Logging::LoggerHandler::create();
+      TechnicalServices::Logging::LoggerHandler& _logger = *_loggerPtr;
+      std::vector<Client>                               _UpdatedDB;
+      Client const                                      _Client;
+      std::string     const                                      _name = "Undefined";
   
   }; // class Books
 
@@ -30,7 +42,10 @@ namespace Domain::Client
   ******************************************************************************/
   inline ClientDomain::~ClientDomain() noexcept
   {
+      _logger << "Session \"" + _name + "\" shutdown successfully";
+
   }
+  struct ClientSession : ClientDomain { ClientSession(const Client& Client); };
 
  
 

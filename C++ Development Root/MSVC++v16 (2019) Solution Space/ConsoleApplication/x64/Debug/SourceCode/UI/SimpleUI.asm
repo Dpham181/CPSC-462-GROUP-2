@@ -6,15 +6,15 @@ INCLUDELIB MSVCRTD
 INCLUDELIB OLDNAMES
 
 msvcjmc	SEGMENT
-__FC8B975D_vcruntime_new@h DB 01H
-__F4CA4DDB_cstddef DB 01H
+__8906660C_vcruntime_new@h DB 01H
+__5DDA4519_cstddef DB 01H
 __09340588_corecrt_math@h DB 01H
 __24E9E95F_stdlib@h DB 01H
-__51019776_cstdlib DB 01H
-__B236D4B0_type_traits DB 01H
+__F8119FB4_cstdlib DB 01H
+__85A9AA98_type_traits DB 01H
 __B0C4CEA9_malloc@h DB 01H
-__18D87206_vcruntime_exception@h DB 01H
-__1302BCB8_exception DB 01H
+__E75714E4_vcruntime_exception@h DB 01H
+__E4152856_exception DB 01H
 __F66CEB67_corecrt_stdio_config@h DB 01H
 __101834BA_corecrt_wstdio@h DB 01H
 __AD6A91B7_stdio@h DB 01H
@@ -27,50 +27,50 @@ __4442441F_corecrt_wio@h DB 01H
 __45F4AF76_corecrt_wtime@h DB 01H
 __186FF47F_stat@h DB 01H
 __534C724A_wchar@h DB 01H
-__7B3ADE64_vcruntime_typeinfo@h DB 01H
-__4638863E_typeinfo DB 01H
-__5E219BC0_limits DB 01H
-__36E77527_xutility DB 01H
-__0C99713E_xmemory DB 01H
-__E28F974E_memory DB 01H
-__E2683516_MaintainBooksHandler@hpp DB 01H
-__B6041EFB_tuple DB 01H
-__04937CFC_xpolymorphic_allocator@h DB 01H
-__784AF7A2_xstring DB 01H
+__FB364CBD_vcruntime_typeinfo@h DB 01H
+__33FB35AA_typeinfo DB 01H
+__F2870A2C_limits DB 01H
+__4324C6B3_xutility DB 01H
+__A58979FC_xmemory DB 01H
+__4E2906A2_memory DB 01H
+__CE5CDAB6_MaintainBooksHandler@hpp DB 01H
+__AC6CB2D0_tuple DB 01H
+__E0552A5D_xpolymorphic_allocator@h DB 01H
+__D15AFF60_xstring DB 01H
 __7242C389_ctype@h DB 01H
-__965C11D2_string DB 01H
-__9A4C86E5_stdexcept DB 01H
-__190EFBB8_xtree DB 01H
-__24DC9795_any DB 01H
-__102707BA_cmath DB 01H
-__238A5427_xcall_once@h DB 01H
-__3514C702_atomic DB 01H
-__9CD74607_system_error DB 01H
-__CECAC041_xfacet DB 01H
-__59B165F6_xlocinfo DB 01H
-__A7748393_xlocale DB 01H
-__605412E5_xiosbase DB 01H
-__39F3E584_xlocnum DB 01H
-__D3011E72_ios DB 01H
-__9705A642_LoggerHandler@hpp DB 01H
-__1291F0BC_xlocmon DB 01H
+__3AFA803E_string DB 01H
+__6D5B120B_stdexcept DB 01H
+__03665793_xtree DB 01H
+__E181AB2C_any DB 01H
+__0A4FAB91_cmath DB 01H
+__160863A3_xcall_once@h DB 01H
+__99B256EE_atomic DB 01H
+__A9557183_system_error DB 01H
+__626C51AD_xfacet DB 01H
+__2C72D662_xlocinfo DB 01H
+__0E648B51_xlocale DB 01H
+__1597A171_xiosbase DB 01H
+__90E3ED46_xlocnum DB 01H
+__165C22CB_ios DB 01H
+__F122B7CE_LoggerHandler@hpp DB 01H
+__BB81F87E_xlocmon DB 01H
 __8AA3BE86_time@h DB 01H
-__FDACCCE4_xloctime DB 01H
-__61C295FB_Books@hpp DB 01H
-__23708014_Client@hpp DB 01H
-__BEAA83ED_SimpleUI@hpp DB 01H
-__B2FF6C0C_SimpleUI@cpp DB 01H
-__5F9BC604_initializer_list DB 01H
-__138CEB20_vector DB 01H
-__D7B46C6D_istream DB 01H
-__B4645957_ostream DB 01H
-__98EC3E59_streambuf DB 01H
-__274BC267_iterator DB 01H
-__92C84E46_iosfwd DB 01H
-__660C12FD_utility DB 01H
-__911385EF_xstddef DB 01H
-__190E306E_xatomic@h DB 01H
-__2B76AA3F_iomanip DB 01H
+__886F7F70_xloctime DB 01H
+__9C6B3FD2_Books@hpp DB 01H
+__DED92A3D_Client@hpp DB 01H
+__B6F11F44_SimpleUI@hpp DB 01H
+__BAA4F0A5_SimpleUI@cpp DB 01H
+__43822A97_initializer_list DB 01H
+__BF2A7ACC_vector DB 01H
+__7EA464AF_istream DB 01H
+__1D745195_ostream DB 01H
+__6FFBAAB7_streambuf DB 01H
+__528871F3_iterator DB 01H
+__3E6EDFAA_iosfwd DB 01H
+__CF1C1A3F_utility DB 01H
+__38038D2D_xstddef DB 01H
+__EE19A480_xatomic@h DB 01H
+__8266A2FD_iomanip DB 01H
 msvcjmc	ENDS
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
@@ -196,8 +196,6 @@ PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_trai
 PUBLIC	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::__autoclassinit2
 PUBLIC	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ ; TechnicalServices::Persistence::UserCredentials::~UserCredentials
 PUBLIC	??1Client@Persistence@TechnicalServices@@QEAA@XZ ; TechnicalServices::Persistence::Client::~Client
-PUBLIC	??0Client@Persistence@TechnicalServices@@QEAA@AEBU012@@Z ; TechnicalServices::Persistence::Client::Client
-PUBLIC	??0Client@Persistence@TechnicalServices@@QEAA@$$QEAU012@@Z ; TechnicalServices::Persistence::Client::Client
 PUBLIC	??4Client@Persistence@TechnicalServices@@QEAAAEAU012@$$QEAU012@@Z ; TechnicalServices::Persistence::Client::operator=
 PUBLIC	??_GClient@Persistence@TechnicalServices@@QEAAPEAXI@Z ; TechnicalServices::Persistence::Client::`scalar deleting destructor'
 PUBLIC	?what@bad_any_cast@std@@UEBAPEBDXZ		; std::bad_any_cast::what
@@ -232,34 +230,24 @@ PUBLIC	?_Get_first@?$_Compressed_pair@U?$default_delete@VLoggerHandler@Logging@T
 PUBLIC	??_GSimpleUI@UI@@UEAAPEAXI@Z			; UI::SimpleUI::`scalar deleting destructor'
 PUBLIC	??$_Getvals@_W@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@IEAAX_WAEBV_Locinfo@1@@Z ; std::time_get<char,std::istreambuf_iterator<char,std::char_traits<char> > >::_Getvals<wchar_t>
 PUBLIC	??$_Getvals@_W@?$time_get@_WV?$istreambuf_iterator@_WU?$char_traits@_W@std@@@std@@@std@@IEAAX_WAEBV_Locinfo@1@@Z ; std::time_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t> > >::_Getvals<wchar_t>
+PUBLIC	?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
+PUBLIC	?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Move_assign
+PUBLIC	??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::operator=
+PUBLIC	??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
+PUBLIC	?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_begin
+PUBLIC	?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_end
+PUBLIC	?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size
+PUBLIC	?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
+PUBLIC	?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy
+PUBLIC	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
+PUBLIC	?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z ; std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >::_Take_contents
+PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
+PUBLIC	?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2
+PUBLIC	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 PUBLIC	??$?0U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@$0A@@?$unique_ptr@VMaintainBooksHandler@Library@Domain@@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Library::MaintainBooksHandler,std::default_delete<Domain::Library::MaintainBooksHandler> >::unique_ptr<Domain::Library::MaintainBooksHandler,std::default_delete<Domain::Library::MaintainBooksHandler> ><std::default_delete<Domain::Library::MaintainBooksHandler>,0>
 PUBLIC	?line@UI@@YAXXZ					; UI::line
 PUBLIC	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 PUBLIC	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z ; std::operator<<<std::char_traits<char> >
-PUBLIC	?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
-PUBLIC	?allocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::allocate
-PUBLIC	?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::max_size
-PUBLIC	??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
-PUBLIC	?push_back@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEBUClient@Persistence@TechnicalServices@@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::push_back
-PUBLIC	?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_begin
-PUBLIC	?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_end
-PUBLIC	?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size
-PUBLIC	?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::max_size
-PUBLIC	?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::capacity
-PUBLIC	?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove
-PUBLIC	?_Umove_if_noexcept1@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00U?$integral_constant@_N$00@2@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove_if_noexcept1
-PUBLIC	?_Umove_if_noexcept@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove_if_noexcept
-PUBLIC	?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
-PUBLIC	?_Calculate_growth@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Calculate_growth
-PUBLIC	?_Change_array@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXQEAUClient@Persistence@TechnicalServices@@_K1@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Change_array
-PUBLIC	?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy
-PUBLIC	?_Xlength@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@CAXXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Xlength
-PUBLIC	?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Orphan_range
-PUBLIC	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-PUBLIC	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
-PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
-PUBLIC	?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2
 PUBLIC	??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 PUBLIC	?begin@?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::begin
 PUBLIC	?end@?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::end
@@ -277,7 +265,6 @@ PUBLIC	??$?4U?$default_delete@VSessionHandler@Session@Domain@@@std@@$0A@@?$uniqu
 PUBLIC	??$?9VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@0@$$T@Z ; std::operator!=<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 PUBLIC	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
 PUBLIC	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
-PUBLIC	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 PUBLIC	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 PUBLIC	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 PUBLIC	??$ws@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@@Z ; std::ws<char,std::char_traits<char> >
@@ -285,6 +272,7 @@ PUBLIC	??$any_cast@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@s
 PUBLIC	??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z ; std::endl<char,std::char_traits<char> >
 PUBLIC	??R?$default_delete@VClientHandler@Client@Domain@@@std@@QEBAXPEAVClientHandler@Client@Domain@@@Z ; std::default_delete<Domain::Client::ClientHandler>::operator()
 PUBLIC	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
+PUBLIC	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
 PUBLIC	??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBA_NXZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator bool
 PUBLIC	?release@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::release
 PUBLIC	?reset@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAXPEAVClientHandler@Client@Domain@@@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::reset
@@ -292,17 +280,12 @@ PUBLIC	?_Get_first@?$_Compressed_pair@U?$default_delete@VClientHandler@Client@Do
 PUBLIC	?__autoclassinit2@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAX_K@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::__autoclassinit2
 PUBLIC	??$?0U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> ><std::default_delete<Domain::Client::ClientHandler>,0>
 PUBLIC	??$?4U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator=<std::default_delete<Domain::Client::ClientHandler>,0>
-PUBLIC	??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
-PUBLIC	??$emplace_back@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@AEBUClient@Persistence@TechnicalServices@@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::emplace_back<TechnicalServices::Persistence::Client const &>
-PUBLIC	??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z ; std::forward<TechnicalServices::Persistence::Client const &>
-PUBLIC	??$_Emplace_back_with_unused_capacity@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAA@AEBUClient@Persistence@TechnicalServices@@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back_with_unused_capacity<TechnicalServices::Persistence::Client const &>
-PUBLIC	??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z ; std::_Unfancy<TechnicalServices::Persistence::Client>
-PUBLIC	??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client const &>
-PUBLIC	??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_reallocate<TechnicalServices::Persistence::Client const &>
+PUBLIC	??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ; std::operator!=<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 PUBLIC	?allocate@?$allocator@U_Container_proxy@std@@@std@@QEAAPEAU_Container_proxy@2@_K@Z ; std::allocator<std::_Container_proxy>::allocate
 PUBLIC	??$?0UClient@Persistence@TechnicalServices@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><TechnicalServices::Persistence::Client>
 PUBLIC	??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ; std::exchange<std::_Container_proxy *,std::nullptr_t>
 PUBLIC	??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ; std::_Delete_plain_internal<std::allocator<std::_Container_proxy> >
+PUBLIC	??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z ; std::addressof<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > >
 PUBLIC	??0_Sentry_base@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z ; std::basic_istream<char,std::char_traits<char> >::_Sentry_base::_Sentry_base
 PUBLIC	??1_Sentry_base@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@XZ ; std::basic_istream<char,std::char_traits<char> >::_Sentry_base::~_Sentry_base
 PUBLIC	??0sentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@_N@Z ; std::basic_istream<char,std::char_traits<char> >::sentry::sentry
@@ -330,6 +313,7 @@ PUBLIC	??$move@AEAV?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z ; 
 PUBLIC	??$?0V?$allocator@D@std@@$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@$$QEAV?$allocator@D@1@@Z ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1><std::allocator<char> >
 PUBLIC	??$?0$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1><>
 PUBLIC	??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z ; std::_Unfancy<std::_Container_proxy>
+PUBLIC	??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z ; std::_Pocma<std::allocator<TechnicalServices::Persistence::Client> >
 PUBLIC	??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z	; std::_Destroy_in_place<char *>
 PUBLIC	??R<lambda_319d5e083f45f90dcdce5dce53cbb275>@@QEBA@QEADQEBD_KD@Z ; <lambda_319d5e083f45f90dcdce5dce53cbb275>::operator()
 PUBLIC	??$_Reallocate_grow_by@V<lambda_319d5e083f45f90dcdce5dce53cbb275>@@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV01@_KV<lambda_319d5e083f45f90dcdce5dce53cbb275>@@D@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Reallocate_grow_by<<lambda_319d5e083f45f90dcdce5dce53cbb275>,char>
@@ -372,6 +356,7 @@ PUBLIC	??$any_cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@
 PUBLIC	??$?0$$V@?$_Compressed_pair@U?$default_delete@VClientHandler@Client@Domain@@@std@@PEAVClientHandler@Client@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ; std::_Compressed_pair<std::default_delete<Domain::Client::ClientHandler>,Domain::Client::ClientHandler *,1>::_Compressed_pair<std::default_delete<Domain::Client::ClientHandler>,Domain::Client::ClientHandler *,1><>
 PUBLIC	??$addressof@V?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@@std@@YAPEAV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@AEAV10@@Z ; std::addressof<std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> > >
 PUBLIC	??$forward@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA$$QEAU?$default_delete@VClientHandler@Client@Domain@@@0@AEAU10@@Z ; std::forward<std::default_delete<Domain::Client::ClientHandler> >
+PUBLIC	??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 PUBLIC	??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ; std::_Deallocate_plain<std::allocator<std::_Container_proxy> >
 PUBLIC	??$_Get_unwrapped@AEAPEAD@std@@YA@AEAPEAD@Z	; std::_Get_unwrapped<char * &>
 PUBLIC	??$forward@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@AEBV10@@Z ; std::forward<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > const &>
@@ -379,9 +364,11 @@ PUBLIC	??$distance@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@s
 PUBLIC	??1?$_Tidy_guard@V?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@std@@QEAA@XZ ; std::_Tidy_guard<std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >::~_Tidy_guard<std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >
 PUBLIC	??$_Ucopy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@PEBV21@0PEAV21@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Ucopy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *>
 PUBLIC	??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z ; std::forward<std::allocator<char> >
+PUBLIC	??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z ; std::move<std::allocator<TechnicalServices::Persistence::Client> &>
 PUBLIC	??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z	; std::addressof<char *>
 PUBLIC	??$forward@AEBQEAD@std@@YAAEBQEADAEBQEAD@Z	; std::forward<char * const &>
 PUBLIC	??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z ; std::_Allocate_manually_vector_aligned<std::_Default_allocate_traits>
+PUBLIC	??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z ; std::_Unfancy<TechnicalServices::Persistence::Client>
 PUBLIC	??$destroy@UClient@Persistence@TechnicalServices@@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::destroy<TechnicalServices::Persistence::Client>
 PUBLIC	??$_Unfancy@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PEAV10@@Z ; std::_Unfancy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 PUBLIC	??$destroy@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::destroy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
@@ -390,8 +377,6 @@ PUBLIC	??$exchange@PEAVClientHandler@Client@Domain@@AEAPEAV123@@std@@YAPEAVClien
 PUBLIC	??$exchange@PEAVClientHandler@Client@Domain@@PEAV123@@std@@YAPEAVClientHandler@Client@Domain@@AEAPEAV123@$$QEAPEAV123@@Z ; std::exchange<Domain::Client::ClientHandler *,Domain::Client::ClientHandler *>
 PUBLIC	??$exchange@PEAVSessionHandler@Session@Domain@@AEAPEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@0@Z ; std::exchange<Domain::Session::SessionHandler *,Domain::Session::SessionHandler * &>
 PUBLIC	??$exchange@PEAVSessionHandler@Session@Domain@@PEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@$$QEAPEAV123@@Z ; std::exchange<Domain::Session::SessionHandler *,Domain::Session::SessionHandler *>
-PUBLIC	??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ; std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >
-PUBLIC	??$_Get_size_of_n@$0DA@@std@@YA_K_K@Z		; std::_Get_size_of_n<48>
 PUBLIC	??$_Uninitialized_value_construct_n@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PEAV10@_KAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ; std::_Uninitialized_value_construct_n<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z ; std::_Traits_equal<std::char_traits<char> >
 PUBLIC	??$_Get_size_of_n@$0CI@@std@@YA_K_K@Z		; std::_Get_size_of_n<40>
@@ -401,13 +386,6 @@ PUBLIC	??$_Cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@a
 PUBLIC	??$_Cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@any@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@XZ ; std::any::_Cast<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 PUBLIC	?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z ; std::_Default_allocator_traits<std::allocator<std::_Container_proxy> >::deallocate
 PUBLIC	??$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ; std::_Uninitialized_copy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-PUBLIC	??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Client * const &>
-PUBLIC	??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z ; std::move<TechnicalServices::Persistence::Client &>
-PUBLIC	??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
-PUBLIC	??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
-PUBLIC	?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Release
-PUBLIC	?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2
-PUBLIC	??$_Emplace_back@UClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX$$QEAUClient@Persistence@TechnicalServices@@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back<TechnicalServices::Persistence::Client>
 PUBLIC	??0?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	??1?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	?_Release@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Release
@@ -417,8 +395,6 @@ PUBLIC	??$forward@AEBV?$allocator@D@std@@@std@@YAAEBV?$allocator@D@0@AEBV10@@Z ;
 PUBLIC	??$forward@AEAPEAV_Facet_base@std@@@std@@YAAEAPEAV_Facet_base@0@AEAPEAV10@@Z ; std::forward<std::_Facet_base * &>
 PUBLIC	??$_Get_unwrapped@AEBQEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YA@AEBQEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::_Get_unwrapped<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const * const &>
 PUBLIC	??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Emplace_back<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
-PUBLIC	??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z ; std::forward<TechnicalServices::Persistence::Client>
-PUBLIC	??$construct@UClient@Persistence@TechnicalServices@@U123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@$$QEAU345@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client>
 PUBLIC	??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$$V@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::construct<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 PUBLIC	??$forward@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEBV10@@Z ; std::forward<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
 PUBLIC	??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV12@@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEBV31@@Z ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::construct<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
@@ -445,8 +421,8 @@ PUBLIC	_CT??_R0?AVbad_cast@std@@@8??0bad_cast@std@@QEAA@AEBV01@@Z24
 PUBLIC	?__LINE__Var@?0??_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z@4JA ; `std::_Adjust_manually_vector_aligned'::`1'::__LINE__Var
 PUBLIC	??_C@_0BB@FCMFBGOM@invalid?5argument@		; `string'
 PUBLIC	??_C@_02DKCKIIND@?$CFs@				; `string'
-PUBLIC	??_C@_0GJ@EHJGLGPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
-PUBLIC	??_C@_1NC@LBGPBFDE@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ ; `string'
+PUBLIC	??_C@_0GI@JMEOMKJO@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
+PUBLIC	??_C@_1NA@FEEOBALC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ ; `string'
 PUBLIC	??_C@_1EK@NIFDJFDG@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAA?$AAd?$AAj?$AAu?$AAs?$AAt?$AA_?$AAm?$AAa@ ; `string'
 PUBLIC	??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe@ ; `string'
 PUBLIC	??_C@_0BA@JFNIOLAK@string?5too?5long@		; `string'
@@ -457,9 +433,9 @@ PUBLIC	_CTA3?AVbad_any_cast@std@@
 PUBLIC	??_R0?AVbad_any_cast@std@@@8			; std::bad_any_cast `RTTI Type Descriptor'
 PUBLIC	_CT??_R0?AVbad_any_cast@std@@@8??0bad_any_cast@std@@QEAA@AEBV01@@Z24
 PUBLIC	??_C@_00CNPNBAHC@@				; `string'
-PUBLIC	??_C@_0GJ@OPFKIEFE@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
+PUBLIC	??_C@_0GI@DEICPIDJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
 PUBLIC	?__LINE__Var@?0??_Maklocwcs@std@@YAPEA_WPEB_W@Z@4JA ; `std::_Maklocwcs'::`1'::__LINE__Var
-PUBLIC	??_C@_0GJ@GMBHIGPF@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
+PUBLIC	??_C@_0GI@LHMPPKJI@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
 PUBLIC	??_7UserInterfaceHandler@UI@@6B@		; UI::UserInterfaceHandler::`vftable'
 PUBLIC	??_7SimpleUI@UI@@6B@				; UI::SimpleUI::`vftable'
 PUBLIC	??_C@_0DL@DGNBDAFF@Simple?5UI?5being?5used?5and?5has?5be@ ; `string'
@@ -485,13 +461,12 @@ PUBLIC	??_C@_0BC@BMFDLHKK@List?5Of?5Clients?5?6@	; `string'
 PUBLIC	??_C@_0L@IELDBGIM@?5Creator?5?6@		; `string'
 PUBLIC	??_C@_0M@JEKJGHKJ@Client?5ID?5?5@		; `string'
 PUBLIC	??_C@_0P@FNHHOOAI@Add?5New?5Client@		; `string'
-PUBLIC	??_C@_0CC@OAODPDEP@execute________________________@ ; `string'
 PUBLIC	??_C@_0BA@NFJLLIND@Another?5command@		; `string'
 PUBLIC	??_C@_0BP@HIAJAIHD@Ending?5session?5and?5terminating@ ; `string'
 PUBLIC	??_C@_0N@LPFKKEBD@?3AM?3am?3PM?3pm@		; `string'
 PUBLIC	??_C@_0BO@PFKOHNJC@vector?5subscript?5out?5of?5range@ ; `string'
-PUBLIC	??_C@_0GI@BDJNFBPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
-PUBLIC	??_C@_1NA@MKDIEAJP@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ ; `string'
+PUBLIC	??_C@_0GH@HACIOKNJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
+PUBLIC	??_C@_1MO@KFAGNMIJ@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ ; `string'
 PUBLIC	??_C@_1BME@NCIPHHDN@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAc?$AAl?$AAa@ ; `string'
 PUBLIC	??_C@_1EA@LEKOKFNB@?$AA?$CC?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAs?$AAu?$AAb?$AAs?$AAc?$AAr?$AAi@ ; `string'
 PUBLIC	??_C@_0BI@CFPLBAOH@invalid?5string?5position@	; `string'
@@ -499,8 +474,8 @@ PUBLIC	?_Psave@?$_Facetptr@V?$ctype@D@std@@@std@@2PEBVfacet@locale@2@EB ; std::_
 PUBLIC	??_C@_1BK@MHIKGOKE@?$AA?3?$AAA?$AAM?$AA?3?$AAa?$AAm?$AA?3?$AAP?$AAM?$AA?3?$AAp?$AAm@ ; `string'
 PUBLIC	??_C@_0BA@FOIKENOD@vector?5too?5long@		; `string'
 PUBLIC	??_C@_0BJ@HAJGEHKO@transposed?5pointer?5range@	; `string'
-PUBLIC	??_C@_0GK@OHAIDBEA@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
-PUBLIC	??_C@_1NE@NLDHILHB@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ ; `string'
+PUBLIC	??_C@_0GJ@NENAPENJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
+PUBLIC	??_C@_1NC@MGIEKFBC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ ; `string'
 PUBLIC	??_C@_1CG@LJCPDKEJ@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAr?$AAi?$AAf?$AAy?$AA_?$AAr?$AAa@ ; `string'
 PUBLIC	??_C@_1DG@FJIKMGFD@?$AA?$CC?$AAt?$AAr?$AAa?$AAn?$AAs?$AAp?$AAo?$AAs?$AAe?$AAd?$AA?5?$AAp?$AAo?$AAi@ ; `string'
 PUBLIC	??_C@_1EO@GFNCMDLA@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAA?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA_@ ; `string'
@@ -1411,18 +1386,6 @@ $pdata$??1Client@Persistence@TechnicalServices@@QEAA@XZ DD imagerel $LN3
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??0Client@Persistence@TechnicalServices@@QEAA@AEBU012@@Z DD imagerel $LN4
-	DD	imagerel $LN4+120
-	DD	imagerel $unwind$??0Client@Persistence@TechnicalServices@@QEAA@AEBU012@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??0Client@Persistence@TechnicalServices@@QEAA@$$QEAU012@@Z DD imagerel $LN3
-	DD	imagerel $LN3+120
-	DD	imagerel $unwind$??0Client@Persistence@TechnicalServices@@QEAA@$$QEAU012@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$??4Client@Persistence@TechnicalServices@@QEAAAEAU012@$$QEAU012@@Z DD imagerel $LN3
 	DD	imagerel $LN3+106
 	DD	imagerel $unwind$??4Client@Persistence@TechnicalServices@@QEAAAEAU012@$$QEAU012@@Z
@@ -1591,8 +1554,8 @@ $pdata$?dtor$3@?0???0SimpleUI@UI@@QEAA@XZ@4HA DD imagerel ?dtor$3@?0???0SimpleUI
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?launch@SimpleUI@UI@@UEAAXXZ DD imagerel $LN60
-	DD	imagerel $LN60+3757
+$pdata$?launch@SimpleUI@UI@@UEAAXXZ DD imagerel $LN61
+	DD	imagerel $LN61+3827
 	DD	imagerel $unwind$?launch@SimpleUI@UI@@UEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -1717,21 +1680,15 @@ $pdata$?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$22@?0??lau
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+$pdata$?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+$pdata$?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1801,6 +1758,90 @@ $pdata$??$_Getvals@_W@?$time_get@_WV?$istreambuf_iterator@_WU?$char_traits@_W@st
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z DD imagerel $LN3
+	DD	imagerel $LN3+97
+	DD	imagerel $unwind$?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z DD imagerel $LN3
+	DD	imagerel $LN3+180
+	DD	imagerel $unwind$?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z DD imagerel $LN4
+	DD	imagerel $LN4+143
+	DD	imagerel $unwind$??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD imagerel $LN3
+	DD	imagerel $LN3+202
+	DD	imagerel $unwind$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD imagerel $LN3
+	DD	imagerel $LN3+75
+	DD	imagerel $unwind$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD imagerel $LN3
+	DD	imagerel $LN3+75
+	DD	imagerel $unwind$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD imagerel $LN3
+	DD	imagerel $LN3+104
+	DD	imagerel $unwind$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z DD imagerel $LN3
+	DD	imagerel $LN3+108
+	DD	imagerel $unwind$?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DD imagerel $LN4
+	DD	imagerel $LN4+286
+	DD	imagerel $unwind$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
+	DD	imagerel $LN3+80
+	DD	imagerel $unwind$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z DD imagerel $LN3
+	DD	imagerel $LN3+199
+	DD	imagerel $unwind$?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
+	DD	imagerel $LN3+71
+	DD	imagerel $unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z DD imagerel $LN3
+	DD	imagerel $LN3+73
+	DD	imagerel $unwind$?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z DD imagerel $LN6
+	DD	imagerel $LN6+268
+	DD	imagerel $unwind$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$?0U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@$0A@@?$unique_ptr@VMaintainBooksHandler@Library@Domain@@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@@std@@QEAA@XZ DD imagerel $LN3
 	DD	imagerel $LN3+104
 	DD	imagerel $unwind$??$?0U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@$0A@@?$unique_ptr@VMaintainBooksHandler@Library@Domain@@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@@std@@QEAA@XZ
@@ -1846,150 +1887,6 @@ pdata	SEGMENT
 $pdata$?catch$1@?0???$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z@4HA DD imagerel ?catch$1@?0???$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z@4HA
 	DD	imagerel ?catch$1@?0???$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z@4HA+91
 	DD	imagerel $unwind$?catch$1@?0???$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z DD imagerel $LN3
-	DD	imagerel $LN3+97
-	DD	imagerel $unwind$?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?allocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@_K@Z DD imagerel $LN3
-	DD	imagerel $LN3+89
-	DD	imagerel $unwind$?allocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@_K@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z DD imagerel $LN3
-	DD	imagerel $LN3+74
-	DD	imagerel $unwind$?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD imagerel $LN3
-	DD	imagerel $LN3+202
-	DD	imagerel $unwind$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?push_back@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEBUClient@Persistence@TechnicalServices@@@Z DD imagerel $LN3
-	DD	imagerel $LN3+88
-	DD	imagerel $unwind$?push_back@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEBUClient@Persistence@TechnicalServices@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD imagerel $LN3
-	DD	imagerel $LN3+75
-	DD	imagerel $unwind$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD imagerel $LN3
-	DD	imagerel $LN3+75
-	DD	imagerel $unwind$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD imagerel $LN3
-	DD	imagerel $LN3+104
-	DD	imagerel $unwind$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD imagerel $LN3
-	DD	imagerel $LN3+125
-	DD	imagerel $unwind$?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD imagerel $LN3
-	DD	imagerel $LN3+104
-	DD	imagerel $unwind$?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z DD imagerel $LN3
-	DD	imagerel $LN3+120
-	DD	imagerel $unwind$?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Umove_if_noexcept1@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00U?$integral_constant@_N$00@2@@Z DD imagerel $LN3
-	DD	imagerel $LN3+120
-	DD	imagerel $unwind$?_Umove_if_noexcept1@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00U?$integral_constant@_N$00@2@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Umove_if_noexcept@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00@Z DD imagerel $LN3
-	DD	imagerel $LN3+142
-	DD	imagerel $unwind$?_Umove_if_noexcept@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z DD imagerel $LN3
-	DD	imagerel $LN3+108
-	DD	imagerel $unwind$?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Calculate_growth@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z DD imagerel $LN5
-	DD	imagerel $LN5+200
-	DD	imagerel $unwind$?_Calculate_growth@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Change_array@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXQEAUClient@Persistence@TechnicalServices@@_K1@Z DD imagerel $LN4
-	DD	imagerel $LN4+334
-	DD	imagerel $unwind$?_Change_array@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXQEAUClient@Persistence@TechnicalServices@@_K1@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DD imagerel $LN4
-	DD	imagerel $LN4+286
-	DD	imagerel $unwind$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Xlength@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@CAXXZ DD imagerel $LN3
-	DD	imagerel $LN3+64
-	DD	imagerel $unwind$?_Xlength@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@CAXXZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z DD imagerel $LN9
-	DD	imagerel $LN9+267
-	DD	imagerel $unwind$?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
-	DD	imagerel $LN3+80
-	DD	imagerel $unwind$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
-	DD	imagerel $LN3+80
-	DD	imagerel $unwind$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
-	DD	imagerel $LN3+71
-	DD	imagerel $unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
-	DD	imagerel $LN3+71
-	DD	imagerel $unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z DD imagerel $LN3
-	DD	imagerel $LN3+73
-	DD	imagerel $unwind$?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2095,12 +1992,6 @@ $pdata$??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z DD imagerel $LN6
-	DD	imagerel $LN6+268
-	DD	imagerel $unwind$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z DD imagerel $LN5
 	DD	imagerel $LN5+152
 	DD	imagerel $unwind$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z
@@ -2161,6 +2052,12 @@ $pdata$??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHa
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ DD imagerel $LN3
+	DD	imagerel $LN3+74
+	DD	imagerel $unwind$??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBA_NXZ DD imagerel $LN5
 	DD	imagerel $LN5+100
 	DD	imagerel $unwind$??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBA_NXZ
@@ -2203,51 +2100,9 @@ $pdata$??$?4U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DD imagerel $LN5
-	DD	imagerel $LN5+117
-	DD	imagerel $unwind$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$emplace_back@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@AEBUClient@Persistence@TechnicalServices@@@Z DD imagerel $LN4
-	DD	imagerel $LN4+205
-	DD	imagerel $unwind$??$emplace_back@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@AEBUClient@Persistence@TechnicalServices@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z DD imagerel $LN3
-	DD	imagerel $LN3+71
-	DD	imagerel $unwind$??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$_Emplace_back_with_unused_capacity@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAA@AEBUClient@Persistence@TechnicalServices@@@Z DD imagerel $LN3
-	DD	imagerel $LN3+234
-	DD	imagerel $unwind$??$_Emplace_back_with_unused_capacity@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAA@AEBUClient@Persistence@TechnicalServices@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z DD imagerel $LN3
-	DD	imagerel $LN3+71
-	DD	imagerel $unwind$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z DD imagerel $LN3
-	DD	imagerel $LN3+136
-	DD	imagerel $unwind$??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z DD imagerel $LN13
-	DD	imagerel $LN13+639
-	DD	imagerel $unwind$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA DD imagerel ?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA
-	DD	imagerel ?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA+94
-	DD	imagerel $unwind$?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA
+$pdata$??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DD imagerel $LN5
+	DD	imagerel $LN5+124
+	DD	imagerel $unwind$??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2272,6 +2127,12 @@ pdata	SEGMENT
 $pdata$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z DD imagerel $LN3
 	DD	imagerel $LN3+89
 	DD	imagerel $unwind$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z DD imagerel $LN3
+	DD	imagerel $LN3+71
+	DD	imagerel $unwind$??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2464,6 +2325,12 @@ pdata	SEGMENT
 $pdata$??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z DD imagerel $LN3
 	DD	imagerel $LN3+71
 	DD	imagerel $unwind$??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z DD imagerel $LN3
+	DD	imagerel $LN3+82
+	DD	imagerel $unwind$??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2755,6 +2622,12 @@ $pdata$??$forward@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DD imagerel $LN5
+	DD	imagerel $LN5+117
+	DD	imagerel $unwind$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z DD imagerel $LN3
 	DD	imagerel $LN3+95
 	DD	imagerel $unwind$??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
@@ -2797,6 +2670,12 @@ $pdata$??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z DD
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z DD imagerel $LN3
+	DD	imagerel $LN3+71
+	DD	imagerel $unwind$??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z DD imagerel $LN3
 	DD	imagerel $LN3+71
 	DD	imagerel $unwind$??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z
@@ -2812,6 +2691,12 @@ pdata	SEGMENT
 $pdata$??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z DD imagerel $LN13
 	DD	imagerel $LN13+300
 	DD	imagerel $unwind$??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z DD imagerel $LN3
+	DD	imagerel $LN3+71
+	DD	imagerel $unwind$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2860,24 +2745,6 @@ pdata	SEGMENT
 $pdata$??$exchange@PEAVSessionHandler@Session@Domain@@PEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@$$QEAPEAV123@@Z DD imagerel $LN3
 	DD	imagerel $LN3+107
 	DD	imagerel $unwind$??$exchange@PEAVSessionHandler@Session@Domain@@PEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@$$QEAPEAV123@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z DD imagerel $LN7
-	DD	imagerel $LN7+282
-	DD	imagerel $unwind$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA DD imagerel ?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA
-	DD	imagerel ?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA+36
-	DD	imagerel $unwind$?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$_Get_size_of_n@$0DA@@std@@YA_K_K@Z DD imagerel $LN4
-	DD	imagerel $LN4+114
-	DD	imagerel $unwind$??$_Get_size_of_n@$0DA@@std@@YA_K_K@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2947,48 +2814,6 @@ $pdata$?dtor$0@?0???$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@st
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z DD imagerel $LN3
-	DD	imagerel $LN3+74
-	DD	imagerel $unwind$??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z DD imagerel $LN3
-	DD	imagerel $LN3+71
-	DD	imagerel $unwind$??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z DD imagerel $LN3
-	DD	imagerel $LN3+134
-	DD	imagerel $unwind$??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD imagerel $LN3
-	DD	imagerel $LN3+102
-	DD	imagerel $unwind$??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD imagerel $LN3
-	DD	imagerel $LN3+96
-	DD	imagerel $unwind$?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z DD imagerel $LN3
-	DD	imagerel $LN3+73
-	DD	imagerel $unwind$?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$_Emplace_back@UClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX$$QEAUClient@Persistence@TechnicalServices@@@Z DD imagerel $LN3
-	DD	imagerel $LN3+181
-	DD	imagerel $unwind$??$_Emplace_back@UClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX$$QEAUClient@Persistence@TechnicalServices@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$??0?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z DD imagerel $LN3
 	DD	imagerel $LN3+134
 	DD	imagerel $unwind$??0?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z
@@ -3040,18 +2865,6 @@ pdata	SEGMENT
 $pdata$??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z DD imagerel $LN3
 	DD	imagerel $LN3+181
 	DD	imagerel $unwind$??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z DD imagerel $LN3
-	DD	imagerel $LN3+71
-	DD	imagerel $unwind$??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$construct@UClient@Persistence@TechnicalServices@@U123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@$$QEAU345@@Z DD imagerel $LN3
-	DD	imagerel $LN3+136
-	DD	imagerel $unwind$??$construct@UClient@Persistence@TechnicalServices@@U123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@$$QEAU345@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -3348,9 +3161,9 @@ CONST	SEGMENT
 	DB	'e', 00H, 'r', 00H, 'i', 00H, 'f', 00H, 'y', 00H, '_', 00H, 'r'
 	DB	00H, 'a', 00H, 'n', 00H, 'g', 00H, 'e', 00H, 00H, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_1NE@NLDHILHB@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+;	COMDAT ??_C@_1NC@MGIEKFBC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
 CONST	SEGMENT
-??_C@_1NE@NLDHILHB@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ DB 'C'
+??_C@_1NC@MGIEKFBC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ DB 'C'
 	DB	00H, ':', 00H, '\', 00H, 'P', 00H, 'r', 00H, 'o', 00H, 'g', 00H
 	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'F', 00H, 'i', 00H, 'l'
 	DB	00H, 'e', 00H, 's', 00H, ' ', 00H, '(', 00H, 'x', 00H, '8', 00H
@@ -3358,22 +3171,22 @@ CONST	SEGMENT
 	DB	00H, 'o', 00H, 's', 00H, 'o', 00H, 'f', 00H, 't', 00H, ' ', 00H
 	DB	'V', 00H, 'i', 00H, 's', 00H, 'u', 00H, 'a', 00H, 'l', 00H, ' '
 	DB	00H, 'S', 00H, 't', 00H, 'u', 00H, 'd', 00H, 'i', 00H, 'o', 00H
-	DB	'\', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, '\', 00H, 'E'
-	DB	00H, 'n', 00H, 't', 00H, 'e', 00H, 'r', 00H, 'p', 00H, 'r', 00H
-	DB	'i', 00H, 's', 00H, 'e', 00H, '\', 00H, 'V', 00H, 'C', 00H, '\'
-	DB	00H, 'T', 00H, 'o', 00H, 'o', 00H, 'l', 00H, 's', 00H, '\', 00H
-	DB	'M', 00H, 'S', 00H, 'V', 00H, 'C', 00H, '\', 00H, '1', 00H, '4'
-	DB	00H, '.', 00H, '2', 00H, '7', 00H, '.', 00H, '2', 00H, '9', 00H
-	DB	'1', 00H, '1', 00H, '0', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
-	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'x', 00H
-	DB	'u', 00H, 't', 00H, 'i', 00H, 'l', 00H, 'i', 00H, 't', 00H, 'y'
-	DB	00H, 00H, 00H				; `string'
+	DB	'\', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, '\', 00H, 'C'
+	DB	00H, 'o', 00H, 'm', 00H, 'm', 00H, 'u', 00H, 'n', 00H, 'i', 00H
+	DB	't', 00H, 'y', 00H, '\', 00H, 'V', 00H, 'C', 00H, '\', 00H, 'T'
+	DB	00H, 'o', 00H, 'o', 00H, 'l', 00H, 's', 00H, '\', 00H, 'M', 00H
+	DB	'S', 00H, 'V', 00H, 'C', 00H, '\', 00H, '1', 00H, '4', 00H, '.'
+	DB	00H, '2', 00H, '7', 00H, '.', 00H, '2', 00H, '9', 00H, '1', 00H
+	DB	'1', 00H, '0', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c', 00H, 'l'
+	DB	00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'x', 00H, 'u', 00H
+	DB	't', 00H, 'i', 00H, 'l', 00H, 'i', 00H, 't', 00H, 'y', 00H, 00H
+	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0GK@OHAIDBEA@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+;	COMDAT ??_C@_0GJ@NENAPENJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 CONST	SEGMENT
-??_C@_0GK@OHAIDBEA@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
-	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\T'
-	DB	'ools\MSVC\14.27.29110\include\xutility', 00H ; `string'
+??_C@_0GJ@NENAPENJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
+	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Community\VC\To'
+	DB	'ols\MSVC\14.27.29110\include\xutility', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@HAJGEHKO@transposed?5pointer?5range@
 CONST	SEGMENT
@@ -3443,9 +3256,9 @@ CONST	SEGMENT
 	DB	'p', 00H, 'e', 00H, 'r', 00H, 'a', 00H, 't', 00H, 'o', 00H, 'r'
 	DB	00H, ' ', 00H, '[', 00H, ']', 00H, 00H, 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_1NA@MKDIEAJP@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+;	COMDAT ??_C@_1MO@KFAGNMIJ@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
 CONST	SEGMENT
-??_C@_1NA@MKDIEAJP@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ DB 'C'
+??_C@_1MO@KFAGNMIJ@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ DB 'C'
 	DB	00H, ':', 00H, '\', 00H, 'P', 00H, 'r', 00H, 'o', 00H, 'g', 00H
 	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'F', 00H, 'i', 00H, 'l'
 	DB	00H, 'e', 00H, 's', 00H, ' ', 00H, '(', 00H, 'x', 00H, '8', 00H
@@ -3453,21 +3266,21 @@ CONST	SEGMENT
 	DB	00H, 'o', 00H, 's', 00H, 'o', 00H, 'f', 00H, 't', 00H, ' ', 00H
 	DB	'V', 00H, 'i', 00H, 's', 00H, 'u', 00H, 'a', 00H, 'l', 00H, ' '
 	DB	00H, 'S', 00H, 't', 00H, 'u', 00H, 'd', 00H, 'i', 00H, 'o', 00H
-	DB	'\', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, '\', 00H, 'E'
-	DB	00H, 'n', 00H, 't', 00H, 'e', 00H, 'r', 00H, 'p', 00H, 'r', 00H
-	DB	'i', 00H, 's', 00H, 'e', 00H, '\', 00H, 'V', 00H, 'C', 00H, '\'
-	DB	00H, 'T', 00H, 'o', 00H, 'o', 00H, 'l', 00H, 's', 00H, '\', 00H
-	DB	'M', 00H, 'S', 00H, 'V', 00H, 'C', 00H, '\', 00H, '1', 00H, '4'
-	DB	00H, '.', 00H, '2', 00H, '7', 00H, '.', 00H, '2', 00H, '9', 00H
-	DB	'1', 00H, '1', 00H, '0', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
-	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'v', 00H
-	DB	'e', 00H, 'c', 00H, 't', 00H, 'o', 00H, 'r', 00H, 00H, 00H ; `string'
+	DB	'\', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, '\', 00H, 'C'
+	DB	00H, 'o', 00H, 'm', 00H, 'm', 00H, 'u', 00H, 'n', 00H, 'i', 00H
+	DB	't', 00H, 'y', 00H, '\', 00H, 'V', 00H, 'C', 00H, '\', 00H, 'T'
+	DB	00H, 'o', 00H, 'o', 00H, 'l', 00H, 's', 00H, '\', 00H, 'M', 00H
+	DB	'S', 00H, 'V', 00H, 'C', 00H, '\', 00H, '1', 00H, '4', 00H, '.'
+	DB	00H, '2', 00H, '7', 00H, '.', 00H, '2', 00H, '9', 00H, '1', 00H
+	DB	'1', 00H, '0', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c', 00H, 'l'
+	DB	00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'v', 00H, 'e', 00H
+	DB	'c', 00H, 't', 00H, 'o', 00H, 'r', 00H, 00H, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0GI@BDJNFBPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+;	COMDAT ??_C@_0GH@HACIOKNJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 CONST	SEGMENT
-??_C@_0GI@BDJNFBPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
-	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\T'
-	DB	'ools\MSVC\14.27.29110\include\vector', 00H	; `string'
+??_C@_0GH@HACIOKNJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
+	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Community\VC\To'
+	DB	'ols\MSVC\14.27.29110\include\vector', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BO@PFKOHNJC@vector?5subscript?5out?5of?5range@
 CONST	SEGMENT
@@ -3486,11 +3299,6 @@ CONST	ENDS
 ;	COMDAT ??_C@_0BA@NFJLLIND@Another?5command@
 CONST	SEGMENT
 ??_C@_0BA@NFJLLIND@Another?5command@ DB 'Another command', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0CC@OAODPDEP@execute________________________@
-CONST	SEGMENT
-??_C@_0CC@OAODPDEP@execute________________________@ DB 'execute__________'
-	DB	'________________', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@FNHHOOAI@Add?5New?5Client@
 CONST	SEGMENT
@@ -3601,21 +3409,21 @@ CONST	SEGMENT
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 CONST	ENDS
-;	COMDAT ??_C@_0GJ@GMBHIGPF@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+;	COMDAT ??_C@_0GI@LHMPPKJI@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 CONST	SEGMENT
-??_C@_0GJ@GMBHIGPF@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
-	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\T'
-	DB	'ools\MSVC\14.27.29110\include\xlocnum', 00H	; `string'
+??_C@_0GI@LHMPPKJI@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
+	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Community\VC\To'
+	DB	'ols\MSVC\14.27.29110\include\xlocnum', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ?__LINE__Var@?0??_Maklocwcs@std@@YAPEA_WPEB_W@Z@4JA
 _DATA	SEGMENT
 ?__LINE__Var@?0??_Maklocwcs@std@@YAPEA_WPEB_W@Z@4JA DD 05aH ; `std::_Maklocwcs'::`1'::__LINE__Var
 _DATA	ENDS
-;	COMDAT ??_C@_0GJ@OPFKIEFE@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+;	COMDAT ??_C@_0GI@DEICPIDJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 CONST	SEGMENT
-??_C@_0GJ@OPFKIEFE@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
-	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\T'
-	DB	'ools\MSVC\14.27.29110\include\xlocale', 00H	; `string'
+??_C@_0GI@DEICPIDJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
+	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Community\VC\To'
+	DB	'ols\MSVC\14.27.29110\include\xlocale', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_00CNPNBAHC@@
 CONST	SEGMENT
@@ -3682,9 +3490,9 @@ CONST	SEGMENT
 	DB	00H, 'r', 00H, '_', 00H, 'a', 00H, 'l', 00H, 'i', 00H, 'g', 00H
 	DB	'n', 00H, 'e', 00H, 'd', 00H, 00H, 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_1NC@LBGPBFDE@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+;	COMDAT ??_C@_1NA@FEEOBALC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
 CONST	SEGMENT
-??_C@_1NC@LBGPBFDE@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ DB 'C'
+??_C@_1NA@FEEOBALC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ DB 'C'
 	DB	00H, ':', 00H, '\', 00H, 'P', 00H, 'r', 00H, 'o', 00H, 'g', 00H
 	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'F', 00H, 'i', 00H, 'l'
 	DB	00H, 'e', 00H, 's', 00H, ' ', 00H, '(', 00H, 'x', 00H, '8', 00H
@@ -3692,22 +3500,21 @@ CONST	SEGMENT
 	DB	00H, 'o', 00H, 's', 00H, 'o', 00H, 'f', 00H, 't', 00H, ' ', 00H
 	DB	'V', 00H, 'i', 00H, 's', 00H, 'u', 00H, 'a', 00H, 'l', 00H, ' '
 	DB	00H, 'S', 00H, 't', 00H, 'u', 00H, 'd', 00H, 'i', 00H, 'o', 00H
-	DB	'\', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, '\', 00H, 'E'
-	DB	00H, 'n', 00H, 't', 00H, 'e', 00H, 'r', 00H, 'p', 00H, 'r', 00H
-	DB	'i', 00H, 's', 00H, 'e', 00H, '\', 00H, 'V', 00H, 'C', 00H, '\'
-	DB	00H, 'T', 00H, 'o', 00H, 'o', 00H, 'l', 00H, 's', 00H, '\', 00H
-	DB	'M', 00H, 'S', 00H, 'V', 00H, 'C', 00H, '\', 00H, '1', 00H, '4'
-	DB	00H, '.', 00H, '2', 00H, '7', 00H, '.', 00H, '2', 00H, '9', 00H
-	DB	'1', 00H, '1', 00H, '0', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
-	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'x', 00H
-	DB	'm', 00H, 'e', 00H, 'm', 00H, 'o', 00H, 'r', 00H, 'y', 00H, 00H
-	DB	00H						; `string'
+	DB	'\', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, '\', 00H, 'C'
+	DB	00H, 'o', 00H, 'm', 00H, 'm', 00H, 'u', 00H, 'n', 00H, 'i', 00H
+	DB	't', 00H, 'y', 00H, '\', 00H, 'V', 00H, 'C', 00H, '\', 00H, 'T'
+	DB	00H, 'o', 00H, 'o', 00H, 'l', 00H, 's', 00H, '\', 00H, 'M', 00H
+	DB	'S', 00H, 'V', 00H, 'C', 00H, '\', 00H, '1', 00H, '4', 00H, '.'
+	DB	00H, '2', 00H, '7', 00H, '.', 00H, '2', 00H, '9', 00H, '1', 00H
+	DB	'1', 00H, '0', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c', 00H, 'l'
+	DB	00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'x', 00H, 'm', 00H
+	DB	'e', 00H, 'm', 00H, 'o', 00H, 'r', 00H, 'y', 00H, 00H, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0GJ@EHJGLGPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+;	COMDAT ??_C@_0GI@JMEOMKJO@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 CONST	SEGMENT
-??_C@_0GJ@EHJGLGPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
-	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\T'
-	DB	'ools\MSVC\14.27.29110\include\xmemory', 00H	; `string'
+??_C@_0GI@JMEOMKJO@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
+	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Community\VC\To'
+	DB	'ols\MSVC\14.27.29110\include\xmemory', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_02DKCKIIND@?$CFs@
 CONST	SEGMENT
@@ -3884,33 +3691,6 @@ $unwind$??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@st
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??$construct@UClient@Persistence@TechnicalServices@@U123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@$$QEAU345@@Z DD 025053401H
-	DD	0118231dH
-	DD	070110021H
-	DD	05010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z DB 060H
-	DD	imagerel $ip2state$??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $unwind$??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z DD 025052f01H
 	DD	01132318H
 	DD	0700c0021H
@@ -4010,81 +3790,6 @@ $unwind$??0?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_tra
 	DD	0118231dH
 	DD	07011001dH
 	DD	05010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$_Emplace_back@UClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX$$QEAUClient@Persistence@TechnicalServices@@@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c0021H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z DD 05052d01H
-	DD	01130316H
-	DD	0700c0019H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD 025052a01H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DB 060H
-	DD	imagerel $ip2state$??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z DD 025053401H
-	DD	0118231dH
-	DD	07011001dH
-	DD	05010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z DB 060H
-	DD	imagerel $ip2state$??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z DD 025052a01H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4305,71 +4010,6 @@ CONST	SEGMENT
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??$_Get_size_of_n@$0DA@@std@@YA_K_K@Z DD 025052a01H
-	DD	010e2313H
-	DD	070070025H
-	DD	05006H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z DB 06H
-	DB	00H
-	DB	00H
-	DB	'q', 02H
-	DB	02H
-	DB	'~'
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$stateUnwindMap$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z DB 02H
-	DB	0eH
-	DD	imagerel ?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z DB 028H
-	DD	imagerel $stateUnwindMap$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z
-	DD	imagerel $ip2state$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z DD 025054a19H
-	DD	011d2322H
-	DD	07016002fH
-	DD	05015H
-	DD	imagerel __GSHandlerCheck_EH4
-	DD	imagerel $cppxdata$??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z
-	DD	016aH
-xdata	ENDS
-;	COMDAT CONST
-CONST	SEGMENT
-??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z$rtcName$0 DB 05fH ; std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >
-	DB	042H
-	DB	061H
-	DB	063H
-	DB	06bH
-	DB	06fH
-	DB	075H
-	DB	074H
-	DB	00H
-	ORG $+7
-??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z$rtcVarDesc DD 068H ; std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >
-	DD	018H
-	DQ	FLAT:??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z$rtcName$0
-	ORG $+48
-??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z$rtcFrameData DD 01H ; std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >
-	DD	00H
-	DQ	FLAT:??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z$rtcVarDesc
-CONST	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $ip2state$??$exchange@PEAVSessionHandler@Session@Domain@@PEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@$$QEAPEAV123@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -4504,6 +4144,26 @@ $unwind$??$destroy@UClient@Persistence@TechnicalServices@@@?$_Default_allocator_
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$ip2state$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z DB 060H
+	DD	imagerel $ip2state$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z DD 035052a01H
 	DD	010e3313H
 	DD	07007002bH
@@ -4548,6 +4208,26 @@ $unwind$??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z DD 025052a19H
 	DD	05006H
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z DB 060H
+	DD	imagerel $ip2state$??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4649,6 +4329,26 @@ $unwind$??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAX
 	DD	0500bH
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DB 060H
+	DD	imagerel $ip2state$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DD 025052f19H
+	DD	01132318H
+	DD	0700c001fH
+	DD	0500bH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -5623,6 +5323,26 @@ $unwind$??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z DD 025052a19H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$ip2state$??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z DB 060H
+	DD	imagerel $ip2state$??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z DD 025052f19H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $ip2state$??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -6184,6 +5904,26 @@ $unwind$??0_Sentry_base@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$ip2state$??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z DB 060H
+	DD	imagerel $ip2state$??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $ip2state$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -6251,137 +5991,23 @@ $unwind$?allocate@?$allocator@U_Container_proxy@std@@@std@@QEAAPEAU_Container_pr
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z DB 06H
-	DB	00H
-	DB	00H
-	DB	0fdH, 04H
-	DB	02H
-	DB	0f9H, 03H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$handlerMap$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z DB 02H
-	DB	01H
-	DB	080H
-	DD	imagerel ?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$tryMap$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z DB 02H
-	DB	00H
-	DB	00H
-	DB	02H
-	DD	imagerel $handlerMap$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$stateUnwindMap$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z DB 04H
-	DB	08H
-	DB	010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z DB 038H
-	DD	imagerel $stateUnwindMap$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z
-	DD	imagerel $tryMap$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z
-	DD	imagerel $ip2state$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z DD 025053419H
-	DD	0118231dH
-	DD	07011004bH
-	DD	05010H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z DD 025053401H
-	DD	0118231dH
-	DD	070110021H
-	DD	05010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z DB 02H
+$ip2state$??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DB 02H
 	DB	00H
 	DB	00H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$cppxdata$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z DB 060H
-	DD	imagerel $ip2state$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z
+$cppxdata$??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DB 060H
+	DD	imagerel $ip2state$??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$_Emplace_back_with_unused_capacity@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAA@AEBUClient@Persistence@TechnicalServices@@@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c002bH
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z DB 060H
-	DD	imagerel $ip2state$??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$emplace_back@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@AEBUClient@Persistence@TechnicalServices@@@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c002bH
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DB 060H
-	DD	imagerel $ip2state$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DD 025052f19H
+$unwind$??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z DD 025052f19H
 	DD	01132318H
 	DD	0700c001fH
 	DD	0500bH
 	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
+	DD	imagerel $cppxdata$??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -6509,6 +6135,26 @@ $unwind$??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientH
 	DD	05006H
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBA_NXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ DB 060H
+	DD	imagerel $ip2state$??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -6678,13 +6324,6 @@ xdata	SEGMENT
 $unwind$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z DD 025053401H
 	DD	0118231dH
 	DD	070110021H
-	DD	05010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z DD 045053401H
-	DD	0118431dH
-	DD	070110035H
 	DD	05010H
 xdata	ENDS
 ;	COMDAT xdata
@@ -6977,365 +6616,6 @@ $unwind$??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocato
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z DD 05052d01H
-	DD	01130316H
-	DD	0700c0019H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 060H
-	DD	imagerel $ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 060H
-	DD	imagerel $ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 060H
-	DD	imagerel $ip2state$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 060H
-	DD	imagerel $ip2state$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z DD 025054519H
-	DD	0118231dH
-	DD	070110029H
-	DD	05010H
-	DD	imagerel __GSHandlerCheck
-	DD	0138H
-xdata	ENDS
-;	COMDAT CONST
-CONST	SEGMENT
-?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z$rtcName$0 DB 05fH ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Orphan_range
-	DB	04cH
-	DB	06fH
-	DB	063H
-	DB	06bH
-	DB	00H
-	ORG $+10
-?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z$rtcVarDesc DD 024H ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Orphan_range
-	DD	04H
-	DQ	FLAT:?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z$rtcName$0
-	ORG $+48
-?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z$rtcFrameData DD 01H ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Orphan_range
-	DD	00H
-	DQ	FLAT:?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z$rtcVarDesc
-CONST	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Xlength@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@CAXXZ DD 025051e01H
-	DD	010a230fH
-	DD	07003001dH
-	DD	05002H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DB 060H
-	DD	imagerel $ip2state$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DD 025052a19H
-	DD	010e2313H
-	DD	07007002fH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Change_array@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXQEAUClient@Persistence@TechnicalServices@@_K1@Z DD 025053901H
-	DD	011d2322H
-	DD	07016002fH
-	DD	05015H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Calculate_growth@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c0025H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z DD 025053401H
-	DD	0118231dH
-	DD	07011001dH
-	DD	05010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Umove_if_noexcept@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00@Z DD 035053901H
-	DD	011d3322H
-	DD	070160023H
-	DD	05015H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Umove_if_noexcept1@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00U?$integral_constant@_N$00@2@@Z DD 025053901H
-	DD	011d2322H
-	DD	07016001dH
-	DD	05015H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z DD 025053901H
-	DD	011d2322H
-	DD	07016001dH
-	DD	05015H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 060H
-	DD	imagerel $ip2state$?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD 025052a19H
-	DD	010e2313H
-	DD	070070021H
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 060H
-	DD	imagerel $ip2state$?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD 025052a19H
-	DD	010e2313H
-	DD	070070025H
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 060H
-	DD	imagerel $ip2state$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD 025052a19H
-	DD	010e2313H
-	DD	070070021H
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DB 060H
-	DD	imagerel $ip2state$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DB 060H
-	DD	imagerel $ip2state$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?push_back@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEBUClient@Persistence@TechnicalServices@@@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c001dH
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DB 060H
-	DD	imagerel $ip2state$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD 025053b19H
-	DD	010e2313H
-	DD	070070029H
-	DD	05006H
-	DD	imagerel __GSHandlerCheck_EH4
-	DD	imagerel $cppxdata$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
-	DD	013bH
-xdata	ENDS
-;	COMDAT CONST
-CONST	SEGMENT
-??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcName$0 DB 024H ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
-	DB	053H
-	DB	031H
-	DB	00H
-	ORG $+12
-??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcVarDesc DD 044H ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
-	DD	01H
-	DQ	FLAT:??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcName$0
-	ORG $+48
-??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcFrameData DD 01H ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
-	DD	00H
-	DQ	FLAT:??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcVarDesc
-CONST	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z DB 060H
-	DD	imagerel $ip2state$?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?allocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@_K@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c001dH
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z DD 025053401H
-	DD	0118231dH
-	DD	07011001dH
-	DD	05010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $unwind$?catch$1@?0???$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
@@ -7525,6 +6805,250 @@ $unwind$??$?0U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@$0A@@
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z DD 045053401H
+	DD	0118431dH
+	DD	070110035H
+	DD	05010H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z DD 05052d01H
+	DD	01130316H
+	DD	0700c0019H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 060H
+	DD	imagerel $ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z DB 060H
+	DD	imagerel $ip2state$?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z DD 025052f19H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DB 060H
+	DD	imagerel $ip2state$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DB 060H
+	DD	imagerel $ip2state$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DD 025052a19H
+	DD	010e2313H
+	DD	07007002fH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z DD 025053401H
+	DD	0118231dH
+	DD	07011001dH
+	DD	05010H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 060H
+	DD	imagerel $ip2state$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD 025052a19H
+	DD	010e2313H
+	DD	070070021H
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DB 060H
+	DD	imagerel $ip2state$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DB 060H
+	DD	imagerel $ip2state$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DB 060H
+	DD	imagerel $ip2state$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD 025053b19H
+	DD	010e2313H
+	DD	070070029H
+	DD	05006H
+	DD	imagerel __GSHandlerCheck_EH4
+	DD	imagerel $cppxdata$??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+	DD	013bH
+xdata	ENDS
+;	COMDAT CONST
+CONST	SEGMENT
+??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcName$0 DB 024H ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
+	DB	053H
+	DB	031H
+	DB	00H
+	ORG $+12
+??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcVarDesc DD 044H ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
+	DD	01H
+	DQ	FLAT:??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcName$0
+	ORG $+48
+??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcFrameData DD 01H ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
+	DD	00H
+	DQ	FLAT:??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcVarDesc
+CONST	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z DB 060H
+	DD	imagerel $ip2state$??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z DD 025052f19H
+	DD	01132318H
+	DD	0700c0021H
+	DD	0500bH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z DB 060H
+	DD	imagerel $ip2state$?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z DD 025053419H
+	DD	0118231dH
+	DD	07011001fH
+	DD	05010H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z DD 025053401H
+	DD	0118231dH
+	DD	07011001dH
+	DD	05010H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$??$_Getvals@_W@?$time_get@_WV?$istreambuf_iterator@_WU?$char_traits@_W@std@@@std@@@std@@IEAAX_WAEBV_Locinfo@1@@Z DD 025063501H
 	DD	0119231eH
 	DD	070120026H
@@ -7706,19 +7230,13 @@ $unwind$??1SimpleUI@UI@@UEAA@XZ DD 025052a19H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+$unwind$?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+$unwind$?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -7844,7 +7362,7 @@ $unwind$?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB '\'
+$ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 'X'
 	DB	00H
 	DB	00H
 	DB	'I', 02H
@@ -7909,14 +7427,10 @@ $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB '\'
 	DB	01aH
 	DB	0ccH
 	DB	'*'
-	DB	'1', 03H
-	DB	','
-	DB	'*'
-	DB	'*'
-	DB	':'
+	DB	011H, 05H
 	DB	01aH
 	DB	0c4H
-	DB	'.'
+	DB	','
 	DB	'^'
 	DB	01aH
 	DB	01aH
@@ -7924,7 +7438,7 @@ $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB '\'
 	DB	01aH
 	DB	014H
 	DB	0aaH
-	DB	'0'
+	DB	'.'
 	DB	'*'
 	DB	014H
 	DB	01aH
@@ -7940,7 +7454,7 @@ $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB '\'
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 030H
+$stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 02eH
 	DB	0eH
 	DD	imagerel ?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
@@ -7985,14 +7499,12 @@ $stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 030H
 	DB	09dH
 	DB	02H
 	DD	imagerel ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	036H
-	DD	imagerel ?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	0fdH
+	DB	02H
+	DD	imagerel ?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	04dH
-	DB	03H
-	DD	imagerel ?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	09dH
 	DB	04H
-	DD	imagerel ?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -8004,11 +7516,11 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?launch@SimpleUI@UI@@UEAAXXZ DD 025063c19H
 	DD	010f2314H
-	DD	0700801b0H
+	DD	0700801b8H
 	DD	050066007H
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?launch@SimpleUI@UI@@UEAAXXZ
-	DD	0d72H
+	DD	0db2H
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
@@ -8624,20 +8136,6 @@ xdata	SEGMENT
 $unwind$??4Client@Persistence@TechnicalServices@@QEAAAEAU012@$$QEAU012@@Z DD 025052f01H
 	DD	01132318H
 	DD	0700c001dH
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??0Client@Persistence@TechnicalServices@@QEAA@$$QEAU012@@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c001fH
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??0Client@Persistence@TechnicalServices@@QEAA@AEBU012@@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c001fH
 	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
@@ -10848,7 +10346,7 @@ __JustMyCode_Default PROC				; COMDAT
 __JustMyCode_Default ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV12@@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEBV31@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -10873,7 +10371,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rdx, QWORD PTR _Ptr$[rbp]
 	mov	ecx, 40					; 00000028H
@@ -10896,7 +10394,7 @@ $LN3:
 ??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV12@@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEBV31@@Z ENDP ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::construct<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEBV10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -10915,7 +10413,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -10931,7 +10429,7 @@ $LN3:
 ??$forward@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEBV10@@Z ENDP ; std::forward<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$$V@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -10953,7 +10451,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rdx, QWORD PTR _Ptr$[rbp]
 	mov	ecx, 40					; 00000028H
@@ -10972,90 +10470,7 @@ $LN3:
 ??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$$V@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ENDP ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::construct<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ??$construct@UClient@Persistence@TechnicalServices@@U123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@$$QEAU345@@Z
-_TEXT	SEGMENT
-$T1 = 200
-tv76 = 216
-__formal$ = 256
-_Ptr$ = 264
-<_Args_0>$ = 272
-??$construct@UClient@Persistence@TechnicalServices@@U123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@$$QEAU345@@Z PROC ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client>, COMDAT
-
-; 693  :     static void construct(_Alloc&, _Objty* const _Ptr, _Types&&... _Args) {
-
-$LN3:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 264				; 00000108H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 66					; 00000042H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-	mov	rdx, QWORD PTR _Ptr$[rbp]
-	mov	ecx, 48					; 00000030H
-	call	??2@YAPEAX_KPEAX@Z			; operator new
-	mov	QWORD PTR $T1[rbp], rax
-	mov	rcx, QWORD PTR <_Args_0>$[rbp]
-	call	??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z ; std::forward<TechnicalServices::Persistence::Client>
-	mov	QWORD PTR tv76[rbp], rax
-	mov	rdx, QWORD PTR tv76[rbp]
-	mov	rcx, QWORD PTR $T1[rbp]
-	call	??0Client@Persistence@TechnicalServices@@QEAA@$$QEAU012@@Z
-
-; 694  :         ::new (const_cast<void*>(static_cast<const volatile void*>(_Ptr))) _Objty(_STD forward<_Types>(_Args)...);
-; 695  :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$construct@UClient@Persistence@TechnicalServices@@U123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@$$QEAU345@@Z ENDP ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
-;	COMDAT ??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z
-_TEXT	SEGMENT
-_Arg$ = 224
-??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z PROC ; std::forward<TechnicalServices::Persistence::Client>, COMDAT
-
-; 1454 :     remove_reference_t<_Ty>& _Arg) noexcept { // forward an lvalue as either an lvalue or an rvalue
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
-	call	__CheckForDebuggerJustMyCode
-
-; 1455 :     return static_cast<_Ty&&>(_Arg);
-
-	mov	rax, QWORD PTR _Arg$[rbp]
-
-; 1456 : }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z ENDP ; std::forward<TechnicalServices::Persistence::Client>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
 _TEXT	SEGMENT
 tv78 = 192
@@ -11079,7 +10494,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1508 :         allocator_traits<_Alloc>::construct(_Al, _Unfancy(_Last), _STD forward<_Types>(_Vals)...);
@@ -11116,7 +10531,7 @@ $LN3:
 ??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Emplace_back<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xutility
 ;	COMDAT ??$_Get_unwrapped@AEBQEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YA@AEBQEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z
 _TEXT	SEGMENT
 _It$ = 224
@@ -11135,7 +10550,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	lea	rcx, OFFSET FLAT:__4324C6B3_xutility
 	call	__CheckForDebuggerJustMyCode
 
 ; 1230 :     // unwrap an iterator previously subjected to _Adl_verify_range or otherwise validated
@@ -11159,7 +10574,7 @@ $LN3:
 ??$_Get_unwrapped@AEBQEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YA@AEBQEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ENDP ; std::_Get_unwrapped<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const * const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@AEAPEAV_Facet_base@std@@@std@@YAAEAPEAV_Facet_base@0@AEAPEAV10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -11178,7 +10593,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -11194,7 +10609,7 @@ $LN3:
 ??$forward@AEAPEAV_Facet_base@std@@@std@@YAAEAPEAV_Facet_base@0@AEAPEAV10@@Z ENDP ; std::forward<std::_Facet_base * &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@AEBV?$allocator@D@std@@@std@@YAAEBV?$allocator@D@0@AEBV10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -11213,7 +10628,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -11229,7 +10644,7 @@ $LN3:
 ??$forward@AEBV?$allocator@D@std@@@std@@YAAEBV?$allocator@D@0@AEBV10@@Z ENDP ; std::forward<std::allocator<char> const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Emplace_back@$$V@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXXZ
 _TEXT	SEGMENT
 tv73 = 192
@@ -11250,7 +10665,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1508 :         allocator_traits<_Alloc>::construct(_Al, _Unfancy(_Last), _STD forward<_Types>(_Vals)...);
@@ -11311,7 +10726,7 @@ $LN3:
 ?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAX_K@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::__autoclassinit2
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Release@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -11330,7 +10745,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1513 :         _First = _Last;
@@ -11354,7 +10769,7 @@ $LN3:
 ?_Release@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ ENDP ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Release
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??1?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -11373,7 +10788,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1503 :         _Destroy_range(_First, _Last, _Al);
@@ -11396,7 +10811,7 @@ $LN3:
 ??1?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@XZ ENDP ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??0?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -11419,7 +10834,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rcx, QWORD PTR _Dest$[rbp]
@@ -11438,301 +10853,7 @@ $LN3:
 ??0?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ??$_Emplace_back@UClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX$$QEAUClient@Persistence@TechnicalServices@@@Z
-_TEXT	SEGMENT
-tv78 = 192
-tv76 = 200
-tv74 = 208
-this$ = 256
-<_Vals_0>$ = 264
-??$_Emplace_back@UClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX$$QEAUClient@Persistence@TechnicalServices@@@Z PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back<TechnicalServices::Persistence::Client>, COMDAT
-
-; 1507 :     void _Emplace_back(_Types&&... _Vals) { // construct a new element at *_Last and increment
-
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 264				; 00000108H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 66					; 00000042H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 1508 :         allocator_traits<_Alloc>::construct(_Al, _Unfancy(_Last), _STD forward<_Types>(_Vals)...);
-
-	mov	rcx, QWORD PTR <_Vals_0>$[rbp]
-	call	??$forward@UClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z ; std::forward<TechnicalServices::Persistence::Client>
-	mov	QWORD PTR tv78[rbp], rax
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR [rax+8]
-	call	??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z ; std::_Unfancy<TechnicalServices::Persistence::Client>
-	mov	QWORD PTR tv76[rbp], rax
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax+16]
-	mov	QWORD PTR tv74[rbp], rax
-	mov	r8, QWORD PTR tv78[rbp]
-	mov	rdx, QWORD PTR tv76[rbp]
-	mov	rcx, QWORD PTR tv74[rbp]
-	call	??$construct@UClient@Persistence@TechnicalServices@@U123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@$$QEAU345@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client>
-
-; 1509 :         ++_Last;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax+8]
-	add	rax, 48					; 00000030H
-	mov	rcx, QWORD PTR this$[rbp]
-	mov	QWORD PTR [rcx+8], rax
-
-; 1510 :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Emplace_back@UClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX$$QEAUClient@Persistence@TechnicalServices@@@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back<TechnicalServices::Persistence::Client>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
-_TEXT	SEGMENT
-this$ = 224
-classSize$ = 232
-?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2, COMDAT
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 200				; 000000c8H
-	mov	rbp, rsp
-	mov	rdi, rsp
-	mov	ecx, 50					; 00000032H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+232]
-	mov	rdi, QWORD PTR this$[rbp]
-	xor	eax, eax
-	mov	rcx, QWORD PTR classSize$[rbp]
-	rep stosb
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-_TEXT	SEGMENT
-this$ = 224
-?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Release, COMDAT
-
-; 1512 :     pointer _Release() { // suppress any exception handling backout and return _Last
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 1513 :         _First = _Last;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR [rcx+8]
-	mov	QWORD PTR [rax], rcx
-
-; 1514 :         return _Last;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax+8]
-
-; 1515 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Release
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
-_TEXT	SEGMENT
-this$ = 224
-??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >, COMDAT
-
-; 1502 :     ~_Uninitialized_backout_al() {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 1503 :         _Destroy_range(_First, _Last, _Al);
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	r8, QWORD PTR [rax+16]
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rdx, QWORD PTR [rax+8]
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR [rax]
-	call	??$_Destroy_range@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXPEAUClient@Persistence@TechnicalServices@@QEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ; std::_Destroy_range<std::allocator<TechnicalServices::Persistence::Client> >
-	npad	1
-
-; 1504 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z
-_TEXT	SEGMENT
-this$ = 224
-_Dest$ = 232
-_Al_$ = 240
-??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >, COMDAT
-
-; 1497 :     _Uninitialized_backout_al(pointer _Dest, _Alloc& _Al_) : _First(_Dest), _Last(_Dest), _Al(_Al_) {}
-
-$LN3:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR _Dest$[rbp]
-	mov	QWORD PTR [rax], rcx
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR _Dest$[rbp]
-	mov	QWORD PTR [rax+8], rcx
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR _Al_$[rbp]
-	mov	QWORD PTR [rax+16], rcx
-	mov	rax, QWORD PTR this$[rbp]
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
-;	COMDAT ??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z
-_TEXT	SEGMENT
-_Arg$ = 224
-??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z PROC ; std::move<TechnicalServices::Persistence::Client &>, COMDAT
-
-; 1466 : _NODISCARD constexpr remove_reference_t<_Ty>&& move(_Ty&& _Arg) noexcept { // forward _Arg as movable
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
-	call	__CheckForDebuggerJustMyCode
-
-; 1467 :     return static_cast<remove_reference_t<_Ty>&&>(_Arg);
-
-	mov	rax, QWORD PTR _Arg$[rbp]
-
-; 1468 : }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z ENDP ; std::move<TechnicalServices::Persistence::Client &>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
-;	COMDAT ??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z
-_TEXT	SEGMENT
-_It$ = 224
-??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z PROC ; std::_Get_unwrapped<TechnicalServices::Persistence::Client * const &>, COMDAT
-
-; 1229 : _NODISCARD constexpr decltype(auto) _Get_unwrapped(_Iter&& _It) {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__36E77527_xutility
-	call	__CheckForDebuggerJustMyCode
-
-; 1230 :     // unwrap an iterator previously subjected to _Adl_verify_range or otherwise validated
-; 1231 :     if constexpr (is_pointer_v<decay_t<_Iter>>) { // special-case pointers and arrays
-; 1232 :         return _It + 0;
-
-	mov	rax, QWORD PTR _It$[rbp]
-	mov	rax, QWORD PTR [rax]
-
-; 1233 :     } else if constexpr (_Unwrappable_v<_Iter>) {
-; 1234 :         return static_cast<_Iter&&>(_It)._Unwrapped();
-; 1235 :     } else {
-; 1236 :         return static_cast<_Iter&&>(_It);
-; 1237 :     }
-; 1238 : }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z ENDP ; std::_Get_unwrapped<TechnicalServices::Persistence::Client * const &>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z
 _TEXT	SEGMENT
 _UFirst$ = 8
@@ -11764,7 +10885,7 @@ $LN7:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1528 :     // copy [_First, _Last) to raw _Dest, using _Al
@@ -11908,7 +11029,7 @@ _Al$ = 360
 ?dtor$0@?0???$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z@4HA ENDP ; `std::_Uninitialized_copy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -11931,7 +11052,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 688  :         // no overflow check on the following multiply; we assume _Allocate did that check
@@ -11951,7 +11072,7 @@ $LN3:
 ?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z ENDP ; std::_Default_allocator_traits<std::allocator<std::_Container_proxy> >::deallocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ??$_Cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@any@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@XZ
 _TEXT	SEGMENT
 _Info$ = 8
@@ -11971,7 +11092,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 246  :         // if *this contains a value of type _Decayed, return a pointer to it
@@ -12024,7 +11145,7 @@ $LN1@Cast:
 ??$_Cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@any@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@XZ ENDP ; std::any::_Cast<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ??$_Cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@any@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -12043,7 +11164,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 266  :         return const_cast<_Decayed*>(static_cast<const any*>(this)->_Cast<_Decayed>());
@@ -12061,7 +11182,7 @@ $LN3:
 ??$_Cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@any@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@XZ ENDP ; std::any::_Cast<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0AEAPEAV_Facet_base@std@@@?$_Compressed_pair@U?$default_delete@V_Facet_base@std@@@std@@PEAV_Facet_base@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@AEAPEAV_Facet_base@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -12084,7 +11205,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR <_Val2_0>$[rbp]
 	call	??$forward@AEAPEAV_Facet_base@std@@@std@@YAAEAPEAV_Facet_base@0@AEAPEAV10@@Z ; std::forward<std::_Facet_base * &>
@@ -12099,7 +11220,7 @@ $LN3:
 ??$?0AEAPEAV_Facet_base@std@@@?$_Compressed_pair@U?$default_delete@V_Facet_base@std@@@std@@PEAV_Facet_base@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@AEAPEAV_Facet_base@1@@Z ENDP ; std::_Compressed_pair<std::default_delete<std::_Facet_base>,std::_Facet_base *,1>::_Compressed_pair<std::default_delete<std::_Facet_base>,std::_Facet_base *,1><std::_Facet_base * &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0AEBV?$allocator@D@std@@$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@AEBV?$allocator@D@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -12122,7 +11243,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR _Val1$[rbp]
 	call	??$forward@AEBV?$allocator@D@std@@@std@@YAAEBV?$allocator@D@0@AEBV10@@Z ; std::forward<std::allocator<char> const &>
@@ -12137,7 +11258,7 @@ $LN4:
 ??$?0AEBV?$allocator@D@std@@$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@AEBV?$allocator@D@1@@Z ENDP ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1><std::allocator<char> const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Get_size_of_n@$0CI@@std@@YA_K_K@Z
 _TEXT	SEGMENT
 _Overflow_is_possible$ = 4
@@ -12158,7 +11279,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 56   :     constexpr bool _Overflow_is_possible = _Ty_size > 1;
@@ -12200,7 +11321,7 @@ $LN3@Get_size_o:
 ??$_Get_size_of_n@$0CI@@std@@YA_K_K@Z ENDP		; std::_Get_size_of_n<40>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z
 _TEXT	SEGMENT
 tv70 = 192
@@ -12226,7 +11347,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 503  :     // compare [_Left, _Left + _Left_size) to [_Right, _Right + _Right_size) for equality using _Traits
@@ -12257,7 +11378,7 @@ $LN4@Traits_equ:
 ??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z ENDP ; std::_Traits_equal<std::char_traits<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Uninitialized_value_construct_n@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PEAV10@_KAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z
 _TEXT	SEGMENT
 _Backout$4 = 8
@@ -12286,7 +11407,7 @@ $LN7:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1825 :     // value-initialize _Count objects to raw _First, using _Al
@@ -12403,243 +11524,7 @@ _Al$ = 320
 ?dtor$0@?0???$_Uninitialized_value_construct_n@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PEAV10@_KAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z@4HA ENDP ; `std::_Uninitialized_value_construct_n<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ??$_Get_size_of_n@$0DA@@std@@YA_K_K@Z
-_TEXT	SEGMENT
-_Overflow_is_possible$ = 4
-_Max_possible$1 = 40
-_Count$ = 288
-??$_Get_size_of_n@$0DA@@std@@YA_K_K@Z PROC		; std::_Get_size_of_n<48>, COMDAT
-
-; 55   : _NODISCARD constexpr size_t _Get_size_of_n(const size_t _Count) {
-
-$LN4:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 296				; 00000128H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 74					; 0000004aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 56   :     constexpr bool _Overflow_is_possible = _Ty_size > 1;
-
-	mov	BYTE PTR _Overflow_is_possible$[rbp], 1
-
-; 57   : 
-; 58   :     if _CONSTEXPR_IF (_Overflow_is_possible) {
-; 59   :         constexpr size_t _Max_possible = static_cast<size_t>(-1) / _Ty_size;
-
-	mov	rax, 384307168202282325			; 0555555555555555H
-	mov	QWORD PTR _Max_possible$1[rbp], rax
-
-; 60   :         if (_Count > _Max_possible) {
-
-	mov	rax, 384307168202282325			; 0555555555555555H
-	cmp	QWORD PTR _Count$[rbp], rax
-	jbe	SHORT $LN2@Get_size_o
-
-; 61   :             _Throw_bad_array_new_length(); // multiply overflow
-
-	call	?_Throw_bad_array_new_length@std@@YAXXZ	; std::_Throw_bad_array_new_length
-$LN2@Get_size_o:
-
-; 62   :         }
-; 63   :     }
-; 64   : 
-; 65   :     return _Count * _Ty_size;
-
-	imul	rax, QWORD PTR _Count$[rbp], 48		; 00000030H
-$LN3@Get_size_o:
-
-; 66   : }
-
-	lea	rsp, QWORD PTR [rbp+264]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Get_size_of_n@$0DA@@std@@YA_K_K@Z ENDP		; std::_Get_size_of_n<48>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z
-_TEXT	SEGMENT
-_UFirst$ = 8
-_ULast$ = 40
-_Backout$4 = 72
-$T5 = 312
-__$ArrayPad$ = 328
-_First$ = 368
-_Last$ = 376
-_Dest$ = 384
-_Al$ = 392
-??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z PROC ; std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >, COMDAT
-
-; 1647 :     const _InIt _First, const _InIt _Last, _Alloc_ptr_t<_Alloc> _Dest, _Alloc& _Al) {
-
-$LN7:
-	mov	QWORD PTR [rsp+32], r9
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 376				; 00000178H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 94					; 0000005eH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+408]
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rbp
-	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 1648 :     // move [_First, _Last) to raw _Dest, using _Al
-; 1649 :     // note: only called internally from elsewhere in the STL
-; 1650 :     using _Ptrval     = typename _Alloc::value_type*;
-; 1651 :     auto _UFirst      = _Get_unwrapped(_First);
-
-	lea	rcx, QWORD PTR _First$[rbp]
-	call	??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Client * const &>
-	mov	QWORD PTR _UFirst$[rbp], rax
-
-; 1652 :     const auto _ULast = _Get_unwrapped(_Last);
-
-	lea	rcx, QWORD PTR _Last$[rbp]
-	call	??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Client * const &>
-	mov	QWORD PTR _ULast$[rbp], rax
-
-; 1653 :     if constexpr (conjunction_v<bool_constant<_Ptr_move_cat<decltype(_UFirst), _Ptrval>::_Really_trivial>,
-; 1654 :                       _Uses_default_construct<_Alloc, _Ptrval, decltype(_STD move(*_UFirst))>>) {
-; 1655 :         _Copy_memmove(_UFirst, _ULast, _Unfancy(_Dest));
-; 1656 :         return _Dest + (_ULast - _UFirst);
-; 1657 :     } else {
-; 1658 :         _Uninitialized_backout_al<_Alloc> _Backout{_Dest, _Al};
-
-	mov	edx, 24
-	lea	rcx, QWORD PTR _Backout$4[rbp]
-	call	?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
-	mov	r8, QWORD PTR _Al$[rbp]
-	mov	rdx, QWORD PTR _Dest$[rbp]
-	lea	rcx, QWORD PTR _Backout$4[rbp]
-	call	??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
-	npad	1
-
-; 1659 :         for (; _UFirst != _ULast; ++_UFirst) {
-
-	jmp	SHORT $LN4@Uninitiali
-$LN2@Uninitiali:
-	mov	rax, QWORD PTR _UFirst$[rbp]
-	add	rax, 48					; 00000030H
-	mov	QWORD PTR _UFirst$[rbp], rax
-$LN4@Uninitiali:
-	mov	rax, QWORD PTR _ULast$[rbp]
-	cmp	QWORD PTR _UFirst$[rbp], rax
-	je	SHORT $LN3@Uninitiali
-
-; 1660 :             _Backout._Emplace_back(_STD move(*_UFirst));
-
-	mov	rcx, QWORD PTR _UFirst$[rbp]
-	call	??$move@AEAUClient@Persistence@TechnicalServices@@@std@@YA$$QEAUClient@Persistence@TechnicalServices@@AEAU123@@Z ; std::move<TechnicalServices::Persistence::Client &>
-	mov	rdx, rax
-	lea	rcx, QWORD PTR _Backout$4[rbp]
-	call	??$_Emplace_back@UClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX$$QEAUClient@Persistence@TechnicalServices@@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back<TechnicalServices::Persistence::Client>
-
-; 1661 :         }
-
-	jmp	SHORT $LN2@Uninitiali
-$LN3@Uninitiali:
-
-; 1662 : 
-; 1663 :         return _Backout._Release();
-
-	lea	rcx, QWORD PTR _Backout$4[rbp]
-	call	?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Release
-	mov	QWORD PTR $T5[rbp], rax
-	lea	rcx, QWORD PTR _Backout$4[rbp]
-	call	??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
-	mov	rax, QWORD PTR $T5[rbp]
-
-; 1664 :     }
-; 1665 : }
-
-	mov	rdi, rax
-	lea	rcx, QWORD PTR [rbp-32]
-	lea	rdx, OFFSET FLAT:??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z$rtcFrameData
-	call	_RTC_CheckStackVars
-	mov	rax, rdi
-	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
-	xor	rcx, rbp
-	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+344]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ENDP ; std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >
-_TEXT	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-_UFirst$ = 8
-_ULast$ = 40
-_Backout$4 = 72
-$T5 = 312
-__$ArrayPad$ = 328
-_First$ = 368
-_Last$ = 376
-_Dest$ = 384
-_Al$ = 392
-?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA PROC ; `std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >'::`1'::dtor$0
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR _Backout$4[rbp]
-	call	??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA ENDP ; `std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >'::`1'::dtor$0
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-_UFirst$ = 8
-_ULast$ = 40
-_Backout$4 = 72
-$T5 = 312
-__$ArrayPad$ = 328
-_First$ = 368
-_Last$ = 376
-_Dest$ = 384
-_Al$ = 392
-?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA PROC ; `std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >'::`1'::dtor$0
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR _Backout$4[rbp]
-	call	??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$0@?0???$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z@4HA ENDP ; `std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >'::`1'::dtor$0
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility
 ;	COMDAT ??$exchange@PEAVSessionHandler@Session@Domain@@PEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@$$QEAPEAV123@@Z
 _TEXT	SEGMENT
 _Old_val$ = 8
@@ -12661,7 +11546,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	lea	rcx, OFFSET FLAT:__CF1C1A3F_utility
 	call	__CheckForDebuggerJustMyCode
 
 ; 598  :     // assign _New_val to _Val, return previous _Val
@@ -12691,7 +11576,7 @@ $LN3:
 ??$exchange@PEAVSessionHandler@Session@Domain@@PEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@$$QEAPEAV123@@Z ENDP ; std::exchange<Domain::Session::SessionHandler *,Domain::Session::SessionHandler *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility
 ;	COMDAT ??$exchange@PEAVSessionHandler@Session@Domain@@AEAPEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@0@Z
 _TEXT	SEGMENT
 _Old_val$ = 8
@@ -12713,7 +11598,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	lea	rcx, OFFSET FLAT:__CF1C1A3F_utility
 	call	__CheckForDebuggerJustMyCode
 
 ; 598  :     // assign _New_val to _Val, return previous _Val
@@ -12743,7 +11628,7 @@ $LN3:
 ??$exchange@PEAVSessionHandler@Session@Domain@@AEAPEAV123@@std@@YAPEAVSessionHandler@Session@Domain@@AEAPEAV123@0@Z ENDP ; std::exchange<Domain::Session::SessionHandler *,Domain::Session::SessionHandler * &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility
 ;	COMDAT ??$exchange@PEAVClientHandler@Client@Domain@@PEAV123@@std@@YAPEAVClientHandler@Client@Domain@@AEAPEAV123@$$QEAPEAV123@@Z
 _TEXT	SEGMENT
 _Old_val$ = 8
@@ -12765,7 +11650,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	lea	rcx, OFFSET FLAT:__CF1C1A3F_utility
 	call	__CheckForDebuggerJustMyCode
 
 ; 598  :     // assign _New_val to _Val, return previous _Val
@@ -12795,7 +11680,7 @@ $LN3:
 ??$exchange@PEAVClientHandler@Client@Domain@@PEAV123@@std@@YAPEAVClientHandler@Client@Domain@@AEAPEAV123@$$QEAPEAV123@@Z ENDP ; std::exchange<Domain::Client::ClientHandler *,Domain::Client::ClientHandler *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility
 ;	COMDAT ??$exchange@PEAVClientHandler@Client@Domain@@AEAPEAV123@@std@@YAPEAVClientHandler@Client@Domain@@AEAPEAV123@0@Z
 _TEXT	SEGMENT
 _Old_val$ = 8
@@ -12817,7 +11702,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	lea	rcx, OFFSET FLAT:__CF1C1A3F_utility
 	call	__CheckForDebuggerJustMyCode
 
 ; 598  :     // assign _New_val to _Val, return previous _Val
@@ -12847,7 +11732,7 @@ $LN3:
 ??$exchange@PEAVClientHandler@Client@Domain@@AEAPEAV123@@std@@YAPEAVClientHandler@Client@Domain@@AEAPEAV123@0@Z ENDP ; std::exchange<Domain::Client::ClientHandler *,Domain::Client::ClientHandler * &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility
 ;	COMDAT ??$exchange@PEAV_Facet_base@std@@PEAV12@@std@@YAPEAV_Facet_base@0@AEAPEAV10@$$QEAPEAV10@@Z
 _TEXT	SEGMENT
 _Old_val$ = 8
@@ -12869,7 +11754,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	lea	rcx, OFFSET FLAT:__CF1C1A3F_utility
 	call	__CheckForDebuggerJustMyCode
 
 ; 598  :     // assign _New_val to _Val, return previous _Val
@@ -12899,7 +11784,7 @@ $LN3:
 ??$exchange@PEAV_Facet_base@std@@PEAV12@@std@@YAPEAV_Facet_base@0@AEAPEAV10@$$QEAPEAV10@@Z ENDP ; std::exchange<std::_Facet_base *,std::_Facet_base *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$destroy@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -12920,7 +11805,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 699  :         _Ptr->~_Uty();
@@ -12938,7 +11823,7 @@ $LN3:
 ??$destroy@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ENDP ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::destroy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$_Unfancy@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PEAV10@@Z
 _TEXT	SEGMENT
 _Ptr$ = 224
@@ -12957,7 +11842,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 289  :     return _Ptr;
@@ -12973,7 +11858,7 @@ $LN3:
 ??$_Unfancy@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PEAV10@@Z ENDP ; std::_Unfancy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$destroy@UClient@Persistence@TechnicalServices@@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -12994,7 +11879,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 699  :         _Ptr->~_Uty();
@@ -13012,7 +11897,42 @@ $LN3:
 ??$destroy@UClient@Persistence@TechnicalServices@@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@@Z ENDP ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::destroy<TechnicalServices::Persistence::Client>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
+;	COMDAT ??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z
+_TEXT	SEGMENT
+_Ptr$ = 224
+??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z PROC ; std::_Unfancy<TechnicalServices::Persistence::Client>, COMDAT
+
+; 288  : _NODISCARD constexpr _Ty* _Unfancy(_Ty* _Ptr) noexcept { // do nothing for plain pointers
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
+	call	__CheckForDebuggerJustMyCode
+
+; 289  :     return _Ptr;
+
+	mov	rax, QWORD PTR _Ptr$[rbp]
+
+; 290  : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z ENDP ; std::_Unfancy<TechnicalServices::Persistence::Client>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z
 _TEXT	SEGMENT
 _Block_size$ = 8
@@ -13034,7 +11954,7 @@ $LN13:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+376]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 114  :     // allocate _Bytes manually aligned to at least _Big_allocation_alignment
@@ -13077,7 +11997,7 @@ $LN7@Allocate_m:
 	mov	QWORD PTR [rsp+32], rax
 	xor	r9d, r9d
 	mov	r8d, 121				; 00000079H
-	lea	rdx, OFFSET FLAT:??_C@_0GJ@EHJGLGPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	lea	rdx, OFFSET FLAT:??_C@_0GI@JMEOMKJO@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 	mov	ecx, 2
 	call	QWORD PTR __imp__CrtDbgReport
 	cmp	eax, 1
@@ -13087,7 +12007,7 @@ $LN7@Allocate_m:
 $LN12@Allocate_m:
 	mov	QWORD PTR [rsp+32], 0
 	mov	r9d, 121				; 00000079H
-	lea	r8, OFFSET FLAT:??_C@_1NC@LBGPBFDE@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+	lea	r8, OFFSET FLAT:??_C@_1NA@FEEOBALC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
 	lea	rdx, OFFSET FLAT:??_C@_1EO@GFNCMDLA@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAA?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA_@
 	lea	rcx, OFFSET FLAT:??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe@
 	call	QWORD PTR __imp__invalid_parameter
@@ -13139,7 +12059,7 @@ $LN11@Allocate_m:
 ??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z ENDP ; std::_Allocate_manually_vector_aligned<std::_Default_allocate_traits>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@AEBQEAD@std@@YAAEBQEADAEBQEAD@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -13158,7 +12078,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -13174,7 +12094,7 @@ $LN3:
 ??$forward@AEBQEAD@std@@YAAEBQEADAEBQEAD@Z ENDP		; std::forward<char * const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -13193,7 +12113,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -13209,7 +12129,42 @@ $LN3:
 ??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z ENDP		; std::addressof<char *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
+;	COMDAT ??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z
+_TEXT	SEGMENT
+_Arg$ = 224
+??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z PROC ; std::move<std::allocator<TechnicalServices::Persistence::Client> &>, COMDAT
+
+; 1466 : _NODISCARD constexpr remove_reference_t<_Ty>&& move(_Ty&& _Arg) noexcept { // forward _Arg as movable
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
+	call	__CheckForDebuggerJustMyCode
+
+; 1467 :     return static_cast<remove_reference_t<_Ty>&&>(_Arg);
+
+	mov	rax, QWORD PTR _Arg$[rbp]
+
+; 1468 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z ENDP ; std::move<std::allocator<TechnicalServices::Persistence::Client> &>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -13228,7 +12183,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -13244,7 +12199,7 @@ $LN3:
 ??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z ENDP ; std::forward<std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??$_Ucopy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@PEBV21@0PEAV21@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -13269,7 +12224,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1588 :         return _Uninitialized_copy(_First, _Last, _Dest, _Getal());
@@ -13291,7 +12246,7 @@ $LN3:
 ??$_Ucopy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@PEBV21@0PEAV21@@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Ucopy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??1?$_Tidy_guard@V?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -13310,7 +12265,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 31   :         if (_Target) {
@@ -13337,7 +12292,7 @@ $LN2@Tidy_guard:
 ??1?$_Tidy_guard@V?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@std@@QEAA@XZ ENDP ; std::_Tidy_guard<std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >::~_Tidy_guard<std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xutility
 ;	COMDAT ??$distance@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YA_JPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z
 _TEXT	SEGMENT
 _First$ = 224
@@ -13358,7 +12313,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	lea	rcx, OFFSET FLAT:__4324C6B3_xutility
 	call	__CheckForDebuggerJustMyCode
 
 ; 1723 :     if constexpr (_Is_random_iter_v<_InIt>) {
@@ -13392,7 +12347,7 @@ $LN3:
 ??$distance@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YA_JPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z ENDP ; std::distance<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@AEBV10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -13411,7 +12366,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -13427,7 +12382,7 @@ $LN3:
 ??$forward@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@AEBV10@@Z ENDP ; std::forward<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xutility
 ;	COMDAT ??$_Get_unwrapped@AEAPEAD@std@@YA@AEAPEAD@Z
 _TEXT	SEGMENT
 _It$ = 224
@@ -13446,7 +12401,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	lea	rcx, OFFSET FLAT:__4324C6B3_xutility
 	call	__CheckForDebuggerJustMyCode
 
 ; 1230 :     // unwrap an iterator previously subjected to _Adl_verify_range or otherwise validated
@@ -13470,7 +12425,7 @@ $LN3:
 ??$_Get_unwrapped@AEAPEAD@std@@YA@AEAPEAD@Z ENDP	; std::_Get_unwrapped<char * &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
 _TEXT	SEGMENT
 _Al$ = 224
@@ -13491,7 +12446,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 999  :     // deallocate a plain pointer using an allocator
@@ -13518,7 +12473,55 @@ $LN3:
 ??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ENDP ; std::_Deallocate_plain<std::allocator<std::_Container_proxy> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
+;	COMDAT ??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
+_TEXT	SEGMENT
+tv68 = 192
+_Left$ = 240
+__formal$ = 248
+??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z PROC ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >, COMDAT
+
+; 2749 : _NODISCARD bool operator==(const unique_ptr<_Ty, _Dx>& _Left, nullptr_t) noexcept {
+
+$LN5:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 248				; 000000f8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 62					; 0000003eH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+280]
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
+	call	__CheckForDebuggerJustMyCode
+
+; 2750 :     return !_Left;
+
+	mov	rcx, QWORD PTR _Left$[rbp]
+	call	??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBA_NXZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator bool
+	movzx	eax, al
+	test	eax, eax
+	jne	SHORT $LN3@operator
+	mov	DWORD PTR tv68[rbp], 1
+	jmp	SHORT $LN4@operator
+$LN3@operator:
+	mov	DWORD PTR tv68[rbp], 0
+$LN4@operator:
+	movzx	eax, BYTE PTR tv68[rbp]
+
+; 2751 : }
+
+	lea	rsp, QWORD PTR [rbp+216]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ENDP ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA$$QEAU?$default_delete@VClientHandler@Client@Domain@@@0@AEAU10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -13537,7 +12540,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -13553,7 +12556,7 @@ $LN3:
 ??$forward@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA$$QEAU?$default_delete@VClientHandler@Client@Domain@@@0@AEAU10@@Z ENDP ; std::forward<std::default_delete<Domain::Client::ClientHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@V?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@@std@@YAPEAV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -13572,7 +12575,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -13588,7 +12591,7 @@ $LN3:
 ??$addressof@V?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@@std@@YAPEAV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@AEAV10@@Z ENDP ; std::addressof<std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0$$V@?$_Compressed_pair@U?$default_delete@VClientHandler@Client@Domain@@@std@@PEAVClientHandler@Client@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -13609,7 +12612,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR [rax], 0
@@ -13621,7 +12624,7 @@ $LN3:
 ??$?0$$V@?$_Compressed_pair@U?$default_delete@VClientHandler@Client@Domain@@@std@@PEAVClientHandler@Client@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ENDP ; std::_Compressed_pair<std::default_delete<Domain::Client::ClientHandler>,Domain::Client::ClientHandler *,1>::_Compressed_pair<std::default_delete<Domain::Client::ClientHandler>,Domain::Client::ClientHandler *,1><>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ??$any_cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAVany@0@@Z
 _TEXT	SEGMENT
 _Any$ = 224
@@ -13640,7 +12643,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 389  :     // retrieve a pointer to the _ValueType contained in _Any, or null
@@ -13679,7 +12682,7 @@ $LN1@any_cast:
 ??$any_cast@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAVany@0@@Z ENDP ; std::any_cast<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??$_Insert_string@DU?$char_traits@D@std@@_K@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@QEBD_K@Z
 _TEXT	SEGMENT
 _State$ = 4
@@ -13731,7 +12734,7 @@ $LN26:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 424  :     // insert a character-type sequence into _Ostr as if through a basic_string copy
@@ -14286,7 +13289,7 @@ __catch$??$_Insert_string@DU?$char_traits@D@std@@_K@std@@YAAEAV?$basic_ostream@D
 ?catch$1@?0???$_Insert_string@DU?$char_traits@D@std@@_K@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@QEBD_K@Z@4HA ENDP ; `std::_Insert_string<char,std::char_traits<char>,unsigned __int64>'::`1'::catch$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??$?8VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@0@$$T@Z
 _TEXT	SEGMENT
 tv68 = 192
@@ -14308,7 +13311,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2750 :     return !_Left;
@@ -14334,7 +13337,7 @@ $LN4@operator:
 ??$?8VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@0@$$T@Z ENDP ; std::operator==<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@YA$$QEAU?$default_delete@VSessionHandler@Session@Domain@@@0@AEAU10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -14353,7 +13356,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -14369,7 +13372,7 @@ $LN3:
 ??$forward@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@YA$$QEAU?$default_delete@VSessionHandler@Session@Domain@@@0@AEAU10@@Z ENDP ; std::forward<std::default_delete<Domain::Session::SessionHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@V?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@@std@@YAPEAV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -14388,7 +13391,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -14404,7 +13407,7 @@ $LN3:
 ??$addressof@V?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@@std@@YAPEAV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@0@AEAV10@@Z ENDP ; std::addressof<std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\string
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\string
 ;	COMDAT ??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@$$QEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@D@Z
 _TEXT	SEGMENT
 _State$ = 4
@@ -14446,7 +13449,7 @@ $LN21:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__965C11D2_string
+	lea	rcx, OFFSET FLAT:__3AFA803E_string
 	call	__CheckForDebuggerJustMyCode
 
 ; 30   :     using _Myis = basic_istream<_Elem, _Traits>;
@@ -14866,7 +13869,7 @@ __catch$??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_i
 ?catch$1@?0???$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@$$QEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@D@Z@4HA ENDP ; `std::getline<char,std::char_traits<char>,std::allocator<char> >'::`1'::catch$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$move@AEAV?$basic_istream@DU?$char_traits@D@std@@@std@@@std@@YA$$QEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -14885,7 +13888,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1467 :     return static_cast<remove_reference_t<_Ty>&&>(_Arg);
@@ -14901,7 +13904,7 @@ $LN3:
 ??$move@AEAV?$basic_istream@DU?$char_traits@D@std@@@std@@@std@@YA$$QEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@@Z ENDP ; std::move<std::basic_istream<char,std::char_traits<char> > &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0$$V@?$_Compressed_pair@U?$default_delete@VSessionHandler@Session@Domain@@@std@@PEAVSessionHandler@Session@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -14922,7 +13925,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR [rax], 0
@@ -14934,7 +13937,7 @@ $LN3:
 ??$?0$$V@?$_Compressed_pair@U?$default_delete@VSessionHandler@Session@Domain@@@std@@PEAVSessionHandler@Session@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ENDP ; std::_Compressed_pair<std::default_delete<Domain::Session::SessionHandler>,Domain::Session::SessionHandler *,1>::_Compressed_pair<std::default_delete<Domain::Session::SessionHandler>,Domain::Session::SessionHandler *,1><>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0$$V@?$_Compressed_pair@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@PEAVMaintainBooksHandler@Library@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -14955,7 +13958,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR [rax], 0
@@ -14967,7 +13970,7 @@ $LN3:
 ??$?0$$V@?$_Compressed_pair@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@PEAVMaintainBooksHandler@Library@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ENDP ; std::_Compressed_pair<std::default_delete<Domain::Library::MaintainBooksHandler>,Domain::Library::MaintainBooksHandler *,1>::_Compressed_pair<std::default_delete<Domain::Library::MaintainBooksHandler>,Domain::Library::MaintainBooksHandler *,1><>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??$?0U?$default_delete@V_Facet_base@std@@@std@@$0A@@?$unique_ptr@V_Facet_base@std@@U?$default_delete@V_Facet_base@std@@@2@@std@@QEAA@PEAV_Facet_base@1@@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -14990,7 +13993,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv70[rbp], rax
@@ -15034,7 +14037,7 @@ $LN3:
 ?__autoclassinit2@?$unique_ptr@V_Facet_base@std@@U?$default_delete@V_Facet_base@std@@@2@@std@@QEAAX_K@Z ENDP ; std::unique_ptr<std::_Facet_base,std::default_delete<std::_Facet_base> >::__autoclassinit2
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@U?$default_delete@V_Facet_base@std@@@std@@PEAV_Facet_base@2@$00@std@@QEAAAEAU?$default_delete@V_Facet_base@std@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -15053,7 +14056,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1344 :         return *this;
@@ -15069,7 +14072,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@U?$default_delete@V_Facet_base@std@@@std@@PEAV_Facet_base@2@$00@std@@QEAAAEAU?$default_delete@V_Facet_base@std@@@2@XZ ENDP ; std::_Compressed_pair<std::default_delete<std::_Facet_base>,std::_Facet_base *,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ?release@?$unique_ptr@V_Facet_base@std@@U?$default_delete@V_Facet_base@std@@@2@@std@@QEAAPEAV_Facet_base@2@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -15089,7 +14092,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2541 :         return _STD exchange(_Mypair._Myval2, pointer());
@@ -15110,7 +14113,7 @@ $LN3:
 ?release@?$unique_ptr@V_Facet_base@std@@U?$default_delete@V_Facet_base@std@@@2@@std@@QEAAPEAV_Facet_base@2@XZ ENDP ; std::unique_ptr<std::_Facet_base,std::default_delete<std::_Facet_base> >::release
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??1?$unique_ptr@V_Facet_base@std@@U?$default_delete@V_Facet_base@std@@@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 tv77 = 192
@@ -15131,7 +14134,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2511 :         if (_Mypair._Myval2) {
@@ -15165,7 +14168,7 @@ $LN2@unique_ptr:
 ??1?$unique_ptr@V_Facet_base@std@@U?$default_delete@V_Facet_base@std@@@2@@std@@QEAA@XZ ENDP ; std::unique_ptr<std::_Facet_base,std::default_delete<std::_Facet_base> >::~unique_ptr<std::_Facet_base,std::default_delete<std::_Facet_base> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??R?$default_delete@V_Facet_base@std@@@std@@QEBAXPEAV_Facet_base@1@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -15189,7 +14192,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2401 :         static_assert(0 < sizeof(_Ty), "can't delete an incomplete type");
@@ -15221,7 +14224,7 @@ $LN4@operator:
 ??R?$default_delete@V_Facet_base@std@@@std@@QEBAXPEAV_Facet_base@1@@Z ENDP ; std::default_delete<std::_Facet_base>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xutility
 ;	COMDAT ??$_Verify_range@D@std@@YAXQEBD0@Z
 _TEXT	SEGMENT
 _First$ = 224
@@ -15242,7 +14245,7 @@ $LN12:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	lea	rcx, OFFSET FLAT:__4324C6B3_xutility
 	call	__CheckForDebuggerJustMyCode
 $LN4@Verify_ran:
 
@@ -15260,7 +14263,7 @@ $LN7@Verify_ran:
 	mov	QWORD PTR [rsp+32], rax
 	xor	r9d, r9d
 	mov	r8d, 1171				; 00000493H
-	lea	rdx, OFFSET FLAT:??_C@_0GK@OHAIDBEA@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	lea	rdx, OFFSET FLAT:??_C@_0GJ@NENAPENJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 	mov	ecx, 2
 	call	QWORD PTR __imp__CrtDbgReport
 	cmp	eax, 1
@@ -15270,7 +14273,7 @@ $LN7@Verify_ran:
 $LN11@Verify_ran:
 	mov	QWORD PTR [rsp+32], 0
 	mov	r9d, 1171				; 00000493H
-	lea	r8, OFFSET FLAT:??_C@_1NE@NLDHILHB@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+	lea	r8, OFFSET FLAT:??_C@_1NC@MGIEKFBC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
 	lea	rdx, OFFSET FLAT:??_C@_1CG@LJCPDKEJ@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAr?$AAi?$AAf?$AAy?$AA_?$AAr?$AAa@
 	lea	rcx, OFFSET FLAT:??_C@_1DG@FJIKMGFD@?$AA?$CC?$AAt?$AAr?$AAa?$AAn?$AAs?$AAp?$AAo?$AAs?$AAe?$AAd?$AA?5?$AAp?$AAo?$AAi@
 	call	QWORD PTR __imp__invalid_parameter
@@ -15291,7 +14294,7 @@ $LN9@Verify_ran:
 ??$_Verify_range@D@std@@YAXQEBD0@Z ENDP			; std::_Verify_range<char>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??$?0PEAD$0A@@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@PEAD0AEBV?$allocator@D@1@@Z
 _TEXT	SEGMENT
 _Alproxy$ = 8
@@ -15330,7 +14333,7 @@ $LN5:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv70[rbp], rax
@@ -15545,7 +14548,7 @@ _Al$ = 504
 ?dtor$1@?0???$?0PEAD$0A@@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@PEAD0AEBV?$allocator@D@1@@Z@4HA ENDP ; `std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> ><char *,0>'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\string
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\string
 ;	COMDAT ??$_UIntegral_to_buff@DI@std@@YAPEADPEADI@Z
 _TEXT	SEGMENT
 _UVal_trunc$ = 4
@@ -15567,7 +14570,7 @@ $LN6:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__965C11D2_string
+	lea	rcx, OFFSET FLAT:__3AFA803E_string
 	call	__CheckForDebuggerJustMyCode
 
 ; 455  :     static_assert(is_unsigned_v<_UTy>, "_UTy must be unsigned");
@@ -15638,7 +14641,7 @@ $LN4@UIntegral_:
 ??$_UIntegral_to_buff@DI@std@@YAPEADPEADI@Z ENDP	; std::_UIntegral_to_buff<char,unsigned int>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xutility
 ;	COMDAT ??$end@D$0BF@@std@@YAPEADAEAY0BF@D@Z
 _TEXT	SEGMENT
 _Array$ = 224
@@ -15657,7 +14660,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	lea	rcx, OFFSET FLAT:__4324C6B3_xutility
 	call	__CheckForDebuggerJustMyCode
 
 ; 2123 :     return _Array + _Size;
@@ -15674,7 +14677,7 @@ $LN3:
 ??$end@D$0BF@@std@@YAPEADAEAY0BF@D@Z ENDP		; std::end<char,21>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@PEAU_Container_base12@std@@@std@@YA$$QEAPEAU_Container_base12@0@AEAPEAU10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -15693,7 +14696,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1455 :     return static_cast<_Ty&&>(_Arg);
@@ -15709,7 +14712,7 @@ $LN3:
 ??$forward@PEAU_Container_base12@std@@@std@@YA$$QEAPEAU_Container_base12@0@AEAPEAU10@@Z ENDP ; std::forward<std::_Container_base12 *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@AEAU10@@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -15728,7 +14731,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -15744,7 +14747,7 @@ $LN3:
 ??$addressof@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@AEAU10@@Z ENDP ; std::addressof<std::_Container_proxy>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Get_size_of_n@$00@std@@YA_K_K@Z
 _TEXT	SEGMENT
 _Overflow_is_possible$ = 4
@@ -15764,7 +14767,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 56   :     constexpr bool _Overflow_is_possible = _Ty_size > 1;
@@ -15792,7 +14795,7 @@ $LN3:
 ??$_Get_size_of_n@$00@std@@YA_K_K@Z ENDP		; std::_Get_size_of_n<1>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@$$CBV?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@YAPEBV?$_String_val@U?$_Simple_types@D@std@@@0@AEBV10@@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -15811,7 +14814,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -15827,7 +14830,7 @@ $LN3:
 ??$addressof@$$CBV?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@YAPEBV?$_String_val@U?$_Simple_types@D@std@@@0@AEBV10@@Z ENDP ; std::addressof<std::_String_val<std::_Simple_types<char> > const >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@YAPEAV?$_String_val@U?$_Simple_types@D@std@@@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -15846,7 +14849,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -15862,7 +14865,7 @@ $LN3:
 ??$addressof@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@YAPEAV?$_String_val@U?$_Simple_types@D@std@@@0@AEAV10@@Z ENDP ; std::addressof<std::_String_val<std::_Simple_types<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z
 _TEXT	SEGMENT
 _First$ = 224
@@ -15885,7 +14888,7 @@ $LN6:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 956  :     // note that this is an optimization for debug mode codegen; in release mode the BE removes all of this
@@ -15926,7 +14929,7 @@ $LN3@Destroy_ra:
 ??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ENDP ; std::_Destroy_range<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 _Ptr$ = 224
@@ -15947,7 +14950,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 214  :     // deallocate storage allocated by _Allocate when !_HAS_ALIGNED_NEW || _Align <= __STDCPP_DEFAULT_NEW_ALIGNMENT__
@@ -15983,7 +14986,7 @@ $LN2@Deallocate:
 ??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z ENDP		; std::_Deallocate<16,0>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Destroy_range@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXPEAUClient@Persistence@TechnicalServices@@QEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z
 _TEXT	SEGMENT
 _First$ = 224
@@ -16006,7 +15009,7 @@ $LN6:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 956  :     // note that this is an optimization for debug mode codegen; in release mode the BE removes all of this
@@ -16047,7 +15050,7 @@ $LN3@Destroy_ra:
 ??$_Destroy_range@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXPEAUClient@Persistence@TechnicalServices@@QEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ENDP ; std::_Destroy_range<std::allocator<TechnicalServices::Persistence::Client> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Allocate@$0BA@U_Default_allocate_traits@std@@$0A@@std@@YAPEAX_K@Z
 _TEXT	SEGMENT
 _Bytes$ = 224
@@ -16066,7 +15069,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 198  :     // allocate _Bytes when !_HAS_ALIGNED_NEW || _Align <= __STDCPP_DEFAULT_NEW_ALIGNMENT__
@@ -16114,7 +15117,7 @@ $LN1@Allocate:
 ??$_Allocate@$0BA@U_Default_allocate_traits@std@@$0A@@std@@YAPEAX_K@Z ENDP ; std::_Allocate<16,std::_Default_allocate_traits,0>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Get_size_of_n@$0BA@@std@@YA_K_K@Z
 _TEXT	SEGMENT
 _Overflow_is_possible$ = 4
@@ -16135,7 +15138,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 56   :     constexpr bool _Overflow_is_possible = _Ty_size > 1;
@@ -16177,7 +15180,7 @@ $LN3@Get_size_o:
 ??$_Get_size_of_n@$0BA@@std@@YA_K_K@Z ENDP		; std::_Get_size_of_n<16>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility
 ;	COMDAT ??$max@_K@std@@YAAEB_KAEB_K0@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -16200,7 +15203,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	lea	rcx, OFFSET FLAT:__CF1C1A3F_utility
 	call	__CheckForDebuggerJustMyCode
 
 ; 43   :     // return larger of _Left and _Right
@@ -16231,7 +15234,7 @@ $LN4@max:
 ??$max@_K@std@@YAAEB_KAEB_K0@Z ENDP			; std::max<unsigned __int64>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Pocma@V?$allocator@D@std@@@std@@YAXAEAV?$allocator@D@0@0@Z
 _TEXT	SEGMENT
 _Left$ = 224
@@ -16252,7 +15255,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 902  :     if constexpr (allocator_traits<_Alloc>::propagate_on_container_move_assignment::value) {
@@ -16272,7 +15275,7 @@ $LN3:
 ??$_Pocma@V?$allocator@D@std@@@std@@YAXAEAV?$allocator@D@0@0@Z ENDP ; std::_Pocma<std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$_Unfancy@D@std@@YAPEADPEAD@Z
 _TEXT	SEGMENT
 _Ptr$ = 224
@@ -16291,7 +15294,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 289  :     return _Ptr;
@@ -16307,7 +15310,7 @@ $LN3:
 ??$_Unfancy@D@std@@YAPEADPEAD@Z ENDP			; std::_Unfancy<char>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Construct_in_place@PEADAEBQEAD@std@@YAXAEAPEADAEBQEAD@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -16329,7 +15332,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR _Obj$[rbp]
 	call	??$addressof@PEAD@std@@YAPEAPEADAEAPEAD@Z ; std::addressof<char *>
@@ -16354,7 +15357,7 @@ $LN3:
 ??$_Construct_in_place@PEADAEBQEAD@std@@YAXAEAPEADAEBQEAD@Z ENDP ; std::_Construct_in_place<char *,char * const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Pocca@V?$allocator@D@std@@@std@@YAXAEAV?$allocator@D@0@AEBV10@@Z
 _TEXT	SEGMENT
 _Left$ = 224
@@ -16375,7 +15378,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 
@@ -16391,7 +15394,7 @@ $LN3:
 ??$_Pocca@V?$allocator@D@std@@@std@@YAXAEAV?$allocator@D@0@AEBV10@@Z ENDP ; std::_Pocca<std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??$_Reallocate_for@V<lambda_66f57f934f28d61049862f64df852ff0>@@PEBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV01@_KV<lambda_66f57f934f28d61049862f64df852ff0>@@PEBD@Z
 _TEXT	SEGMENT
 _Old_capacity$ = 8
@@ -16424,7 +15427,7 @@ $LN6:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4219 :         // reallocate to store exactly _New_size elements, new buffer prepared by
@@ -16560,7 +15563,7 @@ $LN5@Reallocate:
 ??$_Reallocate_for@V<lambda_66f57f934f28d61049862f64df852ff0>@@PEBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV01@_KV<lambda_66f57f934f28d61049862f64df852ff0>@@PEBD@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Reallocate_for<<lambda_66f57f934f28d61049862f64df852ff0>,char const *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??R<lambda_66f57f934f28d61049862f64df852ff0>@@QEBA@QEAD_KQEBD@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -16586,7 +15589,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2977 :                 _Traits::copy(_New_ptr, _Ptr, _Count);
@@ -16616,7 +15619,7 @@ $LN3:
 ??R<lambda_66f57f934f28d61049862f64df852ff0>@@QEBA@QEAD_KQEBD@Z ENDP ; <lambda_66f57f934f28d61049862f64df852ff0>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??$_Reallocate_grow_by@V<lambda_319d5e083f45f90dcdce5dce53cbb275>@@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV01@_KV<lambda_319d5e083f45f90dcdce5dce53cbb275>@@D@Z
 _TEXT	SEGMENT
 _My_data$ = 8
@@ -16654,7 +15657,7 @@ $LN6:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4245 :         // reallocate to increase size by _Size_increase elements, new buffer prepared by
@@ -16834,7 +15837,7 @@ $LN5@Reallocate:
 ??$_Reallocate_grow_by@V<lambda_319d5e083f45f90dcdce5dce53cbb275>@@D@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV01@_KV<lambda_319d5e083f45f90dcdce5dce53cbb275>@@D@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Reallocate_grow_by<<lambda_319d5e083f45f90dcdce5dce53cbb275>,char>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??R<lambda_319d5e083f45f90dcdce5dce53cbb275>@@QEBA@QEADQEBD_KD@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -16861,7 +15864,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 3620 :                 _Traits::copy(_New_ptr, _Old_ptr, _Old_size);
@@ -16900,7 +15903,7 @@ $LN3:
 ??R<lambda_319d5e083f45f90dcdce5dce53cbb275>@@QEBA@QEADQEBD_KD@Z ENDP ; <lambda_319d5e083f45f90dcdce5dce53cbb275>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z
 _TEXT	SEGMENT
 _Obj$ = 224
@@ -16919,7 +15922,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 
@@ -16933,7 +15936,48 @@ $LN3:
 ??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z ENDP	; std::_Destroy_in_place<char *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z
+_TEXT	SEGMENT
+_Left$ = 224
+_Right$ = 232
+??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z PROC ; std::_Pocma<std::allocator<TechnicalServices::Persistence::Client> >, COMDAT
+
+; 901  : void _Pocma(_Alloc& _Left, _Alloc& _Right) noexcept { // (maybe) propagate on container move assignment
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 902  :     if constexpr (allocator_traits<_Alloc>::propagate_on_container_move_assignment::value) {
+; 903  :         _Left = _STD move(_Right);
+
+	mov	rcx, QWORD PTR _Right$[rbp]
+	call	??$move@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YA$$QEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEAV10@@Z ; std::move<std::allocator<TechnicalServices::Persistence::Client> &>
+	npad	1
+
+; 904  :     }
+; 905  : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z ENDP ; std::_Pocma<std::allocator<TechnicalServices::Persistence::Client> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z
 _TEXT	SEGMENT
 _Ptr$ = 224
@@ -16952,7 +15996,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 289  :     return _Ptr;
@@ -16968,7 +16012,7 @@ $LN3:
 ??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z ENDP ; std::_Unfancy<std::_Container_proxy>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -16989,7 +16033,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0?$allocator@D@std@@QEAA@XZ		; std::allocator<char>::allocator<char>
@@ -17004,7 +16048,7 @@ $LN4:
 ??$?0$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ENDP ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1><>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0V?$allocator@D@std@@$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@$$QEAV?$allocator@D@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -17027,7 +16071,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR _Val1$[rbp]
 	call	??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z ; std::forward<std::allocator<char> >
@@ -17042,7 +16086,7 @@ $LN4:
 ??$?0V?$allocator@D@std@@$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@$$QEAV?$allocator@D@1@@Z ENDP ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1><std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$move@AEAV?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -17061,7 +16105,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1467 :     return static_cast<remove_reference_t<_Ty>&&>(_Arg);
@@ -17077,7 +16121,7 @@ $LN3:
 ??$move@AEAV?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z ENDP ; std::move<std::allocator<char> &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -17096,7 +16140,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -17112,7 +16156,7 @@ $LN3:
 ??$addressof@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEAV10@@Z ENDP ; std::addressof<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -17133,7 +16177,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rsp, QWORD PTR [rbp+200]
@@ -17143,7 +16187,7 @@ $LN3:
 ??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z ENDP ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><char>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEBV10@@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -17162,7 +16206,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -17178,7 +16222,7 @@ $LN3:
 ??$addressof@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEBV10@@Z ENDP ; std::addressof<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z
 _TEXT	SEGMENT
 _New_proxy$ = 8
@@ -17201,7 +16245,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1102 :         _Container_proxy* const _New_proxy = _Unfancy(_Al.allocate(1));
@@ -17242,7 +16286,7 @@ $LN3:
 ??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z ENDP ; std::_Container_base12::_Alloc_proxy<std::allocator<std::_Container_proxy> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -17263,7 +16307,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
@@ -17278,7 +16322,7 @@ $LN3:
 ??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ENDP ; std::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1>::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1><>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??$_Construct_n_copies_of_ty@U_Value_init_tag@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAX_KAEBU_Value_init_tag@1@@Z
 _TEXT	SEGMENT
 _Alproxy$ = 8
@@ -17310,7 +16354,7 @@ $LN6:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 456  :         auto&& _Alproxy = _GET_PROXY_ALLOCATOR(_Alty, _Getal());
@@ -17504,7 +16548,7 @@ _Val$ = 416
 ?dtor$1@?0???$_Construct_n_copies_of_ty@U_Value_init_tag@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAX_KAEBU_Value_init_tag@1@@Z@4HA ENDP ; `std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Construct_n_copies_of_ty<std::_Value_init_tag>'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z
 _TEXT	SEGMENT
 _Count$ = 8
@@ -17536,7 +16580,7 @@ $LN5:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 493  :         const auto _Count = _Convert_size<size_type>(static_cast<size_t>(_STD distance(_First, _Last)));
@@ -17656,7 +16700,7 @@ __formal$ = 344
 ?dtor$0@?0???$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z@4HA ENDP ; `std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Range_construct_or_tidy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *>'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -17675,7 +16719,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1301 :         if (_Ptr) {
@@ -17704,7 +16748,7 @@ $LN2@Container_:
 ??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@XZ ENDP ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::~_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??0?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@AEAV?$allocator@U_Container_proxy@std@@@1@AEAU_Container_base12@1@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -17728,7 +16772,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1287 :         : _Al(_Al_) { // create a new _Container_proxy pointing at _Mycont
@@ -17774,7 +16818,7 @@ $LN3:
 ??0?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@AEAV?$allocator@U_Container_proxy@std@@@1@AEAU_Container_base12@1@@Z ENDP ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -17797,7 +16841,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR _Val1$[rbp]
 	call	??$forward@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@AEBV10@@Z ; std::forward<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > const &>
@@ -17812,7 +16856,7 @@ $LN3:
 ??$?0AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ENDP ; std::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1>::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1><std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -17833,7 +16877,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rsp, QWORD PTR [rbp+200]
@@ -17843,7 +16887,7 @@ $LN3:
 ??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ENDP ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility
 ;	COMDAT ??$min@_K@std@@YAAEB_KAEB_K0@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -17866,7 +16910,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	lea	rcx, OFFSET FLAT:__CF1C1A3F_utility
 	call	__CheckForDebuggerJustMyCode
 
 ; 68   :     // return smaller of _Left and _Right
@@ -17897,7 +16941,7 @@ $LN4@min:
 ??$min@_K@std@@YAAEB_KAEB_K0@Z ENDP			; std::min<unsigned __int64>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$move@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YA$$QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Arg$ = 224
@@ -17916,7 +16960,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	lea	rcx, OFFSET FLAT:__85A9AA98_type_traits
 	call	__CheckForDebuggerJustMyCode
 
 ; 1467 :     return static_cast<remove_reference_t<_Ty>&&>(_Arg);
@@ -17932,7 +16976,7 @@ $LN3:
 ??$move@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YA$$QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEAV10@@Z ENDP ; std::move<std::basic_string<char,std::char_traits<char>,std::allocator<char> > &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\ostream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\ostream
 ;	COMDAT ??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ
 _TEXT	SEGMENT
 this$ = 224
@@ -17951,7 +16995,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B4645957_ostream
+	lea	rcx, OFFSET FLAT:__1D745195_ostream
 	call	__CheckForDebuggerJustMyCode
 
 ; 126  :             return _Ok;
@@ -17968,7 +17012,7 @@ $LN3:
 ??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ ENDP ; std::basic_ostream<char,std::char_traits<char> >::sentry::operator bool
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\ostream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\ostream
 ;	COMDAT ??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Zero_uncaught_exceptions$ = 4
@@ -17989,7 +17033,7 @@ $LN6:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__B4645957_ostream
+	lea	rcx, OFFSET FLAT:__1D745195_ostream
 	call	__CheckForDebuggerJustMyCode
 
 ; 111  : #if !_HAS_EXCEPTIONS
@@ -18039,7 +17083,7 @@ $LN2@sentry:
 ??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ ENDP ; std::basic_ostream<char,std::char_traits<char> >::sentry::~sentry
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\ostream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\ostream
 ;	COMDAT ??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z
 _TEXT	SEGMENT
 _Tied$ = 8
@@ -18061,7 +17105,7 @@ $LN7:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__B4645957_ostream
+	lea	rcx, OFFSET FLAT:__1D745195_ostream
 	call	__CheckForDebuggerJustMyCode
 	mov	rdx, QWORD PTR _Ostr$[rbp]
 	mov	rcx, QWORD PTR this$[rbp]
@@ -18198,7 +17242,7 @@ _Ostr$ = 264
 ?dtor$0@?0???0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z@4HA ENDP ; `std::basic_ostream<char,std::char_traits<char> >::sentry::sentry'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\ostream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\ostream
 ;	COMDAT ??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Rdbuf$ = 8
@@ -18219,7 +17263,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__B4645957_ostream
+	lea	rcx, OFFSET FLAT:__1D745195_ostream
 	call	__CheckForDebuggerJustMyCode
 
 ; 79   :             const auto _Rdbuf = _Myostr.rdbuf();
@@ -18261,7 +17305,7 @@ $LN2@Sentry_bas:
 ??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ ENDP ; std::basic_ostream<char,std::char_traits<char> >::_Sentry_base::~_Sentry_base
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\ostream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\ostream
 ;	COMDAT ??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z
 _TEXT	SEGMENT
 _Rdbuf$ = 8
@@ -18284,7 +17328,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__B4645957_ostream
+	lea	rcx, OFFSET FLAT:__1D745195_ostream
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rcx, QWORD PTR _Ostr$[rbp]
@@ -18353,7 +17397,7 @@ $LN3:
 ??1sentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@XZ ENDP ; std::basic_istream<char,std::char_traits<char> >::sentry::~sentry
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\istream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\istream
 ;	COMDAT ??Bsentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QEBA_NXZ
 _TEXT	SEGMENT
 this$ = 224
@@ -18372,7 +17416,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__D7B46C6D_istream
+	lea	rcx, OFFSET FLAT:__7EA464AF_istream
 	call	__CheckForDebuggerJustMyCode
 
 ; 106  :             return _Ok;
@@ -18389,7 +17433,7 @@ $LN3:
 ??Bsentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QEBA_NXZ ENDP ; std::basic_istream<char,std::char_traits<char> >::sentry::operator bool
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\istream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\istream
 ;	COMDAT ??0sentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@_N@Z
 _TEXT	SEGMENT
 tv86 = 192
@@ -18413,7 +17457,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__D7B46C6D_istream
+	lea	rcx, OFFSET FLAT:__7EA464AF_istream
 	call	__CheckForDebuggerJustMyCode
 	mov	rdx, QWORD PTR _Istr$[rbp]
 	mov	rcx, QWORD PTR this$[rbp]
@@ -18478,7 +17522,7 @@ _Noskip$ = 256
 ?dtor$0@?0???0sentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@_N@Z@4HA ENDP ; `std::basic_istream<char,std::char_traits<char> >::sentry::sentry'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\istream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\istream
 ;	COMDAT ??1_Sentry_base@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Rdbuf$ = 8
@@ -18499,7 +17543,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__D7B46C6D_istream
+	lea	rcx, OFFSET FLAT:__7EA464AF_istream
 	call	__CheckForDebuggerJustMyCode
 
 ; 89   :             const auto _Rdbuf = _Myistr.rdbuf();
@@ -18541,7 +17585,7 @@ $LN2@Sentry_bas:
 ??1_Sentry_base@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@XZ ENDP ; std::basic_istream<char,std::char_traits<char> >::_Sentry_base::~_Sentry_base
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\istream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\istream
 ;	COMDAT ??0_Sentry_base@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z
 _TEXT	SEGMENT
 _Rdbuf$ = 8
@@ -18564,7 +17608,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__D7B46C6D_istream
+	lea	rcx, OFFSET FLAT:__7EA464AF_istream
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rcx, QWORD PTR _Istr$[rbp]
@@ -18609,7 +17653,42 @@ $LN2@Sentry_bas:
 ??0_Sentry_base@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z ENDP ; std::basic_istream<char,std::char_traits<char> >::_Sentry_base::_Sentry_base
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
+;	COMDAT ??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z
+_TEXT	SEGMENT
+_Val$ = 224
+??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z PROC ; std::addressof<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > >, COMDAT
+
+; 274  : _NODISCARD constexpr _Ty* addressof(_Ty& _Val) noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
+	call	__CheckForDebuggerJustMyCode
+
+; 275  :     return __builtin_addressof(_Val);
+
+	mov	rax, QWORD PTR _Val$[rbp]
+
+; 276  : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z ENDP ; std::addressof<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
 _TEXT	SEGMENT
 _Al$ = 224
@@ -18630,7 +17709,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1027 :     // destroy *_Ptr in place, then deallocate _Ptr using _Al; used for internal container types the user didn't name
@@ -18652,7 +17731,7 @@ $LN3:
 ??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ENDP ; std::_Delete_plain_internal<std::allocator<std::_Container_proxy> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility
 ;	COMDAT ??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
 _TEXT	SEGMENT
 _Old_val$ = 8
@@ -18674,7 +17753,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	lea	rcx, OFFSET FLAT:__CF1C1A3F_utility
 	call	__CheckForDebuggerJustMyCode
 
 ; 598  :     // assign _New_val to _Val, return previous _Val
@@ -18704,7 +17783,7 @@ $LN3:
 ??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ENDP ; std::exchange<std::_Container_proxy *,std::nullptr_t>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0UClient@Persistence@TechnicalServices@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -18725,7 +17804,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rsp, QWORD PTR [rbp+200]
@@ -18735,7 +17814,7 @@ $LN3:
 ??$?0UClient@Persistence@TechnicalServices@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z ENDP ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><TechnicalServices::Persistence::Client>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?allocate@?$allocator@U_Container_proxy@std@@@std@@QEAAPEAU_Container_proxy@2@_K@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -18756,7 +17835,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 807  :         return static_cast<_Ty*>(_Allocate<_New_alignof<_Ty>>(_Get_size_of_n<sizeof(_Ty)>(_Count)));
@@ -18775,715 +17854,15 @@ $LN3:
 ?allocate@?$allocator@U_Container_proxy@std@@@std@@QEAAPEAU_Container_proxy@2@_K@Z ENDP ; std::allocator<std::_Container_proxy>::allocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
+;	COMDAT ??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
 _TEXT	SEGMENT
-_Al$ = 8
-_My_data$ = 40
-_Myfirst$ = 72
-_Mylast$ = 104
-_Whereoff$ = 136
-_Oldsize$ = 168
-_Newsize$ = 200
-_Newcapacity$ = 232
-_Newvec$ = 264
-_Constructed_last$ = 296
-_Constructed_first$ = 328
-tv134 = 536
-tv132 = 544
-this$ = 592
-_Whereptr$ = 600
-<_Val_0>$ = 608
-??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_reallocate<TechnicalServices::Persistence::Client const &>, COMDAT
-
-; 725  :     pointer _Emplace_reallocate(const pointer _Whereptr, _Valty&&... _Val) {
-
-$LN13:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 600				; 00000258H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 150				; 00000096H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+632]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 726  :         // reallocate and insert by perfectly forwarding _Val at _Whereptr
-; 727  :         _Alty& _Al        = _Getal();
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	QWORD PTR _Al$[rbp], rax
-
-; 728  :         auto& _My_data    = _Mypair._Myval2;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR _My_data$[rbp], rax
-
-; 729  :         pointer& _Myfirst = _My_data._Myfirst;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 8
-	mov	QWORD PTR _Myfirst$[rbp], rax
-
-; 730  :         pointer& _Mylast  = _My_data._Mylast;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 16
-	mov	QWORD PTR _Mylast$[rbp], rax
-
-; 731  : 
-; 732  :         _STL_INTERNAL_CHECK(_Mylast == _My_data._Myend); // check that we have no unused capacity
-; 733  : 
-; 734  :         const auto _Whereoff = static_cast<size_type>(_Whereptr - _Myfirst);
-
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	rcx, QWORD PTR _Whereptr$[rbp]
-	sub	rcx, rax
-	mov	rax, rcx
-	cdq
-	mov	ecx, 48					; 00000030H
-	idiv	rcx
-	mov	QWORD PTR _Whereoff$[rbp], rax
-
-; 735  :         const auto _Oldsize  = static_cast<size_type>(_Mylast - _Myfirst);
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	rcx, QWORD PTR _Myfirst$[rbp]
-	mov	rcx, QWORD PTR [rcx]
-	mov	rax, QWORD PTR [rax]
-	sub	rax, rcx
-	cdq
-	mov	ecx, 48					; 00000030H
-	idiv	rcx
-	mov	QWORD PTR _Oldsize$[rbp], rax
-
-; 736  : 
-; 737  :         if (_Oldsize == max_size()) {
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::max_size
-	cmp	QWORD PTR _Oldsize$[rbp], rax
-	jne	SHORT $LN2@Emplace_re
-
-; 738  :             _Xlength();
-
-	call	?_Xlength@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@CAXXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Xlength
-$LN2@Emplace_re:
-
-; 739  :         }
-; 740  : 
-; 741  :         const size_type _Newsize     = _Oldsize + 1;
-
-	mov	rax, QWORD PTR _Oldsize$[rbp]
-	inc	rax
-	mov	QWORD PTR _Newsize$[rbp], rax
-
-; 742  :         const size_type _Newcapacity = _Calculate_growth(_Newsize);
-
-	mov	rdx, QWORD PTR _Newsize$[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Calculate_growth@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Calculate_growth
-	mov	QWORD PTR _Newcapacity$[rbp], rax
-
-; 743  : 
-; 744  :         const pointer _Newvec           = _Al.allocate(_Newcapacity);
-
-	mov	rdx, QWORD PTR _Newcapacity$[rbp]
-	mov	rcx, QWORD PTR _Al$[rbp]
-	call	?allocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::allocate
-	mov	QWORD PTR _Newvec$[rbp], rax
-
-; 745  :         const pointer _Constructed_last = _Newvec + _Whereoff + 1;
-
-	imul	rax, QWORD PTR _Whereoff$[rbp], 48	; 00000030H
-	mov	rcx, QWORD PTR _Newvec$[rbp]
-	lea	rax, QWORD PTR [rcx+rax+48]
-	mov	QWORD PTR _Constructed_last$[rbp], rax
-
-; 746  :         pointer _Constructed_first      = _Constructed_last;
-
-	mov	rax, QWORD PTR _Constructed_last$[rbp]
-	mov	QWORD PTR _Constructed_first$[rbp], rax
-
-; 747  : 
-; 748  :         _TRY_BEGIN
-; 749  :         _Alty_traits::construct(_Al, _Unfancy(_Newvec + _Whereoff), _STD forward<_Valty>(_Val)...);
-
-	mov	rcx, QWORD PTR <_Val_0>$[rbp]
-	call	??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z ; std::forward<TechnicalServices::Persistence::Client const &>
-	mov	QWORD PTR tv134[rbp], rax
-	imul	rax, QWORD PTR _Whereoff$[rbp], 48	; 00000030H
-	mov	rcx, QWORD PTR _Newvec$[rbp]
-	add	rcx, rax
-	mov	rax, rcx
-	mov	rcx, rax
-	call	??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z ; std::_Unfancy<TechnicalServices::Persistence::Client>
-	mov	QWORD PTR tv132[rbp], rax
-	mov	r8, QWORD PTR tv134[rbp]
-	mov	rdx, QWORD PTR tv132[rbp]
-	mov	rcx, QWORD PTR _Al$[rbp]
-	call	??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client const &>
-
-; 750  :         _Constructed_first = _Newvec + _Whereoff;
-
-	imul	rax, QWORD PTR _Whereoff$[rbp], 48	; 00000030H
-	mov	rcx, QWORD PTR _Newvec$[rbp]
-	add	rcx, rax
-	mov	rax, rcx
-	mov	QWORD PTR _Constructed_first$[rbp], rax
-
-; 751  : 
-; 752  :         if (_Whereptr == _Mylast) { // at back, provide strong guarantee
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	rax, QWORD PTR [rax]
-	cmp	QWORD PTR _Whereptr$[rbp], rax
-	jne	SHORT $LN4@Emplace_re
-
-; 753  :             _Umove_if_noexcept(_Myfirst, _Mylast, _Newvec);
-
-	mov	r9, QWORD PTR _Newvec$[rbp]
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	r8, QWORD PTR [rax]
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	rdx, QWORD PTR [rax]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Umove_if_noexcept@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove_if_noexcept
-
-; 754  :         } else { // provide basic guarantee
-
-	jmp	SHORT $LN5@Emplace_re
-$LN4@Emplace_re:
-
-; 755  :             _Umove(_Myfirst, _Whereptr, _Newvec);
-
-	mov	r9, QWORD PTR _Newvec$[rbp]
-	mov	r8, QWORD PTR _Whereptr$[rbp]
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	rdx, QWORD PTR [rax]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove
-
-; 756  :             _Constructed_first = _Newvec;
-
-	mov	rax, QWORD PTR _Newvec$[rbp]
-	mov	QWORD PTR _Constructed_first$[rbp], rax
-
-; 757  :             _Umove(_Whereptr, _Mylast, _Newvec + _Whereoff + 1);
-
-	imul	rax, QWORD PTR _Whereoff$[rbp], 48	; 00000030H
-	mov	rcx, QWORD PTR _Newvec$[rbp]
-	lea	rax, QWORD PTR [rcx+rax+48]
-	mov	r9, rax
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	r8, QWORD PTR [rax]
-	mov	rdx, QWORD PTR _Whereptr$[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove
-	npad	1
-$LN5@Emplace_re:
-	jmp	SHORT $LN9@Emplace_re
-$LN10@Emplace_re:
-$LN9@Emplace_re:
-
-; 758  :         }
-; 759  :         _CATCH_ALL
-; 760  :         _Destroy(_Constructed_first, _Constructed_last);
-; 761  :         _Al.deallocate(_Newvec, _Newcapacity);
-; 762  :         _RERAISE;
-; 763  :         _CATCH_END
-; 764  : 
-; 765  :         _Change_array(_Newvec, _Newsize, _Newcapacity);
-
-	mov	r9, QWORD PTR _Newcapacity$[rbp]
-	mov	r8, QWORD PTR _Newsize$[rbp]
-	mov	rdx, QWORD PTR _Newvec$[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Change_array@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXQEAUClient@Persistence@TechnicalServices@@_K1@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Change_array
-
-; 766  :         return _Newvec + _Whereoff;
-
-	imul	rax, QWORD PTR _Whereoff$[rbp], 48	; 00000030H
-	mov	rcx, QWORD PTR _Newvec$[rbp]
-	add	rcx, rax
-	mov	rax, rcx
-
-; 767  :     }
-
-	lea	rsp, QWORD PTR [rbp+568]
-	pop	rdi
-	pop	rbp
-	ret	0
-$LN11@Emplace_re:
-??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_reallocate<TechnicalServices::Persistence::Client const &>
-_TEXT	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-_Al$ = 8
-_My_data$ = 40
-_Myfirst$ = 72
-_Mylast$ = 104
-_Whereoff$ = 136
-_Oldsize$ = 168
-_Newsize$ = 200
-_Newcapacity$ = 232
-_Newvec$ = 264
-_Constructed_last$ = 296
-_Constructed_first$ = 328
-tv134 = 536
-tv132 = 544
-this$ = 592
-_Whereptr$ = 600
-<_Val_0>$ = 608
-?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA PROC ; `std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_reallocate<TechnicalServices::Persistence::Client const &>'::`1'::catch$0
-
-; 758  :         }
-; 759  :         _CATCH_ALL
-
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-__catch$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z$0:
-
-; 758  :         }
-; 759  :         _CATCH_ALL
-; 760  :         _Destroy(_Constructed_first, _Constructed_last);
-
-	mov	r8, QWORD PTR _Constructed_last$[rbp]
-	mov	rdx, QWORD PTR _Constructed_first$[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
-
-; 758  :         }
-; 759  :         _CATCH_ALL
-; 760  :         _Destroy(_Constructed_first, _Constructed_last);
-; 761  :         _Al.deallocate(_Newvec, _Newcapacity);
-
-	mov	r8, QWORD PTR _Newcapacity$[rbp]
-	mov	rdx, QWORD PTR _Newvec$[rbp]
-	mov	rcx, QWORD PTR _Al$[rbp]
-	call	?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
-
-; 758  :         }
-; 759  :         _CATCH_ALL
-; 760  :         _Destroy(_Constructed_first, _Constructed_last);
-; 761  :         _Al.deallocate(_Newvec, _Newcapacity);
-; 762  :         _RERAISE;
-
-	xor	edx, edx
-	xor	ecx, ecx
-	call	_CxxThrowException
-	npad	1
-
-; 758  :         }
-; 759  :         _CATCH_ALL
-; 760  :         _Destroy(_Constructed_first, _Constructed_last);
-; 761  :         _Al.deallocate(_Newvec, _Newcapacity);
-; 762  :         _RERAISE;
-; 763  :         _CATCH_END
-
-	lea	rax, $LN10@catch$0
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-	int	3
-?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA ENDP ; `std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_reallocate<TechnicalServices::Persistence::Client const &>'::`1'::catch$0
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-_Al$ = 8
-_My_data$ = 40
-_Myfirst$ = 72
-_Mylast$ = 104
-_Whereoff$ = 136
-_Oldsize$ = 168
-_Newsize$ = 200
-_Newcapacity$ = 232
-_Newvec$ = 264
-_Constructed_last$ = 296
-_Constructed_first$ = 328
-tv134 = 536
-tv132 = 544
-this$ = 592
-_Whereptr$ = 600
-<_Val_0>$ = 608
-?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA PROC ; `std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_reallocate<TechnicalServices::Persistence::Client const &>'::`1'::catch$0
-
-; 759  :         _CATCH_ALL
-
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-__catch$??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z$0:
-
-; 760  :         _Destroy(_Constructed_first, _Constructed_last);
-
-	mov	r8, QWORD PTR _Constructed_last$[rbp]
-	mov	rdx, QWORD PTR _Constructed_first$[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
-
-; 761  :         _Al.deallocate(_Newvec, _Newcapacity);
-
-	mov	r8, QWORD PTR _Newcapacity$[rbp]
-	mov	rdx, QWORD PTR _Newvec$[rbp]
-	mov	rcx, QWORD PTR _Al$[rbp]
-	call	?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
-
-; 762  :         _RERAISE;
-
-	xor	edx, edx
-	xor	ecx, ecx
-	call	_CxxThrowException
-	npad	1
-
-; 763  :         _CATCH_END
-
-	lea	rax, $LN10@catch$0
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-	int	3
-?catch$0@?0???$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z@4HA ENDP ; `std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_reallocate<TechnicalServices::Persistence::Client const &>'::`1'::catch$0
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z
-_TEXT	SEGMENT
-$T1 = 200
-tv76 = 216
-__formal$ = 256
-_Ptr$ = 264
-<_Args_0>$ = 272
-??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z PROC ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client const &>, COMDAT
-
-; 693  :     static void construct(_Alloc&, _Objty* const _Ptr, _Types&&... _Args) {
-
-$LN3:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 264				; 00000108H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 66					; 00000042H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-	mov	rdx, QWORD PTR _Ptr$[rbp]
-	mov	ecx, 48					; 00000030H
-	call	??2@YAPEAX_KPEAX@Z			; operator new
-	mov	QWORD PTR $T1[rbp], rax
-	mov	rcx, QWORD PTR <_Args_0>$[rbp]
-	call	??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z ; std::forward<TechnicalServices::Persistence::Client const &>
-	mov	QWORD PTR tv76[rbp], rax
-	mov	rdx, QWORD PTR tv76[rbp]
-	mov	rcx, QWORD PTR $T1[rbp]
-	call	??0Client@Persistence@TechnicalServices@@QEAA@AEBU012@@Z
-
-; 694  :         ::new (const_cast<void*>(static_cast<const volatile void*>(_Ptr))) _Objty(_STD forward<_Types>(_Args)...);
-; 695  :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z ENDP ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client const &>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
-;	COMDAT ??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z
-_TEXT	SEGMENT
-_Ptr$ = 224
-??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z PROC ; std::_Unfancy<TechnicalServices::Persistence::Client>, COMDAT
-
-; 288  : _NODISCARD constexpr _Ty* _Unfancy(_Ty* _Ptr) noexcept { // do nothing for plain pointers
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
-	call	__CheckForDebuggerJustMyCode
-
-; 289  :     return _Ptr;
-
-	mov	rax, QWORD PTR _Ptr$[rbp]
-
-; 290  : }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z ENDP ; std::_Unfancy<TechnicalServices::Persistence::Client>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ??$_Emplace_back_with_unused_capacity@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAA@AEBUClient@Persistence@TechnicalServices@@@Z
-_TEXT	SEGMENT
-_My_data$ = 8
-_Mylast$ = 40
-_Result$ = 72
-tv81 = 280
-tv79 = 288
-tv77 = 296
-this$ = 336
-<_Val_0>$ = 344
-??$_Emplace_back_with_unused_capacity@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAA@AEBUClient@Persistence@TechnicalServices@@@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back_with_unused_capacity<TechnicalServices::Persistence::Client const &>, COMDAT
-
-; 682  :     decltype(auto) _Emplace_back_with_unused_capacity(_Valty&&... _Val) {
-
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 344				; 00000158H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 86					; 00000056H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+376]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 683  :         // insert by perfectly forwarding into element at end, provide strong guarantee
-; 684  :         auto& _My_data   = _Mypair._Myval2;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR _My_data$[rbp], rax
-
-; 685  :         pointer& _Mylast = _My_data._Mylast;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 16
-	mov	QWORD PTR _Mylast$[rbp], rax
-
-; 686  :         _STL_INTERNAL_CHECK(_Mylast != _My_data._Myend); // check that we have unused capacity
-; 687  :         _Alty_traits::construct(_Getal(), _Unfancy(_Mylast), _STD forward<_Valty>(_Val)...);
-
-	mov	rcx, QWORD PTR <_Val_0>$[rbp]
-	call	??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z ; std::forward<TechnicalServices::Persistence::Client const &>
-	mov	QWORD PTR tv81[rbp], rax
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	rcx, QWORD PTR [rax]
-	call	??$_Unfancy@UClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@@Z ; std::_Unfancy<TechnicalServices::Persistence::Client>
-	mov	QWORD PTR tv79[rbp], rax
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	QWORD PTR tv77[rbp], rax
-	mov	r8, QWORD PTR tv81[rbp]
-	mov	rdx, QWORD PTR tv79[rbp]
-	mov	rcx, QWORD PTR tv77[rbp]
-	call	??$construct@UClient@Persistence@TechnicalServices@@AEBU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEBU345@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client const &>
-
-; 688  :         _Orphan_range(_Mylast, _Mylast);
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	r8, QWORD PTR [rax]
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	rdx, QWORD PTR [rax]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Orphan_range
-
-; 689  :         _Ty& _Result = *_Mylast;
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR _Result$[rbp], rax
-
-; 690  :         ++_Mylast;
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	rax, QWORD PTR [rax]
-	add	rax, 48					; 00000030H
-	mov	rcx, QWORD PTR _Mylast$[rbp]
-	mov	QWORD PTR [rcx], rax
-
-; 691  : #if _HAS_CXX17
-; 692  :         return _Result;
-
-	mov	rax, QWORD PTR _Result$[rbp]
-
-; 693  : #else // ^^^ _HAS_CXX17 ^^^ // vvv !_HAS_CXX17 vvv
-; 694  :         (void) _Result;
-; 695  : #endif // _HAS_CXX17
-; 696  :     }
-
-	lea	rsp, QWORD PTR [rbp+312]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Emplace_back_with_unused_capacity@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAA@AEBUClient@Persistence@TechnicalServices@@@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back_with_unused_capacity<TechnicalServices::Persistence::Client const &>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
-;	COMDAT ??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z
-_TEXT	SEGMENT
-_Arg$ = 224
-??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z PROC ; std::forward<TechnicalServices::Persistence::Client const &>, COMDAT
-
-; 1454 :     remove_reference_t<_Ty>& _Arg) noexcept { // forward an lvalue as either an lvalue or an rvalue
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
-	call	__CheckForDebuggerJustMyCode
-
-; 1455 :     return static_cast<_Ty&&>(_Arg);
-
-	mov	rax, QWORD PTR _Arg$[rbp]
-
-; 1456 : }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z ENDP ; std::forward<TechnicalServices::Persistence::Client const &>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ??$emplace_back@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@AEBUClient@Persistence@TechnicalServices@@@Z
-_TEXT	SEGMENT
-_My_data$ = 8
-_Mylast$ = 40
-_Result$ = 72
-tv83 = 280
-tv81 = 288
-this$ = 336
-<_Val_0>$ = 344
-??$emplace_back@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@AEBUClient@Persistence@TechnicalServices@@@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::emplace_back<TechnicalServices::Persistence::Client const &>, COMDAT
-
-; 700  :     decltype(auto) emplace_back(_Valty&&... _Val) {
-
-$LN4:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 344				; 00000158H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 86					; 00000056H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+376]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 701  :         // insert by perfectly forwarding into element at end, provide strong guarantee
-; 702  :         auto& _My_data   = _Mypair._Myval2;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR _My_data$[rbp], rax
-
-; 703  :         pointer& _Mylast = _My_data._Mylast;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 16
-	mov	QWORD PTR _Mylast$[rbp], rax
-
-; 704  :         if (_Mylast != _My_data._Myend) {
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	rcx, QWORD PTR _My_data$[rbp]
-	mov	rcx, QWORD PTR [rcx+24]
-	cmp	QWORD PTR [rax], rcx
-	je	SHORT $LN2@emplace_ba
-
-; 705  :             return _Emplace_back_with_unused_capacity(_STD forward<_Valty>(_Val)...);
-
-	mov	rcx, QWORD PTR <_Val_0>$[rbp]
-	call	??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z ; std::forward<TechnicalServices::Persistence::Client const &>
-	mov	rdx, rax
-	mov	rcx, QWORD PTR this$[rbp]
-	call	??$_Emplace_back_with_unused_capacity@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAA@AEBUClient@Persistence@TechnicalServices@@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back_with_unused_capacity<TechnicalServices::Persistence::Client const &>
-	jmp	SHORT $LN1@emplace_ba
-$LN2@emplace_ba:
-
-; 706  :         }
-; 707  : 
-; 708  :         _Ty& _Result = *_Emplace_reallocate(_Mylast, _STD forward<_Valty>(_Val)...);
-
-	mov	rcx, QWORD PTR <_Val_0>$[rbp]
-	call	??$forward@AEBUClient@Persistence@TechnicalServices@@@std@@YAAEBUClient@Persistence@TechnicalServices@@AEBU123@@Z ; std::forward<TechnicalServices::Persistence::Client const &>
-	mov	QWORD PTR tv83[rbp], rax
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv81[rbp], rax
-	mov	r8, QWORD PTR tv83[rbp]
-	mov	rdx, QWORD PTR tv81[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	??$_Emplace_reallocate@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@QEAU234@AEBU234@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_reallocate<TechnicalServices::Persistence::Client const &>
-	mov	QWORD PTR _Result$[rbp], rax
-
-; 709  : #if _HAS_CXX17
-; 710  :         return _Result;
-
-	mov	rax, QWORD PTR _Result$[rbp]
-$LN1@emplace_ba:
-
-; 711  : #else // ^^^ _HAS_CXX17 ^^^ // vvv !_HAS_CXX17 vvv
-; 712  :         (void) _Result;
-; 713  : #endif // _HAS_CXX17
-; 714  :     }
-
-	lea	rsp, QWORD PTR [rbp+312]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$emplace_back@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@AEBUClient@Persistence@TechnicalServices@@@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::emplace_back<TechnicalServices::Persistence::Client const &>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
-;	COMDAT ??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z
-_TEXT	SEGMENT
-tv68 = 192
+tv69 = 192
 _Left$ = 240
-__formal$ = 248
-??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z PROC ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >, COMDAT
+_Right$ = 248
+??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z PROC ; std::operator!=<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >, COMDAT
 
-; 2749 : _NODISCARD bool operator==(const unique_ptr<_Ty, _Dx>& _Left, nullptr_t) noexcept {
+; 2759 : _NODISCARD bool operator!=(const unique_ptr<_Ty, _Dx>& _Left, nullptr_t _Right) noexcept {
 
 $LN5:
 	mov	QWORD PTR [rsp+16], rdx
@@ -19497,33 +17876,34 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
-; 2750 :     return !_Left;
+; 2760 :     return !(_Left == _Right);
 
+	mov	rdx, QWORD PTR _Right$[rbp]
 	mov	rcx, QWORD PTR _Left$[rbp]
-	call	??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBA_NXZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator bool
+	call	??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 	movzx	eax, al
 	test	eax, eax
 	jne	SHORT $LN3@operator
-	mov	DWORD PTR tv68[rbp], 1
+	mov	DWORD PTR tv69[rbp], 1
 	jmp	SHORT $LN4@operator
 $LN3@operator:
-	mov	DWORD PTR tv68[rbp], 0
+	mov	DWORD PTR tv69[rbp], 0
 $LN4@operator:
-	movzx	eax, BYTE PTR tv68[rbp]
+	movzx	eax, BYTE PTR tv69[rbp]
 
-; 2751 : }
+; 2761 : }
 
 	lea	rsp, QWORD PTR [rbp+216]
 	pop	rdi
 	pop	rbp
 	ret	0
-??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ENDP ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
+??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ENDP ; std::operator!=<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??$?4U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -19544,7 +17924,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2498 :         if (this != _STD addressof(_Right)) {
@@ -19588,7 +17968,7 @@ $LN2@operator:
 ??$?4U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ENDP ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator=<std::default_delete<Domain::Client::ClientHandler>,0>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??$?0U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 196
@@ -19609,7 +17989,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv69[rbp], rax
@@ -19652,7 +18032,7 @@ $LN3:
 ?__autoclassinit2@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAX_K@Z ENDP ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::__autoclassinit2
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@U?$default_delete@VClientHandler@Client@Domain@@@std@@PEAVClientHandler@Client@Domain@@$00@std@@QEAAAEAU?$default_delete@VClientHandler@Client@Domain@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -19671,7 +18051,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1344 :         return *this;
@@ -19687,7 +18067,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@U?$default_delete@VClientHandler@Client@Domain@@@std@@PEAVClientHandler@Client@Domain@@$00@std@@QEAAAEAU?$default_delete@VClientHandler@Client@Domain@@@2@XZ ENDP ; std::_Compressed_pair<std::default_delete<Domain::Client::ClientHandler>,Domain::Client::ClientHandler *,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ?reset@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAXPEAVClientHandler@Client@Domain@@@Z
 _TEXT	SEGMENT
 _Old$ = 8
@@ -19710,7 +18090,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2545 :         pointer _Old = _STD exchange(_Mypair._Myval2, _Ptr);
@@ -19748,7 +18128,7 @@ $LN2@reset:
 ?reset@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAXPEAVClientHandler@Client@Domain@@@Z ENDP ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::reset
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ?release@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAPEAVClientHandler@Client@Domain@@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -19768,7 +18148,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2541 :         return _STD exchange(_Mypair._Myval2, pointer());
@@ -19789,7 +18169,7 @@ $LN3:
 ?release@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAPEAVClientHandler@Client@Domain@@XZ ENDP ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::release
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBA_NXZ
 _TEXT	SEGMENT
 tv67 = 192
@@ -19809,7 +18189,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2537 :         return static_cast<bool>(_Mypair._Myval2);
@@ -19833,7 +18213,43 @@ $LN4@operator:
 ??B?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBA_NXZ ENDP ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator bool
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
+;	COMDAT ??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ
+_TEXT	SEGMENT
+this$ = 224
+??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ PROC ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->, COMDAT
+
+; 2528 :     _NODISCARD pointer operator->() const noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
+	call	__CheckForDebuggerJustMyCode
+
+; 2529 :         return _Mypair._Myval2;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rax, QWORD PTR [rax]
+
+; 2530 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ENDP ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 tv77 = 192
@@ -19854,7 +18270,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2511 :         if (_Mypair._Myval2) {
@@ -19888,7 +18304,7 @@ $LN2@unique_ptr:
 ??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ENDP ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??R?$default_delete@VClientHandler@Client@Domain@@@std@@QEBAXPEAVClientHandler@Client@Domain@@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -19912,7 +18328,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2401 :         static_assert(0 < sizeof(_Ty), "can't delete an incomplete type");
@@ -19924,7 +18340,7 @@ $LN5:
 	je	SHORT $LN3@operator
 	mov	rax, QWORD PTR $T1[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+8]
+	mov	rax, QWORD PTR [rax+16]
 	mov	QWORD PTR tv71[rbp], rax
 	mov	edx, 1
 	mov	rcx, QWORD PTR $T1[rbp]
@@ -19944,7 +18360,7 @@ $LN4@operator:
 ??R?$default_delete@VClientHandler@Client@Domain@@@std@@QEBAXPEAVClientHandler@Client@Domain@@@Z ENDP ; std::default_delete<Domain::Client::ClientHandler>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\ostream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\ostream
 ;	COMDAT ??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z
 _TEXT	SEGMENT
 tv80 = 192
@@ -19964,7 +18380,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__B4645957_ostream
+	lea	rcx, OFFSET FLAT:__1D745195_ostream
 	call	__CheckForDebuggerJustMyCode
 
 ; 982  :     _Ostr.put(_Ostr.widen('\n'));
@@ -20001,7 +18417,7 @@ $LN3:
 ??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z ENDP ; std::endl<char,std::char_traits<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ??$any_cast@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEAVany@0@@Z
 _TEXT	SEGMENT
 _Ptr$ = 8
@@ -20021,7 +18437,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 418  :     static_assert(is_constructible_v<remove_cv_t<_Ty>, _Remove_cvref_t<_Ty>&>,
@@ -20059,7 +18475,7 @@ $LN3@any_cast:
 ??$any_cast@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEAVany@0@@Z ENDP ; std::any_cast<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\istream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\istream
 ;	COMDAT ??$ws@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@@Z
 _TEXT	SEGMENT
 _Ok$ = 8
@@ -20099,7 +18515,7 @@ $LN18:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__D7B46C6D_istream
+	lea	rcx, OFFSET FLAT:__7EA464AF_istream
 	call	__CheckForDebuggerJustMyCode
 
 ; 890  :     const typename basic_istream<_Elem, _Traits>::sentry _Ok(_Istr, true);
@@ -20525,7 +18941,7 @@ __catch$??$ws@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_istream@DU?$char_traits
 ?catch$2@?0???$ws@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@@Z@4HA ENDP ; `std::ws<char,std::char_traits<char> >'::`1'::catch$2
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z
 _TEXT	SEGMENT
 _Left$ = 224
@@ -20546,7 +18962,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4481 :     return _Left._Equal(_Right);
@@ -20564,7 +18980,7 @@ $LN3:
 ??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ENDP ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -20589,7 +19005,7 @@ $LN5:
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
 	mov	DWORD PTR $T1[rbp], 0
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4464 :     _Left.push_back(_Right);
@@ -20619,102 +19035,7 @@ $LN5:
 ??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z ENDP ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
-;	COMDAT ??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z
-_TEXT	SEGMENT
-_Left_size$ = 8
-_Right_size$ = 40
-$T1 = 260
-$T2 = 292
-$T3 = 324
-tv86 = 344
-__$ReturnUdt$ = 384
-_Left$ = 392
-_Right$ = 400
-??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z PROC ; std::operator+<char,std::char_traits<char>,std::allocator<char> >, COMDAT
-
-; 4372 :     _In_z_ const _Elem* const _Left, const basic_string<_Elem, _Traits, _Alloc>& _Right) {
-
-$LN6:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 424				; 000001a8H
-	lea	rbp, QWORD PTR [rsp+64]
-	mov	rdi, rsp
-	mov	ecx, 106				; 0000006aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+456]
-	mov	DWORD PTR $T3[rbp], 0
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
-	call	__CheckForDebuggerJustMyCode
-
-; 4373 :     using _Size_type       = typename basic_string<_Elem, _Traits, _Alloc>::size_type;
-; 4374 :     const auto _Left_size  = _Convert_size<_Size_type>(_Traits::length(_Left));
-
-	mov	rcx, QWORD PTR _Left$[rbp]
-	call	?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z ; std::_Narrow_char_traits<char,int>::length
-	mov	rcx, rax
-	call	??$_Convert_size@_K@std@@YA_K_K@Z	; std::_Convert_size<unsigned __int64>
-	mov	QWORD PTR _Left_size$[rbp], rax
-
-; 4375 :     const auto _Right_size = _Right.size();
-
-	mov	rcx, QWORD PTR _Right$[rbp]
-	call	?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::size
-	mov	QWORD PTR _Right_size$[rbp], rax
-
-; 4376 :     if (_Right.max_size() - _Right_size < _Left_size) {
-
-	mov	rcx, QWORD PTR _Right$[rbp]
-	call	?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::max_size
-	sub	rax, QWORD PTR _Right_size$[rbp]
-	cmp	rax, QWORD PTR _Left_size$[rbp]
-	jae	SHORT $LN2@operator
-
-; 4377 :         _Xlen_string();
-
-	call	?_Xlen_string@std@@YAXXZ		; std::_Xlen_string
-$LN2@operator:
-
-; 4378 :     }
-; 4379 : 
-; 4380 :     return {_String_constructor_concat_tag{}, _Right, _Left, _Left_size, _Right.c_str(), _Right_size};
-
-	movzx	eax, BYTE PTR $T1[rbp]
-	mov	BYTE PTR $T2[rbp], al
-	mov	rcx, QWORD PTR _Right$[rbp]
-	call	?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::c_str
-	mov	QWORD PTR tv86[rbp], rax
-	mov	rax, QWORD PTR _Right_size$[rbp]
-	mov	QWORD PTR [rsp+48], rax
-	mov	rax, QWORD PTR tv86[rbp]
-	mov	QWORD PTR [rsp+40], rax
-	mov	rax, QWORD PTR _Left_size$[rbp]
-	mov	QWORD PTR [rsp+32], rax
-	mov	r9, QWORD PTR _Left$[rbp]
-	mov	r8, QWORD PTR _Right$[rbp]
-	movzx	edx, BYTE PTR $T2[rbp]
-	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@U_String_constructor_concat_tag@1@AEBV01@QEBD_K23@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	eax, DWORD PTR $T3[rbp]
-	or	eax, 1
-	mov	DWORD PTR $T3[rbp], eax
-	mov	rax, QWORD PTR __$ReturnUdt$[rbp]
-
-; 4381 : }
-
-	lea	rsp, QWORD PTR [rbp+360]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ENDP ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z
 _TEXT	SEGMENT
 tv75 = 192
@@ -20737,7 +19058,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4642 :     return _Insert_string(_Ostr, _Str.data(), _Str.size());
@@ -20762,7 +19083,7 @@ $LN3:
 ??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ENDP ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\iomanip
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\iomanip
 ;	COMDAT ??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z
 _TEXT	SEGMENT
 tv79 = 192
@@ -20784,7 +19105,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__2B76AA3F_iomanip
+	lea	rcx, OFFSET FLAT:__8266A2FD_iomanip
 	call	__CheckForDebuggerJustMyCode
 
 ; 424  :     (*_Manip._Pfun)(_Ostr, _Manip._Manarg);
@@ -20816,7 +19137,7 @@ $LN3:
 ??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ENDP ; std::operator<<<char,std::char_traits<char>,__int64>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??$?9VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@0@$$T@Z
 _TEXT	SEGMENT
 tv69 = 192
@@ -20838,7 +19159,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2760 :     return !(_Left == _Right);
@@ -20865,7 +19186,7 @@ $LN4@operator:
 ??$?9VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@0@$$T@Z ENDP ; std::operator!=<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??$?4U?$default_delete@VSessionHandler@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -20886,7 +19207,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2498 :         if (this != _STD addressof(_Right)) {
@@ -20930,7 +19251,7 @@ $LN2@operator:
 ??$?4U?$default_delete@VSessionHandler@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ENDP ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator=<std::default_delete<Domain::Session::SessionHandler>,0>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\string
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\string
 ;	COMDAT ??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z
 _TEXT	SEGMENT
 tv79 = 192
@@ -20954,7 +19275,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__965C11D2_string
+	lea	rcx, OFFSET FLAT:__3AFA803E_string
 	call	__CheckForDebuggerJustMyCode
 
 ; 84   :     return getline(_STD move(_Istr), _Str, _Istr.widen('\n'));
@@ -20987,7 +19308,7 @@ $LN3:
 ??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ENDP ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??$?0U?$default_delete@VSessionHandler@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 196
@@ -21008,7 +19329,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv69[rbp], rax
@@ -21051,7 +19372,7 @@ $LN3:
 ?__autoclassinit2@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAX_K@Z ENDP ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::__autoclassinit2
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@U?$default_delete@VSessionHandler@Session@Domain@@@std@@PEAVSessionHandler@Session@Domain@@$00@std@@QEAAAEAU?$default_delete@VSessionHandler@Session@Domain@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -21070,7 +19391,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1344 :         return *this;
@@ -21086,7 +19407,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@U?$default_delete@VSessionHandler@Session@Domain@@@std@@PEAVSessionHandler@Session@Domain@@$00@std@@QEAAAEAU?$default_delete@VSessionHandler@Session@Domain@@@2@XZ ENDP ; std::_Compressed_pair<std::default_delete<Domain::Session::SessionHandler>,Domain::Session::SessionHandler *,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ?reset@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAXPEAVSessionHandler@Session@Domain@@@Z
 _TEXT	SEGMENT
 _Old$ = 8
@@ -21109,7 +19430,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2545 :         pointer _Old = _STD exchange(_Mypair._Myval2, _Ptr);
@@ -21147,7 +19468,7 @@ $LN2@reset:
 ?reset@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAXPEAVSessionHandler@Session@Domain@@@Z ENDP ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::reset
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ?release@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAPEAVSessionHandler@Session@Domain@@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -21167,7 +19488,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2541 :         return _STD exchange(_Mypair._Myval2, pointer());
@@ -21188,7 +19509,7 @@ $LN3:
 ?release@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAPEAVSessionHandler@Session@Domain@@XZ ENDP ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::release
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??B?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBA_NXZ
 _TEXT	SEGMENT
 tv67 = 192
@@ -21208,7 +19529,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2537 :         return static_cast<bool>(_Mypair._Myval2);
@@ -21232,7 +19553,7 @@ $LN4@operator:
 ??B?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBA_NXZ ENDP ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator bool
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??C?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBAPEAVSessionHandler@Session@Domain@@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -21251,7 +19572,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2529 :         return _Mypair._Myval2;
@@ -21268,7 +19589,7 @@ $LN3:
 ??C?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBAPEAVSessionHandler@Session@Domain@@XZ ENDP ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator->
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 tv77 = 192
@@ -21289,7 +19610,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2511 :         if (_Mypair._Myval2) {
@@ -21323,7 +19644,7 @@ $LN2@unique_ptr:
 ??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ENDP ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??R?$default_delete@VSessionHandler@Session@Domain@@@std@@QEBAXPEAVSessionHandler@Session@Domain@@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -21347,7 +19668,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2401 :         static_assert(0 < sizeof(_Ty), "can't delete an incomplete type");
@@ -21379,7 +19700,7 @@ $LN4@operator:
 ??R?$default_delete@VSessionHandler@Session@Domain@@@std@@QEBAXPEAVSessionHandler@Session@Domain@@@Z ENDP ; std::default_delete<Domain::Session::SessionHandler>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\initializer_list
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\initializer_list
 ;	COMDAT ?end@?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -21398,7 +19719,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__5F9BC604_initializer_list
+	lea	rcx, OFFSET FLAT:__43822A97_initializer_list
 	call	__CheckForDebuggerJustMyCode
 
 ; 43   :         return _Last;
@@ -21415,7 +19736,7 @@ $LN3:
 ?end@?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ ENDP ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::end
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\initializer_list
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\initializer_list
 ;	COMDAT ?begin@?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -21434,7 +19755,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__5F9BC604_initializer_list
+	lea	rcx, OFFSET FLAT:__43822A97_initializer_list
 	call	__CheckForDebuggerJustMyCode
 
 ; 39   :         return _First;
@@ -21451,7 +19772,7 @@ $LN3:
 ?begin@?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEBAPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ ENDP ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::begin
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\initializer_list
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\initializer_list
 ;	COMDAT ??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -21474,7 +19795,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__5F9BC604_initializer_list
+	lea	rcx, OFFSET FLAT:__43822A97_initializer_list
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rcx, QWORD PTR _First_arg$[rbp]
@@ -21490,1342 +19811,7 @@ $LN3:
 ??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ENDP ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
-_TEXT	SEGMENT
-this$ = 224
-classSize$ = 232
-?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2, COMDAT
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 200				; 000000c8H
-	mov	rbp, rsp
-	mov	rdi, rsp
-	mov	ecx, 50					; 00000032H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+232]
-	mov	rdi, QWORD PTR this$[rbp]
-	xor	eax, eax
-	mov	rcx, QWORD PTR classSize$[rbp]
-	rep stosb
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-_TEXT	SEGMENT
-this$ = 224
-?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ PROC ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first, COMDAT
-
-; 1347 :     constexpr const _Ty1& _Get_first() const noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 1348 :         return *this;
-
-	mov	rax, QWORD PTR this$[rbp]
-
-; 1349 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ENDP ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-_TEXT	SEGMENT
-this$ = 224
-?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ PROC ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first, COMDAT
-
-; 1343 :     constexpr _Ty1& _Get_first() noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 1344 :         return *this;
-
-	mov	rax, QWORD PTR this$[rbp]
-
-; 1345 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ENDP ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-_TEXT	SEGMENT
-this$ = 224
-?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal, COMDAT
-
-; 1735 :     const _Alty& _Getal() const noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1736 :         return _Mypair._Get_first();
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, rax
-	call	?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
-	npad	1
-
-; 1737 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
-_TEXT	SEGMENT
-this$ = 224
-?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal, COMDAT
-
-; 1731 :     _Alty& _Getal() noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1732 :         return _Mypair._Get_first();
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, rax
-	call	?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
-	npad	1
-
-; 1733 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z
-_TEXT	SEGMENT
-_Lock$ = 4
-_Pnext$ = 40
-_Pnextptr$4 = 72
-__$ArrayPad$ = 280
-this$ = 320
-_First$ = 328
-_Last$ = 336
-?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Orphan_range, COMDAT
-
-; 1711 :     void _Orphan_range(pointer _First, pointer _Last) const { // orphan iterators within specified (inclusive) range
-
-$LN9:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 328				; 00000148H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 82					; 00000052H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+360]
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rbp
-	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1712 : #if _ITERATOR_DEBUG_LEVEL == 2
-; 1713 :         _Lockit _Lock(_LOCK_DEBUG);
-
-	mov	edx, 3
-	lea	rcx, QWORD PTR _Lock$[rbp]
-	call	QWORD PTR __imp_??0_Lockit@std@@QEAA@H@Z
-
-; 1714 : 
-; 1715 :         _Iterator_base12** _Pnext = &_Mypair._Myval2._Myproxy->_Myfirstiter;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax]
-	add	rax, 8
-	mov	QWORD PTR _Pnext$[rbp], rax
-$LN2@Orphan_ran:
-
-; 1716 :         while (*_Pnext) {
-
-	mov	rax, QWORD PTR _Pnext$[rbp]
-	cmp	QWORD PTR [rax], 0
-	je	SHORT $LN3@Orphan_ran
-
-; 1717 :             const auto _Pnextptr = static_cast<const_iterator&>(**_Pnext)._Ptr;
-
-	mov	rax, QWORD PTR _Pnext$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+16]
-	mov	QWORD PTR _Pnextptr$4[rbp], rax
-
-; 1718 :             if (_Pnextptr < _First || _Last < _Pnextptr) { // skip the iterator
-
-	mov	rax, QWORD PTR _First$[rbp]
-	cmp	QWORD PTR _Pnextptr$4[rbp], rax
-	jb	SHORT $LN6@Orphan_ran
-	mov	rax, QWORD PTR _Pnextptr$4[rbp]
-	cmp	QWORD PTR _Last$[rbp], rax
-	jae	SHORT $LN4@Orphan_ran
-$LN6@Orphan_ran:
-
-; 1719 :                 _Pnext = &(*_Pnext)->_Mynextiter;
-
-	mov	rax, QWORD PTR _Pnext$[rbp]
-	mov	rax, QWORD PTR [rax]
-	add	rax, 8
-	mov	QWORD PTR _Pnext$[rbp], rax
-
-; 1720 :             } else { // orphan the iterator
-
-	jmp	SHORT $LN5@Orphan_ran
-$LN4@Orphan_ran:
-
-; 1721 :                 (*_Pnext)->_Myproxy = nullptr;
-
-	mov	rax, QWORD PTR _Pnext$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR [rax], 0
-
-; 1722 :                 *_Pnext             = (*_Pnext)->_Mynextiter;
-
-	mov	rax, QWORD PTR _Pnext$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	rcx, QWORD PTR _Pnext$[rbp]
-	mov	rax, QWORD PTR [rax+8]
-	mov	QWORD PTR [rcx], rax
-$LN5@Orphan_ran:
-
-; 1723 :             }
-; 1724 :         }
-
-	jmp	SHORT $LN2@Orphan_ran
-$LN3@Orphan_ran:
-
-; 1725 : #else // ^^^ _ITERATOR_DEBUG_LEVEL == 2 ^^^ // vvv _ITERATOR_DEBUG_LEVEL != 2 vvv
-; 1726 :         (void) _First;
-; 1727 :         (void) _Last;
-; 1728 : #endif // _ITERATOR_DEBUG_LEVEL == 2
-; 1729 :     }
-
-	lea	rcx, QWORD PTR _Lock$[rbp]
-	call	QWORD PTR __imp_??1_Lockit@std@@QEAA@XZ
-	lea	rcx, QWORD PTR [rbp-32]
-	lea	rdx, OFFSET FLAT:?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z$rtcFrameData
-	call	_RTC_CheckStackVars
-	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
-	xor	rcx, rbp
-	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+296]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Orphan_range@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAXPEAUClient@Persistence@TechnicalServices@@0@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Orphan_range
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Xlength@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@CAXXZ
-_TEXT	SEGMENT
-?_Xlength@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@CAXXZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Xlength, COMDAT
-
-; 1703 :     [[noreturn]] static void _Xlength() {
-
-$LN3:
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1704 :         _Xlength_error("vector too long");
-
-	lea	rcx, OFFSET FLAT:??_C@_0BA@FOIKENOD@vector?5too?5long@
-	call	?_Xlength_error@std@@YAXPEBD@Z		; std::_Xlength_error
-$LN2@Xlength:
-
-; 1705 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Xlength@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@CAXXZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Xlength
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
-_TEXT	SEGMENT
-_My_data$ = 8
-_Myfirst$ = 40
-_Mylast$ = 72
-_Myend$ = 104
-tv90 = 312
-tv88 = 320
-tv86 = 328
-this$ = 368
-?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy, COMDAT
-
-; 1685 :     void _Tidy() noexcept { // free all storage
-
-$LN4:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 376				; 00000178H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 94					; 0000005eH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+408]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1686 :         auto& _My_data    = _Mypair._Myval2;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR _My_data$[rbp], rax
-
-; 1687 :         pointer& _Myfirst = _My_data._Myfirst;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 8
-	mov	QWORD PTR _Myfirst$[rbp], rax
-
-; 1688 :         pointer& _Mylast  = _My_data._Mylast;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 16
-	mov	QWORD PTR _Mylast$[rbp], rax
-
-; 1689 :         pointer& _Myend   = _My_data._Myend;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 24
-	mov	QWORD PTR _Myend$[rbp], rax
-
-; 1690 : 
-; 1691 :         _My_data._Orphan_all();
-
-	mov	rcx, QWORD PTR _My_data$[rbp]
-	call	?_Orphan_all@_Container_base12@std@@QEAAXXZ ; std::_Container_base12::_Orphan_all
-
-; 1692 : 
-; 1693 :         if (_Myfirst) { // destroy and deallocate old array
-
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	cmp	QWORD PTR [rax], 0
-	je	$LN2@Tidy
-
-; 1694 :             _Destroy(_Myfirst, _Mylast);
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	r8, QWORD PTR [rax]
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	rdx, QWORD PTR [rax]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
-
-; 1695 :             _Getal().deallocate(_Myfirst, static_cast<size_type>(_Myend - _Myfirst));
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	QWORD PTR tv90[rbp], rax
-	mov	rax, QWORD PTR _Myend$[rbp]
-	mov	rcx, QWORD PTR _Myfirst$[rbp]
-	mov	rcx, QWORD PTR [rcx]
-	mov	rax, QWORD PTR [rax]
-	sub	rax, rcx
-	cdq
-	mov	ecx, 48					; 00000030H
-	idiv	rcx
-	mov	QWORD PTR tv88[rbp], rax
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv86[rbp], rax
-	mov	r8, QWORD PTR tv88[rbp]
-	mov	rdx, QWORD PTR tv86[rbp]
-	mov	rcx, QWORD PTR tv90[rbp]
-	call	?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
-
-; 1696 : 
-; 1697 :             _Myfirst = pointer();
-
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	QWORD PTR [rax], 0
-
-; 1698 :             _Mylast  = pointer();
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	QWORD PTR [rax], 0
-
-; 1699 :             _Myend   = pointer();
-
-	mov	rax, QWORD PTR _Myend$[rbp]
-	mov	QWORD PTR [rax], 0
-$LN2@Tidy:
-
-; 1700 :         }
-; 1701 :     }
-
-	lea	rsp, QWORD PTR [rbp+344]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Change_array@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXQEAUClient@Persistence@TechnicalServices@@_K1@Z
-_TEXT	SEGMENT
-_My_data$ = 8
-_Myfirst$ = 40
-_Mylast$ = 72
-_Myend$ = 104
-tv90 = 312
-tv88 = 320
-tv86 = 328
-this$ = 368
-_Newvec$ = 376
-_Newsize$ = 384
-_Newcapacity$ = 392
-?_Change_array@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXQEAUClient@Persistence@TechnicalServices@@_K1@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Change_array, COMDAT
-
-; 1666 :     void _Change_array(const pointer _Newvec, const size_type _Newsize, const size_type _Newcapacity) {
-
-$LN4:
-	mov	QWORD PTR [rsp+32], r9
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 376				; 00000178H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 94					; 0000005eH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+408]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1667 :         // orphan all iterators, discard old array, acquire new array
-; 1668 :         auto& _My_data    = _Mypair._Myval2;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR _My_data$[rbp], rax
-
-; 1669 :         pointer& _Myfirst = _My_data._Myfirst;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 8
-	mov	QWORD PTR _Myfirst$[rbp], rax
-
-; 1670 :         pointer& _Mylast  = _My_data._Mylast;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 16
-	mov	QWORD PTR _Mylast$[rbp], rax
-
-; 1671 :         pointer& _Myend   = _My_data._Myend;
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	add	rax, 24
-	mov	QWORD PTR _Myend$[rbp], rax
-
-; 1672 : 
-; 1673 :         _My_data._Orphan_all();
-
-	mov	rcx, QWORD PTR _My_data$[rbp]
-	call	?_Orphan_all@_Container_base12@std@@QEAAXXZ ; std::_Container_base12::_Orphan_all
-
-; 1674 : 
-; 1675 :         if (_Myfirst) { // destroy and deallocate old array
-
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	cmp	QWORD PTR [rax], 0
-	je	SHORT $LN2@Change_arr
-
-; 1676 :             _Destroy(_Myfirst, _Mylast);
-
-	mov	rax, QWORD PTR _Mylast$[rbp]
-	mov	r8, QWORD PTR [rax]
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	rdx, QWORD PTR [rax]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
-
-; 1677 :             _Getal().deallocate(_Myfirst, static_cast<size_type>(_Myend - _Myfirst));
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	QWORD PTR tv90[rbp], rax
-	mov	rax, QWORD PTR _Myend$[rbp]
-	mov	rcx, QWORD PTR _Myfirst$[rbp]
-	mov	rcx, QWORD PTR [rcx]
-	mov	rax, QWORD PTR [rax]
-	sub	rax, rcx
-	cdq
-	mov	ecx, 48					; 00000030H
-	idiv	rcx
-	mov	QWORD PTR tv88[rbp], rax
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv86[rbp], rax
-	mov	r8, QWORD PTR tv88[rbp]
-	mov	rdx, QWORD PTR tv86[rbp]
-	mov	rcx, QWORD PTR tv90[rbp]
-	call	?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
-$LN2@Change_arr:
-
-; 1678 :         }
-; 1679 : 
-; 1680 :         _Myfirst = _Newvec;
-
-	mov	rax, QWORD PTR _Myfirst$[rbp]
-	mov	rcx, QWORD PTR _Newvec$[rbp]
-	mov	QWORD PTR [rax], rcx
-
-; 1681 :         _Mylast  = _Newvec + _Newsize;
-
-	imul	rax, QWORD PTR _Newsize$[rbp], 48	; 00000030H
-	mov	rcx, QWORD PTR _Newvec$[rbp]
-	add	rcx, rax
-	mov	rax, rcx
-	mov	rcx, QWORD PTR _Mylast$[rbp]
-	mov	QWORD PTR [rcx], rax
-
-; 1682 :         _Myend   = _Newvec + _Newcapacity;
-
-	imul	rax, QWORD PTR _Newcapacity$[rbp], 48	; 00000030H
-	mov	rcx, QWORD PTR _Newvec$[rbp]
-	add	rcx, rax
-	mov	rax, rcx
-	mov	rcx, QWORD PTR _Myend$[rbp]
-	mov	QWORD PTR [rcx], rax
-
-; 1683 :     }
-
-	lea	rsp, QWORD PTR [rbp+344]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Change_array@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXQEAUClient@Persistence@TechnicalServices@@_K1@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Change_array
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Calculate_growth@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z
-_TEXT	SEGMENT
-_Oldcapacity$ = 8
-_Geometric$ = 40
-tv67 = 248
-this$ = 288
-_Newsize$ = 296
-?_Calculate_growth@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Calculate_growth, COMDAT
-
-; 1615 :     size_type _Calculate_growth(const size_type _Newsize) const {
-
-$LN5:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 296				; 00000128H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 74					; 0000004aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1616 :         // given _Oldcapacity and _Newsize, calculate geometric growth
-; 1617 :         const size_type _Oldcapacity = capacity();
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::capacity
-	mov	QWORD PTR _Oldcapacity$[rbp], rax
-
-; 1618 : 
-; 1619 :         if (_Oldcapacity > max_size() - _Oldcapacity / 2) {
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::max_size
-	mov	QWORD PTR tv67[rbp], rax
-	xor	edx, edx
-	mov	rax, QWORD PTR _Oldcapacity$[rbp]
-	mov	ecx, 2
-	div	rcx
-	mov	rcx, QWORD PTR tv67[rbp]
-	sub	rcx, rax
-	mov	rax, rcx
-	cmp	QWORD PTR _Oldcapacity$[rbp], rax
-	jbe	SHORT $LN2@Calculate_
-
-; 1620 :             return _Newsize; // geometric growth would overflow
-
-	mov	rax, QWORD PTR _Newsize$[rbp]
-	jmp	SHORT $LN1@Calculate_
-$LN2@Calculate_:
-
-; 1621 :         }
-; 1622 : 
-; 1623 :         const size_type _Geometric = _Oldcapacity + _Oldcapacity / 2;
-
-	xor	edx, edx
-	mov	rax, QWORD PTR _Oldcapacity$[rbp]
-	mov	ecx, 2
-	div	rcx
-	mov	rcx, QWORD PTR _Oldcapacity$[rbp]
-	add	rcx, rax
-	mov	rax, rcx
-	mov	QWORD PTR _Geometric$[rbp], rax
-
-; 1624 : 
-; 1625 :         if (_Geometric < _Newsize) {
-
-	mov	rax, QWORD PTR _Newsize$[rbp]
-	cmp	QWORD PTR _Geometric$[rbp], rax
-	jae	SHORT $LN3@Calculate_
-
-; 1626 :             return _Newsize; // geometric growth would be insufficient
-
-	mov	rax, QWORD PTR _Newsize$[rbp]
-	jmp	SHORT $LN1@Calculate_
-$LN3@Calculate_:
-
-; 1627 :         }
-; 1628 : 
-; 1629 :         return _Geometric; // geometric growth is sufficient
-
-	mov	rax, QWORD PTR _Geometric$[rbp]
-$LN1@Calculate_:
-
-; 1630 :     }
-
-	lea	rsp, QWORD PTR [rbp+264]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Calculate_growth@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Calculate_growth
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z
-_TEXT	SEGMENT
-this$ = 224
-_First$ = 232
-_Last$ = 240
-?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy, COMDAT
-
-; 1611 :     void _Destroy(pointer _First, pointer _Last) { // destroy [_First, _Last) using allocator
-
-$LN3:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1612 :         _Destroy_range(_First, _Last, _Getal());
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	r8, rax
-	mov	rdx, QWORD PTR _Last$[rbp]
-	mov	rcx, QWORD PTR _First$[rbp]
-	call	??$_Destroy_range@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXPEAUClient@Persistence@TechnicalServices@@QEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ; std::_Destroy_range<std::allocator<TechnicalServices::Persistence::Client> >
-
-; 1613 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Umove_if_noexcept@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00@Z
-_TEXT	SEGMENT
-$T1 = 196
-this$ = 256
-_First$ = 264
-_Last$ = 272
-_Dest$ = 280
-?_Umove_if_noexcept@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove_if_noexcept, COMDAT
-
-; 1605 :     void _Umove_if_noexcept(pointer _First, pointer _Last, pointer _Dest) {
-
-$LN3:
-	mov	QWORD PTR [rsp+32], r9
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 280				; 00000118H
-	lea	rbp, QWORD PTR [rsp+48]
-	mov	rdi, rsp
-	mov	ecx, 70					; 00000046H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1606 :         // move_if_noexcept [_First, _Last) to raw _Dest, using allocator
-; 1607 :         _Umove_if_noexcept1(_First, _Last, _Dest,
-
-	lea	rax, QWORD PTR $T1[rbp]
-	mov	rdi, rax
-	xor	eax, eax
-	mov	ecx, 1
-	rep stosb
-	movzx	eax, BYTE PTR $T1[rbp]
-	mov	BYTE PTR [rsp+32], al
-	mov	r9, QWORD PTR _Dest$[rbp]
-	mov	r8, QWORD PTR _Last$[rbp]
-	mov	rdx, QWORD PTR _First$[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Umove_if_noexcept1@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00U?$integral_constant@_N$00@2@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove_if_noexcept1
-
-; 1608 :             bool_constant<disjunction_v<is_nothrow_move_constructible<_Ty>, negation<is_copy_constructible<_Ty>>>>{});
-; 1609 :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Umove_if_noexcept@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove_if_noexcept
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Umove_if_noexcept1@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00U?$integral_constant@_N$00@2@@Z
-_TEXT	SEGMENT
-this$ = 224
-_First$ = 232
-_Last$ = 240
-_Dest$ = 248
-__formal$ = 256
-?_Umove_if_noexcept1@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00U?$integral_constant@_N$00@2@@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove_if_noexcept1, COMDAT
-
-; 1595 :     void _Umove_if_noexcept1(pointer _First, pointer _Last, pointer _Dest, true_type) {
-
-$LN3:
-	mov	QWORD PTR [rsp+32], r9
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1596 :         // move [_First, _Last) to raw _Dest, using allocator
-; 1597 :         _Uninitialized_move(_First, _Last, _Dest, _Getal());
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	r9, rax
-	mov	r8, QWORD PTR _Dest$[rbp]
-	mov	rdx, QWORD PTR _Last$[rbp]
-	mov	rcx, QWORD PTR _First$[rbp]
-	call	??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ; std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >
-
-; 1598 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Umove_if_noexcept1@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@00U?$integral_constant@_N$00@2@@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove_if_noexcept1
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z
-_TEXT	SEGMENT
-this$ = 224
-_First$ = 232
-_Last$ = 240
-_Dest$ = 248
-?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove, COMDAT
-
-; 1591 :     pointer _Umove(pointer _First, pointer _Last, pointer _Dest) { // move [_First, _Last) to raw _Dest, using allocator
-
-$LN3:
-	mov	QWORD PTR [rsp+32], r9
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1592 :         return _Uninitialized_move(_First, _Last, _Dest, _Getal());
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	r9, rax
-	mov	r8, QWORD PTR _Dest$[rbp]
-	mov	rdx, QWORD PTR _Last$[rbp]
-	mov	rcx, QWORD PTR _First$[rbp]
-	call	??$_Uninitialized_move@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ; std::_Uninitialized_move<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >
-
-; 1593 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Umove@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClient@Persistence@TechnicalServices@@PEAU345@00@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Umove
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-_TEXT	SEGMENT
-_My_data$ = 8
-this$ = 256
-?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::capacity, COMDAT
-
-; 1492 :     _NODISCARD size_type capacity() const noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 264				; 00000108H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 66					; 00000042H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1493 :         auto& _My_data = _Mypair._Myval2;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR _My_data$[rbp], rax
-
-; 1494 :         return static_cast<size_type>(_My_data._Myend - _My_data._Myfirst);
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	mov	rcx, QWORD PTR _My_data$[rbp]
-	mov	rcx, QWORD PTR [rcx+8]
-	mov	rax, QWORD PTR [rax+24]
-	sub	rax, rcx
-	cdq
-	mov	ecx, 48					; 00000030H
-	idiv	rcx
-
-; 1495 :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-?capacity@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::capacity
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-_TEXT	SEGMENT
-$T1 = 200
-$T2 = 232
-this$ = 288
-?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::max_size, COMDAT
-
-; 1487 :     _NODISCARD size_type max_size() const noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 296				; 00000128H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 74					; 0000004aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1488 :         return (_STD min)(
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	rcx, rax
-	call	?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::max_size
-	mov	QWORD PTR $T1[rbp], rax
-	call	?max@?$numeric_limits@_J@std@@SA_JXZ	; std::numeric_limits<__int64>::max
-	mov	QWORD PTR $T2[rbp], rax
-	lea	rdx, QWORD PTR $T1[rbp]
-	lea	rcx, QWORD PTR $T2[rbp]
-	call	??$min@_K@std@@YAAEB_KAEB_K0@Z		; std::min<unsigned __int64>
-	mov	rax, QWORD PTR [rax]
-
-; 1489 :             static_cast<size_type>((numeric_limits<difference_type>::max)()), _Alty_traits::max_size(_Getal()));
-; 1490 :     }
-
-	lea	rsp, QWORD PTR [rbp+264]
-	pop	rdi
-	pop	rbp
-	ret	0
-?max_size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::max_size
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
-_TEXT	SEGMENT
-_My_data$ = 8
-this$ = 256
-?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size, COMDAT
-
-; 1482 :     _NODISCARD size_type size() const noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 264				; 00000108H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 66					; 00000042H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1483 :         auto& _My_data = _Mypair._Myval2;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR _My_data$[rbp], rax
-
-; 1484 :         return static_cast<size_type>(_My_data._Mylast - _My_data._Myfirst);
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	mov	rcx, QWORD PTR _My_data$[rbp]
-	mov	rcx, QWORD PTR [rcx+8]
-	mov	rax, QWORD PTR [rax+16]
-	sub	rax, rcx
-	cdq
-	mov	ecx, 48					; 00000030H
-	idiv	rcx
-
-; 1485 :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-_TEXT	SEGMENT
-this$ = 224
-?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_end, COMDAT
-
-; 1469 :     pointer _Unchecked_end() noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1470 :         return _Mypair._Myval2._Mylast;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax+16]
-
-; 1471 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_end
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
-_TEXT	SEGMENT
-this$ = 224
-?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_begin, COMDAT
-
-; 1461 :     pointer _Unchecked_begin() noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1462 :         return _Mypair._Myval2._Myfirst;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax+8]
-
-; 1463 :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_begin
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ?push_back@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEBUClient@Persistence@TechnicalServices@@@Z
-_TEXT	SEGMENT
-this$ = 224
-_Val$ = 232
-?push_back@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEBUClient@Persistence@TechnicalServices@@@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::push_back, COMDAT
-
-; 716  :     void push_back(const _Ty& _Val) { // insert element at end, provide strong guarantee
-
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 717  :         emplace_back(_Val);
-
-	mov	rdx, QWORD PTR _Val$[rbp]
-	mov	rcx, QWORD PTR this$[rbp]
-	call	??$emplace_back@AEBUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@AEBUClient@Persistence@TechnicalServices@@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::emplace_back<TechnicalServices::Persistence::Client const &>
-
-; 718  :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?push_back@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEBUClient@Persistence@TechnicalServices@@@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::push_back
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
-_TEXT	SEGMENT
-_Alproxy$ = 8
-$S1$ = 36
-$T4 = 260
-__$ArrayPad$ = 280
-this$ = 320
-??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >, COMDAT
-
-; 672  :     ~vector() noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 328				; 00000148H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 82					; 00000052H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+360]
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rbp
-	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 673  :         _Tidy();
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy
-
-; 674  : #if _ITERATOR_DEBUG_LEVEL != 0
-; 675  :         auto&& _Alproxy = _GET_PROXY_ALLOCATOR(_Alty, _Getal());
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
-	mov	rdx, rax
-	lea	rcx, QWORD PTR $S1$[rbp]
-	call	??$?0UClient@Persistence@TechnicalServices@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><TechnicalServices::Persistence::Client>
-	lea	rax, QWORD PTR $S1$[rbp]
-	mov	QWORD PTR _Alproxy$[rbp], rax
-
-; 676  :         _Delete_plain_internal(_Alproxy, _STD exchange(_Mypair._Myval2._Myproxy, nullptr));
-
-	mov	QWORD PTR $T4[rbp], 0
-	mov	rax, QWORD PTR this$[rbp]
-	lea	rdx, QWORD PTR $T4[rbp]
-	mov	rcx, rax
-	call	??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ; std::exchange<std::_Container_proxy *,std::nullptr_t>
-	mov	rdx, rax
-	mov	rcx, QWORD PTR _Alproxy$[rbp]
-	call	??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ; std::_Delete_plain_internal<std::allocator<std::_Container_proxy> >
-
-; 677  : #endif // _ITERATOR_DEBUG_LEVEL != 0
-; 678  :     }
-
-	lea	rcx, QWORD PTR [rbp-32]
-	lea	rdx, OFFSET FLAT:??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcFrameData
-	call	_RTC_CheckStackVars
-	npad	1
-	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
-	xor	rcx, rbp
-	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+296]
-	pop	rdi
-	pop	rbp
-	ret	0
-??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z
-_TEXT	SEGMENT
-__formal$ = 224
-?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z PROC ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::max_size, COMDAT
-
-; 702  :     _NODISCARD static size_type max_size(const _Alloc&) noexcept {
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 703  :         return static_cast<size_t>(-1) / sizeof(value_type);
-
-	mov	rax, 384307168202282325			; 0555555555555555H
-
-; 704  :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?max_size@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@@Z ENDP ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::max_size
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ?allocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@_K@Z
-_TEXT	SEGMENT
-this$ = 224
-_Count$ = 232
-?allocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@_K@Z PROC ; std::allocator<TechnicalServices::Persistence::Client>::allocate, COMDAT
-
-; 806  :     _NODISCARD __declspec(allocator) _Ty* allocate(_CRT_GUARDOVERFLOW const size_t _Count) {
-
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 807  :         return static_cast<_Ty*>(_Allocate<_New_alignof<_Ty>>(_Get_size_of_n<sizeof(_Ty)>(_Count)));
-
-	mov	rcx, QWORD PTR _Count$[rbp]
-	call	??$_Get_size_of_n@$0DA@@std@@YA_K_K@Z	; std::_Get_size_of_n<48>
-	mov	rcx, rax
-	call	??$_Allocate@$0BA@U_Default_allocate_traits@std@@$0A@@std@@YAPEAX_K@Z ; std::_Allocate<16,std::_Default_allocate_traits,0>
-
-; 808  :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?allocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@_K@Z ENDP ; std::allocator<TechnicalServices::Persistence::Client>::allocate
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z
-_TEXT	SEGMENT
-this$ = 224
-_Ptr$ = 232
-_Count$ = 240
-?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z PROC ; std::allocator<TechnicalServices::Persistence::Client>::deallocate, COMDAT
-
-; 801  :     void deallocate(_Ty* const _Ptr, const size_t _Count) {
-
-$LN3:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 802  :         // no overflow check on the following multiply; we assume _Allocate did that check
-; 803  :         _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-	imul	rax, QWORD PTR _Count$[rbp], 48		; 00000030H
-	mov	rdx, rax
-	mov	rcx, QWORD PTR _Ptr$[rbp]
-	call	??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z ; std::_Deallocate<16,0>
-
-; 804  :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ENDP ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\ostream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\ostream
 ;	COMDAT ??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z
 _TEXT	SEGMENT
 _State$ = 4
@@ -22878,7 +19864,7 @@ $LN23:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__B4645957_ostream
+	lea	rcx, OFFSET FLAT:__1D745195_ostream
 	call	__CheckForDebuggerJustMyCode
 
 ; 781  :     using _Elem = char;
@@ -23406,7 +20392,7 @@ __catch$??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D
 ?catch$1@?0???$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z@4HA ENDP ; `std::operator<<<std::char_traits<char> >'::`1'::catch$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\ostream
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\ostream
 ;	COMDAT ??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z
 _TEXT	SEGMENT
 _State$ = 4
@@ -23458,7 +20444,7 @@ $LN25:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__B4645957_ostream
+	lea	rcx, OFFSET FLAT:__1D745195_ostream
 	call	__CheckForDebuggerJustMyCode
 
 ; 736  :     using _Elem = char;
@@ -24014,13 +21000,13 @@ __catch$??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D
 ?catch$1@?0???$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z@4HA ENDP ; `std::operator<<<std::char_traits<char> >'::`1'::catch$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 ;	COMDAT ?line@UI@@YAXXZ
 _TEXT	SEGMENT
 i$1 = 4
 ?line@UI@@YAXXZ PROC					; UI::line, COMDAT
 
-; 44   :     {
+; 43   :     {
 
 $LN6:
 	push	rbp
@@ -24031,10 +21017,10 @@ $LN6:
 	mov	ecx, 66					; 00000042H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__B2FF6C0C_SimpleUI@cpp
+	lea	rcx, OFFSET FLAT:__BAA4F0A5_SimpleUI@cpp
 	call	__CheckForDebuggerJustMyCode
 
-; 45   :         for (int i = 1; i < 41; i++)
+; 44   :         for (int i = 1; i < 41; i++)
 
 	mov	DWORD PTR i$1[rbp], 1
 	jmp	SHORT $LN4@line
@@ -24046,7 +21032,7 @@ $LN4@line:
 	cmp	DWORD PTR i$1[rbp], 41			; 00000029H
 	jge	SHORT $LN3@line
 
-; 46   :             std::cout << "--";
+; 45   :             std::cout << "--";
 
 	lea	rdx, OFFSET FLAT:??_C@_02BAABKJLB@?9?9@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -24054,14 +21040,14 @@ $LN4@line:
 	jmp	SHORT $LN2@line
 $LN3@line:
 
-; 47   :         std::cout << "\n";
+; 46   :         std::cout << "\n";
 
 	lea	rdx, OFFSET FLAT:??_C@_01EEMJAFIK@?6@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 48   : 
-; 49   :     }
+; 47   : 
+; 48   :     }
 
 	lea	rsp, QWORD PTR [rbp+232]
 	pop	rdi
@@ -24070,7 +21056,7 @@ $LN3@line:
 ?line@UI@@YAXXZ ENDP					; UI::line
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??$?0U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@$0A@@?$unique_ptr@VMaintainBooksHandler@Library@Domain@@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 196
@@ -24091,7 +21077,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv69[rbp], rax
@@ -24106,7 +21092,807 @@ $LN3:
 ??$?0U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@$0A@@?$unique_ptr@VMaintainBooksHandler@Library@Domain@@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@@std@@QEAA@XZ ENDP ; std::unique_ptr<Domain::Library::MaintainBooksHandler,std::default_delete<Domain::Library::MaintainBooksHandler> >::unique_ptr<Domain::Library::MaintainBooksHandler,std::default_delete<Domain::Library::MaintainBooksHandler> ><std::default_delete<Domain::Library::MaintainBooksHandler>,0>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xloctime
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
+;	COMDAT ??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z
+_TEXT	SEGMENT
+_Left_size$ = 8
+_Right_size$ = 40
+$T1 = 260
+$T2 = 292
+$T3 = 324
+tv86 = 344
+__$ReturnUdt$ = 384
+_Left$ = 392
+_Right$ = 400
+??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z PROC ; std::operator+<char,std::char_traits<char>,std::allocator<char> >, COMDAT
+
+; 4372 :     _In_z_ const _Elem* const _Left, const basic_string<_Elem, _Traits, _Alloc>& _Right) {
+
+$LN6:
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 424				; 000001a8H
+	lea	rbp, QWORD PTR [rsp+64]
+	mov	rdi, rsp
+	mov	ecx, 106				; 0000006aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+456]
+	mov	DWORD PTR $T3[rbp], 0
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
+	call	__CheckForDebuggerJustMyCode
+
+; 4373 :     using _Size_type       = typename basic_string<_Elem, _Traits, _Alloc>::size_type;
+; 4374 :     const auto _Left_size  = _Convert_size<_Size_type>(_Traits::length(_Left));
+
+	mov	rcx, QWORD PTR _Left$[rbp]
+	call	?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z ; std::_Narrow_char_traits<char,int>::length
+	mov	rcx, rax
+	call	??$_Convert_size@_K@std@@YA_K_K@Z	; std::_Convert_size<unsigned __int64>
+	mov	QWORD PTR _Left_size$[rbp], rax
+
+; 4375 :     const auto _Right_size = _Right.size();
+
+	mov	rcx, QWORD PTR _Right$[rbp]
+	call	?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::size
+	mov	QWORD PTR _Right_size$[rbp], rax
+
+; 4376 :     if (_Right.max_size() - _Right_size < _Left_size) {
+
+	mov	rcx, QWORD PTR _Right$[rbp]
+	call	?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::max_size
+	sub	rax, QWORD PTR _Right_size$[rbp]
+	cmp	rax, QWORD PTR _Left_size$[rbp]
+	jae	SHORT $LN2@operator
+
+; 4377 :         _Xlen_string();
+
+	call	?_Xlen_string@std@@YAXXZ		; std::_Xlen_string
+$LN2@operator:
+
+; 4378 :     }
+; 4379 : 
+; 4380 :     return {_String_constructor_concat_tag{}, _Right, _Left, _Left_size, _Right.c_str(), _Right_size};
+
+	movzx	eax, BYTE PTR $T1[rbp]
+	mov	BYTE PTR $T2[rbp], al
+	mov	rcx, QWORD PTR _Right$[rbp]
+	call	?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::c_str
+	mov	QWORD PTR tv86[rbp], rax
+	mov	rax, QWORD PTR _Right_size$[rbp]
+	mov	QWORD PTR [rsp+48], rax
+	mov	rax, QWORD PTR tv86[rbp]
+	mov	QWORD PTR [rsp+40], rax
+	mov	rax, QWORD PTR _Left_size$[rbp]
+	mov	QWORD PTR [rsp+32], rax
+	mov	r9, QWORD PTR _Left$[rbp]
+	mov	r8, QWORD PTR _Right$[rbp]
+	movzx	edx, BYTE PTR $T2[rbp]
+	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
+	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@U_String_constructor_concat_tag@1@AEBV01@QEBD_K23@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
+	mov	eax, DWORD PTR $T3[rbp]
+	or	eax, 1
+	mov	DWORD PTR $T3[rbp], eax
+	mov	rax, QWORD PTR __$ReturnUdt$[rbp]
+
+; 4381 : }
+
+	lea	rsp, QWORD PTR [rbp+360]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ENDP ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
+_TEXT	SEGMENT
+this$ = 224
+classSize$ = 232
+?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2, COMDAT
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 200				; 000000c8H
+	mov	rbp, rsp
+	mov	rdi, rsp
+	mov	ecx, 50					; 00000032H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+232]
+	mov	rdi, QWORD PTR this$[rbp]
+	xor	eax, eax
+	mov	rcx, QWORD PTR classSize$[rbp]
+	rep stosb
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
+_TEXT	SEGMENT
+this$ = 224
+?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ PROC ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first, COMDAT
+
+; 1343 :     constexpr _Ty1& _Get_first() noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 1344 :         return *this;
+
+	mov	rax, QWORD PTR this$[rbp]
+
+; 1345 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ENDP ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z
+_TEXT	SEGMENT
+this$ = 224
+_Right$ = 232
+?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z PROC ; std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >::_Take_contents, COMDAT
+
+; 384  :     void _Take_contents(_Vector_val& _Right) noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 385  :         this->_Swap_proxy_and_iterators(_Right);
+
+	mov	rdx, QWORD PTR _Right$[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Swap_proxy_and_iterators@_Container_base12@std@@QEAAXAEAU12@@Z ; std::_Container_base12::_Swap_proxy_and_iterators
+
+; 386  :         _Myfirst = _Right._Myfirst;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR _Right$[rbp]
+	mov	rcx, QWORD PTR [rcx+8]
+	mov	QWORD PTR [rax+8], rcx
+
+; 387  :         _Mylast  = _Right._Mylast;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR _Right$[rbp]
+	mov	rcx, QWORD PTR [rcx+16]
+	mov	QWORD PTR [rax+16], rcx
+
+; 388  :         _Myend   = _Right._Myend;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR _Right$[rbp]
+	mov	rcx, QWORD PTR [rcx+24]
+	mov	QWORD PTR [rax+24], rcx
+
+; 389  : 
+; 390  :         _Right._Myfirst = pointer();
+
+	mov	rax, QWORD PTR _Right$[rbp]
+	mov	QWORD PTR [rax+8], 0
+
+; 391  :         _Right._Mylast  = pointer();
+
+	mov	rax, QWORD PTR _Right$[rbp]
+	mov	QWORD PTR [rax+16], 0
+
+; 392  :         _Right._Myend   = pointer();
+
+	mov	rax, QWORD PTR _Right$[rbp]
+	mov	QWORD PTR [rax+24], 0
+
+; 393  :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z ENDP ; std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >::_Take_contents
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ
+_TEXT	SEGMENT
+this$ = 224
+?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal, COMDAT
+
+; 1731 :     _Alty& _Getal() noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1732 :         return _Mypair._Get_first();
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, rax
+	call	?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
+	npad	1
+
+; 1733 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
+_TEXT	SEGMENT
+_My_data$ = 8
+_Myfirst$ = 40
+_Mylast$ = 72
+_Myend$ = 104
+tv90 = 312
+tv88 = 320
+tv86 = 328
+this$ = 368
+?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy, COMDAT
+
+; 1685 :     void _Tidy() noexcept { // free all storage
+
+$LN4:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 376				; 00000178H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 94					; 0000005eH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+408]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1686 :         auto& _My_data    = _Mypair._Myval2;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR _My_data$[rbp], rax
+
+; 1687 :         pointer& _Myfirst = _My_data._Myfirst;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 8
+	mov	QWORD PTR _Myfirst$[rbp], rax
+
+; 1688 :         pointer& _Mylast  = _My_data._Mylast;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 16
+	mov	QWORD PTR _Mylast$[rbp], rax
+
+; 1689 :         pointer& _Myend   = _My_data._Myend;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 24
+	mov	QWORD PTR _Myend$[rbp], rax
+
+; 1690 : 
+; 1691 :         _My_data._Orphan_all();
+
+	mov	rcx, QWORD PTR _My_data$[rbp]
+	call	?_Orphan_all@_Container_base12@std@@QEAAXXZ ; std::_Container_base12::_Orphan_all
+
+; 1692 : 
+; 1693 :         if (_Myfirst) { // destroy and deallocate old array
+
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	cmp	QWORD PTR [rax], 0
+	je	$LN2@Tidy
+
+; 1694 :             _Destroy(_Myfirst, _Mylast);
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	r8, QWORD PTR [rax]
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	rdx, QWORD PTR [rax]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
+
+; 1695 :             _Getal().deallocate(_Myfirst, static_cast<size_type>(_Myend - _Myfirst));
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
+	mov	QWORD PTR tv90[rbp], rax
+	mov	rax, QWORD PTR _Myend$[rbp]
+	mov	rcx, QWORD PTR _Myfirst$[rbp]
+	mov	rcx, QWORD PTR [rcx]
+	mov	rax, QWORD PTR [rax]
+	sub	rax, rcx
+	cdq
+	mov	ecx, 48					; 00000030H
+	idiv	rcx
+	mov	QWORD PTR tv88[rbp], rax
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	QWORD PTR tv86[rbp], rax
+	mov	r8, QWORD PTR tv88[rbp]
+	mov	rdx, QWORD PTR tv86[rbp]
+	mov	rcx, QWORD PTR tv90[rbp]
+	call	?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
+
+; 1696 : 
+; 1697 :             _Myfirst = pointer();
+
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	QWORD PTR [rax], 0
+
+; 1698 :             _Mylast  = pointer();
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	QWORD PTR [rax], 0
+
+; 1699 :             _Myend   = pointer();
+
+	mov	rax, QWORD PTR _Myend$[rbp]
+	mov	QWORD PTR [rax], 0
+$LN2@Tidy:
+
+; 1700 :         }
+; 1701 :     }
+
+	lea	rsp, QWORD PTR [rbp+344]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z
+_TEXT	SEGMENT
+this$ = 224
+_First$ = 232
+_Last$ = 240
+?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy, COMDAT
+
+; 1611 :     void _Destroy(pointer _First, pointer _Last) { // destroy [_First, _Last) using allocator
+
+$LN3:
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1612 :         _Destroy_range(_First, _Last, _Getal());
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
+	mov	r8, rax
+	mov	rdx, QWORD PTR _Last$[rbp]
+	mov	rcx, QWORD PTR _First$[rbp]
+	call	??$_Destroy_range@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXPEAUClient@Persistence@TechnicalServices@@QEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ; std::_Destroy_range<std::allocator<TechnicalServices::Persistence::Client> >
+
+; 1613 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Destroy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Destroy
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+_TEXT	SEGMENT
+_My_data$ = 8
+this$ = 256
+?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size, COMDAT
+
+; 1482 :     _NODISCARD size_type size() const noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1483 :         auto& _My_data = _Mypair._Myval2;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR _My_data$[rbp], rax
+
+; 1484 :         return static_cast<size_type>(_My_data._Mylast - _My_data._Myfirst);
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	mov	rcx, QWORD PTR _My_data$[rbp]
+	mov	rcx, QWORD PTR [rcx+8]
+	mov	rax, QWORD PTR [rax+16]
+	sub	rax, rcx
+	cdq
+	mov	ecx, 48					; 00000030H
+	idiv	rcx
+
+; 1485 :     }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
+_TEXT	SEGMENT
+this$ = 224
+?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_end, COMDAT
+
+; 1469 :     pointer _Unchecked_end() noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1470 :         return _Mypair._Myval2._Mylast;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rax, QWORD PTR [rax+16]
+
+; 1471 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Unchecked_end@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_end
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ
+_TEXT	SEGMENT
+this$ = 224
+?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_begin, COMDAT
+
+; 1461 :     pointer _Unchecked_begin() noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1462 :         return _Mypair._Myval2._Myfirst;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rax, QWORD PTR [rax+8]
+
+; 1463 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Unchecked_begin@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Unchecked_begin
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+_TEXT	SEGMENT
+_Alproxy$ = 8
+$S1$ = 36
+$T4 = 260
+__$ArrayPad$ = 280
+this$ = 320
+??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >, COMDAT
+
+; 672  :     ~vector() noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 328				; 00000148H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 82					; 00000052H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+360]
+	mov	rax, QWORD PTR __security_cookie
+	xor	rax, rbp
+	mov	QWORD PTR __$ArrayPad$[rbp], rax
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 673  :         _Tidy();
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy
+
+; 674  : #if _ITERATOR_DEBUG_LEVEL != 0
+; 675  :         auto&& _Alproxy = _GET_PROXY_ALLOCATOR(_Alty, _Getal());
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
+	mov	rdx, rax
+	lea	rcx, QWORD PTR $S1$[rbp]
+	call	??$?0UClient@Persistence@TechnicalServices@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><TechnicalServices::Persistence::Client>
+	lea	rax, QWORD PTR $S1$[rbp]
+	mov	QWORD PTR _Alproxy$[rbp], rax
+
+; 676  :         _Delete_plain_internal(_Alproxy, _STD exchange(_Mypair._Myval2._Myproxy, nullptr));
+
+	mov	QWORD PTR $T4[rbp], 0
+	mov	rax, QWORD PTR this$[rbp]
+	lea	rdx, QWORD PTR $T4[rbp]
+	mov	rcx, rax
+	call	??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ; std::exchange<std::_Container_proxy *,std::nullptr_t>
+	mov	rdx, rax
+	mov	rcx, QWORD PTR _Alproxy$[rbp]
+	call	??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ; std::_Delete_plain_internal<std::allocator<std::_Container_proxy> >
+
+; 677  : #endif // _ITERATOR_DEBUG_LEVEL != 0
+; 678  :     }
+
+	lea	rcx, QWORD PTR [rbp-32]
+	lea	rdx, OFFSET FLAT:??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcFrameData
+	call	_RTC_CheckStackVars
+	npad	1
+	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
+	xor	rcx, rbp
+	call	__security_check_cookie
+	lea	rsp, QWORD PTR [rbp+296]
+	pop	rdi
+	pop	rbp
+	ret	0
+??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z
+_TEXT	SEGMENT
+$T1 = 196
+this$ = 256
+_Right$ = 264
+??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::operator=, COMDAT
+
+; 664  :     vector& operator=(vector&& _Right) noexcept(noexcept(_Move_assign(_Right, _Choose_pocma<_Alty>{}))) {
+
+$LN4:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 665  :         if (this != _STD addressof(_Right)) {
+
+	mov	rcx, QWORD PTR _Right$[rbp]
+	call	??$addressof@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAV10@@Z ; std::addressof<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > >
+	cmp	QWORD PTR this$[rbp], rax
+	je	SHORT $LN2@operator
+
+; 666  :             _Move_assign(_Right, _Choose_pocma<_Alty>{});
+
+	lea	rax, QWORD PTR $T1[rbp]
+	mov	rdi, rax
+	xor	eax, eax
+	mov	ecx, 1
+	rep stosb
+	movzx	r8d, BYTE PTR $T1[rbp]
+	mov	rdx, QWORD PTR _Right$[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Move_assign
+$LN2@operator:
+
+; 667  :         }
+; 668  : 
+; 669  :         return *this;
+
+	mov	rax, QWORD PTR this$[rbp]
+
+; 670  :     }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::operator=
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z
+_TEXT	SEGMENT
+tv82 = 192
+tv74 = 192
+tv72 = 200
+this$ = 240
+_Right$ = 248
+__formal$ = 256
+?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z PROC ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Move_assign, COMDAT
+
+; 595  :     void _Move_assign(vector& _Right, _Equal_allocators) noexcept {
+
+$LN3:
+	mov	BYTE PTR [rsp+24], r8b
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 248				; 000000f8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 62					; 0000003eH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+280]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 596  :         _Tidy();
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Tidy@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Tidy
+
+; 597  :         _Pocma(_Getal(), _Right._Getal());
+
+	mov	rcx, QWORD PTR _Right$[rbp]
+	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
+	mov	QWORD PTR tv74[rbp], rax
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Getal
+	mov	QWORD PTR tv72[rbp], rax
+	mov	rdx, QWORD PTR tv74[rbp]
+	mov	rcx, QWORD PTR tv72[rbp]
+	call	??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z ; std::_Pocma<std::allocator<TechnicalServices::Persistence::Client> >
+
+; 598  :         _Mypair._Myval2._Take_contents(_Right._Mypair._Myval2);
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR tv82[rbp], rax
+	mov	rax, QWORD PTR _Right$[rbp]
+	mov	rdx, rax
+	mov	rcx, QWORD PTR tv82[rbp]
+	call	?_Take_contents@?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAV12@@Z ; std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >::_Take_contents
+	npad	1
+
+; 599  :     }
+
+	lea	rsp, QWORD PTR [rbp+216]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Move_assign@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z ENDP ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Move_assign
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z
+_TEXT	SEGMENT
+this$ = 224
+_Ptr$ = 232
+_Count$ = 240
+?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z PROC ; std::allocator<TechnicalServices::Persistence::Client>::deallocate, COMDAT
+
+; 801  :     void deallocate(_Ty* const _Ptr, const size_t _Count) {
+
+$LN3:
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 802  :         // no overflow check on the following multiply; we assume _Allocate did that check
+; 803  :         _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+	imul	rax, QWORD PTR _Count$[rbp], 48		; 00000030H
+	mov	rdx, rax
+	mov	rcx, QWORD PTR _Ptr$[rbp]
+	call	??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z ; std::_Deallocate<16,0>
+
+; 804  :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?deallocate@?$allocator@UClient@Persistence@TechnicalServices@@@std@@QEAAXQEAUClient@Persistence@TechnicalServices@@_K@Z ENDP ; std::allocator<TechnicalServices::Persistence::Client>::deallocate
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xloctime
 ;	COMDAT ??$_Getvals@_W@?$time_get@_WV?$istreambuf_iterator@_WU?$char_traits@_W@std@@@std@@@std@@IEAAX_WAEBV_Locinfo@1@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -24133,7 +21919,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+344]
-	lea	rcx, OFFSET FLAT:__FDACCCE4_xloctime
+	lea	rcx, OFFSET FLAT:__886F7F70_xloctime
 	call	__CheckForDebuggerJustMyCode
 
 ; 177  :         _Cvt = _Lobj._Getcvt();
@@ -24238,7 +22024,7 @@ $LN3@Getvals:
 ??$_Getvals@_W@?$time_get@_WV?$istreambuf_iterator@_WU?$char_traits@_W@std@@@std@@@std@@IEAAX_WAEBV_Locinfo@1@@Z ENDP ; std::time_get<wchar_t,std::istreambuf_iterator<wchar_t,std::char_traits<wchar_t> > >::_Getvals<wchar_t>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xloctime
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xloctime
 ;	COMDAT ??$_Getvals@_W@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@IEAAX_WAEBV_Locinfo@1@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -24265,7 +22051,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+344]
-	lea	rcx, OFFSET FLAT:__FDACCCE4_xloctime
+	lea	rcx, OFFSET FLAT:__886F7F70_xloctime
 	call	__CheckForDebuggerJustMyCode
 
 ; 177  :         _Cvt = _Lobj._Getcvt();
@@ -24405,7 +22191,7 @@ $LN2@scalar:
 ??_GSimpleUI@UI@@UEAAPEAXI@Z ENDP			; UI::SimpleUI::`scalar deleting destructor'
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@PEAVLoggerHandler@Logging@TechnicalServices@@$00@std@@QEAAAEAU?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -24424,7 +22210,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1344 :         return *this;
@@ -24440,7 +22226,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@PEAVLoggerHandler@Logging@TechnicalServices@@$00@std@@QEAAAEAU?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@2@XZ ENDP ; std::_Compressed_pair<std::default_delete<TechnicalServices::Logging::LoggerHandler>,TechnicalServices::Logging::LoggerHandler *,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??D?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@QEBAAEAVLoggerHandler@Logging@TechnicalServices@@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -24459,7 +22245,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2525 :         return *_Mypair._Myval2;
@@ -24476,7 +22262,7 @@ $LN3:
 ??D?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@QEBAAEAVLoggerHandler@Logging@TechnicalServices@@XZ ENDP ; std::unique_ptr<TechnicalServices::Logging::LoggerHandler,std::default_delete<TechnicalServices::Logging::LoggerHandler> >::operator*
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??1?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 tv77 = 192
@@ -24497,7 +22283,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2511 :         if (_Mypair._Myval2) {
@@ -24531,7 +22317,7 @@ $LN2@unique_ptr:
 ??1?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@QEAA@XZ ENDP ; std::unique_ptr<TechnicalServices::Logging::LoggerHandler,std::default_delete<TechnicalServices::Logging::LoggerHandler> >::~unique_ptr<TechnicalServices::Logging::LoggerHandler,std::default_delete<TechnicalServices::Logging::LoggerHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??R?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@QEBAXPEAVLoggerHandler@Logging@TechnicalServices@@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -24555,7 +22341,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2401 :         static_assert(0 < sizeof(_Ty), "can't delete an incomplete type");
@@ -24587,7 +22373,7 @@ $LN4@operator:
 ??R?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@QEBAXPEAVLoggerHandler@Logging@TechnicalServices@@@Z ENDP ; std::default_delete<TechnicalServices::Logging::LoggerHandler>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@PEAVMaintainBooksHandler@Library@Domain@@$00@std@@QEAAAEAU?$default_delete@VMaintainBooksHandler@Library@Domain@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -24606,7 +22392,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1344 :         return *this;
@@ -24622,7 +22408,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@PEAVMaintainBooksHandler@Library@Domain@@$00@std@@QEAAAEAU?$default_delete@VMaintainBooksHandler@Library@Domain@@@2@XZ ENDP ; std::_Compressed_pair<std::default_delete<Domain::Library::MaintainBooksHandler>,Domain::Library::MaintainBooksHandler *,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??1?$unique_ptr@VMaintainBooksHandler@Library@Domain@@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 tv77 = 192
@@ -24643,7 +22429,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2511 :         if (_Mypair._Myval2) {
@@ -24677,7 +22463,7 @@ $LN2@unique_ptr:
 ??1?$unique_ptr@VMaintainBooksHandler@Library@Domain@@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@@std@@QEAA@XZ ENDP ; std::unique_ptr<Domain::Library::MaintainBooksHandler,std::default_delete<Domain::Library::MaintainBooksHandler> >::~unique_ptr<Domain::Library::MaintainBooksHandler,std::default_delete<Domain::Library::MaintainBooksHandler> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\memory
 ;	COMDAT ??R?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@QEBAXPEAVMaintainBooksHandler@Library@Domain@@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -24701,7 +22487,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__E28F974E_memory
+	lea	rcx, OFFSET FLAT:__4E2906A2_memory
 	call	__CheckForDebuggerJustMyCode
 
 ; 2401 :         static_assert(0 < sizeof(_Ty), "can't delete an incomplete type");
@@ -24733,7 +22519,7 @@ $LN4@operator:
 ??R?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@QEBAXPEAVMaintainBooksHandler@Library@Domain@@@Z ENDP ; std::default_delete<Domain::Library::MaintainBooksHandler>::operator()
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 ;	COMDAT ??1SimpleUI@UI@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -24742,7 +22528,7 @@ tv94 = 256
 this$ = 304
 ??1SimpleUI@UI@@UEAA@XZ PROC				; UI::SimpleUI::~SimpleUI, COMDAT
 
-; 38   :   {
+; 37   :   {
 
 $LN3:
 	mov	QWORD PTR [rsp+8], rcx
@@ -24755,13 +22541,13 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+344]
-	lea	rcx, OFFSET FLAT:__B2FF6C0C_SimpleUI@cpp
+	lea	rcx, OFFSET FLAT:__BAA4F0A5_SimpleUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7SimpleUI@UI@@6B@
 	mov	QWORD PTR [rax], rcx
 
-; 39   :     _logger << "Simple UI shutdown successfully";
+; 38   :     _logger << "Simple UI shutdown successfully";
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
@@ -24780,7 +22566,7 @@ $LN3:
 	lea	rcx, QWORD PTR $T1[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 40   :   }
+; 39   :   }
 
 	mov	rax, QWORD PTR this$[rbp]
 	add	rax, 16
@@ -24800,7 +22586,7 @@ $LN3:
 ??1SimpleUI@UI@@UEAA@XZ ENDP				; UI::SimpleUI::~SimpleUI
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 ;	COMDAT ?launch@SimpleUI@UI@@UEAAXXZ
 _TEXT	SEGMENT
 roleLegalValues$ = 8
@@ -24844,105 +22630,109 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?launch@SimpleUI@UI@@UEAAXXZ PROC			; UI::SimpleUI::launch, COMDAT
 
-; 53   :   {
+; 52   :   {
 
-$LN60:
+$LN61:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
 	push	rsi
 	push	rdi
-	sub	rsp, 3456				; 00000d80H
+	sub	rsp, 3520				; 00000dc0H
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
-	mov	ecx, 864				; 00000360H
+	mov	ecx, 880				; 00000370H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	mov	rcx, QWORD PTR [rsp+3496]
+	mov	rcx, QWORD PTR [rsp+3560]
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__B2FF6C0C_SimpleUI@cpp
+	lea	rcx, OFFSET FLAT:__BAA4F0A5_SimpleUI@cpp
 	call	__CheckForDebuggerJustMyCode
 
-; 54   :     // 1) Fetch Role legal value list
-; 55   : 
-; 56   :     std::vector<std::string> roleLegalValues = _persistentData.findRoles();
+; 53   :     // 1) Fetch Role legal value list
+; 54   : 
+; 55   :     std::vector<std::string> roleLegalValues = _persistentData.findRoles();
 
 	mov	edx, 32					; 00000020H
 	lea	rcx, QWORD PTR roleLegalValues$[rbp]
@@ -24960,8 +22750,8 @@ $LN60:
 	call	QWORD PTR tv78[rbp]
 	npad	1
 
-; 57   : 
-; 58   :     std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClients();
+; 56   : 
+; 57   :     std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClients();
 
 	mov	edx, 32					; 00000020H
 	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
@@ -24979,9 +22769,9 @@ $LN60:
 	call	QWORD PTR tv94[rbp]
 	npad	1
 
-; 59   : 
-; 60   :     // 2) Present login screen to user and get username, password, and valid role
-; 61   :     Domain::Session::UserCredentials credentials  = {"", "", {""}};// ensures roles[0] exists
+; 58   : 
+; 59   :     // 2) Present login screen to user and get username, password, and valid role
+; 60   :     Domain::Session::UserCredentials credentials  = {"", "", {""}};// ensures roles[0] exists
 
 	lea	rdx, OFFSET FLAT:??_C@_00CNPNBAHC@@
 	lea	rcx, QWORD PTR credentials$[rbp]
@@ -24995,12 +22785,12 @@ $LN60:
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	mov	QWORD PTR tv156[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_00CNPNBAHC@@
-	lea	rcx, QWORD PTR $T51[rbp]
+	lea	rcx, QWORD PTR $T52[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rax, QWORD PTR $T51[rbp+40]
+	lea	rax, QWORD PTR $T52[rbp+40]
 	mov	r8, rax
-	lea	rdx, QWORD PTR $T51[rbp]
+	lea	rdx, QWORD PTR $T52[rbp]
 	lea	rcx, QWORD PTR $T27[rbp]
 	call	??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	lea	rcx, QWORD PTR $T28[rbp]
@@ -25008,42 +22798,42 @@ $LN60:
 	mov	rsi, rax
 	mov	ecx, 16
 	rep movsb
-	lea	rax, QWORD PTR $T50[rbp]
+	lea	rax, QWORD PTR $T51[rbp]
 	lea	rcx, QWORD PTR $T28[rbp]
 	mov	rdi, rax
 	mov	rsi, rcx
 	mov	ecx, 16
 	rep movsb
 	mov	r8, QWORD PTR tv156[rbp]
-	lea	rdx, QWORD PTR $T50[rbp]
+	lea	rdx, QWORD PTR $T51[rbp]
 	lea	rcx, QWORD PTR credentials$[rbp+80]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T51[rbp]
+	lea	rcx, QWORD PTR $T52[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	npad	1
 
-; 62   :     Domain::Client::Client Client = { "",0 };// ensures roles[0] exists
+; 61   :     Domain::Client::Client Client = { "",0 };// ensures roles[0] exists
 
 	lea	rdx, OFFSET FLAT:??_C@_00CNPNBAHC@@
 	lea	rcx, QWORD PTR Client$[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	DWORD PTR Client$[rbp+40], 0
 
-; 63   : 
-; 64   :     auto &                           selectedRole = credentials.roles[0];     // convenience alias
+; 62   : 
+; 63   :     auto &                           selectedRole = credentials.roles[0];     // convenience alias
 
 	xor	edx, edx
 	lea	rcx, QWORD PTR credentials$[rbp+80]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	QWORD PTR selectedRole$[rbp], rax
 
-; 65   : 
-; 66   :    
-; 67   :     std::unique_ptr<Domain::Session::SessionHandler> sessionControl;
+; 64   : 
+; 65   :    
+; 66   :     std::unique_ptr<Domain::Session::SessionHandler> sessionControl;
 
 	mov	edx, 8
 	lea	rcx, QWORD PTR sessionControl$[rbp]
@@ -25053,10 +22843,10 @@ $LN60:
 	npad	1
 $LN4@launch:
 
-; 68   : 
-; 69   :     do
-; 70   :     {
-; 71   :       std::cin.ignore(  std::numeric_limits<std::streamsize>::max(), '\n' );
+; 67   : 
+; 68   :     do
+; 69   :     {
+; 70   :       std::cin.ignore(  std::numeric_limits<std::streamsize>::max(), '\n' );
 
 	call	?max@?$numeric_limits@_J@std@@SA_JXZ	; std::numeric_limits<__int64>::max
 	mov	QWORD PTR tv179[rbp], rax
@@ -25065,46 +22855,46 @@ $LN4@launch:
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_?ignore@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@_JH@Z
 
-; 72   : 
-; 73   :       std::cout << "  name: ";
+; 71   : 
+; 72   :       std::cout << "  name: ";
 
 	lea	rdx, OFFSET FLAT:??_C@_08KLHCBAMK@?5?5name?3?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 74   :       std::getline( std::cin, credentials.userName );
+; 73   :       std::getline( std::cin, credentials.userName );
 
 	lea	rdx, QWORD PTR credentials$[rbp]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 75   : 
-; 76   :       std::cout << "  pass phrase: ";
+; 74   : 
+; 75   :       std::cout << "  pass phrase: ";
 
 	lea	rdx, OFFSET FLAT:??_C@_0BA@ILPNJJBN@?5?5pass?5phrase?3?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 77   :       std::getline( std::cin, credentials.passPhrase );
+; 76   :       std::getline( std::cin, credentials.passPhrase );
 
 	lea	rdx, QWORD PTR credentials$[rbp+40]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 78   : 
-; 79   :       sessionControl = Domain::Session::SessionHandler::createSession( credentials );
+; 77   : 
+; 78   :       sessionControl = Domain::Session::SessionHandler::createSession( credentials );
 
 	lea	rdx, QWORD PTR credentials$[rbp]
 	lea	rcx, QWORD PTR $T29[rbp]
 	call	?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Session::SessionHandler::createSession
-	mov	QWORD PTR tv674[rbp], rax
-	mov	rdx, QWORD PTR tv674[rbp]
+	mov	QWORD PTR tv683[rbp], rax
+	mov	rdx, QWORD PTR tv683[rbp]
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??$?4U?$default_delete@VSessionHandler@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator=<std::default_delete<Domain::Session::SessionHandler>,0>
 	lea	rcx, QWORD PTR $T29[rbp]
 	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 
-; 80   :       if( sessionControl != nullptr )
+; 79   :       if( sessionControl != nullptr )
 
 	xor	edx, edx
 	lea	rcx, QWORD PTR sessionControl$[rbp]
@@ -25113,8 +22903,8 @@ $LN4@launch:
 	test	eax, eax
 	je	SHORT $LN17@launch
 
-; 81   :       {
-; 82   :           _logger << "Login Successful\n";
+; 80   :       {
+; 81   :           _logger << "Login Successful\n";
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
@@ -25135,35 +22925,35 @@ $LN4@launch:
 	lea	rcx, QWORD PTR $T30[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 83   :         break;
+; 82   :         break;
 
 	jmp	SHORT $LN7@launch
 $LN17@launch:
 
-; 84   :       }
-; 85   : 
-; 86   :       std::cout << "** Login failed\n";
+; 83   :       }
+; 84   : 
+; 85   :       std::cout << "** Login failed\n";
 
 	lea	rdx, OFFSET FLAT:??_C@_0BB@MICAEIDH@?$CK?$CK?5Login?5failed?6@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 87   :       //_logger << "Login failure for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
-; 88   :       //_logger << "Login failure for \"" + credentials.userName + "\" as a user. ";    //+ "\"";
-; 89   : 
-; 90   :     } while( true );
+; 86   :       //_logger << "Login failure for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
+; 87   :       //_logger << "Login failure for \"" + credentials.userName + "\" as a user. ";    //+ "\"";
+; 88   : 
+; 89   :     } while( true );
 
 	xor	eax, eax
 	cmp	eax, 1
 	jne	$LN4@launch
 $LN7@launch:
 
+; 90   : 
 ; 91   : 
-; 92   : 
-; 93   :     // 4) Fetch functionality options for this role
-; 94   :     do
-; 95   :     {
-; 96   :       auto        commands = sessionControl->getCommands();
+; 92   :     // 4) Fetch functionality options for this role
+; 93   :     do
+; 94   :     {
+; 95   :       auto        commands = sessionControl->getCommands();
 
 	mov	edx, 32					; 00000020H
 	lea	rcx, QWORD PTR commands$14[rbp]
@@ -25180,18 +22970,18 @@ $LN7@launch:
 	call	QWORD PTR tv229[rbp]
 	npad	1
 
-; 97   :       std::string selectedCommand;
+; 96   :       std::string selectedCommand;
 
 	lea	rcx, QWORD PTR selectedCommand$15[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 $LN10@launch:
 
-; 98   :       unsigned    menuSelection;
-; 99   : 
-; 100  :       do
-; 101  :       {
-; 102  :         for( unsigned i = 0; i != commands.size(); ++i ) std::cout << std::setw( 2 ) << i << " - " << commands[i] << '\n';
+; 97   :       unsigned    menuSelection;
+; 98   : 
+; 99   :       do
+; 100  :       {
+; 101  :         for( unsigned i = 0; i != commands.size(); ++i ) std::cout << std::setw( 2 ) << i << " - " << commands[i] << '\n';
 
 	mov	DWORD PTR i$17[rbp], 0
 	jmp	SHORT $LN13@launch
@@ -25238,7 +23028,7 @@ $LN13@launch:
 	jmp	$LN11@launch
 $LN12@launch:
 
-; 103  :         std::cout << std::setw( 2 ) << commands.size() << " - " << "Quit\n";
+; 102  :         std::cout << std::setw( 2 ) << commands.size() << " - " << "Quit\n";
 
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	mov	QWORD PTR tv281[rbp], rax
@@ -25263,8 +23053,8 @@ $LN12@launch:
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 104  : 
-; 105  :         std::cout << "  action (0-" << commands.size() << "): ";
+; 103  : 
+; 104  :         std::cout << "  action (0-" << commands.size() << "): ";
 
 	lea	rdx, OFFSET FLAT:??_C@_0N@HNKDLDDO@?5?5action?5?$CI0?9@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -25280,13 +23070,13 @@ $LN12@launch:
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 106  :         std::cin >> menuSelection;
+; 105  :         std::cin >> menuSelection;
 
 	lea	rdx, QWORD PTR menuSelection$16[rbp]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAI@Z
 
-; 107  :       } while( menuSelection > commands.size() );
+; 106  :       } while( menuSelection > commands.size() );
 
 	mov	eax, DWORD PTR menuSelection$16[rbp]
 	mov	QWORD PTR tv309[rbp], rax
@@ -25296,8 +23086,8 @@ $LN12@launch:
 	cmp	rcx, rax
 	ja	$LN10@launch
 
-; 108  : 
-; 109  :       if( menuSelection == commands.size() ) break;
+; 107  : 
+; 108  :       if( menuSelection == commands.size() ) break;
 
 	mov	eax, DWORD PTR menuSelection$16[rbp]
 	mov	QWORD PTR tv314[rbp], rax
@@ -25314,8 +23104,8 @@ $LN12@launch:
 	jmp	$LN6@launch
 $LN18@launch:
 
-; 110  : 
-; 111  :       selectedCommand = commands[menuSelection];
+; 109  : 
+; 110  :       selectedCommand = commands[menuSelection];
 
 	mov	eax, DWORD PTR menuSelection$16[rbp]
 	mov	edx, eax
@@ -25325,7 +23115,7 @@ $LN18@launch:
 	lea	rcx, QWORD PTR selectedCommand$15[rbp]
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@AEBV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 
-; 112  :       _logger << "Command selected \"" + selectedCommand + '"';
+; 111  :       _logger << "Command selected \"" + selectedCommand + '"';
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
@@ -25341,15 +23131,15 @@ $LN18@launch:
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 	mov	QWORD PTR tv232[rbp], rax
 	mov	rax, QWORD PTR tv232[rbp]
-	mov	QWORD PTR tv681[rbp], rax
+	mov	QWORD PTR tv690[rbp], rax
 	mov	r8b, 34					; 00000022H
-	mov	rdx, QWORD PTR tv681[rbp]
+	mov	rdx, QWORD PTR tv690[rbp]
 	lea	rcx, QWORD PTR $T34[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 	mov	QWORD PTR tv226[rbp], rax
 	mov	rax, QWORD PTR tv226[rbp]
-	mov	QWORD PTR tv683[rbp], rax
-	mov	rax, QWORD PTR tv683[rbp]
+	mov	QWORD PTR tv692[rbp], rax
+	mov	rax, QWORD PTR tv692[rbp]
 	mov	QWORD PTR tv346[rbp], rax
 	mov	rdx, QWORD PTR tv346[rbp]
 	mov	rcx, QWORD PTR tv348[rbp]
@@ -25361,15 +23151,15 @@ $LN18@launch:
 	lea	rcx, QWORD PTR $T33[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
+; 112  : 
 ; 113  : 
-; 114  : 
-; 115  :       /******************************************************************************************************************************
-; 116  :       **  5) The user interface will collect relevant information to execute the chosen command.  This section requires the UI to
-; 117  :       **     know what information to collect, and hence what the available commands are.  Our goal is loose (minimal) coupling, not
-; 118  :       **     no coupling. This can be achieved in a variety of ways, but one common way is to pass strings instead of strong typed
-; 119  :       **     parameters.
-; 120  :       ******************************************************************************************************************************/
-; 121  :       if( selectedCommand == "Checkout Book" )
+; 114  :       /******************************************************************************************************************************
+; 115  :       **  5) The user interface will collect relevant information to execute the chosen command.  This section requires the UI to
+; 116  :       **     know what information to collect, and hence what the available commands are.  Our goal is loose (minimal) coupling, not
+; 117  :       **     no coupling. This can be achieved in a variety of ways, but one common way is to pass strings instead of strong typed
+; 118  :       **     parameters.
+; 119  :       ******************************************************************************************************************************/
+; 120  :       if( selectedCommand == "Checkout Book" )
 
 	lea	rdx, OFFSET FLAT:??_C@_0O@OLLJLLAF@Checkout?5Book@
 	lea	rcx, QWORD PTR selectedCommand$15[rbp]
@@ -25378,8 +23168,8 @@ $LN18@launch:
 	test	eax, eax
 	je	$LN19@launch
 
-; 122  :       {
-; 123  :         std::vector<std::string> parameters( 3 );
+; 121  :       {
+; 122  :         std::vector<std::string> parameters( 3 );
 
 	mov	edx, 32					; 00000020H
 	lea	rcx, QWORD PTR parameters$18[rbp]
@@ -25392,8 +23182,8 @@ $LN18@launch:
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 
-; 124  : 
-; 125  :         std::cout << " Enter book's title:  ";  std::cin >> std::ws;  std::getline( std::cin, parameters[0] );
+; 123  : 
+; 124  :         std::cout << " Enter book's title:  ";  std::cin >> std::ws;  std::getline( std::cin, parameters[0] );
 
 	lea	rdx, OFFSET FLAT:??_C@_0BH@DBMKOIGM@?5Enter?5book?8s?5title?3?5?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -25411,7 +23201,7 @@ $LN18@launch:
 	mov	rcx, QWORD PTR tv375[rbp]
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 126  :         std::cout << " Enter book's author: ";  std::cin >> std::ws;  std::getline( std::cin, parameters[1] );
+; 125  :         std::cout << " Enter book's author: ";  std::cin >> std::ws;  std::getline( std::cin, parameters[1] );
 
 	lea	rdx, OFFSET FLAT:??_C@_0BH@GCLJMHPF@?5Enter?5book?8s?5author?3?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -25429,7 +23219,7 @@ $LN18@launch:
 	mov	rcx, QWORD PTR tv388[rbp]
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 127  :         std::cout << " Enter book's ISBN:   ";  std::cin >> std::ws;  std::getline( std::cin, parameters[2] );
+; 126  :         std::cout << " Enter book's ISBN:   ";  std::cin >> std::ws;  std::getline( std::cin, parameters[2] );
 
 	lea	rdx, OFFSET FLAT:??_C@_0BH@POIJFLOI@?5Enter?5book?8s?5ISBN?3?5?5?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -25447,8 +23237,8 @@ $LN18@launch:
 	mov	rcx, QWORD PTR tv401[rbp]
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 128  : 
-; 129  :         auto results = sessionControl->executeCommand( selectedCommand, parameters );
+; 127  : 
+; 128  :         auto results = sessionControl->executeCommand( selectedCommand, parameters );
 
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??C?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBAPEAVSessionHandler@Session@Domain@@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator->
@@ -25464,7 +23254,7 @@ $LN18@launch:
 	call	QWORD PTR tv414[rbp]
 	npad	1
 
-; 130  :         if( results.has_value() ) _logger << "Received reply: \"" + std::any_cast<const std::string &>( results ) + '"';
+; 129  :         if( results.has_value() ) _logger << "Received reply: \"" + std::any_cast<const std::string &>( results ) + '"';
 
 	lea	rcx, QWORD PTR results$19[rbp]
 	call	?has_value@any@std@@QEBA_NXZ		; std::any::has_value
@@ -25487,15 +23277,15 @@ $LN18@launch:
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 	mov	QWORD PTR tv409[rbp], rax
 	mov	rax, QWORD PTR tv409[rbp]
-	mov	QWORD PTR tv687[rbp], rax
+	mov	QWORD PTR tv696[rbp], rax
 	mov	r8b, 34					; 00000022H
-	mov	rdx, QWORD PTR tv687[rbp]
+	mov	rdx, QWORD PTR tv696[rbp]
 	lea	rcx, QWORD PTR $T37[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 	mov	QWORD PTR tv358[rbp], rax
 	mov	rax, QWORD PTR tv358[rbp]
-	mov	QWORD PTR tv689[rbp], rax
-	mov	rax, QWORD PTR tv689[rbp]
+	mov	QWORD PTR tv698[rbp], rax
+	mov	rax, QWORD PTR tv698[rbp]
 	mov	QWORD PTR tv444[rbp], rax
 	mov	rdx, QWORD PTR tv444[rbp]
 	mov	rcx, QWORD PTR tv446[rbp]
@@ -25509,7 +23299,7 @@ $LN18@launch:
 	npad	1
 $LN21@launch:
 
-; 131  :       }
+; 130  :       }
 
 	lea	rcx, QWORD PTR results$19[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
@@ -25519,7 +23309,7 @@ $LN21@launch:
 	jmp	$LN20@launch
 $LN19@launch:
 
-; 132  :       else if (selectedCommand == "Show All Clients")
+; 131  :       else if (selectedCommand == "Show All Clients")
 
 	lea	rdx, OFFSET FLAT:??_C@_0BB@OOLJNJAN@Show?5All?5Clients@
 	lea	rcx, QWORD PTR selectedCommand$15[rbp]
@@ -25528,15 +23318,15 @@ $LN19@launch:
 	test	eax, eax
 	je	$LN22@launch
 
-; 133  : 
-; 134  :       {
-; 135  :        
-; 136  : 
-; 137  :         line();
+; 132  : 
+; 133  :       {
+; 134  :        
+; 135  : 
+; 136  :         line();
 
 	call	?line@UI@@YAXXZ				; UI::line
 
-; 138  :         std::cout << std::setw(49) << "List Of Clients \n";
+; 137  :         std::cout << std::setw(49) << "List Of Clients \n";
 
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	mov	QWORD PTR tv462[rbp], rax
@@ -25551,11 +23341,11 @@ $LN19@launch:
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 139  :         line();
+; 138  :         line();
 
 	call	?line@UI@@YAXXZ				; UI::line
 
-; 140  :         std::cout <<std::setw(15) << "Client ID  " <<std::setw(15) << " Creator \n" ;
+; 139  :         std::cout <<std::setw(15) << "Client ID  " <<std::setw(15) << " Creator \n" ;
 
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	mov	QWORD PTR tv513[rbp], rax
@@ -25581,12 +23371,12 @@ $LN19@launch:
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 141  :         line();
+; 140  :         line();
 
 	call	?line@UI@@YAXXZ				; UI::line
 
-; 142  : 
-; 143  :          for( const auto & c : ClientsFromDB )
+; 141  : 
+; 142  :          for( const auto & c : ClientsFromDB )
 
 	lea	rax, QWORD PTR ClientsFromDB$[rbp]
 	mov	QWORD PTR <range>$L0$20[rbp], rax
@@ -25608,7 +23398,7 @@ $LN16@launch:
 	mov	rax, QWORD PTR <begin>$L0$21[rbp]
 	mov	QWORD PTR c$23[rbp], rax
 
-; 144  :             std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator <<std::endl;
+; 143  :             std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator <<std::endl;
 
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	mov	QWORD PTR tv551[rbp], rax
@@ -25626,8 +23416,8 @@ $LN16@launch:
 	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
 	mov	QWORD PTR tv208[rbp], rax
 	mov	rax, QWORD PTR tv208[rbp]
-	mov	QWORD PTR tv691[rbp], rax
-	mov	rax, QWORD PTR tv691[rbp]
+	mov	QWORD PTR tv700[rbp], rax
+	mov	rax, QWORD PTR tv700[rbp]
 	mov	QWORD PTR tv558[rbp], rax
 	mov	rdx, QWORD PTR tv558[rbp]
 	mov	rcx, QWORD PTR tv556[rbp]
@@ -25654,17 +23444,17 @@ $LN16@launch:
 	jmp	$LN14@launch
 $LN15@launch:
 
-; 145  :         line();
+; 144  :         line();
 
 	call	?line@UI@@YAXXZ				; UI::line
 
-; 146  : 
-; 147  :       }
+; 145  : 
+; 146  :       }
 
 	jmp	$LN20@launch
 $LN22@launch:
 
-; 148  :       else if (selectedCommand == "Add New Client")
+; 147  :       else if (selectedCommand == "Add New Client")
 
 	lea	rdx, OFFSET FLAT:??_C@_0P@FNHHOOAI@Add?5New?5Client@
 	lea	rcx, QWORD PTR selectedCommand$15[rbp]
@@ -25673,14 +23463,14 @@ $LN22@launch:
 	test	eax, eax
 	je	$LN24@launch
 
-; 149  :       {
-; 150  :           int sizeofClientDB = ClientsFromDB.size();
+; 148  :       {
+; 149  :           int sizeofClientDB = ClientsFromDB.size();
 
 	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
 	call	?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size
 	mov	DWORD PTR sizeofClientDB$24[rbp], eax
 
-; 151  :           std::unique_ptr<Domain::Client::ClientHandler> ClientHandler;
+; 150  :           std::unique_ptr<Domain::Client::ClientHandler> ClientHandler; // call clientdomain 
 
 	mov	edx, 8
 	lea	rcx, QWORD PTR ClientHandler$25[rbp]
@@ -25689,7 +23479,9 @@ $LN22@launch:
 	call	??$?0U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> ><std::default_delete<Domain::Client::ClientHandler>,0>
 	npad	1
 
-; 152  :           Client = { credentials.userName,sizeofClientDB + 1 };
+; 151  : 
+; 152  : 
+; 153  :           Client = { credentials.userName,sizeofClientDB + 1 };
 
 	lea	rdx, QWORD PTR credentials$[rbp]
 	lea	rcx, QWORD PTR $T44[rbp]
@@ -25703,68 +23495,80 @@ $LN22@launch:
 	lea	rcx, QWORD PTR $T44[rbp]
 	call	??1Client@Persistence@TechnicalServices@@QEAA@XZ
 
-; 153  :           ClientHandler = Domain::Client::ClientHandler::createClient(Client);
+; 154  :           ClientHandler = Domain::Client::ClientHandler::createClient(Client); // creating an smart prt object of client 
 
 	lea	rdx, QWORD PTR Client$[rbp]
 	lea	rcx, QWORD PTR $T45[rbp]
 	call	?createClient@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBU2Persistence@TechnicalServices@@@Z ; Domain::Client::ClientHandler::createClient
-	mov	QWORD PTR tv696[rbp], rax
-	mov	rdx, QWORD PTR tv696[rbp]
+	mov	QWORD PTR tv705[rbp], rax
+	mov	rdx, QWORD PTR tv705[rbp]
 	lea	rcx, QWORD PTR ClientHandler$25[rbp]
 	call	??$?4U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator=<std::default_delete<Domain::Client::ClientHandler>,0>
 	lea	rcx, QWORD PTR $T45[rbp]
 	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 
-; 154  :           if (ClientHandler == nullptr) {
+; 155  : 
+; 156  :           // return nullprt if client parameters empty 
+; 157  :           // otherwise created a client prt object 
+; 158  : 
+; 159  :           if (ClientHandler != nullptr) {
 
 	xor	edx, edx
 	lea	rcx, QWORD PTR ClientHandler$25[rbp]
-	call	??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
+	call	??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ; std::operator!=<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 	movzx	eax, al
 	test	eax, eax
-	je	SHORT $LN26@launch
+	je	$LN26@launch
 
-; 155  :               _logger << "execute__________________________";
+; 160  :               ClientHandler->ClientsDB(ClientsFromDB);
 
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax+32]
-	mov	QWORD PTR tv616[rbp], rax
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax+32]
+	lea	rcx, QWORD PTR ClientHandler$25[rbp]
+	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
+	mov	QWORD PTR tv605[rbp], rax
+	mov	rax, QWORD PTR tv605[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv618[rbp], rax
-	lea	rdx, OFFSET FLAT:??_C@_0CC@OAODPDEP@execute________________________@
-	lea	rcx, QWORD PTR $T46[rbp]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	npad	1
+	mov	QWORD PTR tv612[rbp], rax
+	lea	r8, QWORD PTR ClientsFromDB$[rbp]
 	lea	rdx, QWORD PTR $T46[rbp]
-	mov	rcx, QWORD PTR tv616[rbp]
-	call	QWORD PTR tv618[rbp]
-	npad	1
+	mov	rcx, QWORD PTR tv605[rbp]
+	call	QWORD PTR tv612[rbp]
 	lea	rcx, QWORD PTR $T46[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	call	??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
 
-; 156  : 
-; 157  :               ClientsFromDB.push_back(Client);
+; 161  :               ClientsFromDB = ClientHandler->addClient(Client);
 
-	lea	rdx, QWORD PTR Client$[rbp]
+	lea	rcx, QWORD PTR ClientHandler$25[rbp]
+	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
+	mov	QWORD PTR tv619[rbp], rax
+	mov	rax, QWORD PTR tv619[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	rax, QWORD PTR [rax+8]
+	mov	QWORD PTR tv626[rbp], rax
+	lea	r8, QWORD PTR Client$[rbp]
+	lea	rdx, QWORD PTR $T47[rbp]
+	mov	rcx, QWORD PTR tv619[rbp]
+	call	QWORD PTR tv626[rbp]
+	mov	QWORD PTR tv708[rbp], rax
+	mov	rdx, QWORD PTR tv708[rbp]
 	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
-	call	?push_back@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEBUClient@Persistence@TechnicalServices@@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::push_back
+	call	??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::operator=
+	lea	rcx, QWORD PTR $T47[rbp]
+	call	??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
 	npad	1
 $LN26@launch:
 
-; 158  : 
-; 159  :             }
-; 160  :       }
+; 162  :               //ClientHandler->UpdateClientProfile("test", 1, "1/1/1", 123, 123213131);
+; 163  :             }
+; 164  :       }
 
 	lea	rcx, QWORD PTR ClientHandler$25[rbp]
 	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 	jmp	$LN20@launch
 $LN24@launch:
 
-; 161  : 
-; 162  :       else if( selectedCommand == "Another command" ) /* ... */ {}
+; 165  : 
+; 166  :       else if( selectedCommand == "Another command" ) /* ... */ {}
 
 	lea	rdx, OFFSET FLAT:??_C@_0BA@NFJLLIND@Another?5command@
 	lea	rcx, QWORD PTR selectedCommand$15[rbp]
@@ -25775,33 +23579,33 @@ $LN24@launch:
 	jmp	SHORT $LN20@launch
 $LN27@launch:
 
-; 163  : 
-; 164  :       else sessionControl->executeCommand( selectedCommand, {} );
+; 167  : 
+; 168  :       else sessionControl->executeCommand( selectedCommand, {} );
 
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??C?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBAPEAVSessionHandler@Session@Domain@@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator->
-	mov	QWORD PTR tv628[rbp], rax
-	mov	rax, QWORD PTR tv628[rbp]
+	mov	QWORD PTR tv637[rbp], rax
+	mov	rax, QWORD PTR tv637[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+8]
-	mov	QWORD PTR tv639[rbp], rax
-	lea	rcx, QWORD PTR $T47[rbp]
+	mov	QWORD PTR tv648[rbp], rax
+	lea	rcx, QWORD PTR $T48[rbp]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
-	lea	r9, QWORD PTR $T47[rbp]
+	lea	r9, QWORD PTR $T48[rbp]
 	lea	r8, QWORD PTR selectedCommand$15[rbp]
-	lea	rdx, QWORD PTR $T48[rbp]
-	mov	rcx, QWORD PTR tv628[rbp]
-	call	QWORD PTR tv639[rbp]
-	lea	rcx, QWORD PTR $T48[rbp]
+	lea	rdx, QWORD PTR $T49[rbp]
+	mov	rcx, QWORD PTR tv637[rbp]
+	call	QWORD PTR tv648[rbp]
+	lea	rcx, QWORD PTR $T49[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
-	lea	rcx, QWORD PTR $T47[rbp]
+	lea	rcx, QWORD PTR $T48[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 $LN20@launch:
 
-; 165  :     } while( true );
+; 169  :     } while( true );
 
 	lea	rcx, QWORD PTR selectedCommand$15[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -25813,30 +23617,30 @@ $LN20@launch:
 	jne	$LN7@launch
 $LN6@launch:
 
-; 166  : 
-; 167  :     _logger << "Ending session and terminating";
+; 170  : 
+; 171  :     _logger << "Ending session and terminating";
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
-	mov	QWORD PTR tv656[rbp], rax
+	mov	QWORD PTR tv665[rbp], rax
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv658[rbp], rax
+	mov	QWORD PTR tv667[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BP@HIAJAIHD@Ending?5session?5and?5terminating@
-	lea	rcx, QWORD PTR $T49[rbp]
+	lea	rcx, QWORD PTR $T50[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, QWORD PTR $T49[rbp]
-	mov	rcx, QWORD PTR tv656[rbp]
-	call	QWORD PTR tv658[rbp]
+	lea	rdx, QWORD PTR $T50[rbp]
+	mov	rcx, QWORD PTR tv665[rbp]
+	call	QWORD PTR tv667[rbp]
 	npad	1
-	lea	rcx, QWORD PTR $T49[rbp]
+	lea	rcx, QWORD PTR $T50[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 
-; 168  :   }
+; 172  :   }
 
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
@@ -25858,7 +23662,7 @@ $LN6@launch:
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
 	xor	rcx, rbp
 	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+3424]
+	lea	rsp, QWORD PTR [rbp+3488]
 	pop	rdi
 	pop	rsi
 	pop	rbp
@@ -25908,80 +23712,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -26040,80 +23848,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$1@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -26172,80 +23984,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$2@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -26304,80 +24120,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$3@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$3
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -26436,80 +24256,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$5@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$5
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -26520,7 +24344,7 @@ this$ = 3456
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T51[rbp]
+	lea	rcx, QWORD PTR $T52[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -26571,80 +24395,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$6@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -26703,80 +24531,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$7@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -26835,80 +24667,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$9
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -26967,80 +24803,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$10@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$10
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -27099,80 +24939,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$12
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -27231,80 +25075,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$13
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -27363,80 +25211,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$14
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -27495,80 +25347,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -27627,80 +25483,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$16
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -27759,80 +25619,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$17
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -27891,80 +25755,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$18
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -28023,80 +25891,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$19
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -28155,80 +26027,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$20
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -28287,80 +26163,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$21
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -28419,80 +26299,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$22
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -28551,226 +26435,98 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
-?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$26
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
+?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$28
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T46[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$26
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-credentials$ = 144
-Client$ = 280
-selectedRole$ = 360
-sessionControl$ = 392
-commands$14 = 424
-selectedCommand$15 = 488
-menuSelection$16 = 548
-i$17 = 580
-parameters$18 = 616
-results$19 = 688
-<range>$L0$20 = 776
-<begin>$L0$21 = 808
-<end>$L0$22 = 840
-c$23 = 872
-sizeofClientDB$24 = 900
-ClientHandler$25 = 936
-$T26 = 1924
-$T27 = 1960
-$T28 = 2008
-$T29 = 2056
-$T30 = 2088
-$T31 = 2152
-$T32 = 2200
-$T33 = 2248
-$T34 = 2312
-$T35 = 2372
-$T36 = 2408
-$T37 = 2472
-$T38 = 2536
-$T39 = 2584
-$T40 = 2632
-$T41 = 2680
-$T42 = 2728
-$T43 = 2792
-$T44 = 2840
-$T45 = 2920
-$T46 = 2952
-$T47 = 3016
-$T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
-?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$27
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T47[rbp]
+	lea	rcx, QWORD PTR $T48[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$27
+?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$28
 text$x	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -28815,94 +26571,98 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
-?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$29
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
+?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$30
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T49[rbp]
+	lea	rcx, QWORD PTR $T50[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$29
+?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$30
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -28948,80 +26708,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -29081,80 +26845,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$1@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -29214,80 +26982,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$2@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -29347,80 +27119,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$3@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$3
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -29480,80 +27256,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$5@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$5
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -29564,7 +27344,7 @@ this$ = 3456
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T51[rbp]
+	lea	rcx, QWORD PTR $T52[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -29616,80 +27396,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$6@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -29749,80 +27533,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$7@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -29882,80 +27670,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$9
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30015,80 +27807,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$10@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$10
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30148,80 +27944,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$12
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30281,80 +28081,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$13
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30414,80 +28218,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$14
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30547,80 +28355,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30680,80 +28492,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$16
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30813,80 +28629,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$17
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30946,80 +28766,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$18
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -31079,80 +28903,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$19
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -31212,80 +29040,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$20
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -31345,80 +29177,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$21
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -31478,80 +29314,84 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
 ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$22
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -31611,227 +29451,98 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
-?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$26
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
+?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$28
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T46[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$26@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$26
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-credentials$ = 144
-Client$ = 280
-selectedRole$ = 360
-sessionControl$ = 392
-commands$14 = 424
-selectedCommand$15 = 488
-menuSelection$16 = 548
-i$17 = 580
-parameters$18 = 616
-results$19 = 688
-<range>$L0$20 = 776
-<begin>$L0$21 = 808
-<end>$L0$22 = 840
-c$23 = 872
-sizeofClientDB$24 = 900
-ClientHandler$25 = 936
-$T26 = 1924
-$T27 = 1960
-$T28 = 2008
-$T29 = 2056
-$T30 = 2088
-$T31 = 2152
-$T32 = 2200
-$T33 = 2248
-$T34 = 2312
-$T35 = 2372
-$T36 = 2408
-$T37 = 2472
-$T38 = 2536
-$T39 = 2584
-$T40 = 2632
-$T41 = 2680
-$T42 = 2728
-$T43 = 2792
-$T44 = 2840
-$T45 = 2920
-$T46 = 2952
-$T47 = 3016
-$T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
-?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$27
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T47[rbp]
+	lea	rcx, QWORD PTR $T48[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$27
+?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$28
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -31877,99 +29588,103 @@ $T45 = 2920
 $T46 = 2952
 $T47 = 3016
 $T48 = 3080
-$T49 = 3176
-$T50 = 3248
-$T51 = 3288
-tv696 = 3336
-tv674 = 3336
-tv656 = 3336
-tv628 = 3336
-tv616 = 3336
-tv551 = 3336
-tv513 = 3336
-tv462 = 3336
-tv446 = 3336
-tv406 = 3336
-tv403 = 3336
-tv390 = 3336
-tv377 = 3336
-tv348 = 3336
-tv314 = 3336
-tv309 = 3336
-tv307 = 3336
-tv281 = 3336
-tv256 = 3336
-tv235 = 3336
-tv223 = 3336
-tv213 = 3336
-tv179 = 3336
-tv156 = 3336
-tv92 = 3336
-tv76 = 3336
-tv658 = 3344
-tv639 = 3344
-tv618 = 3344
-tv553 = 3344
-tv515 = 3344
-tv464 = 3344
-tv448 = 3344
-tv414 = 3344
-tv401 = 3344
-tv388 = 3344
-tv375 = 3344
-tv350 = 3344
-tv305 = 3344
-tv283 = 3344
-tv258 = 3344
-tv229 = 3344
-tv215 = 3344
-tv94 = 3344
-tv78 = 3344
-tv556 = 3352
-tv519 = 3352
-tv409 = 3352
-tv292 = 3352
-tv263 = 3352
-tv232 = 3352
-tv687 = 3360
-tv681 = 3360
-tv521 = 3360
-tv290 = 3360
-tv267 = 3360
-tv208 = 3360
-tv691 = 3368
-tv358 = 3368
-tv269 = 3368
-tv226 = 3368
-tv689 = 3376
-tv683 = 3376
-tv558 = 3376
-tv561 = 3384
-tv444 = 3384
-tv346 = 3384
-tv563 = 3392
-tv569 = 3400
-__$ArrayPad$ = 3408
-this$ = 3456
-?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$29
+$T49 = 3144
+$T50 = 3240
+$T51 = 3312
+$T52 = 3352
+tv705 = 3400
+tv683 = 3400
+tv665 = 3400
+tv637 = 3400
+tv619 = 3400
+tv605 = 3400
+tv551 = 3400
+tv513 = 3400
+tv462 = 3400
+tv446 = 3400
+tv406 = 3400
+tv403 = 3400
+tv390 = 3400
+tv377 = 3400
+tv348 = 3400
+tv314 = 3400
+tv309 = 3400
+tv307 = 3400
+tv281 = 3400
+tv256 = 3400
+tv235 = 3400
+tv223 = 3400
+tv213 = 3400
+tv179 = 3400
+tv156 = 3400
+tv92 = 3400
+tv76 = 3400
+tv667 = 3408
+tv648 = 3408
+tv626 = 3408
+tv612 = 3408
+tv553 = 3408
+tv515 = 3408
+tv464 = 3408
+tv448 = 3408
+tv414 = 3408
+tv401 = 3408
+tv388 = 3408
+tv375 = 3408
+tv350 = 3408
+tv305 = 3408
+tv283 = 3408
+tv258 = 3408
+tv229 = 3408
+tv215 = 3408
+tv94 = 3408
+tv78 = 3408
+tv708 = 3416
+tv556 = 3416
+tv519 = 3416
+tv409 = 3416
+tv292 = 3416
+tv263 = 3416
+tv232 = 3416
+tv696 = 3424
+tv690 = 3424
+tv521 = 3424
+tv290 = 3424
+tv267 = 3424
+tv208 = 3424
+tv700 = 3432
+tv358 = 3432
+tv269 = 3432
+tv226 = 3432
+tv698 = 3440
+tv692 = 3440
+tv558 = 3440
+tv561 = 3448
+tv444 = 3448
+tv346 = 3448
+tv563 = 3456
+tv569 = 3464
+__$ArrayPad$ = 3472
+this$ = 3520
+?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$30
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T49[rbp]
+	lea	rcx, QWORD PTR $T50[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$29
+?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$30
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.hpp
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.hpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 ;	COMDAT ??0SimpleUI@UI@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -31978,7 +29693,7 @@ tv145 = 256
 this$ = 304
 ??0SimpleUI@UI@@QEAA@XZ PROC				; UI::SimpleUI::SimpleUI, COMDAT
 
-; 30   :   {
+; 29   :   {
 
 $LN7:
 	mov	QWORD PTR [rsp+8], rcx
@@ -31991,7 +29706,7 @@ $LN7:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+344]
-	lea	rcx, OFFSET FLAT:__B2FF6C0C_SimpleUI@cpp
+	lea	rcx, OFFSET FLAT:__BAA4F0A5_SimpleUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0UserInterfaceHandler@UI@@QEAA@XZ
@@ -32005,7 +29720,7 @@ $LN7:
 	call	??$?0U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@$0A@@?$unique_ptr@VMaintainBooksHandler@Library@Domain@@U?$default_delete@VMaintainBooksHandler@Library@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Library::MaintainBooksHandler,std::default_delete<Domain::Library::MaintainBooksHandler> >::unique_ptr<Domain::Library::MaintainBooksHandler,std::default_delete<Domain::Library::MaintainBooksHandler> ><std::default_delete<Domain::Library::MaintainBooksHandler>,0>
 	npad	1
 
-; 28   :     _loggerPtr     ( TechnicalServices::Logging::LoggerHandler::create()            ),
+; 27   :     _loggerPtr     ( TechnicalServices::Logging::LoggerHandler::create()            ),
 
 	mov	rax, QWORD PTR this$[rbp]
 	add	rax, 16
@@ -32014,12 +29729,12 @@ $LN7:
 	call	?create@LoggerHandler@Logging@TechnicalServices@@SA?AV?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@5@@Z ; TechnicalServices::Logging::LoggerHandler::create
 	npad	1
 
-; 29   :     _persistentData( TechnicalServices::Persistence::PersistenceHandler::instance() )
+; 28   :     _persistentData( TechnicalServices::Persistence::PersistenceHandler::instance() )
 
 	call	?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ ; TechnicalServices::Persistence::PersistenceHandler::instance
 	mov	rcx, QWORD PTR this$[rbp]
 	mov	QWORD PTR [rcx+24], rax
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.hpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.hpp
 
 ; 50   :       TechnicalServices::Logging::LoggerHandler                            & _logger = *_loggerPtr;
 
@@ -32029,9 +29744,9 @@ $LN7:
 	call	??D?$unique_ptr@VLoggerHandler@Logging@TechnicalServices@@U?$default_delete@VLoggerHandler@Logging@TechnicalServices@@@std@@@std@@QEBAAEAVLoggerHandler@Logging@TechnicalServices@@XZ ; std::unique_ptr<TechnicalServices::Logging::LoggerHandler,std::default_delete<TechnicalServices::Logging::LoggerHandler> >::operator*
 	mov	rcx, QWORD PTR this$[rbp]
 	mov	QWORD PTR [rcx+32], rax
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 
-; 31   :     _logger << "Simple UI being used and has been successfully initialized";
+; 30   :     _logger << "Simple UI being used and has been successfully initialized";
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
@@ -32053,7 +29768,7 @@ $LN7:
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 
-; 32   :   }
+; 31   :   }
 
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rsp, QWORD PTR [rbp+280]
@@ -32265,7 +29980,7 @@ $LN3:
 ??0UserInterfaceHandler@UI@@QEAA@XZ ENDP		; UI::UserInterfaceHandler::UserInterfaceHandler
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xlocale
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xlocale
 ;	COMDAT ??$_Maklocstr@D@std@@YAPEADPEBDPEADAEBU_Cvtvec@@@Z
 _TEXT	SEGMENT
 _Count$ = 8
@@ -32291,7 +30006,7 @@ $LN7:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+376]
-	lea	rcx, OFFSET FLAT:__A7748393_xlocale
+	lea	rcx, OFFSET FLAT:__0E648B51_xlocale
 	call	__CheckForDebuggerJustMyCode
 
 ; 564  :     // convert C string to _Elem sequence using _Cvtvec
@@ -32306,7 +30021,7 @@ $LN7:
 ; 567  :     _Elem* _Ptrdest = static_cast<_Elem*>(_calloc_dbg(_Count, sizeof(_Elem), _CRT_BLOCK, __FILE__, __LINE__));
 
 	mov	DWORD PTR [rsp+32], 567			; 00000237H
-	lea	r9, OFFSET FLAT:??_C@_0GJ@OPFKIEFE@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	lea	r9, OFFSET FLAT:??_C@_0GI@DEICPIDJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 	mov	r8d, 2
 	mov	edx, 1
 	mov	rcx, QWORD PTR _Count$[rbp]
@@ -32372,7 +30087,7 @@ $LN6@Maklocstr:
 ??$_Maklocstr@D@std@@YAPEADPEBDPEADAEBU_Cvtvec@@@Z ENDP	; std::_Maklocstr<char>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xlocnum
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xlocnum
 ;	COMDAT ?_Maklocwcs@std@@YAPEA_WPEB_W@Z
 _TEXT	SEGMENT
 _Count$ = 8
@@ -32393,7 +30108,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+344]
-	lea	rcx, OFFSET FLAT:__39F3E584_xlocnum
+	lea	rcx, OFFSET FLAT:__90E3ED46_xlocnum
 	call	__CheckForDebuggerJustMyCode
 
 ; 91   :     const size_t _Count = _CSTD wcslen(_Ptr) + 1;
@@ -32409,7 +30124,7 @@ $LN4:
 	mov	eax, DWORD PTR ?__LINE__Var@?0??_Maklocwcs@std@@YAPEA_WPEB_W@Z@4JA
 	add	eax, 3
 	mov	DWORD PTR [rsp+32], eax
-	lea	r9, OFFSET FLAT:??_C@_0GJ@GMBHIGPF@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	lea	r9, OFFSET FLAT:??_C@_0GI@LHMPPKJI@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 	mov	r8d, 2
 	mov	edx, 2
 	mov	rcx, QWORD PTR _Count$[rbp]
@@ -32450,7 +30165,7 @@ $LN3@Maklocwcs:
 ?_Maklocwcs@std@@YAPEA_WPEB_W@Z ENDP			; std::_Maklocwcs
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xlocale
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xlocale
 ;	COMDAT ??$use_facet@V?$ctype@D@std@@@std@@YAAEBV?$ctype@D@0@AEBVlocale@0@@Z
 _TEXT	SEGMENT
 _Lock$6 = 4
@@ -32480,7 +30195,7 @@ $LN11:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__A7748393_xlocale
+	lea	rcx, OFFSET FLAT:__0E648B51_xlocale
 	call	__CheckForDebuggerJustMyCode
 
 ; 427  :     _BEGIN_LOCK(_LOCK_LOCALE) // the thread lock, make get atomic
@@ -32740,7 +30455,7 @@ _Loc$ = 448
 ?dtor$1@?0???$use_facet@V?$ctype@D@std@@@std@@YAAEBV?$ctype@D@0@AEBVlocale@0@@Z@4HA ENDP ; `std::use_facet<std::ctype<char> >'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xutility
 ;	COMDAT ??$_Adl_verify_range@PEADPEAD@std@@YAXAEBQEAD0@Z
 _TEXT	SEGMENT
 _First$ = 224
@@ -32761,7 +30476,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	lea	rcx, OFFSET FLAT:__4324C6B3_xutility
 	call	__CheckForDebuggerJustMyCode
 
 ; 1193 :     // check that [_First, _Last) forms an iterator range
@@ -32784,7 +30499,7 @@ $LN3:
 ??$_Adl_verify_range@PEADPEAD@std@@YAXAEBQEAD0@Z ENDP	; std::_Adl_verify_range<char *,char *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xlocale
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xlocale
 ;	COMDAT ??$_Maklocstr@_W@std@@YAPEA_WPEBDPEA_WAEBU_Cvtvec@@@Z
 _TEXT	SEGMENT
 _Count$ = 8
@@ -32821,7 +30536,7 @@ $LN12:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__A7748393_xlocale
+	lea	rcx, OFFSET FLAT:__0E648B51_xlocale
 	call	__CheckForDebuggerJustMyCode
 
 ; 582  :     // convert C string to wchar_t sequence using _Cvtvec
@@ -32908,7 +30623,7 @@ $LN3@Maklocstr:
 ; 600  :     wchar_t* _Ptrdest = static_cast<wchar_t*>(_calloc_dbg(_Wchars, sizeof(wchar_t), _CRT_BLOCK, __FILE__, __LINE__));
 
 	mov	DWORD PTR [rsp+32], 600			; 00000258H
-	lea	r9, OFFSET FLAT:??_C@_0GJ@OPFKIEFE@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	lea	r9, OFFSET FLAT:??_C@_0GI@DEICPIDJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 	mov	r8d, 2
 	mov	edx, 2
 	mov	rcx, QWORD PTR _Wchars$[rbp]
@@ -33020,7 +30735,7 @@ $LN11@Maklocstr:
 ??$_Maklocstr@_W@std@@YAPEA_WPEBDPEA_WAEBU_Cvtvec@@@Z ENDP ; std::_Maklocstr<wchar_t>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xlocale
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xlocale
 ;	COMDAT ?_Getfacet@locale@std@@QEBAPEBVfacet@12@_K@Z
 _TEXT	SEGMENT
 _Facptr$ = 8
@@ -33044,7 +30759,7 @@ $LN8:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__A7748393_xlocale
+	lea	rcx, OFFSET FLAT:__0E648B51_xlocale
 	call	__CheckForDebuggerJustMyCode
 
 ; 374  :         const facet* _Facptr = _Id < _Ptr->_Facetcount ? _Ptr->_Facetvec[_Id] : nullptr; // null if id off end
@@ -33124,7 +30839,7 @@ $LN1@Getfacet:
 ?_Getfacet@locale@std@@QEBAPEBVfacet@12@_K@Z ENDP	; std::locale::_Getfacet
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xlocale
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xlocale
 ;	COMDAT ??1locale@std@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -33146,7 +30861,7 @@ $LN6:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__A7748393_xlocale
+	lea	rcx, OFFSET FLAT:__0E648B51_xlocale
 	call	__CheckForDebuggerJustMyCode
 
 ; 351  :         if (_Ptr) {
@@ -33189,7 +30904,7 @@ $LN2@locale:
 ??1locale@std@@QEAA@XZ ENDP				; std::locale::~locale
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ?_TypeInfo@any@std@@AEBAPEBVtype_info@@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -33208,7 +30923,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 276  :         return reinterpret_cast<const type_info*>(_Storage._TypeData & ~_Rep_mask);
@@ -33226,7 +30941,7 @@ $LN3:
 ?_TypeInfo@any@std@@AEBAPEBVtype_info@@XZ ENDP		; std::any::_TypeInfo
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ?_Rep@any@std@@AEBA?AW4_Any_representation@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -33245,7 +30960,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 273  :         return static_cast<_Any_representation>(_Storage._TypeData & _Rep_mask);
@@ -33263,7 +30978,7 @@ $LN3:
 ?_Rep@any@std@@AEBA?AW4_Any_representation@2@XZ ENDP	; std::any::_Rep
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ?has_value@any@std@@QEBA_NXZ
 _TEXT	SEGMENT
 tv67 = 192
@@ -33283,7 +30998,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 231  :         return _Storage._TypeData != 0;
@@ -33307,7 +31022,7 @@ $LN4@has_value:
 ?has_value@any@std@@QEBA_NXZ ENDP			; std::any::has_value
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ?reset@any@std@@QEAAXXZ
 _TEXT	SEGMENT
 tv86 = 192
@@ -33329,7 +31044,7 @@ $LN8:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 211  :         switch (_Rep()) {
@@ -33391,7 +31106,7 @@ $LN2@reset:
 ?reset@any@std@@QEAAXXZ ENDP				; std::any::reset
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ??1any@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -33410,7 +31125,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 166  :         reset();
@@ -33428,7 +31143,7 @@ $LN3:
 ??1any@std@@QEAA@XZ ENDP				; std::any::~any
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ?_Throw_bad_any_cast@std@@YAXXZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -33445,7 +31160,7 @@ $LN3:
 	mov	ecx, 70					; 00000046H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 43   :     _THROW(bad_any_cast{});
@@ -33589,7 +31304,7 @@ $LN3:
 ??0bad_any_cast@std@@QEAA@XZ ENDP			; std::bad_any_cast::bad_any_cast
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\any
 ;	COMDAT ?what@bad_any_cast@std@@UEBAPEBDXZ
 _TEXT	SEGMENT
 this$ = 224
@@ -33608,7 +31323,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__24DC9795_any
+	lea	rcx, OFFSET FLAT:__E181AB2C_any
 	call	__CheckForDebuggerJustMyCode
 
 ; 38   :         return "Bad any_cast";
@@ -33690,78 +31405,6 @@ $LN3:
 	pop	rbp
 	ret	0
 ??4Client@Persistence@TechnicalServices@@QEAAAEAU012@$$QEAU012@@Z ENDP ; TechnicalServices::Persistence::Client::operator=
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ??0Client@Persistence@TechnicalServices@@QEAA@$$QEAU012@@Z
-_TEXT	SEGMENT
-tv70 = 192
-this$ = 240
-__that$ = 248
-??0Client@Persistence@TechnicalServices@@QEAA@$$QEAU012@@Z PROC ; TechnicalServices::Persistence::Client::Client, COMDAT
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 248				; 000000f8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 62					; 0000003eH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+280]
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR tv70[rbp], rax
-	mov	rax, QWORD PTR __that$[rbp]
-	mov	rdx, rax
-	mov	rcx, QWORD PTR tv70[rbp]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@$$QEAV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR __that$[rbp]
-	mov	ecx, DWORD PTR [rcx+40]
-	mov	DWORD PTR [rax+40], ecx
-	mov	rax, QWORD PTR this$[rbp]
-	lea	rsp, QWORD PTR [rbp+216]
-	pop	rdi
-	pop	rbp
-	ret	0
-??0Client@Persistence@TechnicalServices@@QEAA@$$QEAU012@@Z ENDP ; TechnicalServices::Persistence::Client::Client
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT ??0Client@Persistence@TechnicalServices@@QEAA@AEBU012@@Z
-_TEXT	SEGMENT
-tv70 = 192
-this$ = 240
-__that$ = 248
-??0Client@Persistence@TechnicalServices@@QEAA@AEBU012@@Z PROC ; TechnicalServices::Persistence::Client::Client, COMDAT
-$LN4:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 248				; 000000f8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 62					; 0000003eH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+280]
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR tv70[rbp], rax
-	mov	rax, QWORD PTR __that$[rbp]
-	mov	rdx, rax
-	mov	rcx, QWORD PTR tv70[rbp]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@AEBV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR __that$[rbp]
-	mov	ecx, DWORD PTR [rcx+40]
-	mov	DWORD PTR [rax+40], ecx
-	mov	rax, QWORD PTR this$[rbp]
-	lea	rsp, QWORD PTR [rbp+216]
-	pop	rdi
-	pop	rbp
-	ret	0
-??0Client@Persistence@TechnicalServices@@QEAA@AEBU012@@Z ENDP ; TechnicalServices::Persistence::Client::Client
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??1Client@Persistence@TechnicalServices@@QEAA@XZ
@@ -33850,7 +31493,7 @@ $LN3:
 ?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::__autoclassinit2
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEBAAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -33869,7 +31512,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1348 :         return *this;
@@ -33885,7 +31528,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEBAAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ ENDP ; std::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAAAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -33904,7 +31547,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1344 :         return *this;
@@ -33920,7 +31563,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAAAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ ENDP ; std::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??0?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -33939,7 +31582,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0_Container_base12@std@@QEAA@XZ	; std::_Container_base12::_Container_base12
@@ -33957,7 +31600,7 @@ $LN3:
 ??0?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@XZ ENDP ; std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Getal@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEBAAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -33976,7 +31619,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1736 :         return _Mypair._Get_first();
@@ -33995,7 +31638,7 @@ $LN3:
 ?_Getal@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEBAAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Getal
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Getal@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -34014,7 +31657,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1732 :         return _Mypair._Get_first();
@@ -34033,7 +31676,7 @@ $LN3:
 ?_Getal@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Getal
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Xlength@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@CAXXZ
 _TEXT	SEGMENT
 ?_Xlength@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@CAXXZ PROC ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Xlength, COMDAT
@@ -34049,7 +31692,7 @@ $LN3:
 	mov	ecx, 58					; 0000003aH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1704 :         _Xlength_error("vector too long");
@@ -34067,7 +31710,7 @@ $LN2@Xlength:
 ?_Xlength@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@CAXXZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Xlength
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Tidy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXXZ
 _TEXT	SEGMENT
 _My_data$ = 8
@@ -34093,7 +31736,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+408]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1686 :         auto& _My_data    = _Mypair._Myval2;
@@ -34190,7 +31833,7 @@ $LN2@Tidy:
 ?_Tidy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXXZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Tidy
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Buy_nonzero@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAX_K@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -34211,7 +31854,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1649 :         // allocate array with _Newcapacity elements
@@ -34254,7 +31897,7 @@ $LN3@Buy_nonzer:
 ?_Buy_nonzero@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAX_K@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Buy_nonzero
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Buy_raw@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAX_K@Z
 _TEXT	SEGMENT
 _My_data$ = 8
@@ -34281,7 +31924,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+424]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1633 :         // allocate array with _Newcapacity elements
@@ -34352,7 +31995,7 @@ $LN3:
 ?_Buy_raw@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAX_K@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Buy_raw
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Destroy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@0@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -34375,7 +32018,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1612 :         _Destroy_range(_First, _Last, _Getal());
@@ -34396,7 +32039,7 @@ $LN3:
 ?_Destroy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@0@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Destroy
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Ufill@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@PEAV32@_KU_Value_init_tag@2@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -34421,7 +32064,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1582 :         // fill raw _Dest with _Count value-initialized objects, using allocator
@@ -34443,7 +32086,7 @@ $LN3:
 ?_Ufill@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@PEAV32@_KU_Value_init_tag@2@@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Ufill
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z
 _TEXT	SEGMENT
 _My_data$ = 8
@@ -34465,7 +32108,7 @@ $LN12:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1498 :         auto& _My_data = _Mypair._Myval2;
@@ -34495,7 +32138,7 @@ $LN7@operator:
 	mov	QWORD PTR [rsp+32], rax
 	xor	r9d, r9d
 	mov	r8d, 1501				; 000005ddH
-	lea	rdx, OFFSET FLAT:??_C@_0GI@BDJNFBPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	lea	rdx, OFFSET FLAT:??_C@_0GH@HACIOKNJ@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 	mov	ecx, 2
 	call	QWORD PTR __imp__CrtDbgReport
 	cmp	eax, 1
@@ -34505,7 +32148,7 @@ $LN7@operator:
 $LN11@operator:
 	mov	QWORD PTR [rsp+32], 0
 	mov	r9d, 1501				; 000005ddH
-	lea	r8, OFFSET FLAT:??_C@_1NA@MKDIEAJP@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+	lea	r8, OFFSET FLAT:??_C@_1MO@KFAGNMIJ@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
 	lea	rdx, OFFSET FLAT:??_C@_1BME@NCIPHHDN@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAc?$AAl?$AAa@
 	lea	rcx, OFFSET FLAT:??_C@_1EA@LEKOKFNB@?$AA?$CC?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAs?$AAu?$AAb?$AAs?$AAc?$AAr?$AAi@
 	call	QWORD PTR __imp__invalid_parameter
@@ -34535,7 +32178,7 @@ $LN9@operator:
 ??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?max_size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -34556,7 +32199,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1488 :         return (_STD min)(
@@ -34583,7 +32226,7 @@ $LN3:
 ?max_size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::max_size
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ
 _TEXT	SEGMENT
 _My_data$ = 8
@@ -34603,7 +32246,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 1483 :         auto& _My_data = _Mypair._Myval2;
@@ -34631,7 +32274,7 @@ $LN3:
 ?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Alproxy$ = 8
@@ -34657,7 +32300,7 @@ $LN3:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 
 ; 673  :         _Tidy();
@@ -34704,7 +32347,7 @@ $LN3:
 ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z
 _TEXT	SEGMENT
 _Alproxy$ = 8
@@ -34742,7 +32385,7 @@ $LN4:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv70[rbp], rax
@@ -34884,7 +32527,7 @@ _Al$ = 528
 ?dtor$0@?0???0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z@4HA ENDP ; `std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -34910,7 +32553,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv70[rbp], rax
@@ -34936,7 +32579,7 @@ $LN3:
 ??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 196
@@ -34959,7 +32602,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv69[rbp], rax
@@ -34990,7 +32633,7 @@ $LN3:
 ??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?max_size@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SA_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -35009,7 +32652,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 703  :         return static_cast<size_t>(-1) / sizeof(value_type);
@@ -35025,7 +32668,7 @@ $LN3:
 ?max_size@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SA_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@Z ENDP ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::max_size
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?allocate@?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_K@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -35046,7 +32689,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 807  :         return static_cast<_Ty*>(_Allocate<_New_alignof<_Ty>>(_Get_size_of_n<sizeof(_Ty)>(_Count)));
@@ -35065,7 +32708,7 @@ $LN3:
 ?allocate@?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_K@Z ENDP ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?deallocate@?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAAXQEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_K@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -35088,7 +32731,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 802  :         // no overflow check on the following multiply; we assume _Allocate did that check
@@ -35108,7 +32751,7 @@ $LN3:
 ?deallocate@?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAAXQEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_K@Z ENDP ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::deallocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -35127,7 +32770,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rsp, QWORD PTR [rbp+200]
@@ -35137,7 +32780,7 @@ $LN3:
 ??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ENDP ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\string
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\string
 ;	COMDAT ??$_Integral_to_string@DH@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@H@Z
 _TEXT	SEGMENT
 _Buff$ = 8
@@ -35169,7 +32812,7 @@ $LN7:
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
 	mov	DWORD PTR $T5[rbp], 0
-	lea	rcx, OFFSET FLAT:__965C11D2_string
+	lea	rcx, OFFSET FLAT:__3AFA803E_string
 	call	__CheckForDebuggerJustMyCode
 
 ; 486  :     static_assert(is_integral_v<_Ty>, "_Ty must be integral");
@@ -35259,7 +32902,7 @@ $LN3@Integral_t:
 ??$_Integral_to_string@DH@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@H@Z ENDP ; std::_Integral_to_string<char,int>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\string
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\string
 ;	COMDAT ?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -35282,7 +32925,7 @@ $LN5:
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
 	mov	DWORD PTR $T1[rbp], 0
-	lea	rcx, OFFSET FLAT:__965C11D2_string
+	lea	rcx, OFFSET FLAT:__3AFA803E_string
 	call	__CheckForDebuggerJustMyCode
 
 ; 515  :     return _Integral_to_string<char>(_Val);
@@ -35364,7 +33007,7 @@ $LN3:
 ??1?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@XZ ENDP ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::~_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEBAAEBV?$allocator@D@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -35383,7 +33026,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1348 :         return *this;
@@ -35399,7 +33042,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEBAAEBV?$allocator@D@2@XZ ENDP ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAAAEAV?$allocator@D@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -35418,7 +33061,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1344 :         return *this;
@@ -35434,7 +33077,7 @@ $LN3:
 ?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAAAEAV?$allocator@D@2@XZ ENDP ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Get_first
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBAAEBV?$allocator@D@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -35453,7 +33096,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4329 :         return _Mypair._Get_first();
@@ -35472,7 +33115,7 @@ $LN3:
 ?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBAAEBV?$allocator@D@2@XZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Getal
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV?$allocator@D@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -35491,7 +33134,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4325 :         return _Mypair._Get_first();
@@ -35510,7 +33153,7 @@ $LN3:
 ?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV?$allocator@D@2@XZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Getal
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Swap_proxy_and_iterators@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEAV12@@Z
 _TEXT	SEGMENT
 tv79 = 192
@@ -35532,7 +33175,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4321 :         _Mypair._Myval2._Swap_proxy_and_iterators(_Right._Mypair._Myval2);
@@ -35553,7 +33196,7 @@ $LN3:
 ?_Swap_proxy_and_iterators@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEAV12@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Swap_proxy_and_iterators
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXXZ
 _TEXT	SEGMENT
 _Ptr$1 = 8
@@ -35575,7 +33218,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+360]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4300 :         _Mypair._Myval2._Orphan_all();
@@ -35657,7 +33300,7 @@ $LN2@Tidy_deall:
 ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXXZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Tidy_init@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXXZ
 _TEXT	SEGMENT
 $T1 = 196
@@ -35677,7 +33320,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4293 :         _Mypair._Myval2._Mysize = 0;
@@ -35712,7 +33355,7 @@ $LN3:
 ?_Tidy_init@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXXZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_init
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAX_K@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -35736,7 +33379,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4289 :         _Traits::assign(_Mypair._Myval2._Myptr()[_Mypair._Myval2._Mysize = _Newsize], _Elem());
@@ -35768,7 +33411,7 @@ $LN3:
 ?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAX_K@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Eos
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Calculate_growth@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBA_K_K@Z
 _TEXT	SEGMENT
 tv76 = 192
@@ -35791,7 +33434,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4214 :         return _Calculate_growth(_Requested, _Mypair._Myval2._Myres, max_size());
@@ -35817,7 +33460,7 @@ $LN3:
 ?_Calculate_growth@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBA_K_K@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Calculate_growth
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Calculate_growth@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CA_K_K00@Z
 _TEXT	SEGMENT
 _Masked$ = 8
@@ -35846,7 +33489,7 @@ $LN5:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4201 :         const size_type _Masked = _Requested | _ALLOC_MASK;
@@ -35922,7 +33565,7 @@ $LN1@Calculate_:
 ?_Calculate_growth@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CA_K_K00@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Calculate_growth
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z
 _TEXT	SEGMENT
 tv83 = 192
@@ -35946,7 +33589,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 4096 :         return _Traits_equal<_Traits>(_Mypair._Myval2._Myptr(), _Mypair._Myval2._Mysize, _Ptr, _Traits::length(_Ptr));
@@ -35977,7 +33620,7 @@ $LN3:
 ?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Equal
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ
 _TEXT	SEGMENT
 _Alloc_max$ = 8
@@ -36005,7 +33648,7 @@ $LN3:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 3690 :         const size_type _Alloc_max   = _Alty_traits::max_size(_Getal());
@@ -36057,7 +33700,7 @@ $LN3:
 ?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::max_size
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ
 _TEXT	SEGMENT
 this$ = 224
@@ -36076,7 +33719,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 3686 :         return _Mypair._Myval2._Mysize;
@@ -36093,7 +33736,7 @@ $LN3:
 ?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::size
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?data@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ
 _TEXT	SEGMENT
 this$ = 224
@@ -36112,7 +33755,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 3672 :         return _Mypair._Myval2._Myptr();
@@ -36131,7 +33774,7 @@ $LN3:
 ?data@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::data
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ
 _TEXT	SEGMENT
 this$ = 224
@@ -36150,7 +33793,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 3668 :         return _Mypair._Myval2._Myptr();
@@ -36169,7 +33812,7 @@ $LN3:
 ?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::c_str
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAXD@Z
 _TEXT	SEGMENT
 _Old_size$ = 8
@@ -36194,7 +33837,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+392]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 3608 :         const size_type _Old_size = _Mypair._Myval2._Mysize;
@@ -36281,7 +33924,7 @@ $LN1@push_back:
 ?push_back@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAXD@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::push_back
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z
 _TEXT	SEGMENT
 tv69 = 192
@@ -36303,7 +33946,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 3210 :         _Mypair._Myval2._Check_offset(_Off);
@@ -36333,7 +33976,7 @@ $LN3:
 ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::erase
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@QEBD@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -36354,7 +33997,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2984 :         return assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
@@ -36377,7 +34020,7 @@ $LN3:
 ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@QEBD@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::assign
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@QEBD_K@Z
 _TEXT	SEGMENT
 _Old_ptr$1 = 8
@@ -36403,7 +34046,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+360]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2965 :         // assign [_Ptr, _Ptr + _Count)
@@ -36482,7 +34125,7 @@ $LN1@assign:
 ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@QEBD_K@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::assign
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??Y?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@D@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -36503,7 +34146,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2827 :         push_back(_Ch);
@@ -36525,7 +34168,7 @@ $LN3:
 ??Y?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@D@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator+=
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@AEBV01@@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -36547,7 +34190,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2785 :         if (this != _STD addressof(_Right)) {
@@ -36585,7 +34228,7 @@ $LN2@operator:
 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@AEBV01@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Copy_assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z
 _TEXT	SEGMENT
 tv88 = 192
@@ -36612,7 +34255,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2749 :         _Pocca(_Getal(), _Right._Getal());
@@ -36650,7 +34293,7 @@ $LN3:
 ?_Copy_assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Copy_assign
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Alproxy$ = 8
@@ -36676,7 +34319,7 @@ $LN3:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2723 :         _Tidy_deallocate();
@@ -36732,7 +34375,7 @@ $LN3:
 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Construct_lv_contents@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@@Z
 _TEXT	SEGMENT
 _Right_data$ = 8
@@ -36767,7 +34410,7 @@ $LN4:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2651 :         // assign by copying data stored in _Right
@@ -36906,7 +34549,7 @@ $LN1@Construct_:
 ?_Construct_lv_contents@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Construct_lv_contents
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Take_contents@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEAV12@U?$integral_constant@_N$00@2@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -36929,7 +34572,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2610 :         // assign by stealing _Right's buffer, memcpy optimization
@@ -36990,7 +34633,7 @@ $LN3@Take_conte:
 ?_Take_contents@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEAV12@U?$integral_constant@_N$00@2@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Take_contents
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Memcpy_val_from@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@@Z
 _TEXT	SEGMENT
 _My_data_mem$ = 8
@@ -37013,7 +34656,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2601 :         _STL_INTERNAL_CHECK(_Can_memcpy_val); // TRANSITION, if constexpr
@@ -37052,7 +34695,7 @@ $LN3:
 ?_Memcpy_val_from@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Memcpy_val_from
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@$$QEAV01@@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -37074,7 +34717,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2587 :         if (this != _STD addressof(_Right)) {
@@ -37112,7 +34755,7 @@ $LN2@operator:
 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@$$QEAV01@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Move_assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -37138,7 +34781,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2559 :         _Tidy_deallocate();
@@ -37180,7 +34823,7 @@ $LN3:
 ?_Move_assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEAV12@U_Equal_allocators@2@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Move_assign
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@U_String_constructor_concat_tag@1@AEBV01@QEBD_K23@Z
 _TEXT	SEGMENT
 _New_size$ = 8
@@ -37227,7 +34870,7 @@ $LN6:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2442 :         : _Mypair(
@@ -37569,7 +35212,7 @@ _Right_size$ = 688
 ?dtor$1@?0???0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@U_String_constructor_concat_tag@1@AEBV01@QEBD_K23@Z@4HA ENDP ; `std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@$$QEAV01@@Z
 _TEXT	SEGMENT
 $T1 = 196
@@ -37597,7 +35240,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+408]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv77[rbp], rax
@@ -37648,7 +35291,7 @@ $LN3:
 ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@$$QEAV01@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Construct@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAXQEAD0Urandom_access_iterator_tag@2@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -37673,7 +35316,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2405 :         // initialize from [_First, _Last), pointers
@@ -37707,7 +35350,7 @@ $LN2@Construct:
 ?_Construct@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAXQEAD0Urandom_access_iterator_tag@2@@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Construct
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z
 _TEXT	SEGMENT
 _Alproxy$ = 8
@@ -37737,7 +35380,7 @@ $LN5:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv69[rbp], rax
@@ -37905,7 +35548,7 @@ _Ptr$ = 392
 ?dtor$1@?0???0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z@4HA ENDP ; `std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 196
@@ -37928,7 +35571,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+328]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv69[rbp], rax
@@ -37964,7 +35607,7 @@ $LN3:
 ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@AEBV01@@Z
 _TEXT	SEGMENT
 _Alproxy$ = 8
@@ -37997,7 +35640,7 @@ $LN5:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR tv78[rbp], rax
@@ -38207,7 +35850,7 @@ $LN3:
 ??1?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ ENDP ; std::_String_val<std::_Simple_types<char> >::~_String_val<std::_Simple_types<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??1_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -38226,7 +35869,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -38236,7 +35879,7 @@ $LN3:
 ??1_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ ENDP ; std::_String_val<std::_Simple_types<char> >::_Bxty::~_Bxty
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??0_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -38255,7 +35898,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rsp, QWORD PTR [rbp+200]
@@ -38265,7 +35908,7 @@ $LN3:
 ??0_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ ENDP ; std::_String_val<std::_Simple_types<char> >::_Bxty::_Bxty
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Xran@?$_String_val@U?$_Simple_types@D@std@@@std@@SAXXZ
 _TEXT	SEGMENT
 ?_Xran@?$_String_val@U?$_Simple_types@D@std@@@std@@SAXXZ PROC ; std::_String_val<std::_Simple_types<char> >::_Xran, COMDAT
@@ -38281,7 +35924,7 @@ $LN3:
 	mov	ecx, 58					; 0000003aH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2169 :         _Xout_of_range("invalid string position");
@@ -38299,7 +35942,7 @@ $LN2@Xran:
 ?_Xran@?$_String_val@U?$_Simple_types@D@std@@@std@@SAXXZ ENDP ; std::_String_val<std::_Simple_types<char> >::_Xran
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Check_offset@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAX_K@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -38320,7 +35963,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2157 :         if (_Mysize < _Off) {
@@ -38346,7 +35989,7 @@ $LN3@Check_offs:
 ?_Check_offset@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAX_K@Z ENDP ; std::_String_val<std::_Simple_types<char> >::_Check_offset
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Large_string_engaged@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBA_NXZ
 _TEXT	SEGMENT
 tv66 = 192
@@ -38366,7 +36009,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2153 :         return _BUF_SIZE <= _Myres;
@@ -38390,7 +36033,7 @@ $LN4@Large_stri:
 ?_Large_string_engaged@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBA_NXZ ENDP ; std::_String_val<std::_Simple_types<char> >::_Large_string_engaged
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ
 _TEXT	SEGMENT
 _Result$ = 8
@@ -38410,7 +36053,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2144 :         const value_type* _Result = _Bx._Buf;
@@ -38450,7 +36093,7 @@ $LN2@Myptr:
 ?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ ENDP ; std::_String_val<std::_Simple_types<char> >::_Myptr
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAPEADXZ
 _TEXT	SEGMENT
 _Result$ = 8
@@ -38470,7 +36113,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2135 :         value_type* _Result = _Bx._Buf;
@@ -38510,7 +36153,7 @@ $LN2@Myptr:
 ?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAPEADXZ ENDP ; std::_String_val<std::_Simple_types<char> >::_Myptr
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??0?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -38529,7 +36172,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR this$[rbp]
 	call	??0_Container_base12@std@@QEAA@XZ	; std::_Container_base12::_Container_base12
@@ -38549,7 +36192,7 @@ $LN4:
 ??0?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ ENDP ; std::_String_val<std::_Simple_types<char> >::_String_val<std::_Simple_types<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?select_on_container_copy_construction@?$_Default_allocator_traits@V?$allocator@D@std@@@std@@SA?AV?$allocator@D@2@AEBV32@@Z
 _TEXT	SEGMENT
 __$ReturnUdt$ = 224
@@ -38570,7 +36213,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 707  :         return _Al;
@@ -38586,7 +36229,7 @@ $LN3:
 ?select_on_container_copy_construction@?$_Default_allocator_traits@V?$allocator@D@std@@@std@@SA?AV?$allocator@D@2@AEBV32@@Z ENDP ; std::_Default_allocator_traits<std::allocator<char> >::select_on_container_copy_construction
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?max_size@?$_Default_allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -38605,7 +36248,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 703  :         return static_cast<size_t>(-1) / sizeof(value_type);
@@ -38621,7 +36264,7 @@ $LN3:
 ?max_size@?$_Default_allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z ENDP ; std::_Default_allocator_traits<std::allocator<char> >::max_size
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?_Xlen_string@std@@YAXXZ
 _TEXT	SEGMENT
 ?_Xlen_string@std@@YAXXZ PROC				; std::_Xlen_string, COMDAT
@@ -38637,7 +36280,7 @@ $LN3:
 	mov	ecx, 58					; 0000003aH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 2201 :     _Xlength_error("string too long");
@@ -38655,7 +36298,7 @@ $LN2@Xlen_strin:
 ?_Xlen_string@std@@YAXXZ ENDP				; std::_Xlen_string
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?eof@?$_Narrow_char_traits@DH@std@@SAHXZ
 _TEXT	SEGMENT
 ?eof@?$_Narrow_char_traits@DH@std@@SAHXZ PROC		; std::_Narrow_char_traits<char,int>::eof, COMDAT
@@ -38671,7 +36314,7 @@ $LN3:
 	mov	ecx, 58					; 0000003aH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 401  :         return static_cast<int_type>(EOF);
@@ -38687,7 +36330,7 @@ $LN3:
 ?eof@?$_Narrow_char_traits@DH@std@@SAHXZ ENDP		; std::_Narrow_char_traits<char,int>::eof
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z
 _TEXT	SEGMENT
 tv65 = 192
@@ -38709,7 +36352,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 393  :         return _Left == _Right;
@@ -38735,7 +36378,7 @@ $LN4@eq_int_typ:
 ?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z ENDP ; std::_Narrow_char_traits<char,int>::eq_int_type
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?to_int_type@?$_Narrow_char_traits@DH@std@@SAHAEBD@Z
 _TEXT	SEGMENT
 _Ch$ = 224
@@ -38754,7 +36397,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 389  :         return static_cast<unsigned char>(_Ch);
@@ -38771,7 +36414,7 @@ $LN3:
 ?to_int_type@?$_Narrow_char_traits@DH@std@@SAHAEBD@Z ENDP ; std::_Narrow_char_traits<char,int>::to_int_type
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?to_char_type@?$_Narrow_char_traits@DH@std@@SADAEBH@Z
 _TEXT	SEGMENT
 _Meta$ = 224
@@ -38790,7 +36433,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 385  :         return static_cast<_Elem>(_Meta);
@@ -38807,7 +36450,7 @@ $LN3:
 ?to_char_type@?$_Narrow_char_traits@DH@std@@SADAEBH@Z ENDP ; std::_Narrow_char_traits<char,int>::to_char_type
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z
 _TEXT	SEGMENT
 _Left$ = 224
@@ -38828,7 +36471,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 373  :         _Left = _Right;
@@ -38847,7 +36490,7 @@ $LN3:
 ?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z ENDP ; std::_Narrow_char_traits<char,int>::assign
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?move@?$_Narrow_char_traits@DH@std@@SAPEADQEADQEBD_K@Z
 _TEXT	SEGMENT
 _First1$ = 224
@@ -38870,7 +36513,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 362  :         // copy [_First2, _First2 + _Count) to [_First1, ...)
@@ -38891,7 +36534,7 @@ $LN3:
 ?move@?$_Narrow_char_traits@DH@std@@SAPEADQEADQEBD_K@Z ENDP ; std::_Narrow_char_traits<char,int>::move
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?copy@?$_Narrow_char_traits@DH@std@@SAPEADQEADQEBD_K@Z
 _TEXT	SEGMENT
 _First1$ = 224
@@ -38914,7 +36557,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 327  :         // copy [_First2, _First2 + _Count) to [_First1, ...)
@@ -38935,7 +36578,7 @@ $LN3:
 ?copy@?$_Narrow_char_traits@DH@std@@SAPEADQEADQEBD_K@Z ENDP ; std::_Narrow_char_traits<char,int>::copy
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z
 _TEXT	SEGMENT
 tv68 = 192
@@ -38956,7 +36599,7 @@ $LN4:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 306  :         // find length of null-terminated string
@@ -38997,7 +36640,7 @@ $LL3@length:
 ?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z ENDP	; std::_Narrow_char_traits<char,int>::length
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z
 _TEXT	SEGMENT
 _First1$ = 224
@@ -39020,7 +36663,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
+	lea	rcx, OFFSET FLAT:__D15AFF60_xstring
 	call	__CheckForDebuggerJustMyCode
 
 ; 290  :         // compare [_First1, _First1 + _Count) with [_First2, ...)
@@ -39052,7 +36695,7 @@ $LN3:
 ?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z ENDP ; std::_Narrow_char_traits<char,int>::compare
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?allocate@?$allocator@D@std@@QEAAPEAD_K@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -39073,7 +36716,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 807  :         return static_cast<_Ty*>(_Allocate<_New_alignof<_Ty>>(_Get_size_of_n<sizeof(_Ty)>(_Count)));
@@ -39092,7 +36735,7 @@ $LN3:
 ?allocate@?$allocator@D@std@@QEAAPEAD_K@Z ENDP		; std::allocator<char>::allocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?deallocate@?$allocator@D@std@@QEAAXQEAD_K@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -39115,7 +36758,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 802  :         // no overflow check on the following multiply; we assume _Allocate did that check
@@ -39134,7 +36777,7 @@ $LN3:
 ?deallocate@?$allocator@D@std@@QEAAXQEAD_K@Z ENDP	; std::allocator<char>::deallocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??0?$allocator@D@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -39153,7 +36796,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rsp, QWORD PTR [rbp+200]
@@ -39163,7 +36806,7 @@ $LN3:
 ??0?$allocator@D@std@@QEAA@XZ ENDP			; std::allocator<char>::allocator<char>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Construct_in_place@U_Container_proxy@std@@PEAU_Container_base12@2@@std@@YAXAEAU_Container_proxy@0@$$QEAPEAU_Container_base12@0@@Z
 _TEXT	SEGMENT
 $T1 = 200
@@ -39186,7 +36829,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rcx, QWORD PTR _Obj$[rbp]
 	call	??$addressof@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@AEAU10@@Z ; std::addressof<std::_Container_proxy>
@@ -39214,7 +36857,7 @@ $LN3:
 ??$_Construct_in_place@U_Container_proxy@std@@PEAU_Container_base12@2@@std@@YAXAEAU_Container_proxy@0@$$QEAPEAU_Container_base12@0@@Z ENDP ; std::_Construct_in_place<std::_Container_proxy,std::_Container_base12 *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$addressof@U_Container_base12@std@@@std@@YAPEAU_Container_base12@0@AEAU10@@Z
 _TEXT	SEGMENT
 _Val$ = 224
@@ -39233,7 +36876,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	lea	rcx, OFFSET FLAT:__38038D2D_xstddef
 	call	__CheckForDebuggerJustMyCode
 
 ; 275  :     return __builtin_addressof(_Val);
@@ -39249,7 +36892,7 @@ $LN3:
 ??$addressof@U_Container_base12@std@@@std@@YAPEAU_Container_base12@0@AEAU10@@Z ENDP ; std::addressof<std::_Container_base12>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Release@_Basic_container_proxy_ptr12@std@@QEAAXXZ
 _TEXT	SEGMENT
 this$ = 224
@@ -39268,7 +36911,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1267 :         _Ptr = nullptr;
@@ -39285,7 +36928,7 @@ $LN3:
 ?_Release@_Basic_container_proxy_ptr12@std@@QEAAXXZ ENDP ; std::_Basic_container_proxy_ptr12::_Release
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Swap_proxy_and_iterators@_Container_base12@std@@QEAAXAEAU12@@Z
 _TEXT	SEGMENT
 _Lock$ = 4
@@ -39312,7 +36955,7 @@ $LN5:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1220 : #if _ITERATOR_DEBUG_LEVEL == 2
@@ -39393,7 +37036,7 @@ $LN3@Swap_proxy:
 ?_Swap_proxy_and_iterators@_Container_base12@std@@QEAAXAEAU12@@Z ENDP ; std::_Container_base12::_Swap_proxy_and_iterators
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Orphan_all@_Container_base12@std@@QEAAXXZ
 _TEXT	SEGMENT
 _Lock$4 = 4
@@ -39418,7 +37061,7 @@ $LN7:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 1206 : #if _ITERATOR_DEBUG_LEVEL == 2
@@ -39494,7 +37137,7 @@ $LN5@Orphan_all:
 ?_Orphan_all@_Container_base12@std@@QEAAXXZ ENDP	; std::_Container_base12::_Orphan_all
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??0_Container_base12@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -39513,7 +37156,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	QWORD PTR [rax], 0
@@ -39525,7 +37168,7 @@ $LN3:
 ??0_Container_base12@std@@QEAA@XZ ENDP			; std::_Container_base12::_Container_base12
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??0_Container_proxy@std@@QEAA@PEAU_Container_base12@1@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -39546,7 +37189,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rcx, QWORD PTR _Mycont_$[rbp]
@@ -39561,7 +37204,7 @@ $LN3:
 ??0_Container_proxy@std@@QEAA@PEAU_Container_base12@1@@Z ENDP ; std::_Container_proxy::_Container_proxy
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Convert_size@_K@std@@YA_K_K@Z
 _TEXT	SEGMENT
 _Len$ = 224
@@ -39580,7 +37223,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 991  :     // convert size_t to size_t, unchanged
@@ -39597,7 +37240,7 @@ $LN3:
 ??$_Convert_size@_K@std@@YA_K_K@Z ENDP			; std::_Convert_size<unsigned __int64>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z
 _TEXT	SEGMENT
 _Ptr_user$ = 8
@@ -39622,7 +37265,7 @@ $LN21:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+408]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 133  :     // adjust parameters from _Allocate_manually_vector_aligned to pass to operator delete
@@ -39672,7 +37315,7 @@ $LN7@Adjust_man:
 	mov	QWORD PTR [rsp+32], rcx
 	xor	r9d, r9d
 	mov	r8d, eax
-	lea	rdx, OFFSET FLAT:??_C@_0GJ@EHJGLGPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	lea	rdx, OFFSET FLAT:??_C@_0GI@JMEOMKJO@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 	mov	ecx, 2
 	call	QWORD PTR __imp__CrtDbgReport
 	cmp	eax, 1
@@ -39684,7 +37327,7 @@ $LN19@Adjust_man:
 	add	eax, 9
 	mov	QWORD PTR [rsp+32], 0
 	mov	r9d, eax
-	lea	r8, OFFSET FLAT:??_C@_1NC@LBGPBFDE@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+	lea	r8, OFFSET FLAT:??_C@_1NA@FEEOBALC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
 	lea	rdx, OFFSET FLAT:??_C@_1EK@NIFDJFDG@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAA?$AAd?$AAj?$AAu?$AAs?$AAt?$AA_?$AAm?$AAa@
 	lea	rcx, OFFSET FLAT:??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe@
 	call	QWORD PTR __imp__invalid_parameter
@@ -39733,7 +37376,7 @@ $LN13@Adjust_man:
 	mov	QWORD PTR [rsp+32], rcx
 	xor	r9d, r9d
 	mov	r8d, eax
-	lea	rdx, OFFSET FLAT:??_C@_0GJ@EHJGLGPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	lea	rdx, OFFSET FLAT:??_C@_0GI@JMEOMKJO@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
 	mov	ecx, 2
 	call	QWORD PTR __imp__CrtDbgReport
 	cmp	eax, 1
@@ -39745,7 +37388,7 @@ $LN20@Adjust_man:
 	add	eax, 19
 	mov	QWORD PTR [rsp+32], 0
 	mov	r9d, eax
-	lea	r8, OFFSET FLAT:??_C@_1NC@LBGPBFDE@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+	lea	r8, OFFSET FLAT:??_C@_1NA@FEEOBALC@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
 	lea	rdx, OFFSET FLAT:??_C@_1EK@NIFDJFDG@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAA?$AAd?$AAj?$AAu?$AAs?$AAt?$AA_?$AAm?$AAa@
 	lea	rcx, OFFSET FLAT:??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe@
 	call	QWORD PTR __imp__invalid_parameter
@@ -39772,7 +37415,7 @@ $LN17@Adjust_man:
 ?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z ENDP ; std::_Adjust_manually_vector_aligned
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Allocate@_Default_allocate_traits@std@@SAPEAX_K@Z
 _TEXT	SEGMENT
 _Bytes$ = 224
@@ -39791,7 +37434,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
 	call	__CheckForDebuggerJustMyCode
 
 ; 77   :         return ::operator new(_Bytes);
@@ -39808,7 +37451,7 @@ $LN3:
 ?_Allocate@_Default_allocate_traits@std@@SAPEAX_K@Z ENDP ; std::_Default_allocate_traits::_Allocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\limits
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits
 ;	COMDAT ?max@?$numeric_limits@_J@std@@SA_JXZ
 _TEXT	SEGMENT
 ?max@?$numeric_limits@_J@std@@SA_JXZ PROC		; std::numeric_limits<__int64>::max, COMDAT
@@ -39824,7 +37467,7 @@ $LN3:
 	mov	ecx, 58					; 0000003aH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__5E219BC0_limits
+	lea	rcx, OFFSET FLAT:__F2870A2C_limits
 	call	__CheckForDebuggerJustMyCode
 
 ; 646  :         return LLONG_MAX;
@@ -39840,7 +37483,7 @@ $LN3:
 ?max@?$numeric_limits@_J@std@@SA_JXZ ENDP		; std::numeric_limits<__int64>::max
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\typeinfo
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\typeinfo
 ;	COMDAT ?_Throw_bad_cast@std@@YAXXZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -39857,7 +37500,7 @@ $LN3:
 	mov	ecx, 70					; 00000046H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__4638863E_typeinfo
+	lea	rcx, OFFSET FLAT:__33FB35AA_typeinfo
 	call	__CheckForDebuggerJustMyCode
 
 ; 65   :     _THROW(bad_cast{});
@@ -39968,7 +37611,7 @@ $LN3:
 ??1bad_cast@std@@UEAA@XZ ENDP				; std::bad_cast::~bad_cast
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_typeinfo.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_typeinfo.h
 ;	COMDAT ??0bad_cast@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -39987,7 +37630,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__7B3ADE64_vcruntime_typeinfo@h
+	lea	rcx, OFFSET FLAT:__FB364CBD_vcruntime_typeinfo@h
 	call	__CheckForDebuggerJustMyCode
 
 ; 134  :         : exception("bad cast", 1)
@@ -40013,7 +37656,7 @@ $LN3:
 ??0bad_cast@std@@QEAA@XZ ENDP				; std::bad_cast::bad_cast
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_typeinfo.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_typeinfo.h
 ;	COMDAT ??9type_info@@QEBA_NAEBV0@@Z
 _TEXT	SEGMENT
 tv70 = 192
@@ -40035,7 +37678,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__7B3ADE64_vcruntime_typeinfo@h
+	lea	rcx, OFFSET FLAT:__FB364CBD_vcruntime_typeinfo@h
 	call	__CheckForDebuggerJustMyCode
 
 ; 88   :         return __std_type_info_compare(&_Data, &_Other._Data) != 0;
@@ -40111,7 +37754,7 @@ $LN3:
 wmemcpy	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\exception
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\exception
 ;	COMDAT ?_Throw_bad_array_new_length@std@@YAXXZ
 _TEXT	SEGMENT
 $T1 = 200
@@ -40128,7 +37771,7 @@ $LN3:
 	mov	ecx, 70					; 00000046H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__1302BCB8_exception
+	lea	rcx, OFFSET FLAT:__E4152856_exception
 	call	__CheckForDebuggerJustMyCode
 
 ; 321  :     _THROW(bad_array_new_length{});
@@ -40239,7 +37882,7 @@ $LN3:
 ??1bad_array_new_length@std@@UEAA@XZ ENDP		; std::bad_array_new_length::~bad_array_new_length
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
 ;	COMDAT ??0bad_array_new_length@std@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -40258,7 +37901,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__18D87206_vcruntime_exception@h
+	lea	rcx, OFFSET FLAT:__E75714E4_vcruntime_exception@h
 	call	__CheckForDebuggerJustMyCode
 
 ; 140  :         : bad_alloc("bad array new length")
@@ -40373,7 +38016,7 @@ $LN3:
 ??1bad_alloc@std@@UEAA@XZ ENDP				; std::bad_alloc::~bad_alloc
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
 ;	COMDAT ??0bad_alloc@std@@AEAA@QEBD@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -40394,7 +38037,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__18D87206_vcruntime_exception@h
+	lea	rcx, OFFSET FLAT:__E75714E4_vcruntime_exception@h
 	call	__CheckForDebuggerJustMyCode
 
 ; 129  :         : exception(_Message, 1)
@@ -40455,7 +38098,7 @@ $LN2@scalar:
 ??_Gexception@std@@UEAAPEAXI@Z ENDP			; std::exception::`scalar deleting destructor'
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
 ;	COMDAT ?what@exception@std@@UEBAPEBDXZ
 _TEXT	SEGMENT
 tv69 = 192
@@ -40475,7 +38118,7 @@ $LN5:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__18D87206_vcruntime_exception@h
+	lea	rcx, OFFSET FLAT:__E75714E4_vcruntime_exception@h
 	call	__CheckForDebuggerJustMyCode
 
 ; 95   :         return _Data._What ? _Data._What : "Unknown exception";
@@ -40502,7 +38145,7 @@ $LN4@what:
 ?what@exception@std@@UEBAPEBDXZ ENDP			; std::exception::what
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
 ;	COMDAT ??1exception@std@@UEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -40521,7 +38164,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__18D87206_vcruntime_exception@h
+	lea	rcx, OFFSET FLAT:__E75714E4_vcruntime_exception@h
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7exception@std@@6B@
@@ -40544,7 +38187,7 @@ $LN3:
 ??1exception@std@@UEAA@XZ ENDP				; std::exception::~exception
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
 ;	COMDAT ??0exception@std@@QEAA@AEBV01@@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -40565,7 +38208,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__18D87206_vcruntime_exception@h
+	lea	rcx, OFFSET FLAT:__E75714E4_vcruntime_exception@h
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7exception@std@@6B@
@@ -40599,7 +38242,7 @@ $LN3:
 ??0exception@std@@QEAA@AEBV01@@Z ENDP			; std::exception::exception
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_exception.h
 ;	COMDAT ??0exception@std@@QEAA@QEBDH@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -40622,7 +38265,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__18D87206_vcruntime_exception@h
+	lea	rcx, OFFSET FLAT:__E75714E4_vcruntime_exception@h
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7exception@std@@6B@
@@ -40653,7 +38296,7 @@ $LN3:
 ??0exception@std@@QEAA@QEBDH@Z ENDP			; std::exception::exception
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vcruntime_new.h
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime_new.h
 ;	COMDAT ??2@YAPEAX_KPEAX@Z
 _TEXT	SEGMENT
 _Size$ = 224
@@ -40674,7 +38317,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__FC8B975D_vcruntime_new@h
+	lea	rcx, OFFSET FLAT:__8906660C_vcruntime_new@h
 	call	__CheckForDebuggerJustMyCode
 
 ; 168  :         (void)_Size;
@@ -40691,7 +38334,7 @@ $LN3:
 ??2@YAPEAX_KPEAX@Z ENDP					; operator new
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -40712,7 +38355,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B2FF6C0C_SimpleUI@cpp
+	lea	rcx, OFFSET FLAT:__BAA4F0A5_SimpleUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -40722,7 +38365,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -40741,7 +38384,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B2FF6C0C_SimpleUI@cpp
+	lea	rcx, OFFSET FLAT:__BAA4F0A5_SimpleUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -40751,7 +38394,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -40770,7 +38413,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B2FF6C0C_SimpleUI@cpp
+	lea	rcx, OFFSET FLAT:__BAA4F0A5_SimpleUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -40780,7 +38423,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
+; File C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -40797,7 +38440,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__B2FF6C0C_SimpleUI@cpp
+	lea	rcx, OFFSET FLAT:__BAA4F0A5_SimpleUI@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]

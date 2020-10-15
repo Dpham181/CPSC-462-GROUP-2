@@ -1,8 +1,11 @@
 #include "Domain/Session/Session.hpp"
 #include "Domain/Client/Client.hpp"
+#include "Domain/Client/ClientProfile.hpp"
 
 #include <string>
 #include <any>
+#include <iomanip>     // setw()
+
 #include <vector>
 
 namespace  // anonymous (private) working area
@@ -54,6 +57,7 @@ namespace  // anonymous (private) working area
     return results;
   }
   std::any addNewClient(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
+      std::string results = "";
       return "test";
 
   }
@@ -64,62 +68,64 @@ namespace  // anonymous (private) working area
 
 
 
-//namespace domain::client
-//{
-//    clientsection::clientsection(const std::string& description, const client& client) : _client(client), _name(description)
-//    {
-//        _logger << "session \"" + _name + "\" being used and has been successfully initialized";
-//    }
-//    
-//    std::vector<std::string> clientsection::getcommands()
-//    {
-//        std::vector<std::string> availablecommands;
-//        availablecommands.reserve(_commanddispatch.size());
-//
-//        for (const auto& [command, function] : _commanddispatch) availablecommands.emplace_back(command);
-//
-//        return availablecommands;
-//    }
-//
-//
-//
-//
-//   client clientsection::executecommand(const std::string& command, const std::vector<std::string>& args)
-//    {
-//       client newclient;
-//        std::string parameters;
-//        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
-//        _logger << "responding to \"" + command + "\" request with parameters: " + parameters;
-//
-//        auto it = _commanddispatch.find(command);
-//        if (it == _commanddispatch.end())
-//        {
-//            std::string message = __func__;
-//            message += " attempt to execute \"" + command + "\" failed, no such command";
-//
-//            _logger << message;
-//            throw badcommand(message);
-//        }
-//
-//       auto results = it->second(*this, args);
-//
-//        if (results.has_value())
-//        {
-//         newclient = { args[0],std::atoi(args[1].c_str()) };
-//             
-//            _logger << "responding with: \"" + std::any_cast<const std::string&>(results) + '"';
-//        }
-//
-//        return newclient;
-//    }
-//
-//  
-//
-//
-//}
+namespace Domain::Client
+
+{
+    void line()
+    {
+        for (int i = 1; i < 41; i++)
+            std::cout << "--";
+        std::cout << "\n";
+
+    }
+
+    ClientDomain::ClientDomain(const std::string& description, const Client& Client) : _Client(Client), _name(description)
+    {
+        _logger << "Session \"" + _name + "\" being used and has been successfully initialized";
+    }
+
+    std::vector<Client> ClientDomain::ClientsDB(const std::vector<Client>& ClientsDB) {
+        _UpdatedDB = ClientsDB;
+
+        return _UpdatedDB;
+    }
 
 
+    std::vector<Client> ClientDomain::addClient(const Client& Client) {
+        _UpdatedDB.push_back(Client);
 
+        line();
+        std::cout << std::setw(49) << "List Of Clients Updated Table\n";
+        line();
+        std::cout << std::setw(15) << "Client ID  " << std::setw(15) << " Creator \n";
+        line();
+
+        for (const auto& c : _UpdatedDB)
+            std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator << std::endl;
+        line();
+        return  _UpdatedDB;
+    }
+
+    /*clientprofile clientprofiledomain::updateclientprofile(const std::string clientname, const int clientid, const std::string dob, const int income, int phone) {
+        std::cout << "client name: " << clientname << std::endl;
+        std::cout << "client id: " << clientid << std::endl;
+        std::cout << "client's date of birth: " << dob << std::endl;
+        std::cout << "client's income: $" << income << std::endl;
+        std::cout << "client's phone: " << phone << std::endl;
+      
+        return { clientname, clientid, dob, income, phone };
+    }*/
+
+
+    ClientSession::ClientSession(const Client& Client) : ClientDomain("Client Genarated", Client)
+    {
+        _logger << " Client ID: \"" + std::to_string(Client.clientid) ;
+
+        
+    }
+
+
+}
 
 namespace Domain::Session
 {

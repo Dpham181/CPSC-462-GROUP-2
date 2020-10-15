@@ -1,4 +1,21 @@
-﻿  SimpleUI.cpp
-C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(150,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(64,38): warning C4189: 'selectedRole': local variable is initialized but not referenced
-  ConsoleApplication.vcxproj -> C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe
+﻿  ClientHandler.cpp
+  Session.cpp
+C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(59,96): warning C4100: 'args': unreferenced formal parameter
+C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(59,55): warning C4100: 'session': unreferenced formal parameter
+  SessionHandler.cpp
+  Compiling...
+  Generating Code...
+  main.cpp
+  LoggerHandler.cpp
+  PersistenceHandler.cpp
+  SimpleDB.cpp
+  Compiling...
+  Generating Code...
+  SimpleUI.cpp
+C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(149,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(63,38): warning C4189: 'selectedRole': local variable is initialized but not referenced
+  SystemDriverUI.cpp
+  UserInterfaceHandler.cpp
+  Compiling...
+  Generating Code...
+  ConsoleApplication.vcxproj -> C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe

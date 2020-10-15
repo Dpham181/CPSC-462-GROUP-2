@@ -14,7 +14,6 @@
 
 #include "TechnicalServices/Logging/LoggerHandler.hpp"
 #include "TechnicalServices/Persistence/PersistenceHandler.hpp"
-#include <Domain\Client\Client.hpp>
 
 
 
@@ -148,14 +147,19 @@ namespace UI
       else if (selectedCommand == "Add New Client")
       {
           int sizeofClientDB = ClientsFromDB.size();
-          std::unique_ptr<Domain::Client::ClientHandler> ClientHandler;
+          std::unique_ptr<Domain::Client::ClientHandler> ClientHandler; // call clientdomain 
+
+
           Client = { credentials.userName,sizeofClientDB + 1 };
-          ClientHandler = Domain::Client::ClientHandler::createClient(Client);
-          if (ClientHandler == nullptr) {
-              _logger << "execute__________________________";
+          ClientHandler = Domain::Client::ClientHandler::createClient(Client); // creating an smart prt object of client 
 
-              ClientsFromDB.push_back(Client);
+          // return nullprt if client parameters empty 
+          // otherwise created a client prt object 
 
+          if (ClientHandler != nullptr) {
+              ClientHandler->ClientsDB(ClientsFromDB);
+              ClientsFromDB = ClientHandler->addClient(Client);
+              //ClientHandler->UpdateClientProfile("test", 1, "1/1/1", 123, 123213131);
             }
       }
 
