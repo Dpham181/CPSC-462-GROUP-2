@@ -1,6 +1,5 @@
 #include "Domain/Session/Session.hpp"
 #include "Domain/Client/Client.hpp"
-#include "Domain/Client/ClientProfile.hpp"
 
 #include <string>
 #include <any>
@@ -106,15 +105,18 @@ namespace Domain::Client
         return  _UpdatedDB;
     }
 
-    /*clientprofile clientprofiledomain::updateclientprofile(const std::string clientname, const int clientid, const std::string dob, const int income, int phone) {
-        std::cout << "client name: " << clientname << std::endl;
-        std::cout << "client id: " << clientid << std::endl;
-        std::cout << "client's date of birth: " << dob << std::endl;
-        std::cout << "client's income: $" << income << std::endl;
-        std::cout << "client's phone: " << phone << std::endl;
-      
-        return { clientname, clientid, dob, income, phone };
-    }*/
+    Clientprofile ClientDomain::UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) {
+        Clientprofile newcp = { "", 0, "", 0, 0 };
+        newcp.client_id = ClientID;
+        newcp.client_name = ClientName;
+
+        std::cout << "Client Name: " << ClientName << std::endl;
+        std::cout << "Client ID: " << ClientID << std::endl;
+        std::cout << "Client's Date of Birth: " << DOB << std::endl;
+        std::cout << "Client's Income: $" << Income << std::endl;
+        std::cout << "Client's Phone: " << Phone << std::endl;
+        return newcp;
+    }
 
 
     ClientSession::ClientSession(const Client& Client) : ClientDomain("Client Genarated", Client)

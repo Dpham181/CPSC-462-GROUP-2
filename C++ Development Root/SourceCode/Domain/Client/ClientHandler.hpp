@@ -29,7 +29,7 @@ namespace Domain::Client
      virtual std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) =0;
 
      virtual std::vector<Client>                 addClient(const Client& Client) =0;
-     //virtual Clientprofile                       UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) = 0;
+     virtual Clientprofile                       UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) = 0;
 
 
       // Operations

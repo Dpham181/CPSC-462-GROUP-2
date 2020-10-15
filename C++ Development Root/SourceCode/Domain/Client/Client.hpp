@@ -19,7 +19,7 @@ namespace Domain::Client
       virtual std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) override;
 
       virtual std::vector<Client>                 addClient(const Client &Client  ) override;
-
+      virtual Clientprofile                       UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) override ;
 
       ~ClientDomain() noexcept override = 0 ;
   protected:
@@ -33,7 +33,9 @@ namespace Domain::Client
       std::vector<Client>                               _UpdatedDB;
       Client const                                      _Client;
       std::string     const                                      _name = "Undefined";
-  
+      Clientprofile                                     _Clientprofile;
+  private:
+      
   }; // class Books
 
 

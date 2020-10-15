@@ -26,6 +26,7 @@ namespace TechnicalServices::Persistence
 
         //Client GenerateClientId( const std::string & User_name ) override;
         std::vector<Client> ShowAllClients() override;
+        std::vector<Clientprofile> ShowAllClientsProfile() override;
 
       // ClientProfile addClientInformation(int clientID, std::string client_name, std::string DOB, int income, int phone) = 0;
       // ClientProfile SearchforClientinfor( int ClientID )=0;

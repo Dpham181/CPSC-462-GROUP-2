@@ -55,6 +55,7 @@ namespace UI
     std::vector<std::string> roleLegalValues = _persistentData.findRoles();
 
     std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClients();
+    std::vector<TechnicalServices::Persistence::Clientprofile> ClientsPFromDB = _persistentData.ShowAllClientsProfile();
 
     // 2) Present login screen to user and get username, password, and valid role
     Domain::Session::UserCredentials credentials  = {"", "", {""}};// ensures roles[0] exists
@@ -159,7 +160,7 @@ namespace UI
           if (ClientHandler != nullptr) {
               ClientHandler->ClientsDB(ClientsFromDB);
               ClientsFromDB = ClientHandler->addClient(Client);
-              //ClientHandler->UpdateClientProfile("test", 1, "1/1/1", 123, 123213131);
+              ClientHandler->UpdateClientProfile("test", 1, "1/1/1", 123, 123213131);
             }
       }
 
