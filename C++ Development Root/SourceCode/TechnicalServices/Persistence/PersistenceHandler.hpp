@@ -58,7 +58,7 @@ namespace TechnicalServices::Persistence
       
      
        virtual std::vector<Client> ShowAllClients() = 0;
-       virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
+       //virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

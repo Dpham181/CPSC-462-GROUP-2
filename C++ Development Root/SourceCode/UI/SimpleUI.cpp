@@ -55,7 +55,6 @@ namespace UI
     std::vector<std::string> roleLegalValues = _persistentData.findRoles();
 
     std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClients();
-    std::vector<TechnicalServices::Persistence::Clientprofile> ClientsPFromDB = _persistentData.ShowAllClientsProfile();
 
     // 2) Present login screen to user and get username, password, and valid role
     Domain::Session::UserCredentials credentials  = {"", "", {""}};// ensures roles[0] exists
@@ -118,7 +117,7 @@ namespace UI
       **     no coupling. This can be achieved in a variety of ways, but one common way is to pass strings instead of strong typed
       **     parameters.
       ******************************************************************************************************************************/
-      if( selectedCommand == "Checkout Book" )
+      /*if( selectedCommand == "Checkout Book" )
       {
         std::vector<std::string> parameters( 3 );
 
@@ -128,40 +127,33 @@ namespace UI
 
         auto results = sessionControl->executeCommand( selectedCommand, parameters );
         if( results.has_value() ) _logger << "Received reply: \"" + std::any_cast<const std::string &>( results ) + '"';
-      }
-      else if (selectedCommand == "Show All Clients")
-
+      }*/
+      
+      if (selectedCommand == "Client Management")
       {
-       
-
-        line();
-        std::cout << std::setw(49) << "List Of Clients \n";
-        line();
-        std::cout <<std::setw(15) << "Client ID  " <<std::setw(15) << " Creator \n" ;
-        line();
-
-         for( const auto & c : ClientsFromDB )
-            std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator <<std::endl;
-        line();
-
-      }
-      else if (selectedCommand == "Add New Client")
-      {
-          int sizeofClientDB = ClientsFromDB.size();
           std::unique_ptr<Domain::Client::ClientHandler> ClientHandler; // call clientdomain 
+          ClientHandler = Domain::Client::ClientHandler::createClient({"test" ,1});
+
+          auto        commands = ClientHandler->getCommands();
+          std::string selectedCommand;
+          unsigned    menuSelection;
+
+          do
+          {
+              for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+              std::cout << std::setw(2) << commands.size() << " - " << "Quit\n";
+
+              std::cout << "  action (0-" << commands.size() << "): ";
+              std::cin >> menuSelection;
+          } while (menuSelection > commands.size());
+
+          if (menuSelection == commands.size()) break;
+
+          selectedCommand = commands[menuSelection];
+          _logger << "Command selected \"" + selectedCommand + '"';
 
 
-          Client = { credentials.userName,sizeofClientDB + 1 };
-          ClientHandler = Domain::Client::ClientHandler::createClient(Client); // creating an smart prt object of client 
-
-          // return nullprt if client parameters empty 
-          // otherwise created a client prt object 
-
-          if (ClientHandler != nullptr) {
-              ClientHandler->ClientsDB(ClientsFromDB);
-              ClientsFromDB = ClientHandler->addClient(Client);
-              ClientHandler->UpdateClientProfile("test", 1, "1/1/1", 123, 123213131);
-            }
+        
       }
 
       else if( selectedCommand == "Another command" ) /* ... */ {}

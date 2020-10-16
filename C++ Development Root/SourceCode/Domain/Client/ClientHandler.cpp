@@ -25,7 +25,7 @@ namespace Domain::Client
     std::unique_ptr<ClientHandler> ClientHandler::createClient(const Client& client)
     {
         if (client.clientid >0 && client.creator !="") {
-            return std::make_unique<Domain::Client::ClientSession>(client);
+            return std::make_unique<Domain::Client::ClientManagement>(client);
         }
 
         return nullptr;

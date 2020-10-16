@@ -109,7 +109,7 @@ namespace TechnicalServices::Persistence
       //{"Amanda",  "",                 {"Administrator"             }}
 
         { "Tom", "CPSC", { "IT Admin" } },
-        { "Amanda", "", { "Assistant" } }
+        { "Amanda", "", { "Salesperson" } }
     };
 
     for( const auto & user : storedUsers ) if( user.userName == name ) return user;

@@ -1,10 +1,12 @@
-﻿  Session.cpp
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(58,96): warning C4100: 'args': unreferenced formal parameter
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(58,55): warning C4100: 'session': unreferenced formal parameter
-  SimpleUI.cpp
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(149,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\SimpleUI.cpp(63,38): warning C4189: 'selectedRole': local variable is initialized but not referenced
-  UserInterfaceHandler.cpp
-  Compiling...
-  Generating Code...
-  ConsoleApplication.vcxproj -> C:\Users\danhp\OneDrive\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe
+﻿  SimpleUI.cpp
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(137,34): warning C4456: declaration of 'commands' hides previous local declaration
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(95,19): message : see declaration of 'commands'
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(138,38): warning C4456: declaration of 'selectedCommand' hides previous local declaration
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(96,19): message : see declaration of 'selectedCommand'
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(139,36): warning C4456: declaration of 'menuSelection' hides previous local declaration
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(97,19): message : see declaration of 'menuSelection'
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(63,38): warning C4189: 'selectedRole': local variable is initialized but not referenced
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(137): warning C6246: Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '95' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 95
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(138): warning C6246: Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '96' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 96
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(139): warning C6246: Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '97' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 97
+  ConsoleApplication.vcxproj -> C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe

@@ -15,15 +15,13 @@ namespace  // anonymous (private) working area
   #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
    
-  //STUB( bugPeople    )
-  //STUB( collectFines )
-  //STUB( help         )
-  //STUB( openArchives )
-  //STUB( payFines     )
-  //STUB( resetAccount )
-  //STUB( returnBook   )
-  //STUB( shutdown     )
- 
+    #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+                              { return {}; }  // Stubbed for now
+
+  STUBC(Add)
+  STUBC(View)
+  STUBC(Update)
+  STUBC(Link)
     // Assistant actions
   STUB(ShowAllClients )
   STUB( modifyClient)
@@ -48,20 +46,16 @@ namespace  // anonymous (private) working area
   
 
 
-  std::any checkoutBook( Domain::Session::SessionBase & session, const std::vector<std::string> & args )
-  {
-    // TO-DO  Verify there is such a book and the mark the book as being checked out by user
-    std::string results = "Title \"" + args[0] + "\" checkout by \"" + session._credentials.userName + '"';
-    session._logger << "checkoutBook:  " + results;
-    return results;
-  }
-  std::any addNewClient(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
+ 
+ 
+  std::any ClientManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
       std::string results = "";
-      return "test";
-
+      return "True";
   }
-  
-
+  std::any ProductManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
+      std::string results = "";
+      return "true";
+  }
   
 }    // anonymous (private) working area
 
@@ -78,9 +72,50 @@ namespace Domain::Client
 
     }
 
-    ClientDomain::ClientDomain(const std::string& description, const Client& Client) : _Client(Client), _name(description)
+    ClientDomain::ClientDomain(const std::string& description, const Client& Client) :  _name(description),_Client(Client)
     {
         _logger << "Session \"" + _name + "\" being used and has been successfully initialized";
+    }
+
+
+    std::vector<std::string> ClientDomain::getCommands()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
+
+
+
+
+    std::any ClientDomain::executeCommand(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+        if (it == _commandDispatch.end())
+        {
+            std::string message = __func__;
+            message += " attempt to execute \"" + command + "\" failed, no such command";
+
+            _logger << message;
+           
+        }
+
+        auto results = it->second(*this, args);
+
+        if (results.has_value())
+        {
+            // The type of result depends on function called.  Let's assume strings for now ...
+            _logger << "Responding with: \"" + std::any_cast<const std::string&>(results) + '"';
+        }
+
+        return results;
     }
     // get updating the static data of Client and Client Profile
     std::vector<Client> ClientDomain::ClientsDB(const std::vector<Client>& ClientsDB) {
@@ -124,12 +159,19 @@ namespace Domain::Client
     }
 
 
-    ClientSession::ClientSession(const Client& Client) : ClientDomain("Client ID Genarated", Client)
+    ClientManagement::ClientManagement(const Client& Client) : ClientDomain("Client ID Genarated", Client)
     {
         _logger << " Client ID: \"" + std::to_string(Client.clientid) ;
+       
+        _commandDispatch = {
+    //                     { "Show All Clients", ShowAllClients },
+                         { "Add Client", Add },
+                         {"View All Clients", View},
+                         { "Update Client Profile", Update },
+                         { "Link Product", Link }//,
 
-        
-    }
+                                };
+    };
 
 
 }
@@ -200,10 +242,10 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"IT Admin\".";
 
-    _commandDispatch = { {"Add New Account",   addNewAccount },
-                         {"Back-up Database",   backupDB }//,
-                         //{"Shutdown System", shutdown    } 
-    };
+    //_commandDispatch = { {"add new account",   addnewaccount },
+    //                     {"back-up database",   backupdb }//,
+    //                     //{"shutdown system", shutdown    } 
+    //};
   }
 
 
@@ -213,15 +255,15 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Assistant\".";
 
-    _commandDispatch = {
-                         { "Show All Clients", ShowAllClients },
-                        {"Add New Client", addNewClient},
-                         {"Modify Client",          modifyClient        },
-                         {"Ask IT for Help",     askHelp    },
-                         {"Schedule Event",   scheduleEvent  },
-                         { "Attach Client Document", attachClientDocument },
-                         { "Invite Client", inviteClient }//,
-    };
+    //_commandDispatch = {
+    //                     { "Show All Clients", ShowAllClients },
+    //                    {"Add New Client", addNewClient},
+    //                     {"Modify Client",          modifyClient        },
+    //                     {"Ask IT for Help",     askHelp    },
+    //                     {"Schedule Event",   scheduleEvent  },
+    //                     { "Attach Client Document", attachClientDocument },
+    //                     { "Invite Client", inviteClient }//,
+    //};
   }
 
 
@@ -231,10 +273,11 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Salesperson\".";
 
-    _commandDispatch = { {"Make Sale", makeSale}//,
-                         //{"Collect Fines", collectFines},
-                         //{"Help",          help        },
-                         //{"Open Archives", openArchives} 
+    _commandDispatch = { 
+        
+        {"Client Management", ClientManagement},
+        {"Product Management", ProductManagement}
+                         
     };
   }
 
