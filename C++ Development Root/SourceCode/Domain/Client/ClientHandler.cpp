@@ -22,11 +22,11 @@ namespace Domain::Client
 
 
     // returns a specialized object specific to the specified role
-    std::unique_ptr<ClientHandler> ClientHandler::createClient(const Client& client)
+    std::unique_ptr<ClientHandler> ClientHandler::UseClientManagement(const UserCredentials& user)
     {
-        if (client.clientid >0 && client.creator !="") {
-            return std::make_unique<Domain::Client::ClientManagement>(client);
-        }
+        auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+        UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
+        if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::Client::ClientManagement>(user);
 
         return nullptr;
     }

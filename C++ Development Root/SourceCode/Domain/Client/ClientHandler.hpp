@@ -12,6 +12,7 @@ namespace Domain::Client
   
     using TechnicalServices::Persistence::Client; 
     using TechnicalServices::Persistence::Clientprofile;
+    using TechnicalServices::Persistence::UserCredentials;
 
   // Client Package within the Domain Layer Abstract class
   class ClientHandler
@@ -21,18 +22,19 @@ namespace Domain::Client
       struct   NoSuchClient         : ClientException {using ClientException::ClientException;};
       struct   NoSuchProperty     : ClientException {using ClientException::ClientException;};
       // object return user with creator 
-     static std::unique_ptr<ClientHandler> createClient( const Client & client );
+     static std::unique_ptr<ClientHandler> UseClientManagement( const UserCredentials& User);
 
       //  Operations menu
      virtual std::vector<std::string> getCommands()                                                                     =0;    // retrieves the list of actions (commands)
-     virtual std::any                 executeCommand(const std::string& command, const std::vector<std::string>& args) =0;    // executes one of the actions retrieved
+    // virtual std::any                 executeCommand(const std::string& command, const std::vector<std::string>& args) =0;    // executes one of the actions retrieved
 
 
       // Operations of management client
 
      virtual std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) =0;
      virtual std::vector<Clientprofile>          ClientsPDB(const std::vector<Clientprofile>& ClientsPDB) = 0;
-
+     virtual void                                 ViewClients(const std::vector<Client>& ClientsDB) =0;
+     //virtual std::vector<Client>                 LinkClient(const std::vector<Client>& ClientsDB) =0;
      virtual std::vector<Client>                 addClient(const Client& Client) =0;
      virtual Clientprofile                       UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) = 0;
 

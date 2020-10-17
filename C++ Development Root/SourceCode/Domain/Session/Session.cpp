@@ -18,10 +18,7 @@ namespace  // anonymous (private) working area
     #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
 
-  STUBC(Add)
-  STUBC(View)
-  STUBC(Update)
-  STUBC(Link)
+ 
     // Assistant actions
   STUB(ShowAllClients )
   STUB( modifyClient)
@@ -46,14 +43,26 @@ namespace  // anonymous (private) working area
   
 
 
- 
- 
+  std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+     
+      return  "true";
+  }
+  std::any View(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
+  std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
+  std::any Link(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
   std::any ClientManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
-      std::string results = "";
       return "True";
   }
   std::any ProductManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
-      std::string results = "";
       return "true";
   }
   
@@ -64,6 +73,8 @@ namespace  // anonymous (private) working area
 namespace Domain::Client
 
 {
+    auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+    
     void line()
     {
         for (int i = 1; i < 41; i++)
@@ -72,9 +83,9 @@ namespace Domain::Client
 
     }
 
-    ClientDomain::ClientDomain(const std::string& description, const Client& Client) :  _name(description),_Client(Client)
+    ClientDomain::ClientDomain(const std::string& description, const UserCredentials& user) :  _name(description),_Creator(user)
     {
-        _logger << "Session \"" + _name + "\" being used and has been successfully initialized";
+        _logger << "Acess to  \"" + _name + "\" being used " + _Creator.userName;
     }
 
 
@@ -90,37 +101,11 @@ namespace Domain::Client
 
 
 
-
-    std::any ClientDomain::executeCommand(const std::string& command, const std::vector<std::string>& args)
-    {
-        std::string parameters;
-        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
-        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
-
-        auto it = _commandDispatch.find(command);
-        if (it == _commandDispatch.end())
-        {
-            std::string message = __func__;
-            message += " attempt to execute \"" + command + "\" failed, no such command";
-
-            _logger << message;
-           
-        }
-
-        auto results = it->second(*this, args);
-
-        if (results.has_value())
-        {
-            // The type of result depends on function called.  Let's assume strings for now ...
-            _logger << "Responding with: \"" + std::any_cast<const std::string&>(results) + '"';
-        }
-
-        return results;
-    }
     // get updating the static data of Client and Client Profile
     std::vector<Client> ClientDomain::ClientsDB(const std::vector<Client>& ClientsDB) {
         _UpdatedDB = ClientsDB;
-
+        // generating the result in updating table 
+       
         return _UpdatedDB;
     }
     std::vector<Clientprofile> ClientDomain::ClientsPDB(const std::vector<Clientprofile>& ClientprofileDB) {
@@ -128,15 +113,25 @@ namespace Domain::Client
 
         return _UpdatedprofileDB;
     }
+    void ClientDomain::ViewClients(const std::vector<Client>& ClientsDB) {
+        line();
+        std::cout << std::setw(49) << "list of clients\n";
+        line();
+        std::cout << std::setw(15) << "client id  " << std::setw(15) << " creator \n";
+        line();
 
+        for (const auto& c : ClientsDB)
+            std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator << std::endl;
+        line();
+    }
     // ADDING NEW CLIENT TO THE MEMORY DATABASE 
     std::vector<Client> ClientDomain::addClient(const Client& Client) {
         _UpdatedDB.push_back(Client); // add new client to list of static client 
         // generating the result in updating table 
         line();
-        std::cout << std::setw(49) << "List Of Clients Updated Table\n";
+        std::cout << std::setw(49) << "list of clients updated table\n";
         line();
-        std::cout << std::setw(15) << "Client ID  " << std::setw(15) << " Creator \n";
+        std::cout << std::setw(15) << "client id  " << std::setw(15) << " creator \n";
         line();
 
         for (const auto& c : _UpdatedDB)
@@ -150,21 +145,20 @@ namespace Domain::Client
         newcp.client_id = ClientID;
         newcp.client_name = ClientName;
 
-        std::cout << "Client Name: " << ClientName << std::endl;
+       /* std::cout << "Client Name: " << ClientName << std::endl;
         std::cout << "Client ID: " << ClientID << std::endl;
         std::cout << "Client's Date of Birth: " << DOB << std::endl;
         std::cout << "Client's Income: $" << Income << std::endl;
-        std::cout << "Client's Phone: " << Phone << std::endl;
+        std::cout << "Client's Phone: " << Phone << std::endl;*/
         return newcp;
     }
 
 
-    ClientManagement::ClientManagement(const Client& Client) : ClientDomain("Client ID Genarated", Client)
+    ClientManagement::ClientManagement(const UserCredentials& user) : ClientDomain ("Client Management", user)
     {
-        _logger << " Client ID: \"" + std::to_string(Client.clientid) ;
        
         _commandDispatch = {
-    //                     { "Show All Clients", ShowAllClients },
+
                          { "Add Client", Add },
                          {"View All Clients", View},
                          { "Update Client Profile", Update },
