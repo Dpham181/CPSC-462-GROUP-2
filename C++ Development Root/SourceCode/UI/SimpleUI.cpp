@@ -169,7 +169,7 @@ namespace UI
                             ClientHandler->ViewClients(ClientsFromDB);
                             char response;
 
-                            int clientId;
+                            int clientId =0;
                             std::cout << "Please choose Client Id: ";
                             std::cin >> clientId;
                             do
@@ -179,8 +179,20 @@ namespace UI
                                 response = std::toupper(response, std::locale());
                             } while (response != 'Y' && response != 'Q');
 
-                            if (response == 'Y') {
-                                //TODO
+                            if (response == 'Y') {// under construction 
+                                std::vector<std::string> parameters(5);
+
+                                std::cout << " Enter Name:  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[0]);
+                                parameters[1] = clientId;
+                                std::cout << " Enter DOB: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
+                                std::cout << " Enter Income:   ";  std::cin >> std::ws;  std::getline(std::cin, parameters[3]);
+                                std::cout << " Enter Phone:   ";  std::cin >> std::ws;  std::getline(std::cin, parameters[4]);
+                                auto results = ClientHandler->executeCommand(selectedCommand,parameters);
+                             
+                               if (results.has_value()) _logger << "Received reply: \"" +  + '"';
+
+                                
+                                
                             }
 
                         }

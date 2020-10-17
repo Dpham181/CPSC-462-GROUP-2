@@ -18,7 +18,7 @@ namespace Domain::Client
 
       //  Operations menu
        std::vector<std::string> getCommands() override;    // retrieves the list of actions (commands)
-       //std::any                 executeCommand(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
+       std::any                 executeCommand(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
 
       // Operations
        std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) override;

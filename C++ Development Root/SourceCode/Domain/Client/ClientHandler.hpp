@@ -26,7 +26,7 @@ namespace Domain::Client
 
       //  Operations menu
      virtual std::vector<std::string> getCommands()                                                                     =0;    // retrieves the list of actions (commands)
-    // virtual std::any                 executeCommand(const std::string& command, const std::vector<std::string>& args) =0;    // executes one of the actions retrieved
+     virtual std::any                 executeCommand(const std::string& command, const std::vector<std::string>& args) =0;    // executes one of the actions retrieved
 
 
       // Operations of management client

@@ -18,7 +18,10 @@ namespace  // anonymous (private) working area
     #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
 
- 
+ STUBC(Add)
+ STUBC(View)
+ STUBC(Link)
+
     // Assistant actions
   STUB(ShowAllClients )
   STUB( modifyClient)
@@ -43,22 +46,23 @@ namespace  // anonymous (private) working area
   
 
 
-  std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-     
-      return  "true";
-  }
-  std::any View(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+  //std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+  //  
+  //    return  "true";
+  //}
+  //std::any View(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
 
-      return  "true";
-  }
+  //    return  "true";
+  //}
   std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-
-      return  "true";
+     
+      auto result = session.UpdateClientProfile(agrs[0], std::atoi(agrs[1].c_str()), agrs[2], std::atoi(agrs[3].c_str()), std::atoi(agrs[4].c_str()));
+      return  result;
   }
-  std::any Link(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+  //std::any Link(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
 
-      return  "true";
-  }
+  //    return  "true";
+  //}
   std::any ClientManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
       return "True";
   }
@@ -99,6 +103,18 @@ namespace Domain::Client
         return availableCommands;
     }
 
+    std::any ClientDomain::executeCommand(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+        
+        auto results = it->second(*this, args);
+
+        return results;
+    }
 
 
     // get updating the static data of Client and Client Profile
@@ -144,12 +160,6 @@ namespace Domain::Client
         Clientprofile newcp = { "", 0, "", 0, 0 };
         newcp.client_id = ClientID;
         newcp.client_name = ClientName;
-
-       /* std::cout << "Client Name: " << ClientName << std::endl;
-        std::cout << "Client ID: " << ClientID << std::endl;
-        std::cout << "Client's Date of Birth: " << DOB << std::endl;
-        std::cout << "Client's Income: $" << Income << std::endl;
-        std::cout << "Client's Phone: " << Phone << std::endl;*/
         return newcp;
     }
 
