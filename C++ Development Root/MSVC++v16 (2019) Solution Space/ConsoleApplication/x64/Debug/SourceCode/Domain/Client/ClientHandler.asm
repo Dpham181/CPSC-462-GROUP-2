@@ -696,6 +696,7 @@ CONST	SEGMENT
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
+	DQ	FLAT:_purecall
 CONST	ENDS
 ;	COMDAT ??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe@
 CONST	SEGMENT
@@ -3239,7 +3240,7 @@ $LN5:
 	je	SHORT $LN3@operator
 	mov	rax, QWORD PTR $T1[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+56]
+	mov	rax, QWORD PTR [rax+64]
 	mov	QWORD PTR tv75[rbp], rax
 	mov	edx, 1
 	mov	rcx, QWORD PTR $T1[rbp]
@@ -3291,7 +3292,7 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 360				; 00000168H
+	mov	ecx, 320				; 00000140H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
@@ -3341,7 +3342,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 360				; 00000168H
+	mov	edx, 320				; 00000140H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -3367,7 +3368,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 360				; 00000168H
+	mov	edx, 320				; 00000140H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H

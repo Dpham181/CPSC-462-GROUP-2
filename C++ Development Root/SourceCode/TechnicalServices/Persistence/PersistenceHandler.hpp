@@ -20,15 +20,15 @@ namespace TechnicalServices::Persistence
   struct Client
   {
     std::string creator;
-    int         clientid;
+    int         clientid; 
+    std::string client_name;
+    int         phone;
   };
   struct Clientprofile
   {
-    std::string client_name;
     int         client_id;
     std::string dob;
-    int         income;
-    int         phone;
+    int         income;  
   };
 
 
@@ -58,7 +58,7 @@ namespace TechnicalServices::Persistence
       
      
        virtual std::vector<Client> ShowAllClients() = 0;
-       //virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
+       virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

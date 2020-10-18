@@ -14,12 +14,31 @@ namespace  // anonymous (private) working area
   // 1)  First define all system events (commands, actions, requests, etc.)
   #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
-   
-    #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+  // Client management control with UI  
+  #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
 
- STUBC(Add)
+
+
+
+
+ STUB(ClientManagement)
  STUBC(View)
+ 
+ std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+
+     auto result = session.addClient({ agrs[0],std::atoi(agrs[1].c_str()),agrs[2],std::atoi(agrs[3].c_str()) });
+
+     return  result;
+ }
+  std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+      auto result = session.SearchClientId(std::atoi(agrs[0].c_str()));
+         
+     
+      return  result;
+  }
+  
+ STUB(ProductManagement)
  STUBC(Link)
 
     // Assistant actions
@@ -46,29 +65,7 @@ namespace  // anonymous (private) working area
   
 
 
-  //std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-  //  
-  //    return  "true";
-  //}
-  //std::any View(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-
-  //    return  "true";
-  //}
-  std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-     
-      auto result = session.UpdateClientProfile(agrs[0], std::atoi(agrs[1].c_str()), agrs[2], std::atoi(agrs[3].c_str()), std::atoi(agrs[4].c_str()));
-      return  result;
-  }
-  //std::any Link(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-
-  //    return  "true";
-  //}
-  std::any ClientManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
-      return "True";
-  }
-  std::any ProductManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
-      return "true";
-  }
+  
   
 }    // anonymous (private) working area
 
@@ -89,11 +86,11 @@ namespace Domain::Client
 
     ClientDomain::ClientDomain(const std::string& description, const UserCredentials& user) :  _name(description),_Creator(user)
     {
-        _logger << "Acess to  \"" + _name + "\" being used " + _Creator.userName;
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
     }
 
 
-    std::vector<std::string> ClientDomain::getCommands()
+    std::vector<std::string> ClientDomain::getCommandsClient()
     {
         std::vector<std::string> availableCommands;
         availableCommands.reserve(_commandDispatch.size());
@@ -103,7 +100,7 @@ namespace Domain::Client
         return availableCommands;
     }
 
-    std::any ClientDomain::executeCommand(const std::string& command, const std::vector<std::string>& args)
+    std::any ClientDomain::executeCommandClient(const std::string& command, const std::vector<std::string>& args)
     {
         std::string parameters;
         for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
@@ -116,7 +113,7 @@ namespace Domain::Client
         return results;
     }
 
-
+   
     // get updating the static data of Client and Client Profile
     std::vector<Client> ClientDomain::ClientsDB(const std::vector<Client>& ClientsDB) {
         _UpdatedDB = ClientsDB;
@@ -133,37 +130,54 @@ namespace Domain::Client
         line();
         std::cout << std::setw(49) << "list of clients\n";
         line();
-        std::cout << std::setw(15) << "client id  " << std::setw(15) << " creator \n";
+        std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(15) << "Phone" << std::setw(20) << " Created By \n";
         line();
 
         for (const auto& c : ClientsDB)
-            std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator << std::endl;
+            std::cout << std::setw(15) << std::to_string(c.clientid) << std::setw(15) << c.client_name << std::setw(15) << std::to_string(c.phone) << std::setw(15) << c.creator << std::endl;
         line();
     }
     // ADDING NEW CLIENT TO THE MEMORY DATABASE 
     std::vector<Client> ClientDomain::addClient(const Client& Client) {
         _UpdatedDB.push_back(Client); // add new client to list of static client 
-        // generating the result in updating table 
-        line();
-        std::cout << std::setw(49) << "list of clients updated table\n";
-        line();
-        std::cout << std::setw(15) << "client id  " << std::setw(15) << " creator \n";
-        line();
-
-        for (const auto& c : _UpdatedDB)
-            std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator << std::endl;
-        line();
+        Clientprofile newcp = { Client.clientid,  "", 0 }; // also create an temporary profile 
+        _UpdatedprofileDB.push_back(newcp);
         return  _UpdatedDB;
     }
     // Updating the Client profile
-    Clientprofile ClientDomain::UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) {
-        Clientprofile newcp = { "", 0, "", 0, 0 };
-        newcp.client_id = ClientID;
-        newcp.client_name = ClientName;
-        return newcp;
+       /* int         client_id;
+        std::string dob;
+        int         income;*/
+    Clientprofile   ClientDomain::SearchClientId(const int ClientId) {
+
+        for (const auto& ClientProfile : _UpdatedprofileDB) {
+            if (ClientProfile.client_id == ClientId) {
+                _Clientprofile = ClientProfile;
+                return  _Clientprofile;
+            }
+
+        }
     }
 
-
+    Clientprofile ClientDomain::UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) {
+        
+        
+                if (DOB != ""){
+                    _Clientprofile.dob = DOB;
+                    
+               }
+                else if (ClientID != 0) {
+                    _Clientprofile.client_id = ClientID;
+                }
+                else if (Income != 0) {
+                    _Clientprofile.income = Income;
+                }
+                
+            
+        
+        return _Clientprofile;
+    }
+    
     ClientManagement::ClientManagement(const UserCredentials& user) : ClientDomain ("Client Management", user)
     {
        

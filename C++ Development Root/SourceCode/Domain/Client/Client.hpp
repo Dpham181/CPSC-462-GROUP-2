@@ -17,17 +17,16 @@ namespace Domain::Client
         ClientDomain(const std::string& description, const UserCredentials& user);
 
       //  Operations menu
-       std::vector<std::string> getCommands() override;    // retrieves the list of actions (commands)
-       std::any                 executeCommand(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
+       std::vector<std::string> getCommandsClient() override;    // retrieves the list of actions (commands)
+       std::any                 executeCommandClient(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
 
       // Operations
        std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) override;
        std::vector<Clientprofile>          ClientsPDB(const std::vector<Clientprofile>& ClientsPDB) override;
-       void               ViewClients(const std::vector<Client>& ClientsDB) override;
-       //std::vector<Client>                 LinkClient(const std::vector<Client>& ClientsDB) override;
-
+       void                                ViewClients(const std::vector<Client>& ClientsDB) override;
+       Clientprofile                       SearchClientId(const int ClientId) override;
        std::vector<Client>                 addClient(const Client &Client  ) override;
-       Clientprofile                       UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) override ;
+       Clientprofile                       UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) override ;
 
       ~ClientDomain() noexcept override = 0 ;
   protected:
@@ -43,8 +42,8 @@ namespace Domain::Client
       std::vector<Clientprofile>                        _UpdatedprofileDB;
       std::string     const                             _name = "Undefined";
       Clientprofile                                     _Clientprofile;
-     DispatchTable                                    _commandDispatch;
-     UserCredentials const                                      _Creator;
+      DispatchTable                                    _commandDispatch;
+      UserCredentials const                                      _Creator;
 
   private:
       

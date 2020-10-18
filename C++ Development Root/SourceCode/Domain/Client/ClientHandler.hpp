@@ -21,22 +21,26 @@ namespace Domain::Client
       struct ClientException : std::runtime_error   {using runtime_error       ::runtime_error;};
       struct   NoSuchClient         : ClientException {using ClientException::ClientException;};
       struct   NoSuchProperty     : ClientException {using ClientException::ClientException;};
-      // object return user with creator 
+      // object return client, creator
      static std::unique_ptr<ClientHandler> UseClientManagement( const UserCredentials& User);
 
       //  Operations menu
-     virtual std::vector<std::string> getCommands()                                                                     =0;    // retrieves the list of actions (commands)
-     virtual std::any                 executeCommand(const std::string& command, const std::vector<std::string>& args) =0;    // executes one of the actions retrieved
+     virtual std::vector<std::string> getCommandsClient() =0;    // retrieves the list of actions (commands)
+     virtual std::any                 executeCommandClient(const std::string& command, const std::vector<std::string>& args) =0;    // executes one of the actions retrieved
+    
 
 
-      // Operations of management client
-
+   // Operations of management client
+     // default operations
+     virtual Clientprofile                       SearchClientId(const int ClientId) =0;
      virtual std::vector<Client>                 ClientsDB(const std::vector<Client>& ClientsDB) =0;
      virtual std::vector<Clientprofile>          ClientsPDB(const std::vector<Clientprofile>& ClientsPDB) = 0;
-     virtual void                                 ViewClients(const std::vector<Client>& ClientsDB) =0;
-     //virtual std::vector<Client>                 LinkClient(const std::vector<Client>& ClientsDB) =0;
+  
+     
+     // Usecase Operations
+     virtual void                                ViewClients(const std::vector<Client>& ClientsDB) =0;
      virtual std::vector<Client>                 addClient(const Client& Client) =0;
-     virtual Clientprofile                       UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) = 0;
+     virtual Clientprofile                       UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) = 0;
 
 
       
