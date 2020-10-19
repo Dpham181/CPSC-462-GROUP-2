@@ -236,6 +236,55 @@ namespace UI
 
                 else sessionControl->executeCommand(selectedCommand, {});
             }
+            else if (selectedCommand == "Product Management") {
+               
+                _ProductHandler = Domain::Product::ProductHandler::UseProductManagement(credentials);
+
+                if (_ProductHandler != nullptr) {
+
+                    do
+                    {
+                        auto        commands = _ProductHandler->getCommandsProduct();
+                        std::string selectedCommand;
+                        unsigned    menuSelection;
+
+                        do
+                        {
+
+                            for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+                            std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
+
+                            std::cout << "  action (0-" << commands.size() << "): ";
+                            std::cin >> menuSelection;
+                        } while (menuSelection > commands.size());
+
+                        if (menuSelection == commands.size()) break;
+                        selectedCommand = commands[menuSelection];
+                        _logger << "Command selected \"" + selectedCommand + '"';
+
+                        if (selectedCommand == "View Inventory") {
+                             
+                            _ProductHandler->executeCommandProduct(selectedCommand, {});
+                        }
+                        else if (selectedCommand == "Add New Product") {
+
+                          //Todo
+                        }
+                        else if (selectedCommand == "Modify Product") {
+
+                            //Todo
+                        }
+                        else if (selectedCommand == "Del product") {
+                            //Todo
+                        }
+
+
+                    } while (true);
+
+                }
+            
+            }
+          
 
             _logger << "Ending session and terminating";
         } while (true);

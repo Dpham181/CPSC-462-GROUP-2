@@ -6,17 +6,10 @@ INCLUDELIB MSVCRTD
 INCLUDELIB OLDNAMES
 
 msvcjmc	SEGMENT
-__F4CA4DDB_cstddef DB 01H
+__FC8B975D_vcruntime_new@h DB 01H
 __09340588_corecrt_math@h DB 01H
 __24E9E95F_stdlib@h DB 01H
 __51019776_cstdlib DB 01H
-__B236D4B0_type_traits DB 01H
-__FC8B975D_vcruntime_new@h DB 01H
-__B0C4CEA9_malloc@h DB 01H
-__18D87206_vcruntime_exception@h DB 01H
-__1302BCB8_exception DB 01H
-__7B3ADE64_vcruntime_typeinfo@h DB 01H
-__4638863E_typeinfo DB 01H
 __F66CEB67_corecrt_stdio_config@h DB 01H
 __101834BA_corecrt_wstdio@h DB 01H
 __AD6A91B7_stdio@h DB 01H
@@ -27,12 +20,19 @@ __DC9673E3_corecrt_wstring@h DB 01H
 __45F4AF76_corecrt_wtime@h DB 01H
 __186FF47F_stat@h DB 01H
 __534C724A_wchar@h DB 01H
+__F4CA4DDB_cstddef DB 01H
 __5E219BC0_limits DB 01H
+__B236D4B0_type_traits DB 01H
+__B0C4CEA9_malloc@h DB 01H
+__18D87206_vcruntime_exception@h DB 01H
+__1302BCB8_exception DB 01H
 __35D7DDB3_corecrt_memory@h DB 01H
 __A29A7DFB_string@h DB 01H
 __36E77527_xutility DB 01H
 __0C99713E_xmemory DB 01H
-__24DC9795_any DB 01H
+__F9CEFE6C_algorithm DB 01H
+__7B3ADE64_vcruntime_typeinfo@h DB 01H
+__4638863E_typeinfo DB 01H
 __E28F974E_memory DB 01H
 __B6041EFB_tuple DB 01H
 __04937CFC_xpolymorphic_allocator@h DB 01H
@@ -40,8 +40,8 @@ __784AF7A2_xstring DB 01H
 __9A4C86E5_stdexcept DB 01H
 __7242C389_ctype@h DB 01H
 __965C11D2_string DB 01H
+__24DC9795_any DB 01H
 __190EFBB8_xtree DB 01H
-__F9CEFE6C_algorithm DB 01H
 __102707BA_cmath DB 01H
 __238A5427_xcall_once@h DB 01H
 __3514C702_atomic DB 01H
@@ -3423,7 +3423,7 @@ _TEXT	SEGMENT
 this$ = 224
 ??1ClientHandler@Client@Domain@@UEAA@XZ PROC		; Domain::Client::ClientHandler::~ClientHandler, COMDAT
 
-; 19   :     ClientHandler::~ClientHandler() noexcept = default;
+; 17   :     ClientHandler::~ClientHandler() noexcept = default;
 
 $LN3:
 	mov	QWORD PTR [rsp+8], rcx
@@ -3462,7 +3462,7 @@ __$ReturnUdt$ = 480
 user$ = 488
 ?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z PROC ; Domain::Client::ClientHandler::UseClientManagement, COMDAT
 
-; 26   :     {
+; 24   :     {
 
 $LN8:
 	mov	QWORD PTR [rsp+16], rdx
@@ -3483,12 +3483,12 @@ $LN8:
 	lea	rcx, OFFSET FLAT:__FC8833F0_ClientHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 
-; 27   :         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+; 25   :         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
 
 	call	?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ ; TechnicalServices::Persistence::PersistenceHandler::instance
 	mov	QWORD PTR persistentData$[rbp], rax
 
-; 28   :         UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
+; 26   :         UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
 
 	mov	rax, QWORD PTR persistentData$[rbp]
 	mov	rax, QWORD PTR [rax]
@@ -3501,7 +3501,7 @@ $LN8:
 	call	QWORD PTR tv73[rbp]
 	npad	1
 
-; 29   :         if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::Client::ClientManagement>(user);
+; 27   :         if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::Client::ClientManagement>(user);
 
 	xor	edx, edx
 	lea	rcx, QWORD PTR credentialsFromDB$[rbp+80]
@@ -3531,8 +3531,8 @@ $LN8:
 	jmp	SHORT $LN1@UseClientM
 $LN2@UseClientM:
 
-; 30   : 
-; 31   :         return nullptr;
+; 28   : 
+; 29   :         return nullptr;
 
 	xor	edx, edx
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
@@ -3545,7 +3545,7 @@ $LN2@UseClientM:
 	mov	rax, QWORD PTR __$ReturnUdt$[rbp]
 $LN1@UseClientM:
 
-; 32   :     }
+; 30   :     }
 
 	mov	rdi, rax
 	lea	rcx, QWORD PTR [rbp-32]

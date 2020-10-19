@@ -8260,12 +8260,12 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 40					; 00000028H
+	mov	ecx, 48					; 00000030H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
 	je	SHORT $LN3@make_uniqu
-	mov	edx, 40					; 00000028H
+	mov	edx, 48					; 00000030H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	?__autoclassinit2@SimpleUI@UI@@QEAAX_K@Z
 	mov	rcx, QWORD PTR $T2[rbp]
@@ -8307,7 +8307,7 @@ __$ReturnUdt$ = 320
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 40					; 00000028H
+	mov	edx, 48					; 00000030H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -8331,7 +8331,7 @@ __$ReturnUdt$ = 320
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 40					; 00000028H
+	mov	edx, 48					; 00000030H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -8522,7 +8522,7 @@ $LN16:
 
 	mov	rax, QWORD PTR persistantData$[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+32]
+	mov	rax, QWORD PTR [rax+40]
 	mov	QWORD PTR tv77[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0N@GNLLJOEH@Component?4UI@
 	lea	rcx, QWORD PTR $T4[rbp]

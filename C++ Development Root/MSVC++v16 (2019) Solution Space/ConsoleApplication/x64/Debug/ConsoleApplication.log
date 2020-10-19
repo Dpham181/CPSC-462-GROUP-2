@@ -1,5 +1,17 @@
-﻿  ClientHandler.cpp
-  Session.cpp
+﻿  Session.cpp
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(51,1): warning C4005: 'STUBC': macro redefinition
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(23): message : see previous definition of 'STUBC'
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(54,102): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(54,54): warning C4100: 'productcontrol': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(61,104): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(68,105): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(68,57): warning C4100: 'productcontrol': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(74,102): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(74,54): warning C4100: 'productcontrol': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(262,109): warning C4100: 'Price': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(262,57): warning C4100: 'ProductId': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(266,57): warning C4100: 'ProductId': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\Domain\Session\Session.cpp(269,121): warning C4100: 'Price': unreferenced formal parameter
   SimpleUI.cpp
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(132,48): warning C4456: declaration of 'commands' hides previous local declaration
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(92,25): message : see declaration of 'commands'
@@ -7,10 +19,16 @@ C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCo
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(93,25): message : see declaration of 'selectedCommand'
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(134,50): warning C4456: declaration of 'menuSelection' hides previous local declaration
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(94,25): message : see declaration of 'menuSelection'
-  UserInterfaceHandler.cpp
-  Compiling...
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(248,48): warning C4456: declaration of 'commands' hides previous local declaration
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(92,25): message : see declaration of 'commands'
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(249,52): warning C4456: declaration of 'selectedCommand' hides previous local declaration
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(93,25): message : see declaration of 'selectedCommand'
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(250,50): warning C4456: declaration of 'menuSelection' hides previous local declaration
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(94,25): message : see declaration of 'menuSelection'
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(132): warning C6246: Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '92' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 92
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(133): warning C6246: Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '93' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 93
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(134): warning C6246: Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '94' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 94
-  Generating Code...
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(248): warning C6246: Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '92' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 92
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(249): warning C6246: Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '93' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 93
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp(250): warning C6246: Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '94' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.: Lines: 94
   ConsoleApplication.vcxproj -> C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe

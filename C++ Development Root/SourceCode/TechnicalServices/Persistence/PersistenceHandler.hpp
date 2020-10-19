@@ -31,7 +31,12 @@ namespace TechnicalServices::Persistence
     int         income;  
   };
 
-
+  struct Product
+  {
+      int         id;
+      std::string Name;
+      int         Price;
+  };
 
   // Persistence Package within the Technical Services Layer Abstract class
   // Singleton Class - only one instance of the DB exists for the entire system
@@ -59,6 +64,7 @@ namespace TechnicalServices::Persistence
      
        virtual std::vector<Client> ShowAllClients() = 0;
        virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
+       virtual std::vector<Product> CRMInventory() =0 ;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

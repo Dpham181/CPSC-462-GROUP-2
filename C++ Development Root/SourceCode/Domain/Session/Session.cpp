@@ -1,6 +1,6 @@
 #include "Domain/Session/Session.hpp"
 #include "Domain/Client/Client.hpp"
-
+#include "Domain/Product/Product.hpp"
 #include <string>
 #include <any>
 #include <iomanip>     // setw()
@@ -14,13 +14,13 @@ namespace  // anonymous (private) working area
   // 1)  First define all system events (commands, actions, requests, etc.)
   #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
-  // Client management control with UI  
-  #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+  
+ 
+  
+// Client management  
+ //---------------------------------------------------------------------------------
+ #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
-
-
-
-
 
  STUB(ClientManagement)
  STUBC(View)
@@ -41,9 +41,44 @@ namespace  // anonymous (private) working area
 
       return  ClientProfilebyId;
   }
+// product management 
+ //---------------------------------------------------------------------------------
+   //{ "Add New Product", AddProduct },
+       //{"View Inventory", ViewProducts},
+       //{ "Modify Product", ModifyProduct },
+       //{ "Del product", Delproduct }//,
+ #define STUBC(functionName)  std::any functionName( Domain::Product::ProductDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+                              { return {}; }  
  STUB(ProductManagement)
+ 
+ std::any AddProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs) 
+ { 
+     //Todo
+     return {}; 
+ 
+ }
+     
+ std::any ViewProducts(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
+ {
+     productcontrol.view(persistentData.CRMInventory());
 
-   
+     return {};
+
+ }
+ std::any ModifyProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
+ {
+     //Todo
+     return {};
+
+ }
+ std::any Delproduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
+ {  
+     //Todo
+
+     return {};
+
+ }
+
 
 
   
@@ -51,7 +86,7 @@ namespace  // anonymous (private) working area
 }    // anonymous (private) working area
 
 
-
+// Client domain implementation 
 namespace Domain::Client
 
 {
@@ -168,7 +203,90 @@ namespace Domain::Client
 
 
 }
+// Product domain implementation 
+namespace Domain::Product
 
+{
+
+    void line()
+    {
+        for (int i = 1; i < 41; i++)
+            std::cout << "--";
+        std::cout << "\n";
+
+    }
+
+    ProductDomain::ProductDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
+    {
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
+    }
+
+
+    std::vector<std::string> ProductDomain::getCommandsProduct()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
+
+    std::any ProductDomain::executeCommandProduct(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+
+        auto results = it->second(*this, args);
+
+        return results;
+    }
+
+
+    void ProductDomain::view(const std::vector<Product>& productsDB) {
+
+        line();
+        std::cout << std::setw(49) << "Inventory of CRM\n";
+        line();
+        std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(15) << "Price\n";
+        line();
+
+        for (const auto& p : productsDB)
+           std::cout << std::setw(15) << std::to_string(p.id) << std::setw(15) << p.Name << std::setw(15) << std::to_string(p.Price)<< std::endl;
+        line();
+    }
+   
+    std::vector<Product>   ProductDomain::add(const int ProductId, const std::string ProductName, const int Price) {
+        //Todo
+        return {};
+    }
+    std::vector<Product>   ProductDomain::del(const int ProductId) {
+        //Todo
+        return {};
+    }
+    std::vector<Product>   ProductDomain::modify(const Product CurrentProduct, const std::string ProductName, const int Price) {
+        //Todo
+        return {};
+    }
+    ProductManagement::ProductManagement(const UserCredentials& user) : ProductDomain("Product Management", user)
+    {
+
+        _commandDispatch = {
+
+                         { "Add New Product", AddProduct },
+                         {"View Inventory", ViewProducts},
+                         { "Modify Product", ModifyProduct },
+                         { "Del product", Delproduct }//,
+
+        };
+    };
+
+
+}
+// session domain implementation 
 namespace Domain::Session
 {
   SessionBase::SessionBase( const std::string & description, const UserCredentials & credentials ) : _credentials( credentials ), _name( description )
@@ -283,6 +401,6 @@ namespace Domain::Session
 
    // _commandDispatch = { {"Manage Subscription", manageSubscription}//,
                          //{"Help",       help} 
-    };
+    //};
   }
 }    // namespace Domain::Session

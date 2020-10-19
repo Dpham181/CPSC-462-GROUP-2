@@ -107,7 +107,16 @@ namespace TechnicalServices::Persistence
        
        };
    }
+   std::vector<Product> SimpleDB::CRMInventory()
+   {
 
+       return { 
+                {1,"House 1",400000},
+                {2,"House 2",500000},
+
+
+       };
+   }
   UserCredentials SimpleDB::findCredentialsByName( const std::string & name )
   {
     static std::vector<UserCredentials> storedUsers =
