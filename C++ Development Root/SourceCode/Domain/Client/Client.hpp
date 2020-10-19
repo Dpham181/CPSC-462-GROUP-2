@@ -26,7 +26,7 @@ namespace Domain::Client
        void                                ViewClients(const std::vector<Client>& ClientsDB) override;
        Clientprofile                       SearchClientId(const int ClientId) override;
        std::vector<Client>                 addClient(const Client &Client  ) override;
-       Clientprofile                       UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) override ;
+       std::vector<Clientprofile>          UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) override ;
 
       ~ClientDomain() noexcept override = 0 ;
   protected:

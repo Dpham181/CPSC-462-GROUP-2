@@ -220,6 +220,7 @@ PUBLIC	??4Client@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z ; Technic
 PUBLIC	??_GClient@Persistence@TechnicalServices@@QEAAPEAXI@Z ; TechnicalServices::Persistence::Client::`scalar deleting destructor'
 PUBLIC	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ ; TechnicalServices::Persistence::Clientprofile::~Clientprofile
 PUBLIC	??0Clientprofile@Persistence@TechnicalServices@@QEAA@AEBU012@@Z ; TechnicalServices::Persistence::Clientprofile::Clientprofile
+PUBLIC	??4Clientprofile@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z ; TechnicalServices::Persistence::Clientprofile::operator=
 PUBLIC	??_GClientprofile@Persistence@TechnicalServices@@QEAAPEAXI@Z ; TechnicalServices::Persistence::Clientprofile::`scalar deleting destructor'
 PUBLIC	??0locale@std@@QEAA@XZ				; std::locale::locale
 PUBLIC	??1locale@std@@QEAA@XZ				; std::locale::~locale
@@ -267,11 +268,23 @@ PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@Technical
 PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClient@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClient@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Client>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Client> >,1>::_Get_first
 PUBLIC	?__autoclassinit2@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2
 PUBLIC	?deallocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAXQEAUClientprofile@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Clientprofile>::deallocate
+PUBLIC	?allocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Clientprofile>::allocate
+PUBLIC	?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size
 PUBLIC	??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::~vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >
+PUBLIC	?_Copy_assign@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Copy_assign
+PUBLIC	??4?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@AEBV01@@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::operator=
+PUBLIC	?_Clear_and_reserve_geometric@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Clear_and_reserve_geometric
+PUBLIC	?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size
+PUBLIC	?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::capacity
 PUBLIC	?_Destroy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Destroy
+PUBLIC	?_Calculate_growth@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Calculate_growth
+PUBLIC	?_Buy_raw@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Buy_raw
 PUBLIC	?_Tidy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Tidy
+PUBLIC	?_Xlength@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@CAXXZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Xlength
 PUBLIC	?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
+PUBLIC	?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
 PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Clientprofile>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Clientprofile> >,1>::_Get_first
+PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Clientprofile>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Clientprofile> >,1>::_Get_first
 PUBLIC	?__autoclassinit2@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::__autoclassinit2
 PUBLIC	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 PUBLIC	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD$$QEAV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
@@ -314,9 +327,11 @@ PUBLIC	??$?5DU?$char_traits@D@std@@@std@@YAAEAV?$basic_istream@DU?$char_traits@D
 PUBLIC	??$ws@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@@Z ; std::ws<char,std::char_traits<char> >
 PUBLIC	??$any_cast@AEBV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z ; std::any_cast<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > const &>
 PUBLIC	??$toupper@D@std@@YADDAEBVlocale@0@@Z		; std::toupper<char>
+PUBLIC	??$any_cast@AEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z ; std::any_cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > const &>
 PUBLIC	??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z ; std::any_cast<TechnicalServices::Persistence::Clientprofile const &>
 PUBLIC	?allocate@?$allocator@U_Container_proxy@std@@@std@@QEAAPEAU_Container_proxy@2@_K@Z ; std::allocator<std::_Container_proxy>::allocate
 PUBLIC	??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ; std::_Delete_plain_internal<std::allocator<std::_Container_proxy> >
+PUBLIC	??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z ; std::addressof<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > const >
 PUBLIC	??$?0UClientprofile@Persistence@TechnicalServices@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><TechnicalServices::Persistence::Clientprofile>
 PUBLIC	??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ; std::exchange<std::_Container_proxy *,std::nullptr_t>
 PUBLIC	??$addressof@$$CBV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z ; std::addressof<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > const >
@@ -349,6 +364,8 @@ PUBLIC	??$move@AEAV?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z ; 
 PUBLIC	??$?0V?$allocator@D@std@@$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@$$QEAV?$allocator@D@1@@Z ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1><std::allocator<char> >
 PUBLIC	??$?0$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1><>
 PUBLIC	??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z ; std::_Unfancy<std::_Container_proxy>
+PUBLIC	??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z ; std::_Pocca<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+PUBLIC	??$assign@PEAUClientprofile@Persistence@TechnicalServices@@$0A@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::assign<TechnicalServices::Persistence::Clientprofile *,0>
 PUBLIC	??$_Pocca@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEBV10@@Z ; std::_Pocca<std::allocator<TechnicalServices::Persistence::Client> >
 PUBLIC	??$assign@PEAUClient@Persistence@TechnicalServices@@$0A@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClient@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::assign<TechnicalServices::Persistence::Client *,0>
 PUBLIC	??$_Pocma@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@0@Z ; std::_Pocma<std::allocator<TechnicalServices::Persistence::Client> >
@@ -399,6 +416,7 @@ PUBLIC	??$addressof@V?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delet
 PUBLIC	??$forward@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA$$QEAU?$default_delete@VClientHandler@Client@Domain@@@0@AEAU10@@Z ; std::forward<std::default_delete<Domain::Client::ClientHandler> >
 PUBLIC	??$?8VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ; std::operator==<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 PUBLIC	??$any_cast@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z ; std::any_cast<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > >
+PUBLIC	??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z ; std::any_cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
 PUBLIC	??$any_cast@UClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAVany@0@@Z ; std::any_cast<TechnicalServices::Persistence::Clientprofile>
 PUBLIC	??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ; std::_Deallocate_plain<std::allocator<std::_Container_proxy> >
 PUBLIC	??$_Get_unwrapped@AEAPEAD@std@@YA@AEAPEAD@Z	; std::_Get_unwrapped<char * &>
@@ -407,6 +425,9 @@ PUBLIC	??$distance@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@s
 PUBLIC	??1?$_Tidy_guard@V?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@std@@QEAA@XZ ; std::_Tidy_guard<std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >::~_Tidy_guard<std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >
 PUBLIC	??$_Ucopy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@PEBV21@0PEAV21@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Ucopy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *>
 PUBLIC	??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z ; std::forward<std::allocator<char> >
+PUBLIC	??$_Adl_verify_range@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::_Adl_verify_range<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>
+PUBLIC	??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * &>
+PUBLIC	??$_Assign_range@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Assign_range<TechnicalServices::Persistence::Clientprofile *>
 PUBLIC	??$_Adl_verify_range@PEAUClient@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClient@Persistence@TechnicalServices@@0@Z ; std::_Adl_verify_range<TechnicalServices::Persistence::Client *,TechnicalServices::Persistence::Client *>
 PUBLIC	??$_Get_unwrapped@AEAPEAUClient@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClient@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Client * &>
 PUBLIC	??$_Assign_range@PEAUClient@Persistence@TechnicalServices@@@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClient@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::_Assign_range<TechnicalServices::Persistence::Client *>
@@ -434,10 +455,17 @@ PUBLIC	??$?0AEBV?$allocator@D@std@@$$V@?$_Compressed_pair@V?$allocator@D@std@@V?
 PUBLIC	??$?0AEAPEAV_Facet_base@std@@@?$_Compressed_pair@U?$default_delete@V_Facet_base@std@@@std@@PEAV_Facet_base@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@AEAPEAV_Facet_base@1@@Z ; std::_Compressed_pair<std::default_delete<std::_Facet_base>,std::_Facet_base *,1>::_Compressed_pair<std::default_delete<std::_Facet_base>,std::_Facet_base *,1><std::_Facet_base * &>
 PUBLIC	??$_Cast@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@1@XZ ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > >
 PUBLIC	??$_Cast@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@1@XZ ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > >
+PUBLIC	??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
+PUBLIC	??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
 PUBLIC	??$_Cast@UClientprofile@Persistence@TechnicalServices@@@any@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ ; std::any::_Cast<TechnicalServices::Persistence::Clientprofile>
 PUBLIC	??$_Cast@UClientprofile@Persistence@TechnicalServices@@@any@std@@QEBAPEBUClientprofile@Persistence@TechnicalServices@@XZ ; std::any::_Cast<TechnicalServices::Persistence::Clientprofile>
 PUBLIC	?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z ; std::_Default_allocator_traits<std::allocator<std::_Container_proxy> >::deallocate
 PUBLIC	??$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ; std::_Uninitialized_copy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+PUBLIC	??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z ; std::_Verify_range<TechnicalServices::Persistence::Clientprofile>
+PUBLIC	??$distance@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YA_JPEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::distance<TechnicalServices::Persistence::Clientprofile *>
+PUBLIC	??$next@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@_J@Z ; std::next<TechnicalServices::Persistence::Clientprofile *>
+PUBLIC	??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z ; std::_Copy_unchecked<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>
+PUBLIC	??$_Ucopy@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClientprofile@Persistence@TechnicalServices@@PEAU234@00@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Ucopy<TechnicalServices::Persistence::Clientprofile *>
 PUBLIC	??$_Verify_range@UClient@Persistence@TechnicalServices@@@std@@YAXQEBUClient@Persistence@TechnicalServices@@0@Z ; std::_Verify_range<TechnicalServices::Persistence::Client>
 PUBLIC	??$distance@PEAUClient@Persistence@TechnicalServices@@@std@@YA_JPEAUClient@Persistence@TechnicalServices@@0@Z ; std::distance<TechnicalServices::Persistence::Client *>
 PUBLIC	??$next@PEAUClient@Persistence@TechnicalServices@@@std@@YAPEAUClient@Persistence@TechnicalServices@@PEAU123@_J@Z ; std::next<TechnicalServices::Persistence::Client *>
@@ -448,22 +476,33 @@ PUBLIC	??1?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_trai
 PUBLIC	?_Release@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Release
 PUBLIC	?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAX_K@Z ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::__autoclassinit2
 PUBLIC	??$_Emplace_back@$$V@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXXZ ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Emplace_back<>
+PUBLIC	??$_Get_size_of_n@$0DI@@std@@YA_K_K@Z		; std::_Get_size_of_n<56>
 PUBLIC	??$_Get_size_of_n@$0GA@@std@@YA_K_K@Z		; std::_Get_size_of_n<96>
 PUBLIC	??$forward@AEBV?$allocator@D@std@@@std@@YAAEBV?$allocator@D@0@AEBV10@@Z ; std::forward<std::allocator<char> const &>
 PUBLIC	??$forward@AEAPEAV_Facet_base@std@@@std@@YAAEAPEAV_Facet_base@0@AEAPEAV10@@Z ; std::forward<std::_Facet_base * &>
 PUBLIC	??$_Get_unwrapped@AEBQEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YA@AEBQEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::_Get_unwrapped<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const * const &>
 PUBLIC	??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ; std::_Uninitialized_backout_al<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Emplace_back<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
+PUBLIC	??$advance@PEAUClientprofile@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClientprofile@Persistence@TechnicalServices@@_J@Z ; std::advance<TechnicalServices::Persistence::Clientprofile *,__int64>
+PUBLIC	??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z ; std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >
 PUBLIC	??$advance@PEAUClient@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClient@Persistence@TechnicalServices@@_J@Z ; std::advance<TechnicalServices::Persistence::Client *,__int64>
 PUBLIC	??$_Uninitialized_copy@PEAUClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClient@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@@Z ; std::_Uninitialized_copy<TechnicalServices::Persistence::Client *,std::allocator<TechnicalServices::Persistence::Client> >
 PUBLIC	??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$$V@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::construct<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 PUBLIC	??$forward@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@AEBV10@@Z ; std::forward<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
 PUBLIC	??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV12@@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@AEBV31@@Z ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::construct<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> > const &>
+PUBLIC	??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * const &>
+PUBLIC	??0?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClientprofile@Persistence@TechnicalServices@@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+PUBLIC	??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+PUBLIC	?_Release@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Release
+PUBLIC	?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::__autoclassinit2
+PUBLIC	??$_Emplace_back@AEAUClientprofile@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClientprofile@Persistence@TechnicalServices@@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Emplace_back<TechnicalServices::Persistence::Clientprofile &>
 PUBLIC	??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Client * const &>
 PUBLIC	??0?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClient@Persistence@TechnicalServices@@AEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
 PUBLIC	??1?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >
 PUBLIC	?_Release@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClient@Persistence@TechnicalServices@@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Release
 PUBLIC	?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::__autoclassinit2
 PUBLIC	??$_Emplace_back@AEAUClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClient@Persistence@TechnicalServices@@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Client> >::_Emplace_back<TechnicalServices::Persistence::Client &>
+PUBLIC	??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z ; std::forward<TechnicalServices::Persistence::Clientprofile &>
+PUBLIC	??$construct@UClientprofile@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@QEAUClientprofile@Persistence@TechnicalServices@@AEAU345@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Clientprofile> >::construct<TechnicalServices::Persistence::Clientprofile,TechnicalServices::Persistence::Clientprofile &>
 PUBLIC	??$forward@AEAUClient@Persistence@TechnicalServices@@@std@@YAAEAUClient@Persistence@TechnicalServices@@AEAU123@@Z ; std::forward<TechnicalServices::Persistence::Client &>
 PUBLIC	??$construct@UClient@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@1@QEAUClient@Persistence@TechnicalServices@@AEAU345@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Client> >::construct<TechnicalServices::Persistence::Client,TechnicalServices::Persistence::Client &>
 PUBLIC	__JustMyCode_Default
@@ -530,8 +569,12 @@ PUBLIC	??_C@_09FLPCCMNH@?$DP?5?$CIY?1N?1Q?$CJ@		; `string'
 PUBLIC	??_C@_0DN@NLFCEGHK@Do?5you?5want?5to?5continue?5Update?5@ ; `string'
 PUBLIC	??_C@_0N@OCAGJCJO@?5Enter?5DOB?3?5@		; `string'
 PUBLIC	??_C@_0BC@GJHCPECC@?5Enter?5Income?3?5?5?5@	; `string'
-PUBLIC	??_C@_0BH@OIMAJENJ@Successfully?5Updated?5?$CC@	; `string'
-PUBLIC	??_C@_0N@CNPBMAEN@Link?5Product@		; `string'
+PUBLIC	??_C@_0BG@MCELGHIL@Successfully?5Updated?6@	; `string'
+PUBLIC	??_C@_0BE@KBHAFDNP@View?5Client?5Profile@	; `string'
+PUBLIC	??_C@_0BF@FILFDGDM@Reuslt?5of?5Searching?6@	; `string'
+PUBLIC	??_C@_07JPDLJNBP@Income?6@			; `string'
+PUBLIC	??_C@_03HDEEAIPD@DOB@				; `string'
+PUBLIC	??_C@_02HOGEDOAB@Id@				; `string'
 PUBLIC	??_C@_0BA@NFJLLIND@Another?5command@		; `string'
 PUBLIC	??_C@_0BP@HIAJAIHD@Ending?5session?5and?5terminating@ ; `string'
 PUBLIC	??_C@_0N@LPFKKEBD@?3AM?3am?3PM?3pm@		; `string'
@@ -551,6 +594,7 @@ PUBLIC	??_C@_1CG@LJCPDKEJ@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAr?$AAi?$
 PUBLIC	??_C@_1DG@FJIKMGFD@?$AA?$CC?$AAt?$AAr?$AAa?$AAn?$AAs?$AAp?$AAo?$AAs?$AAe?$AAd?$AA?5?$AAp?$AAo?$AAi@ ; `string'
 PUBLIC	??_C@_1EO@GFNCMDLA@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAA?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA_@ ; `string'
 PUBLIC	??_R0?AV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@8 ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > `RTTI Type Descriptor'
+PUBLIC	??_R0?AV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@8 ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > `RTTI Type Descriptor'
 PUBLIC	??_R0?AUClientprofile@Persistence@TechnicalServices@@@8 ; TechnicalServices::Persistence::Clientprofile `RTTI Type Descriptor'
 PUBLIC	??_R4exception@std@@6B@				; std::exception::`RTTI Complete Object Locator'
 PUBLIC	??_R3exception@std@@8				; std::exception::`RTTI Class Hierarchy Descriptor'
@@ -638,7 +682,6 @@ EXTRN	__imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_stre
 EXTRN	__imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ:PROC
 EXTRN	__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z:PROC
 EXTRN	__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ:PROC
-EXTRN	__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z:PROC
 EXTRN	__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z:PROC
 EXTRN	__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_K@Z:PROC
 EXTRN	__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ:PROC
@@ -1599,6 +1642,12 @@ $pdata$??0Clientprofile@Persistence@TechnicalServices@@QEAA@AEBU012@@Z DD imager
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??4Clientprofile@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z DD imagerel $LN3
+	DD	imagerel $LN3+132
+	DD	imagerel $unwind$??4Clientprofile@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??_GClientprofile@Persistence@TechnicalServices@@QEAAPEAXI@Z DD imagerel $LN4
 	DD	imagerel $LN4+105
 	DD	imagerel $unwind$??_GClientprofile@Persistence@TechnicalServices@@QEAAPEAXI@Z
@@ -1701,8 +1750,8 @@ $pdata$?dtor$3@?0???0SimpleUI@UI@@QEAA@XZ@4HA DD imagerel ?dtor$3@?0???0SimpleUI
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?launch@SimpleUI@UI@@UEAAXXZ DD imagerel $LN88
-	DD	imagerel $LN88+5285
+$pdata$?launch@SimpleUI@UI@@UEAAXXZ DD imagerel $LN93
+	DD	imagerel $LN93+6309
 	DD	imagerel $unwind$?launch@SimpleUI@UI@@UEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -1755,6 +1804,12 @@ $pdata$?dtor$8@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$8@?0??launc
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DD	imagerel ?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
@@ -1764,6 +1819,12 @@ pdata	SEGMENT
 $pdata$?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DD	imagerel ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1779,21 +1840,21 @@ $pdata$?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$15@?0??lau
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DD	imagerel ?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1806,12 +1867,6 @@ pdata	SEGMENT
 $pdata$?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DD	imagerel ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1839,6 +1894,12 @@ $pdata$?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$28@?0??lau
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DD	imagerel ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
@@ -1848,12 +1909,6 @@ pdata	SEGMENT
 $pdata$?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DD	imagerel ?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1875,12 +1930,6 @@ $pdata$?dtor$36@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$36@?0??lau
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DD	imagerel ?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
@@ -1893,9 +1942,33 @@ $pdata$?dtor$39@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$39@?0??lau
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DD	imagerel ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2109,9 +2182,51 @@ $pdata$?deallocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@st
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$?allocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@_K@Z DD imagerel $LN3
+	DD	imagerel $LN3+89
+	DD	imagerel $unwind$?allocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z DD imagerel $LN3
+	DD	imagerel $LN3+74
+	DD	imagerel $unwind$?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD imagerel $LN3
 	DD	imagerel $LN3+202
 	DD	imagerel $unwind$??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Copy_assign@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z DD imagerel $LN3
+	DD	imagerel $LN3+170
+	DD	imagerel $unwind$?_Copy_assign@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??4?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@AEBV01@@Z DD imagerel $LN4
+	DD	imagerel $LN4+143
+	DD	imagerel $unwind$??4?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@AEBV01@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Clear_and_reserve_geometric@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z DD imagerel $LN5
+	DD	imagerel $LN5+353
+	DD	imagerel $unwind$?_Clear_and_reserve_geometric@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD imagerel $LN3
+	DD	imagerel $LN3+125
+	DD	imagerel $unwind$?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD imagerel $LN3
+	DD	imagerel $LN3+104
+	DD	imagerel $unwind$?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2121,9 +2236,27 @@ $pdata$?_Destroy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$alloc
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$?_Calculate_growth@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z DD imagerel $LN5
+	DD	imagerel $LN5+200
+	DD	imagerel $unwind$?_Calculate_growth@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Buy_raw@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z DD imagerel $LN3
+	DD	imagerel $LN3+217
+	DD	imagerel $unwind$?_Buy_raw@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$?_Tidy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DD imagerel $LN4
 	DD	imagerel $LN4+286
 	DD	imagerel $unwind$?_Tidy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Xlength@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@CAXXZ DD imagerel $LN3
+	DD	imagerel $LN3+64
+	DD	imagerel $unwind$?_Xlength@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@CAXXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2133,9 +2266,21 @@ $pdata$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocat
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
+	DD	imagerel $LN3+80
+	DD	imagerel $unwind$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
 	DD	imagerel $LN3+71
 	DD	imagerel $unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DD imagerel $LN3
+	DD	imagerel $LN3+71
+	DD	imagerel $unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2445,6 +2590,12 @@ $pdata$??$toupper@D@std@@YADDAEBVlocale@0@@Z DD imagerel $LN3
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??$any_cast@AEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z DD imagerel $LN4
+	DD	imagerel $LN4+96
+	DD	imagerel $unwind$??$any_cast@AEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z DD imagerel $LN4
 	DD	imagerel $LN4+96
 	DD	imagerel $unwind$??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z
@@ -2460,6 +2611,12 @@ pdata	SEGMENT
 $pdata$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z DD imagerel $LN3
 	DD	imagerel $LN3+89
 	DD	imagerel $unwind$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z DD imagerel $LN3
+	DD	imagerel $LN3+71
+	DD	imagerel $unwind$??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2682,6 +2839,18 @@ pdata	SEGMENT
 $pdata$??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z DD imagerel $LN3
 	DD	imagerel $LN3+71
 	DD	imagerel $unwind$??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z DD imagerel $LN3
+	DD	imagerel $LN3+70
+	DD	imagerel $unwind$??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$assign@PEAUClientprofile@Persistence@TechnicalServices@@$0A@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z DD imagerel $LN3
+	DD	imagerel $LN3+210
+	DD	imagerel $unwind$??$assign@PEAUClientprofile@Persistence@TechnicalServices@@$0A@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -3021,6 +3190,12 @@ $pdata$??$any_cast@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z DD imagerel $LN4
+	DD	imagerel $LN4+91
+	DD	imagerel $unwind$??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$any_cast@UClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAVany@0@@Z DD imagerel $LN4
 	DD	imagerel $LN4+91
 	DD	imagerel $unwind$??$any_cast@UClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAVany@0@@Z
@@ -3066,6 +3241,24 @@ pdata	SEGMENT
 $pdata$??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z DD imagerel $LN3
 	DD	imagerel $LN3+71
 	DD	imagerel $unwind$??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Adl_verify_range@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClientprofile@Persistence@TechnicalServices@@0@Z DD imagerel $LN3
+	DD	imagerel $LN3+94
+	DD	imagerel $unwind$??$_Adl_verify_range@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClientprofile@Persistence@TechnicalServices@@0@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z DD imagerel $LN3
+	DD	imagerel $LN3+74
+	DD	imagerel $unwind$??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Assign_range@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z DD imagerel $LN6
+	DD	imagerel $LN6+476
+	DD	imagerel $unwind$??$_Assign_range@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -3237,6 +3430,18 @@ $pdata$??$_Cast@V?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UC
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ DD imagerel $LN3
+	DD	imagerel $LN3+77
+	DD	imagerel $unwind$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ DD imagerel $LN5
+	DD	imagerel $LN5+121
+	DD	imagerel $unwind$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$_Cast@UClientprofile@Persistence@TechnicalServices@@@any@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ DD imagerel $LN3
 	DD	imagerel $LN3+77
 	DD	imagerel $unwind$??$_Cast@UClientprofile@Persistence@TechnicalServices@@@any@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ
@@ -3264,6 +3469,36 @@ pdata	SEGMENT
 $pdata$?dtor$0@?0???$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z@4HA DD imagerel ?dtor$0@?0???$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z@4HA
 	DD	imagerel ?dtor$0@?0???$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z@4HA+36
 	DD	imagerel $unwind$?dtor$0@?0???$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z DD imagerel $LN12
+	DD	imagerel $LN12+204
+	DD	imagerel $unwind$??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$distance@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YA_JPEAUClientprofile@Persistence@TechnicalServices@@0@Z DD imagerel $LN3
+	DD	imagerel $LN3+99
+	DD	imagerel $unwind$??$distance@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YA_JPEAUClientprofile@Persistence@TechnicalServices@@0@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$next@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@_J@Z DD imagerel $LN3
+	DD	imagerel $LN3+95
+	DD	imagerel $unwind$??$next@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@_J@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z DD imagerel $LN6
+	DD	imagerel $LN6+156
+	DD	imagerel $unwind$??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Ucopy@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClientprofile@Persistence@TechnicalServices@@PEAU234@00@Z DD imagerel $LN3
+	DD	imagerel $LN3+120
+	DD	imagerel $unwind$??$_Ucopy@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClientprofile@Persistence@TechnicalServices@@PEAU234@00@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -3327,6 +3562,12 @@ $pdata$??$_Emplace_back@$$V@?$_Uninitialized_backout_al@V?$allocator@V?$basic_st
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??$_Get_size_of_n@$0DI@@std@@YA_K_K@Z DD imagerel $LN4
+	DD	imagerel $LN4+114
+	DD	imagerel $unwind$??$_Get_size_of_n@$0DI@@std@@YA_K_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$_Get_size_of_n@$0GA@@std@@YA_K_K@Z DD imagerel $LN4
 	DD	imagerel $LN4+114
 	DD	imagerel $unwind$??$_Get_size_of_n@$0GA@@std@@YA_K_K@Z
@@ -3354,6 +3595,24 @@ pdata	SEGMENT
 $pdata$??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z DD imagerel $LN3
 	DD	imagerel $LN3+181
 	DD	imagerel $unwind$??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$advance@PEAUClientprofile@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClientprofile@Persistence@TechnicalServices@@_J@Z DD imagerel $LN3
+	DD	imagerel $LN3+97
+	DD	imagerel $unwind$??$advance@PEAUClientprofile@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClientprofile@Persistence@TechnicalServices@@_J@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z DD imagerel $LN7
+	DD	imagerel $LN7+274
+	DD	imagerel $unwind$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA DD imagerel ?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA
+	DD	imagerel ?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA+36
+	DD	imagerel $unwind$?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -3393,6 +3652,42 @@ $pdata$??$construct@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z DD imagerel $LN3
+	DD	imagerel $LN3+74
+	DD	imagerel $unwind$??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??0?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClientprofile@Persistence@TechnicalServices@@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z DD imagerel $LN3
+	DD	imagerel $LN3+134
+	DD	imagerel $unwind$??0?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClientprofile@Persistence@TechnicalServices@@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD imagerel $LN3
+	DD	imagerel $LN3+102
+	DD	imagerel $unwind$??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?_Release@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ DD imagerel $LN3
+	DD	imagerel $LN3+96
+	DD	imagerel $unwind$?_Release@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z DD imagerel $LN3
+	DD	imagerel $LN3+73
+	DD	imagerel $unwind$?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Emplace_back@AEAUClientprofile@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClientprofile@Persistence@TechnicalServices@@@Z DD imagerel $LN3
+	DD	imagerel $LN3+181
+	DD	imagerel $unwind$??$_Emplace_back@AEAUClientprofile@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClientprofile@Persistence@TechnicalServices@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z DD imagerel $LN3
 	DD	imagerel $LN3+74
 	DD	imagerel $unwind$??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z
@@ -3426,6 +3721,18 @@ pdata	SEGMENT
 $pdata$??$_Emplace_back@AEAUClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClient@Persistence@TechnicalServices@@@Z DD imagerel $LN3
 	DD	imagerel $LN3+181
 	DD	imagerel $unwind$??$_Emplace_back@AEAUClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClient@Persistence@TechnicalServices@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z DD imagerel $LN3
+	DD	imagerel $LN3+71
+	DD	imagerel $unwind$??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$construct@UClientprofile@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@QEAUClientprofile@Persistence@TechnicalServices@@AEAU345@@Z DD imagerel $LN3
+	DD	imagerel $LN3+136
+	DD	imagerel $unwind$??$construct@UClientprofile@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@QEAUClientprofile@Persistence@TechnicalServices@@AEAU345@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -3689,6 +3996,14 @@ data$r	SEGMENT
 	DQ	0000000000000000H
 	DB	'.?AUClientprofile@Persistence@TechnicalServices@@', 00H
 data$r	ENDS
+;	COMDAT ??_R0?AV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@8
+data$r	SEGMENT
+??_R0?AV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@8 DQ FLAT:??_7type_info@@6B@ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AV?$vector@UClientprofile@Persistence@TechnicalService'
+	DB	's@@V?$allocator@UClientprofile@Persistence@TechnicalServices@'
+	DB	'@@std@@@std@@', 00H
+data$r	ENDS
 ;	COMDAT ??_R0?AV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@8
 data$r	SEGMENT
 ??_R0?AV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@8 DQ FLAT:??_7type_info@@6B@ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > `RTTI Type Descriptor'
@@ -3861,14 +4176,31 @@ CONST	ENDS
 CONST	SEGMENT
 ??_C@_0BA@NFJLLIND@Another?5command@ DB 'Another command', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@CNPBMAEN@Link?5Product@
+;	COMDAT ??_C@_02HOGEDOAB@Id@
 CONST	SEGMENT
-??_C@_0N@CNPBMAEN@Link?5Product@ DB 'Link Product', 00H	; `string'
+??_C@_02HOGEDOAB@Id@ DB 'Id', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@OIMAJENJ@Successfully?5Updated?5?$CC@
+;	COMDAT ??_C@_03HDEEAIPD@DOB@
 CONST	SEGMENT
-??_C@_0BH@OIMAJENJ@Successfully?5Updated?5?$CC@ DB 'Successfully Updated '
-	DB	'"', 00H					; `string'
+??_C@_03HDEEAIPD@DOB@ DB 'DOB', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_07JPDLJNBP@Income?6@
+CONST	SEGMENT
+??_C@_07JPDLJNBP@Income?6@ DB 'Income', 0aH, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BF@FILFDGDM@Reuslt?5of?5Searching?6@
+CONST	SEGMENT
+??_C@_0BF@FILFDGDM@Reuslt?5of?5Searching?6@ DB 'Reuslt of Searching', 0aH
+	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@KBHAFDNP@View?5Client?5Profile@
+CONST	SEGMENT
+??_C@_0BE@KBHAFDNP@View?5Client?5Profile@ DB 'View Client Profile', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BG@MCELGHIL@Successfully?5Updated?6@
+CONST	SEGMENT
+??_C@_0BG@MCELGHIL@Successfully?5Updated?6@ DB 'Successfully Updated', 0aH
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@GJHCPECC@?5Enter?5Income?3?5?5?5@
 CONST	SEGMENT
@@ -4259,6 +4591,33 @@ $unwind$??$forward@AEAUClient@Persistence@TechnicalServices@@@std@@YAAEAUClient@
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$??$construct@UClientprofile@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@QEAUClientprofile@Persistence@TechnicalServices@@AEAU345@@Z DD 025053401H
+	DD	0118231dH
+	DD	070110021H
+	DD	05010H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z DB 060H
+	DD	imagerel $ip2state$??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$??$_Emplace_back@AEAUClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClient@Persistence@TechnicalServices@@@Z DD 025052f01H
 	DD	01132318H
 	DD	0700c0021H
@@ -4308,6 +4667,61 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z DD 025052a01H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Emplace_back@AEAUClientprofile@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClientprofile@Persistence@TechnicalServices@@@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c0021H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z DD 05052d01H
+	DD	01130316H
+	DD	0700c0019H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Release@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ DD 025052a01H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DB 060H
+	DD	imagerel $ip2state$??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??0?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClientprofile@Persistence@TechnicalServices@@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z DD 025053401H
+	DD	0118231dH
+	DD	07011001dH
+	DD	05010H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z DD 025052a01H
 	DD	010e2313H
 	DD	07007001dH
 	DD	05006H
@@ -4413,6 +4827,71 @@ $unwind$??$advance@PEAUClient@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUC
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z DB 06H
+	DB	00H
+	DB	00H
+	DB	'q', 02H
+	DB	02H
+	DB	'n'
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$stateUnwindMap$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z DB 02H
+	DB	0eH
+	DD	imagerel ?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z DB 028H
+	DD	imagerel $stateUnwindMap$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z
+	DD	imagerel $ip2state$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z DD 025054a19H
+	DD	011d2322H
+	DD	07016002bH
+	DD	05015H
+	DD	imagerel __GSHandlerCheck_EH4
+	DD	imagerel $cppxdata$??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z
+	DD	014aH
+xdata	ENDS
+;	COMDAT CONST
+CONST	SEGMENT
+??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z$rtcName$0 DB 05fH ; std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >
+	DB	042H
+	DB	061H
+	DB	063H
+	DB	06bH
+	DB	06fH
+	DB	075H
+	DB	074H
+	DB	00H
+	ORG $+7
+??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z$rtcVarDesc DD 068H ; std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >
+	DD	018H
+	DQ	FLAT:??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z$rtcName$0
+	ORG $+48
+??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z$rtcFrameData DD 01H ; std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >
+	DD	00H
+	DQ	FLAT:??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z$rtcVarDesc
+CONST	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$advance@PEAUClientprofile@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClientprofile@Persistence@TechnicalServices@@_J@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z DD 025052f01H
 	DD	01132318H
 	DD	0700c0021H
@@ -4468,6 +4947,13 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$??$_Get_size_of_n@$0GA@@std@@YA_K_K@Z DD 025052a01H
+	DD	010e2313H
+	DD	070070025H
+	DD	05006H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Get_size_of_n@$0DI@@std@@YA_K_K@Z DD 025052a01H
 	DD	010e2313H
 	DD	070070025H
 	DD	05006H
@@ -4567,6 +5053,54 @@ $unwind$??$_Verify_range@UClient@Persistence@TechnicalServices@@@std@@YAXQEBUCli
 	DD	0500bH
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$_Verify_range@UClient@Persistence@TechnicalServices@@@std@@YAXQEBUClient@Persistence@TechnicalServices@@0@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Ucopy@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClientprofile@Persistence@TechnicalServices@@PEAU234@00@Z DD 025053901H
+	DD	011d2322H
+	DD	07016001dH
+	DD	05015H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z DD 025053401H
+	DD	0118231dH
+	DD	07011001dH
+	DD	05010H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$next@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@_J@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$distance@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YA_JPEAUClientprofile@Persistence@TechnicalServices@@0@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z DB 060H
+	DD	imagerel $ip2state$??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z DD 035052f19H
+	DD	01133318H
+	DD	0700c001fH
+	DD	0500bH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4672,6 +5206,46 @@ $unwind$??$_Cast@UClientprofile@Persistence@TechnicalServices@@@any@std@@QEAAPEA
 	DD	05006H
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$_Cast@UClientprofile@Persistence@TechnicalServices@@@any@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ DB 060H
+	DD	imagerel $ip2state$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ DD 025052a19H
+	DD	010e2313H
+	DD	070070021H
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ DB 060H
+	DD	imagerel $ip2state$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -5132,6 +5706,27 @@ $unwind$??$_Adl_verify_range@PEAUClient@Persistence@TechnicalServices@@PEAU123@@
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$??$_Assign_range@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z DD 025053901H
+	DD	011d2322H
+	DD	070160041H
+	DD	05015H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z DD 025052a01H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Adl_verify_range@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClientprofile@Persistence@TechnicalServices@@0@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $ip2state$??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -5250,6 +5845,26 @@ $unwind$??$any_cast@UClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUCl
 	DD	05006H
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$any_cast@UClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAVany@0@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z DB 060H
+	DD	imagerel $ip2state$??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -6354,6 +6969,33 @@ $unwind$??$_Pocca@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$??$assign@PEAUClientprofile@Persistence@TechnicalServices@@$0A@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z DD 025053401H
+	DD	0118231dH
+	DD	07011002fH
+	DD	05010H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z DB 060H
+	DD	imagerel $ip2state$??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z DD 025052f19H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $ip2state$??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -7015,6 +7657,26 @@ $unwind$??$?0UClientprofile@Persistence@TechnicalServices@@@?$allocator@U_Contai
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$ip2state$??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z DB 060H
+	DD	imagerel $ip2state$??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $ip2state$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -7043,6 +7705,13 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z DD 025052a01H
+	DD	010e2313H
+	DD	070070021H
+	DD	05006H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$any_cast@AEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z DD 025052a01H
 	DD	010e2313H
 	DD	070070021H
 	DD	05006H
@@ -7982,6 +8651,26 @@ $unwind$?__autoclassinit2@?$vector@UClientprofile@Persistence@TechnicalServices@
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DB 060H
+	DD	imagerel $ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $ip2state$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DB 02H
 	DB	00H
 	DB	00H
@@ -7999,6 +8688,26 @@ $unwind$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@T
 	DD	05006H
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DB 060H
+	DD	imagerel $ip2state$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -8022,6 +8731,13 @@ $unwind$?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$alloca
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?_Xlength@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@CAXXZ DD 025051e01H
+	DD	010a230fH
+	DD	07003001dH
+	DD	05002H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $ip2state$?_Tidy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXXZ DB 02H
 	DB	00H
 	DB	00H
@@ -8042,9 +8758,84 @@ $unwind$?_Tidy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocat
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?_Buy_raw@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c0031H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Calculate_growth@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c0025H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?_Destroy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z DD 025053401H
 	DD	0118231dH
 	DD	07011001dH
+	DD	05010H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 060H
+	DD	imagerel $ip2state$?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD 025052a19H
+	DD	010e2313H
+	DD	070070021H
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DB 060H
+	DD	imagerel $ip2state$?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ DD 025052a19H
+	DD	010e2313H
+	DD	070070025H
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Clear_and_reserve_geometric@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c0033H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??4?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@AEBV01@@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c0021H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?_Copy_assign@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z DD 025053401H
+	DD	0118231dH
+	DD	070110023H
 	DD	05010H
 xdata	ENDS
 ;	COMDAT xdata
@@ -8083,6 +8874,33 @@ CONST	SEGMENT
 	DD	00H
 	DQ	FLAT:??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ$rtcVarDesc
 CONST	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z DB 060H
+	DD	imagerel $ip2state$?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z DD 025052a19H
+	DD	010e2313H
+	DD	07007001dH
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?allocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@_K@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?deallocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAXQEAUClientprofile@Persistence@TechnicalServices@@_K@Z DD 025053401H
@@ -8619,7 +9437,31 @@ $unwind$??1SimpleUI@UI@@UEAA@XZ DD 025052a19H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -8632,12 +9474,6 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -8661,12 +9497,6 @@ $unwind$?dtor$33@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $unwind$?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
@@ -8674,6 +9504,12 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -8703,12 +9539,6 @@ $unwind$?dtor$24@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $unwind$?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
@@ -8721,19 +9551,19 @@ $unwind$?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -8751,6 +9581,12 @@ $unwind$?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
@@ -8758,6 +9594,12 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -8811,7 +9653,7 @@ $unwind$?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 086H
+$ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 096H
 	DB	00H
 	DB	00H
 	DB	'a', 02H
@@ -8830,113 +9672,129 @@ $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 086H
 	DB	010H
 	DB	'>'
 	DB	012H
-	DB	'T'
+	DB	'<'
 	DB	014H
-	DB	08cH
-	DB	016H
 	DB	'i', 04H
-	DB	018H
-	DB	01aH
-	DB	01aH
-	DB	081H, 08H
-	DB	018H
-	DB	01aH
 	DB	016H
-	DB	'"'
 	DB	01aH
-	DB	0f8H
-	DB	01cH
-	DB	'V'
-	DB	01eH
-	DB	'F'
-	DB	01cH
-	DB	01aH
-	DB	01aH
-	DB	090H
-	DB	' '
-	DB	09H, 04H
-	DB	'"'
-	DB	01aH
-	DB	'$'
+	DB	018H
 	DB	081H, 08H
+	DB	016H
+	DB	01aH
+	DB	014H
+	DB	'"'
+	DB	018H
+	DB	0f8H
+	DB	01aH
+	DB	'V'
+	DB	01cH
+	DB	'F'
+	DB	01aH
+	DB	01aH
+	DB	018H
+	DB	090H
+	DB	01eH
+	DB	09H, 04H
+	DB	' '
+	DB	01aH
+	DB	'"'
+	DB	081H, 08H
+	DB	' '
+	DB	01aH
+	DB	01eH
+	DB	'"'
+	DB	'"'
+	DB	0f8H
+	DB	'$'
+	DB	'V'
+	DB	'&'
+	DB	'F'
+	DB	'$'
+	DB	01aH
+	DB	'"'
+	DB	0b8H
+	DB	'('
+	DB	011H, 06H
+	DB	'*'
+	DB	0a2H
+	DB	','
+	DB	'*'
+	DB	'*'
+	DB	'J'
+	DB	'('
+	DB	01aH
+	DB	'"'
+	DB	0d5H, 05H
+	DB	'.'
+	DB	'^'
+	DB	'0'
+	DB	'^'
+	DB	'2'
+	DB	'D'
+	DB	'0'
+	DB	01aH
+	DB	'.'
+	DB	01aH
+	DB	'"'
+	DB	080H
+	DB	'4'
+	DB	'h'
+	DB	'"'
+	DB	0d4H
+	DB	'6'
+	DB	'm', 05H
+	DB	'8'
+	DB	0a2H
+	DB	':'
+	DB	'*'
+	DB	'8'
+	DB	'P'
+	DB	'6'
+	DB	01aH
+	DB	'"'
+	DB	'i', 04H
+	DB	'<'
+	DB	'm', 02H
+	DB	'>'
+	DB	'f'
+	DB	'@'
+	DB	'!', 06H
+	DB	'B'
+	DB	09H, 03H
+	DB	'D'
+	DB	'^'
+	DB	'F'
+	DB	'D'
+	DB	'D'
+	DB	01aH
+	DB	'B'
+	DB	01aH
+	DB	'@'
+	DB	01aH
+	DB	'>'
+	DB	01aH
+	DB	'<'
+	DB	01aH
 	DB	'"'
 	DB	01aH
 	DB	' '
-	DB	'"'
-	DB	'$'
-	DB	0f8H
-	DB	'&'
-	DB	'V'
-	DB	'('
-	DB	'F'
-	DB	'&'
 	DB	01aH
-	DB	'$'
-	DB	0b8H
-	DB	'*'
-	DB	011H, 06H
-	DB	','
-	DB	0a2H
-	DB	'.'
-	DB	'*'
-	DB	','
+	DB	01eH
+	DB	0daH
+	DB	'H'
+	DB	'^'
+	DB	01eH
+	DB	01aH
+	DB	018H
+	DB	094H
 	DB	'J'
 	DB	'*'
-	DB	01aH
-	DB	'$'
-	DB	0d5H, 05H
-	DB	'0'
-	DB	'^'
-	DB	'2'
-	DB	'^'
-	DB	'4'
-	DB	'D'
-	DB	'2'
-	DB	01aH
-	DB	'0'
-	DB	01aH
-	DB	'$'
-	DB	080H
-	DB	'6'
-	DB	'h'
-	DB	'$'
-	DB	0faH
-	DB	'8'
-	DB	'm', 05H
-	DB	':'
-	DB	'f'
-	DB	'<'
-	DB	0b2H
-	DB	'>'
-	DB	'F'
-	DB	'<'
-	DB	01aH
-	DB	':'
-	DB	01aH
-	DB	'8'
-	DB	01aH
-	DB	'$'
-	DB	'H'
-	DB	'"'
-	DB	01aH
-	DB	' '
-	DB	0daH
-	DB	'@'
-	DB	'^'
-	DB	' '
-	DB	01aH
-	DB	01aH
-	DB	094H
-	DB	'B'
-	DB	'*'
-	DB	01aH
-	DB	01aH
 	DB	018H
 	DB	01aH
 	DB	016H
-	DB	'.'
-	DB	014H
 	DB	01aH
+	DB	014H
+	DB	'.'
 	DB	012H
 	DB	01aH
 	DB	06H
@@ -8949,7 +9807,7 @@ $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 086H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 042H
+$stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 04aH
 	DB	0eH
 	DD	imagerel ?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
@@ -8969,57 +9827,66 @@ $stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 042H
 	DB	0f6H
 	DD	imagerel ?dtor$8@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
+	DD	imagerel ?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	02eH
 	DD	imagerel ?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
 	DD	imagerel ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
-	DD	imagerel ?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
+	DD	imagerel ?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	07eH
 	DD	imagerel ?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
-	DD	imagerel ?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	02eH
-	DD	imagerel ?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	07eH
 	DD	imagerel ?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
-	DD	imagerel ?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
+	DD	imagerel ?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	02eH
+	DD	imagerel ?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	07eH
 	DD	imagerel ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
-	DD	imagerel ?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	02eH
 	DD	imagerel ?dtor$24@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	07eH
-	DD	imagerel ?dtor$25@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
+	DD	imagerel ?dtor$25@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	0f6H
 	DD	imagerel ?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
 	DD	imagerel ?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	0f6H
-	DD	imagerel ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	02eH
-	DD	imagerel ?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	02eH
-	DD	imagerel ?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	0ddH
 	DB	02H
-	DD	imagerel ?dtor$33@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	03dH
 	DB	03H
-	DD	imagerel ?dtor$34@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 	DB	036H
+	DD	imagerel ?dtor$33@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	02eH
+	DD	imagerel ?dtor$34@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	03dH
+	DB	04H
 	DD	imagerel ?dtor$36@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	02eH
-	DD	imagerel ?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	02eH
+	DB	036H
 	DD	imagerel ?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	02dH
-	DB	05H
+	DB	02eH
 	DD	imagerel ?dtor$39@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
-	DB	07dH
-	DB	06H
+	DB	02eH
+	DD	imagerel ?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	02eH
 	DD	imagerel ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	02eH
+	DD	imagerel ?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	0cdH
+	DB	06H
+	DD	imagerel ?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+	DB	01dH
+	DB	08H
+	DD	imagerel ?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -9031,11 +9898,11 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?launch@SimpleUI@UI@@UEAAXXZ DD 025064219H
 	DD	0115231aH
-	DD	070080234H
+	DD	0700802aeH
 	DD	050066007H
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?launch@SimpleUI@UI@@UEAAXXZ
-	DD	0119aH
+	DD	0156aH
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
@@ -9104,15 +9971,8 @@ CONST	SEGMENT
 	DB	06cH
 	DB	073H
 	DB	00H
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$4 DB 043H		; UI::SimpleUI::launch
-	DB	06cH
-	DB	069H
-	DB	065H
-	DB	06eH
-	DB	074H
-	DB	00H
-	ORG $+5
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$5 DB 073H		; UI::SimpleUI::launch
+	ORG $+4
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$4 DB 073H		; UI::SimpleUI::launch
 	DB	065H
 	DB	073H
 	DB	073H
@@ -9128,7 +9988,7 @@ CONST	SEGMENT
 	DB	06cH
 	DB	00H
 	ORG $+1
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$6 DB 063H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$5 DB 063H		; UI::SimpleUI::launch
 	DB	06fH
 	DB	06dH
 	DB	06dH
@@ -9138,7 +9998,7 @@ CONST	SEGMENT
 	DB	073H
 	DB	00H
 	ORG $+7
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$7 DB 073H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$6 DB 073H		; UI::SimpleUI::launch
 	DB	065H
 	DB	06cH
 	DB	065H
@@ -9154,7 +10014,7 @@ CONST	SEGMENT
 	DB	06eH
 	DB	064H
 	DB	00H
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$8 DB 06dH		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$7 DB 06dH		; UI::SimpleUI::launch
 	DB	065H
 	DB	06eH
 	DB	075H
@@ -9169,7 +10029,7 @@ CONST	SEGMENT
 	DB	06eH
 	DB	00H
 	ORG $+2
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$9 DB 043H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$8 DB 043H		; UI::SimpleUI::launch
 	DB	06cH
 	DB	069H
 	DB	065H
@@ -9184,7 +10044,7 @@ CONST	SEGMENT
 	DB	072H
 	DB	00H
 	ORG $+2
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$10 DB 063H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$9 DB 063H		; UI::SimpleUI::launch
 	DB	06fH
 	DB	06dH
 	DB	06dH
@@ -9194,7 +10054,7 @@ CONST	SEGMENT
 	DB	073H
 	DB	00H
 	ORG $+7
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$11 DB 073H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$10 DB 073H		; UI::SimpleUI::launch
 	DB	065H
 	DB	06cH
 	DB	065H
@@ -9210,7 +10070,7 @@ CONST	SEGMENT
 	DB	06eH
 	DB	064H
 	DB	00H
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$12 DB 06dH		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$11 DB 06dH		; UI::SimpleUI::launch
 	DB	065H
 	DB	06eH
 	DB	075H
@@ -9225,7 +10085,7 @@ CONST	SEGMENT
 	DB	06eH
 	DB	00H
 	ORG $+2
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$13 DB 070H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$12 DB 070H		; UI::SimpleUI::launch
 	DB	061H
 	DB	072H
 	DB	061H
@@ -9237,7 +10097,7 @@ CONST	SEGMENT
 	DB	073H
 	DB	00H
 	ORG $+5
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$14 DB 072H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$13 DB 072H		; UI::SimpleUI::launch
 	DB	065H
 	DB	073H
 	DB	075H
@@ -9245,7 +10105,7 @@ CONST	SEGMENT
 	DB	074H
 	DB	073H
 	DB	00H
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$15 DB 072H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$14 DB 072H		; UI::SimpleUI::launch
 	DB	065H
 	DB	073H
 	DB	070H
@@ -9255,7 +10115,7 @@ CONST	SEGMENT
 	DB	065H
 	DB	00H
 	ORG $+7
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$16 DB 063H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$15 DB 063H		; UI::SimpleUI::launch
 	DB	06cH
 	DB	069H
 	DB	065H
@@ -9265,7 +10125,7 @@ CONST	SEGMENT
 	DB	064H
 	DB	00H
 	ORG $+7
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$17 DB 070H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$16 DB 070H		; UI::SimpleUI::launch
 	DB	061H
 	DB	072H
 	DB	061H
@@ -9277,7 +10137,7 @@ CONST	SEGMENT
 	DB	073H
 	DB	00H
 	ORG $+5
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$18 DB 072H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$17 DB 072H		; UI::SimpleUI::launch
 	DB	065H
 	DB	073H
 	DB	075H
@@ -9285,7 +10145,36 @@ CONST	SEGMENT
 	DB	074H
 	DB	073H
 	DB	00H
-?launch@SimpleUI@UI@@UEAAXXZ$rtcName$19 DB 050H		; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$18 DB 063H		; UI::SimpleUI::launch
+	DB	06cH
+	DB	069H
+	DB	065H
+	DB	06eH
+	DB	074H
+	DB	049H
+	DB	064H
+	DB	00H
+	ORG $+7
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$19 DB 070H		; UI::SimpleUI::launch
+	DB	061H
+	DB	072H
+	DB	061H
+	DB	06dH
+	DB	065H
+	DB	074H
+	DB	065H
+	DB	072H
+	DB	00H
+	ORG $+6
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$20 DB 072H		; UI::SimpleUI::launch
+	DB	065H
+	DB	073H
+	DB	075H
+	DB	06cH
+	DB	074H
+	DB	073H
+	DB	00H
+?launch@SimpleUI@UI@@UEAAXXZ$rtcName$21 DB 050H		; UI::SimpleUI::launch
 	DB	072H
 	DB	06fH
 	DB	066H
@@ -9301,53 +10190,59 @@ CONST	SEGMENT
 	DB	06eH
 	DB	074H
 	DB	00H
-?launch@SimpleUI@UI@@UEAAXXZ$rtcVarDesc DD 0558H	; UI::SimpleUI::launch
+?launch@SimpleUI@UI@@UEAAXXZ$rtcVarDesc DD 0578H	; UI::SimpleUI::launch
 	DD	038H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$21
+	DD	0520H
+	DD	040H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$20
+	DD	04d8H
+	DD	020H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$19
-	DD	0500H
-	DD	040H
+	DD	04b4H
+	DD	04H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$18
-	DD	04b8H
-	DD	020H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$17
-	DD	0494H
-	DD	04H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$16
-	DD	0474H
-	DD	01H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$15
-	DD	0420H
+	DD	0460H
 	DD	040H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$17
+	DD	0418H
+	DD	020H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$16
+	DD	03f4H
+	DD	04H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$15
+	DD	03d4H
+	DD	01H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$14
-	DD	03d8H
-	DD	020H
+	DD	0380H
+	DD	040H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$13
-	DD	0394H
-	DD	04H
+	DD	0338H
+	DD	020H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$12
-	DD	0358H
-	DD	028H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$11
-	DD	0318H
-	DD	020H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$10
-	DD	02f8H
-	DD	08H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$9
-	DD	02b4H
+	DD	02f4H
 	DD	04H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$8
-	DD	0278H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$11
+	DD	02b8H
 	DD	028H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$7
-	DD	0238H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$10
+	DD	0278H
 	DD	020H
-	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$6
-	DD	0218H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$9
+	DD	0258H
 	DD	08H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$8
+	DD	0214H
+	DD	04H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$7
+	DD	01d8H
+	DD	028H
+	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$6
+	DD	0198H
+	DD	020H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$5
-	DD	0180H
-	DD	060H
+	DD	0178H
+	DD	08H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$4
 	DD	0f0H
 	DD	070H
@@ -9361,8 +10256,8 @@ CONST	SEGMENT
 	DD	028H
 	DD	020H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcName$0
-	ORG $+960
-?launch@SimpleUI@UI@@UEAAXXZ$rtcFrameData DD 014H	; UI::SimpleUI::launch
+	ORG $+1056
+?launch@SimpleUI@UI@@UEAAXXZ$rtcFrameData DD 016H	; UI::SimpleUI::launch
 	DD	00H
 	DQ	FLAT:?launch@SimpleUI@UI@@UEAAXXZ$rtcVarDesc
 CONST	ENDS
@@ -9656,6 +10551,13 @@ $unwind$??_GClientprofile@Persistence@TechnicalServices@@QEAAPEAXI@Z DD 025052e0
 	DD	01122317H
 	DD	0700b001dH
 	DD	0500aH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??4Clientprofile@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -12230,6 +13132,89 @@ $LN3:
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$construct@UClientprofile@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@QEAUClientprofile@Persistence@TechnicalServices@@AEAU345@@Z
+_TEXT	SEGMENT
+$T1 = 200
+tv76 = 216
+__formal$ = 256
+_Ptr$ = 264
+<_Args_0>$ = 272
+??$construct@UClientprofile@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@QEAUClientprofile@Persistence@TechnicalServices@@AEAU345@@Z PROC ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Clientprofile> >::construct<TechnicalServices::Persistence::Clientprofile,TechnicalServices::Persistence::Clientprofile &>, COMDAT
+
+; 693  :     static void construct(_Alloc&, _Objty* const _Ptr, _Types&&... _Args) {
+
+$LN3:
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+	mov	rdx, QWORD PTR _Ptr$[rbp]
+	mov	ecx, 56					; 00000038H
+	call	??2@YAPEAX_KPEAX@Z			; operator new
+	mov	QWORD PTR $T1[rbp], rax
+	mov	rcx, QWORD PTR <_Args_0>$[rbp]
+	call	??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z ; std::forward<TechnicalServices::Persistence::Clientprofile &>
+	mov	QWORD PTR tv76[rbp], rax
+	mov	rdx, QWORD PTR tv76[rbp]
+	mov	rcx, QWORD PTR $T1[rbp]
+	call	??0Clientprofile@Persistence@TechnicalServices@@QEAA@AEBU012@@Z
+
+; 694  :         ::new (const_cast<void*>(static_cast<const volatile void*>(_Ptr))) _Objty(_STD forward<_Types>(_Args)...);
+; 695  :     }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$construct@UClientprofile@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@QEAUClientprofile@Persistence@TechnicalServices@@AEAU345@@Z ENDP ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Clientprofile> >::construct<TechnicalServices::Persistence::Clientprofile,TechnicalServices::Persistence::Clientprofile &>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
+;	COMDAT ??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z
+_TEXT	SEGMENT
+_Arg$ = 224
+??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z PROC ; std::forward<TechnicalServices::Persistence::Clientprofile &>, COMDAT
+
+; 1454 :     remove_reference_t<_Ty>& _Arg) noexcept { // forward an lvalue as either an lvalue or an rvalue
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__B236D4B0_type_traits
+	call	__CheckForDebuggerJustMyCode
+
+; 1455 :     return static_cast<_Ty&&>(_Arg);
+
+	mov	rax, QWORD PTR _Arg$[rbp]
+
+; 1456 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z ENDP ; std::forward<TechnicalServices::Persistence::Clientprofile &>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Emplace_back@AEAUClient@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClient@Persistence@TechnicalServices@@@Z
 _TEXT	SEGMENT
 tv78 = 192
@@ -12486,6 +13471,265 @@ $LN3:
 	pop	rbp
 	ret	0
 ??$_Get_unwrapped@AEBQEAUClient@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClient@Persistence@TechnicalServices@@@Z ENDP ; std::_Get_unwrapped<TechnicalServices::Persistence::Client * const &>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$_Emplace_back@AEAUClientprofile@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClientprofile@Persistence@TechnicalServices@@@Z
+_TEXT	SEGMENT
+tv78 = 192
+tv76 = 200
+tv74 = 208
+this$ = 256
+<_Vals_0>$ = 264
+??$_Emplace_back@AEAUClientprofile@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClientprofile@Persistence@TechnicalServices@@@Z PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Emplace_back<TechnicalServices::Persistence::Clientprofile &>, COMDAT
+
+; 1507 :     void _Emplace_back(_Types&&... _Vals) { // construct a new element at *_Last and increment
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 1508 :         allocator_traits<_Alloc>::construct(_Al, _Unfancy(_Last), _STD forward<_Types>(_Vals)...);
+
+	mov	rcx, QWORD PTR <_Vals_0>$[rbp]
+	call	??$forward@AEAUClientprofile@Persistence@TechnicalServices@@@std@@YAAEAUClientprofile@Persistence@TechnicalServices@@AEAU123@@Z ; std::forward<TechnicalServices::Persistence::Clientprofile &>
+	mov	QWORD PTR tv78[rbp], rax
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR [rax+8]
+	call	??$_Unfancy@UClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@Z ; std::_Unfancy<TechnicalServices::Persistence::Clientprofile>
+	mov	QWORD PTR tv76[rbp], rax
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rax, QWORD PTR [rax+16]
+	mov	QWORD PTR tv74[rbp], rax
+	mov	r8, QWORD PTR tv78[rbp]
+	mov	rdx, QWORD PTR tv76[rbp]
+	mov	rcx, QWORD PTR tv74[rbp]
+	call	??$construct@UClientprofile@Persistence@TechnicalServices@@AEAU123@@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@QEAUClientprofile@Persistence@TechnicalServices@@AEAU345@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Clientprofile> >::construct<TechnicalServices::Persistence::Clientprofile,TechnicalServices::Persistence::Clientprofile &>
+
+; 1509 :         ++_Last;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rax, QWORD PTR [rax+8]
+	add	rax, 56					; 00000038H
+	mov	rcx, QWORD PTR this$[rbp]
+	mov	QWORD PTR [rcx+8], rax
+
+; 1510 :     }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Emplace_back@AEAUClientprofile@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClientprofile@Persistence@TechnicalServices@@@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Emplace_back<TechnicalServices::Persistence::Clientprofile &>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
+_TEXT	SEGMENT
+this$ = 224
+classSize$ = 232
+?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::__autoclassinit2, COMDAT
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 200				; 000000c8H
+	mov	rbp, rsp
+	mov	rdi, rsp
+	mov	ecx, 50					; 00000032H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+232]
+	mov	rdi, QWORD PTR this$[rbp]
+	xor	eax, eax
+	mov	rcx, QWORD PTR classSize$[rbp]
+	rep stosb
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::__autoclassinit2
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ?_Release@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ
+_TEXT	SEGMENT
+this$ = 224
+?_Release@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Release, COMDAT
+
+; 1512 :     pointer _Release() { // suppress any exception handling backout and return _Last
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 1513 :         _First = _Last;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR [rcx+8]
+	mov	QWORD PTR [rax], rcx
+
+; 1514 :         return _Last;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rax, QWORD PTR [rax+8]
+
+; 1515 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Release@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Release
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ
+_TEXT	SEGMENT
+this$ = 224
+??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >, COMDAT
+
+; 1502 :     ~_Uninitialized_backout_al() {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 1503 :         _Destroy_range(_First, _Last, _Al);
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	r8, QWORD PTR [rax+16]
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rdx, QWORD PTR [rax+8]
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR [rax]
+	call	??$_Destroy_range@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z ; std::_Destroy_range<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+	npad	1
+
+; 1504 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??0?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClientprofile@Persistence@TechnicalServices@@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z
+_TEXT	SEGMENT
+this$ = 224
+_Dest$ = 232
+_Al_$ = 240
+??0?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClientprofile@Persistence@TechnicalServices@@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z PROC ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >, COMDAT
+
+; 1497 :     _Uninitialized_backout_al(pointer _Dest, _Alloc& _Al_) : _First(_Dest), _Last(_Dest), _Al(_Al_) {}
+
+$LN3:
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR _Dest$[rbp]
+	mov	QWORD PTR [rax], rcx
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR _Dest$[rbp]
+	mov	QWORD PTR [rax+8], rcx
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR _Al_$[rbp]
+	mov	QWORD PTR [rax+16], rcx
+	mov	rax, QWORD PTR this$[rbp]
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??0?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClientprofile@Persistence@TechnicalServices@@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z ENDP ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+;	COMDAT ??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z
+_TEXT	SEGMENT
+_It$ = 224
+??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z PROC ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * const &>, COMDAT
+
+; 1229 : _NODISCARD constexpr decltype(auto) _Get_unwrapped(_Iter&& _It) {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	call	__CheckForDebuggerJustMyCode
+
+; 1230 :     // unwrap an iterator previously subjected to _Adl_verify_range or otherwise validated
+; 1231 :     if constexpr (is_pointer_v<decay_t<_Iter>>) { // special-case pointers and arrays
+; 1232 :         return _It + 0;
+
+	mov	rax, QWORD PTR _It$[rbp]
+	mov	rax, QWORD PTR [rax]
+
+; 1233 :     } else if constexpr (_Unwrappable_v<_Iter>) {
+; 1234 :         return static_cast<_Iter&&>(_It)._Unwrapped();
+; 1235 :     } else {
+; 1236 :         return static_cast<_Iter&&>(_It);
+; 1237 :     }
+; 1238 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z ENDP ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
@@ -12853,6 +14097,246 @@ $LN3:
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z
+_TEXT	SEGMENT
+_UFirst$ = 8
+_ULast$ = 40
+_Backout$4 = 72
+__$ArrayPad$ = 296
+_First$ = 336
+_Last$ = 344
+_Dest$ = 352
+_Al$ = 360
+??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z PROC ; std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >, COMDAT
+
+; 1527 :     const _InIt _First, const _InIt _Last, _Alloc_ptr_t<_Alloc> _Dest, _Alloc& _Al) {
+
+$LN7:
+	mov	QWORD PTR [rsp+32], r9
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 344				; 00000158H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 86					; 00000056H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+376]
+	mov	rax, QWORD PTR __security_cookie
+	xor	rax, rbp
+	mov	QWORD PTR __$ArrayPad$[rbp], rax
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 1528 :     // copy [_First, _Last) to raw _Dest, using _Al
+; 1529 :     // note: only called internally from elsewhere in the STL
+; 1530 :     using _Ptrval = typename _Alloc::value_type*;
+; 1531 : 
+; 1532 :     auto _UFirst      = _Get_unwrapped(_First);
+
+	lea	rcx, QWORD PTR _First$[rbp]
+	call	??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * const &>
+	mov	QWORD PTR _UFirst$[rbp], rax
+
+; 1533 :     const auto _ULast = _Get_unwrapped(_Last);
+
+	lea	rcx, QWORD PTR _Last$[rbp]
+	call	??$_Get_unwrapped@AEBQEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEBQEAUClientprofile@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * const &>
+	mov	QWORD PTR _ULast$[rbp], rax
+
+; 1534 : 
+; 1535 :     if constexpr (conjunction_v<bool_constant<_Ptr_copy_cat<decltype(_UFirst), _Ptrval>::_Really_trivial>,
+; 1536 :                       _Uses_default_construct<_Alloc, _Ptrval, decltype(*_UFirst)>>) {
+; 1537 :         _Copy_memmove(_UFirst, _ULast, _Unfancy(_Dest));
+; 1538 :         _Dest += _ULast - _UFirst;
+; 1539 :     } else {
+; 1540 :         _Uninitialized_backout_al<_Alloc> _Backout{_Dest, _Al};
+
+	mov	edx, 24
+	lea	rcx, QWORD PTR _Backout$4[rbp]
+	call	?__autoclassinit2@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAX_K@Z
+	mov	r8, QWORD PTR _Al$[rbp]
+	mov	rdx, QWORD PTR _Dest$[rbp]
+	lea	rcx, QWORD PTR _Backout$4[rbp]
+	call	??0?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@PEAUClientprofile@Persistence@TechnicalServices@@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+	npad	1
+
+; 1541 :         for (; _UFirst != _ULast; ++_UFirst) {
+
+	jmp	SHORT $LN4@Uninitiali
+$LN2@Uninitiali:
+	mov	rax, QWORD PTR _UFirst$[rbp]
+	add	rax, 56					; 00000038H
+	mov	QWORD PTR _UFirst$[rbp], rax
+$LN4@Uninitiali:
+	mov	rax, QWORD PTR _ULast$[rbp]
+	cmp	QWORD PTR _UFirst$[rbp], rax
+	je	SHORT $LN3@Uninitiali
+
+; 1542 :             _Backout._Emplace_back(*_UFirst);
+
+	mov	rdx, QWORD PTR _UFirst$[rbp]
+	lea	rcx, QWORD PTR _Backout$4[rbp]
+	call	??$_Emplace_back@AEAUClientprofile@Persistence@TechnicalServices@@@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXAEAUClientprofile@Persistence@TechnicalServices@@@Z ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Emplace_back<TechnicalServices::Persistence::Clientprofile &>
+
+; 1543 :         }
+
+	jmp	SHORT $LN2@Uninitiali
+$LN3@Uninitiali:
+
+; 1544 : 
+; 1545 :         _Dest = _Backout._Release();
+
+	lea	rcx, QWORD PTR _Backout$4[rbp]
+	call	?_Release@?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Release
+	mov	QWORD PTR _Dest$[rbp], rax
+
+; 1546 :     }
+
+	lea	rcx, QWORD PTR _Backout$4[rbp]
+	call	??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+
+; 1547 : 
+; 1548 :     return _Dest;
+
+	mov	rax, QWORD PTR _Dest$[rbp]
+
+; 1549 : }
+
+	mov	rdi, rax
+	lea	rcx, QWORD PTR [rbp-32]
+	lea	rdx, OFFSET FLAT:??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z$rtcFrameData
+	call	_RTC_CheckStackVars
+	mov	rax, rdi
+	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
+	xor	rcx, rbp
+	call	__security_check_cookie
+	lea	rsp, QWORD PTR [rbp+312]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z ENDP ; std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+_UFirst$ = 8
+_ULast$ = 40
+_Backout$4 = 72
+__$ArrayPad$ = 296
+_First$ = 336
+_Last$ = 344
+_Dest$ = 352
+_Al$ = 360
+?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA PROC ; `std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >'::`1'::dtor$0
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR _Backout$4[rbp]
+	call	??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA ENDP ; `std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >'::`1'::dtor$0
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+_UFirst$ = 8
+_ULast$ = 40
+_Backout$4 = 72
+__$ArrayPad$ = 296
+_First$ = 336
+_Last$ = 344
+_Dest$ = 352
+_Al$ = 360
+?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA PROC ; `std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >'::`1'::dtor$0
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR _Backout$4[rbp]
+	call	??1?$_Uninitialized_backout_al@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >::~_Uninitialized_backout_al<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$0@?0???$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z@4HA ENDP ; `std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >'::`1'::dtor$0
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+;	COMDAT ??$advance@PEAUClientprofile@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClientprofile@Persistence@TechnicalServices@@_J@Z
+_TEXT	SEGMENT
+_Where$ = 224
+_Off$ = 232
+??$advance@PEAUClientprofile@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClientprofile@Persistence@TechnicalServices@@_J@Z PROC ; std::advance<TechnicalServices::Persistence::Clientprofile *,__int64>, COMDAT
+
+; 1642 : _CONSTEXPR17 void advance(_InIt& _Where, _Diff _Off) { // increment iterator by offset
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	call	__CheckForDebuggerJustMyCode
+
+; 1643 :     if constexpr (_Is_random_iter_v<_InIt>) {
+; 1644 :         _Where += _Off;
+
+	imul	rax, QWORD PTR _Off$[rbp], 56		; 00000038H
+	mov	rcx, QWORD PTR _Where$[rbp]
+	add	rax, QWORD PTR [rcx]
+	mov	rcx, QWORD PTR _Where$[rbp]
+	mov	QWORD PTR [rcx], rax
+
+; 1645 :     } else {
+; 1646 :         if constexpr (is_signed_v<_Diff> && !_Is_bidi_iter_v<_InIt>) {
+; 1647 :             _STL_ASSERT(_Off >= 0, "negative advance of non-bidirectional iterator");
+; 1648 :         }
+; 1649 : 
+; 1650 :         auto&& _UWhere              = _Get_unwrapped_n(_STD move(_Where), _Off);
+; 1651 :         constexpr bool _Need_rewrap = !is_reference_v<decltype(_Get_unwrapped_n(_STD move(_Where), _Off))>;
+; 1652 : 
+; 1653 :         if constexpr (is_signed_v<_Diff> && _Is_bidi_iter_v<_InIt>) {
+; 1654 :             for (; _Off < 0; ++_Off) {
+; 1655 :                 --_UWhere;
+; 1656 :             }
+; 1657 :         }
+; 1658 : 
+; 1659 :         for (; 0 < _Off; --_Off) {
+; 1660 :             ++_UWhere;
+; 1661 :         }
+; 1662 : 
+; 1663 :         if constexpr (_Need_rewrap) {
+; 1664 :             _Seek_wrapped(_Where, _STD move(_UWhere));
+; 1665 :         }
+; 1666 :     }
+; 1667 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$advance@PEAUClientprofile@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClientprofile@Persistence@TechnicalServices@@_J@Z ENDP ; std::advance<TechnicalServices::Persistence::Clientprofile *,__int64>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Emplace_back@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Uninitialized_backout_al@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
 _TEXT	SEGMENT
 tv78 = 192
@@ -13087,6 +14571,69 @@ $LN3@Get_size_o:
 	pop	rbp
 	ret	0
 ??$_Get_size_of_n@$0GA@@std@@YA_K_K@Z ENDP		; std::_Get_size_of_n<96>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$_Get_size_of_n@$0DI@@std@@YA_K_K@Z
+_TEXT	SEGMENT
+_Overflow_is_possible$ = 4
+_Max_possible$1 = 40
+_Count$ = 288
+??$_Get_size_of_n@$0DI@@std@@YA_K_K@Z PROC		; std::_Get_size_of_n<56>, COMDAT
+
+; 55   : _NODISCARD constexpr size_t _Get_size_of_n(const size_t _Count) {
+
+$LN4:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 296				; 00000128H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 74					; 0000004aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+328]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 56   :     constexpr bool _Overflow_is_possible = _Ty_size > 1;
+
+	mov	BYTE PTR _Overflow_is_possible$[rbp], 1
+
+; 57   : 
+; 58   :     if _CONSTEXPR_IF (_Overflow_is_possible) {
+; 59   :         constexpr size_t _Max_possible = static_cast<size_t>(-1) / _Ty_size;
+
+	mov	rax, 329406144173384850			; 0492492492492492H
+	mov	QWORD PTR _Max_possible$1[rbp], rax
+
+; 60   :         if (_Count > _Max_possible) {
+
+	mov	rax, 329406144173384850			; 0492492492492492H
+	cmp	QWORD PTR _Count$[rbp], rax
+	jbe	SHORT $LN2@Get_size_o
+
+; 61   :             _Throw_bad_array_new_length(); // multiply overflow
+
+	call	?_Throw_bad_array_new_length@std@@YAXXZ	; std::_Throw_bad_array_new_length
+$LN2@Get_size_o:
+
+; 62   :         }
+; 63   :     }
+; 64   : 
+; 65   :     return _Count * _Ty_size;
+
+	imul	rax, QWORD PTR _Count$[rbp], 56		; 00000038H
+$LN3@Get_size_o:
+
+; 66   : }
+
+	lea	rsp, QWORD PTR [rbp+264]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Get_size_of_n@$0DI@@std@@YA_K_K@Z ENDP		; std::_Get_size_of_n<56>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
@@ -13592,6 +15139,300 @@ $LN9@Verify_ran:
 ??$_Verify_range@UClient@Persistence@TechnicalServices@@@std@@YAXQEBUClient@Persistence@TechnicalServices@@0@Z ENDP ; std::_Verify_range<TechnicalServices::Persistence::Client>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ??$_Ucopy@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClientprofile@Persistence@TechnicalServices@@PEAU234@00@Z
+_TEXT	SEGMENT
+this$ = 224
+_First$ = 232
+_Last$ = 240
+_Dest$ = 248
+??$_Ucopy@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClientprofile@Persistence@TechnicalServices@@PEAU234@00@Z PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Ucopy<TechnicalServices::Persistence::Clientprofile *>, COMDAT
+
+; 1587 :     pointer _Ucopy(_Iter _First, _Iter _Last, pointer _Dest) { // copy [_First, _Last) to raw _Dest, using allocator
+
+$LN3:
+	mov	QWORD PTR [rsp+32], r9
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1588 :         return _Uninitialized_copy(_First, _Last, _Dest, _Getal());
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
+	mov	r9, rax
+	mov	r8, QWORD PTR _Dest$[rbp]
+	mov	rdx, QWORD PTR _Last$[rbp]
+	mov	rcx, QWORD PTR _First$[rbp]
+	call	??$_Uninitialized_copy@PEAUClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAU123@0PEAU123@AEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@@Z ; std::_Uninitialized_copy<TechnicalServices::Persistence::Clientprofile *,std::allocator<TechnicalServices::Persistence::Clientprofile> >
+
+; 1589 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Ucopy@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClientprofile@Persistence@TechnicalServices@@PEAU234@00@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Ucopy<TechnicalServices::Persistence::Clientprofile *>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+;	COMDAT ??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z
+_TEXT	SEGMENT
+_First$ = 224
+_Last$ = 232
+_Dest$ = 240
+??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z PROC ; std::_Copy_unchecked<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>, COMDAT
+
+; 4129 : _CONSTEXPR20 _OutIt _Copy_unchecked(_InIt _First, _InIt _Last, _OutIt _Dest) {
+
+$LN6:
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	call	__CheckForDebuggerJustMyCode
+
+; 4130 :     // copy [_First, _Last) to [_Dest, ...)
+; 4131 :     // note: _Copy_unchecked has callers other than the copy family
+; 4132 :     if constexpr (_Ptr_copy_cat<_InIt, _OutIt>::_Trivially_copyable) {
+; 4133 : #ifdef __cpp_lib_is_constant_evaluated
+; 4134 :         if (!_STD is_constant_evaluated())
+; 4135 : #endif // __cpp_lib_is_constant_evaluated
+; 4136 :         {
+; 4137 :             return _Copy_memmove(_First, _Last, _Dest);
+; 4138 :         }
+; 4139 :     }
+; 4140 : 
+; 4141 :     for (; _First != _Last; ++_Dest, (void) ++_First) {
+
+	jmp	SHORT $LN4@Copy_unche
+$LN2@Copy_unche:
+	mov	rax, QWORD PTR _Dest$[rbp]
+	add	rax, 56					; 00000038H
+	mov	QWORD PTR _Dest$[rbp], rax
+	mov	rax, QWORD PTR _First$[rbp]
+	add	rax, 56					; 00000038H
+	mov	QWORD PTR _First$[rbp], rax
+$LN4@Copy_unche:
+	mov	rax, QWORD PTR _Last$[rbp]
+	cmp	QWORD PTR _First$[rbp], rax
+	je	SHORT $LN3@Copy_unche
+
+; 4142 :         *_Dest = *_First;
+
+	mov	rdx, QWORD PTR _First$[rbp]
+	mov	rcx, QWORD PTR _Dest$[rbp]
+	call	??4Clientprofile@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z
+
+; 4143 :     }
+
+	jmp	SHORT $LN2@Copy_unche
+$LN3@Copy_unche:
+
+; 4144 : 
+; 4145 :     return _Dest;
+
+	mov	rax, QWORD PTR _Dest$[rbp]
+
+; 4146 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z ENDP ; std::_Copy_unchecked<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+;	COMDAT ??$next@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@_J@Z
+_TEXT	SEGMENT
+_First$ = 224
+_Off$ = 232
+??$next@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@_J@Z PROC ; std::next<TechnicalServices::Persistence::Clientprofile *>, COMDAT
+
+; 1772 : _NODISCARD _CONSTEXPR17 _InIt next(_InIt _First, _Iter_diff_t<_InIt> _Off = 1) { // increment iterator
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	call	__CheckForDebuggerJustMyCode
+
+; 1773 :     static_assert(_Is_input_iter_v<_InIt>, "next requires input iterator");
+; 1774 : 
+; 1775 :     _STD advance(_First, _Off);
+
+	mov	rdx, QWORD PTR _Off$[rbp]
+	lea	rcx, QWORD PTR _First$[rbp]
+	call	??$advance@PEAUClientprofile@Persistence@TechnicalServices@@_J@std@@YAXAEAPEAUClientprofile@Persistence@TechnicalServices@@_J@Z ; std::advance<TechnicalServices::Persistence::Clientprofile *,__int64>
+
+; 1776 :     return _First;
+
+	mov	rax, QWORD PTR _First$[rbp]
+
+; 1777 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$next@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@_J@Z ENDP ; std::next<TechnicalServices::Persistence::Clientprofile *>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+;	COMDAT ??$distance@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YA_JPEAUClientprofile@Persistence@TechnicalServices@@0@Z
+_TEXT	SEGMENT
+_First$ = 224
+_Last$ = 232
+??$distance@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YA_JPEAUClientprofile@Persistence@TechnicalServices@@0@Z PROC ; std::distance<TechnicalServices::Persistence::Clientprofile *>, COMDAT
+
+; 1722 : _NODISCARD _CONSTEXPR17 _Iter_diff_t<_InIt> distance(_InIt _First, _InIt _Last) {
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	call	__CheckForDebuggerJustMyCode
+
+; 1723 :     if constexpr (_Is_random_iter_v<_InIt>) {
+; 1724 :         return _Last - _First; // assume the iterator will do debug checking
+
+	mov	rax, QWORD PTR _First$[rbp]
+	mov	rcx, QWORD PTR _Last$[rbp]
+	sub	rcx, rax
+	mov	rax, rcx
+	cdq
+	mov	ecx, 56					; 00000038H
+	idiv	rcx
+
+; 1725 :     } else {
+; 1726 :         _Adl_verify_range(_First, _Last);
+; 1727 :         auto _UFirst             = _Get_unwrapped(_First);
+; 1728 :         const auto _ULast        = _Get_unwrapped(_Last);
+; 1729 :         _Iter_diff_t<_InIt> _Off = 0;
+; 1730 :         for (; _UFirst != _ULast; ++_UFirst) {
+; 1731 :             ++_Off;
+; 1732 :         }
+; 1733 : 
+; 1734 :         return _Off;
+; 1735 :     }
+; 1736 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$distance@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YA_JPEAUClientprofile@Persistence@TechnicalServices@@0@Z ENDP ; std::distance<TechnicalServices::Persistence::Clientprofile *>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+;	COMDAT ??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z
+_TEXT	SEGMENT
+_First$ = 224
+_Last$ = 232
+??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z PROC ; std::_Verify_range<TechnicalServices::Persistence::Clientprofile>, COMDAT
+
+; 1169 : constexpr void _Verify_range(const _Ty* const _First, const _Ty* const _Last) noexcept {
+
+$LN12:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 248				; 000000f8H
+	lea	rbp, QWORD PTR [rsp+48]
+	mov	rdi, rsp
+	mov	ecx, 62					; 0000003eH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+280]
+	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	call	__CheckForDebuggerJustMyCode
+$LN4@Verify_ran:
+
+; 1170 :     // special case range verification for pointers
+; 1171 :     _STL_VERIFY(_First <= _Last, "transposed pointer range");
+
+	mov	rax, QWORD PTR _Last$[rbp]
+	cmp	QWORD PTR _First$[rbp], rax
+	ja	SHORT $LN7@Verify_ran
+	jmp	SHORT $LN9@Verify_ran
+$LN7@Verify_ran:
+	lea	rax, OFFSET FLAT:??_C@_0BJ@HAJGEHKO@transposed?5pointer?5range@
+	mov	QWORD PTR [rsp+40], rax
+	lea	rax, OFFSET FLAT:??_C@_02DKCKIIND@?$CFs@
+	mov	QWORD PTR [rsp+32], rax
+	xor	r9d, r9d
+	mov	r8d, 1171				; 00000493H
+	lea	rdx, OFFSET FLAT:??_C@_0GK@OHAIDBEA@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
+	mov	ecx, 2
+	call	QWORD PTR __imp__CrtDbgReport
+	cmp	eax, 1
+	jne	SHORT $LN11@Verify_ran
+	int	3
+	xor	eax, eax
+$LN11@Verify_ran:
+	mov	QWORD PTR [rsp+32], 0
+	mov	r9d, 1171				; 00000493H
+	lea	r8, OFFSET FLAT:??_C@_1NE@NLDHILHB@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
+	lea	rdx, OFFSET FLAT:??_C@_1CG@LJCPDKEJ@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAr?$AAi?$AAf?$AAy?$AA_?$AAr?$AAa@
+	lea	rcx, OFFSET FLAT:??_C@_1DG@FJIKMGFD@?$AA?$CC?$AAt?$AAr?$AAa?$AAn?$AAs?$AAp?$AAo?$AAs?$AAe?$AAd?$AA?5?$AAp?$AAo?$AAi@
+	call	QWORD PTR __imp__invalid_parameter
+	xor	eax, eax
+	test	eax, eax
+	jne	SHORT $LN7@Verify_ran
+$LN9@Verify_ran:
+	xor	eax, eax
+	test	eax, eax
+	jne	$LN4@Verify_ran
+
+; 1172 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z ENDP ; std::_Verify_range<TechnicalServices::Persistence::Clientprofile>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Uninitialized_copy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBV10@0PEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z
 _TEXT	SEGMENT
@@ -13920,6 +15761,116 @@ $LN3:
 	pop	rbp
 	ret	0
 ??$_Cast@UClientprofile@Persistence@TechnicalServices@@@any@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@XZ ENDP ; std::any::_Cast<TechnicalServices::Persistence::Clientprofile>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+;	COMDAT ??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ
+_TEXT	SEGMENT
+_Info$ = 8
+this$ = 256
+??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ PROC ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >, COMDAT
+
+; 245  :     _NODISCARD const _Decayed* _Cast() const noexcept {
+
+$LN5:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__24DC9795_any
+	call	__CheckForDebuggerJustMyCode
+
+; 246  :         // if *this contains a value of type _Decayed, return a pointer to it
+; 247  :         const type_info* const _Info = _TypeInfo();
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_TypeInfo@any@std@@AEBAPEBVtype_info@@XZ ; std::any::_TypeInfo
+	mov	QWORD PTR _Info$[rbp], rax
+
+; 248  :         if (!_Info || *_Info != typeid(_Decayed)) {
+
+	cmp	QWORD PTR _Info$[rbp], 0
+	je	SHORT $LN3@Cast
+	lea	rdx, OFFSET FLAT:??_R0?AV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@8
+	mov	rcx, QWORD PTR _Info$[rbp]
+	call	??9type_info@@QEBA_NAEBV0@@Z		; type_info::operator!=
+	movzx	eax, al
+	test	eax, eax
+	je	SHORT $LN2@Cast
+$LN3@Cast:
+
+; 249  :             return nullptr;
+
+	xor	eax, eax
+	jmp	SHORT $LN1@Cast
+$LN2@Cast:
+
+; 250  :         }
+; 251  : 
+; 252  :         if constexpr (_Any_is_trivial<_Decayed>) {
+; 253  :             // get a pointer to the contained _Trivial value of type _Decayed
+; 254  :             return reinterpret_cast<const _Decayed*>(&_Storage._TrivialData);
+; 255  :         } else if constexpr (_Any_is_small<_Decayed>) {
+; 256  :             // get a pointer to the contained _Small value of type _Decayed
+; 257  :             return reinterpret_cast<const _Decayed*>(&_Storage._SmallStorage._Data);
+
+	mov	rax, QWORD PTR this$[rbp]
+$LN1@Cast:
+
+; 258  :         } else {
+; 259  :             // get a pointer to the contained _Big value of type _Decayed
+; 260  :             return static_cast<const _Decayed*>(_Storage._BigStorage._Ptr);
+; 261  :         }
+; 262  :     }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ ENDP ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+;	COMDAT ??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ
+_TEXT	SEGMENT
+this$ = 224
+??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ PROC ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >, COMDAT
+
+; 265  :     _NODISCARD _Decayed* _Cast() noexcept { // if *this contains a value of type _Decayed, return a pointer to it
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__24DC9795_any
+	call	__CheckForDebuggerJustMyCode
+
+; 266  :         return const_cast<_Decayed*>(static_cast<const any*>(this)->_Cast<_Decayed>());
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEBAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
+	npad	1
+
+; 267  :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ ENDP ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
@@ -15697,6 +17648,305 @@ $LN3:
 ??$_Adl_verify_range@PEAUClient@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClient@Persistence@TechnicalServices@@0@Z ENDP ; std::_Adl_verify_range<TechnicalServices::Persistence::Client *,TechnicalServices::Persistence::Client *>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ??$_Assign_range@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z
+_TEXT	SEGMENT
+_Newsize$ = 8
+_My_data$ = 40
+_Myfirst$ = 72
+_Mylast$ = 104
+_Myend$ = 136
+_Oldsize$1 = 168
+_Oldcapacity$2 = 200
+_Mid$3 = 232
+_Newlast$4 = 264
+this$ = 512
+_First$ = 520
+_Last$ = 528
+__formal$ = 536
+??$_Assign_range@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Assign_range<TechnicalServices::Persistence::Clientprofile *>, COMDAT
+
+; 1094 :     void _Assign_range(_Iter _First, _Iter _Last, forward_iterator_tag) { // assign forward range [_First, _Last)
+
+$LN6:
+	mov	BYTE PTR [rsp+32], r9b
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 520				; 00000208H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 130				; 00000082H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+552]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1095 :         const auto _Newsize = _Convert_size<size_type>(static_cast<size_t>(_STD distance(_First, _Last)));
+
+	mov	rdx, QWORD PTR _Last$[rbp]
+	mov	rcx, QWORD PTR _First$[rbp]
+	call	??$distance@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YA_JPEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::distance<TechnicalServices::Persistence::Clientprofile *>
+	mov	rcx, rax
+	call	??$_Convert_size@_K@std@@YA_K_K@Z	; std::_Convert_size<unsigned __int64>
+	mov	QWORD PTR _Newsize$[rbp], rax
+
+; 1096 :         auto& _My_data      = _Mypair._Myval2;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR _My_data$[rbp], rax
+
+; 1097 :         pointer& _Myfirst   = _My_data._Myfirst;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 8
+	mov	QWORD PTR _Myfirst$[rbp], rax
+
+; 1098 :         pointer& _Mylast    = _My_data._Mylast;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 16
+	mov	QWORD PTR _Mylast$[rbp], rax
+
+; 1099 :         pointer& _Myend     = _My_data._Myend;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 24
+	mov	QWORD PTR _Myend$[rbp], rax
+
+; 1100 : 
+; 1101 :         _My_data._Orphan_all();
+
+	mov	rcx, QWORD PTR _My_data$[rbp]
+	call	?_Orphan_all@_Container_base12@std@@QEAAXXZ ; std::_Container_base12::_Orphan_all
+
+; 1102 : 
+; 1103 : #if _HAS_IF_CONSTEXPR
+; 1104 :         if constexpr (conjunction_v<bool_constant<_Ptr_copy_cat<_Iter, _Ty*>::_Trivially_copyable>,
+; 1105 :                           _Uses_default_construct<_Alty, _Ty*, decltype(*_First)>,
+; 1106 :                           _Uses_default_destroy<_Alty, _Ty*>>) {
+; 1107 :             const auto _Oldcapacity = static_cast<size_type>(_Myend - _Myfirst);
+; 1108 :             if (_Newsize > _Oldcapacity) {
+; 1109 :                 _Clear_and_reserve_geometric(_Newsize);
+; 1110 :             }
+; 1111 : 
+; 1112 :             _Mylast = _Refancy<pointer>(_Copy_memmove(_First, _Last, _Unfancy(_Myfirst)));
+; 1113 :         } else
+; 1114 : #endif // _HAS_IF_CONSTEXPR
+; 1115 :         {
+; 1116 :             auto _Oldsize = static_cast<size_type>(_Mylast - _Myfirst);
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	rcx, QWORD PTR _Myfirst$[rbp]
+	mov	rcx, QWORD PTR [rcx]
+	mov	rax, QWORD PTR [rax]
+	sub	rax, rcx
+	cdq
+	mov	ecx, 56					; 00000038H
+	idiv	rcx
+	mov	QWORD PTR _Oldsize$1[rbp], rax
+
+; 1117 : 
+; 1118 :             if (_Newsize > _Oldsize) {
+
+	mov	rax, QWORD PTR _Oldsize$1[rbp]
+	cmp	QWORD PTR _Newsize$[rbp], rax
+	jbe	$LN2@Assign_ran
+
+; 1119 :                 const auto _Oldcapacity = static_cast<size_type>(_Myend - _Myfirst);
+
+	mov	rax, QWORD PTR _Myend$[rbp]
+	mov	rcx, QWORD PTR _Myfirst$[rbp]
+	mov	rcx, QWORD PTR [rcx]
+	mov	rax, QWORD PTR [rax]
+	sub	rax, rcx
+	cdq
+	mov	ecx, 56					; 00000038H
+	idiv	rcx
+	mov	QWORD PTR _Oldcapacity$2[rbp], rax
+
+; 1120 :                 if (_Newsize > _Oldcapacity) { // reallocate
+
+	mov	rax, QWORD PTR _Oldcapacity$2[rbp]
+	cmp	QWORD PTR _Newsize$[rbp], rax
+	jbe	SHORT $LN4@Assign_ran
+
+; 1121 :                     _Clear_and_reserve_geometric(_Newsize);
+
+	mov	rdx, QWORD PTR _Newsize$[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Clear_and_reserve_geometric@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Clear_and_reserve_geometric
+
+; 1122 :                     _Oldsize = 0;
+
+	mov	QWORD PTR _Oldsize$1[rbp], 0
+$LN4@Assign_ran:
+
+; 1123 :                 }
+; 1124 : 
+; 1125 :                 // performance note: traversing [_First, _Mid) twice
+; 1126 :                 const _Iter _Mid = _STD next(_First, static_cast<difference_type>(_Oldsize));
+
+	mov	rdx, QWORD PTR _Oldsize$1[rbp]
+	mov	rcx, QWORD PTR _First$[rbp]
+	call	??$next@PEAUClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@_J@Z ; std::next<TechnicalServices::Persistence::Clientprofile *>
+	mov	QWORD PTR _Mid$3[rbp], rax
+
+; 1127 :                 _Copy_unchecked(_First, _Mid, _Myfirst);
+
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	r8, QWORD PTR [rax]
+	mov	rdx, QWORD PTR _Mid$3[rbp]
+	mov	rcx, QWORD PTR _First$[rbp]
+	call	??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z ; std::_Copy_unchecked<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>
+
+; 1128 :                 _Mylast = _Ucopy(_Mid, _Last, _Mylast);
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	r9, QWORD PTR [rax]
+	mov	r8, QWORD PTR _Last$[rbp]
+	mov	rdx, QWORD PTR _Mid$3[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	??$_Ucopy@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAPEAUClientprofile@Persistence@TechnicalServices@@PEAU234@00@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Ucopy<TechnicalServices::Persistence::Clientprofile *>
+	mov	rcx, QWORD PTR _Mylast$[rbp]
+	mov	QWORD PTR [rcx], rax
+
+; 1129 :             } else {
+
+	jmp	SHORT $LN3@Assign_ran
+$LN2@Assign_ran:
+
+; 1130 :                 const pointer _Newlast = _Myfirst + _Newsize;
+
+	imul	rax, QWORD PTR _Newsize$[rbp], 56	; 00000038H
+	mov	rcx, QWORD PTR _Myfirst$[rbp]
+	add	rax, QWORD PTR [rcx]
+	mov	QWORD PTR _Newlast$4[rbp], rax
+
+; 1131 :                 _Copy_unchecked(_First, _Last, _Myfirst);
+
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	r8, QWORD PTR [rax]
+	mov	rdx, QWORD PTR _Last$[rbp]
+	mov	rcx, QWORD PTR _First$[rbp]
+	call	??$_Copy_unchecked@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@PEAU123@00@Z ; std::_Copy_unchecked<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>
+
+; 1132 :                 _Destroy(_Newlast, _Mylast);
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	r8, QWORD PTR [rax]
+	mov	rdx, QWORD PTR _Newlast$4[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Destroy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Destroy
+
+; 1133 :                 _Mylast = _Newlast;
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	rcx, QWORD PTR _Newlast$4[rbp]
+	mov	QWORD PTR [rax], rcx
+$LN3@Assign_ran:
+
+; 1134 :             }
+; 1135 :         }
+; 1136 :     }
+
+	lea	rsp, QWORD PTR [rbp+488]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Assign_range@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Assign_range<TechnicalServices::Persistence::Clientprofile *>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+;	COMDAT ??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z
+_TEXT	SEGMENT
+_It$ = 224
+??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z PROC ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * &>, COMDAT
+
+; 1229 : _NODISCARD constexpr decltype(auto) _Get_unwrapped(_Iter&& _It) {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	call	__CheckForDebuggerJustMyCode
+
+; 1230 :     // unwrap an iterator previously subjected to _Adl_verify_range or otherwise validated
+; 1231 :     if constexpr (is_pointer_v<decay_t<_Iter>>) { // special-case pointers and arrays
+; 1232 :         return _It + 0;
+
+	mov	rax, QWORD PTR _It$[rbp]
+	mov	rax, QWORD PTR [rax]
+
+; 1233 :     } else if constexpr (_Unwrappable_v<_Iter>) {
+; 1234 :         return static_cast<_Iter&&>(_It)._Unwrapped();
+; 1235 :     } else {
+; 1236 :         return static_cast<_Iter&&>(_It);
+; 1237 :     }
+; 1238 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z ENDP ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * &>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xutility
+;	COMDAT ??$_Adl_verify_range@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClientprofile@Persistence@TechnicalServices@@0@Z
+_TEXT	SEGMENT
+_First$ = 224
+_Last$ = 232
+??$_Adl_verify_range@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClientprofile@Persistence@TechnicalServices@@0@Z PROC ; std::_Adl_verify_range<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>, COMDAT
+
+; 1192 : constexpr void _Adl_verify_range(const _Iter& _First, const _Sentinel& _Last) {
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__36E77527_xutility
+	call	__CheckForDebuggerJustMyCode
+
+; 1193 :     // check that [_First, _Last) forms an iterator range
+; 1194 :     if constexpr (_Range_verifiable_v<_Iter, _Sentinel>) {
+; 1195 :         _Verify_range(_First, _Last);
+
+	mov	rax, QWORD PTR _Last$[rbp]
+	mov	rdx, QWORD PTR [rax]
+	mov	rax, QWORD PTR _First$[rbp]
+	mov	rcx, QWORD PTR [rax]
+	call	??$_Verify_range@UClientprofile@Persistence@TechnicalServices@@@std@@YAXQEBUClientprofile@Persistence@TechnicalServices@@0@Z ; std::_Verify_range<TechnicalServices::Persistence::Clientprofile>
+
+; 1196 :     }
+; 1197 : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Adl_verify_range@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClientprofile@Persistence@TechnicalServices@@0@Z ENDP ; std::_Adl_verify_range<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\type_traits
 ;	COMDAT ??$forward@V?$allocator@D@std@@@std@@YA$$QEAV?$allocator@D@0@AEAV10@@Z
 _TEXT	SEGMENT
@@ -16062,6 +18312,64 @@ $LN1@any_cast:
 	pop	rbp
 	ret	0
 ??$any_cast@UClientprofile@Persistence@TechnicalServices@@@std@@YAPEAUClientprofile@Persistence@TechnicalServices@@QEAVany@0@@Z ENDP ; std::any_cast<TechnicalServices::Persistence::Clientprofile>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+;	COMDAT ??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z
+_TEXT	SEGMENT
+_Any$ = 224
+??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z PROC ; std::any_cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >, COMDAT
+
+; 388  : _NODISCARD _ValueType* any_cast(any* const _Any) noexcept {
+
+$LN4:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__24DC9795_any
+	call	__CheckForDebuggerJustMyCode
+
+; 389  :     // retrieve a pointer to the _ValueType contained in _Any, or null
+; 390  :     static_assert(!is_void_v<_ValueType>, "std::any cannot contain void.");
+; 391  : 
+; 392  :     if constexpr (is_function_v<_ValueType> || is_array_v<_ValueType>) {
+; 393  :         return nullptr;
+; 394  :     } else {
+; 395  :         if (!_Any) {
+
+	cmp	QWORD PTR _Any$[rbp], 0
+	jne	SHORT $LN2@any_cast
+
+; 396  :             return nullptr;
+
+	xor	eax, eax
+	jmp	SHORT $LN1@any_cast
+$LN2@any_cast:
+
+; 397  :         }
+; 398  : 
+; 399  :         return _Any->_Cast<_Remove_cvref_t<_ValueType>>();
+
+	mov	rcx, QWORD PTR _Any$[rbp]
+	call	??$_Cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@any@std@@QEAAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@1@XZ ; std::any::_Cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
+	npad	1
+$LN1@any_cast:
+
+; 400  :     }
+; 401  : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z ENDP ; std::any_cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
@@ -20127,6 +22435,113 @@ $LN3:
 ??$_Pocca@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClient@Persistence@TechnicalServices@@@0@AEBV10@@Z ENDP ; std::_Pocca<std::allocator<TechnicalServices::Persistence::Client> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ??$assign@PEAUClientprofile@Persistence@TechnicalServices@@$0A@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z
+_TEXT	SEGMENT
+$T1 = 196
+$T2 = 228
+$T3 = 260
+$T4 = 292
+tv85 = 312
+tv83 = 320
+this$ = 368
+_First$ = 376
+_Last$ = 384
+??$assign@PEAUClientprofile@Persistence@TechnicalServices@@$0A@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::assign<TechnicalServices::Persistence::Clientprofile *,0>, COMDAT
+
+; 1140 :     void assign(_Iter _First, _Iter _Last) {
+
+$LN3:
+	mov	QWORD PTR [rsp+24], r8
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 376				; 00000178H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 94					; 0000005eH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+408]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1141 :         _Adl_verify_range(_First, _Last);
+
+	lea	rdx, QWORD PTR _Last$[rbp]
+	lea	rcx, QWORD PTR _First$[rbp]
+	call	??$_Adl_verify_range@PEAUClientprofile@Persistence@TechnicalServices@@PEAU123@@std@@YAXAEBQEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::_Adl_verify_range<TechnicalServices::Persistence::Clientprofile *,TechnicalServices::Persistence::Clientprofile *>
+
+; 1142 :         _Assign_range(_Get_unwrapped(_First), _Get_unwrapped(_Last), _Iter_cat_t<_Iter>{});
+
+	lea	rax, QWORD PTR $T1[rbp]
+	mov	rdi, rax
+	xor	eax, eax
+	mov	ecx, 1
+	rep stosb
+	movzx	eax, BYTE PTR $T2[rbp]
+	mov	BYTE PTR $T3[rbp], al
+	movzx	eax, BYTE PTR $T3[rbp]
+	mov	BYTE PTR $T4[rbp], al
+	lea	rcx, QWORD PTR _Last$[rbp]
+	call	??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * &>
+	mov	QWORD PTR tv85[rbp], rax
+	lea	rcx, QWORD PTR _First$[rbp]
+	call	??$_Get_unwrapped@AEAPEAUClientprofile@Persistence@TechnicalServices@@@std@@YA@AEAPEAUClientprofile@Persistence@TechnicalServices@@@Z ; std::_Get_unwrapped<TechnicalServices::Persistence::Clientprofile * &>
+	mov	QWORD PTR tv83[rbp], rax
+	movzx	r9d, BYTE PTR $T4[rbp]
+	mov	r8, QWORD PTR tv85[rbp]
+	mov	rdx, QWORD PTR tv83[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	??$_Assign_range@PEAUClientprofile@Persistence@TechnicalServices@@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0Uforward_iterator_tag@1@@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Assign_range<TechnicalServices::Persistence::Clientprofile *>
+
+; 1143 :     }
+
+	lea	rsp, QWORD PTR [rbp+344]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$assign@PEAUClientprofile@Persistence@TechnicalServices@@$0A@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::assign<TechnicalServices::Persistence::Clientprofile *,0>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z
+_TEXT	SEGMENT
+_Left$ = 224
+_Right$ = 232
+??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z PROC ; std::_Pocca<std::allocator<TechnicalServices::Persistence::Clientprofile> >, COMDAT
+
+; 878  : void _Pocca(_Alloc& _Left, const _Alloc& _Right) noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+	npad	1
+
+; 879  :     if constexpr (allocator_traits<_Alloc>::propagate_on_container_copy_assignment::value) {
+; 880  :         _Left = _Right;
+; 881  :     }
+; 882  : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z ENDP ; std::_Pocca<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
 ;	COMDAT ??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z
 _TEXT	SEGMENT
@@ -21987,6 +24402,41 @@ $LN3:
 ??$?0UClientprofile@Persistence@TechnicalServices@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@1@@Z ENDP ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><TechnicalServices::Persistence::Clientprofile>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
+;	COMDAT ??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z
+_TEXT	SEGMENT
+_Val$ = 224
+??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z PROC ; std::addressof<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > const >, COMDAT
+
+; 274  : _NODISCARD constexpr _Ty* addressof(_Ty& _Val) noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__911385EF_xstddef
+	call	__CheckForDebuggerJustMyCode
+
+; 275  :     return __builtin_addressof(_Val);
+
+	mov	rax, QWORD PTR _Val$[rbp]
+
+; 276  : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z ENDP ; std::addressof<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > const >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
 _TEXT	SEGMENT
@@ -22126,6 +24576,64 @@ $LN3@any_cast:
 	pop	rbp
 	ret	0
 ??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z ENDP ; std::any_cast<TechnicalServices::Persistence::Clientprofile const &>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\any
+;	COMDAT ??$any_cast@AEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z
+_TEXT	SEGMENT
+_Ptr$ = 8
+_Any$ = 256
+??$any_cast@AEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z PROC ; std::any_cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > const &>, COMDAT
+
+; 417  : _NODISCARD remove_cv_t<_Ty> any_cast(any& _Any) {
+
+$LN4:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__24DC9795_any
+	call	__CheckForDebuggerJustMyCode
+
+; 418  :     static_assert(is_constructible_v<remove_cv_t<_Ty>, _Remove_cvref_t<_Ty>&>,
+; 419  :         "any_cast<T>(any&) requires remove_cv_t<T> to be constructible from remove_cv_t<remove_reference_t<T>>&");
+; 420  : 
+; 421  :     const auto _Ptr = _STD any_cast<_Remove_cvref_t<_Ty>>(&_Any);
+
+	mov	rcx, QWORD PTR _Any$[rbp]
+	call	??$any_cast@V?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEAV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@QEAVany@0@@Z ; std::any_cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > >
+	mov	QWORD PTR _Ptr$[rbp], rax
+
+; 422  :     if (!_Ptr) {
+
+	cmp	QWORD PTR _Ptr$[rbp], 0
+	jne	SHORT $LN2@any_cast
+
+; 423  :         _Throw_bad_any_cast();
+
+	call	?_Throw_bad_any_cast@std@@YAXXZ		; std::_Throw_bad_any_cast
+$LN2@any_cast:
+
+; 424  :     }
+; 425  : 
+; 426  :     return static_cast<remove_cv_t<_Ty>>(*_Ptr);
+
+	mov	rax, QWORD PTR _Ptr$[rbp]
+$LN3@any_cast:
+
+; 427  : }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$any_cast@AEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z ENDP ; std::any_cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > const &>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\locale
@@ -25887,6 +28395,41 @@ $LN3:
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
+_TEXT	SEGMENT
+this$ = 224
+?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ PROC ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Clientprofile>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Clientprofile> >,1>::_Get_first, COMDAT
+
+; 1347 :     constexpr const _Ty1& _Get_first() const noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 1348 :         return *this;
+
+	mov	rax, QWORD PTR this$[rbp]
+
+; 1349 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ENDP ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Clientprofile>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Clientprofile> >,1>::_Get_first
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -25919,6 +28462,44 @@ $LN3:
 	pop	rbp
 	ret	0
 ?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ENDP ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Clientprofile>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Clientprofile> >,1>::_Get_first
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ
+_TEXT	SEGMENT
+this$ = 224
+?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal, COMDAT
+
+; 1735 :     const _Alty& _Getal() const noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1736 :         return _Mypair._Get_first();
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, rax
+	call	?_Get_first@?$_Compressed_pair@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@V?$_Vector_val@U?$_Simple_types@UClientprofile@Persistence@TechnicalServices@@@std@@@2@$00@std@@QEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::_Compressed_pair<std::allocator<TechnicalServices::Persistence::Clientprofile>,std::_Vector_val<std::_Simple_types<TechnicalServices::Persistence::Clientprofile> >,1>::_Get_first
+	npad	1
+
+; 1737 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
@@ -25957,6 +28538,40 @@ $LN3:
 	pop	rbp
 	ret	0
 ?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Xlength@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@CAXXZ
+_TEXT	SEGMENT
+?_Xlength@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@CAXXZ PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Xlength, COMDAT
+
+; 1703 :     [[noreturn]] static void _Xlength() {
+
+$LN3:
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1704 :         _Xlength_error("vector too long");
+
+	lea	rcx, OFFSET FLAT:??_C@_0BA@FOIKENOD@vector?5too?5long@
+	call	?_Xlength_error@std@@YAXPEBD@Z		; std::_Xlength_error
+$LN2@Xlength:
+
+; 1705 :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Xlength@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@CAXXZ ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Xlength
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
@@ -26083,6 +28698,202 @@ $LN2@Tidy:
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Buy_raw@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z
+_TEXT	SEGMENT
+_My_data$ = 8
+_Myfirst$ = 40
+_Mylast$ = 72
+_Myend$ = 104
+_Newvec$ = 136
+tv77 = 344
+this$ = 384
+_Newcapacity$ = 392
+?_Buy_raw@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Buy_raw, COMDAT
+
+; 1632 :     void _Buy_raw(const size_type _Newcapacity) {
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 392				; 00000188H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 98					; 00000062H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+424]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1633 :         // allocate array with _Newcapacity elements
+; 1634 :         auto& _My_data    = _Mypair._Myval2;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR _My_data$[rbp], rax
+
+; 1635 :         pointer& _Myfirst = _My_data._Myfirst;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 8
+	mov	QWORD PTR _Myfirst$[rbp], rax
+
+; 1636 :         pointer& _Mylast  = _My_data._Mylast;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 16
+	mov	QWORD PTR _Mylast$[rbp], rax
+
+; 1637 :         pointer& _Myend   = _My_data._Myend;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 24
+	mov	QWORD PTR _Myend$[rbp], rax
+
+; 1638 : 
+; 1639 :         _STL_INTERNAL_CHECK(!_Myfirst && !_Mylast && !_Myend); // check that *this is tidy
+; 1640 :         _STL_INTERNAL_CHECK(0 < _Newcapacity && _Newcapacity <= max_size());
+; 1641 : 
+; 1642 :         const auto _Newvec = _Getal().allocate(_Newcapacity);
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
+	mov	QWORD PTR tv77[rbp], rax
+	mov	rdx, QWORD PTR _Newcapacity$[rbp]
+	mov	rcx, QWORD PTR tv77[rbp]
+	call	?allocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Clientprofile>::allocate
+	mov	QWORD PTR _Newvec$[rbp], rax
+
+; 1643 :         _Myfirst           = _Newvec;
+
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	rcx, QWORD PTR _Newvec$[rbp]
+	mov	QWORD PTR [rax], rcx
+
+; 1644 :         _Mylast            = _Newvec;
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	rcx, QWORD PTR _Newvec$[rbp]
+	mov	QWORD PTR [rax], rcx
+
+; 1645 :         _Myend             = _Newvec + _Newcapacity;
+
+	imul	rax, QWORD PTR _Newcapacity$[rbp], 56	; 00000038H
+	mov	rcx, QWORD PTR _Newvec$[rbp]
+	add	rcx, rax
+	mov	rax, rcx
+	mov	rcx, QWORD PTR _Myend$[rbp]
+	mov	QWORD PTR [rcx], rax
+
+; 1646 :     }
+
+	lea	rsp, QWORD PTR [rbp+360]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Buy_raw@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Buy_raw
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Calculate_growth@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z
+_TEXT	SEGMENT
+_Oldcapacity$ = 8
+_Geometric$ = 40
+tv67 = 248
+this$ = 288
+_Newsize$ = 296
+?_Calculate_growth@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Calculate_growth, COMDAT
+
+; 1615 :     size_type _Calculate_growth(const size_type _Newsize) const {
+
+$LN5:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 296				; 00000128H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 74					; 0000004aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+328]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1616 :         // given _Oldcapacity and _Newsize, calculate geometric growth
+; 1617 :         const size_type _Oldcapacity = capacity();
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::capacity
+	mov	QWORD PTR _Oldcapacity$[rbp], rax
+
+; 1618 : 
+; 1619 :         if (_Oldcapacity > max_size() - _Oldcapacity / 2) {
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size
+	mov	QWORD PTR tv67[rbp], rax
+	xor	edx, edx
+	mov	rax, QWORD PTR _Oldcapacity$[rbp]
+	mov	ecx, 2
+	div	rcx
+	mov	rcx, QWORD PTR tv67[rbp]
+	sub	rcx, rax
+	mov	rax, rcx
+	cmp	QWORD PTR _Oldcapacity$[rbp], rax
+	jbe	SHORT $LN2@Calculate_
+
+; 1620 :             return _Newsize; // geometric growth would overflow
+
+	mov	rax, QWORD PTR _Newsize$[rbp]
+	jmp	SHORT $LN1@Calculate_
+$LN2@Calculate_:
+
+; 1621 :         }
+; 1622 : 
+; 1623 :         const size_type _Geometric = _Oldcapacity + _Oldcapacity / 2;
+
+	xor	edx, edx
+	mov	rax, QWORD PTR _Oldcapacity$[rbp]
+	mov	ecx, 2
+	div	rcx
+	mov	rcx, QWORD PTR _Oldcapacity$[rbp]
+	add	rcx, rax
+	mov	rax, rcx
+	mov	QWORD PTR _Geometric$[rbp], rax
+
+; 1624 : 
+; 1625 :         if (_Geometric < _Newsize) {
+
+	mov	rax, QWORD PTR _Newsize$[rbp]
+	cmp	QWORD PTR _Geometric$[rbp], rax
+	jae	SHORT $LN3@Calculate_
+
+; 1626 :             return _Newsize; // geometric growth would be insufficient
+
+	mov	rax, QWORD PTR _Newsize$[rbp]
+	jmp	SHORT $LN1@Calculate_
+$LN3@Calculate_:
+
+; 1627 :         }
+; 1628 : 
+; 1629 :         return _Geometric; // geometric growth is sufficient
+
+	mov	rax, QWORD PTR _Geometric$[rbp]
+$LN1@Calculate_:
+
+; 1630 :     }
+
+	lea	rsp, QWORD PTR [rbp+264]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Calculate_growth@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Calculate_growth
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ?_Destroy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z
 _TEXT	SEGMENT
 this$ = 224
@@ -26124,6 +28935,384 @@ $LN3:
 	pop	rbp
 	ret	0
 ?_Destroy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Destroy
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+_TEXT	SEGMENT
+_My_data$ = 8
+this$ = 256
+?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::capacity, COMDAT
+
+; 1492 :     _NODISCARD size_type capacity() const noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1493 :         auto& _My_data = _Mypair._Myval2;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR _My_data$[rbp], rax
+
+; 1494 :         return static_cast<size_type>(_My_data._Myend - _My_data._Myfirst);
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	mov	rcx, QWORD PTR _My_data$[rbp]
+	mov	rcx, QWORD PTR [rcx+8]
+	mov	rax, QWORD PTR [rax+24]
+	sub	rax, rcx
+	cdq
+	mov	ecx, 56					; 00000038H
+	idiv	rcx
+
+; 1495 :     }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+?capacity@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::capacity
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ
+_TEXT	SEGMENT
+$T1 = 200
+$T2 = 232
+this$ = 288
+?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size, COMDAT
+
+; 1487 :     _NODISCARD size_type max_size() const noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 296				; 00000128H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 74					; 0000004aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+328]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1488 :         return (_STD min)(
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
+	mov	rcx, rax
+	call	?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size
+	mov	QWORD PTR $T1[rbp], rax
+	call	?max@?$numeric_limits@_J@std@@SA_JXZ	; std::numeric_limits<__int64>::max
+	mov	QWORD PTR $T2[rbp], rax
+	lea	rdx, QWORD PTR $T1[rbp]
+	lea	rcx, QWORD PTR $T2[rbp]
+	call	??$min@_K@std@@YAAEB_KAEB_K0@Z		; std::min<unsigned __int64>
+	mov	rax, QWORD PTR [rax]
+
+; 1489 :             static_cast<size_type>((numeric_limits<difference_type>::max)()), _Alty_traits::max_size(_Getal()));
+; 1490 :     }
+
+	lea	rsp, QWORD PTR [rbp+264]
+	pop	rdi
+	pop	rbp
+	ret	0
+?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Clear_and_reserve_geometric@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z
+_TEXT	SEGMENT
+_My_data$ = 8
+_Myfirst$ = 40
+_Mylast$ = 72
+_Myend$ = 104
+_Newcapacity$ = 136
+tv91 = 344
+tv89 = 352
+tv87 = 360
+this$ = 400
+_Newsize$ = 408
+?_Clear_and_reserve_geometric@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Clear_and_reserve_geometric, COMDAT
+
+; 1271 :     void _Clear_and_reserve_geometric(const size_type _Newsize) {
+
+$LN5:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 408				; 00000198H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 102				; 00000066H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+440]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1272 :         auto& _My_data    = _Mypair._Myval2;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR _My_data$[rbp], rax
+
+; 1273 :         pointer& _Myfirst = _My_data._Myfirst;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 8
+	mov	QWORD PTR _Myfirst$[rbp], rax
+
+; 1274 :         pointer& _Mylast  = _My_data._Mylast;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 16
+	mov	QWORD PTR _Mylast$[rbp], rax
+
+; 1275 :         pointer& _Myend   = _My_data._Myend;
+
+	mov	rax, QWORD PTR _My_data$[rbp]
+	add	rax, 24
+	mov	QWORD PTR _Myend$[rbp], rax
+
+; 1276 : 
+; 1277 : #if _ITERATOR_DEBUG_LEVEL != 0 && defined(_ENABLE_STL_INTERNAL_CHECK)
+; 1278 :         _STL_INTERNAL_CHECK(_Newsize != 0);
+; 1279 :         {
+; 1280 :             _Lockit _Lock(_LOCK_DEBUG);
+; 1281 :             _STL_INTERNAL_CHECK(!_My_data._Myproxy->_Myfirstiter); // asserts that all iterators are orphaned
+; 1282 :         } // unlock
+; 1283 : #endif // _ITERATOR_DEBUG_LEVEL != 0 && defined(_ENABLE_STL_INTERNAL_CHECK)
+; 1284 : 
+; 1285 :         if (_Newsize > max_size()) {
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?max_size@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size
+	cmp	QWORD PTR _Newsize$[rbp], rax
+	jbe	SHORT $LN2@Clear_and_
+
+; 1286 :             _Xlength();
+
+	call	?_Xlength@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@CAXXZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Xlength
+$LN2@Clear_and_:
+
+; 1287 :         }
+; 1288 : 
+; 1289 :         const size_type _Newcapacity = _Calculate_growth(_Newsize);
+
+	mov	rdx, QWORD PTR _Newsize$[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Calculate_growth@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBA_K_K@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Calculate_growth
+	mov	QWORD PTR _Newcapacity$[rbp], rax
+
+; 1290 : 
+; 1291 :         if (_Myfirst) { // destroy and deallocate old array
+
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	cmp	QWORD PTR [rax], 0
+	je	$LN3@Clear_and_
+
+; 1292 :             _Destroy(_Myfirst, _Mylast);
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	r8, QWORD PTR [rax]
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	rdx, QWORD PTR [rax]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Destroy@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Destroy
+
+; 1293 :             _Getal().deallocate(_Myfirst, static_cast<size_type>(_Myend - _Myfirst));
+
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
+	mov	QWORD PTR tv91[rbp], rax
+	mov	rax, QWORD PTR _Myend$[rbp]
+	mov	rcx, QWORD PTR _Myfirst$[rbp]
+	mov	rcx, QWORD PTR [rcx]
+	mov	rax, QWORD PTR [rax]
+	sub	rax, rcx
+	cdq
+	mov	ecx, 56					; 00000038H
+	idiv	rcx
+	mov	QWORD PTR tv89[rbp], rax
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	QWORD PTR tv87[rbp], rax
+	mov	r8, QWORD PTR tv89[rbp]
+	mov	rdx, QWORD PTR tv87[rbp]
+	mov	rcx, QWORD PTR tv91[rbp]
+	call	?deallocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAXQEAUClientprofile@Persistence@TechnicalServices@@_K@Z ; std::allocator<TechnicalServices::Persistence::Clientprofile>::deallocate
+
+; 1294 : 
+; 1295 :             _Myfirst = pointer();
+
+	mov	rax, QWORD PTR _Myfirst$[rbp]
+	mov	QWORD PTR [rax], 0
+
+; 1296 :             _Mylast  = pointer();
+
+	mov	rax, QWORD PTR _Mylast$[rbp]
+	mov	QWORD PTR [rax], 0
+
+; 1297 :             _Myend   = pointer();
+
+	mov	rax, QWORD PTR _Myend$[rbp]
+	mov	QWORD PTR [rax], 0
+$LN3@Clear_and_:
+
+; 1298 :         }
+; 1299 : 
+; 1300 :         _Buy_raw(_Newcapacity);
+
+	mov	rdx, QWORD PTR _Newcapacity$[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Buy_raw@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Buy_raw
+$LN4@Clear_and_:
+
+; 1301 :     }
+
+	lea	rsp, QWORD PTR [rbp+376]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Clear_and_reserve_geometric@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAX_K@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Clear_and_reserve_geometric
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ??4?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@AEBV01@@Z
+_TEXT	SEGMENT
+$T1 = 196
+this$ = 256
+_Right$ = 264
+??4?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@AEBV01@@Z PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::operator=, COMDAT
+
+; 1167 :     vector& operator=(const vector& _Right) {
+
+$LN4:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1168 :         if (this != _STD addressof(_Right)) {
+
+	mov	rcx, QWORD PTR _Right$[rbp]
+	call	??$addressof@$$CBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAPEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEBV10@@Z ; std::addressof<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > const >
+	cmp	QWORD PTR this$[rbp], rax
+	je	SHORT $LN2@operator
+
+; 1169 :             _Copy_assign(_Right, _Choose_pocca<_Alty>{});
+
+	lea	rax, QWORD PTR $T1[rbp]
+	mov	rdi, rax
+	xor	eax, eax
+	mov	ecx, 1
+	rep stosb
+	movzx	r8d, BYTE PTR $T1[rbp]
+	mov	rdx, QWORD PTR _Right$[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Copy_assign@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Copy_assign
+$LN2@operator:
+
+; 1170 :         }
+; 1171 : 
+; 1172 :         return *this;
+
+	mov	rax, QWORD PTR this$[rbp]
+
+; 1173 :     }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+??4?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@AEBV01@@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::operator=
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ?_Copy_assign@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z
+_TEXT	SEGMENT
+_Right_data$ = 8
+tv73 = 216
+tv71 = 224
+this$ = 272
+_Right$ = 280
+__formal$ = 288
+?_Copy_assign@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z PROC ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Copy_assign, COMDAT
+
+; 1150 :     void _Copy_assign(const vector& _Right, false_type) {
+
+$LN3:
+	mov	BYTE PTR [rsp+24], r8b
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 280				; 00000118H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 70					; 00000046H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+312]
+	lea	rcx, OFFSET FLAT:__138CEB20_vector
+	call	__CheckForDebuggerJustMyCode
+
+; 1151 :         _Pocca(_Getal(), _Right._Getal());
+
+	mov	rcx, QWORD PTR _Right$[rbp]
+	call	?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEBAAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
+	mov	QWORD PTR tv73[rbp], rax
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Getal
+	mov	QWORD PTR tv71[rbp], rax
+	mov	rdx, QWORD PTR tv73[rbp]
+	mov	rcx, QWORD PTR tv71[rbp]
+	call	??$_Pocca@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@YAXAEAV?$allocator@UClientprofile@Persistence@TechnicalServices@@@0@AEBV10@@Z ; std::_Pocca<std::allocator<TechnicalServices::Persistence::Clientprofile> >
+
+; 1152 :         auto& _Right_data = _Right._Mypair._Myval2;
+
+	mov	rax, QWORD PTR _Right$[rbp]
+	mov	QWORD PTR _Right_data$[rbp], rax
+
+; 1153 :         assign(_Right_data._Myfirst, _Right_data._Mylast);
+
+	mov	rax, QWORD PTR _Right_data$[rbp]
+	mov	r8, QWORD PTR [rax+16]
+	mov	rax, QWORD PTR _Right_data$[rbp]
+	mov	rdx, QWORD PTR [rax+8]
+	mov	rcx, QWORD PTR this$[rbp]
+	call	??$assign@PEAUClientprofile@Persistence@TechnicalServices@@$0A@@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAXPEAUClientprofile@Persistence@TechnicalServices@@0@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::assign<TechnicalServices::Persistence::Clientprofile *,0>
+
+; 1154 :     }
+
+	lea	rsp, QWORD PTR [rbp+248]
+	pop	rdi
+	pop	rbp
+	ret	0
+?_Copy_assign@?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@AEAAXAEBV12@U?$integral_constant@_N$0A@@2@@Z ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::_Copy_assign
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
@@ -26197,6 +29386,81 @@ $LN3:
 	pop	rbp
 	ret	0
 ??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ENDP ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::~vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z
+_TEXT	SEGMENT
+__formal$ = 224
+?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z PROC ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size, COMDAT
+
+; 702  :     _NODISCARD static size_type max_size(const _Alloc&) noexcept {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 703  :         return static_cast<size_t>(-1) / sizeof(value_type);
+
+	mov	rax, 329406144173384850			; 0492492492492492H
+
+; 704  :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?max_size@?$_Default_allocator_traits@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@SA_KAEBV?$allocator@UClientprofile@Persistence@TechnicalServices@@@2@@Z ENDP ; std::_Default_allocator_traits<std::allocator<TechnicalServices::Persistence::Clientprofile> >::max_size
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ?allocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@_K@Z
+_TEXT	SEGMENT
+this$ = 224
+_Count$ = 232
+?allocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@_K@Z PROC ; std::allocator<TechnicalServices::Persistence::Clientprofile>::allocate, COMDAT
+
+; 806  :     _NODISCARD __declspec(allocator) _Ty* allocate(_CRT_GUARDOVERFLOW const size_t _Count) {
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 807  :         return static_cast<_Ty*>(_Allocate<_New_alignof<_Ty>>(_Get_size_of_n<sizeof(_Ty)>(_Count)));
+
+	mov	rcx, QWORD PTR _Count$[rbp]
+	call	??$_Get_size_of_n@$0DI@@std@@YA_K_K@Z	; std::_Get_size_of_n<56>
+	mov	rcx, rax
+	call	??$_Allocate@$0BA@U_Default_allocate_traits@std@@$0A@@std@@YAPEAX_K@Z ; std::_Allocate<16,std::_Default_allocate_traits,0>
+
+; 808  :     }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+?allocate@?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@QEAAPEAUClientprofile@Persistence@TechnicalServices@@_K@Z ENDP ; std::allocator<TechnicalServices::Persistence::Clientprofile>::allocate
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
@@ -28332,179 +31596,222 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?launch@SimpleUI@UI@@UEAAXXZ PROC			; UI::SimpleUI::launch, COMDAT
 
 ; 53   :     {
 
-$LN88:
+$LN93:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
 	push	rsi
 	push	rdi
-	mov	eax, 4512				; 000011a0H
+	mov	eax, 5488				; 00001570H
 	call	__chkstk
 	sub	rsp, rax
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
-	mov	ecx, 1128				; 00000468H
+	mov	ecx, 1372				; 0000055cH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	mov	rcx, QWORD PTR [rsp+4552]
+	mov	rcx, QWORD PTR [rsp+5528]
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
@@ -28580,67 +31887,45 @@ $LN88:
 	lea	rcx, QWORD PTR credentials$[rbp+40]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR $T39[rbp]
+	lea	rcx, QWORD PTR $T44[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	mov	QWORD PTR tv172[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_00CNPNBAHC@@
-	lea	rcx, QWORD PTR $T68[rbp]
+	lea	rcx, QWORD PTR $T86[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rax, QWORD PTR $T68[rbp+40]
+	lea	rax, QWORD PTR $T86[rbp+40]
 	mov	r8, rax
-	lea	rdx, QWORD PTR $T68[rbp]
-	lea	rcx, QWORD PTR $T40[rbp]
+	lea	rdx, QWORD PTR $T86[rbp]
+	lea	rcx, QWORD PTR $T45[rbp]
 	call	??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	lea	rcx, QWORD PTR $T41[rbp]
+	lea	rcx, QWORD PTR $T46[rbp]
 	mov	rdi, rcx
 	mov	rsi, rax
 	mov	ecx, 16
 	rep movsb
-	lea	rax, QWORD PTR $T67[rbp]
-	lea	rcx, QWORD PTR $T41[rbp]
+	lea	rax, QWORD PTR $T85[rbp]
+	lea	rcx, QWORD PTR $T46[rbp]
 	mov	rdi, rax
 	mov	rsi, rcx
 	mov	ecx, 16
 	rep movsb
 	mov	r8, QWORD PTR tv172[rbp]
-	lea	rdx, QWORD PTR $T67[rbp]
+	lea	rdx, QWORD PTR $T85[rbp]
 	lea	rcx, QWORD PTR credentials$[rbp+80]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T68[rbp]
+	lea	rcx, QWORD PTR $T86[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	npad	1
 
-; 63   :         Domain::Client::Client Client = { "",0 };// ensures roles[0] exists
-
-	lea	rdx, OFFSET FLAT:??_C@_00CNPNBAHC@@
-	lea	rcx, QWORD PTR Client$[rbp]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	DWORD PTR Client$[rbp+40], 0
-	lea	rcx, QWORD PTR Client$[rbp+48]
-	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	npad	1
-	lea	rax, QWORD PTR Client$[rbp+88]
-	mov	rdi, rax
-	xor	eax, eax
-	mov	ecx, 8
-	rep stosb
-
+; 63   :        
 ; 64   : 
-; 65   :         auto& selectedRole = credentials.roles[0];     // convenience alias
-
-	xor	edx, edx
-	lea	rcx, QWORD PTR credentials$[rbp+80]
-	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	QWORD PTR selectedRole$[rbp], rax
-
-; 66   : 
-; 67   : 
-; 68   :         std::unique_ptr<Domain::Session::SessionHandler> sessionControl;
+; 65   : 
+; 66   :         std::unique_ptr<Domain::Session::SessionHandler> sessionControl;
 
 	mov	edx, 8
 	lea	rcx, QWORD PTR sessionControl$[rbp]
@@ -28650,58 +31935,58 @@ $LN88:
 	npad	1
 $LN4@launch:
 
-; 69   : 
-; 70   :         do
-; 71   :         {
-; 72   :             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+; 67   : 
+; 68   :         do
+; 69   :         {
+; 70   :             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 	call	?max@?$numeric_limits@_J@std@@SA_JXZ	; std::numeric_limits<__int64>::max
-	mov	QWORD PTR tv202[rbp], rax
+	mov	QWORD PTR tv187[rbp], rax
 	mov	r8d, 10
-	mov	rdx, QWORD PTR tv202[rbp]
+	mov	rdx, QWORD PTR tv187[rbp]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_?ignore@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@_JH@Z
 
-; 73   : 
-; 74   :             std::cout << "  name: ";
+; 71   : 
+; 72   :             std::cout << "  name: ";
 
 	lea	rdx, OFFSET FLAT:??_C@_08KLHCBAMK@?5?5name?3?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 75   :             std::getline(std::cin, credentials.userName);
+; 73   :             std::getline(std::cin, credentials.userName);
 
 	lea	rdx, QWORD PTR credentials$[rbp]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 76   : 
-; 77   :             std::cout << "  pass phrase: ";
+; 74   : 
+; 75   :             std::cout << "  pass phrase: ";
 
 	lea	rdx, OFFSET FLAT:??_C@_0BA@ILPNJJBN@?5?5pass?5phrase?3?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 78   :             std::getline(std::cin, credentials.passPhrase);
+; 76   :             std::getline(std::cin, credentials.passPhrase);
 
 	lea	rdx, QWORD PTR credentials$[rbp+40]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 79   : 
-; 80   :             sessionControl = Domain::Session::SessionHandler::createSession(credentials);
+; 77   : 
+; 78   :             sessionControl = Domain::Session::SessionHandler::createSession(credentials);
 
 	lea	rdx, QWORD PTR credentials$[rbp]
-	lea	rcx, QWORD PTR $T42[rbp]
+	lea	rcx, QWORD PTR $T47[rbp]
 	call	?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Session::SessionHandler::createSession
-	mov	QWORD PTR tv893[rbp], rax
-	mov	rdx, QWORD PTR tv893[rbp]
+	mov	QWORD PTR tv1112[rbp], rax
+	mov	rdx, QWORD PTR tv1112[rbp]
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??$?4U?$default_delete@VSessionHandler@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator=<std::default_delete<Domain::Session::SessionHandler>,0>
-	lea	rcx, QWORD PTR $T42[rbp]
+	lea	rcx, QWORD PTR $T47[rbp]
 	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 
-; 81   :             if (sessionControl != nullptr)
+; 79   :             if (sessionControl != nullptr)
 
 	xor	edx, edx
 	lea	rcx, QWORD PTR sessionControl$[rbp]
@@ -28710,96 +31995,96 @@ $LN4@launch:
 	test	eax, eax
 	je	SHORT $LN26@launch
 
-; 82   :             {
-; 83   :                 break;
+; 80   :             {
+; 81   :                 break;
 
 	jmp	SHORT $LN7@launch
 $LN26@launch:
 
-; 84   :             }
-; 85   :             //_logger << "Login failure for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
-; 86   :             //_logger << "Login failure for \"" + credentials.userName + "\" as a user. ";    //+ "\"";
-; 87   : 
-; 88   :         } while (true);
+; 82   :             }
+; 83   :             //_logger << "Login failure for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
+; 84   :             //_logger << "Login failure for \"" + credentials.userName + "\" as a user. ";    //+ "\"";
+; 85   : 
+; 86   :         } while (true);
 
 	xor	eax, eax
 	cmp	eax, 1
 	jne	$LN4@launch
 $LN7@launch:
 
-; 89   : 
-; 90   : 
-; 91   :         // 4) Fetch functionality options for this role
-; 92   :         do
-; 93   :         {
-; 94   :             auto        commands = sessionControl->getCommands();
+; 87   : 
+; 88   : 
+; 89   :         // 4) Fetch functionality options for this role
+; 90   :         do
+; 91   :         {
+; 92   :             auto        commands = sessionControl->getCommands();
 
 	mov	edx, 32					; 00000020H
-	lea	rcx, QWORD PTR commands$23[rbp]
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??C?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBAPEAVSessionHandler@Session@Domain@@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator->
-	mov	QWORD PTR tv228[rbp], rax
-	mov	rax, QWORD PTR tv228[rbp]
+	mov	QWORD PTR tv213[rbp], rax
+	mov	rax, QWORD PTR tv213[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv234[rbp], rax
-	lea	rdx, QWORD PTR commands$23[rbp]
-	mov	rcx, QWORD PTR tv228[rbp]
-	call	QWORD PTR tv234[rbp]
+	mov	QWORD PTR tv219[rbp], rax
+	lea	rdx, QWORD PTR commands$25[rbp]
+	mov	rcx, QWORD PTR tv213[rbp]
+	call	QWORD PTR tv219[rbp]
 	npad	1
 
-; 95   :             std::string selectedCommand;
+; 93   :             std::string selectedCommand;
 
-	lea	rcx, QWORD PTR selectedCommand$24[rbp]
+	lea	rcx, QWORD PTR selectedCommand$26[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 $LN10@launch:
 
-; 96   :             unsigned    menuSelection;
-; 97   : 
-; 98   :             do
-; 99   :             {
-; 100  :                 for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+; 94   :             unsigned    menuSelection;
+; 95   : 
+; 96   :             do
+; 97   :             {
+; 98   :                 for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
 
-	mov	DWORD PTR i$26[rbp], 0
+	mov	DWORD PTR i$28[rbp], 0
 	jmp	SHORT $LN13@launch
 $LN11@launch:
-	mov	eax, DWORD PTR i$26[rbp]
+	mov	eax, DWORD PTR i$28[rbp]
 	inc	eax
-	mov	DWORD PTR i$26[rbp], eax
+	mov	DWORD PTR i$28[rbp], eax
 $LN13@launch:
-	mov	eax, DWORD PTR i$26[rbp]
-	mov	QWORD PTR tv240[rbp], rax
-	lea	rcx, QWORD PTR commands$23[rbp]
+	mov	eax, DWORD PTR i$28[rbp]
+	mov	QWORD PTR tv225[rbp], rax
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	rcx, QWORD PTR tv240[rbp]
+	mov	rcx, QWORD PTR tv225[rbp]
 	cmp	rcx, rax
 	je	$LN12@launch
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv261[rbp], rax
+	mov	QWORD PTR tv246[rbp], rax
 	mov	edx, 2
-	lea	rcx, QWORD PTR $T43[rbp]
+	lea	rcx, QWORD PTR $T48[rbp]
 	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
-	mov	QWORD PTR tv263[rbp], rax
-	mov	rdx, QWORD PTR tv263[rbp]
-	mov	rcx, QWORD PTR tv261[rbp]
+	mov	QWORD PTR tv248[rbp], rax
+	mov	rdx, QWORD PTR tv248[rbp]
+	mov	rcx, QWORD PTR tv246[rbp]
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
-	mov	QWORD PTR tv268[rbp], rax
-	mov	edx, DWORD PTR i$26[rbp]
-	mov	rcx, QWORD PTR tv268[rbp]
+	mov	QWORD PTR tv253[rbp], rax
+	mov	edx, DWORD PTR i$28[rbp]
+	mov	rcx, QWORD PTR tv253[rbp]
 	call	QWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z
 	lea	rdx, OFFSET FLAT:??_C@_03NLJIHOMM@?5?9?5@
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
-	mov	QWORD PTR tv272[rbp], rax
-	mov	eax, DWORD PTR i$26[rbp]
+	mov	QWORD PTR tv257[rbp], rax
+	mov	eax, DWORD PTR i$28[rbp]
 	mov	edx, eax
-	lea	rcx, QWORD PTR commands$23[rbp]
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	QWORD PTR tv274[rbp], rax
-	mov	rdx, QWORD PTR tv274[rbp]
-	mov	rcx, QWORD PTR tv272[rbp]
+	mov	QWORD PTR tv259[rbp], rax
+	mov	rdx, QWORD PTR tv259[rbp]
+	mov	rcx, QWORD PTR tv257[rbp]
 	call	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
 	mov	dl, 10
 	mov	rcx, rax
@@ -28807,23 +32092,23 @@ $LN13@launch:
 	jmp	$LN11@launch
 $LN12@launch:
 
-; 101  :                 std::cout << std::setw(2) << commands.size() << " - " << "Quit\n";
+; 99   :                 std::cout << std::setw(2) << commands.size() << " - " << "Quit\n";
 
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv286[rbp], rax
+	mov	QWORD PTR tv271[rbp], rax
 	mov	edx, 2
-	lea	rcx, QWORD PTR $T44[rbp]
+	lea	rcx, QWORD PTR $T49[rbp]
 	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
-	mov	QWORD PTR tv288[rbp], rax
-	mov	rdx, QWORD PTR tv288[rbp]
-	mov	rcx, QWORD PTR tv286[rbp]
+	mov	QWORD PTR tv273[rbp], rax
+	mov	rdx, QWORD PTR tv273[rbp]
+	mov	rcx, QWORD PTR tv271[rbp]
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
-	mov	QWORD PTR tv297[rbp], rax
-	lea	rcx, QWORD PTR commands$23[rbp]
+	mov	QWORD PTR tv282[rbp], rax
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	QWORD PTR tv295[rbp], rax
-	mov	rdx, QWORD PTR tv295[rbp]
-	mov	rcx, QWORD PTR tv297[rbp]
+	mov	QWORD PTR tv280[rbp], rax
+	mov	rdx, QWORD PTR tv280[rbp]
+	mov	rcx, QWORD PTR tv282[rbp]
 	call	QWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_K@Z
 	lea	rdx, OFFSET FLAT:??_C@_03NLJIHOMM@?5?9?5@
 	mov	rcx, rax
@@ -28832,251 +32117,251 @@ $LN12@launch:
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 102  : 
-; 103  :                 std::cout << "  action (0-" << commands.size() << "): ";
+; 100  : 
+; 101  :                 std::cout << "  action (0-" << commands.size() << "): ";
 
 	lea	rdx, OFFSET FLAT:??_C@_0N@HNKDLDDO@?5?5action?5?$CI0?9@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
-	mov	QWORD PTR tv312[rbp], rax
-	lea	rcx, QWORD PTR commands$23[rbp]
+	mov	QWORD PTR tv297[rbp], rax
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	QWORD PTR tv310[rbp], rax
-	mov	rdx, QWORD PTR tv310[rbp]
-	mov	rcx, QWORD PTR tv312[rbp]
+	mov	QWORD PTR tv295[rbp], rax
+	mov	rdx, QWORD PTR tv295[rbp]
+	mov	rcx, QWORD PTR tv297[rbp]
 	call	QWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_K@Z
 	lea	rdx, OFFSET FLAT:??_C@_03LPPJIELD@?$CJ?3?5@
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 104  :                 std::cin >> menuSelection;
+; 102  :                 std::cin >> menuSelection;
 
-	lea	rdx, QWORD PTR menuSelection$25[rbp]
+	lea	rdx, QWORD PTR menuSelection$27[rbp]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAI@Z
 
-; 105  :             } while (menuSelection > commands.size());
+; 103  :             } while (menuSelection > commands.size());
 
-	mov	eax, DWORD PTR menuSelection$25[rbp]
-	mov	QWORD PTR tv314[rbp], rax
-	lea	rcx, QWORD PTR commands$23[rbp]
+	mov	eax, DWORD PTR menuSelection$27[rbp]
+	mov	QWORD PTR tv299[rbp], rax
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	rcx, QWORD PTR tv314[rbp]
+	mov	rcx, QWORD PTR tv299[rbp]
 	cmp	rcx, rax
 	ja	$LN10@launch
 
-; 106  : 
-; 107  :             if (menuSelection == commands.size()) break;
+; 104  : 
+; 105  :             if (menuSelection == commands.size()) break;
 
-	mov	eax, DWORD PTR menuSelection$25[rbp]
-	mov	QWORD PTR tv319[rbp], rax
-	lea	rcx, QWORD PTR commands$23[rbp]
+	mov	eax, DWORD PTR menuSelection$27[rbp]
+	mov	QWORD PTR tv304[rbp], rax
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	rcx, QWORD PTR tv319[rbp]
+	mov	rcx, QWORD PTR tv304[rbp]
 	cmp	rcx, rax
 	jne	SHORT $LN27@launch
-	lea	rcx, QWORD PTR selectedCommand$24[rbp]
+	lea	rcx, QWORD PTR selectedCommand$26[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR commands$23[rbp]
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	jmp	$LN6@launch
 $LN27@launch:
 
-; 108  : 
-; 109  :             selectedCommand = commands[menuSelection];
+; 106  : 
+; 107  :             selectedCommand = commands[menuSelection];
 
-	mov	eax, DWORD PTR menuSelection$25[rbp]
+	mov	eax, DWORD PTR menuSelection$27[rbp]
 	mov	edx, eax
-	lea	rcx, QWORD PTR commands$23[rbp]
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	rdx, rax
-	lea	rcx, QWORD PTR selectedCommand$24[rbp]
+	lea	rcx, QWORD PTR selectedCommand$26[rbp]
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@AEBV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 
-; 110  :             _logger << "Command selected \"" + selectedCommand + '"';
+; 108  :             _logger << "Command selected \"" + selectedCommand + '"';
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
-	mov	QWORD PTR tv353[rbp], rax
+	mov	QWORD PTR tv338[rbp], rax
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv355[rbp], rax
-	lea	r8, QWORD PTR selectedCommand$24[rbp]
+	mov	QWORD PTR tv340[rbp], rax
+	lea	r8, QWORD PTR selectedCommand$26[rbp]
 	lea	rdx, OFFSET FLAT:??_C@_0BD@MDGDICNG@Command?5selected?5?$CC@
-	lea	rcx, QWORD PTR $T45[rbp]
+	lea	rcx, QWORD PTR $T50[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv237[rbp], rax
-	mov	rax, QWORD PTR tv237[rbp]
-	mov	QWORD PTR tv899[rbp], rax
+	mov	QWORD PTR tv222[rbp], rax
+	mov	rax, QWORD PTR tv222[rbp]
+	mov	QWORD PTR tv1118[rbp], rax
 	mov	r8b, 34					; 00000022H
-	mov	rdx, QWORD PTR tv899[rbp]
-	lea	rcx, QWORD PTR $T46[rbp]
+	mov	rdx, QWORD PTR tv1118[rbp]
+	lea	rcx, QWORD PTR $T51[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv231[rbp], rax
-	mov	rax, QWORD PTR tv231[rbp]
-	mov	QWORD PTR tv901[rbp], rax
-	mov	rax, QWORD PTR tv901[rbp]
-	mov	QWORD PTR tv351[rbp], rax
-	mov	rdx, QWORD PTR tv351[rbp]
-	mov	rcx, QWORD PTR tv353[rbp]
-	call	QWORD PTR tv355[rbp]
+	mov	QWORD PTR tv216[rbp], rax
+	mov	rax, QWORD PTR tv216[rbp]
+	mov	QWORD PTR tv1120[rbp], rax
+	mov	rax, QWORD PTR tv1120[rbp]
+	mov	QWORD PTR tv336[rbp], rax
+	mov	rdx, QWORD PTR tv336[rbp]
+	mov	rcx, QWORD PTR tv338[rbp]
+	call	QWORD PTR tv340[rbp]
 	npad	1
-	lea	rcx, QWORD PTR $T46[rbp]
+	lea	rcx, QWORD PTR $T51[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR $T45[rbp]
+	lea	rcx, QWORD PTR $T50[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 111  : 
-; 112  : 
-; 113  :             /******************************************************************************************************************************
-; 114  :             **  5) The user interface will collect relevant information to execute the chosen command.  This section requires the UI to
-; 115  :             **     know what information to collect, and hence what the available commands are.  Our goal is loose (minimal) coupling, not
-; 116  :             **     no coupling. This can be achieved in a variety of ways, but one common way is to pass strings instead of strong typed
-; 117  :             **     parameters.
-; 118  :             ******************************************************************************************************************************/
-; 119  :           
-; 120  :             if (selectedCommand == "Client Management")
+; 109  : 
+; 110  : 
+; 111  :             /******************************************************************************************************************************
+; 112  :             **  5) The user interface will collect relevant information to execute the chosen command.  This section requires the UI to
+; 113  :             **     know what information to collect, and hence what the available commands are.  Our goal is loose (minimal) coupling, not
+; 114  :             **     no coupling. This can be achieved in a variety of ways, but one common way is to pass strings instead of strong typed
+; 115  :             **     parameters.
+; 116  :             ******************************************************************************************************************************/
+; 117  :           
+; 118  :             if (selectedCommand == "Client Management")
 
 	lea	rdx, OFFSET FLAT:??_C@_0BC@EHNKAOLP@Client?5Management@
-	lea	rcx, QWORD PTR selectedCommand$24[rbp]
+	lea	rcx, QWORD PTR selectedCommand$26[rbp]
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 	test	eax, eax
 	je	$LN28@launch
 
-; 121  :             {
-; 122  :                 // call client handler 
-; 123  :                 std::unique_ptr<Domain::Client::ClientHandler> ClientHandler; 
+; 119  :             {
+; 120  :                 // call client handler 
+; 121  :                 std::unique_ptr<Domain::Client::ClientHandler> ClientHandler; 
 
 	mov	edx, 8
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	?__autoclassinit2@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAX_K@Z
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??$?0U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> ><std::default_delete<Domain::Client::ClientHandler>,0>
 	npad	1
 
-; 124  :                 // checking if user role is correct for using client management 
-; 125  :                 ClientHandler = Domain::Client::ClientHandler::UseClientManagement(credentials);
+; 122  :                 // checking if user role is correct for using client management 
+; 123  :                 ClientHandler = Domain::Client::ClientHandler::UseClientManagement(credentials);
 
 	lea	rdx, QWORD PTR credentials$[rbp]
-	lea	rcx, QWORD PTR $T47[rbp]
+	lea	rcx, QWORD PTR $T52[rbp]
 	call	?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Client::ClientHandler::UseClientManagement
-	mov	QWORD PTR tv904[rbp], rax
-	mov	rdx, QWORD PTR tv904[rbp]
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	mov	QWORD PTR tv1123[rbp], rax
+	mov	rdx, QWORD PTR tv1123[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??$?4U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator=<std::default_delete<Domain::Client::ClientHandler>,0>
-	lea	rcx, QWORD PTR $T47[rbp]
+	lea	rcx, QWORD PTR $T52[rbp]
 	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 
-; 126  :                
-; 127  :                 // return the client management session ortherwise not allow to access
-; 128  :                 if (ClientHandler != nullptr) {
+; 124  :                
+; 125  :                 // return the client management session ortherwise not allow to access
+; 126  :                 if (ClientHandler != nullptr) {
 
 	xor	edx, edx
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??$?9VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@YA_NAEBV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@0@$$T@Z ; std::operator!=<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 	movzx	eax, al
 	test	eax, eax
 	je	$LN29@launch
 
-; 129  :                     ClientsFromDB = ClientHandler->ClientsDB(ClientsFromDB);
+; 127  :                     ClientsFromDB = ClientHandler->ClientsDB(ClientsFromDB);
 
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
+	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
+	mov	QWORD PTR tv367[rbp], rax
+	mov	rax, QWORD PTR tv367[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	rax, QWORD PTR [rax+24]
+	mov	QWORD PTR tv374[rbp], rax
+	lea	r8, QWORD PTR ClientsFromDB$[rbp]
+	lea	rdx, QWORD PTR $T53[rbp]
+	mov	rcx, QWORD PTR tv367[rbp]
+	call	QWORD PTR tv374[rbp]
+	mov	QWORD PTR tv1125[rbp], rax
+	mov	rdx, QWORD PTR tv1125[rbp]
+	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
+	call	??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::operator=
+	lea	rcx, QWORD PTR $T53[rbp]
+	call	??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
+$LN16@launch:
+
+; 128  :                    
+; 129  :                     do
+; 130  :                     {
+; 131  :                         // list all the command avaliable in client management 
+; 132  :                         auto        commands = ClientHandler->getCommandsClient();
+
+	mov	edx, 32					; 00000020H
+	lea	rcx, QWORD PTR commands$30[rbp]
+	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
 	mov	QWORD PTR tv382[rbp], rax
 	mov	rax, QWORD PTR tv382[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+24]
-	mov	QWORD PTR tv389[rbp], rax
-	lea	r8, QWORD PTR ClientsFromDB$[rbp]
-	lea	rdx, QWORD PTR $T48[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	QWORD PTR tv388[rbp], rax
+	lea	rdx, QWORD PTR commands$30[rbp]
 	mov	rcx, QWORD PTR tv382[rbp]
-	call	QWORD PTR tv389[rbp]
-	mov	QWORD PTR tv906[rbp], rax
-	mov	rdx, QWORD PTR tv906[rbp]
-	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
-	call	??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::operator=
-	lea	rcx, QWORD PTR $T48[rbp]
-	call	??1?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::~vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >
-$LN16@launch:
-
-; 130  :                    
-; 131  :                     do
-; 132  :                     {
-; 133  :                         // list all the command avaliable in client management 
-; 134  :                         auto        commands = ClientHandler->getCommandsClient();
-
-	mov	edx, 32					; 00000020H
-	lea	rcx, QWORD PTR commands$28[rbp]
-	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
-	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
-	mov	QWORD PTR tv397[rbp], rax
-	mov	rax, QWORD PTR tv397[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv403[rbp], rax
-	lea	rdx, QWORD PTR commands$28[rbp]
-	mov	rcx, QWORD PTR tv397[rbp]
-	call	QWORD PTR tv403[rbp]
+	call	QWORD PTR tv388[rbp]
 	npad	1
 
-; 135  :                         std::string selectedCommand;
+; 133  :                         std::string selectedCommand;
 
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 $LN19@launch:
 
-; 136  :                         unsigned    menuSelection;
-; 137  : 
-; 138  :                         do
-; 139  :                         {
-; 140  : 
-; 141  :                             for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+; 134  :                         unsigned    menuSelection;
+; 135  : 
+; 136  :                         do
+; 137  :                         {
+; 138  : 
+; 139  :                             for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
 
-	mov	DWORD PTR i$31[rbp], 0
+	mov	DWORD PTR i$33[rbp], 0
 	jmp	SHORT $LN22@launch
 $LN20@launch:
-	mov	eax, DWORD PTR i$31[rbp]
+	mov	eax, DWORD PTR i$33[rbp]
 	inc	eax
-	mov	DWORD PTR i$31[rbp], eax
+	mov	DWORD PTR i$33[rbp], eax
 $LN22@launch:
-	mov	eax, DWORD PTR i$31[rbp]
-	mov	QWORD PTR tv409[rbp], rax
-	lea	rcx, QWORD PTR commands$28[rbp]
+	mov	eax, DWORD PTR i$33[rbp]
+	mov	QWORD PTR tv394[rbp], rax
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	rcx, QWORD PTR tv409[rbp]
+	mov	rcx, QWORD PTR tv394[rbp]
 	cmp	rcx, rax
 	je	$LN21@launch
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv462[rbp], rax
+	mov	QWORD PTR tv415[rbp], rax
 	mov	edx, 2
-	lea	rcx, QWORD PTR $T49[rbp]
+	lea	rcx, QWORD PTR $T54[rbp]
 	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
-	mov	QWORD PTR tv464[rbp], rax
-	mov	rdx, QWORD PTR tv464[rbp]
-	mov	rcx, QWORD PTR tv462[rbp]
+	mov	QWORD PTR tv417[rbp], rax
+	mov	rdx, QWORD PTR tv417[rbp]
+	mov	rcx, QWORD PTR tv415[rbp]
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
-	mov	QWORD PTR tv469[rbp], rax
-	mov	edx, DWORD PTR i$31[rbp]
-	mov	rcx, QWORD PTR tv469[rbp]
+	mov	QWORD PTR tv422[rbp], rax
+	mov	edx, DWORD PTR i$33[rbp]
+	mov	rcx, QWORD PTR tv422[rbp]
 	call	QWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z
 	lea	rdx, OFFSET FLAT:??_C@_03NLJIHOMM@?5?9?5@
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
-	mov	QWORD PTR tv473[rbp], rax
-	mov	eax, DWORD PTR i$31[rbp]
+	mov	QWORD PTR tv426[rbp], rax
+	mov	eax, DWORD PTR i$33[rbp]
 	mov	edx, eax
-	lea	rcx, QWORD PTR commands$28[rbp]
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	QWORD PTR tv475[rbp], rax
-	mov	rdx, QWORD PTR tv475[rbp]
-	mov	rcx, QWORD PTR tv473[rbp]
+	mov	QWORD PTR tv428[rbp], rax
+	mov	rdx, QWORD PTR tv428[rbp]
+	mov	rcx, QWORD PTR tv426[rbp]
 	call	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
 	mov	dl, 10
 	mov	rcx, rax
@@ -29084,23 +32369,23 @@ $LN22@launch:
 	jmp	$LN20@launch
 $LN21@launch:
 
-; 142  :                             std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
+; 140  :                             std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
 
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv487[rbp], rax
+	mov	QWORD PTR tv440[rbp], rax
 	mov	edx, 2
-	lea	rcx, QWORD PTR $T50[rbp]
+	lea	rcx, QWORD PTR $T55[rbp]
 	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
-	mov	QWORD PTR tv489[rbp], rax
-	mov	rdx, QWORD PTR tv489[rbp]
-	mov	rcx, QWORD PTR tv487[rbp]
+	mov	QWORD PTR tv442[rbp], rax
+	mov	rdx, QWORD PTR tv442[rbp]
+	mov	rcx, QWORD PTR tv440[rbp]
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
-	mov	QWORD PTR tv498[rbp], rax
-	lea	rcx, QWORD PTR commands$28[rbp]
+	mov	QWORD PTR tv451[rbp], rax
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	QWORD PTR tv496[rbp], rax
-	mov	rdx, QWORD PTR tv496[rbp]
-	mov	rcx, QWORD PTR tv498[rbp]
+	mov	QWORD PTR tv449[rbp], rax
+	mov	rdx, QWORD PTR tv449[rbp]
+	mov	rcx, QWORD PTR tv451[rbp]
 	call	QWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_K@Z
 	lea	rdx, OFFSET FLAT:??_C@_03NLJIHOMM@?5?9?5@
 	mov	rcx, rax
@@ -29109,157 +32394,157 @@ $LN21@launch:
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 143  : 
-; 144  :                             std::cout << "  action (0-" << commands.size() << "): ";
+; 141  : 
+; 142  :                             std::cout << "  action (0-" << commands.size() << "): ";
 
 	lea	rdx, OFFSET FLAT:??_C@_0N@HNKDLDDO@?5?5action?5?$CI0?9@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
-	mov	QWORD PTR tv513[rbp], rax
-	lea	rcx, QWORD PTR commands$28[rbp]
+	mov	QWORD PTR tv466[rbp], rax
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	QWORD PTR tv511[rbp], rax
-	mov	rdx, QWORD PTR tv511[rbp]
-	mov	rcx, QWORD PTR tv513[rbp]
+	mov	QWORD PTR tv464[rbp], rax
+	mov	rdx, QWORD PTR tv464[rbp]
+	mov	rcx, QWORD PTR tv466[rbp]
 	call	QWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_K@Z
 	lea	rdx, OFFSET FLAT:??_C@_03LPPJIELD@?$CJ?3?5@
 	mov	rcx, rax
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 145  :                             std::cin >> menuSelection;
+; 143  :                             std::cin >> menuSelection;
 
-	lea	rdx, QWORD PTR menuSelection$30[rbp]
+	lea	rdx, QWORD PTR menuSelection$32[rbp]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAI@Z
 
-; 146  :                         } while (menuSelection > commands.size());
+; 144  :                         } while (menuSelection > commands.size());
 
-	mov	eax, DWORD PTR menuSelection$30[rbp]
-	mov	QWORD PTR tv515[rbp], rax
-	lea	rcx, QWORD PTR commands$28[rbp]
+	mov	eax, DWORD PTR menuSelection$32[rbp]
+	mov	QWORD PTR tv468[rbp], rax
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	rcx, QWORD PTR tv515[rbp]
+	mov	rcx, QWORD PTR tv468[rbp]
 	cmp	rcx, rax
 	ja	$LN19@launch
 
-; 147  : 
-; 148  :                         if (menuSelection == commands.size()) break;
+; 145  : 
+; 146  :                         if (menuSelection == commands.size()) break;
 
-	mov	eax, DWORD PTR menuSelection$30[rbp]
-	mov	QWORD PTR tv520[rbp], rax
-	lea	rcx, QWORD PTR commands$28[rbp]
+	mov	eax, DWORD PTR menuSelection$32[rbp]
+	mov	QWORD PTR tv473[rbp], rax
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
-	mov	rcx, QWORD PTR tv520[rbp]
+	mov	rcx, QWORD PTR tv473[rbp]
 	cmp	rcx, rax
 	jne	SHORT $LN31@launch
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR commands$28[rbp]
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	jmp	$LN15@launch
 $LN31@launch:
 
-; 149  :                         selectedCommand = commands[menuSelection];
+; 147  :                         selectedCommand = commands[menuSelection];
 
-	mov	eax, DWORD PTR menuSelection$30[rbp]
+	mov	eax, DWORD PTR menuSelection$32[rbp]
 	mov	edx, eax
-	lea	rcx, QWORD PTR commands$28[rbp]
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	rdx, rax
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@AEBV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 
-; 150  :                         _logger << "Command selected \"" + selectedCommand + '"';
+; 148  :                         _logger << "Command selected \"" + selectedCommand + '"';
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
-	mov	QWORD PTR tv554[rbp], rax
+	mov	QWORD PTR tv507[rbp], rax
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv556[rbp], rax
-	lea	r8, QWORD PTR selectedCommand$29[rbp]
+	mov	QWORD PTR tv509[rbp], rax
+	lea	r8, QWORD PTR selectedCommand$31[rbp]
 	lea	rdx, OFFSET FLAT:??_C@_0BD@MDGDICNG@Command?5selected?5?$CC@
-	lea	rcx, QWORD PTR $T51[rbp]
+	lea	rcx, QWORD PTR $T56[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv406[rbp], rax
-	mov	rax, QWORD PTR tv406[rbp]
-	mov	QWORD PTR tv912[rbp], rax
+	mov	QWORD PTR tv391[rbp], rax
+	mov	rax, QWORD PTR tv391[rbp]
+	mov	QWORD PTR tv1131[rbp], rax
 	mov	r8b, 34					; 00000022H
-	mov	rdx, QWORD PTR tv912[rbp]
-	lea	rcx, QWORD PTR $T52[rbp]
+	mov	rdx, QWORD PTR tv1131[rbp]
+	lea	rcx, QWORD PTR $T57[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv400[rbp], rax
-	mov	rax, QWORD PTR tv400[rbp]
-	mov	QWORD PTR tv914[rbp], rax
-	mov	rax, QWORD PTR tv914[rbp]
-	mov	QWORD PTR tv552[rbp], rax
-	mov	rdx, QWORD PTR tv552[rbp]
-	mov	rcx, QWORD PTR tv554[rbp]
-	call	QWORD PTR tv556[rbp]
+	mov	QWORD PTR tv385[rbp], rax
+	mov	rax, QWORD PTR tv385[rbp]
+	mov	QWORD PTR tv1133[rbp], rax
+	mov	rax, QWORD PTR tv1133[rbp]
+	mov	QWORD PTR tv505[rbp], rax
+	mov	rdx, QWORD PTR tv505[rbp]
+	mov	rcx, QWORD PTR tv507[rbp]
+	call	QWORD PTR tv509[rbp]
 	npad	1
-	lea	rcx, QWORD PTR $T52[rbp]
+	lea	rcx, QWORD PTR $T57[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR $T51[rbp]
+	lea	rcx, QWORD PTR $T56[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 151  : 
-; 152  :                         // adding a new client to memory database  
-; 153  :                         if (selectedCommand == "Add Client") {
+; 149  : 
+; 150  :                         // adding a new client to memory database  
+; 151  :                         if (selectedCommand == "Add Client") {
 
 	lea	rdx, OFFSET FLAT:??_C@_0L@DIFOHGNI@Add?5Client@
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 	test	eax, eax
 	je	$LN32@launch
 
-; 154  :                             std::vector<std::string> parameters(4);
+; 152  :                             std::vector<std::string> parameters(4);
 
 	mov	edx, 32					; 00000020H
-	lea	rcx, QWORD PTR parameters$32[rbp]
+	lea	rcx, QWORD PTR parameters$34[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
-	lea	rcx, QWORD PTR $T53[rbp]
+	lea	rcx, QWORD PTR $T58[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	mov	r8, rax
 	mov	edx, 4
-	lea	rcx, QWORD PTR parameters$32[rbp]
+	lea	rcx, QWORD PTR parameters$34[rbp]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 
-; 155  :                             parameters[0] = credentials.userName;
+; 153  :                             parameters[0] = credentials.userName;
 
 	xor	edx, edx
-	lea	rcx, QWORD PTR parameters$32[rbp]
+	lea	rcx, QWORD PTR parameters$34[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	lea	rdx, QWORD PTR credentials$[rbp]
 	mov	rcx, rax
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@AEBV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 
-; 156  :                             parameters[1] = std::to_string(ClientsFromDB.size() + 1);
+; 154  :                             parameters[1] = std::to_string(ClientsFromDB.size() + 1);
 
 	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
 	call	?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size
 	inc	rax
 	mov	rdx, rax
-	lea	rcx, QWORD PTR $T54[rbp]
+	lea	rcx, QWORD PTR $T59[rbp]
 	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::to_string
-	mov	QWORD PTR tv917[rbp], rax
-	mov	rax, QWORD PTR tv917[rbp]
-	mov	QWORD PTR tv590[rbp], rax
+	mov	QWORD PTR tv1136[rbp], rax
+	mov	rax, QWORD PTR tv1136[rbp]
+	mov	QWORD PTR tv575[rbp], rax
 	mov	edx, 1
-	lea	rcx, QWORD PTR parameters$32[rbp]
+	lea	rcx, QWORD PTR parameters$34[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	rdx, QWORD PTR tv590[rbp]
+	mov	rdx, QWORD PTR tv575[rbp]
 	mov	rcx, rax
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
-	lea	rcx, QWORD PTR $T54[rbp]
+	lea	rcx, QWORD PTR $T59[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 157  :                             std::cout << " Enter Name  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
+; 155  :                             std::cout << " Enter Name  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
 
 	lea	rdx, OFFSET FLAT:??_C@_0O@MLPIAAFK@?5Enter?5Name?5?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -29268,16 +32553,16 @@ $LN31@launch:
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
 	mov	edx, 2
-	lea	rcx, QWORD PTR parameters$32[rbp]
+	lea	rcx, QWORD PTR parameters$34[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	QWORD PTR tv603[rbp], rax
+	mov	QWORD PTR tv588[rbp], rax
 	mov	rax, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv601[rbp], rax
-	mov	rdx, QWORD PTR tv603[rbp]
-	mov	rcx, QWORD PTR tv601[rbp]
+	mov	QWORD PTR tv586[rbp], rax
+	mov	rdx, QWORD PTR tv588[rbp]
+	mov	rcx, QWORD PTR tv586[rbp]
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 158  :                             std::cout << " Enter Phone: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[3]);
+; 156  :                             std::cout << " Enter Phone: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[3]);
 
 	lea	rdx, OFFSET FLAT:??_C@_0P@GFDLBMDB@?5Enter?5Phone?3?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -29286,64 +32571,64 @@ $LN31@launch:
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
 	mov	edx, 3
-	lea	rcx, QWORD PTR parameters$32[rbp]
+	lea	rcx, QWORD PTR parameters$34[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	QWORD PTR tv616[rbp], rax
+	mov	QWORD PTR tv601[rbp], rax
 	mov	rax, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv614[rbp], rax
-	mov	rdx, QWORD PTR tv616[rbp]
-	mov	rcx, QWORD PTR tv614[rbp]
+	mov	QWORD PTR tv599[rbp], rax
+	mov	rdx, QWORD PTR tv601[rbp]
+	mov	rcx, QWORD PTR tv599[rbp]
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 159  :                            
-; 160  :                             auto results = ClientHandler->executeCommandClient(selectedCommand, parameters);
+; 157  :                            
+; 158  :                             auto results = ClientHandler->executeCommandClient(selectedCommand, parameters);
 
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
-	mov	QWORD PTR tv619[rbp], rax
-	mov	rax, QWORD PTR tv619[rbp]
+	mov	QWORD PTR tv604[rbp], rax
+	mov	rax, QWORD PTR tv604[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+8]
-	mov	QWORD PTR tv627[rbp], rax
-	lea	r9, QWORD PTR parameters$32[rbp]
-	lea	r8, QWORD PTR selectedCommand$29[rbp]
-	lea	rdx, QWORD PTR results$33[rbp]
-	mov	rcx, QWORD PTR tv619[rbp]
-	call	QWORD PTR tv627[rbp]
+	mov	QWORD PTR tv612[rbp], rax
+	lea	r9, QWORD PTR parameters$34[rbp]
+	lea	r8, QWORD PTR selectedCommand$31[rbp]
+	lea	rdx, QWORD PTR results$35[rbp]
+	mov	rcx, QWORD PTR tv604[rbp]
+	call	QWORD PTR tv612[rbp]
 	npad	1
 
-; 161  :                             if (results.has_value()) {
+; 159  :                             if (results.has_value()) {
 
-	lea	rcx, QWORD PTR results$33[rbp]
+	lea	rcx, QWORD PTR results$35[rbp]
 	call	?has_value@any@std@@QEBA_NXZ		; std::any::has_value
 	movzx	eax, al
 	test	eax, eax
 	je	SHORT $LN34@launch
 
-; 162  :                                 _logger << "Successfully Added \" ";
+; 160  :                                 _logger << "Successfully Added \" ";
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
-	mov	QWORD PTR tv647[rbp], rax
+	mov	QWORD PTR tv632[rbp], rax
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv649[rbp], rax
+	mov	QWORD PTR tv634[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BG@IHFBALOG@Successfully?5Added?5?$CC?5@
-	lea	rcx, QWORD PTR $T55[rbp]
+	lea	rcx, QWORD PTR $T60[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, QWORD PTR $T55[rbp]
-	mov	rcx, QWORD PTR tv647[rbp]
-	call	QWORD PTR tv649[rbp]
+	lea	rdx, QWORD PTR $T60[rbp]
+	mov	rcx, QWORD PTR tv632[rbp]
+	call	QWORD PTR tv634[rbp]
 	npad	1
-	lea	rcx, QWORD PTR $T55[rbp]
+	lea	rcx, QWORD PTR $T60[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 163  :                                 ClientsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Client>&>(results);
+; 161  :                                 ClientsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Client>&>(results);
 
-	lea	rcx, QWORD PTR results$33[rbp]
+	lea	rcx, QWORD PTR results$35[rbp]
 	call	??$any_cast@AEBV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z ; std::any_cast<std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> > const &>
 	mov	rdx, rax
 	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
@@ -29351,223 +32636,219 @@ $LN31@launch:
 	npad	1
 $LN34@launch:
 
-; 164  :                             }
-; 165  : 
-; 166  :                         }
+; 162  :                             }
+; 163  : 
+; 164  :                         }
 
-	lea	rcx, QWORD PTR results$33[rbp]
+	lea	rcx, QWORD PTR results$35[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
-	lea	rcx, QWORD PTR parameters$32[rbp]
+	lea	rcx, QWORD PTR parameters$34[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	jmp	$LN33@launch
 $LN32@launch:
 
-; 167  :                         // view all the current clients include static in database 
-; 168  :                         else if (selectedCommand == "View All Clients") {
+; 165  :                         // view all the current clients include static in database 
+; 166  :                         else if (selectedCommand == "View All Clients") {
 
 	lea	rdx, OFFSET FLAT:??_C@_0BB@NDHANJAG@View?5All?5Clients@
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 	test	eax, eax
 	je	SHORT $LN35@launch
 
-; 169  :                                
-; 170  :                             ClientHandler->ViewClients(ClientsFromDB);
+; 167  :                                
+; 168  :                             ClientHandler->ViewClients(ClientsFromDB);
 
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
-	mov	QWORD PTR tv661[rbp], rax
-	mov	rax, QWORD PTR tv661[rbp]
+	mov	QWORD PTR tv646[rbp], rax
+	mov	rax, QWORD PTR tv646[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+40]
-	mov	QWORD PTR tv666[rbp], rax
+	mov	QWORD PTR tv651[rbp], rax
 	lea	rdx, QWORD PTR ClientsFromDB$[rbp]
-	mov	rcx, QWORD PTR tv661[rbp]
-	call	QWORD PTR tv666[rbp]
+	mov	rcx, QWORD PTR tv646[rbp]
+	call	QWORD PTR tv651[rbp]
 
-; 171  :                         }
+; 169  :                         }
 
 	jmp	$LN33@launch
 $LN35@launch:
 
-; 172  :                         // select to update the profile of client.
-; 173  :                         else if (selectedCommand == "Update Client Profile") {
+; 170  :                         // select to update the profile of client.
+; 171  :                         else if (selectedCommand == "Update Client Profile") {
 
 	lea	rdx, OFFSET FLAT:??_C@_0BG@DNLIOOFF@Update?5Client?5Profile@
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 	test	eax, eax
 	je	$LN37@launch
 
-; 174  :                             ClientHandler->ClientsPDB(ClientsProfileFromDB);
+; 172  :                             ClientHandler->ClientsPDB(ClientsProfileFromDB);
 
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
-	mov	QWORD PTR tv675[rbp], rax
-	mov	rax, QWORD PTR tv675[rbp]
+	mov	QWORD PTR tv660[rbp], rax
+	mov	rax, QWORD PTR tv660[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+32]
-	mov	QWORD PTR tv682[rbp], rax
+	mov	QWORD PTR tv667[rbp], rax
 	lea	r8, QWORD PTR ClientsProfileFromDB$[rbp]
-	lea	rdx, QWORD PTR $T56[rbp]
-	mov	rcx, QWORD PTR tv675[rbp]
-	call	QWORD PTR tv682[rbp]
-	lea	rcx, QWORD PTR $T56[rbp]
+	lea	rdx, QWORD PTR $T61[rbp]
+	mov	rcx, QWORD PTR tv660[rbp]
+	call	QWORD PTR tv667[rbp]
+	lea	rcx, QWORD PTR $T61[rbp]
 	call	??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::~vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >
 
-; 175  :                             ClientHandler->ViewClients(ClientsFromDB);
+; 173  :                             ClientHandler->ViewClients(ClientsFromDB);
 
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
-	mov	QWORD PTR tv687[rbp], rax
-	mov	rax, QWORD PTR tv687[rbp]
+	mov	QWORD PTR tv672[rbp], rax
+	mov	rax, QWORD PTR tv672[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+40]
-	mov	QWORD PTR tv692[rbp], rax
+	mov	QWORD PTR tv677[rbp], rax
 	lea	rdx, QWORD PTR ClientsFromDB$[rbp]
-	mov	rcx, QWORD PTR tv687[rbp]
-	call	QWORD PTR tv692[rbp]
+	mov	rcx, QWORD PTR tv672[rbp]
+	call	QWORD PTR tv677[rbp]
 
-; 176  :                             char response;
-; 177  :                             int clientId =0;
+; 174  :                             char response;
+; 175  :                             int clientId =0;
 
-	mov	DWORD PTR clientId$35[rbp], 0
+	mov	DWORD PTR clientId$37[rbp], 0
 
-; 178  :                             std::cout << "Please choose Client Id: ";
+; 176  :                             std::cout << "Please choose Client Id: ";
 
 	lea	rdx, OFFSET FLAT:??_C@_0BK@FPFOKBFM@Please?5choose?5Client?5Id?3?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 
-; 179  :                             std::cin >> clientId;
+; 177  :                             std::cin >> clientId;
 
-	lea	rdx, QWORD PTR clientId$35[rbp]
+	lea	rdx, QWORD PTR clientId$37[rbp]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAH@Z
 $LN25@launch:
 
-; 180  :                             do
-; 181  :                             {
-; 182  :                                 std::cout << "Do you want to continue Update Profile for Client with Id # " + std::to_string(clientId) + "? (Y/N/Q)";
+; 178  :                             do
+; 179  :                             {
+; 180  :                                 std::cout << "Do you want to continue Update Profile for Client with Id # " + std::to_string(clientId) + "? (Y/N/Q)";
 
 	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv718[rbp], rax
-	mov	edx, DWORD PTR clientId$35[rbp]
-	lea	rcx, QWORD PTR $T57[rbp]
+	mov	QWORD PTR tv703[rbp], rax
+	mov	edx, DWORD PTR clientId$37[rbp]
+	lea	rcx, QWORD PTR $T62[rbp]
 	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
-	mov	QWORD PTR tv642[rbp], rax
-	mov	rax, QWORD PTR tv642[rbp]
-	mov	QWORD PTR tv922[rbp], rax
-	mov	r8, QWORD PTR tv922[rbp]
+	mov	QWORD PTR tv627[rbp], rax
+	mov	rax, QWORD PTR tv627[rbp]
+	mov	QWORD PTR tv1141[rbp], rax
+	mov	r8, QWORD PTR tv1141[rbp]
 	lea	rdx, OFFSET FLAT:??_C@_0DN@NLFCEGHK@Do?5you?5want?5to?5continue?5Update?5@
-	lea	rcx, QWORD PTR $T58[rbp]
+	lea	rcx, QWORD PTR $T63[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD$$QEAV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv622[rbp], rax
-	mov	rax, QWORD PTR tv622[rbp]
-	mov	QWORD PTR tv924[rbp], rax
+	mov	QWORD PTR tv607[rbp], rax
+	mov	rax, QWORD PTR tv607[rbp]
+	mov	QWORD PTR tv1143[rbp], rax
 	lea	r8, OFFSET FLAT:??_C@_09FLPCCMNH@?$DP?5?$CIY?1N?1Q?$CJ@
-	mov	rdx, QWORD PTR tv924[rbp]
-	lea	rcx, QWORD PTR $T59[rbp]
+	mov	rdx, QWORD PTR tv1143[rbp]
+	lea	rcx, QWORD PTR $T64[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@QEBD@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv564[rbp], rax
-	mov	rax, QWORD PTR tv564[rbp]
-	mov	QWORD PTR tv926[rbp], rax
-	mov	rax, QWORD PTR tv926[rbp]
-	mov	QWORD PTR tv720[rbp], rax
-	mov	rdx, QWORD PTR tv720[rbp]
-	mov	rcx, QWORD PTR tv718[rbp]
+	mov	QWORD PTR tv549[rbp], rax
+	mov	rax, QWORD PTR tv549[rbp]
+	mov	QWORD PTR tv1145[rbp], rax
+	mov	rax, QWORD PTR tv1145[rbp]
+	mov	QWORD PTR tv705[rbp], rax
+	mov	rdx, QWORD PTR tv705[rbp]
+	mov	rcx, QWORD PTR tv703[rbp]
 	call	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR $T59[rbp]
+	lea	rcx, QWORD PTR $T64[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR $T58[rbp]
+	lea	rcx, QWORD PTR $T63[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR $T57[rbp]
+	lea	rcx, QWORD PTR $T62[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 183  :                                 std::cin >> response;
+; 181  :                                 std::cin >> response;
 
-	lea	rdx, QWORD PTR response$34[rbp]
+	lea	rdx, QWORD PTR response$36[rbp]
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	??$?5DU?$char_traits@D@std@@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAD@Z ; std::operator>><char,std::char_traits<char> >
 
-; 184  :                                 response = std::toupper(response, std::locale());
+; 182  :                                 response = std::toupper(response, std::locale());
 
-	lea	rcx, QWORD PTR $T60[rbp]
+	lea	rcx, QWORD PTR $T65[rbp]
 	call	??0locale@std@@QEAA@XZ			; std::locale::locale
-	mov	QWORD PTR tv363[rbp], rax
-	mov	rax, QWORD PTR tv363[rbp]
-	mov	QWORD PTR tv928[rbp], rax
-	mov	rax, QWORD PTR tv928[rbp]
-	mov	QWORD PTR tv732[rbp], rax
-	movzx	eax, BYTE PTR response$34[rbp]
-	mov	BYTE PTR tv730[rbp], al
-	mov	rdx, QWORD PTR tv732[rbp]
-	movzx	ecx, BYTE PTR tv730[rbp]
+	mov	QWORD PTR tv348[rbp], rax
+	mov	rax, QWORD PTR tv348[rbp]
+	mov	QWORD PTR tv1147[rbp], rax
+	mov	rax, QWORD PTR tv1147[rbp]
+	mov	QWORD PTR tv717[rbp], rax
+	movzx	eax, BYTE PTR response$36[rbp]
+	mov	BYTE PTR tv715[rbp], al
+	mov	rdx, QWORD PTR tv717[rbp]
+	movzx	ecx, BYTE PTR tv715[rbp]
 	call	??$toupper@D@std@@YADDAEBVlocale@0@@Z	; std::toupper<char>
-	mov	BYTE PTR response$34[rbp], al
-	lea	rcx, QWORD PTR $T60[rbp]
+	mov	BYTE PTR response$36[rbp], al
+	lea	rcx, QWORD PTR $T65[rbp]
 	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
 
-; 185  :                             } while (response != 'Y' && response != 'Q');
+; 183  :                             } while (response != 'Y' && response != 'Q');
 
-	movsx	eax, BYTE PTR response$34[rbp]
+	movsx	eax, BYTE PTR response$36[rbp]
 	cmp	eax, 89					; 00000059H
 	je	SHORT $LN39@launch
-	movsx	eax, BYTE PTR response$34[rbp]
+	movsx	eax, BYTE PTR response$36[rbp]
 	cmp	eax, 81					; 00000051H
 	jne	$LN25@launch
 $LN39@launch:
 
-; 186  : 
-; 187  :                             if (response == 'Y') {
+; 184  : 
+; 185  :                             if (response == 'Y') {
 
-	movsx	eax, BYTE PTR response$34[rbp]
+	movsx	eax, BYTE PTR response$36[rbp]
 	cmp	eax, 89					; 00000059H
 	jne	$LN40@launch
 
-; 188  :                                 std::cout << clientId;
-
-	mov	edx, DWORD PTR clientId$35[rbp]
-	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
-	call	QWORD PTR __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z
-
-; 189  :                                 std::vector<std::string> parameters(3);
+; 186  :                             
+; 187  : 
+; 188  :                                 std::vector<std::string> parameters(3);
 
 	mov	edx, 32					; 00000020H
-	lea	rcx, QWORD PTR parameters$36[rbp]
+	lea	rcx, QWORD PTR parameters$38[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
-	lea	rcx, QWORD PTR $T61[rbp]
+	lea	rcx, QWORD PTR $T66[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	mov	r8, rax
 	mov	edx, 3
-	lea	rcx, QWORD PTR parameters$36[rbp]
+	lea	rcx, QWORD PTR parameters$38[rbp]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 
-; 190  :                                 parameters[0] = std::to_string(clientId);
+; 189  :                                 parameters[0] = std::to_string(clientId);
 
-	mov	edx, DWORD PTR clientId$35[rbp]
-	lea	rcx, QWORD PTR $T62[rbp]
+	mov	edx, DWORD PTR clientId$37[rbp]
+	lea	rcx, QWORD PTR $T67[rbp]
 	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
-	mov	QWORD PTR tv931[rbp], rax
-	mov	rax, QWORD PTR tv931[rbp]
-	mov	QWORD PTR tv762[rbp], rax
+	mov	QWORD PTR tv1150[rbp], rax
+	mov	rax, QWORD PTR tv1150[rbp]
+	mov	QWORD PTR tv745[rbp], rax
 	xor	edx, edx
-	lea	rcx, QWORD PTR parameters$36[rbp]
+	lea	rcx, QWORD PTR parameters$38[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	rdx, QWORD PTR tv762[rbp]
+	mov	rdx, QWORD PTR tv745[rbp]
 	mov	rcx, rax
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
-	lea	rcx, QWORD PTR $T62[rbp]
+	lea	rcx, QWORD PTR $T67[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 191  :                                 std::cout << " Enter DOB: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+; 190  :                                 std::cout << " Enter DOB: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
 
 	lea	rdx, OFFSET FLAT:??_C@_0N@OCAGJCJO@?5Enter?5DOB?3?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -29576,16 +32857,16 @@ $LN39@launch:
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
 	mov	edx, 1
-	lea	rcx, QWORD PTR parameters$36[rbp]
+	lea	rcx, QWORD PTR parameters$38[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	QWORD PTR tv775[rbp], rax
+	mov	QWORD PTR tv758[rbp], rax
 	mov	rax, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv773[rbp], rax
-	mov	rdx, QWORD PTR tv775[rbp]
-	mov	rcx, QWORD PTR tv773[rbp]
+	mov	QWORD PTR tv756[rbp], rax
+	mov	rdx, QWORD PTR tv758[rbp]
+	mov	rcx, QWORD PTR tv756[rbp]
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 192  :                                 std::cout << " Enter Income:   ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
+; 191  :                                 std::cout << " Enter Income:   ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
 
 	lea	rdx, OFFSET FLAT:??_C@_0BC@GJHCPECC@?5Enter?5Income?3?5?5?5@
 	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -29594,220 +32875,470 @@ $LN39@launch:
 	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
 	mov	edx, 2
-	lea	rcx, QWORD PTR parameters$36[rbp]
+	lea	rcx, QWORD PTR parameters$38[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	mov	QWORD PTR tv788[rbp], rax
+	mov	QWORD PTR tv771[rbp], rax
 	mov	rax, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
-	mov	QWORD PTR tv786[rbp], rax
-	mov	rdx, QWORD PTR tv788[rbp]
-	mov	rcx, QWORD PTR tv786[rbp]
+	mov	QWORD PTR tv769[rbp], rax
+	mov	rdx, QWORD PTR tv771[rbp]
+	mov	rcx, QWORD PTR tv769[rbp]
 	call	??$getline@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@YAAEAV?$basic_istream@DU?$char_traits@D@std@@@0@AEAV10@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::getline<char,std::char_traits<char>,std::allocator<char> >
 
-; 193  :                                
-; 194  :                                 auto results = ClientHandler->executeCommandClient(selectedCommand,parameters);
+; 192  :                                
+; 193  :                                 auto results = ClientHandler->executeCommandClient(selectedCommand,parameters);
 
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
-	mov	QWORD PTR tv791[rbp], rax
-	mov	rax, QWORD PTR tv791[rbp]
+	mov	QWORD PTR tv774[rbp], rax
+	mov	rax, QWORD PTR tv774[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+8]
-	mov	QWORD PTR tv799[rbp], rax
-	lea	r9, QWORD PTR parameters$36[rbp]
-	lea	r8, QWORD PTR selectedCommand$29[rbp]
-	lea	rdx, QWORD PTR results$37[rbp]
-	mov	rcx, QWORD PTR tv791[rbp]
-	call	QWORD PTR tv799[rbp]
+	mov	QWORD PTR tv782[rbp], rax
+	lea	r9, QWORD PTR parameters$38[rbp]
+	lea	r8, QWORD PTR selectedCommand$31[rbp]
+	lea	rdx, QWORD PTR results$39[rbp]
+	mov	rcx, QWORD PTR tv774[rbp]
+	call	QWORD PTR tv782[rbp]
 	npad	1
 
-; 195  :                              
-; 196  :                                 if (results.has_value())
+; 194  :                                 if (results.has_value()) {
 
-	lea	rcx, QWORD PTR results$37[rbp]
+	lea	rcx, QWORD PTR results$39[rbp]
 	call	?has_value@any@std@@QEBA_NXZ		; std::any::has_value
 	movzx	eax, al
 	test	eax, eax
-	je	$LN41@launch
+	je	SHORT $LN41@launch
 
-; 197  :                                 {
-; 198  :                                     Domain::Client::Clientprofile  ProfileofClient = std::any_cast<const TechnicalServices::Persistence::Clientprofile&>(results);
-
-	lea	rcx, QWORD PTR results$37[rbp]
-	call	??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z ; std::any_cast<TechnicalServices::Persistence::Clientprofile const &>
-	mov	rdx, rax
-	lea	rcx, QWORD PTR ProfileofClient$38[rbp]
-	call	??0Clientprofile@Persistence@TechnicalServices@@QEAA@AEBU012@@Z
-	npad	1
-
-; 199  :                                     _logger << "Successfully Updated \""+ ProfileofClient.dob;
+; 195  :                                     _logger << "Successfully Updated\n";
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
-	mov	QWORD PTR tv829[rbp], rax
+	mov	QWORD PTR tv802[rbp], rax
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv831[rbp], rax
-	lea	r8, QWORD PTR ProfileofClient$38[rbp+8]
-	lea	rdx, OFFSET FLAT:??_C@_0BH@OIMAJENJ@Successfully?5Updated?5?$CC@
-	lea	rcx, QWORD PTR $T63[rbp]
-	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv806[rbp], rax
-	mov	rax, QWORD PTR tv806[rbp]
-	mov	QWORD PTR tv935[rbp], rax
-	mov	rax, QWORD PTR tv935[rbp]
-	mov	QWORD PTR tv827[rbp], rax
-	mov	rdx, QWORD PTR tv827[rbp]
-	mov	rcx, QWORD PTR tv829[rbp]
-	call	QWORD PTR tv831[rbp]
+	mov	QWORD PTR tv804[rbp], rax
+	lea	rdx, OFFSET FLAT:??_C@_0BG@MCELGHIL@Successfully?5Updated?6@
+	lea	rcx, QWORD PTR $T68[rbp]
+	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR $T63[rbp]
+	lea	rdx, QWORD PTR $T68[rbp]
+	mov	rcx, QWORD PTR tv802[rbp]
+	call	QWORD PTR tv804[rbp]
+	npad	1
+	lea	rcx, QWORD PTR $T68[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	npad	1
 
-; 200  :                                  
-; 201  : 
-; 202  :                                 }
+; 196  :                                     ClientsProfileFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Clientprofile>&>(results);
 
-	lea	rcx, QWORD PTR ProfileofClient$38[rbp]
-	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
+	lea	rcx, QWORD PTR results$39[rbp]
+	call	??$any_cast@AEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@@std@@YAAEBV?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@0@AEAVany@0@@Z ; std::any_cast<std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> > const &>
+	mov	rdx, rax
+	lea	rcx, QWORD PTR ClientsProfileFromDB$[rbp]
+	call	??4?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@AEBV01@@Z ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::operator=
 	npad	1
 $LN41@launch:
 
-; 203  :                                 
-; 204  :                             }
+; 197  :                                     
+; 198  :                                 }
+; 199  :                             
+; 200  :                                 
+; 201  :                             }
 
-	lea	rcx, QWORD PTR results$37[rbp]
+	lea	rcx, QWORD PTR results$39[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
-	lea	rcx, QWORD PTR parameters$36[rbp]
+	lea	rcx, QWORD PTR parameters$38[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 $LN40@launch:
 
-; 205  : 
-; 206  :                         }
+; 202  : 
+; 203  :                         }
 
-	jmp	SHORT $LN33@launch
+	jmp	$LN33@launch
 $LN37@launch:
 
-; 207  :                         else if (selectedCommand == "Link Product") {
+; 204  :                         else if (selectedCommand == "View Client Profile") {
 
-	lea	rdx, OFFSET FLAT:??_C@_0N@CNPBMAEN@Link?5Product@
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+	lea	rdx, OFFSET FLAT:??_C@_0BE@KBHAFDNP@View?5Client?5Profile@
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
-$LN33@launch:
+	test	eax, eax
+	je	$LN33@launch
 
-; 208  :                             //todo
-; 209  :                         }
-; 210  : 
-; 211  : 
-; 212  :                     } while (true);
+; 205  :                             ClientHandler->ClientsPDB(ClientsProfileFromDB);
 
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
+	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
+	mov	QWORD PTR tv816[rbp], rax
+	mov	rax, QWORD PTR tv816[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	rax, QWORD PTR [rax+32]
+	mov	QWORD PTR tv823[rbp], rax
+	lea	r8, QWORD PTR ClientsProfileFromDB$[rbp]
+	lea	rdx, QWORD PTR $T69[rbp]
+	mov	rcx, QWORD PTR tv816[rbp]
+	call	QWORD PTR tv823[rbp]
+	lea	rcx, QWORD PTR $T69[rbp]
+	call	??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::~vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >
+
+; 206  :                             ClientHandler->ViewClients(ClientsFromDB);
+
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
+	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
+	mov	QWORD PTR tv828[rbp], rax
+	mov	rax, QWORD PTR tv828[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	rax, QWORD PTR [rax+40]
+	mov	QWORD PTR tv833[rbp], rax
+	lea	rdx, QWORD PTR ClientsFromDB$[rbp]
+	mov	rcx, QWORD PTR tv828[rbp]
+	call	QWORD PTR tv833[rbp]
+
+; 207  :                             int clientId = 0;
+
+	mov	DWORD PTR clientId$40[rbp], 0
+
+; 208  :                             std::cout << "Please choose Client Id: ";
+
+	lea	rdx, OFFSET FLAT:??_C@_0BK@FPFOKBFM@Please?5choose?5Client?5Id?3?5@
+	mov	rcx, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
+
+; 209  :                             std::cin >> clientId;
+
+	lea	rdx, QWORD PTR clientId$40[rbp]
+	mov	rcx, QWORD PTR __imp_?cin@std@@3V?$basic_istream@DU?$char_traits@D@std@@@1@A
+	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAH@Z
+
+; 210  :                             std::vector<std::string> parameter(1);
+
+	mov	edx, 32					; 00000020H
+	lea	rcx, QWORD PTR parameter$41[rbp]
+	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+	lea	rcx, QWORD PTR $T70[rbp]
+	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
+	mov	r8, rax
+	mov	edx, 1
+	lea	rcx, QWORD PTR parameter$41[rbp]
+	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	npad	1
+
+; 211  :                             parameter[0] = std::to_string(clientId);
+
+	mov	edx, DWORD PTR clientId$40[rbp]
+	lea	rcx, QWORD PTR $T71[rbp]
+	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
+	mov	QWORD PTR tv1156[rbp], rax
+	mov	rax, QWORD PTR tv1156[rbp]
+	mov	QWORD PTR tv859[rbp], rax
+	xor	edx, edx
+	lea	rcx, QWORD PTR parameter$41[rbp]
+	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
+	mov	rdx, QWORD PTR tv859[rbp]
+	mov	rcx, rax
+	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+	lea	rcx, QWORD PTR $T71[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+
+; 212  :                             auto results = ClientHandler->executeCommandClient(selectedCommand, parameter);
+
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
+	call	??C?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEBAPEAVClientHandler@Client@Domain@@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator->
+	mov	QWORD PTR tv862[rbp], rax
+	mov	rax, QWORD PTR tv862[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	rax, QWORD PTR [rax+8]
+	mov	QWORD PTR tv870[rbp], rax
+	lea	r9, QWORD PTR parameter$41[rbp]
+	lea	r8, QWORD PTR selectedCommand$31[rbp]
+	lea	rdx, QWORD PTR results$42[rbp]
+	mov	rcx, QWORD PTR tv862[rbp]
+	call	QWORD PTR tv870[rbp]
+	npad	1
+
+; 213  :                             
+; 214  : 
+; 215  :                             if (results.has_value())
+
+	lea	rcx, QWORD PTR results$42[rbp]
+	call	?has_value@any@std@@QEBA_NXZ		; std::any::has_value
+	movzx	eax, al
+	test	eax, eax
+	je	$LN43@launch
+
+; 216  :                             {
+; 217  :                                 Domain::Client::Clientprofile  ProfileofClient = std::any_cast<const TechnicalServices::Persistence::Clientprofile&>(results);
+
+	lea	rcx, QWORD PTR results$42[rbp]
+	call	??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z ; std::any_cast<TechnicalServices::Persistence::Clientprofile const &>
+	mov	rdx, rax
+	lea	rcx, QWORD PTR ProfileofClient$43[rbp]
+	call	??0Clientprofile@Persistence@TechnicalServices@@QEAA@AEBU012@@Z
+	npad	1
+
+; 218  :                                 line();
+
+	call	?line@UI@@YAXXZ				; UI::line
+
+; 219  :                                 std::cout << std::setw(49) << "Reuslt of Searching\n";
+
+	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	mov	QWORD PTR tv891[rbp], rax
+	mov	edx, 49					; 00000031H
+	lea	rcx, QWORD PTR $T72[rbp]
+	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
+	mov	QWORD PTR tv893[rbp], rax
+	mov	rdx, QWORD PTR tv893[rbp]
+	mov	rcx, QWORD PTR tv891[rbp]
+	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
+	lea	rdx, OFFSET FLAT:??_C@_0BF@FILFDGDM@Reuslt?5of?5Searching?6@
+	mov	rcx, rax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
+
+; 220  :                                 line();
+
+	call	?line@UI@@YAXXZ				; UI::line
+
+; 221  :                                 std::cout << std::setw(15) << "Id" << std::setw(15) << "DOB" << std::setw(15) << "Income\n";
+
+	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	mov	QWORD PTR tv917[rbp], rax
+	mov	edx, 15
+	lea	rcx, QWORD PTR $T75[rbp]
+	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
+	mov	QWORD PTR tv919[rbp], rax
+	mov	rdx, QWORD PTR tv919[rbp]
+	mov	rcx, QWORD PTR tv917[rbp]
+	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
+	lea	rdx, OFFSET FLAT:??_C@_02HOGEDOAB@Id@
+	mov	rcx, rax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
+	mov	QWORD PTR tv923[rbp], rax
+	mov	edx, 15
+	lea	rcx, QWORD PTR $T74[rbp]
+	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
+	mov	QWORD PTR tv925[rbp], rax
+	mov	rdx, QWORD PTR tv925[rbp]
+	mov	rcx, QWORD PTR tv923[rbp]
+	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
+	lea	rdx, OFFSET FLAT:??_C@_03HDEEAIPD@DOB@
+	mov	rcx, rax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
+	mov	QWORD PTR tv929[rbp], rax
+	mov	edx, 15
+	lea	rcx, QWORD PTR $T73[rbp]
+	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
+	mov	QWORD PTR tv931[rbp], rax
+	mov	rdx, QWORD PTR tv931[rbp]
+	mov	rcx, QWORD PTR tv929[rbp]
+	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
+	lea	rdx, OFFSET FLAT:??_C@_07JPDLJNBP@Income?6@
+	mov	rcx, rax
+	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
+
+; 222  : 
+; 223  :                                 line();
+
+	call	?line@UI@@YAXXZ				; UI::line
+
+; 224  :                                 std::cout << std::setw(15) << std::to_string(ProfileofClient.client_id) << std::setw(15) << ProfileofClient.dob << std::setw(15) << std::to_string(ProfileofClient.income) + "\n";
+
+	mov	rax, QWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+	mov	QWORD PTR tv1003[rbp], rax
+	mov	edx, 15
+	lea	rcx, QWORD PTR $T81[rbp]
+	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
+	mov	QWORD PTR tv1005[rbp], rax
+	mov	rdx, QWORD PTR tv1005[rbp]
+	mov	rcx, QWORD PTR tv1003[rbp]
+	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
+	mov	QWORD PTR tv1008[rbp], rax
+	mov	edx, DWORD PTR ProfileofClient$43[rbp]
+	lea	rcx, QWORD PTR $T80[rbp]
+	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
+	mov	QWORD PTR tv877[rbp], rax
+	mov	rax, QWORD PTR tv877[rbp]
+	mov	QWORD PTR tv1160[rbp], rax
+	mov	rax, QWORD PTR tv1160[rbp]
+	mov	QWORD PTR tv1010[rbp], rax
+	mov	rdx, QWORD PTR tv1010[rbp]
+	mov	rcx, QWORD PTR tv1008[rbp]
+	call	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
+	mov	QWORD PTR tv1013[rbp], rax
+	mov	edx, 15
+	lea	rcx, QWORD PTR $T79[rbp]
+	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
+	mov	QWORD PTR tv1015[rbp], rax
+	mov	rdx, QWORD PTR tv1015[rbp]
+	mov	rcx, QWORD PTR tv1013[rbp]
+	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
+	lea	rdx, QWORD PTR ProfileofClient$43[rbp+8]
+	mov	rcx, rax
+	call	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
+	mov	QWORD PTR tv1019[rbp], rax
+	mov	edx, 15
+	lea	rcx, QWORD PTR $T78[rbp]
+	call	?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z	; std::setw
+	mov	QWORD PTR tv1021[rbp], rax
+	mov	rdx, QWORD PTR tv1021[rbp]
+	mov	rcx, QWORD PTR tv1019[rbp]
+	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
+	mov	QWORD PTR tv1024[rbp], rax
+	mov	edx, DWORD PTR ProfileofClient$43[rbp+48]
+	lea	rcx, QWORD PTR $T76[rbp]
+	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
+	mov	QWORD PTR tv865[rbp], rax
+	mov	rax, QWORD PTR tv865[rbp]
+	mov	QWORD PTR tv1162[rbp], rax
+	lea	r8, OFFSET FLAT:??_C@_01EEMJAFIK@?6@
+	mov	rdx, QWORD PTR tv1162[rbp]
+	lea	rcx, QWORD PTR $T77[rbp]
+	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@QEBD@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
+	mov	QWORD PTR tv841[rbp], rax
+	mov	rax, QWORD PTR tv841[rbp]
+	mov	QWORD PTR tv1164[rbp], rax
+	mov	rax, QWORD PTR tv1164[rbp]
+	mov	QWORD PTR tv1026[rbp], rax
+	mov	rdx, QWORD PTR tv1026[rbp]
+	mov	rcx, QWORD PTR tv1024[rbp]
+	call	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rcx, QWORD PTR $T77[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR commands$28[rbp]
+	lea	rcx, QWORD PTR $T76[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rcx, QWORD PTR $T80[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+
+; 225  : 
+; 226  : 
+; 227  :                             }
+
+	lea	rcx, QWORD PTR ProfileofClient$43[rbp]
+	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
+	npad	1
+$LN43@launch:
+
+; 228  :                         }
+
+	lea	rcx, QWORD PTR results$42[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
+	npad	1
+	lea	rcx, QWORD PTR parameter$41[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	npad	1
+$LN33@launch:
+
+; 229  : 
+; 230  : 
+; 231  :                     } while (true);
+
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rcx, QWORD PTR commands$30[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	xor	eax, eax
 	cmp	eax, 1
 	jne	$LN16@launch
 $LN15@launch:
 
-; 213  : 
-; 214  :                 }
+; 232  : 
+; 233  :                 }
 
 	jmp	$LN30@launch
 $LN29@launch:
 
-; 215  : 
-; 216  :                 else if (selectedCommand == "Another command") /* ... */ {}
+; 234  : 
+; 235  :                 else if (selectedCommand == "Another command") /* ... */ {}
 
 	lea	rdx, OFFSET FLAT:??_C@_0BA@NFJLLIND@Another?5command@
-	lea	rcx, QWORD PTR selectedCommand$24[rbp]
+	lea	rcx, QWORD PTR selectedCommand$26[rbp]
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 	test	eax, eax
-	je	SHORT $LN43@launch
+	je	SHORT $LN44@launch
 	jmp	SHORT $LN30@launch
-$LN43@launch:
+$LN44@launch:
 
-; 217  : 
-; 218  :                 else sessionControl->executeCommand(selectedCommand, {});
+; 236  : 
+; 237  :                 else sessionControl->executeCommand(selectedCommand, {});
 
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??C?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBAPEAVSessionHandler@Session@Domain@@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator->
-	mov	QWORD PTR tv845[rbp], rax
-	mov	rax, QWORD PTR tv845[rbp]
+	mov	QWORD PTR tv1035[rbp], rax
+	mov	rax, QWORD PTR tv1035[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+8]
-	mov	QWORD PTR tv856[rbp], rax
-	lea	rcx, QWORD PTR $T64[rbp]
+	mov	QWORD PTR tv1046[rbp], rax
+	lea	rcx, QWORD PTR $T82[rbp]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
-	lea	r9, QWORD PTR $T64[rbp]
-	lea	r8, QWORD PTR selectedCommand$24[rbp]
-	lea	rdx, QWORD PTR $T65[rbp]
-	mov	rcx, QWORD PTR tv845[rbp]
-	call	QWORD PTR tv856[rbp]
-	lea	rcx, QWORD PTR $T65[rbp]
+	lea	r9, QWORD PTR $T82[rbp]
+	lea	r8, QWORD PTR selectedCommand$26[rbp]
+	lea	rdx, QWORD PTR $T83[rbp]
+	mov	rcx, QWORD PTR tv1035[rbp]
+	call	QWORD PTR tv1046[rbp]
+	lea	rcx, QWORD PTR $T83[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
-	lea	rcx, QWORD PTR $T64[rbp]
+	lea	rcx, QWORD PTR $T82[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 $LN30@launch:
 
-; 219  :             }
+; 238  :             }
 
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
 	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 $LN28@launch:
 
-; 220  : 
-; 221  :             _logger << "Ending session and terminating";
+; 239  : 
+; 240  :             _logger << "Ending session and terminating";
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
-	mov	QWORD PTR tv872[rbp], rax
+	mov	QWORD PTR tv1094[rbp], rax
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+32]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv874[rbp], rax
+	mov	QWORD PTR tv1096[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BP@HIAJAIHD@Ending?5session?5and?5terminating@
-	lea	rcx, QWORD PTR $T66[rbp]
+	lea	rcx, QWORD PTR $T84[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rdx, QWORD PTR $T66[rbp]
-	mov	rcx, QWORD PTR tv872[rbp]
-	call	QWORD PTR tv874[rbp]
+	lea	rdx, QWORD PTR $T84[rbp]
+	mov	rcx, QWORD PTR tv1094[rbp]
+	call	QWORD PTR tv1096[rbp]
 	npad	1
-	lea	rcx, QWORD PTR $T66[rbp]
+	lea	rcx, QWORD PTR $T84[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 
-; 222  :         } while (true);
+; 241  :         } while (true);
 
-	lea	rcx, QWORD PTR selectedCommand$24[rbp]
+	lea	rcx, QWORD PTR selectedCommand$26[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
-	lea	rcx, QWORD PTR commands$23[rbp]
+	lea	rcx, QWORD PTR commands$25[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	xor	eax, eax
 	cmp	eax, 1
 	jne	$LN7@launch
 $LN6@launch:
 
-; 223  : 
-; 224  :     }
+; 242  : 
+; 243  :     }
 
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
-	npad	1
-	lea	rcx, QWORD PTR Client$[rbp]
-	call	??1Client@Persistence@TechnicalServices@@QEAA@XZ
 	npad	1
 	lea	rcx, QWORD PTR credentials$[rbp]
 	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
@@ -29826,7 +33357,7 @@ $LN6@launch:
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
 	xor	rcx, rbp
 	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+4480]
+	lea	rsp, QWORD PTR [rbp+5456]
 	pop	rdi
 	pop	rsi
 	pop	rbp
@@ -29839,161 +33370,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30015,161 +33589,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$1@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30191,161 +33808,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$2@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30367,161 +34027,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$3@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$3
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30543,161 +34246,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$4@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$4
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30719,161 +34465,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$6@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -30884,7 +34673,7 @@ this$ = 4512
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T68[rbp]
+	lea	rcx, QWORD PTR $T86[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -30898,161 +34687,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$7@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -31074,161 +34906,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$8@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$8
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -31250,338 +35125,205 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$11
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR Client$[rbp]
-	call	??1Client@Persistence@TechnicalServices@@QEAA@XZ
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$11
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$12
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$9
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -31594,6 +35336,444 @@ this$ = 4512
 	pop	rdi
 	pop	rbp
 	ret	0
+?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$9
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$11
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR commands$25[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$11
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$12
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR selectedCommand$26[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
 ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$12
 text$x	ENDS
 ;	COMDAT text$x
@@ -31602,1394 +35782,424 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$13
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T50[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$13
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$14
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR commands$23[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$14
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$15
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR selectedCommand$24[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$15
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$16
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T45[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$16
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$17
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T46[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$17
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$18
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
-	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$18
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$21
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR commands$28[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$21
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$22
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$22
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$23
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -33002,7 +36212,7 @@ this$ = 4512
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$23
+?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$14
 text$x	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -33010,161 +36220,1518 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$15
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
+	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$15
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$18
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR commands$30[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$18
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$19
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$19
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$20
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T56[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$20
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$21
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T57[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$21
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$22
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR parameters$34[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$22
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$24@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$24
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -33172,8 +37739,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T52[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR results$35[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -33186,161 +37753,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$25@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$25
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -33348,8 +37958,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR parameters$32[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR $T60[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -33362,161 +37972,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$27
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -33524,8 +38177,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR results$33[rbp]
-	call	??1any@std@@QEAA@XZ			; std::any::~any
+	lea	rcx, QWORD PTR $T62[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -33538,161 +38191,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$28
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -33700,7 +38396,7 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T55[rbp]
+	lea	rcx, QWORD PTR $T63[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -33714,161 +38410,423 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$29
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T64[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$29
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$30
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -33876,8 +38834,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T57[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR $T65[rbp]
+	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -33890,161 +38848,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$31
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -34052,8 +39053,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T58[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR parameters$38[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -34066,337 +39067,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$32
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T59[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$32
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$33@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$33
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -34404,8 +39272,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T60[rbp]
-	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
+	lea	rcx, QWORD PTR results$39[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -34418,161 +39286,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$34@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$34
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -34580,8 +39491,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR parameters$36[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR $T68[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -34594,161 +39505,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$36@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$36
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -34756,8 +39710,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR results$37[rbp]
-	call	??1any@std@@QEAA@XZ			; std::any::~any
+	lea	rcx, QWORD PTR parameter$41[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -34770,337 +39724,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$37
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR ProfileofClient$38[rbp]
-	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$37
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$38
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -35108,8 +39929,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T63[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR results$42[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -35122,161 +39943,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$39@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$39
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -35284,8 +40148,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T64[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR ProfileofClient$43[rbp]
+	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -35298,161 +40162,423 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$40
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T80[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$40
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$41
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -35460,13 +40586,670 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T66[rbp]
+	lea	rcx, QWORD PTR $T76[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
 ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$41
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$42
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T77[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$42
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$43
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T82[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$43
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$45
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T84[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$45
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -35475,161 +41258,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -35652,161 +41478,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$1@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -35829,161 +41698,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$2@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -36006,161 +41918,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$3@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$3
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -36183,161 +42138,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$4@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$4
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -36360,161 +42358,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$6@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -36525,7 +42566,7 @@ this$ = 4512
 	lea	r9, OFFSET FLAT:??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
-	lea	rcx, QWORD PTR $T68[rbp]
+	lea	rcx, QWORD PTR $T86[rbp]
 	call	??_M@YAXPEAX_K1P6AX0@Z@Z
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -36540,161 +42581,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$7@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -36717,161 +42801,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$8@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$8
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -36894,161 +43021,424 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$9
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR sessionControl$[rbp]
+	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$9
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$11
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -37056,8 +43446,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR Client$[rbp]
-	call	??1Client@Persistence@TechnicalServices@@QEAA@XZ
+	lea	rcx, QWORD PTR commands$25[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -37071,161 +43461,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$12
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -37233,8 +43666,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR sessionControl$[rbp]
-	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
+	lea	rcx, QWORD PTR selectedCommand$26[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -37248,161 +43681,424 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$13
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T50[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$13
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$14
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -37410,8 +44106,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR commands$23[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR $T51[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -37425,161 +44121,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -37587,8 +44326,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR selectedCommand$24[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR ClientHandler$29[rbp]
+	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -37602,515 +44341,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$16
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T45[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$16@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$16
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$17
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T46[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$17@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$17
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$18
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -38118,8 +44546,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR ClientHandler$27[rbp]
-	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
+	lea	rcx, QWORD PTR commands$30[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -38133,161 +44561,644 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$19
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$19
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$20
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T56[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$20
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$21
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -38295,8 +45206,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR commands$28[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR $T57[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -38310,161 +45221,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$22
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -38472,8 +45426,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR selectedCommand$29[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR parameters$34[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -38487,338 +45441,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$23
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T51[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$23@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$23
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$24@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$24
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -38826,8 +45646,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T52[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR results$35[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -38841,161 +45661,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$25@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$25
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -39003,8 +45866,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR parameters$32[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR $T60[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -39018,161 +45881,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$27
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -39180,8 +46086,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR results$33[rbp]
-	call	??1any@std@@QEAA@XZ			; std::any::~any
+	lea	rcx, QWORD PTR $T62[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -39195,161 +46101,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$28
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -39357,7 +46306,7 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T55[rbp]
+	lea	rcx, QWORD PTR $T63[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -39372,161 +46321,424 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$29
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T64[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$29
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$30
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -39534,8 +46746,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T57[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR $T65[rbp]
+	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -39549,161 +46761,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$31
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -39711,8 +46966,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T58[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR parameters$38[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -39726,338 +46981,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$32
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T59[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$32@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$32
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$33@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$33
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -40065,8 +47186,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T60[rbp]
-	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
+	lea	rcx, QWORD PTR results$39[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -40080,161 +47201,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$34@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$34
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -40242,8 +47406,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR parameters$36[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR $T68[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -40257,161 +47421,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$36@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$36
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -40419,8 +47626,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR results$37[rbp]
-	call	??1any@std@@QEAA@XZ			; std::any::~any
+	lea	rcx, QWORD PTR parameter$41[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -40434,338 +47641,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
-?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$37
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR ProfileofClient$38[rbp]
-	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$37@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$37
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-roleLegalValues$ = 8
-ClientsFromDB$ = 72
-ClientsProfileFromDB$ = 136
-credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
-$T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$38
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -40773,8 +47846,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T63[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR results$42[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -40788,161 +47861,204 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$39@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$39
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -40950,8 +48066,8 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T64[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR ProfileofClient$43[rbp]
+	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -40965,161 +48081,424 @@ roleLegalValues$ = 8
 ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
-Client$ = 352
-selectedRole$ = 472
-sessionControl$ = 504
-commands$23 = 536
-selectedCommand$24 = 600
-menuSelection$25 = 660
-i$26 = 692
-ClientHandler$27 = 728
-commands$28 = 760
-selectedCommand$29 = 824
-menuSelection$30 = 884
-i$31 = 916
-parameters$32 = 952
-results$33 = 1024
-response$34 = 1108
-clientId$35 = 1140
-parameters$36 = 1176
-results$37 = 1248
-ProfileofClient$38 = 1336
-$T39 = 2756
-$T40 = 2792
-$T41 = 2840
-$T42 = 2888
-$T43 = 2920
-$T44 = 2968
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
 $T45 = 3016
-$T46 = 3080
-$T47 = 3144
-$T48 = 3176
-$T49 = 3240
-$T50 = 3288
-$T51 = 3336
-$T52 = 3400
-$T53 = 3460
-$T54 = 3496
-$T55 = 3560
-$T56 = 3624
-$T57 = 3688
-$T58 = 3752
-$T59 = 3816
-$T60 = 3880
-$T61 = 3924
-$T62 = 3960
-$T63 = 4024
-$T64 = 4088
-$T65 = 4152
-$T66 = 4248
-$T67 = 4320
-$T68 = 4360
-tv931 = 4408
-tv917 = 4408
-tv904 = 4408
-tv893 = 4408
-tv872 = 4408
-tv845 = 4408
-tv829 = 4408
-tv791 = 4408
-tv788 = 4408
-tv775 = 4408
-tv718 = 4408
-tv687 = 4408
-tv675 = 4408
-tv661 = 4408
-tv647 = 4408
-tv619 = 4408
-tv616 = 4408
-tv603 = 4408
-tv554 = 4408
-tv520 = 4408
-tv515 = 4408
-tv513 = 4408
-tv487 = 4408
-tv462 = 4408
-tv409 = 4408
-tv397 = 4408
-tv382 = 4408
-tv363 = 4408
-tv353 = 4408
-tv319 = 4408
-tv314 = 4408
-tv312 = 4408
-tv286 = 4408
-tv261 = 4408
-tv240 = 4408
-tv228 = 4408
-tv202 = 4408
-tv172 = 4408
-tv140 = 4408
-tv92 = 4408
-tv76 = 4408
-tv928 = 4416
-tv874 = 4416
-tv856 = 4416
-tv831 = 4416
-tv799 = 4416
-tv786 = 4416
-tv773 = 4416
-tv762 = 4416
-tv692 = 4416
-tv682 = 4416
-tv666 = 4416
-tv649 = 4416
-tv642 = 4416
-tv627 = 4416
-tv614 = 4416
-tv601 = 4416
-tv590 = 4416
-tv556 = 4416
-tv511 = 4416
-tv489 = 4416
-tv464 = 4416
-tv403 = 4416
-tv389 = 4416
-tv355 = 4416
-tv310 = 4416
-tv288 = 4416
-tv263 = 4416
-tv234 = 4416
-tv142 = 4416
-tv94 = 4416
-tv78 = 4416
-tv922 = 4424
-tv906 = 4424
-tv806 = 4424
-tv732 = 4424
-tv498 = 4424
-tv469 = 4424
-tv406 = 4424
-tv297 = 4424
-tv268 = 4424
-tv237 = 4424
-tv935 = 4432
-tv912 = 4432
-tv899 = 4432
-tv730 = 4432
-tv622 = 4432
-tv496 = 4432
-tv473 = 4432
-tv295 = 4432
-tv272 = 4432
-tv924 = 4440
-tv827 = 4440
-tv475 = 4440
-tv400 = 4440
-tv274 = 4440
-tv231 = 4440
-tv914 = 4448
-tv901 = 4448
-tv564 = 4448
-tv926 = 4456
-tv552 = 4456
-tv351 = 4456
-tv720 = 4464
-__$ArrayPad$ = 4472
-this$ = 4512
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$40
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T80[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$40
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
 ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$41
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -41127,13 +48506,673 @@ this$ = 4512
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T66[rbp]
+	lea	rcx, QWORD PTR $T76[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
 ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$41
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$42
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T77[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$42
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$43
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T82[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$43
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+roleLegalValues$ = 8
+ClientsFromDB$ = 72
+ClientsProfileFromDB$ = 136
+credentials$ = 208
+sessionControl$ = 344
+commands$25 = 376
+selectedCommand$26 = 440
+menuSelection$27 = 500
+i$28 = 532
+ClientHandler$29 = 568
+commands$30 = 600
+selectedCommand$31 = 664
+menuSelection$32 = 724
+i$33 = 756
+parameters$34 = 792
+results$35 = 864
+response$36 = 948
+clientId$37 = 980
+parameters$38 = 1016
+results$39 = 1088
+clientId$40 = 1172
+parameter$41 = 1208
+results$42 = 1280
+ProfileofClient$43 = 1368
+$T44 = 2980
+$T45 = 3016
+$T46 = 3064
+$T47 = 3112
+$T48 = 3144
+$T49 = 3192
+$T50 = 3240
+$T51 = 3304
+$T52 = 3368
+$T53 = 3400
+$T54 = 3464
+$T55 = 3512
+$T56 = 3560
+$T57 = 3624
+$T58 = 3684
+$T59 = 3720
+$T60 = 3784
+$T61 = 3848
+$T62 = 3912
+$T63 = 3976
+$T64 = 4040
+$T65 = 4104
+$T66 = 4148
+$T67 = 4184
+$T68 = 4248
+$T69 = 4312
+$T70 = 4372
+$T71 = 4408
+$T72 = 4472
+$T73 = 4520
+$T74 = 4568
+$T75 = 4616
+$T76 = 4664
+$T77 = 4728
+$T78 = 4792
+$T79 = 4840
+$T80 = 4888
+$T81 = 4952
+$T82 = 5000
+$T83 = 5064
+$T84 = 5160
+$T85 = 5232
+$T86 = 5272
+tv1156 = 5320
+tv1150 = 5320
+tv1136 = 5320
+tv1123 = 5320
+tv1112 = 5320
+tv1094 = 5320
+tv1035 = 5320
+tv1003 = 5320
+tv917 = 5320
+tv891 = 5320
+tv862 = 5320
+tv828 = 5320
+tv816 = 5320
+tv802 = 5320
+tv774 = 5320
+tv771 = 5320
+tv758 = 5320
+tv703 = 5320
+tv672 = 5320
+tv660 = 5320
+tv646 = 5320
+tv632 = 5320
+tv604 = 5320
+tv601 = 5320
+tv588 = 5320
+tv507 = 5320
+tv473 = 5320
+tv468 = 5320
+tv466 = 5320
+tv440 = 5320
+tv415 = 5320
+tv394 = 5320
+tv382 = 5320
+tv367 = 5320
+tv348 = 5320
+tv338 = 5320
+tv304 = 5320
+tv299 = 5320
+tv297 = 5320
+tv271 = 5320
+tv246 = 5320
+tv225 = 5320
+tv213 = 5320
+tv187 = 5320
+tv172 = 5320
+tv140 = 5320
+tv92 = 5320
+tv76 = 5320
+tv1147 = 5328
+tv1096 = 5328
+tv1046 = 5328
+tv1005 = 5328
+tv919 = 5328
+tv893 = 5328
+tv870 = 5328
+tv859 = 5328
+tv833 = 5328
+tv823 = 5328
+tv804 = 5328
+tv782 = 5328
+tv769 = 5328
+tv756 = 5328
+tv745 = 5328
+tv677 = 5328
+tv667 = 5328
+tv651 = 5328
+tv634 = 5328
+tv627 = 5328
+tv612 = 5328
+tv599 = 5328
+tv586 = 5328
+tv575 = 5328
+tv509 = 5328
+tv464 = 5328
+tv442 = 5328
+tv417 = 5328
+tv388 = 5328
+tv374 = 5328
+tv340 = 5328
+tv295 = 5328
+tv273 = 5328
+tv248 = 5328
+tv219 = 5328
+tv142 = 5328
+tv94 = 5328
+tv78 = 5328
+tv1141 = 5336
+tv1125 = 5336
+tv1008 = 5336
+tv923 = 5336
+tv717 = 5336
+tv451 = 5336
+tv422 = 5336
+tv391 = 5336
+tv282 = 5336
+tv253 = 5336
+tv222 = 5336
+tv1131 = 5344
+tv1118 = 5344
+tv925 = 5344
+tv877 = 5344
+tv715 = 5344
+tv607 = 5344
+tv449 = 5344
+tv426 = 5344
+tv280 = 5344
+tv257 = 5344
+tv1160 = 5352
+tv1143 = 5352
+tv929 = 5352
+tv428 = 5352
+tv385 = 5352
+tv259 = 5352
+tv216 = 5352
+tv1133 = 5360
+tv1120 = 5360
+tv1010 = 5360
+tv931 = 5360
+tv549 = 5360
+tv1145 = 5368
+tv1013 = 5368
+tv505 = 5368
+tv336 = 5368
+tv1015 = 5376
+tv705 = 5376
+tv1019 = 5384
+tv1021 = 5392
+tv1024 = 5400
+tv865 = 5408
+tv1162 = 5416
+tv841 = 5424
+tv1164 = 5432
+tv1026 = 5440
+__$ArrayPad$ = 5448
+this$ = 5488
+?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$45
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T84[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$45@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$45
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\SimpleUI.cpp
@@ -42424,6 +50463,45 @@ $LN2@scalar:
 	pop	rbp
 	ret	0
 ??_GClientprofile@Persistence@TechnicalServices@@QEAAPEAXI@Z ENDP ; TechnicalServices::Persistence::Clientprofile::`scalar deleting destructor'
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT ??4Clientprofile@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z
+_TEXT	SEGMENT
+this$ = 224
+__that$ = 232
+??4Clientprofile@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z PROC ; TechnicalServices::Persistence::Clientprofile::operator=, COMDAT
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR __that$[rbp]
+	mov	ecx, DWORD PTR [rcx]
+	mov	DWORD PTR [rax], ecx
+	mov	rax, QWORD PTR __that$[rbp]
+	add	rax, 8
+	mov	rcx, QWORD PTR this$[rbp]
+	add	rcx, 8
+	mov	rdx, rax
+	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@AEBV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR __that$[rbp]
+	mov	ecx, DWORD PTR [rcx+48]
+	mov	DWORD PTR [rax+48], ecx
+	mov	rax, QWORD PTR this$[rbp]
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??4Clientprofile@Persistence@TechnicalServices@@QEAAAEAU012@AEBU012@@Z ENDP ; TechnicalServices::Persistence::Clientprofile::operator=
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??0Clientprofile@Persistence@TechnicalServices@@QEAA@AEBU012@@Z

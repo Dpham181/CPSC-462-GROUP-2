@@ -32,37 +32,18 @@ namespace  // anonymous (private) working area
      return  result;
  }
   std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-      auto result = session.SearchClientId(std::atoi(agrs[0].c_str()));
-         
+      auto newClientProfilebyId = session.UpdateClientProfile(std::atoi(agrs[0].c_str()), agrs[1], std::atoi(agrs[2].c_str()));
      
-      return  result;
+      return  newClientProfilebyId;
   }
-  
+  std::any ViewClientProfile(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+      auto ClientProfilebyId = session.SearchClientId(std::atoi(agrs[0].c_str()));
+
+      return  ClientProfilebyId;
+  }
  STUB(ProductManagement)
- STUBC(Link)
 
-    // Assistant actions
-  STUB(ShowAllClients )
-  STUB( modifyClient)
-  STUB( askHelp )
-  STUB( scheduleEvent )
-  STUB( attachClientDocument )
-  STUB( inviteClient )
-
- 
-    // Salesperson actions
-  STUB( makeSale )
-
-    // Sales Manager actions
-  STUB( manageSubscription )
-
-    // IT Admin actions
-  STUB( addNewAccount )
-  STUB( backupDB )
-  
-    // Security Officer actions
-  STUB( blockAccount )
-  
+   
 
 
   
@@ -153,29 +134,23 @@ namespace Domain::Client
         for (const auto& ClientProfile : _UpdatedprofileDB) {
             if (ClientProfile.client_id == ClientId) {
                 _Clientprofile = ClientProfile;
-                return  _Clientprofile;
+             
             }
 
         }
+        return  _Clientprofile;
     }
 
-    Clientprofile ClientDomain::UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) {
+    std::vector<Clientprofile> ClientDomain::UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) {
         
-        
-                if (DOB != ""){
-                    _Clientprofile.dob = DOB;
-                    
-               }
-                else if (ClientID != 0) {
-                    _Clientprofile.client_id = ClientID;
-                }
-                else if (Income != 0) {
-                    _Clientprofile.income = Income;
-                }
-                
-            
-        
-        return _Clientprofile;
+        _Clientprofile = { ClientID ,"",0 };
+        int ReplaceIndex = ClientID - 1;
+        if (DOB != "")  _Clientprofile.dob = DOB; 
+        if (Income > 0) _Clientprofile.income = Income; 
+         _UpdatedprofileDB.at(ReplaceIndex) = _Clientprofile;
+
+
+        return   _UpdatedprofileDB;
     }
     
     ClientManagement::ClientManagement(const UserCredentials& user) : ClientDomain ("Client Management", user)
@@ -186,7 +161,7 @@ namespace Domain::Client
                          { "Add Client", Add },
                          {"View All Clients", View},
                          { "Update Client Profile", Update },
-                         { "Link Product", Link }//,
+                         { "View Client Profile", ViewClientProfile }//,
 
                                 };
     };
@@ -306,7 +281,7 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Sales Manager\".";
 
-    _commandDispatch = { {"Manage Subscription", manageSubscription}//,
+   // _commandDispatch = { {"Manage Subscription", manageSubscription}//,
                          //{"Help",       help} 
     };
   }

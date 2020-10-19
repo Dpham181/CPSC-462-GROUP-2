@@ -60,9 +60,7 @@ namespace UI
 
         // 2) Present login screen to user and get username, password, and valid role
         Domain::Session::UserCredentials credentials = { "", "", {""} };// ensures roles[0] exists
-        Domain::Client::Client Client = { "",0 };// ensures roles[0] exists
-
-        auto& selectedRole = credentials.roles[0];     // convenience alias
+       
 
 
         std::unique_ptr<Domain::Session::SessionHandler> sessionControl;
@@ -185,28 +183,48 @@ namespace UI
                             } while (response != 'Y' && response != 'Q');
 
                             if (response == 'Y') {
-                                // still find the optimal sol for this
-                                // either using index swap or edit in place 
+                            
+
                                 std::vector<std::string> parameters(3);
                                 parameters[0] = std::to_string(clientId);
                                 std::cout << " Enter DOB: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
                                 std::cout << " Enter Income:   ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
                                
                                 auto results = ClientHandler->executeCommandClient(selectedCommand,parameters);
-                             
-                                if (results.has_value())
-                                {
-                                    Domain::Client::Clientprofile  ProfileofClient = std::any_cast<const TechnicalServices::Persistence::Clientprofile&>(results);
-                                    _logger << "Successfully Updated \""+ ProfileofClient.dob;
-                                 
-
+                                if (results.has_value()) {
+                                    _logger << "Successfully Updated\n";
+                                    ClientsProfileFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Clientprofile>&>(results);
+                                    
                                 }
+                            
                                 
                             }
 
                         }
-                        else if (selectedCommand == "Link Product") {
-                            //todo
+                        else if (selectedCommand == "View Client Profile") {
+                            ClientHandler->ClientsPDB(ClientsProfileFromDB);
+                            ClientHandler->ViewClients(ClientsFromDB);
+                            int clientId = 0;
+                            std::cout << "Please choose Client Id: ";
+                            std::cin >> clientId;
+                            std::vector<std::string> parameter(1);
+                            parameter[0] = std::to_string(clientId);
+                            auto results = ClientHandler->executeCommandClient(selectedCommand, parameter);
+                            
+
+                            if (results.has_value())
+                            {
+                                Domain::Client::Clientprofile  ProfileofClient = std::any_cast<const TechnicalServices::Persistence::Clientprofile&>(results);
+                                line();
+                                std::cout << std::setw(49) << "Reuslt of Searching\n";
+                                line();
+                                std::cout << std::setw(15) << "Id" << std::setw(15) << "DOB" << std::setw(15) << "Income\n";
+
+                                line();
+                                std::cout << std::setw(15) << std::to_string(ProfileofClient.client_id) << std::setw(15) << ProfileofClient.dob << std::setw(15) << std::to_string(ProfileofClient.income) + "\n";
+
+
+                            }
                         }
 
 

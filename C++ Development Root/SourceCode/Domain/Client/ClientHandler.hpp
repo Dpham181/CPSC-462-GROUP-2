@@ -40,7 +40,7 @@ namespace Domain::Client
      // Usecase Operations
      virtual void                                ViewClients(const std::vector<Client>& ClientsDB) =0;
      virtual std::vector<Client>                 addClient(const Client& Client) =0;
-     virtual Clientprofile                       UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) = 0;
+     virtual std::vector<Clientprofile>                   UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) = 0;
 
 
       
