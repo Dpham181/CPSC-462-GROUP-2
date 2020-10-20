@@ -117,20 +117,32 @@ namespace TechnicalServices::Persistence
 
        };
    }
+   std::vector<User> SimpleDB::ShowAllUsers()
+   {
+       return
+       {
+           //UserID     Username       Authorized roles    commission
+            { 1,        "Tom",         "IT Admin",         0  },
+            { 2,        "Amanda",      "Salesperson",      0  }
+       };
+   }
+
+   std::vector<UserCredentials> SimpleDB::ShowAllUserProfiles()
+   {
+       return
+       {
+           //Username     pass phrase      Authorized roles      status
+           { "Tom",       "CPSC",          { "IT Admin" },          1 },
+           { "Amanda",    "",              { "Salesperson" },       1 }
+       };
+   }
+
   UserCredentials SimpleDB::findCredentialsByName( const std::string & name )
   {
-    static std::vector<UserCredentials> storedUsers =
-    {
-    // Username    Pass Phrase         Authorized roles
-      //{"Tom",     "CPSC 462 Rocks!",  {"Borrower",     "Management"}},
-      //{"Barbara", "Why am I here?",   {"Borrower"                  }},
-      //{"Amanda",  "",                 {"Administrator"             }}
+      std::vector<UserCredentials> storedUsers = ShowAllUserProfiles();
+    
 
-        { "Tom", "CPSC", { "IT Admin" } },
-        { "Amanda", "", { "Salesperson" } }
-    };
-
-    for( const auto & user : storedUsers ) if( user.userName == name ) return user;
+    for( const auto & user : storedUsers) if( user.userName == name ) return user;
 
     // Name not found, log the error and throw something
     std::string message = __func__;
