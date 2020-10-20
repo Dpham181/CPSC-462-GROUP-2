@@ -27,6 +27,9 @@ namespace TechnicalServices::Persistence
         std::vector<Client> ShowAllClients() override;
         std::vector<Clientprofile> ShowAllClientsProfile() override;
         std::vector<Product> CRMInventory() override;
+        
+        std::vector<User>   ShowAllUsers() override;
+        std::vector<UserCredentials>   ShowAllUserProfiles() override;
 
      
 
@@ -40,6 +43,7 @@ namespace TechnicalServices::Persistence
 
     private:
         std::vector<Client> ClientDB;
+        std::vector<User> UserDB;
       std::unique_ptr<TechnicalServices::Logging::LoggerHandler> _loggerPtr;
 
       // convenience reference object enabling standard insertion syntax
