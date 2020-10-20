@@ -55,10 +55,10 @@ __D3011E72_ios DB 01H
 __9705A642_LoggerHandler@hpp DB 01H
 __4C643822_Product@hpp DB 01H
 __3787E497_ProductHandler@cpp DB 01H
+__138CEB20_vector DB 01H
 __D7B46C6D_istream DB 01H
 __B4645957_ostream DB 01H
 __98EC3E59_streambuf DB 01H
-__138CEB20_vector DB 01H
 __92C84E46_iosfwd DB 01H
 __274BC267_iterator DB 01H
 __660C12FD_utility DB 01H
@@ -106,14 +106,14 @@ PUBLIC	?_Get_first@?$_Compressed_pair@U?$default_delete@UProductManagement@Produ
 PUBLIC	??$?0UProductManagement@Product@Domain@@$0A@@?$default_delete@VProductHandler@Product@Domain@@@std@@QEAA@AEBU?$default_delete@UProductManagement@Product@Domain@@@1@@Z ; std::default_delete<Domain::Product::ProductHandler>::default_delete<Domain::Product::ProductHandler><Domain::Product::ProductManagement,0>
 PUBLIC	??$?0UProductManagement@Product@Domain@@U?$default_delete@UProductManagement@Product@Domain@@@std@@$0A@@?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@QEAA@$$QEAV?$unique_ptr@UProductManagement@Product@Domain@@U?$default_delete@UProductManagement@Product@Domain@@@std@@@1@@Z ; std::unique_ptr<Domain::Product::ProductHandler,std::default_delete<Domain::Product::ProductHandler> >::unique_ptr<Domain::Product::ProductHandler,std::default_delete<Domain::Product::ProductHandler> ><Domain::Product::ProductManagement,std::default_delete<Domain::Product::ProductManagement>,0>
 PUBLIC	??$?0U?$default_delete@VProductHandler@Product@Domain@@@std@@$0A@@?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@QEAA@$$T@Z ; std::unique_ptr<Domain::Product::ProductHandler,std::default_delete<Domain::Product::ProductHandler> >::unique_ptr<Domain::Product::ProductHandler,std::default_delete<Domain::Product::ProductHandler> ><std::default_delete<Domain::Product::ProductHandler>,0>
+PUBLIC	??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ; std::exchange<std::_Container_proxy *,std::nullptr_t>
 PUBLIC	??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ; std::_Delete_plain_internal<std::allocator<std::_Container_proxy> >
 PUBLIC	??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-PUBLIC	??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ; std::exchange<std::_Container_proxy *,std::nullptr_t>
 PUBLIC	??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><char>
 PUBLIC	??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z	; std::_Destroy_in_place<char *>
 PUBLIC	??$_Unfancy@D@std@@YAPEADPEAD@Z			; std::_Unfancy<char>
-PUBLIC	??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ; std::_Destroy_range<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z	; std::_Deallocate<16,0>
+PUBLIC	??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ; std::_Destroy_range<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	??$forward@AEBUUserCredentials@Persistence@TechnicalServices@@@std@@YAAEBUUserCredentials@Persistence@TechnicalServices@@AEBU123@@Z ; std::forward<TechnicalServices::Persistence::UserCredentials const &>
 PUBLIC	??$?0U?$default_delete@UProductManagement@Product@Domain@@@std@@$0A@@?$unique_ptr@UProductManagement@Product@Domain@@U?$default_delete@UProductManagement@Product@Domain@@@std@@@std@@QEAA@PEAUProductManagement@Product@Domain@@@Z ; std::unique_ptr<Domain::Product::ProductManagement,std::default_delete<Domain::Product::ProductManagement> >::unique_ptr<Domain::Product::ProductManagement,std::default_delete<Domain::Product::ProductManagement> ><std::default_delete<Domain::Product::ProductManagement>,0>
 PUBLIC	??$forward@U?$default_delete@UProductManagement@Product@Domain@@@std@@@std@@YA$$QEAU?$default_delete@UProductManagement@Product@Domain@@@0@AEAU10@@Z ; std::forward<std::default_delete<Domain::Product::ProductManagement> >
@@ -427,6 +427,12 @@ $pdata$??$?0U?$default_delete@VProductHandler@Product@Domain@@@std@@$0A@@?$uniqu
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z DD imagerel $LN3
+	DD	imagerel $LN3+107
+	DD	imagerel $unwind$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z DD imagerel $LN3
 	DD	imagerel $LN3+89
 	DD	imagerel $unwind$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
@@ -436,12 +442,6 @@ pdata	SEGMENT
 $pdata$??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z DD imagerel $LN3
 	DD	imagerel $LN3+76
 	DD	imagerel $unwind$??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z DD imagerel $LN3
-	DD	imagerel $LN3+107
-	DD	imagerel $unwind$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -463,15 +463,15 @@ $pdata$??$_Unfancy@D@std@@YAPEADPEAD@Z DD imagerel $LN3
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z DD imagerel $LN6
-	DD	imagerel $LN6+139
-	DD	imagerel $unwind$??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DD imagerel $LN4
 	DD	imagerel $LN4+121
 	DD	imagerel $unwind$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z DD imagerel $LN6
+	DD	imagerel $LN6+139
+	DD	imagerel $unwind$??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -688,6 +688,7 @@ CONST	ENDS
 ;	COMDAT ??_7ProductHandler@Product@Domain@@6B@
 CONST	SEGMENT
 ??_7ProductHandler@Product@Domain@@6B@ DQ FLAT:??_R4ProductHandler@Product@Domain@@6B@ ; Domain::Product::ProductHandler::`vftable'
+	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
@@ -1008,26 +1009,6 @@ $unwind$??$forward@AEBUUserCredentials@Persistence@TechnicalServices@@@std@@YAAE
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DB 060H
-	DD	imagerel $ip2state$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DD 025052f19H
-	DD	01132318H
-	DD	0700c001dH
-	DD	0500bH
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $ip2state$??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -1045,6 +1026,26 @@ $unwind$??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?
 	DD	05010H
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DB 060H
+	DD	imagerel $ip2state$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DD 025052f19H
+	DD	01132318H
+	DD	0700c001dH
+	DD	0500bH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -1108,26 +1109,6 @@ $unwind$??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z DB 060H
-	DD	imagerel $ip2state$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z DD 025052f19H
-	DD	01132318H
-	DD	0700c0021H
-	DD	0500bH
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $ip2state$??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -1165,6 +1146,26 @@ $unwind$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std
 	DD	0500bH
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z DB 060H
+	DD	imagerel $ip2state$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z DD 025052f19H
+	DD	01132318H
+	DD	0700c0021H
+	DD	0500bH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -1580,7 +1581,7 @@ xdata	ENDS
 CONST	SEGMENT
 ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ$rtcName$0 DB 024H ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	DB	053H
-	DB	032H
+	DB	033H
 	DB	00H
 	ORG $+12
 ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ$rtcVarDesc DD 044H ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
@@ -1718,7 +1719,7 @@ CONST	SEGMENT
 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ$rtcName$0 DB 024H ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	DB	053H
 	DB	031H
-	DB	030H
+	DB	031H
 	DB	00H
 	ORG $+11
 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ$rtcVarDesc DD 044H ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -2566,63 +2567,6 @@ $LN3:
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
-;	COMDAT ??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
-_TEXT	SEGMENT
-_Ptr$ = 224
-_Bytes$ = 232
-??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z PROC		; std::_Deallocate<16,0>, COMDAT
-
-; 213  : void _Deallocate(void* _Ptr, size_t _Bytes) noexcept {
-
-$LN4:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
-	call	__CheckForDebuggerJustMyCode
-
-; 214  :     // deallocate storage allocated by _Allocate when !_HAS_ALIGNED_NEW || _Align <= __STDCPP_DEFAULT_NEW_ALIGNMENT__
-; 215  : #if defined(_M_IX86) || defined(_M_X64)
-; 216  :     if (_Bytes >= _Big_allocation_threshold) { // boost the alignment of big allocations to help autovectorization
-
-	cmp	QWORD PTR _Bytes$[rbp], 4096		; 00001000H
-	jb	SHORT $LN2@Deallocate
-
-; 217  :         _Adjust_manually_vector_aligned(_Ptr, _Bytes);
-
-	lea	rdx, QWORD PTR _Bytes$[rbp]
-	lea	rcx, QWORD PTR _Ptr$[rbp]
-	call	?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z ; std::_Adjust_manually_vector_aligned
-$LN2@Deallocate:
-
-; 218  :     }
-; 219  : #endif // defined(_M_IX86) || defined(_M_X64)
-; 220  : 
-; 221  :     ::operator delete(_Ptr, _Bytes);
-
-	mov	rdx, QWORD PTR _Bytes$[rbp]
-	mov	rcx, QWORD PTR _Ptr$[rbp]
-	call	??3@YAXPEAX_K@Z				; operator delete
-	npad	1
-
-; 222  : }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z ENDP		; std::_Deallocate<16,0>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z
 _TEXT	SEGMENT
 _First$ = 224
@@ -2684,6 +2628,63 @@ $LN3@Destroy_ra:
 	pop	rbp
 	ret	0
 ??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ENDP ; std::_Destroy_range<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
+_TEXT	SEGMENT
+_Ptr$ = 224
+_Bytes$ = 232
+??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z PROC		; std::_Deallocate<16,0>, COMDAT
+
+; 213  : void _Deallocate(void* _Ptr, size_t _Bytes) noexcept {
+
+$LN4:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__0C99713E_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 214  :     // deallocate storage allocated by _Allocate when !_HAS_ALIGNED_NEW || _Align <= __STDCPP_DEFAULT_NEW_ALIGNMENT__
+; 215  : #if defined(_M_IX86) || defined(_M_X64)
+; 216  :     if (_Bytes >= _Big_allocation_threshold) { // boost the alignment of big allocations to help autovectorization
+
+	cmp	QWORD PTR _Bytes$[rbp], 4096		; 00001000H
+	jb	SHORT $LN2@Deallocate
+
+; 217  :         _Adjust_manually_vector_aligned(_Ptr, _Bytes);
+
+	lea	rdx, QWORD PTR _Bytes$[rbp]
+	lea	rcx, QWORD PTR _Ptr$[rbp]
+	call	?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z ; std::_Adjust_manually_vector_aligned
+$LN2@Deallocate:
+
+; 218  :     }
+; 219  : #endif // defined(_M_IX86) || defined(_M_X64)
+; 220  : 
+; 221  :     ::operator delete(_Ptr, _Bytes);
+
+	mov	rdx, QWORD PTR _Bytes$[rbp]
+	mov	rcx, QWORD PTR _Ptr$[rbp]
+	call	??3@YAXPEAX_K@Z				; operator delete
+	npad	1
+
+; 222  : }
+
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z ENDP		; std::_Deallocate<16,0>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
@@ -2785,58 +2786,6 @@ $LN3:
 ??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z ENDP ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><char>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
-;	COMDAT ??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
-_TEXT	SEGMENT
-_Old_val$ = 8
-_Val$ = 256
-_New_val$ = 264
-??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z PROC ; std::exchange<std::_Container_proxy *,std::nullptr_t>, COMDAT
-
-; 597  :     conjunction_v<is_nothrow_move_constructible<_Ty>, is_nothrow_assignable<_Ty&, _Other>>) /* strengthened */ {
-
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 264				; 00000108H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 66					; 00000042H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__660C12FD_utility
-	call	__CheckForDebuggerJustMyCode
-
-; 598  :     // assign _New_val to _Val, return previous _Val
-; 599  :     _Ty _Old_val = static_cast<_Ty&&>(_Val);
-
-	mov	rax, QWORD PTR _Val$[rbp]
-	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR _Old_val$[rbp], rax
-
-; 600  :     _Val         = static_cast<_Other&&>(_New_val);
-
-	mov	rax, QWORD PTR _Val$[rbp]
-	mov	rcx, QWORD PTR _New_val$[rbp]
-	mov	rcx, QWORD PTR [rcx]
-	mov	QWORD PTR [rax], rcx
-
-; 601  :     return _Old_val;
-
-	mov	rax, QWORD PTR _Old_val$[rbp]
-
-; 602  : }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ENDP ; std::exchange<std::_Container_proxy *,std::nullptr_t>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z
 _TEXT	SEGMENT
@@ -2909,6 +2858,58 @@ $LN3:
 	pop	rbp
 	ret	0
 ??$_Delete_plain_internal@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXAEAV?$allocator@U_Container_proxy@std@@@0@QEAU_Container_proxy@0@@Z ENDP ; std::_Delete_plain_internal<std::allocator<std::_Container_proxy> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
+;	COMDAT ??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z
+_TEXT	SEGMENT
+_Old_val$ = 8
+_Val$ = 256
+_New_val$ = 264
+??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z PROC ; std::exchange<std::_Container_proxy *,std::nullptr_t>, COMDAT
+
+; 597  :     conjunction_v<is_nothrow_move_constructible<_Ty>, is_nothrow_assignable<_Ty&, _Other>>) /* strengthened */ {
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 264				; 00000108H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 66					; 00000042H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+296]
+	lea	rcx, OFFSET FLAT:__660C12FD_utility
+	call	__CheckForDebuggerJustMyCode
+
+; 598  :     // assign _New_val to _Val, return previous _Val
+; 599  :     _Ty _Old_val = static_cast<_Ty&&>(_Val);
+
+	mov	rax, QWORD PTR _Val$[rbp]
+	mov	rax, QWORD PTR [rax]
+	mov	QWORD PTR _Old_val$[rbp], rax
+
+; 600  :     _Val         = static_cast<_Other&&>(_New_val);
+
+	mov	rax, QWORD PTR _Val$[rbp]
+	mov	rcx, QWORD PTR _New_val$[rbp]
+	mov	rcx, QWORD PTR [rcx]
+	mov	QWORD PTR [rax], rcx
+
+; 601  :     return _Old_val;
+
+	mov	rax, QWORD PTR _Old_val$[rbp]
+
+; 602  : }
+
+	lea	rsp, QWORD PTR [rbp+232]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@AEAPEAU10@$$QEA$$T@Z ENDP ; std::exchange<std::_Container_proxy *,std::nullptr_t>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\memory
@@ -3238,7 +3239,7 @@ $LN5:
 	je	SHORT $LN3@operator
 	mov	rax, QWORD PTR $T1[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+48]
+	mov	rax, QWORD PTR [rax+56]
 	mov	QWORD PTR tv75[rbp], rax
 	mov	edx, 1
 	mov	rcx, QWORD PTR $T1[rbp]
@@ -3290,7 +3291,7 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 200				; 000000c8H
+	mov	ecx, 288				; 00000120H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
@@ -3340,7 +3341,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 200				; 000000c8H
+	mov	edx, 288				; 00000120H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -3366,7 +3367,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 200				; 000000c8H
+	mov	edx, 288				; 00000120H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -3982,7 +3983,7 @@ _TEXT	ENDS
 ;	COMDAT ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Alproxy$ = 8
-$S2$ = 36
+$S3$ = 36
 $T4 = 260
 __$ArrayPad$ = 280
 this$ = 320
@@ -4018,9 +4019,9 @@ $LN3:
 	mov	rcx, QWORD PTR this$[rbp]
 	call	?_Getal@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Getal
 	mov	rdx, rax
-	lea	rcx, QWORD PTR $S2$[rbp]
+	lea	rcx, QWORD PTR $S3$[rbp]
 	call	??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	lea	rax, QWORD PTR $S2$[rbp]
+	lea	rax, QWORD PTR $S3$[rbp]
 	mov	QWORD PTR _Alproxy$[rbp], rax
 
 ; 676  :         _Delete_plain_internal(_Alproxy, _STD exchange(_Mypair._Myval2._Myproxy, nullptr));
@@ -4390,7 +4391,7 @@ _TEXT	ENDS
 ;	COMDAT ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Alproxy$ = 8
-$S10$ = 36
+$S11$ = 36
 _To_delete$ = 72
 __$ArrayPad$ = 280
 this$ = 320
@@ -4426,9 +4427,9 @@ $LN3:
 	mov	rcx, QWORD PTR this$[rbp]
 	call	?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV?$allocator@D@2@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Getal
 	mov	rdx, rax
-	lea	rcx, QWORD PTR $S10$[rbp]
+	lea	rcx, QWORD PTR $S11$[rbp]
 	call	??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><char>
-	lea	rax, QWORD PTR $S10$[rbp]
+	lea	rax, QWORD PTR $S11$[rbp]
 	mov	QWORD PTR _Alproxy$[rbp], rax
 
 ; 2726 :         const auto _To_delete    = _Mypair._Myval2._Myproxy;

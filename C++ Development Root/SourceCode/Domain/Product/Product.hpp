@@ -21,8 +21,10 @@ namespace Domain::Product
        std::any                 executeCommandProduct(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
 
       // Operations
-        void   view(const std::vector<Product> & productsDB) override;
-        std::vector<Product>   add(const int ProductId, const std::string ProductName, const int Price) override;
+        void   view() override;
+        Product   add(const int ProductId, const std::string ProductName, const int Price) override;
+        std::vector<Product>   save(const Product & Product) override;
+
         std::vector<Product>   del(const int ProductId) override;
         std::vector<Product>   modify(const Product CurrentProduct, const std::string ProductName, const int Price) override;
 
@@ -39,6 +41,9 @@ namespace Domain::Product
       std::string     const                             _name = "Undefined";
       UserCredentials const                             _Usedby;
       DispatchTable                                    _commandDispatch;
+      // Product arrtibbutes 
+      Product                                         _Product;
+      std::vector<Product>                               _ProductDb;
 
   private:
       

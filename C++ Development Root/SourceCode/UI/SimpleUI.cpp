@@ -9,7 +9,6 @@
 #include <vector>
 #include <locale>       // touuper(), locale()
 
-#include "Domain/Library/Books.hpp"    // Include for now - will replace next increment
 #include "Domain/Session/SessionHandler.hpp"
 #include "Domain/Client/Client.hpp"   
 
@@ -80,9 +79,7 @@ namespace UI
             {
                 break;
             }
-            //_logger << "Login failure for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
-            //_logger << "Login failure for \"" + credentials.userName + "\" as a user. ";    //+ "\"";
-
+          
         } while (true);
 
 
@@ -268,7 +265,15 @@ namespace UI
                         }
                         else if (selectedCommand == "Add New Product") {
 
-                          //Todo
+                            std::vector<std::string> parameters(2);
+                            std::cout << " Enter Name  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[0]);
+                            std::cout << " Enter Price: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+
+                          auto result =  _ProductHandler->executeCommandProduct(selectedCommand, parameters);
+                          if (result.has_value()) {
+                              _logger << "Product Already added to Inventory";
+                         }
+
                         }
                         else if (selectedCommand == "Modify Product") {
 

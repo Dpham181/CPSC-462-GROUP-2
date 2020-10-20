@@ -4,6 +4,7 @@
 #include <string>
 #include <any>
 #include <iomanip>     // setw()
+#include <locale>       // touuper(), locale()
 
 #include <vector>
 
@@ -52,15 +53,20 @@ namespace  // anonymous (private) working area
  STUB(ProductManagement)
  
  std::any AddProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs) 
- { 
-     //Todo
-     return {}; 
+ {
+     int increment = productcontrol._ProductDb.size() + 1;
+     auto newproduct = productcontrol.add(increment, agrs[0], std::atoi(agrs[1].c_str()));
+     std::cout << std::setw(15) << std::to_string(newproduct.id) << std::setw(15) << newproduct.Name << std::setw(15) << std::to_string(newproduct.Price) << std::endl;
+
+     auto inventoryUpdated = productcontrol.save(newproduct);
+
+     return inventoryUpdated;
  
  }
      
  std::any ViewProducts(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
  {
-     productcontrol.view(persistentData.CRMInventory());
+     productcontrol.view();
 
      return {};
 
@@ -207,7 +213,8 @@ namespace Domain::Client
 namespace Domain::Product
 
 {
-
+    auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+    
     void line()
     {
         for (int i = 1; i < 41; i++)
@@ -215,10 +222,13 @@ namespace Domain::Product
         std::cout << "\n";
 
     }
-
+    
+   
     ProductDomain::ProductDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
+        _ProductDb = persistentData.CRMInventory();
+
     }
 
 
@@ -246,7 +256,7 @@ namespace Domain::Product
     }
 
 
-    void ProductDomain::view(const std::vector<Product>& productsDB) {
+    void ProductDomain::view() {
 
         line();
         std::cout << std::setw(49) << "Inventory of CRM\n";
@@ -254,14 +264,30 @@ namespace Domain::Product
         std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(15) << "Price\n";
         line();
 
-        for (const auto& p : productsDB)
+        for (const auto& p : _ProductDb)
            std::cout << std::setw(15) << std::to_string(p.id) << std::setw(15) << p.Name << std::setw(15) << std::to_string(p.Price)<< std::endl;
         line();
     }
    
-    std::vector<Product>   ProductDomain::add(const int ProductId, const std::string ProductName, const int Price) {
-        //Todo
-        return {};
+    Product   ProductDomain::add(const int ProductId, const std::string ProductName, const int Price) {
+        Product newProduct = { 0,"",0 };
+        if (ProductId > 0) newProduct.id = ProductId;
+        if (ProductName != "") newProduct.Name = ProductName;
+        if (Price > 0) newProduct.Price = Price;
+        return   newProduct;
+    }
+    std::vector<Product> ProductDomain::save(const Product& Newproduct) {
+        char reponse;
+        do
+        {
+            std::cout <<   "Do you want to save this product? (Y/N/Q)";
+            std::cin >> reponse;
+            reponse = std::toupper(reponse, std::locale());
+        } while (reponse != 'Y' && reponse != 'Q');
+
+        if (reponse == 'Y') _ProductDb.push_back(Newproduct);
+
+        return _ProductDb;
     }
     std::vector<Product>   ProductDomain::del(const int ProductId) {
         //Todo

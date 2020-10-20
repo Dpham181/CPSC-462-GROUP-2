@@ -22,13 +22,15 @@ namespace Domain::Product
       //  Operations menu
      virtual std::vector<std::string> getCommandsProduct() =0;    // retrieves the list of actions (commands)
      virtual std::any                executeCommandProduct(const std::string& command, const std::vector<std::string>& args) =0;    // executes one of the actions retrieved
-    
+
 
 
    // Operations of management inventory
      // default operations
-     virtual void   view(const std::vector<Product> & productsDB) =0;
-     virtual  std::vector<Product>   add(const int ProductId, const std::string ProductName, const int Price)=0;
+     virtual void   view() =0;
+     virtual  Product   add(const int ProductId, const std::string ProductName, const int Price)=0;
+     virtual  std::vector<Product>   save(const Product & Product) = 0;
+
      virtual  std::vector<Product>   del(const int ProductId)=0;
      virtual  std::vector<Product>   modify(const Product CurrentProduct, const std::string ProductName, const int Price)=0;
      //virtual  std::vector<Product>   link()
