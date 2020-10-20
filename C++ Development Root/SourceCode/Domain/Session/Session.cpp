@@ -1,6 +1,7 @@
 #include "Domain/Session/Session.hpp"
 #include "Domain/Client/Client.hpp"
-#include "Domain/Product/Product.hpp"
+#include "Domain/User/User.hpp"
+
 #include <string>
 #include <any>
 #include <iomanip>     // setw()
@@ -14,79 +15,103 @@ namespace  // anonymous (private) working area
   // 1)  First define all system events (commands, actions, requests, etc.)
   #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
-  
- 
-  
-// Client management  
- //---------------------------------------------------------------------------------
- #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+   
+    #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
 
- STUB(ClientManagement)
- STUBC(View)
  
- std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+    // Assistant actions
+  STUB( ShowAllClients )
+  STUB( modifyClient)
+  STUB( askHelp )
+  STUB( scheduleEvent )
+  STUB( attachClientDocument )
+  STUB( inviteClient )
 
-     auto result = session.addClient({ agrs[0],std::atoi(agrs[1].c_str()),agrs[2],std::atoi(agrs[3].c_str()) });
+ 
+    // Salesperson actions
+  STUB( makeSale )
 
-     return  result;
- }
-  std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-      auto newClientProfilebyId = session.UpdateClientProfile(std::atoi(agrs[0].c_str()), agrs[1], std::atoi(agrs[2].c_str()));
-     
-      return  newClientProfilebyId;
+    // Sales Manager actions
+  STUB( manageSubscription )
+
+    // IT Admin actions
+  STUB( UserManagement )
+  STUB( BackupDB )
+  STUB( Shutdown )
+
+
+  std::any AddUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
+  {
+
+      auto result = session.addUser({ std::atoi(agrs[0].c_str()), agrs[1], agrs[2] });
+
+      return  result;
   }
-  std::any ViewClientProfile(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-      auto ClientProfilebyId = session.SearchClientId(std::atoi(agrs[0].c_str()));
+  std::any UpdateUserProfile(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
+  {
+      auto result = session.searchUserId(std::atoi(agrs[0].c_str()));
 
-      return  ClientProfilebyId;
+
+      return  result;
   }
-// product management 
- //---------------------------------------------------------------------------------
-   //{ "Add New Product", AddProduct },
-       //{"View Inventory", ViewProducts},
-       //{ "Modify Product", ModifyProduct },
-       //{ "Del product", Delproduct }//,
- #define STUBC(functionName)  std::any functionName( Domain::Product::ProductDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
-                              { return {}; }  
- STUB(ProductManagement)
- 
- std::any AddProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs) 
- { 
-     //Todo
-     return {}; 
- 
- }
-     
- std::any ViewProducts(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
- {
-     productcontrol.view(persistentData.CRMInventory());
-
-     return {};
-
- }
- std::any ModifyProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
- {
-     //Todo
-     return {};
-
- }
- std::any Delproduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
- {  
-     //Todo
-
-     return {};
-
- }
+  /* std::any ViewUsers(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
+   {
 
 
+
+       return  result;
+   }*/
+  std::any ViewUsers(Domain::User::UserDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
+  std::any DeleteUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
+  //not for IT admin
+  std::any ViewUserProfiles(Domain::User::UserDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
+
+
+  // Security Officer actions
+  STUB(blockAccount)
 
   
+ 
+  
+
+
+  std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+     
+      return  "true";
+  }
+  std::any View(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
+  std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
+  std::any Link(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+
+      return  "true";
+  }
+  std::any ClientManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
+      return "True";
+  }
+  std::any ProductManagement(Domain::Session::SessionBase& session, const std::vector<std::string>& args) {
+      return "true";
+  }
   
 }    // anonymous (private) working area
 
 
-// Client domain implementation 
+
 namespace Domain::Client
 
 {
@@ -102,11 +127,11 @@ namespace Domain::Client
 
     ClientDomain::ClientDomain(const std::string& description, const UserCredentials& user) :  _name(description),_Creator(user)
     {
-        _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
+        _logger << "Acess to  \"" + _name + "\" being used " + _Creator.userName;
     }
 
 
-    std::vector<std::string> ClientDomain::getCommandsClient()
+    std::vector<std::string> ClientDomain::getCommands()
     {
         std::vector<std::string> availableCommands;
         availableCommands.reserve(_commandDispatch.size());
@@ -116,20 +141,8 @@ namespace Domain::Client
         return availableCommands;
     }
 
-    std::any ClientDomain::executeCommandClient(const std::string& command, const std::vector<std::string>& args)
-    {
-        std::string parameters;
-        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
-        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
 
-        auto it = _commandDispatch.find(command);
-        
-        auto results = it->second(*this, args);
 
-        return results;
-    }
-
-   
     // get updating the static data of Client and Client Profile
     std::vector<Client> ClientDomain::ClientsDB(const std::vector<Client>& ClientsDB) {
         _UpdatedDB = ClientsDB;
@@ -146,48 +159,43 @@ namespace Domain::Client
         line();
         std::cout << std::setw(49) << "list of clients\n";
         line();
-        std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(15) << "Phone" << std::setw(20) << " Created By \n";
+        std::cout << std::setw(15) << "client id  " << std::setw(15) << " creator \n";
         line();
 
         for (const auto& c : ClientsDB)
-            std::cout << std::setw(15) << std::to_string(c.clientid) << std::setw(15) << c.client_name << std::setw(15) << std::to_string(c.phone) << std::setw(15) << c.creator << std::endl;
+            std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator << std::endl;
         line();
     }
     // ADDING NEW CLIENT TO THE MEMORY DATABASE 
     std::vector<Client> ClientDomain::addClient(const Client& Client) {
         _UpdatedDB.push_back(Client); // add new client to list of static client 
-        Clientprofile newcp = { Client.clientid,  "", 0 }; // also create an temporary profile 
-        _UpdatedprofileDB.push_back(newcp);
+        // generating the result in updating table 
+        line();
+        std::cout << std::setw(49) << "list of clients updated table\n";
+        line();
+        std::cout << std::setw(15) << "client id  " << std::setw(15) << " creator \n";
+        line();
+
+        for (const auto& c : _UpdatedDB)
+            std::cout << std::setw(10) << std::to_string(c.clientid) << std::setw(15) << c.creator << std::endl;
+        line();
         return  _UpdatedDB;
     }
     // Updating the Client profile
-       /* int         client_id;
-        std::string dob;
-        int         income;*/
-    Clientprofile   ClientDomain::SearchClientId(const int ClientId) {
+    Clientprofile ClientDomain::UpdateClientProfile(const std::string ClientName, const int ClientID, const std::string DOB, const int Income, int Phone) {
+        Clientprofile newcp = { "", 0, "", 0, 0 };
+        newcp.client_id = ClientID;
+        newcp.client_name = ClientName;
 
-        for (const auto& ClientProfile : _UpdatedprofileDB) {
-            if (ClientProfile.client_id == ClientId) {
-                _Clientprofile = ClientProfile;
-             
-            }
-
-        }
-        return  _Clientprofile;
+       /* std::cout << "Client Name: " << ClientName << std::endl;
+        std::cout << "Client ID: " << ClientID << std::endl;
+        std::cout << "Client's Date of Birth: " << DOB << std::endl;
+        std::cout << "Client's Income: $" << Income << std::endl;
+        std::cout << "Client's Phone: " << Phone << std::endl;*/
+        return newcp;
     }
 
-    std::vector<Clientprofile> ClientDomain::UpdateClientProfile( const int ClientID, const std::string DOB, const int Income) {
-        
-        _Clientprofile = { ClientID ,"",0 };
-        int ReplaceIndex = ClientID - 1;
-        if (DOB != "")  _Clientprofile.dob = DOB; 
-        if (Income > 0) _Clientprofile.income = Income; 
-         _UpdatedprofileDB.at(ReplaceIndex) = _Clientprofile;
 
-
-        return   _UpdatedprofileDB;
-    }
-    
     ClientManagement::ClientManagement(const UserCredentials& user) : ClientDomain ("Client Management", user)
     {
        
@@ -196,17 +204,19 @@ namespace Domain::Client
                          { "Add Client", Add },
                          {"View All Clients", View},
                          { "Update Client Profile", Update },
-                         { "View Client Profile", ViewClientProfile }//,
+                         { "Link Product", Link }//,
 
                                 };
     };
 
 
 }
-// Product domain implementation 
-namespace Domain::Product
+
+
+namespace Domain::User
 
 {
+    auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
 
     void line()
     {
@@ -216,13 +226,13 @@ namespace Domain::Product
 
     }
 
-    ProductDomain::ProductDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
+    UserDomain::UserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
     {
-        _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
     }
 
 
-    std::vector<std::string> ProductDomain::getCommandsProduct()
+    std::vector<std::string> UserDomain::getCommandsUser()
     {
         std::vector<std::string> availableCommands;
         availableCommands.reserve(_commandDispatch.size());
@@ -232,7 +242,7 @@ namespace Domain::Product
         return availableCommands;
     }
 
-    std::any ProductDomain::executeCommandProduct(const std::string& command, const std::vector<std::string>& args)
+    std::any UserDomain::executeCommandUser(const std::string& command, const std::vector<std::string>& args)
     {
         std::string parameters;
         for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
@@ -246,47 +256,131 @@ namespace Domain::Product
     }
 
 
-    void ProductDomain::view(const std::vector<Product>& productsDB) {
+    // get updating the static data of User and UserCredentials
+    std::vector<User> UserDomain::UsersDB(const std::vector<User>& UsersDB) 
+    {
+        _UpdatedUserDB = UsersDB;
+        // generating the result in updating table 
 
+        return _UpdatedUserDB;
+    }
+
+    std::vector<UserCredentials> UserDomain::UsersPDB(const std::vector<UserCredentials>& UserprofileDB) 
+    {
+        _UpdatedUserProfileDB = UserprofileDB;
+
+        return _UpdatedUserProfileDB;
+    }
+
+    void UserDomain::viewUsers(const std::vector<User>& UsersDB) 
+    {
         line();
-        std::cout << std::setw(49) << "Inventory of CRM\n";
+        std::cout << std::setw(49) << "list of users\n";
         line();
-        std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(15) << "Price\n";
+        std::cout << std::setw(15) << "Id" << std::setw(20) << "Name" << std::setw(20) << "Role" << std::setw(20) << "Commission"  << "\n";
         line();
 
-        for (const auto& p : productsDB)
-           std::cout << std::setw(15) << std::to_string(p.id) << std::setw(15) << p.Name << std::setw(15) << std::to_string(p.Price)<< std::endl;
+        for (const auto& c : UsersDB)
+            std::cout << std::setw(15) << std::to_string(c.userID) << std::setw(20) << c.userName << std::setw(20) << c.userRole << std::setw(20) << c.commission << std::endl;
         line();
     }
-   
-    std::vector<Product>   ProductDomain::add(const int ProductId, const std::string ProductName, const int Price) {
-        //Todo
-        return {};
+
+    void UserDomain::viewUserProfiles(const std::vector<UserCredentials>& UsersPDB)
+    {
+        
+        line();
+        std::cout << std::setw(49) << "User profiles\n";
+        line();
+        std::cout << std::setw(15) << "User Name" << std::setw(20) << "Pass Phrase" << std::setw(20) << "Role" << std::setw(20) << "Status" << "\n";
+        line();
+
+        for (const auto& c : UsersPDB)
+        {
+            std::string userStatus;
+            if (c.status == 1) userStatus = "Access Allowed";
+            else userStatus = "Access Denied";
+            std::cout << std::setw(15) << c.userName << std::setw(20) << c.passPhrase << std::setw(20) << c.roles[0] << std::setw(20) << userStatus<< std::endl;
+        }
+    
+        line();
     }
-    std::vector<Product>   ProductDomain::del(const int ProductId) {
-        //Todo
-        return {};
+
+    // ADDING NEW USER TO THE MEMORY DATABASE 
+    std::vector<User>  UserDomain::addUser(const User& user) 
+    //std::pair<std::vector<User>, std::vector<UserCredentials>>  UserDomain::addUser(const User& user)
+    {
+        _UpdatedUserDB.push_back(user); // add new User to list of static User 
+        UserCredentials newUserProfile = { user.userName,  "123456", std::vector<std::string> {user.userRole}, 1 };    // also create an temporary user profile 
+        _UpdatedUserProfileDB.push_back(newUserProfile);
+
+        //std::pair<std::vector<User>, std::vector<UserCredentials>> UerDBPair(_UpdatedUserDB, _UpdatedUserProfileDB);
+        //return  UerDBPair;
+
+        return _UpdatedUserDB;
     }
-    std::vector<Product>   ProductDomain::modify(const Product CurrentProduct, const std::string ProductName, const int Price) {
-        //Todo
-        return {};
+
+    // Updating the User profile
+       /* int         client_id;
+        std::string dob;
+        int         income;*/
+    UserCredentials   UserDomain::searchUserId(const int UserId) {
+
+        for (const auto& StoredUser : _UpdatedUserDB)
+        {
+            if (StoredUser.userID == UserId) 
+            {
+                _User = StoredUser;
+            }
+        }
+
+        for (const auto& UserProfile : _UpdatedUserProfileDB) {
+            if (UserProfile.userName == _User.userName) {
+                _Userfile = UserProfile;
+                return  _Userfile;
+            }
+
+        }
     }
-    ProductManagement::ProductManagement(const UserCredentials& user) : ProductDomain("Product Management", user)
+
+    UserCredentials UserDomain::updateUserProfile(const std::string UserName, std::string PassPhrase, std::string Role, const int Status)
+    {
+        if (UserName != "") {
+            _Userfile.userName = UserName;
+
+        }
+        else if (PassPhrase != "") {
+            _Userfile.passPhrase = PassPhrase;
+        }
+        else if (Role != "") {
+            _Userfile.roles[0] = Role;
+        }
+        else if (Status != -1) {
+            _Userfile.status = Status;
+
+        }
+
+
+
+        return _Userfile;
+    }
+
+    UserManagement::UserManagement(const UserCredentials& user) : UserDomain("User Management", user)
     {
 
         _commandDispatch = {
 
-                         { "Add New Product", AddProduct },
-                         {"View Inventory", ViewProducts},
-                         { "Modify Product", ModifyProduct },
-                         { "Del product", Delproduct }//,
+                         { "Add User", AddUser },
+                         { "View All Users", ViewUsers },
+                         { "View All User Profiles", ViewUserProfiles },
+                         { "Update User Profile", UpdateUserProfile },
+                         { "Delete User", DeleteUser }
 
         };
     };
 
 
 }
-// session domain implementation 
+
 namespace Domain::Session
 {
   SessionBase::SessionBase( const std::string & description, const UserCredentials & credentials ) : _credentials( credentials ), _name( description )
@@ -353,10 +447,10 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"IT Admin\".";
 
-    //_commandDispatch = { {"add new account",   addnewaccount },
-    //                     {"back-up database",   backupdb }//,
-    //                     //{"shutdown system", shutdown    } 
-    //};
+    _commandDispatch = { {"User Management",    UserManagement },
+                         {"Back-up Database",   BackupDB },
+                         {"Shutdown System",    Shutdown } 
+    };
   }
 
 
@@ -368,7 +462,7 @@ namespace Domain::Session
 
     //_commandDispatch = {
     //                     { "Show All Clients", ShowAllClients },
-    //                    {"Add New Client", addNewClient},
+    //                     {"Add New Client", addNewClient},
     //                     {"Modify Client",          modifyClient        },
     //                     {"Ask IT for Help",     askHelp    },
     //                     {"Schedule Event",   scheduleEvent  },
@@ -399,8 +493,8 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Sales Manager\".";
 
-   // _commandDispatch = { {"Manage Subscription", manageSubscription}//,
+    _commandDispatch = { {"Manage Subscription", manageSubscription}//,
                          //{"Help",       help} 
-    //};
+    };
   }
 }    // namespace Domain::Session
