@@ -22,16 +22,18 @@ namespace TechnicalServices::Persistence
       std::vector<std::string> findRoles()                                       override;  // Returns list of all legal roles
       UserCredentials          findCredentialsByName( const std::string & name ) override;  // Returns credentials for specified user, throws NoSuchUser if user not found
 
-      //operations for clients 
+      //operations 
 
-        std::vector<Client> ShowAllClients() override;
-        std::vector<Clientprofile> ShowAllClientsProfile() override;
-        std::vector<Product> CRMInventory() override;
         
+        std::vector<Client> ShowAllClients() override;
         std::vector<User>   ShowAllUsers() override;
         std::vector<UserCredentials>   ShowAllUserProfiles() override;
+        //std::vector<Clientprofile> ShowAllClientsProfile() override;
 
-     
+      // ClientProfile addClientInformation(int clientID, std::string client_name, std::string DOB, int income, int phone) = 0;
+      // ClientProfile SearchforClientinfor( int ClientID )=0;
+
+
 
 
 
