@@ -57,6 +57,9 @@ namespace UI
 
         std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClients();
         std::vector<TechnicalServices::Persistence::Clientprofile> ClientsProfileFromDB = _persistentData.ShowAllClientsProfile();
+        
+        std::vector<TechnicalServices::Persistence::User> UsersFromDB = _persistentData.ShowAllUsers();
+        std::vector<TechnicalServices::Persistence::UserCredentials> UserFilesFromDB = _persistentData.ShowAllUserProfiles();
 
         // 2) Present login screen to user and get username, password, and valid role
         Domain::Session::UserCredentials credentials = { "", "", {""} };// ensures roles[0] exists
