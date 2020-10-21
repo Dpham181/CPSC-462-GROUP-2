@@ -10,3 +10,4 @@ C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Soluti
 C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Solution Space/v16/ipch/AutoPCH/a4bfe60e41c32c95/SIMPLEDB.ipch
 *.ipch
 C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Solution Space/v16/Browse.VC.db
+*.db
