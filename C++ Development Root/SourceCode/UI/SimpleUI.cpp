@@ -9,7 +9,6 @@
 #include <vector>
 #include <locale>       // touuper(), locale()
 
-#include "Domain/Library/Books.hpp"    // Include for now - will replace next increment
 #include "Domain/Session/SessionHandler.hpp"
 #include "Domain/Client/Client.hpp"   
 #include "Domain/User/User.hpp"
@@ -56,15 +55,13 @@ namespace UI
         std::vector<std::string> roleLegalValues = _persistentData.findRoles();
 
         std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClients();
+        std::vector<TechnicalServices::Persistence::Clientprofile> ClientsProfileFromDB = _persistentData.ShowAllClientsProfile();
         std::vector<TechnicalServices::Persistence::User> UsersFromDB = _persistentData.ShowAllUsers();
         std::vector<TechnicalServices::Persistence::UserCredentials> UserFilesFromDB = _persistentData.ShowAllUserProfiles();
 
-
         // 2) Present login screen to user and get username, password, and valid role
-        Domain::Session::UserCredentials credentials = { "", "", {""}, 1 };// ensures roles[0] exists
-        Domain::Client::Client Client = { "", 0 };// ensures roles[0] exists
-
-        auto& selectedRole = credentials.roles[0];     // convenience alias
+        Domain::Session::UserCredentials credentials = { "", "", {""} };// ensures roles[0] exists
+       
 
 
         std::unique_ptr<Domain::Session::SessionHandler> sessionControl;
@@ -84,9 +81,7 @@ namespace UI
             {
                 break;
             }
-            //_logger << "Login failure for \"" + credentials.userName + "\" as role \"" + selectedRole + "\"";
-            //_logger << "Login failure for \"" + credentials.userName + "\" as a user. ";    //+ "\"";
-
+          
         } while (true);
 
 
@@ -118,30 +113,22 @@ namespace UI
             **     no coupling. This can be achieved in a variety of ways, but one common way is to pass strings instead of strong typed
             **     parameters.
             ******************************************************************************************************************************/
-            /*if( selectedCommand == "Checkout Book" )
-            {
-              std::vector<std::string> parameters( 3 );
-
-              std::cout << " Enter book's title:  ";  std::cin >> std::ws;  std::getline( std::cin, parameters[0] );
-              std::cout << " Enter book's author: ";  std::cin >> std::ws;  std::getline( std::cin, parameters[1] );
-              std::cout << " Enter book's ISBN:   ";  std::cin >> std::ws;  std::getline( std::cin, parameters[2] );
-
-              auto results = sessionControl->executeCommand( selectedCommand, parameters );
-              if( results.has_value() ) _logger << "Received reply: \"" + std::any_cast<const std::string &>( results ) + '"';
-            }*/
-
+          
             if (selectedCommand == "Client Management")
             {
-
-                std::unique_ptr<Domain::Client::ClientHandler> ClientHandler; // call clientdomain 
+                // call client handler 
+                std::unique_ptr<Domain::Client::ClientHandler> ClientHandler; 
+                // checking if user role is correct for using client management 
                 ClientHandler = Domain::Client::ClientHandler::UseClientManagement(credentials);
+               
+                // return the client management session ortherwise not allow to access
                 if (ClientHandler != nullptr) {
                     ClientsFromDB = ClientHandler->ClientsDB(ClientsFromDB);
                    
                     do
                     {
-                        
-                        auto        commands = ClientHandler->getCommands();
+                        // list all the command avaliable in client management 
+                        auto        commands = ClientHandler->getCommandsClient();
                         std::string selectedCommand;
                         unsigned    menuSelection;
 
@@ -149,7 +136,7 @@ namespace UI
                         {
 
                             for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
-                            std::cout << std::setw(2) << commands.size() << " - " << "Quit\n";
+                            std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
 
                             std::cout << "  action (0-" << commands.size() << "): ";
                             std::cin >> menuSelection;
@@ -158,21 +145,33 @@ namespace UI
                         if (menuSelection == commands.size()) break;
                         selectedCommand = commands[menuSelection];
                         _logger << "Command selected \"" + selectedCommand + '"';
-                        if (selectedCommand == "Add Client") {
-                            int increment = ClientsFromDB.size() + 1;
-                            ClientsFromDB = ClientHandler->addClient({ credentials.userName ,increment });
 
+                        // adding a new client to memory database  
+                        if (selectedCommand == "Add Client") {
+                            std::vector<std::string> parameters(4);
+                            parameters[0] = credentials.userName;
+                            parameters[1] = std::to_string(ClientsFromDB.size() + 1);
+                            std::cout << " Enter Name  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
+                            std::cout << " Enter Phone: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[3]);
+                           
+                            auto results = ClientHandler->executeCommandClient(selectedCommand, parameters);
+                            if (results.has_value()) {
+                                _logger << "Successfully Added \" ";
+                                ClientsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Client>&>(results);
+                            }
 
                         }
+                        // view all the current clients include static in database 
                         else if (selectedCommand == "View All Clients") {
                                
                             ClientHandler->ViewClients(ClientsFromDB);
                         }
+                        // select to update the profile of client.
                         else if (selectedCommand == "Update Client Profile") {
+                            ClientHandler->ClientsPDB(ClientsProfileFromDB);
                             ClientHandler->ViewClients(ClientsFromDB);
                             char response;
-
-                            int clientId;
+                            int clientId =0;
                             std::cout << "Please choose Client Id: ";
                             std::cin >> clientId;
                             do
@@ -183,12 +182,48 @@ namespace UI
                             } while (response != 'Y' && response != 'Q');
 
                             if (response == 'Y') {
-                                //TODO
+                            
+
+                                std::vector<std::string> parameters(3);
+                                parameters[0] = std::to_string(clientId);
+                                std::cout << " Enter DOB: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+                                std::cout << " Enter Income:   ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
+                               
+                                auto results = ClientHandler->executeCommandClient(selectedCommand,parameters);
+                                if (results.has_value()) {
+                                    _logger << "Successfully Updated\n";
+                                    ClientsProfileFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Clientprofile>&>(results);
+                                    
+                                }
+                            
+                                
                             }
 
                         }
-                        else if (selectedCommand == "Link Product") {
-                            //todo
+                        else if (selectedCommand == "View Client Profile") {
+                            ClientHandler->ClientsPDB(ClientsProfileFromDB);
+                            ClientHandler->ViewClients(ClientsFromDB);
+                            int clientId = 0;
+                            std::cout << "Please choose Client Id: ";
+                            std::cin >> clientId;
+                            std::vector<std::string> parameter(1);
+                            parameter[0] = std::to_string(clientId);
+                            auto results = ClientHandler->executeCommandClient(selectedCommand, parameter);
+                            
+
+                            if (results.has_value())
+                            {
+                                Domain::Client::Clientprofile  ProfileofClient = std::any_cast<const TechnicalServices::Persistence::Clientprofile&>(results);
+                                line();
+                                std::cout << std::setw(49) << "Reuslt of Searching\n";
+                                line();
+                                std::cout << std::setw(15) << "Id" << std::setw(15) << "DOB" << std::setw(15) << "Income\n";
+
+                                line();
+                                std::cout << std::setw(15) << std::to_string(ProfileofClient.client_id) << std::setw(15) << ProfileofClient.dob << std::setw(15) << std::to_string(ProfileofClient.income) + "\n";
+
+
+                            }
                         }
 
 
@@ -199,6 +234,62 @@ namespace UI
                 else if (selectedCommand == "Another command") /* ... */ {}
 
                 else sessionControl->executeCommand(selectedCommand, {});
+            }
+            else if (selectedCommand == "Product Management") {
+               
+                _ProductHandler = Domain::Product::ProductHandler::UseProductManagement(credentials);
+
+                if (_ProductHandler != nullptr) {
+
+                    do
+                    {
+                        auto        commands = _ProductHandler->getCommandsProduct();
+                        std::string selectedCommand;
+                        unsigned    menuSelection;
+
+                        do
+                        {
+
+                            for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+                            std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
+
+                            std::cout << "  action (0-" << commands.size() << "): ";
+                            std::cin >> menuSelection;
+                        } while (menuSelection > commands.size());
+
+                        if (menuSelection == commands.size()) break;
+                        selectedCommand = commands[menuSelection];
+                        _logger << "Command selected \"" + selectedCommand + '"';
+
+                        if (selectedCommand == "View Inventory") {
+                             
+                            _ProductHandler->executeCommandProduct(selectedCommand, {});
+                        }
+                        else if (selectedCommand == "Add New Product") {
+
+                            std::vector<std::string> parameters(2);
+                            std::cout << " Enter Name  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[0]);
+                            std::cout << " Enter Price: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+
+                          auto result =  _ProductHandler->executeCommandProduct(selectedCommand, parameters);
+                          if (result.has_value()) {
+                              _logger << "Product Already added to Inventory";
+                         }
+
+                        }
+                        else if (selectedCommand == "Modify Product") {
+
+                            //Todo
+                        }
+                        else if (selectedCommand == "Del product") {
+                            //Todo
+                        }
+
+
+                    } while (true);
+
+                }
+            
             }
 
             else if (selectedCommand == "User Management")
@@ -230,7 +321,7 @@ namespace UI
                         if (menuSelection == commands.size()) break;
                         selectedCommand = commands[menuSelection];
                         _logger << "Command selected \"" + selectedCommand + '"';
-                        if (selectedCommand == "Add User") 
+                        if (selectedCommand == "Add User")
                         {
                             std::vector<std::string> parameters(3);
                             parameters[0] = std::to_string(UsersFromDB.size() + 1);
@@ -249,7 +340,7 @@ namespace UI
                             parameters[2] = roleLegalValues[roleChoice];
 
                             auto results = UserHandler->executeCommandUser(selectedCommand, parameters);
-                            if (results.has_value()) 
+                            if (results.has_value())
                             {
                                 _logger << "Successfully Added. ";
                                 UsersFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::User>&>(results);
@@ -260,7 +351,7 @@ namespace UI
                             UserFilesFromDB.push_back(newUserProfile);
                         }
 
-                        else if (selectedCommand == "View All Users") 
+                        else if (selectedCommand == "View All Users")
                         {
 
                             UserHandler->viewUsers(UsersFromDB);
@@ -271,7 +362,7 @@ namespace UI
                             UserHandler->viewUserProfiles(UserFilesFromDB);
                         }
 
-                        else if (selectedCommand == "Update User Profile") 
+                        else if (selectedCommand == "Update User Profile")
                         {
                             UserHandler->viewUsers(UsersFromDB);
                             char response;
@@ -298,6 +389,7 @@ namespace UI
 
                 }
             }
+          
 
             _logger << "Ending session and terminating";
         } while (true);

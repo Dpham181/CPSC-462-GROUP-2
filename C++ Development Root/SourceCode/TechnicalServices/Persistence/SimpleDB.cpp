@@ -95,9 +95,29 @@ namespace TechnicalServices::Persistence
    std::vector<Client> SimpleDB::ShowAllClients()
   {
       
-     return { { "A", 1 }, { "B", 2 } };
+     return { { "A", 1,"D",714000000 }, { "B", 2, "C",714000000 } };
   }
    
+   std::vector<Clientprofile> SimpleDB::ShowAllClientsProfile ()
+   {
+
+       return { {1,"10/18/2000",20000},
+                {2,"10/18/2001",20000},
+       
+       
+       };
+   }
+   std::vector<Product> SimpleDB::CRMInventory()
+   {
+
+       return { 
+                {1,"House 1",400000},
+                {2,"House 2",500000},
+
+
+       };
+   }
+
    std::vector<User> SimpleDB::ShowAllUsers()
    {
        return
@@ -120,10 +140,9 @@ namespace TechnicalServices::Persistence
 
   UserCredentials SimpleDB::findCredentialsByName( const std::string & name )
   {
-      std::vector<UserCredentials> storedUsers = ShowAllUserProfiles();
-    
+    std::vector<UserCredentials> storedUsers = ShowAllUserProfiles();
 
-    for( const auto & user : storedUsers) if( user.userName == name ) return user;
+    for( const auto & user : storedUsers ) if( user.userName == name ) return user;
 
     // Name not found, log the error and throw something
     std::string message = __func__;

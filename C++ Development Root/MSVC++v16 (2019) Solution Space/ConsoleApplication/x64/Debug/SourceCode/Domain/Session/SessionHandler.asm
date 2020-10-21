@@ -52,8 +52,8 @@ __0E648B51_xlocale DB 01H
 __1597A171_xiosbase DB 01H
 __90E3ED46_xlocnum DB 01H
 __165C22CB_ios DB 01H
-__D7993052_LoggerHandler@hpp DB 01H
-__2C7C9B3E_SessionHandler@cpp DB 01H
+__2CA97190_LoggerHandler@hpp DB 01H
+__E73B646B_SessionHandler@cpp DB 01H
 __7EA464AF_istream DB 01H
 __1D745195_ostream DB 01H
 __6FFBAAB7_streambuf DB 01H
@@ -886,7 +886,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DD imagerel $LN24
-	DD	imagerel $LN24+1047
+	DD	imagerel $LN24+1043
 	DD	imagerel $unwind$?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -4135,7 +4135,7 @@ $ip2state$?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessi
 	DB	02H
 	DB	090H
 	DB	04H
-	DB	'!', 03H
+	DB	011H, 03H
 	DB	02H
 	DB	'*'
 	DB	04H
@@ -10996,7 +10996,7 @@ $LN3:
 ??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z ENDP ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
+; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
 ;	COMDAT ??1SessionHandler@Session@Domain@@UEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -11015,7 +11015,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__2C7C9B3E_SessionHandler@cpp
+	lea	rcx, OFFSET FLAT:__E73B646B_SessionHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7SessionHandler@Session@Domain@@6B@
@@ -11027,7 +11027,7 @@ $LN3:
 ??1SessionHandler@Session@Domain@@UEAA@XZ ENDP		; Domain::Session::SessionHandler::~SessionHandler
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
+; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
 ;	COMDAT ?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 _TEXT	SEGMENT
 persistentData$4 = 8
@@ -11040,21 +11040,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -11078,7 +11078,7 @@ $LN24:
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
 	mov	DWORD PTR $T13[rbp], 0
-	lea	rcx, OFFSET FLAT:__2C7C9B3E_SessionHandler@cpp
+	lea	rcx, OFFSET FLAT:__E73B646B_SessionHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 
@@ -11099,8 +11099,8 @@ $LN24:
 ; 39   :       auto &          persistentData    = TechnicalServices::Persistence::PersistenceHandler::instance();
 
 	call	?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ ; TechnicalServices::Persistence::PersistenceHandler::instance
-	mov	QWORD PTR tv205[rbp], rax
-	mov	rax, QWORD PTR tv205[rbp]
+	mov	QWORD PTR tv204[rbp], rax
+	mov	rax, QWORD PTR tv204[rbp]
 	mov	QWORD PTR persistentData$4[rbp], rax
 
 ; 40   :       UserCredentials credentialsFromDB = persistentData.findCredentialsByName( credentials.userName );
@@ -11114,7 +11114,7 @@ $LN24:
 	lea	rdx, QWORD PTR credentialsFromDB$5[rbp]
 	mov	rcx, QWORD PTR persistentData$4[rbp]
 	call	QWORD PTR tv73[rbp]
-	mov	QWORD PTR tv181[rbp], rax
+	mov	QWORD PTR tv180[rbp], rax
 
 ; 41   : 
 ; 42   :       // 1)  Perform the authentication
@@ -11123,7 +11123,7 @@ $LN24:
 ; 45   :       // with many roles combined, I may have to revisit this approach.  But for now, this is good enough.
 ; 46   :       if(    credentials.userName   == credentialsFromDB.userName
 ; 47   :           && credentials.passPhrase == credentialsFromDB.passPhrase
-; 48   :           && credentials.status     == 1
+; 48   :           && credentialsFromDB.status == 1
 
 	mov	rax, QWORD PTR credentials$[rbp]
 	lea	rdx, QWORD PTR credentialsFromDB$5[rbp]
@@ -11140,8 +11140,7 @@ $LN24:
 	movzx	eax, al
 	test	eax, eax
 	je	$LN3@createSess
-	mov	rax, QWORD PTR credentials$[rbp]
-	cmp	DWORD PTR [rax+112], 1
+	cmp	DWORD PTR credentialsFromDB$5[rbp+112], 1
 	jne	$LN3@createSess
 
 ; 49   :           //&& std::any_of( credentialsFromDB.roles.cbegin(), credentialsFromDB.roles.cend(),
@@ -11158,15 +11157,15 @@ $LN24:
 	lea	rdx, OFFSET FLAT:??_C@_09JDLGGIJM@Assistant@
 	mov	rcx, rax
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
-	mov	BYTE PTR tv164[rbp], al
-	movzx	eax, BYTE PTR tv164[rbp]
+	mov	BYTE PTR tv163[rbp], al
+	movzx	eax, BYTE PTR tv163[rbp]
 	test	eax, eax
 	je	SHORT $LN4@createSess
 	mov	rdx, QWORD PTR credentials$[rbp]
 	lea	rcx, QWORD PTR $T6[rbp]
 	call	??$make_unique@UAssistantSession@Session@Domain@@AEBUUserCredentials@Persistence@TechnicalServices@@$0A@@std@@YA?AV?$unique_ptr@UAssistantSession@Session@Domain@@U?$default_delete@UAssistantSession@Session@Domain@@@std@@@0@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; std::make_unique<Domain::Session::AssistantSession,TechnicalServices::Persistence::UserCredentials const &,0>
-	mov	QWORD PTR tv211[rbp], rax
-	mov	rdx, QWORD PTR tv211[rbp]
+	mov	QWORD PTR tv210[rbp], rax
+	mov	rdx, QWORD PTR tv210[rbp]
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??$?0UAssistantSession@Session@Domain@@U?$default_delete@UAssistantSession@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@$$QEAV?$unique_ptr@UAssistantSession@Session@Domain@@U?$default_delete@UAssistantSession@Session@Domain@@@std@@@1@@Z ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> ><Domain::Session::AssistantSession,std::default_delete<Domain::Session::AssistantSession>,0>
 	mov	eax, DWORD PTR $T13[rbp]
@@ -11189,15 +11188,15 @@ $LN4@createSess:
 	lea	rdx, OFFSET FLAT:??_C@_0M@FHFJHGNJ@Salesperson@
 	mov	rcx, rax
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
-	mov	BYTE PTR tv147[rbp], al
-	movzx	eax, BYTE PTR tv147[rbp]
+	mov	BYTE PTR tv146[rbp], al
+	movzx	eax, BYTE PTR tv146[rbp]
 	test	eax, eax
 	je	SHORT $LN5@createSess
 	mov	rdx, QWORD PTR credentials$[rbp]
 	lea	rcx, QWORD PTR $T7[rbp]
 	call	??$make_unique@USalespersonSession@Session@Domain@@AEBUUserCredentials@Persistence@TechnicalServices@@$0A@@std@@YA?AV?$unique_ptr@USalespersonSession@Session@Domain@@U?$default_delete@USalespersonSession@Session@Domain@@@std@@@0@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; std::make_unique<Domain::Session::SalespersonSession,TechnicalServices::Persistence::UserCredentials const &,0>
-	mov	QWORD PTR tv218[rbp], rax
-	mov	rdx, QWORD PTR tv218[rbp]
+	mov	QWORD PTR tv217[rbp], rax
+	mov	rdx, QWORD PTR tv217[rbp]
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??$?0USalespersonSession@Session@Domain@@U?$default_delete@USalespersonSession@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@$$QEAV?$unique_ptr@USalespersonSession@Session@Domain@@U?$default_delete@USalespersonSession@Session@Domain@@@std@@@1@@Z ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> ><Domain::Session::SalespersonSession,std::default_delete<Domain::Session::SalespersonSession>,0>
 	mov	eax, DWORD PTR $T13[rbp]
@@ -11220,15 +11219,15 @@ $LN5@createSess:
 	lea	rdx, OFFSET FLAT:??_C@_08KIJEALLB@IT?5Admin@
 	mov	rcx, rax
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
-	mov	BYTE PTR tv130[rbp], al
-	movzx	eax, BYTE PTR tv130[rbp]
+	mov	BYTE PTR tv129[rbp], al
+	movzx	eax, BYTE PTR tv129[rbp]
 	test	eax, eax
 	je	SHORT $LN6@createSess
 	mov	rdx, QWORD PTR credentials$[rbp]
 	lea	rcx, QWORD PTR $T8[rbp]
 	call	??$make_unique@UITAdministratorSession@Session@Domain@@AEBUUserCredentials@Persistence@TechnicalServices@@$0A@@std@@YA?AV?$unique_ptr@UITAdministratorSession@Session@Domain@@U?$default_delete@UITAdministratorSession@Session@Domain@@@std@@@0@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; std::make_unique<Domain::Session::ITAdministratorSession,TechnicalServices::Persistence::UserCredentials const &,0>
-	mov	QWORD PTR tv222[rbp], rax
-	mov	rdx, QWORD PTR tv222[rbp]
+	mov	QWORD PTR tv221[rbp], rax
+	mov	rdx, QWORD PTR tv221[rbp]
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??$?0UITAdministratorSession@Session@Domain@@U?$default_delete@UITAdministratorSession@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@$$QEAV?$unique_ptr@UITAdministratorSession@Session@Domain@@U?$default_delete@UITAdministratorSession@Session@Domain@@@std@@@1@@Z ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> ><Domain::Session::ITAdministratorSession,std::default_delete<Domain::Session::ITAdministratorSession>,0>
 	mov	eax, DWORD PTR $T13[rbp]
@@ -11251,15 +11250,15 @@ $LN6@createSess:
 	lea	rdx, OFFSET FLAT:??_C@_0O@MJAOLBNB@Sales?5Manager@
 	mov	rcx, rax
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
-	mov	BYTE PTR tv235[rbp], al
-	movzx	eax, BYTE PTR tv235[rbp]
+	mov	BYTE PTR tv234[rbp], al
+	movzx	eax, BYTE PTR tv234[rbp]
 	test	eax, eax
 	je	SHORT $LN7@createSess
 	mov	rdx, QWORD PTR credentials$[rbp]
 	lea	rcx, QWORD PTR $T9[rbp]
 	call	??$make_unique@USalesManagerSession@Session@Domain@@AEBUUserCredentials@Persistence@TechnicalServices@@$0A@@std@@YA?AV?$unique_ptr@USalesManagerSession@Session@Domain@@U?$default_delete@USalesManagerSession@Session@Domain@@@std@@@0@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; std::make_unique<Domain::Session::SalesManagerSession,TechnicalServices::Persistence::UserCredentials const &,0>
-	mov	QWORD PTR tv226[rbp], rax
-	mov	rdx, QWORD PTR tv226[rbp]
+	mov	QWORD PTR tv225[rbp], rax
+	mov	rdx, QWORD PTR tv225[rbp]
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??$?0USalesManagerSession@Session@Domain@@U?$default_delete@USalesManagerSession@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@$$QEAV?$unique_ptr@USalesManagerSession@Session@Domain@@U?$default_delete@USalesManagerSession@Session@Domain@@@std@@@1@@Z ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> ><Domain::Session::SalesManagerSession,std::default_delete<Domain::Session::SalesManagerSession>,0>
 	mov	eax, DWORD PTR $T13[rbp]
@@ -11280,17 +11279,17 @@ $LN7@createSess:
 	lea	rdx, OFFSET FLAT:??_C@_0PH@BGJJJDPH@class?5std?3?3unique_ptr?$DMclass?5Dom@
 	lea	rcx, QWORD PTR $T11[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv236[rbp], rax
-	mov	rax, QWORD PTR tv236[rbp]
-	mov	QWORD PTR tv230[rbp], rax
-	mov	r8, QWORD PTR tv230[rbp]
+	mov	QWORD PTR tv235[rbp], rax
+	mov	rax, QWORD PTR tv235[rbp]
+	mov	QWORD PTR tv229[rbp], rax
+	mov	r8, QWORD PTR tv229[rbp]
 	lea	rdx, OFFSET FLAT:??_C@_0CE@MDEHHBOJ@Invalid?5role?5requested?5in?5funct@
 	lea	rcx, QWORD PTR $T12[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD$$QEAV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
-	mov	QWORD PTR tv237[rbp], rax
-	mov	rax, QWORD PTR tv237[rbp]
-	mov	QWORD PTR tv232[rbp], rax
-	mov	rdx, QWORD PTR tv232[rbp]
+	mov	QWORD PTR tv236[rbp], rax
+	mov	rax, QWORD PTR tv236[rbp]
+	mov	QWORD PTR tv231[rbp], rax
+	mov	rdx, QWORD PTR tv231[rbp]
 	lea	rcx, QWORD PTR $T10[rbp]
 	call	??0logic_error@std@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ; std::logic_error::logic_error
 	lea	rdx, OFFSET FLAT:_TI2?AVlogic_error@std@@
@@ -11357,21 +11356,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -11402,21 +11401,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -11447,21 +11446,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -11492,21 +11491,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -11542,21 +11541,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -11588,21 +11587,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -11634,21 +11633,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -11680,21 +11679,21 @@ $T10 = 712
 $T11 = 760
 $T12 = 824
 $T13 = 884
-tv235 = 900
-tv164 = 900
-tv147 = 900
-tv130 = 900
-tv236 = 904
-tv226 = 904
-tv222 = 904
-tv218 = 904
-tv211 = 904
-tv205 = 904
+tv234 = 900
+tv163 = 900
+tv146 = 900
+tv129 = 900
+tv235 = 904
+tv225 = 904
+tv221 = 904
+tv217 = 904
+tv210 = 904
+tv204 = 904
 tv73 = 904
-tv230 = 912
-tv181 = 912
-tv237 = 920
-tv232 = 928
+tv229 = 912
+tv180 = 912
+tv236 = 920
+tv231 = 928
 __$ArrayPad$ = 936
 __$ReturnUdt$ = 976
 credentials$ = 984
@@ -16173,7 +16172,7 @@ $LN3:
 ??2@YAPEAX_KPEAX@Z ENDP					; operator new
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
+; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -16194,7 +16193,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__2C7C9B3E_SessionHandler@cpp
+	lea	rcx, OFFSET FLAT:__E73B646B_SessionHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -16204,7 +16203,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
+; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -16223,7 +16222,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__2C7C9B3E_SessionHandler@cpp
+	lea	rcx, OFFSET FLAT:__E73B646B_SessionHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -16233,7 +16232,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
+; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -16252,7 +16251,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__2C7C9B3E_SessionHandler@cpp
+	lea	rcx, OFFSET FLAT:__E73B646B_SessionHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -16262,7 +16261,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
+; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Session\SessionHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -16279,7 +16278,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__2C7C9B3E_SessionHandler@cpp
+	lea	rcx, OFFSET FLAT:__E73B646B_SessionHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]

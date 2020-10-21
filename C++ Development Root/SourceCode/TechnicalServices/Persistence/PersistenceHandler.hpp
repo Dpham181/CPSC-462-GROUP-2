@@ -17,32 +17,33 @@ namespace TechnicalServices::Persistence
     std::string               userName;
     std::string               userRole;
   };
-
   struct UserCredentials
   {
     std::string               userName;
     std::string               passPhrase;
     std::vector<std::string>  roles;
-    //std::string               role;
     int                       status;
   };
-
   struct Client
   {
     std::string creator;
-    int         clientid;
-  };
-
-  struct Clientprofile
-  {
+    int         clientid; 
     std::string client_name;
-    int         client_id;
-    std::string dob;
-    int         income;
     int         phone;
   };
+  struct Clientprofile
+  {
+    int         client_id;
+    std::string dob;
+    int         income;  
+  };
 
-
+  struct Product
+  {
+      int         id;
+      std::string Name;
+      int         Price;
+  };
 
   // Persistence Package within the Technical Services Layer Abstract class
   // Singleton Class - only one instance of the DB exists for the entire system
@@ -69,10 +70,12 @@ namespace TechnicalServices::Persistence
       
      
        virtual std::vector<Client> ShowAllClients() = 0;
-       //virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
-       virtual std::vector<User>   ShowAllUsers() = 0;
-       virtual std::vector<UserCredentials>        ShowAllUserProfiles() = 0;
+       virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
+       virtual std::vector<Product> CRMInventory() =0 ;
 
+       // user
+       virtual std::vector<User> ShowAllUsers() = 0;
+       virtual std::vector<UserCredentials> ShowAllUserProfiles() = 0;
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair
       // Throws NoSuchProperty
