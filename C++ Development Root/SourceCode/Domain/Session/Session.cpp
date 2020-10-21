@@ -4,6 +4,10 @@
 #include <string>
 #include <any>
 #include <iomanip>     // setw()
+<<<<<<< HEAD
+=======
+#include <locale>       // touuper(), locale()
+>>>>>>> parent of b29ae41... Product Complete
 
 #include <vector>
 
@@ -207,7 +211,12 @@ namespace Domain::Client
 namespace Domain::Product
 
 {
+<<<<<<< HEAD
 
+=======
+    auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+    
+>>>>>>> parent of b29ae41... Product Complete
     void line()
     {
         for (int i = 1; i < 41; i++)
@@ -215,7 +224,12 @@ namespace Domain::Product
         std::cout << "\n";
 
     }
+<<<<<<< HEAD
 
+=======
+    
+   
+>>>>>>> parent of b29ae41... Product Complete
     ProductDomain::ProductDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
@@ -259,6 +273,7 @@ namespace Domain::Product
         line();
     }
    
+<<<<<<< HEAD
     std::vector<Product>   ProductDomain::add(const int ProductId, const std::string ProductName, const int Price) {
         //Todo
         return {};
@@ -266,6 +281,39 @@ namespace Domain::Product
     std::vector<Product>   ProductDomain::del(const int ProductId) {
         //Todo
         return {};
+=======
+    Product   ProductDomain::add(const int ProductId, const std::string ProductName, const int Price) {
+        Product newProduct = { 0,"",0 };
+        if (ProductId > 0) newProduct.id = ProductId;
+        if (ProductName != "") newProduct.Name = ProductName;
+        if (Price > 0) newProduct.Price = Price;
+        return   newProduct;
+    }
+    std::vector<Product> ProductDomain::save(const Product& Newproduct) {
+        char reponse;
+        do
+        {
+            std::cout <<   "Do you want to save this product? (Y/N/Q)";
+            std::cin >> reponse;
+            reponse = std::toupper(reponse, std::locale());
+        } while (reponse != 'Y' && reponse != 'Q');
+
+        if (reponse == 'Y') _ProductDb.push_back(Newproduct);
+
+        return _ProductDb;
+    }
+    std::vector<Product>   ProductDomain::del(const int ProductId) {
+        char reponse;
+        do
+        {
+            std::cout << "Do you want to save this product? (Y/N/Q)";
+            std::cin >> reponse;
+            reponse = std::toupper(reponse, std::locale());
+        } while (reponse != 'Y' && reponse != 'Q');
+
+        if (reponse == 'Y') _ProductDb.erase(_ProductDb.begin() + ProductId);
+        return _ProductDb;
+>>>>>>> parent of b29ae41... Product Complete
     }
     std::vector<Product>   ProductDomain::modify(const Product CurrentProduct, const std::string ProductName, const int Price) {
         //Todo
