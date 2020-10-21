@@ -31,7 +31,7 @@ namespace UI
 
       // Operations
       void launch() override;
-    
+
 
       // Destructor
       ~SimpleUI() noexcept override;

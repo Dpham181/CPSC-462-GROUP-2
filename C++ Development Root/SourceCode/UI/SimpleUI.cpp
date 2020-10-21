@@ -280,32 +280,10 @@ namespace UI
                         }
                         else if (selectedCommand == "Modify Product") {
 
-
-                            int productId = 0;
-                            std::cout << "Please choose Product Id: ";
-                            std::cin >> productId;
-                            std::vector<std::string> parameters(3);
-                            parameters[0] = std::to_string(productId);
-                            std::cout << " Enter Name  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
-                            std::cout << " Enter Price: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
-                            auto result = _ProductHandler->executeCommandProduct(selectedCommand, parameters);
-                            if (result.has_value()) {
-                                _logger << "Product Already Modified";
-                            }
-
+                            //Todo
                         }
                         else if (selectedCommand == "Del product") {
-
-                            int productId = 0;
-                            std::cout << "Please choose Product Id: ";
-                            std::cin >> productId;
-                            std::vector<std::string> parameter(1);
-                            parameter[0] = std::to_string(productId);
-                            auto result = _ProductHandler->executeCommandProduct(selectedCommand, parameter);
-
-                            if (result.has_value()) {
-                                _logger << "Product Already removed from Inventory";
-                            }
+                            //Todo
                         }
 
 
