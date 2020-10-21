@@ -16,7 +16,6 @@ namespace TechnicalServices::Persistence
     int                       userID;
     std::string               userName;
     std::string               userRole;
-    int                       commission;
   };
 
   struct UserCredentials

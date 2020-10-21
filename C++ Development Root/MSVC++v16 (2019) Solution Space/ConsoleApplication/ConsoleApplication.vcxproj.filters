@@ -45,7 +45,7 @@
     <ClCompile Include="..\..\SourceCode\UI\SimpleUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\SourceCode\Domain\Product\ProductHandler.cpp">
+    <ClCompile Include="..\..\SourceCode\Domain\User\UserHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -92,10 +92,10 @@
     <ClInclude Include="..\..\SourceCode\Domain\Client\ClientProfile.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\SourceCode\Domain\Product\Product.hpp">
+    <ClInclude Include="..\..\SourceCode\Domain\User\User.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\SourceCode\Domain\Product\ProductHandler.hpp">
+    <ClInclude Include="..\..\SourceCode\Domain\User\UserHandler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

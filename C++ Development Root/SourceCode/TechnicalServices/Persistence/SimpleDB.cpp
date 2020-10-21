@@ -102,9 +102,9 @@ namespace TechnicalServices::Persistence
    {
        return
        {
-           //UserID     Username       Authorized roles    commission
-            { 1,        "Tom",         "IT Admin",         0  },
-            { 2,        "Amanda",      "Salesperson",      0  }
+           //UserID     Username       Authorized roles
+            { 1,        "Tom",         "IT Admin" },
+            { 2,        "Amanda",      "Salesperson" }
        };
    }
 

@@ -277,11 +277,11 @@ namespace Domain::User
         line();
         std::cout << std::setw(49) << "list of users\n";
         line();
-        std::cout << std::setw(15) << "Id" << std::setw(20) << "Name" << std::setw(20) << "Role" << std::setw(20) << "Commission"  << "\n";
+        std::cout << std::setw(15) << "Id" << std::setw(20) << "Name" << std::setw(20) << "Role" << "\n";
         line();
 
         for (const auto& c : UsersDB)
-            std::cout << std::setw(15) << std::to_string(c.userID) << std::setw(20) << c.userName << std::setw(20) << c.userRole << std::setw(20) << c.commission << std::endl;
+            std::cout << std::setw(15) << std::to_string(c.userID) << std::setw(20) << c.userName << std::setw(20) << c.userRole << std::endl;
         line();
     }
 
