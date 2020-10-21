@@ -1779,8 +1779,13 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 <<<<<<< HEAD
+<<<<<<< HEAD
 $pdata$?launch@SimpleUI@UI@@UEAAXXZ DD imagerel $LN120
 	DD	imagerel $LN120+7599
+=======
+$pdata$?launch@SimpleUI@UI@@UEAAXXZ DD imagerel $LN126
+	DD	imagerel $LN126+8215
+>>>>>>> parent of b29ae41... Product Complete
 =======
 $pdata$?launch@SimpleUI@UI@@UEAAXXZ DD imagerel $LN126
 	DD	imagerel $LN126+8215
@@ -2061,6 +2066,9 @@ $pdata$?dtor$57@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$57@?0??lau
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 $pdata$??1SimpleUI@UI@@UEAA@XZ DD imagerel $LN3
 	DD	imagerel $LN3+244
@@ -9964,7 +9972,10 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 $unwind$?dtor$57@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
@@ -10237,7 +10248,11 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 <<<<<<< HEAD
+<<<<<<< HEAD
 $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 0b0H
+=======
+$ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 0c0H
+>>>>>>> parent of b29ae41... Product Complete
 =======
 $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 0c0H
 >>>>>>> parent of b29ae41... Product Complete
@@ -10391,10 +10406,15 @@ $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 0c0H
 	DB	'N'
 	DB	01aH
 <<<<<<< HEAD
+<<<<<<< HEAD
 	DB	'L'
 	DB	0c4H
 	DB	'R'
 	DB	'^'
+=======
+	DB	'N'
+	DB	080H
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	DB	'N'
 	DB	080H
@@ -10406,7 +10426,11 @@ $ip2state$?launch@SimpleUI@UI@@UEAAXXZ DB 0c0H
 	DB	018H
 	DB	0aaH
 <<<<<<< HEAD
+<<<<<<< HEAD
 	DB	'T'
+=======
+	DB	'\'
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	DB	'\'
 >>>>>>> parent of b29ae41... Product Complete
@@ -10430,7 +10454,11 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 <<<<<<< HEAD
+<<<<<<< HEAD
 $stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 054H
+=======
+$stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 05cH
+>>>>>>> parent of b29ae41... Product Complete
 =======
 $stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 05cH
 >>>>>>> parent of b29ae41... Product Complete
@@ -10535,6 +10563,9 @@ $stateUnwindMap$?launch@SimpleUI@UI@@UEAAXXZ DB 05cH
 	DB	0dH
 	DB	0bH
 	DD	imagerel ?dtor$57@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 xdata	ENDS
 ;	COMDAT xdata
@@ -10548,11 +10579,19 @@ xdata	SEGMENT
 $unwind$?launch@SimpleUI@UI@@UEAAXXZ DD 025064219H
 	DD	0115231aH
 <<<<<<< HEAD
+<<<<<<< HEAD
 	DD	0700802faH
 	DD	050066007H
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?launch@SimpleUI@UI@@UEAAXXZ
 	DD	017caH
+=======
+	DD	070080324H
+	DD	050066007H
+	DD	imagerel __GSHandlerCheck_EH4
+	DD	imagerel $cppxdata$?launch@SimpleUI@UI@@UEAAXXZ
+	DD	0191aH
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	DD	070080324H
 	DD	050066007H
@@ -33078,6 +33117,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -33313,6 +33353,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -33560,13 +33602,20 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?launch@SimpleUI@UI@@UEAAXXZ PROC			; UI::SimpleUI::launch, COMDAT
 
 ; 53   :     {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 $LN120:
+=======
+$LN126:
+>>>>>>> parent of b29ae41... Product Complete
 =======
 $LN126:
 >>>>>>> parent of b29ae41... Product Complete
@@ -33575,7 +33624,11 @@ $LN126:
 	push	rsi
 	push	rdi
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, 6096				; 000017d0H
+=======
+	mov	eax, 6432				; 00001920H
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, 6432				; 00001920H
 >>>>>>> parent of b29ae41... Product Complete
@@ -33584,15 +33637,21 @@ $LN126:
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	ecx, 1524				; 000005f4H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+6136]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	mov	ecx, 1608				; 00000648H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+6472]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
@@ -33670,6 +33729,7 @@ $LN126:
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T51[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	mov	QWORD PTR tv172[rbp], rax
@@ -33698,13 +33758,33 @@ $LN126:
 	call	??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	lea	rcx, QWORD PTR $T57[rbp]
 >>>>>>> parent of b29ae41... Product Complete
+=======
+	lea	rcx, QWORD PTR $T55[rbp]
+	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
+	mov	QWORD PTR tv172[rbp], rax
+	lea	rdx, OFFSET FLAT:??_C@_00CNPNBAHC@@
+	lea	rcx, QWORD PTR $T107[rbp]
+	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rax, QWORD PTR $T107[rbp+40]
+	mov	r8, rax
+	lea	rdx, QWORD PTR $T107[rbp]
+	lea	rcx, QWORD PTR $T56[rbp]
+	call	??0?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z ; std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
+	lea	rcx, QWORD PTR $T57[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 	mov	rdi, rcx
 	mov	rsi, rax
 	mov	ecx, 16
 	rep movsb
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rax, QWORD PTR $T99[rbp]
 	lea	rcx, QWORD PTR $T53[rbp]
+=======
+	lea	rax, QWORD PTR $T106[rbp]
+	lea	rcx, QWORD PTR $T57[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rax, QWORD PTR $T106[rbp]
 	lea	rcx, QWORD PTR $T57[rbp]
@@ -33715,7 +33795,11 @@ $LN126:
 	rep movsb
 	mov	r8, QWORD PTR tv172[rbp]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR $T99[rbp]
+=======
+	lea	rdx, QWORD PTR $T106[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR $T106[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33726,7 +33810,11 @@ $LN126:
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T100[rbp]
+=======
+	lea	rcx, QWORD PTR $T107[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T107[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33789,6 +33877,7 @@ $LN4@launch:
 
 	lea	rdx, QWORD PTR credentials$[rbp]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T54[rbp]
 	call	?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Session::SessionHandler::createSession
 	mov	QWORD PTR tv1302[rbp], rax
@@ -33796,6 +33885,15 @@ $LN4@launch:
 	lea	rcx, QWORD PTR sessionControl$[rbp]
 	call	??$?4U?$default_delete@VSessionHandler@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator=<std::default_delete<Domain::Session::SessionHandler>,0>
 	lea	rcx, QWORD PTR $T54[rbp]
+=======
+	lea	rcx, QWORD PTR $T58[rbp]
+	call	?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Session::SessionHandler::createSession
+	mov	QWORD PTR tv1395[rbp], rax
+	mov	rdx, QWORD PTR tv1395[rbp]
+	lea	rcx, QWORD PTR sessionControl$[rbp]
+	call	??$?4U?$default_delete@VSessionHandler@Session@Domain@@@std@@$0A@@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator=<std::default_delete<Domain::Session::SessionHandler>,0>
+	lea	rcx, QWORD PTR $T58[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T58[rbp]
 	call	?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Session::SessionHandler::createSession
@@ -33842,7 +33940,11 @@ $LN7@launch:
 
 	mov	edx, 32					; 00000020H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$30[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33855,7 +33957,11 @@ $LN7@launch:
 	mov	rax, QWORD PTR [rax]
 	mov	QWORD PTR tv219[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR commands$28[rbp]
+=======
+	lea	rdx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR commands$30[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33866,7 +33972,11 @@ $LN7@launch:
 ; 93   :             std::string selectedCommand;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33880,6 +33990,7 @@ $LN10@launch:
 ; 97   :             {
 ; 98   :                 for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	mov	DWORD PTR i$31[rbp], 0
 	jmp	SHORT $LN13@launch
@@ -33903,6 +34014,18 @@ $LN13@launch:
 	mov	QWORD PTR tv225[rbp], rax
 	lea	rcx, QWORD PTR commands$30[rbp]
 >>>>>>> parent of b29ae41... Product Complete
+=======
+	mov	DWORD PTR i$33[rbp], 0
+	jmp	SHORT $LN13@launch
+$LN11@launch:
+	mov	eax, DWORD PTR i$33[rbp]
+	inc	eax
+	mov	DWORD PTR i$33[rbp], eax
+$LN13@launch:
+	mov	eax, DWORD PTR i$33[rbp]
+	mov	QWORD PTR tv225[rbp], rax
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
 	mov	rcx, QWORD PTR tv225[rbp]
 	cmp	rcx, rax
@@ -33911,7 +34034,11 @@ $LN13@launch:
 	mov	QWORD PTR tv246[rbp], rax
 	mov	edx, 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T55[rbp]
+=======
+	lea	rcx, QWORD PTR $T59[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T59[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33922,7 +34049,11 @@ $LN13@launch:
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
 	mov	QWORD PTR tv253[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	edx, DWORD PTR i$31[rbp]
+=======
+	mov	edx, DWORD PTR i$33[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	edx, DWORD PTR i$33[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33933,9 +34064,15 @@ $LN13@launch:
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 	mov	QWORD PTR tv257[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR i$31[rbp]
 	mov	edx, eax
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	mov	eax, DWORD PTR i$33[rbp]
+	mov	edx, eax
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR i$33[rbp]
 	mov	edx, eax
@@ -33958,7 +34095,11 @@ $LN12@launch:
 	mov	QWORD PTR tv271[rbp], rax
 	mov	edx, 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T56[rbp]
+=======
+	lea	rcx, QWORD PTR $T60[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T60[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33969,7 +34110,11 @@ $LN12@launch:
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
 	mov	QWORD PTR tv282[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$30[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -33993,7 +34138,11 @@ $LN12@launch:
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 	mov	QWORD PTR tv297[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$30[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34009,7 +34158,11 @@ $LN12@launch:
 ; 102  :                 std::cin >> menuSelection;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR menuSelection$30[rbp]
+=======
+	lea	rdx, QWORD PTR menuSelection$32[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR menuSelection$32[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34019,9 +34172,15 @@ $LN12@launch:
 ; 103  :             } while (menuSelection > commands.size());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$30[rbp]
 	mov	QWORD PTR tv299[rbp], rax
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$32[rbp]
+	mov	QWORD PTR tv299[rbp], rax
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$32[rbp]
 	mov	QWORD PTR tv299[rbp], rax
@@ -34036,9 +34195,15 @@ $LN12@launch:
 ; 105  :             if (menuSelection == commands.size()) break;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$30[rbp]
 	mov	QWORD PTR tv304[rbp], rax
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$32[rbp]
+	mov	QWORD PTR tv304[rbp], rax
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$32[rbp]
 	mov	QWORD PTR tv304[rbp], rax
@@ -34049,10 +34214,17 @@ $LN12@launch:
 	cmp	rcx, rax
 	jne	SHORT $LN36@launch
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$29[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -34067,12 +34239,21 @@ $LN36@launch:
 ; 107  :             selectedCommand = commands[menuSelection];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$30[rbp]
 	mov	edx, eax
 	lea	rcx, QWORD PTR commands$28[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	rdx, rax
 	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$32[rbp]
+	mov	edx, eax
+	lea	rcx, QWORD PTR commands$30[rbp]
+	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
+	mov	rdx, rax
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$32[rbp]
 	mov	edx, eax
@@ -34093,6 +34274,7 @@ $LN36@launch:
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
 	mov	QWORD PTR tv340[rbp], rax
+<<<<<<< HEAD
 <<<<<<< HEAD
 	lea	r8, QWORD PTR selectedCommand$29[rbp]
 	lea	rdx, OFFSET FLAT:??_C@_0BD@MDGDICNG@Command?5selected?5?$CC@
@@ -34118,6 +34300,16 @@ $LN36@launch:
 	mov	rax, QWORD PTR tv222[rbp]
 	mov	QWORD PTR tv1401[rbp], rax
 	mov	r8b, 34					; 00000022H
+=======
+	lea	r8, QWORD PTR selectedCommand$31[rbp]
+	lea	rdx, OFFSET FLAT:??_C@_0BD@MDGDICNG@Command?5selected?5?$CC@
+	lea	rcx, QWORD PTR $T61[rbp]
+	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
+	mov	QWORD PTR tv222[rbp], rax
+	mov	rax, QWORD PTR tv222[rbp]
+	mov	QWORD PTR tv1401[rbp], rax
+	mov	r8b, 34					; 00000022H
+>>>>>>> parent of b29ae41... Product Complete
 	mov	rdx, QWORD PTR tv1401[rbp]
 	lea	rcx, QWORD PTR $T62[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
@@ -34125,6 +34317,9 @@ $LN36@launch:
 	mov	rax, QWORD PTR tv216[rbp]
 	mov	QWORD PTR tv1403[rbp], rax
 	mov	rax, QWORD PTR tv1403[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	mov	QWORD PTR tv336[rbp], rax
 	mov	rdx, QWORD PTR tv336[rbp]
@@ -34132,10 +34327,17 @@ $LN36@launch:
 	call	QWORD PTR tv340[rbp]
 	npad	1
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T58[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR $T57[rbp]
+=======
+	lea	rcx, QWORD PTR $T62[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rcx, QWORD PTR $T61[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T62[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -34157,7 +34359,11 @@ $LN36@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0BC@EHNKAOLP@Client?5Management@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34172,9 +34378,15 @@ $LN36@launch:
 
 	mov	edx, 8
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
 	call	?__autoclassinit2@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAX_K@Z
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+	call	?__autoclassinit2@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAX_K@Z
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 	call	?__autoclassinit2@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAX_K@Z
@@ -34187,6 +34399,7 @@ $LN36@launch:
 ; 123  :                 ClientHandler = Domain::Client::ClientHandler::UseClientManagement(credentials);
 
 	lea	rdx, QWORD PTR credentials$[rbp]
+<<<<<<< HEAD
 <<<<<<< HEAD
 	lea	rcx, QWORD PTR $T59[rbp]
 	call	?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Client::ClientHandler::UseClientManagement
@@ -34204,6 +34417,15 @@ $LN36@launch:
 	call	??$?4U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator=<std::default_delete<Domain::Client::ClientHandler>,0>
 	lea	rcx, QWORD PTR $T63[rbp]
 >>>>>>> parent of b29ae41... Product Complete
+=======
+	lea	rcx, QWORD PTR $T63[rbp]
+	call	?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Client::ClientHandler::UseClientManagement
+	mov	QWORD PTR tv1406[rbp], rax
+	mov	rdx, QWORD PTR tv1406[rbp]
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+	call	??$?4U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::operator=<std::default_delete<Domain::Client::ClientHandler>,0>
+	lea	rcx, QWORD PTR $T63[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 	call	??1?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::~unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >
 
 ; 124  :                
@@ -34212,7 +34434,11 @@ $LN36@launch:
 
 	xor	edx, edx
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34224,7 +34450,11 @@ $LN36@launch:
 ; 127  :                     ClientsFromDB = ClientHandler->ClientsDB(ClientsFromDB);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34236,6 +34466,7 @@ $LN36@launch:
 	mov	QWORD PTR tv374[rbp], rax
 	lea	r8, QWORD PTR ClientsFromDB$[rbp]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR $T60[rbp]
 	mov	rcx, QWORD PTR tv367[rbp]
 	call	QWORD PTR tv374[rbp]
@@ -34244,6 +34475,16 @@ $LN36@launch:
 	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
 	call	??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::operator=
 	lea	rcx, QWORD PTR $T60[rbp]
+=======
+	lea	rdx, QWORD PTR $T64[rbp]
+	mov	rcx, QWORD PTR tv367[rbp]
+	call	QWORD PTR tv374[rbp]
+	mov	QWORD PTR tv1408[rbp], rax
+	mov	rdx, QWORD PTR tv1408[rbp]
+	lea	rcx, QWORD PTR ClientsFromDB$[rbp]
+	call	??4?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::operator=
+	lea	rcx, QWORD PTR $T64[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR $T64[rbp]
 	mov	rcx, QWORD PTR tv367[rbp]
@@ -34265,9 +34506,15 @@ $LN16@launch:
 
 	mov	edx, 32					; 00000020H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$33[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR commands$35[rbp]
+	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$35[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
@@ -34280,7 +34527,11 @@ $LN16@launch:
 	mov	rax, QWORD PTR [rax]
 	mov	QWORD PTR tv388[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR commands$33[rbp]
+=======
+	lea	rdx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR commands$35[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34291,7 +34542,11 @@ $LN16@launch:
 ; 133  :                         std::string selectedCommand;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34307,6 +34562,7 @@ $LN19@launch:
 ; 139  :                             for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	DWORD PTR i$36[rbp], 0
 	jmp	SHORT $LN22@launch
 $LN20@launch:
@@ -34318,6 +34574,8 @@ $LN22@launch:
 	mov	QWORD PTR tv394[rbp], rax
 	lea	rcx, QWORD PTR commands$33[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	mov	DWORD PTR i$38[rbp], 0
 	jmp	SHORT $LN22@launch
 $LN20@launch:
@@ -34328,6 +34586,9 @@ $LN22@launch:
 	mov	eax, DWORD PTR i$38[rbp]
 	mov	QWORD PTR tv394[rbp], rax
 	lea	rcx, QWORD PTR commands$35[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
 	mov	rcx, QWORD PTR tv394[rbp]
@@ -34337,7 +34598,11 @@ $LN22@launch:
 	mov	QWORD PTR tv415[rbp], rax
 	mov	edx, 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T61[rbp]
+=======
+	lea	rcx, QWORD PTR $T65[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T65[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34348,7 +34613,11 @@ $LN22@launch:
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
 	mov	QWORD PTR tv422[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	edx, DWORD PTR i$36[rbp]
+=======
+	mov	edx, DWORD PTR i$38[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	edx, DWORD PTR i$38[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34359,9 +34628,15 @@ $LN22@launch:
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 	mov	QWORD PTR tv426[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR i$36[rbp]
 	mov	edx, eax
 	lea	rcx, QWORD PTR commands$33[rbp]
+=======
+	mov	eax, DWORD PTR i$38[rbp]
+	mov	edx, eax
+	lea	rcx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR i$38[rbp]
 	mov	edx, eax
@@ -34384,7 +34659,11 @@ $LN21@launch:
 	mov	QWORD PTR tv440[rbp], rax
 	mov	edx, 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T62[rbp]
+=======
+	lea	rcx, QWORD PTR $T66[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T66[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34395,7 +34674,11 @@ $LN21@launch:
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
 	mov	QWORD PTR tv451[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$33[rbp]
+=======
+	lea	rcx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$35[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34419,7 +34702,11 @@ $LN21@launch:
 	call	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z ; std::operator<<<std::char_traits<char> >
 	mov	QWORD PTR tv466[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$33[rbp]
+=======
+	lea	rcx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$35[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34435,7 +34722,11 @@ $LN21@launch:
 ; 143  :                             std::cin >> menuSelection;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR menuSelection$35[rbp]
+=======
+	lea	rdx, QWORD PTR menuSelection$37[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR menuSelection$37[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34445,9 +34736,15 @@ $LN21@launch:
 ; 144  :                         } while (menuSelection > commands.size());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$35[rbp]
 	mov	QWORD PTR tv468[rbp], rax
 	lea	rcx, QWORD PTR commands$33[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$37[rbp]
+	mov	QWORD PTR tv468[rbp], rax
+	lea	rcx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$37[rbp]
 	mov	QWORD PTR tv468[rbp], rax
@@ -34462,9 +34759,15 @@ $LN21@launch:
 ; 146  :                         if (menuSelection == commands.size()) break;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$35[rbp]
 	mov	QWORD PTR tv473[rbp], rax
 	lea	rcx, QWORD PTR commands$33[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$37[rbp]
+	mov	QWORD PTR tv473[rbp], rax
+	lea	rcx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$37[rbp]
 	mov	QWORD PTR tv473[rbp], rax
@@ -34475,15 +34778,21 @@ $LN21@launch:
 	cmp	rcx, rax
 	jne	SHORT $LN41@launch
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR commands$33[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR commands$35[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	jmp	$LN15@launch
@@ -34492,12 +34801,21 @@ $LN41@launch:
 ; 147  :                         selectedCommand = commands[menuSelection];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$35[rbp]
 	mov	edx, eax
 	lea	rcx, QWORD PTR commands$33[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	rdx, rax
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$37[rbp]
+	mov	edx, eax
+	lea	rcx, QWORD PTR commands$35[rbp]
+	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
+	mov	rdx, rax
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$37[rbp]
 	mov	edx, eax
@@ -34518,6 +34836,7 @@ $LN41@launch:
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
 	mov	QWORD PTR tv509[rbp], rax
+<<<<<<< HEAD
 <<<<<<< HEAD
 	lea	r8, QWORD PTR selectedCommand$34[rbp]
 	lea	rdx, OFFSET FLAT:??_C@_0BD@MDGDICNG@Command?5selected?5?$CC@
@@ -34543,6 +34862,16 @@ $LN41@launch:
 	mov	rax, QWORD PTR tv391[rbp]
 	mov	QWORD PTR tv1414[rbp], rax
 	mov	r8b, 34					; 00000022H
+=======
+	lea	r8, QWORD PTR selectedCommand$36[rbp]
+	lea	rdx, OFFSET FLAT:??_C@_0BD@MDGDICNG@Command?5selected?5?$CC@
+	lea	rcx, QWORD PTR $T67[rbp]
+	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBDAEBV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
+	mov	QWORD PTR tv391[rbp], rax
+	mov	rax, QWORD PTR tv391[rbp]
+	mov	QWORD PTR tv1414[rbp], rax
+	mov	r8b, 34					; 00000022H
+>>>>>>> parent of b29ae41... Product Complete
 	mov	rdx, QWORD PTR tv1414[rbp]
 	lea	rcx, QWORD PTR $T68[rbp]
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@$$QEAV10@D@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
@@ -34550,6 +34879,9 @@ $LN41@launch:
 	mov	rax, QWORD PTR tv385[rbp]
 	mov	QWORD PTR tv1416[rbp], rax
 	mov	rax, QWORD PTR tv1416[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	mov	QWORD PTR tv505[rbp], rax
 	mov	rdx, QWORD PTR tv505[rbp]
@@ -34557,10 +34889,17 @@ $LN41@launch:
 	call	QWORD PTR tv509[rbp]
 	npad	1
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T64[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR $T63[rbp]
+=======
+	lea	rcx, QWORD PTR $T68[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rcx, QWORD PTR $T67[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T68[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -34575,7 +34914,11 @@ $LN41@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0L@DIFOHGNI@Add?5Client@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34588,6 +34931,7 @@ $LN41@launch:
 
 	mov	edx, 32					; 00000020H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$37[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
 	lea	rcx, QWORD PTR $T65[rbp]
@@ -34598,11 +34942,18 @@ $LN41@launch:
 =======
 	lea	rcx, QWORD PTR parameters$39[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+=======
+	lea	rcx, QWORD PTR parameters$39[rbp]
+	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T69[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	mov	r8, rax
 	mov	edx, 4
 	lea	rcx, QWORD PTR parameters$39[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
@@ -34611,7 +34962,11 @@ $LN41@launch:
 
 	xor	edx, edx
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$37[rbp]
+=======
+	lea	rcx, QWORD PTR parameters$39[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR parameters$39[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34626,6 +34981,7 @@ $LN41@launch:
 	call	?size@?$vector@UClient@Persistence@TechnicalServices@@V?$allocator@UClient@Persistence@TechnicalServices@@@std@@@std@@QEBA_KXZ ; std::vector<TechnicalServices::Persistence::Client,std::allocator<TechnicalServices::Persistence::Client> >::size
 	inc	rax
 	mov	rdx, rax
+<<<<<<< HEAD
 <<<<<<< HEAD
 	lea	rcx, QWORD PTR $T66[rbp]
 	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::to_string
@@ -34643,12 +34999,25 @@ $LN41@launch:
 	mov	edx, 1
 	lea	rcx, QWORD PTR parameters$39[rbp]
 >>>>>>> parent of b29ae41... Product Complete
+=======
+	lea	rcx, QWORD PTR $T70[rbp]
+	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::to_string
+	mov	QWORD PTR tv1419[rbp], rax
+	mov	rax, QWORD PTR tv1419[rbp]
+	mov	QWORD PTR tv575[rbp], rax
+	mov	edx, 1
+	lea	rcx, QWORD PTR parameters$39[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	rdx, QWORD PTR tv575[rbp]
 	mov	rcx, rax
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T66[rbp]
+=======
+	lea	rcx, QWORD PTR $T70[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T70[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34664,7 +35033,11 @@ $LN41@launch:
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
 	mov	edx, 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$37[rbp]
+=======
+	lea	rcx, QWORD PTR parameters$39[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR parameters$39[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34686,7 +35059,11 @@ $LN41@launch:
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
 	mov	edx, 3
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$37[rbp]
+=======
+	lea	rcx, QWORD PTR parameters$39[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR parameters$39[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34702,7 +35079,11 @@ $LN41@launch:
 ; 158  :                             auto results = ClientHandler->executeCommandClient(selectedCommand, parameters);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34713,9 +35094,15 @@ $LN41@launch:
 	mov	rax, QWORD PTR [rax+8]
 	mov	QWORD PTR tv612[rbp], rax
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	r9, QWORD PTR parameters$37[rbp]
 	lea	r8, QWORD PTR selectedCommand$34[rbp]
 	lea	rdx, QWORD PTR results$38[rbp]
+=======
+	lea	r9, QWORD PTR parameters$39[rbp]
+	lea	r8, QWORD PTR selectedCommand$36[rbp]
+	lea	rdx, QWORD PTR results$40[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	r9, QWORD PTR parameters$39[rbp]
 	lea	r8, QWORD PTR selectedCommand$36[rbp]
@@ -34728,7 +35115,11 @@ $LN41@launch:
 ; 159  :                             if (results.has_value()) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$38[rbp]
+=======
+	lea	rcx, QWORD PTR results$40[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$40[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34749,6 +35140,7 @@ $LN41@launch:
 	mov	QWORD PTR tv634[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BG@IHFBALOG@Successfully?5Added?5?$CC?5@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T67[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
@@ -34767,12 +35159,26 @@ $LN41@launch:
 	npad	1
 	lea	rcx, QWORD PTR $T71[rbp]
 >>>>>>> parent of b29ae41... Product Complete
+=======
+	lea	rcx, QWORD PTR $T71[rbp]
+	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rdx, QWORD PTR $T71[rbp]
+	mov	rcx, QWORD PTR tv632[rbp]
+	call	QWORD PTR tv634[rbp]
+	npad	1
+	lea	rcx, QWORD PTR $T71[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
 ; 161  :                                 ClientsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Client>&>(results);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$38[rbp]
+=======
+	lea	rcx, QWORD PTR results$40[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$40[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34822,10 +35228,17 @@ $LN44@launch:
 ; 164  :                         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$38[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
 	lea	rcx, QWORD PTR parameters$37[rbp]
+=======
+	lea	rcx, QWORD PTR results$40[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
+	npad	1
+	lea	rcx, QWORD PTR parameters$39[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$40[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
@@ -34841,7 +35254,11 @@ $LN42@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0BB@NDHANJAG@View?5All?5Clients@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34854,7 +35271,11 @@ $LN42@launch:
 ; 168  :                             ClientHandler->ViewClients(ClientsFromDB);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34878,7 +35299,11 @@ $LN45@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0BG@DNLIOOFF@Update?5Client?5Profile@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34890,7 +35315,11 @@ $LN45@launch:
 ; 172  :                             ClientHandler->ClientsPDB(ClientsProfileFromDB);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34902,22 +35331,32 @@ $LN45@launch:
 	mov	QWORD PTR tv667[rbp], rax
 	lea	r8, QWORD PTR ClientsProfileFromDB$[rbp]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR $T68[rbp]
 	mov	rcx, QWORD PTR tv660[rbp]
 	call	QWORD PTR tv667[rbp]
 	lea	rcx, QWORD PTR $T68[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rdx, QWORD PTR $T73[rbp]
 	mov	rcx, QWORD PTR tv684[rbp]
 	call	QWORD PTR tv691[rbp]
 	lea	rcx, QWORD PTR $T73[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::~vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >
 
 ; 173  :                             ClientHandler->ViewClients(ClientsFromDB);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -34935,7 +35374,11 @@ $LN45@launch:
 ; 175  :                             int clientId =0;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	DWORD PTR clientId$40[rbp], 0
+=======
+	mov	DWORD PTR clientId$42[rbp], 0
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	DWORD PTR clientId$42[rbp], 0
 >>>>>>> parent of b29ae41... Product Complete
@@ -34949,7 +35392,11 @@ $LN45@launch:
 ; 177  :                             std::cin >> clientId;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR clientId$40[rbp]
+=======
+	lea	rdx, QWORD PTR clientId$42[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR clientId$42[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35032,13 +35479,20 @@ $LN25@launch:
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR $T74[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
 ; 181  :                                 std::cin >> response;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR response$39[rbp]
+=======
+	lea	rdx, QWORD PTR response$41[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR response$41[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35047,6 +35501,7 @@ $LN25@launch:
 
 ; 182  :                                 response = std::toupper(response, std::locale());
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	lea	rcx, QWORD PTR $T72[rbp]
 	call	??0locale@std@@QEAA@XZ			; std::locale::locale
@@ -35067,6 +35522,12 @@ $LN25@launch:
 	call	??0locale@std@@QEAA@XZ			; std::locale::locale
 	mov	QWORD PTR tv348[rbp], rax
 	mov	rax, QWORD PTR tv348[rbp]
+=======
+	lea	rcx, QWORD PTR $T77[rbp]
+	call	??0locale@std@@QEAA@XZ			; std::locale::locale
+	mov	QWORD PTR tv348[rbp], rax
+	mov	rax, QWORD PTR tv348[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 	mov	QWORD PTR tv1432[rbp], rax
 	mov	rax, QWORD PTR tv1432[rbp]
 	mov	QWORD PTR tv741[rbp], rax
@@ -35077,21 +35538,30 @@ $LN25@launch:
 	call	??$toupper@D@std@@YADDAEBVlocale@0@@Z	; std::toupper<char>
 	mov	BYTE PTR response$41[rbp], al
 	lea	rcx, QWORD PTR $T77[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
 
 ; 183  :                             } while (response != 'Y' && response != 'Q');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	movsx	eax, BYTE PTR response$39[rbp]
 	cmp	eax, 89					; 00000059H
 	je	SHORT $LN49@launch
 	movsx	eax, BYTE PTR response$39[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	movsx	eax, BYTE PTR response$41[rbp]
 	cmp	eax, 89					; 00000059H
 	je	SHORT $LN49@launch
 	movsx	eax, BYTE PTR response$41[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	cmp	eax, 81					; 00000051H
 	jne	$LN25@launch
@@ -35101,7 +35571,11 @@ $LN49@launch:
 ; 185  :                             if (response == 'Y') {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	movsx	eax, BYTE PTR response$39[rbp]
+=======
+	movsx	eax, BYTE PTR response$41[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	movsx	eax, BYTE PTR response$41[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35114,6 +35588,7 @@ $LN49@launch:
 
 	mov	edx, 32					; 00000020H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$41[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
 	lea	rcx, QWORD PTR $T73[rbp]
@@ -35124,17 +35599,25 @@ $LN49@launch:
 =======
 	lea	rcx, QWORD PTR parameters$43[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+=======
+	lea	rcx, QWORD PTR parameters$43[rbp]
+	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T78[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	mov	r8, rax
 	mov	edx, 3
 	lea	rcx, QWORD PTR parameters$43[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 
 ; 189  :                                 parameters[0] = std::to_string(clientId);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	mov	edx, DWORD PTR clientId$40[rbp]
 	lea	rcx, QWORD PTR $T74[rbp]
@@ -35148,18 +35631,30 @@ $LN49@launch:
 	mov	edx, DWORD PTR clientId$42[rbp]
 	lea	rcx, QWORD PTR $T79[rbp]
 	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
+=======
+	mov	edx, DWORD PTR clientId$42[rbp]
+	lea	rcx, QWORD PTR $T79[rbp]
+	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
+>>>>>>> parent of b29ae41... Product Complete
 	mov	QWORD PTR tv1435[rbp], rax
 	mov	rax, QWORD PTR tv1435[rbp]
 	mov	QWORD PTR tv769[rbp], rax
 	xor	edx, edx
 	lea	rcx, QWORD PTR parameters$43[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	rdx, QWORD PTR tv745[rbp]
 	mov	rcx, rax
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T74[rbp]
+=======
+	lea	rcx, QWORD PTR $T79[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T79[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35175,7 +35670,11 @@ $LN49@launch:
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
 	mov	edx, 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$41[rbp]
+=======
+	lea	rcx, QWORD PTR parameters$43[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR parameters$43[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35197,7 +35696,11 @@ $LN49@launch:
 	call	QWORD PTR __imp_??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
 	mov	edx, 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$41[rbp]
+=======
+	lea	rcx, QWORD PTR parameters$43[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR parameters$43[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35213,7 +35716,11 @@ $LN49@launch:
 ; 193  :                                 auto results = ClientHandler->executeCommandClient(selectedCommand,parameters);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35242,7 +35749,11 @@ $LN49@launch:
 ; 194  :                                 if (results.has_value()) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$42[rbp]
+=======
+	lea	rcx, QWORD PTR results$44[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$44[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35263,6 +35774,7 @@ $LN49@launch:
 	mov	QWORD PTR tv804[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BG@MCELGHIL@Successfully?5Updated?6@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T75[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
@@ -35272,6 +35784,8 @@ $LN49@launch:
 	npad	1
 	lea	rcx, QWORD PTR $T75[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T80[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
@@ -35280,13 +35794,20 @@ $LN49@launch:
 	call	QWORD PTR tv828[rbp]
 	npad	1
 	lea	rcx, QWORD PTR $T80[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
 ; 196  :                                     ClientsProfileFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Clientprofile>&>(results);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$42[rbp]
+=======
+	lea	rcx, QWORD PTR results$44[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$44[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35304,10 +35825,17 @@ $LN51@launch:
 ; 201  :                             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$42[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
 	lea	rcx, QWORD PTR parameters$41[rbp]
+=======
+	lea	rcx, QWORD PTR results$44[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
+	npad	1
+	lea	rcx, QWORD PTR parameters$43[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$44[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
@@ -35327,7 +35855,11 @@ $LN47@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0BE@KBHAFDNP@View?5Client?5Profile@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35339,7 +35871,11 @@ $LN47@launch:
 ; 205  :                             ClientHandler->ClientsPDB(ClientsProfileFromDB);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35351,22 +35887,32 @@ $LN47@launch:
 	mov	QWORD PTR tv823[rbp], rax
 	lea	r8, QWORD PTR ClientsProfileFromDB$[rbp]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR $T76[rbp]
 	mov	rcx, QWORD PTR tv816[rbp]
 	call	QWORD PTR tv823[rbp]
 	lea	rcx, QWORD PTR $T76[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rdx, QWORD PTR $T81[rbp]
 	mov	rcx, QWORD PTR tv840[rbp]
 	call	QWORD PTR tv847[rbp]
 	lea	rcx, QWORD PTR $T81[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$vector@UClientprofile@Persistence@TechnicalServices@@V?$allocator@UClientprofile@Persistence@TechnicalServices@@@std@@@std@@QEAA@XZ ; std::vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >::~vector<TechnicalServices::Persistence::Clientprofile,std::allocator<TechnicalServices::Persistence::Clientprofile> >
 
 ; 206  :                             ClientHandler->ViewClients(ClientsFromDB);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35383,7 +35929,11 @@ $LN47@launch:
 ; 207  :                             int clientId = 0;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	DWORD PTR clientId$43[rbp], 0
+=======
+	mov	DWORD PTR clientId$45[rbp], 0
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	DWORD PTR clientId$45[rbp], 0
 >>>>>>> parent of b29ae41... Product Complete
@@ -35397,7 +35947,11 @@ $LN47@launch:
 ; 209  :                             std::cin >> clientId;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR clientId$43[rbp]
+=======
+	lea	rdx, QWORD PTR clientId$45[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR clientId$45[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35407,6 +35961,7 @@ $LN47@launch:
 ; 210  :                             std::vector<std::string> parameter(1);
 
 	mov	edx, 32					; 00000020H
+<<<<<<< HEAD
 <<<<<<< HEAD
 	lea	rcx, QWORD PTR parameter$44[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
@@ -35418,17 +35973,25 @@ $LN47@launch:
 =======
 	lea	rcx, QWORD PTR parameter$46[rbp]
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+=======
+	lea	rcx, QWORD PTR parameter$46[rbp]
+	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T82[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 	mov	r8, rax
 	mov	edx, 1
 	lea	rcx, QWORD PTR parameter$46[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
 
 ; 211  :                             parameter[0] = std::to_string(clientId);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	mov	edx, DWORD PTR clientId$43[rbp]
 	lea	rcx, QWORD PTR $T78[rbp]
@@ -35442,18 +36005,30 @@ $LN47@launch:
 	mov	edx, DWORD PTR clientId$45[rbp]
 	lea	rcx, QWORD PTR $T83[rbp]
 	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
+=======
+	mov	edx, DWORD PTR clientId$45[rbp]
+	lea	rcx, QWORD PTR $T83[rbp]
+	call	?to_string@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@H@Z ; std::to_string
+>>>>>>> parent of b29ae41... Product Complete
 	mov	QWORD PTR tv1441[rbp], rax
 	mov	rax, QWORD PTR tv1441[rbp]
 	mov	QWORD PTR tv883[rbp], rax
 	xor	edx, edx
 	lea	rcx, QWORD PTR parameter$46[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	rdx, QWORD PTR tv859[rbp]
 	mov	rcx, rax
 	call	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T78[rbp]
+=======
+	lea	rcx, QWORD PTR $T83[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T83[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35462,7 +36037,11 @@ $LN47@launch:
 ; 212  :                             auto results = ClientHandler->executeCommandClient(selectedCommand, parameter);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35493,7 +36072,11 @@ $LN47@launch:
 ; 215  :                             if (results.has_value())
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$45[rbp]
+=======
+	lea	rcx, QWORD PTR results$47[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$47[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35506,10 +36089,17 @@ $LN47@launch:
 ; 217  :                                 Domain::Client::Clientprofile  ProfileofClient = std::any_cast<const TechnicalServices::Persistence::Clientprofile&>(results);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$45[rbp]
 	call	??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z ; std::any_cast<TechnicalServices::Persistence::Clientprofile const &>
 	mov	rdx, rax
 	lea	rcx, QWORD PTR ProfileofClient$46[rbp]
+=======
+	lea	rcx, QWORD PTR results$47[rbp]
+	call	??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z ; std::any_cast<TechnicalServices::Persistence::Clientprofile const &>
+	mov	rdx, rax
+	lea	rcx, QWORD PTR ProfileofClient$48[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$47[rbp]
 	call	??$any_cast@AEBUClientprofile@Persistence@TechnicalServices@@@std@@YAAEBUClientprofile@Persistence@TechnicalServices@@AEAVany@0@@Z ; std::any_cast<TechnicalServices::Persistence::Clientprofile const &>
@@ -35529,7 +36119,11 @@ $LN47@launch:
 	mov	QWORD PTR tv891[rbp], rax
 	mov	edx, 49					; 00000031H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T79[rbp]
+=======
+	lea	rcx, QWORD PTR $T84[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T84[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35552,7 +36146,11 @@ $LN47@launch:
 	mov	QWORD PTR tv917[rbp], rax
 	mov	edx, 15
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T82[rbp]
+=======
+	lea	rcx, QWORD PTR $T87[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T87[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35567,7 +36165,11 @@ $LN47@launch:
 	mov	QWORD PTR tv923[rbp], rax
 	mov	edx, 15
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T81[rbp]
+=======
+	lea	rcx, QWORD PTR $T86[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T86[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35582,7 +36184,11 @@ $LN47@launch:
 	mov	QWORD PTR tv929[rbp], rax
 	mov	edx, 15
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T80[rbp]
+=======
+	lea	rcx, QWORD PTR $T85[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T85[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35606,7 +36212,11 @@ $LN47@launch:
 	mov	QWORD PTR tv1003[rbp], rax
 	mov	edx, 15
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T88[rbp]
+=======
+	lea	rcx, QWORD PTR $T93[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T93[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35644,7 +36254,11 @@ $LN47@launch:
 	mov	QWORD PTR tv1013[rbp], rax
 	mov	edx, 15
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T86[rbp]
+=======
+	lea	rcx, QWORD PTR $T91[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T91[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35654,7 +36268,11 @@ $LN47@launch:
 	mov	rcx, QWORD PTR tv1013[rbp]
 	call	??$?6DU?$char_traits@D@std@@_J@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBU?$_Smanip@_J@0@@Z ; std::operator<<<char,std::char_traits<char>,__int64>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR ProfileofClient$46[rbp+8]
+=======
+	lea	rdx, QWORD PTR ProfileofClient$48[rbp+8]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR ProfileofClient$48[rbp+8]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35663,7 +36281,11 @@ $LN47@launch:
 	mov	QWORD PTR tv1019[rbp], rax
 	mov	edx, 15
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T85[rbp]
+=======
+	lea	rcx, QWORD PTR $T90[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T90[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35728,6 +36350,9 @@ $LN47@launch:
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR $T92[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
@@ -35737,7 +36362,11 @@ $LN47@launch:
 ; 227  :                             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ProfileofClient$46[rbp]
+=======
+	lea	rcx, QWORD PTR ProfileofClient$48[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ProfileofClient$48[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35748,10 +36377,17 @@ $LN53@launch:
 ; 228  :                         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$45[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
 	lea	rcx, QWORD PTR parameter$44[rbp]
+=======
+	lea	rcx, QWORD PTR results$47[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
+	npad	1
+	lea	rcx, QWORD PTR parameter$46[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$47[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
@@ -35767,10 +36403,17 @@ $LN43@launch:
 ; 231  :                     } while (true);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR commands$33[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rcx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -35794,7 +36437,11 @@ $LN39@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0BA@NFJLLIND@Another?5command@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35842,6 +36489,9 @@ $LN54@launch:
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
 	lea	rcx, QWORD PTR $T94[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	npad	1
@@ -35850,7 +36500,11 @@ $LN40@launch:
 ; 238  :             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35862,7 +36516,11 @@ $LN37@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0BD@JBHMHLLP@Product?5Management@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35876,6 +36534,7 @@ $LN37@launch:
 
 	lea	rdx, QWORD PTR credentials$[rbp]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T91[rbp]
 	call	?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Product::ProductHandler::UseProductManagement
 	mov	QWORD PTR tv1358[rbp], rax
@@ -35885,6 +36544,17 @@ $LN37@launch:
 	mov	rcx, rax
 	call	??$?4U?$default_delete@VProductHandler@Product@Domain@@@std@@$0A@@?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Product::ProductHandler,std::default_delete<Domain::Product::ProductHandler> >::operator=<std::default_delete<Domain::Product::ProductHandler>,0>
 	lea	rcx, QWORD PTR $T91[rbp]
+=======
+	lea	rcx, QWORD PTR $T96[rbp]
+	call	?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Product::ProductHandler::UseProductManagement
+	mov	QWORD PTR tv1453[rbp], rax
+	mov	rax, QWORD PTR this$[rbp]
+	add	rax, 16
+	mov	rdx, QWORD PTR tv1453[rbp]
+	mov	rcx, rax
+	call	??$?4U?$default_delete@VProductHandler@Product@Domain@@@std@@$0A@@?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@QEAAAEAV01@$$QEAV01@@Z ; std::unique_ptr<Domain::Product::ProductHandler,std::default_delete<Domain::Product::ProductHandler> >::operator=<std::default_delete<Domain::Product::ProductHandler>,0>
+	lea	rcx, QWORD PTR $T96[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T96[rbp]
 	call	?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Product::ProductHandler::UseProductManagement
@@ -35919,7 +36589,11 @@ $LN28@launch:
 
 	mov	edx, 32					; 00000020H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$47[rbp]
+=======
+	lea	rcx, QWORD PTR commands$49[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$49[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35948,7 +36622,11 @@ $LN28@launch:
 ; 249  :                         std::string selectedCommand;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$48[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$50[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -35964,6 +36642,7 @@ $LN31@launch:
 ; 255  :                             for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	DWORD PTR i$50[rbp], 0
 	jmp	SHORT $LN34@launch
 $LN32@launch:
@@ -35975,6 +36654,8 @@ $LN34@launch:
 	mov	QWORD PTR tv1117[rbp], rax
 	lea	rcx, QWORD PTR commands$47[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	mov	DWORD PTR i$52[rbp], 0
 	jmp	SHORT $LN34@launch
 $LN32@launch:
@@ -35985,6 +36666,9 @@ $LN34@launch:
 	mov	eax, DWORD PTR i$52[rbp]
 	mov	QWORD PTR tv1141[rbp], rax
 	lea	rcx, QWORD PTR commands$49[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
 	mov	rcx, QWORD PTR tv1117[rbp]
@@ -35994,7 +36678,11 @@ $LN34@launch:
 	mov	QWORD PTR tv1138[rbp], rax
 	mov	edx, 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T92[rbp]
+=======
+	lea	rcx, QWORD PTR $T97[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T97[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -36026,6 +36714,9 @@ $LN34@launch:
 	mov	eax, DWORD PTR i$52[rbp]
 	mov	edx, eax
 	lea	rcx, QWORD PTR commands$49[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	QWORD PTR tv1151[rbp], rax
@@ -36044,7 +36735,11 @@ $LN33@launch:
 	mov	QWORD PTR tv1163[rbp], rax
 	mov	edx, 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T93[rbp]
+=======
+	lea	rcx, QWORD PTR $T98[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T98[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -36059,6 +36754,9 @@ $LN33@launch:
 =======
 	mov	QWORD PTR tv1198[rbp], rax
 	lea	rcx, QWORD PTR commands$49[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
 	mov	QWORD PTR tv1172[rbp], rax
@@ -36084,6 +36782,9 @@ $LN33@launch:
 =======
 	mov	QWORD PTR tv1213[rbp], rax
 	lea	rcx, QWORD PTR commands$49[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	?size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::size
 	mov	QWORD PTR tv1187[rbp], rax
@@ -36097,7 +36798,11 @@ $LN33@launch:
 ; 259  :                             std::cin >> menuSelection;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rdx, QWORD PTR menuSelection$49[rbp]
+=======
+	lea	rdx, QWORD PTR menuSelection$51[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rdx, QWORD PTR menuSelection$51[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -36107,9 +36812,15 @@ $LN33@launch:
 ; 260  :                         } while (menuSelection > commands.size());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$49[rbp]
 	mov	QWORD PTR tv1191[rbp], rax
 	lea	rcx, QWORD PTR commands$47[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$51[rbp]
+	mov	QWORD PTR tv1215[rbp], rax
+	lea	rcx, QWORD PTR commands$49[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$51[rbp]
 	mov	QWORD PTR tv1215[rbp], rax
@@ -36124,9 +36835,15 @@ $LN33@launch:
 ; 262  :                         if (menuSelection == commands.size()) break;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$49[rbp]
 	mov	QWORD PTR tv1196[rbp], rax
 	lea	rcx, QWORD PTR commands$47[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$51[rbp]
+	mov	QWORD PTR tv1220[rbp], rax
+	lea	rcx, QWORD PTR commands$49[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$51[rbp]
 	mov	QWORD PTR tv1220[rbp], rax
@@ -36137,15 +36854,21 @@ $LN33@launch:
 	cmp	rcx, rax
 	jne	SHORT $LN58@launch
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$48[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR commands$47[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR selectedCommand$50[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR commands$49[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	jmp	$LN38@launch
@@ -36154,12 +36877,21 @@ $LN58@launch:
 ; 263  :                         selectedCommand = commands[menuSelection];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	mov	eax, DWORD PTR menuSelection$49[rbp]
 	mov	edx, eax
 	lea	rcx, QWORD PTR commands$47[rbp]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	mov	rdx, rax
 	lea	rcx, QWORD PTR selectedCommand$48[rbp]
+=======
+	mov	eax, DWORD PTR menuSelection$51[rbp]
+	mov	edx, eax
+	lea	rcx, QWORD PTR commands$49[rbp]
+	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
+	mov	rdx, rax
+	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	mov	eax, DWORD PTR menuSelection$51[rbp]
 	mov	edx, eax
@@ -36231,6 +36963,9 @@ $LN58@launch:
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR $T99[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
@@ -36239,7 +36974,11 @@ $LN58@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0P@NCIIAOKI@View?5Inventory@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$48[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$50[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -36287,6 +37026,9 @@ $LN58@launch:
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 	npad	1
 	lea	rcx, QWORD PTR $T101[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 
@@ -36299,7 +37041,11 @@ $LN59@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0BA@PFEIDNLD@Add?5New?5Product@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$48[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$50[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -36420,6 +37166,9 @@ $LN63@launch:
 	npad	1
 	lea	rcx, QWORD PTR parameters$53[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	jmp	SHORT $LN60@launch
 $LN61@launch:
@@ -36427,6 +37176,7 @@ $LN61@launch:
 ; 274  :                         else if (selectedCommand == "Modify Product") {
 
 	lea	rdx, OFFSET FLAT:??_C@_0P@GJAPJPIO@Modify?5Product@
+<<<<<<< HEAD
 <<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$48[rbp]
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
@@ -36450,6 +37200,12 @@ $LN63@launch:
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 	test	eax, eax
+=======
+	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
+	movzx	eax, al
+	test	eax, eax
+>>>>>>> parent of b29ae41... Product Complete
 	je	SHORT $LN64@launch
 
 ; 282  : 
@@ -36463,11 +37219,15 @@ $LN64@launch:
 
 	lea	rdx, OFFSET FLAT:??_C@_0M@MAHCEMIN@Del?5product@
 	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 $LN60@launch:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ; 279  :                             //Todo
 ; 280  :                         }
@@ -36480,6 +37240,8 @@ $LN60@launch:
 	npad	1
 	lea	rcx, QWORD PTR commands$47[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 ; 286  :                             //Todo
 ; 287  :                         }
 ; 288  : 
@@ -36487,6 +37249,7 @@ $LN60@launch:
 ; 290  :                     } while (true);
 
 	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+<<<<<<< HEAD
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR commands$49[rbp]
@@ -36547,6 +37310,32 @@ $LN38@launch:
 	npad	1
 	lea	rcx, QWORD PTR commands$28[rbp]
 =======
+=======
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	npad	1
+	lea	rcx, QWORD PTR commands$49[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	xor	eax, eax
+	cmp	eax, 1
+	jne	$LN28@launch
+$LN38@launch:
+
+; 291  : 
+; 292  :                 }
+; 293  :             
+; 294  :             }
+; 295  :           
+; 296  : 
+; 297  :             _logger << "Ending session and terminating";
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rax, QWORD PTR [rax+40]
+	mov	QWORD PTR tv1377[rbp], rax
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rax, QWORD PTR [rax+40]
+	mov	rax, QWORD PTR [rax]
+	mov	rax, QWORD PTR [rax]
+>>>>>>> parent of b29ae41... Product Complete
 	mov	QWORD PTR tv1379[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BP@HIAJAIHD@Ending?5session?5and?5terminating@
 	lea	rcx, QWORD PTR $T105[rbp]
@@ -36566,6 +37355,9 @@ $LN38@launch:
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR commands$30[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	xor	eax, eax
@@ -36574,8 +37366,13 @@ $LN38@launch:
 $LN6@launch:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; 292  : 
 ; 293  :     }
+=======
+; 299  : 
+; 300  :     }
+>>>>>>> parent of b29ae41... Product Complete
 =======
 ; 299  : 
 ; 300  :     }
@@ -36602,7 +37399,11 @@ $LN6@launch:
 	xor	rcx, rbp
 	call	__security_check_cookie
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rsp, QWORD PTR [rbp+6064]
+=======
+	lea	rsp, QWORD PTR [rbp+6400]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rsp, QWORD PTR [rbp+6400]
 >>>>>>> parent of b29ae41... Product Complete
@@ -36620,6 +37421,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -36855,6 +37657,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -37102,6 +37906,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
@@ -37126,6 +37933,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -37361,6 +38169,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -37608,6 +38418,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$1@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
@@ -37632,6 +38445,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -37867,6 +38681,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -38114,6 +38930,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$2@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
@@ -38138,6 +38957,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -38373,6 +39193,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -38620,6 +39442,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$3@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$3
 	mov	QWORD PTR [rsp+8], rcx
@@ -38644,6 +39469,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -38879,6 +39705,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -39126,6 +39954,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$4@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$4
 	mov	QWORD PTR [rsp+8], rcx
@@ -39150,6 +39981,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -39385,6 +40217,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -39632,6 +40466,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$6@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
@@ -39644,7 +40481,11 @@ this$ = 6432
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T100[rbp]
+=======
+	lea	rcx, QWORD PTR $T107[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T107[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -39663,6 +40504,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -39898,6 +40740,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -40145,6 +40989,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$7@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
@@ -40169,6 +41016,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -40404,6 +41252,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -40651,6 +41501,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$8@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$8
 	mov	QWORD PTR [rsp+8], rcx
@@ -40675,6 +41528,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -40910,6 +41764,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -41157,6 +42013,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$9
 	mov	QWORD PTR [rsp+8], rcx
@@ -41181,6 +42040,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -41416,6 +42276,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -41663,6 +42525,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$11
 	mov	QWORD PTR [rsp+8], rcx
@@ -41672,7 +42537,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$30[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -41691,6 +42560,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -41926,6 +42796,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -42173,6 +43045,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$12
 	mov	QWORD PTR [rsp+8], rcx
@@ -42182,7 +43057,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -42201,6 +43080,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -42436,6 +43316,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -42683,6 +43565,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$13
 	mov	QWORD PTR [rsp+8], rcx
@@ -42692,7 +43577,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T57[rbp]
+=======
+	lea	rcx, QWORD PTR $T61[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T61[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -42711,6 +43600,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -42946,6 +43836,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -43193,6 +44085,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$14
 	mov	QWORD PTR [rsp+8], rcx
@@ -43202,7 +44097,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T58[rbp]
+=======
+	lea	rcx, QWORD PTR $T62[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T62[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -43221,6 +44120,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -43456,6 +44356,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -43703,6 +44605,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
@@ -43712,7 +44617,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -43731,6 +44640,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -43966,6 +44876,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -44213,6 +45125,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$18
 	mov	QWORD PTR [rsp+8], rcx
@@ -44222,7 +45137,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$33[rbp]
+=======
+	lea	rcx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$35[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -44241,6 +45160,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -44476,6 +45396,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -44723,6 +45645,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$19
 	mov	QWORD PTR [rsp+8], rcx
@@ -44732,7 +45657,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -44751,6 +45680,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -44986,6 +45916,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -45233,6 +46165,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$20
 	mov	QWORD PTR [rsp+8], rcx
@@ -45242,7 +46177,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T63[rbp]
+=======
+	lea	rcx, QWORD PTR $T67[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T67[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -45261,6 +46200,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -45496,6 +46436,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -45743,6 +46685,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$21
 	mov	QWORD PTR [rsp+8], rcx
@@ -45752,7 +46697,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T64[rbp]
+=======
+	lea	rcx, QWORD PTR $T68[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T68[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -45771,6 +46720,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -46006,6 +46956,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -46253,6 +47205,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$22
 	mov	QWORD PTR [rsp+8], rcx
@@ -46262,7 +47217,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$37[rbp]
+=======
+	lea	rcx, QWORD PTR parameters$39[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR parameters$39[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -46281,6 +47240,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -46516,6 +47476,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -46763,6 +47725,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$24@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$24
 	mov	QWORD PTR [rsp+8], rcx
@@ -46772,7 +47737,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$38[rbp]
+=======
+	lea	rcx, QWORD PTR results$40[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$40[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -46791,6 +47760,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -47026,6 +47996,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -47273,6 +48245,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$25@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$25
 	mov	QWORD PTR [rsp+8], rcx
@@ -47282,7 +48257,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T67[rbp]
+=======
+	lea	rcx, QWORD PTR $T71[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T71[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -47301,6 +48280,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -47536,6 +48516,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -47783,6 +48765,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$27
 	mov	QWORD PTR [rsp+8], rcx
@@ -47792,9 +48777,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T69[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T72[rbp]
 	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
 >>>>>>> parent of b29ae41... Product Complete
@@ -47811,6 +48799,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -48048,6 +49037,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$28
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -48304,7 +49295,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T70[rbp]
+=======
+	lea	rcx, QWORD PTR $T74[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T74[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -48323,6 +49318,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -48559,6 +49555,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$29
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -48815,7 +49813,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T71[rbp]
+=======
+	lea	rcx, QWORD PTR $T75[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T75[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -48834,6 +49836,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -49070,6 +50073,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$30
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -49326,9 +50331,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T72[rbp]
 	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T76[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -49345,6 +50353,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -49582,6 +50591,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$31
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -49838,9 +50849,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$41[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T77[rbp]
 	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
 >>>>>>> parent of b29ae41... Product Complete
@@ -49857,6 +50871,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -50093,6 +51108,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -50340,6 +51357,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$33@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$33
 	mov	QWORD PTR [rsp+8], rcx
@@ -50349,9 +51369,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$42[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR parameters$43[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 >>>>>>> parent of b29ae41... Product Complete
@@ -50368,6 +51391,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -50605,6 +51629,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$34@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$34
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -50861,9 +51887,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T75[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR results$44[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 >>>>>>> parent of b29ae41... Product Complete
@@ -50881,6 +51910,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -51116,6 +52146,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -51363,6 +52395,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$36@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$36
 	mov	QWORD PTR [rsp+8], rcx
@@ -51372,9 +52407,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameter$44[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T80[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -51392,6 +52430,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -51627,6 +52666,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -51874,6 +52915,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$38
 	mov	QWORD PTR [rsp+8], rcx
@@ -51883,9 +52927,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$45[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR parameter$46[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 >>>>>>> parent of b29ae41... Product Complete
@@ -51902,6 +52949,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -52394,6 +53442,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -52641,6 +53691,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$40
 	mov	QWORD PTR [rsp+8], rcx
@@ -52650,9 +53703,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T87[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR results$47[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 >>>>>>> parent of b29ae41... Product Complete
@@ -52670,6 +53726,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -52905,6 +53962,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -53152,6 +54211,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$41
 	mov	QWORD PTR [rsp+8], rcx
@@ -53161,9 +54223,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T83[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR ProfileofClient$48[rbp]
 	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
 >>>>>>> parent of b29ae41... Product Complete
@@ -53181,6 +54246,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -53416,6 +54482,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -53663,6 +54731,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$42
 	mov	QWORD PTR [rsp+8], rcx
@@ -53672,7 +54743,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T84[rbp]
+=======
+	lea	rcx, QWORD PTR $T92[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T92[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -53691,6 +54766,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -53926,6 +55002,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -54173,6 +55251,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$43
 	mov	QWORD PTR [rsp+8], rcx
@@ -54182,9 +55263,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T89[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T88[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -54201,6 +55285,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -54438,6 +55523,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$46@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$46
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -54694,9 +55781,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$47[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T89[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -54713,6 +55803,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -54950,6 +56041,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$47@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$47
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -55206,9 +56299,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$48[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T94[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 >>>>>>> parent of b29ae41... Product Complete
@@ -55226,6 +56322,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -55461,6 +56558,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -55708,6 +56807,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$48@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$48
 	mov	QWORD PTR [rsp+8], rcx
@@ -55717,9 +56819,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T94[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR commands$49[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 >>>>>>> parent of b29ae41... Product Complete
@@ -55737,6 +56842,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -55972,6 +57078,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -56219,6 +57327,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$49@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$49
 	mov	QWORD PTR [rsp+8], rcx
@@ -56228,7 +57339,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T95[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$50[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -56247,6 +57362,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -56482,6 +57598,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -56729,6 +57847,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$50@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$50
 	mov	QWORD PTR [rsp+8], rcx
@@ -56738,9 +57859,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T96[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T99[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -56757,6 +57881,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -56993,6 +58118,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -57509,6 +58636,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$52@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$52
 	mov	QWORD PTR [rsp+8], rcx
@@ -57518,8 +58648,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T98[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T101[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
@@ -58597,6 +59730,9 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 	lea	rcx, QWORD PTR $T105[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
@@ -58604,7 +59740,11 @@ this$ = 6432
 	pop	rbp
 	ret	0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ?dtor$52@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$52
+=======
+?dtor$57@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$57
+>>>>>>> parent of b29ae41... Product Complete
 =======
 ?dtor$57@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$57
 >>>>>>> parent of b29ae41... Product Complete
@@ -58618,6 +59758,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -58853,6 +59994,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -59100,6 +60243,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$0@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
@@ -59125,6 +60271,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -59360,6 +60507,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -59607,6 +60756,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$1@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
@@ -59632,6 +60784,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -59867,6 +61020,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -60114,6 +61269,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$2@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
@@ -60139,6 +61297,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -60374,6 +61533,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -60621,6 +61782,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$3@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$3
 	mov	QWORD PTR [rsp+8], rcx
@@ -60646,6 +61810,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -60881,6 +62046,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -61128,6 +62295,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$4@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$4
 	mov	QWORD PTR [rsp+8], rcx
@@ -61153,6 +62323,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -61388,6 +62559,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -61635,6 +62808,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$6@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
@@ -61647,7 +62823,11 @@ this$ = 6432
 	mov	r8d, 1
 	mov	edx, 40					; 00000028H
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T100[rbp]
+=======
+	lea	rcx, QWORD PTR $T107[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T107[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -61667,6 +62847,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -61902,6 +63083,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -62149,6 +63332,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$7@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
@@ -62174,6 +63360,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -62409,6 +63596,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -62656,6 +63845,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$8@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$8
 	mov	QWORD PTR [rsp+8], rcx
@@ -62681,6 +63873,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -62916,6 +64109,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -63163,6 +64358,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$9@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$9
 	mov	QWORD PTR [rsp+8], rcx
@@ -63188,6 +64386,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -63423,6 +64622,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -63670,6 +64871,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$11@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$11
 	mov	QWORD PTR [rsp+8], rcx
@@ -63679,7 +64883,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$28[rbp]
+=======
+	lea	rcx, QWORD PTR commands$30[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$30[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -63699,6 +64907,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -63934,6 +65143,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -64181,6 +65392,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$12@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$12
 	mov	QWORD PTR [rsp+8], rcx
@@ -64190,7 +65404,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$29[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$31[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$31[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -64210,6 +65428,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -64445,6 +65664,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -64692,6 +65913,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$13@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$13
 	mov	QWORD PTR [rsp+8], rcx
@@ -64701,7 +65925,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T57[rbp]
+=======
+	lea	rcx, QWORD PTR $T61[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T61[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -64721,6 +65949,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -64956,6 +66185,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -65203,6 +66434,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$14@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$14
 	mov	QWORD PTR [rsp+8], rcx
@@ -65212,7 +66446,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T58[rbp]
+=======
+	lea	rcx, QWORD PTR $T62[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T62[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -65232,6 +66470,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -65467,6 +66706,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -65714,6 +66955,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$15@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
@@ -65723,7 +66967,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR ClientHandler$32[rbp]
+=======
+	lea	rcx, QWORD PTR ClientHandler$34[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR ClientHandler$34[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -65743,6 +66991,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -65978,6 +67227,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -66225,6 +67476,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$18@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$18
 	mov	QWORD PTR [rsp+8], rcx
@@ -66234,7 +67488,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$33[rbp]
+=======
+	lea	rcx, QWORD PTR commands$35[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR commands$35[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -66254,6 +67512,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -66489,6 +67748,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -66736,6 +67997,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$19@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$19
 	mov	QWORD PTR [rsp+8], rcx
@@ -66745,7 +68009,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$34[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$36[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$36[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -66765,6 +68033,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -67000,6 +68269,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -67247,6 +68518,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$20@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$20
 	mov	QWORD PTR [rsp+8], rcx
@@ -67256,7 +68530,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T63[rbp]
+=======
+	lea	rcx, QWORD PTR $T67[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T67[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -67276,6 +68554,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -67511,6 +68790,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -67758,6 +69039,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$21@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$21
 	mov	QWORD PTR [rsp+8], rcx
@@ -67767,7 +69051,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T64[rbp]
+=======
+	lea	rcx, QWORD PTR $T68[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T68[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -67787,6 +69075,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -68022,6 +69311,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -68269,6 +69560,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$22@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$22
 	mov	QWORD PTR [rsp+8], rcx
@@ -68278,7 +69572,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$37[rbp]
+=======
+	lea	rcx, QWORD PTR parameters$39[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR parameters$39[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -68298,6 +69596,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -68533,6 +69832,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -68780,6 +70081,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$24@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$24
 	mov	QWORD PTR [rsp+8], rcx
@@ -68789,7 +70093,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$38[rbp]
+=======
+	lea	rcx, QWORD PTR results$40[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR results$40[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -68809,6 +70117,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -69044,6 +70353,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -69291,6 +70602,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$25@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$25
 	mov	QWORD PTR [rsp+8], rcx
@@ -69300,7 +70614,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T67[rbp]
+=======
+	lea	rcx, QWORD PTR $T71[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T71[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -69320,6 +70638,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -69555,6 +70874,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -69802,6 +71123,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$27@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$27
 	mov	QWORD PTR [rsp+8], rcx
@@ -69811,9 +71135,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T69[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T72[rbp]
 	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
 >>>>>>> parent of b29ae41... Product Complete
@@ -69831,6 +71158,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -70068,6 +71396,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$28@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$28
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -70324,7 +71654,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T70[rbp]
+=======
+	lea	rcx, QWORD PTR $T74[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T74[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -70344,6 +71678,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -70580,6 +71915,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$29@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$29
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -70836,7 +72173,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T71[rbp]
+=======
+	lea	rcx, QWORD PTR $T75[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T75[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -70856,6 +72197,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -71092,6 +72434,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$30@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$30
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -71348,9 +72692,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T72[rbp]
 	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T76[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -71368,6 +72715,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -71605,6 +72953,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$31@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$31
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -71861,9 +73211,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameters$41[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T77[rbp]
 	call	??1locale@std@@QEAA@XZ			; std::locale::~locale
 >>>>>>> parent of b29ae41... Product Complete
@@ -71881,6 +73234,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -72117,6 +73471,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -72364,6 +73720,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$33@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$33
 	mov	QWORD PTR [rsp+8], rcx
@@ -72373,9 +73732,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$42[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR parameters$43[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 >>>>>>> parent of b29ae41... Product Complete
@@ -72393,6 +73755,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -72630,6 +73993,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$34@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$34
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -72886,9 +74251,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T75[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR results$44[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 >>>>>>> parent of b29ae41... Product Complete
@@ -72907,6 +74275,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -73142,6 +74511,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -73389,6 +74760,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$36@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$36
 	mov	QWORD PTR [rsp+8], rcx
@@ -73398,9 +74772,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR parameter$44[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T80[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -73419,6 +74796,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -73654,6 +75032,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -73901,6 +75281,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$38@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$38
 	mov	QWORD PTR [rsp+8], rcx
@@ -73910,9 +75293,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR results$45[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR parameter$46[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 >>>>>>> parent of b29ae41... Product Complete
@@ -73930,6 +75316,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -74423,6 +75810,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -74670,6 +76059,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$40@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$40
 	mov	QWORD PTR [rsp+8], rcx
@@ -74679,9 +76071,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T87[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR results$47[rbp]
 	call	??1any@std@@QEAA@XZ			; std::any::~any
 >>>>>>> parent of b29ae41... Product Complete
@@ -74700,6 +76095,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -74935,6 +76331,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -75182,6 +76580,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$41@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$41
 	mov	QWORD PTR [rsp+8], rcx
@@ -75191,9 +76592,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T83[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR ProfileofClient$48[rbp]
 	call	??1Clientprofile@Persistence@TechnicalServices@@QEAA@XZ
 >>>>>>> parent of b29ae41... Product Complete
@@ -75212,6 +76616,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -75447,6 +76852,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -75694,6 +77101,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$42@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$42
 	mov	QWORD PTR [rsp+8], rcx
@@ -75703,7 +77113,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T84[rbp]
+=======
+	lea	rcx, QWORD PTR $T92[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR $T92[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -75723,6 +77137,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -75958,6 +77373,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -76205,6 +77622,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$43@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$43
 	mov	QWORD PTR [rsp+8], rcx
@@ -76214,9 +77634,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T89[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T88[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -76234,6 +77657,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -76471,6 +77895,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$46@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$46
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -76727,9 +78153,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR commands$47[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T89[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -76747,6 +78176,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -76984,6 +78414,8 @@ __$ArrayPad$ = 6056
 this$ = 6096
 ?dtor$47@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$47
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -77240,9 +78672,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR selectedCommand$48[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T94[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 >>>>>>> parent of b29ae41... Product Complete
@@ -77261,6 +78696,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -77496,6 +78932,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -77743,6 +79181,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$48@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$48
 	mov	QWORD PTR [rsp+8], rcx
@@ -77752,9 +79193,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T94[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR commands$49[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 >>>>>>> parent of b29ae41... Product Complete
@@ -77773,6 +79217,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -78008,6 +79453,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -78255,6 +79702,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$49@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$49
 	mov	QWORD PTR [rsp+8], rcx
@@ -78264,7 +79714,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T95[rbp]
+=======
+	lea	rcx, QWORD PTR selectedCommand$50[rbp]
+>>>>>>> parent of b29ae41... Product Complete
 =======
 	lea	rcx, QWORD PTR selectedCommand$50[rbp]
 >>>>>>> parent of b29ae41... Product Complete
@@ -78284,6 +79738,7 @@ ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
 <<<<<<< HEAD
+<<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
 menuSelection$30 = 500
@@ -78519,6 +79974,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -78766,6 +80223,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$50@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$50
 	mov	QWORD PTR [rsp+8], rcx
@@ -78775,9 +80235,12 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T96[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T99[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 >>>>>>> parent of b29ae41... Product Complete
@@ -78795,6 +80258,7 @@ ClientsFromDB$ = 72
 ClientsProfileFromDB$ = 136
 credentials$ = 208
 sessionControl$ = 344
+<<<<<<< HEAD
 <<<<<<< HEAD
 commands$28 = 376
 selectedCommand$29 = 440
@@ -79031,6 +80495,8 @@ tv1026 = 6048
 __$ArrayPad$ = 6056
 this$ = 6096
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 commands$30 = 376
 selectedCommand$31 = 440
 menuSelection$32 = 500
@@ -79548,6 +81014,9 @@ tv1449 = 6376
 tv1050 = 6384
 __$ArrayPad$ = 6392
 this$ = 6432
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 ?dtor$52@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA PROC	; `UI::SimpleUI::launch'::`1'::dtor$52
 	mov	QWORD PTR [rsp+8], rcx
@@ -79557,8 +81026,11 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 <<<<<<< HEAD
+<<<<<<< HEAD
 	lea	rcx, QWORD PTR $T98[rbp]
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
 	lea	rcx, QWORD PTR $T101[rbp]
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
@@ -80640,6 +82112,9 @@ this$ = 6432
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
 	lea	rcx, QWORD PTR $T105[rbp]
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
@@ -80647,7 +82122,11 @@ this$ = 6432
 	pop	rbp
 	ret	0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ?dtor$52@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$52
+=======
+?dtor$57@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$57
+>>>>>>> parent of b29ae41... Product Complete
 =======
 ?dtor$57@?0??launch@SimpleUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SimpleUI::launch'::`1'::dtor$57
 >>>>>>> parent of b29ae41... Product Complete

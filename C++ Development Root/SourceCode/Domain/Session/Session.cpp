@@ -7,6 +7,9 @@
 <<<<<<< HEAD
 =======
 #include <locale>       // touuper(), locale()
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
 
 #include <vector>
@@ -216,6 +219,9 @@ namespace Domain::Product
 =======
     auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
     
+<<<<<<< HEAD
+>>>>>>> parent of b29ae41... Product Complete
+=======
 >>>>>>> parent of b29ae41... Product Complete
     void line()
     {
@@ -225,8 +231,11 @@ namespace Domain::Product
 
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> parent of b29ae41... Product Complete
     
    
 >>>>>>> parent of b29ae41... Product Complete
