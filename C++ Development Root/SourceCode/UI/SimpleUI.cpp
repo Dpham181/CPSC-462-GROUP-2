@@ -156,6 +156,8 @@ namespace UI
                             if (results.has_value()) {
                                 _logger << "Successfully Added \" ";
                                 ClientsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Client>&>(results);
+                                ClientsProfileFromDB.push_back({ std::atoi(parameters[1].c_str()),parameters[2] , std::atoi(parameters[3].c_str()) });
+
                             }
 
                         }
@@ -166,8 +168,9 @@ namespace UI
                         }
                         // select to update the profile of client.
                         else if (selectedCommand == "Update Client Profile") {
-                            ClientHandler->ClientsPDB(ClientsProfileFromDB);
+                             ClientHandler->ClientsPDB(ClientsProfileFromDB);
                             ClientHandler->ViewClients(ClientsFromDB);
+                          
                             char response;
                             int clientId =0;
                             std::cout << "Please choose Client Id: ";
@@ -191,9 +194,9 @@ namespace UI
                                 if (results.has_value()) {
                                     _logger << "Successfully Updated\n";
                                     ClientsProfileFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Clientprofile>&>(results);
-                                    
+
                                 }
-                            
+                              
                                 
                             }
 

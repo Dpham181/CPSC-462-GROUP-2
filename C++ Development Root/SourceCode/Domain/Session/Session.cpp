@@ -162,8 +162,10 @@ namespace Domain::Client
     // ADDING NEW CLIENT TO THE MEMORY DATABASE 
     std::vector<Client> ClientDomain::addClient(const Client& Client) {
         _UpdatedDB.push_back(Client); // add new client to list of static client 
-        Clientprofile newcp = { Client.clientid,  "", 0 }; // also create an temporary profile 
-        _UpdatedprofileDB.push_back(newcp);
+        _Clientprofile.client_id = Client.clientid;
+        _Clientprofile.dob = "";
+        _Clientprofile.income = 0;
+        _UpdatedprofileDB.push_back(_Clientprofile);
         return  _UpdatedDB;
     }
     // Updating the Client profile
@@ -189,7 +191,7 @@ namespace Domain::Client
         if (DOB != "")  _Clientprofile.dob = DOB; 
         if (Income > 0) _Clientprofile.income = Income; 
          _UpdatedprofileDB.at(ReplaceIndex) = _Clientprofile;
-
+        
 
         return   _UpdatedprofileDB;
     }
@@ -290,8 +292,16 @@ namespace Domain::Product
         return _ProductDb;
     }
     std::vector<Product>   ProductDomain::del(const int ProductId) {
-        //Todo
-        return {};
+        char reponse;
+        do
+        {
+            std::cout << "Do you want to save this product? (Y/N/Q)";
+            std::cin >> reponse;
+            reponse = std::toupper(reponse, std::locale());
+        } while (reponse != 'Y' && reponse != 'Q');
+
+        if (reponse == 'Y') _ProductDb.erase(_ProductDb.begin() + ProductId);
+        return _ProductDb;
     }
     std::vector<Product>   ProductDomain::modify(const Product CurrentProduct, const std::string ProductName, const int Price) {
         //Todo
