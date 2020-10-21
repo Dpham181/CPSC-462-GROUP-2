@@ -21,8 +21,10 @@ namespace UI
       static std::unique_ptr<UserInterfaceHandler> createUI();                                 // must be static
 
 
+
       // Operations, throws UIException
       virtual void launch() = 0;                                                               // must be virtual and pure
+    
 
 
       // Interface class destructor
