@@ -5,8 +5,7 @@
 #include <any>
 #include <iomanip>     // setw()
 #include <locale>       // touuper(), locale()
-#include <iostream>
-#include <iterator>
+
 #include <vector>
 
 namespace  // anonymous (private) working area
@@ -74,17 +73,15 @@ namespace  // anonymous (private) working area
  }
  std::any ModifyProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
  {
-     productcontrol.view();
-     auto newDBproduct = productcontrol.modify(std::atoi(agrs[0].c_str()), agrs[1], std::atoi(agrs[2].c_str()));
-     return newDBproduct;
+     //Todo
+     return {};
 
  }
  std::any Delproduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
  {  
-     productcontrol.view();
-     auto newDBproduct = productcontrol.del(std::atoi(agrs[0].c_str()));
+     //Todo
 
-     return newDBproduct;
+     return {};
 
  }
 
@@ -219,7 +216,7 @@ namespace Domain::Product
 
 {
     auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
-    char reponse;
+    
     void line()
     {
         for (int i = 1; i < 41; i++)
@@ -227,16 +224,7 @@ namespace Domain::Product
         std::cout << "\n";
 
     }
-    void menu(std::string message) {
-        
-        do
-        {
-            std::cout << message + " (Y/N/Q)";
-            std::cin >> reponse;
-            reponse = std::toupper(reponse, std::locale());
-        } while (reponse != 'Y' && reponse != 'Q');
-
-    }
+    
    
     ProductDomain::ProductDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
     {
@@ -291,43 +279,33 @@ namespace Domain::Product
         return   newProduct;
     }
     std::vector<Product> ProductDomain::save(const Product& Newproduct) {
-        menu("Do you want to add this product?");
+        char reponse;
+        do
+        {
+            std::cout <<   "Do you want to save this product? (Y/N/Q)";
+            std::cin >> reponse;
+            reponse = std::toupper(reponse, std::locale());
+        } while (reponse != 'Y' && reponse != 'Q');
 
         if (reponse == 'Y') _ProductDb.push_back(Newproduct);
 
         return _ProductDb;
     }
     std::vector<Product>   ProductDomain::del(const int ProductId) {
-        menu("Do you want to add del this product?");
-        
-        // if unorder index -> need to loop for finding value and remove after.  
+        char reponse;
+        do
+        {
+            std::cout << "Do you want to save this product? (Y/N/Q)";
+            std::cin >> reponse;
+            reponse = std::toupper(reponse, std::locale());
+        } while (reponse != 'Y' && reponse != 'Q');
 
-            //auto* front = &_ProductDb.front();
-            //for (const auto& p : _ProductDb)
-            //    if (p.id == ProductId) {
-            //        auto position = std::distance(front, &p);
-            //    }
-        
-        // this method is only work with order index
-        int removeat = ProductId - 1;
-       
-        if (reponse == 'Y') _ProductDb.erase(_ProductDb.begin() + removeat);
+        if (reponse == 'Y') _ProductDb.erase(_ProductDb.begin() + ProductId);
         return _ProductDb;
     }
-    std::vector<Product>   ProductDomain::modify(const int CurrentProductId, const std::string ProductName, const int Price) {
-        // this also only works with order index 
-        menu("Do you want to continute?");
-        int ReplaceIndex = 0;
-      
-            for ( auto& p : _ProductDb) {
-                if (p.id == CurrentProductId) {
-                    ReplaceIndex = p.id - 1; 
-                    if (ProductName != "") p.Name = ProductName;
-                    if (Price > 0) p.Price = Price;
-                    _ProductDb.at(ReplaceIndex) = p;
-                }
-            }
-        return _ProductDb;
+    std::vector<Product>   ProductDomain::modify(const Product CurrentProduct, const std::string ProductName, const int Price) {
+        //Todo
+        return {};
     }
     ProductManagement::ProductManagement(const UserCredentials& user) : ProductDomain("Product Management", user)
     {

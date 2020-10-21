@@ -32,7 +32,7 @@ namespace Domain::Product
      virtual  std::vector<Product>   save(const Product & Product) = 0;
 
      virtual  std::vector<Product>   del(const int ProductId)=0;
-     virtual  std::vector<Product>   modify(const int CurrentProduct, const std::string ProductName, const int Price)=0;
+     virtual  std::vector<Product>   modify(const Product CurrentProduct, const std::string ProductName, const int Price)=0;
      //virtual  std::vector<Product>   link()
 
 
