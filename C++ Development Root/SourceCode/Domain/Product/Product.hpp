@@ -26,7 +26,7 @@ namespace Domain::Product
         std::vector<Product>   save(const Product & Product) override;
 
         std::vector<Product>   del(const int ProductId) override;
-        std::vector<Product>   modify(const Product CurrentProduct, const std::string ProductName, const int Price) override;
+        std::vector<Product>   modify(const int CurrentProduct, const std::string ProductName, const int Price) override;
 
       ~ProductDomain() noexcept override = 0 ;
   protected:
