@@ -102,24 +102,18 @@ STUB(Shutdown)
 std::any AddUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
 {
 
-    auto result = session.addUser({ std::atoi(agrs[0].c_str()), agrs[1], agrs[2] });
+    auto result = session.addUser( std::atoi(agrs[0].c_str()), agrs[1], agrs[2] );
 
     return  result;
 }
-std::any UpdateUserProfile(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
-{
-    auto result = session.searchUserId(std::atoi(agrs[0].c_str()));
 
-
-    return  result;
-}
-/* std::any ViewUsers(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
+ std::any UpdateUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
  {
-
-
+     auto result = session.updateUser({ std::atoi(agrs[0].c_str()), agrs[1], agrs[2], {agrs[3]}, std::atoi(agrs[4].c_str()), {agrs[5]} });
 
      return  result;
- }*/
+ }
+
 std::any ViewUsers(Domain::User::UserDomain& session, const std::vector<std::string>& agrs) {
 
     return  "true";
@@ -401,7 +395,7 @@ namespace Domain::User
 
 
     // get updating the static data of User and UserCredentials
-    std::vector<User> UserDomain::UsersDB(const std::vector<User>& UsersDB)
+    std::vector<UserCredentials> UserDomain::UsersDB(const std::vector<UserCredentials>& UsersDB)
     {
         _UpdatedUserDB = UsersDB;
         // generating the result in updating table 
@@ -409,14 +403,7 @@ namespace Domain::User
         return _UpdatedUserDB;
     }
 
-    std::vector<UserCredentials> UserDomain::UsersPDB(const std::vector<UserCredentials>& UserprofileDB)
-    {
-        _UpdatedUserProfileDB = UserprofileDB;
-
-        return _UpdatedUserProfileDB;
-    }
-
-    void UserDomain::viewUsers(const std::vector<User>& UsersDB)
+    void UserDomain::viewUsers(const std::vector<UserCredentials>& UsersDB)
     {
         line();
         std::cout << std::setw(49) << "list of users\n";
@@ -425,11 +412,11 @@ namespace Domain::User
         line();
 
         for (const auto& c : UsersDB)
-            std::cout << std::setw(15) << std::to_string(c.userID) << std::setw(20) << c.userName << std::setw(20) << c.userRole << std::endl;
+            std::cout << std::setw(15) << std::to_string(c.userID) << std::setw(20) << c.userName << std::setw(20) << c.roles[0] << std::endl;
         line();
     }
 
-    void UserDomain::viewUserProfiles(const std::vector<UserCredentials>& UsersPDB)
+    void UserDomain::viewUserProfiles(const std::vector<UserCredentials>& UsersDB)
     {
 
         line();
@@ -438,7 +425,7 @@ namespace Domain::User
         std::cout << std::setw(15) << "User Name" << std::setw(20) << "Pass Phrase" << std::setw(20) << "Role" << std::setw(20) << "Status" << "\n";
         line();
 
-        for (const auto& c : UsersPDB)
+        for (const auto& c : UsersDB)
         {
             std::string userStatus;
             if (c.status == 1) userStatus = "Access Allowed";
@@ -450,25 +437,16 @@ namespace Domain::User
     }
 
     // ADDING NEW USER TO THE MEMORY DATABASE 
-    std::vector<User>  UserDomain::addUser(const User& user)
-        //std::pair<std::vector<User>, std::vector<UserCredentials>>  UserDomain::addUser(const User& user)
+    std::vector<UserCredentials>  UserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
     {
-        _UpdatedUserDB.push_back(user); // add new User to list of static User 
-        UserCredentials newUserProfile = { user.userName,  "123456", std::vector<std::string> {user.userRole}, 1 };    // also create an temporary user profile 
-        _UpdatedUserProfileDB.push_back(newUserProfile);
-
-        //std::pair<std::vector<User>, std::vector<UserCredentials>> UerDBPair(_UpdatedUserDB, _UpdatedUserProfileDB);
-        //return  UerDBPair;
+        UserCredentials newUser = { UserID,  UserName, "123456", {Role}, 1 , {} }; 
+        _UpdatedUserDB.push_back(newUser); // add new User to list of static User 
 
         return _UpdatedUserDB;
     }
 
-    // Updating the User profile
-       /* int         client_id;
-        std::string dob;
-        int         income;*/
-    UserCredentials   UserDomain::searchUserId(const int UserId) {
-
+    UserCredentials   UserDomain::searchUserId(const int UserId) 
+    {
         for (const auto& StoredUser : _UpdatedUserDB)
         {
             if (StoredUser.userID == UserId)
@@ -477,35 +455,38 @@ namespace Domain::User
             }
         }
 
-        for (const auto& UserProfile : _UpdatedUserProfileDB) {
-            if (UserProfile.userName == _User.userName) {
-                _Userfile = UserProfile;
-                return  _Userfile;
-            }
-
-        }
+        return _User;
     }
 
-    UserCredentials UserDomain::updateUserProfile(const std::string UserName, std::string PassPhrase, std::string Role, const int Status)
+    //std::vector<UserCredentials> UserDomain::updateUser(const int UserID, const std::string UserName, const std::string PassPhrase, const std::string Role, const int Status, const std::vector<std::string> SpareTime)
+    std::vector<UserCredentials> UserDomain::updateUser(const UserCredentials& User)
     {
-        if (UserName != "") {
-            _Userfile.userName = UserName;
-
+        _User = searchUserId(User.userID);
+        int ReplaceIndex = User.userID - 1;
+        if (User.userName != "") 
+        {
+            _User.userName = User.userName;
         }
-        else if (PassPhrase != "") {
-            _Userfile.passPhrase = PassPhrase;
+        if (User.passPhrase != "") 
+        {
+            _User.passPhrase = User.passPhrase;
         }
-        else if (Role != "") {
-            _Userfile.roles[0] = Role;
+        if (User.roles[0] != "")
+        {
+            _User.roles = User.roles;
         }
-        else if (Status != -1) {
-            _Userfile.status = Status;
-
+        if (User.status != -1) 
+        {
+            _User.status = User.status;
+        }
+        if (User.spareTime[0] !=  "")
+        {
+            _User.spareTime = User.spareTime;
         }
 
+        _UpdatedUserDB.at(ReplaceIndex) = _User;
 
-
-        return _Userfile;
+        return _UpdatedUserDB;
     }
 
     UserManagement::UserManagement(const UserCredentials& user) : UserDomain("User Management", user)
@@ -516,13 +497,11 @@ namespace Domain::User
                          { "Add User", AddUser },
                          { "View All Users", ViewUsers },
                          { "View All User Profiles", ViewUserProfiles },
-                         { "Update User Profile", UpdateUserProfile },
-                         { "Delete User", DeleteUser }
+                         { "Update User Profile", UpdateUser },
+                         { "Delete User", DeleteUser },
 
         };
     };
-
-
 }
 
 

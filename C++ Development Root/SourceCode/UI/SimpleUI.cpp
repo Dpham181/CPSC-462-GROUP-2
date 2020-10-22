@@ -56,11 +56,10 @@ namespace UI
 
         std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClients();
         std::vector<TechnicalServices::Persistence::Clientprofile> ClientsProfileFromDB = _persistentData.ShowAllClientsProfile();
-        std::vector<TechnicalServices::Persistence::User> UsersFromDB = _persistentData.ShowAllUsers();
-        std::vector<TechnicalServices::Persistence::UserCredentials> UserFilesFromDB = _persistentData.ShowAllUserProfiles();
+        std::vector<TechnicalServices::Persistence::UserCredentials> UsersFromDB = _persistentData.ShowAllUsers();
 
         // 2) Present login screen to user and get username, password, and valid role
-        Domain::Session::UserCredentials credentials = { "", "", {""} };// ensures roles[0] exists
+        Domain::Session::UserCredentials credentials = { 0, "", "", {""}, 0, {""} };// ensures roles[0] exists
        
 
 
@@ -299,7 +298,6 @@ namespace UI
                 if (UserHandler != nullptr)
                 {
                     UsersFromDB = UserHandler->UsersDB(UsersFromDB);
-                    UserFilesFromDB = UserHandler->UsersPDB(UserFilesFromDB);
 
                     do
                     {
@@ -329,7 +327,7 @@ namespace UI
                             std::cout << " Select User Role \n";
                             for (size_t i = 0; i < roleLegalValues.size(); ++i)
                             {
-                                std::cout << i << " " << roleLegalValues[i] << std::endl;
+                                std::cout << " " << i << " " << roleLegalValues[i] << std::endl;
                             }
                             int roleChoice;
                             do
@@ -343,12 +341,8 @@ namespace UI
                             if (results.has_value())
                             {
                                 _logger << "Successfully Added. ";
-                                UsersFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::User>&>(results);
+                                UsersFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::UserCredentials>&>(results);
                             }
-                            auto newUser = UsersFromDB[UsersFromDB.size() - 1];
-                            auto newUserProfile = UserFilesFromDB[UserFilesFromDB.size() - 1];
-                            newUserProfile = { newUser.userName,  "123456", std::vector<std::string> {newUser.userRole}, 1 };    // also create an temporary user profile 
-                            UserFilesFromDB.push_back(newUserProfile);
                         }
 
                         else if (selectedCommand == "View All Users")
@@ -359,14 +353,13 @@ namespace UI
 
                         else if (selectedCommand == "View All User Profiles")
                         {
-                            UserHandler->viewUserProfiles(UserFilesFromDB);
+                            UserHandler->viewUserProfiles(UsersFromDB);
                         }
 
                         else if (selectedCommand == "Update User Profile")
                         {
                             UserHandler->viewUsers(UsersFromDB);
                             char response;
-
                             int userId;
                             std::cout << "Please choose Client Id: ";
                             std::cin >> userId;
@@ -377,17 +370,66 @@ namespace UI
                                 response = std::toupper(response, std::locale());
                             } while (response != 'Y' && response != 'Q');
 
-                            if (response == 'Y') {
-                                //TODO
+                            if (response == 'Y') 
+                            {
+                                std::vector<std::string> parameters(6);
+                                parameters[0] = std::to_string(userId);
+                                std::cout << " Do you want to change the User Name? (Y/N)"; std::cin >> response;
+                                if (response == 'Y')
+                                {
+                                    std::cout << " Enter New UserName: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+                                }
+                                else
+                                {
+                                    parameters[1] = "";
+                                }
+                                std::cout << " Do you want to set the User Password to default? (Y/N)"; std::cin >> response;
+                                if (response == 'Y')
+                                {
+                                    parameters[2] = "123456";
+                                }
+                                else
+                                {
+                                    parameters[2] = "";
+                                }
+                                std::cout << " Do you want to change the User Role? (Y/N)"; std::cin >> response;
+                                if (response == 'Y')
+                                {
+                                    std::cout << " Select User Role \n";
+                                    for (size_t i = 0; i < roleLegalValues.size(); ++i)
+                                    {
+                                        std::cout << " " << i << " " << roleLegalValues[i] << std::endl;
+                                    }
+                                    int roleChoice;
+                                    do
+                                    {
+                                        std::cout << "Please Choose 0-4: ";
+                                        std::cin >> roleChoice;
+                                    } while (roleChoice < 0 || roleChoice > 4);
+                                    parameters[3] = roleLegalValues[roleChoice];
+                                }
+                                else
+                                {
+                                    parameters[3] = "";
+                                }
+                                parameters[4] = "-1";
+                                parameters[5] = "";
+
+                                auto results = UserHandler->executeCommandUser(selectedCommand, parameters);
+                                if (results.has_value()) 
+                                {
+                                    _logger << "Successfully Updated\n";
+                                    UsersFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::UserCredentials>&>(results);
+                                }
+                                
                             }
 
                         }
 
-
-
                     } while (true);
 
                 }
+
             }
           
 

@@ -10,7 +10,6 @@
 
 namespace Domain::User
 {
-    using TechnicalServices::Persistence::User;
     using TechnicalServices::Persistence::UserCredentials;
 
     // User Package within the Domain Layer Abstract class
@@ -30,15 +29,13 @@ namespace Domain::User
         virtual std::any                   executeCommandUser(const std::string& command, const std::vector<std::string>& args) =0;    // executes one of the actions retrieved
 
         // Operations of User management
-        virtual std::vector<User>                UsersDB(const std::vector<User>& UsersDB) = 0;
-        virtual std::vector<UserCredentials>     UsersPDB(const std::vector<UserCredentials>& UsersPDB) = 0;
-        virtual void                             viewUsers(const std::vector<User>& UsersDB) = 0;
-        virtual void                             viewUserProfiles(const std::vector<UserCredentials>& UsersPDB) = 0;
-        //virtual std::pair<std::vector<User>, std::vector<UserCredentials>>                 addUser(const User& User) = 0;
-        virtual std::vector<User>                addUser(const User& User) = 0;
+        virtual std::vector<UserCredentials>     UsersDB(const std::vector<UserCredentials>& UsersDB) = 0;
+        virtual void                             viewUsers(const std::vector<UserCredentials>& UsersDB) = 0;         //view users for IT Admin
+        virtual void                             viewUserProfiles(const std::vector<UserCredentials>& UsersDB) = 0;         //view users for Security Officer
         virtual UserCredentials                  searchUserId(const int UserId) = 0;
-        virtual UserCredentials                  updateUserProfile(const std::string userName, std::string passPhrase, std::string role, const int status) = 0;
-
+        virtual std::vector<UserCredentials>     addUser(const int UserID, const std::string UserName, const std::string Role) = 0;
+        //virtual std::vector<UserCredentials>     updateUser(const int UserID, const std::string UserName, const std::string PassPhrase, const std::string Role, const int Status, const std::vector<std::string> SpareTime) = 0;
+        virtual std::vector<UserCredentials>     updateUser(const UserCredentials& User) = 0;
 
         
 

@@ -118,29 +118,19 @@ namespace TechnicalServices::Persistence
        };
    }
 
-   std::vector<User> SimpleDB::ShowAllUsers()
+   std::vector<UserCredentials> SimpleDB::ShowAllUsers()
    {
        return
        {
-           //UserID     Username       Authorized roles
-            { 1,        "Tom",         "IT Admin" },
-            { 2,        "Amanda",      "Salesperson" }
-       };
-   }
-
-   std::vector<UserCredentials> SimpleDB::ShowAllUserProfiles()
-   {
-       return
-       {
-           //Username     pass phrase      Authorized roles      status
-           { "Tom",       "CPSC",          { "IT Admin" },          1 },
-           { "Amanda",    "",              { "Salesperson" },       1 }
+           //UserID     Username    Pass phrase   Authorized roles      Status     Spera time
+            { 1,        "Tom",      "CPSC",       { "IT Admin" },       1,         { "Tu", "We" } },
+            { 2,        "Amanda",   "",           { "Salesperson" },    1,         { "We" } }
        };
    }
 
   UserCredentials SimpleDB::findCredentialsByName( const std::string & name )
   {
-    std::vector<UserCredentials> storedUsers = ShowAllUserProfiles();
+    std::vector<UserCredentials> storedUsers = ShowAllUsers();
 
     for( const auto & user : storedUsers ) if( user.userName == name ) return user;
 

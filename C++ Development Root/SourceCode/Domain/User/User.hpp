@@ -22,14 +22,14 @@ namespace Domain::User
         std::any                        executeCommandUser(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
 
         // Operations
-        std::vector<User>               UsersDB(const std::vector<User>& UsersDB) override;
-        std::vector<UserCredentials>    UsersPDB(const std::vector<UserCredentials>& UsersPDB) override;
-        void                            viewUsers(const std::vector<User>& UsersDB) override;
-        void                            viewUserProfiles(const std::vector<UserCredentials>& UsersPDB) override;
+        std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
+        void                            viewUsers(const std::vector<UserCredentials>& UsersDB) override;         //view users for IT Admin
+        void                            viewUserProfiles(const std::vector<UserCredentials>& UsersDB) override;         //view users for Security Officer
         UserCredentials                 searchUserId(const int UserId) override;
-        //std::pair<std::vector<User>, std::vector<UserCredentials>>               addUser(const User& User) override;
-        std::vector<User>               addUser(const User& User) override;
-        UserCredentials                 updateUserProfile(const std::string userName, std::string passPhrase, std::string role, const int status) override;
+        std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
+        //std::vector<UserCredentials>    updateUser(const int UserID, const std::string UserName, const std::string PassPhrase, const std::string Role, const int Status, const std::vector<std::string> SpareTime) override;
+        std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
+
 
         ~UserDomain() noexcept override = 0;
 
@@ -42,11 +42,10 @@ namespace Domain::User
         // Instance Attributes
         std::unique_ptr<TechnicalServices::Logging::LoggerHandler> _loggerPtr = TechnicalServices::Logging::LoggerHandler::create();
         TechnicalServices::Logging::LoggerHandler& _logger = *_loggerPtr;
-        std::vector<User>                               _UpdatedUserDB;
-        std::vector<UserCredentials>                    _UpdatedUserProfileDB;
+
+        std::vector<UserCredentials>                    _UpdatedUserDB;
         std::string     const                           _name = "Undefined";
-        User                                            _User;
-        UserCredentials                                 _Userfile;
+        UserCredentials                                 _User;
         DispatchTable                                   _commandDispatch;
         UserCredentials const                           _Creator;
 

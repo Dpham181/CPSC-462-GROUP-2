@@ -880,13 +880,13 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ DD imagerel $LN3
-	DD	imagerel $LN3+105
+	DD	imagerel $LN3+130
 	DD	imagerel $unwind$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DD imagerel $LN24
-	DD	imagerel $LN24+1043
+	DD	imagerel $LN24+1051
 	DD	imagerel $unwind$?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -4133,9 +4133,9 @@ $ip2state$?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessi
 	DB	00H
 	DB	0aeH
 	DB	02H
-	DB	090H
+	DB	098H
 	DB	04H
-	DB	011H, 03H
+	DB	'!', 03H
 	DB	02H
 	DB	'*'
 	DB	04H
@@ -4201,11 +4201,11 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DD 025054019H
 	DD	01132318H
-	DD	0700c007bH
+	DD	0700c007fH
 	DD	0500bH
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
-	DD	03cbH
+	DD	03ebH
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
@@ -4229,7 +4229,7 @@ CONST	SEGMENT
 	DB	00H
 	ORG $+14
 ?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcVarDesc DD 050H ; Domain::Session::SessionHandler::createSession
-	DD	078H
+	DD	0a0H
 	DQ	FLAT:?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcName$0
 	ORG $+48
 ?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcFrameData DD 01H ; Domain::Session::SessionHandler::createSession
@@ -9550,7 +9550,7 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 208				; 000000d0H
+	mov	ecx, 248				; 000000f8H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
@@ -9600,7 +9600,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 208				; 000000d0H
+	mov	edx, 248				; 000000f8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -9626,7 +9626,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 208				; 000000d0H
+	mov	edx, 248				; 000000f8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -9977,7 +9977,7 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 208				; 000000d0H
+	mov	ecx, 248				; 000000f8H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
@@ -10027,7 +10027,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 208				; 000000d0H
+	mov	edx, 248				; 000000f8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -10053,7 +10053,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 208				; 000000d0H
+	mov	edx, 248				; 000000f8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -10404,7 +10404,7 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 208				; 000000d0H
+	mov	ecx, 248				; 000000f8H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
@@ -10454,7 +10454,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 208				; 000000d0H
+	mov	edx, 248				; 000000f8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -10480,7 +10480,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 208				; 000000d0H
+	mov	edx, 248				; 000000f8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -10831,7 +10831,7 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 208				; 000000d0H
+	mov	ecx, 248				; 000000f8H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
@@ -10881,7 +10881,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 208				; 000000d0H
+	mov	edx, 248				; 000000f8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -10907,7 +10907,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 208				; 000000d0H
+	mov	edx, 248				; 000000f8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -11032,32 +11032,32 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z PROC ; Domain::Session::SessionHandler::createSession, COMDAT
 
 ; 24   :   {
@@ -11067,13 +11067,13 @@ $LN24:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
 	push	rdi
-	sub	rsp, 984				; 000003d8H
+	sub	rsp, 1016				; 000003f8H
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
-	mov	ecx, 246				; 000000f6H
+	mov	ecx, 254				; 000000feH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	mov	rcx, QWORD PTR [rsp+1016]
+	mov	rcx, QWORD PTR [rsp+1048]
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
@@ -11110,6 +11110,7 @@ $LN24:
 	mov	rax, QWORD PTR [rax+8]
 	mov	QWORD PTR tv73[rbp], rax
 	mov	rax, QWORD PTR credentials$[rbp]
+	add	rax, 8
 	mov	r8, rax
 	lea	rdx, QWORD PTR credentialsFromDB$5[rbp]
 	mov	rcx, QWORD PTR persistentData$4[rbp]
@@ -11126,21 +11127,22 @@ $LN24:
 ; 48   :           && credentialsFromDB.status == 1
 
 	mov	rax, QWORD PTR credentials$[rbp]
-	lea	rdx, QWORD PTR credentialsFromDB$5[rbp]
+	add	rax, 8
+	lea	rdx, QWORD PTR credentialsFromDB$5[rbp+8]
 	mov	rcx, rax
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 	test	eax, eax
 	je	$LN3@createSess
 	mov	rax, QWORD PTR credentials$[rbp]
-	add	rax, 40					; 00000028H
-	lea	rdx, QWORD PTR credentialsFromDB$5[rbp+40]
+	add	rax, 48					; 00000030H
+	lea	rdx, QWORD PTR credentialsFromDB$5[rbp+48]
 	mov	rcx, rax
 	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 	movzx	eax, al
 	test	eax, eax
 	je	$LN3@createSess
-	cmp	DWORD PTR credentialsFromDB$5[rbp+112], 1
+	cmp	DWORD PTR credentialsFromDB$5[rbp+120], 1
 	jne	$LN3@createSess
 
 ; 49   :           //&& std::any_of( credentialsFromDB.roles.cbegin(), credentialsFromDB.roles.cend(),
@@ -11152,7 +11154,7 @@ $LN24:
 ; 55   :         if( credentialsFromDB.roles[0] == "Assistant"      ) return std::make_unique<Domain::Session::AssistantSession>     ( credentials );
 
 	xor	edx, edx
-	lea	rcx, QWORD PTR credentialsFromDB$5[rbp+80]
+	lea	rcx, QWORD PTR credentialsFromDB$5[rbp+88]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	lea	rdx, OFFSET FLAT:??_C@_09JDLGGIJM@Assistant@
 	mov	rcx, rax
@@ -11183,7 +11185,7 @@ $LN4@createSess:
 ; 56   :         if( credentialsFromDB.roles[0] == "Salesperson" ) return std::make_unique<Domain::Session::SalespersonSession>( credentials );
 
 	xor	edx, edx
-	lea	rcx, QWORD PTR credentialsFromDB$5[rbp+80]
+	lea	rcx, QWORD PTR credentialsFromDB$5[rbp+88]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	lea	rdx, OFFSET FLAT:??_C@_0M@FHFJHGNJ@Salesperson@
 	mov	rcx, rax
@@ -11214,7 +11216,7 @@ $LN5@createSess:
 ; 57   :         if( credentialsFromDB.roles[0] == "IT Admin" ) return std::make_unique<Domain::Session::ITAdministratorSession>( credentials );
 
 	xor	edx, edx
-	lea	rcx, QWORD PTR credentialsFromDB$5[rbp+80]
+	lea	rcx, QWORD PTR credentialsFromDB$5[rbp+88]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	lea	rdx, OFFSET FLAT:??_C@_08KIJEALLB@IT?5Admin@
 	mov	rcx, rax
@@ -11245,7 +11247,7 @@ $LN6@createSess:
 ; 58   :         if( credentialsFromDB.roles[0] == "Sales Manager"    ) return std::make_unique<Domain::Session::SalesManagerSession>   ( credentials );
 
 	xor	edx, edx
-	lea	rcx, QWORD PTR credentialsFromDB$5[rbp+80]
+	lea	rcx, QWORD PTR credentialsFromDB$5[rbp+88]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	lea	rdx, OFFSET FLAT:??_C@_0O@MJAOLBNB@Sales?5Manager@
 	mov	rcx, rax
@@ -11336,7 +11338,7 @@ $LN8@createSess:
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
 	xor	rcx, rbp
 	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+952]
+	lea	rsp, QWORD PTR [rbp+984]
 	pop	rdi
 	pop	rbp
 	ret	0
@@ -11348,32 +11350,32 @@ _TEXT	ENDS
 text$x	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?dtor$0@?0??createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Session::SessionHandler::createSession'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -11393,32 +11395,32 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?dtor$6@?0??createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Session::SessionHandler::createSession'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -11438,32 +11440,32 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?dtor$7@?0??createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Session::SessionHandler::createSession'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -11483,32 +11485,32 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?catch$8@?0??createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Session::SessionHandler::createSession'::`1'::catch$8
 
 ; 63   :     catch( const TechnicalServices::Persistence::PersistenceHandler::NoSuchUser & ) {}  // Catch and ignore this anticipated condition
@@ -11533,32 +11535,32 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?dtor$0@?0??createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Session::SessionHandler::createSession'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -11579,32 +11581,32 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?dtor$6@?0??createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Session::SessionHandler::createSession'::`1'::dtor$6
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -11625,32 +11627,32 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?dtor$7@?0??createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Session::SessionHandler::createSession'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -11671,32 +11673,32 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$4 = 8
 credentialsFromDB$5 = 48
-$T6 = 584
-$T7 = 616
-$T8 = 648
-$T9 = 680
-$T10 = 712
-$T11 = 760
-$T12 = 824
-$T13 = 884
-tv234 = 900
-tv163 = 900
-tv146 = 900
-tv129 = 900
-tv235 = 904
-tv225 = 904
-tv221 = 904
-tv217 = 904
-tv210 = 904
-tv204 = 904
-tv73 = 904
-tv229 = 912
-tv180 = 912
-tv236 = 920
-tv231 = 928
-__$ArrayPad$ = 936
-__$ReturnUdt$ = 976
-credentials$ = 984
+$T6 = 616
+$T7 = 648
+$T8 = 680
+$T9 = 712
+$T10 = 744
+$T11 = 792
+$T12 = 856
+$T13 = 916
+tv234 = 932
+tv163 = 932
+tv146 = 932
+tv129 = 932
+tv235 = 936
+tv225 = 936
+tv221 = 936
+tv217 = 936
+tv210 = 936
+tv204 = 936
+tv73 = 936
+tv229 = 944
+tv180 = 944
+tv236 = 952
+tv231 = 960
+__$ArrayPad$ = 968
+__$ReturnUdt$ = 1008
+credentials$ = 1016
 ?catch$8@?0??createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Session::SessionHandler::createSession'::`1'::catch$8
 
 ; 63   :     catch( const TechnicalServices::Persistence::PersistenceHandler::NoSuchUser & ) {}  // Catch and ignore this anticipated condition
@@ -11733,14 +11735,19 @@ $LN3:
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
 	mov	rax, QWORD PTR this$[rbp]
-	add	rax, 80					; 00000050H
+	add	rax, 128				; 00000080H
 	mov	rcx, rax
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	mov	rax, QWORD PTR this$[rbp]
-	add	rax, 40					; 00000028H
+	add	rax, 88					; 00000058H
+	mov	rcx, rax
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	mov	rax, QWORD PTR this$[rbp]
+	add	rax, 48					; 00000030H
 	mov	rcx, rax
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	rax, QWORD PTR this$[rbp]
+	add	rax, 8
 	mov	rcx, rax
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	lea	rsp, QWORD PTR [rbp+200]

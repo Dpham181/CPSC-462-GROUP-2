@@ -338,13 +338,13 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ DD imagerel $LN3
-	DD	imagerel $LN3+105
+	DD	imagerel $LN3+130
 	DD	imagerel $unwind$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DD imagerel $LN8
-	DD	imagerel $LN8+357
+	DD	imagerel $LN8+361
 	DD	imagerel $unwind$?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -688,7 +688,6 @@ CONST	ENDS
 ;	COMDAT ??_7UserHandler@User@Domain@@6B@
 CONST	SEGMENT
 ??_7UserHandler@User@Domain@@6B@ DQ FLAT:??_R4UserHandler@User@Domain@@6B@ ; Domain::User::UserHandler::`vftable'
-	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
@@ -1403,7 +1402,7 @@ xdata	SEGMENT
 $ip2state$?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 0aH
 	DB	00H
 	DB	00H
-	DB	')', 02H
+	DB	'9', 02H
 	DB	02H
 	DB	0daH
 	DB	00H
@@ -1428,11 +1427,11 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DD 025054019H
 	DD	01132318H
-	DD	0700c003fH
+	DD	0700c0043H
 	DD	0500bH
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
-	DD	01e2H
+	DD	0202H
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
@@ -1456,7 +1455,7 @@ CONST	SEGMENT
 	DB	00H
 	ORG $+14
 ?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcVarDesc DD 050H ; Domain::User::UserHandler::UseUserManagement
-	DD	078H
+	DD	0a0H
 	DQ	FLAT:?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcName$0
 	ORG $+48
 ?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcFrameData DD 01H ; Domain::User::UserHandler::UseUserManagement
@@ -1582,7 +1581,7 @@ xdata	ENDS
 CONST	SEGMENT
 ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ$rtcName$0 DB 024H ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	DB	053H
-	DB	034H
+	DB	033H
 	DB	00H
 	ORG $+12
 ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ$rtcVarDesc DD 044H ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
@@ -1720,7 +1719,7 @@ CONST	SEGMENT
 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ$rtcName$0 DB 024H ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	DB	053H
 	DB	031H
-	DB	032H
+	DB	031H
 	DB	00H
 	ORG $+11
 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ$rtcVarDesc DD 044H ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -3240,7 +3239,7 @@ $LN5:
 	je	SHORT $LN3@operator
 	mov	rax, QWORD PTR $T1[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+72]
+	mov	rax, QWORD PTR [rax+64]
 	mov	QWORD PTR tv75[rbp], rax
 	mov	edx, 1
 	mov	rcx, QWORD PTR $T1[rbp]
@@ -3292,7 +3291,7 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 480				; 000001e0H
+	mov	ecx, 440				; 000001b8H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
@@ -3342,7 +3341,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 480				; 000001e0H
+	mov	edx, 440				; 000001b8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -3368,7 +3367,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 480				; 000001e0H
+	mov	edx, 440				; 000001b8H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -3453,13 +3452,13 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 persistentData$ = 8
 credentialsFromDB$ = 48
-$T4 = 392
-$T5 = 420
-tv131 = 440
-tv73 = 440
-__$ArrayPad$ = 448
-__$ReturnUdt$ = 496
-user$ = 504
+$T4 = 424
+$T5 = 452
+tv131 = 472
+tv73 = 472
+__$ArrayPad$ = 480
+__$ReturnUdt$ = 528
+user$ = 536
 ?UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z PROC ; Domain::User::UserHandler::UseUserManagement, COMDAT
 
 ; 25   :     {
@@ -3469,13 +3468,13 @@ $LN8:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
 	push	rdi
-	sub	rsp, 504				; 000001f8H
+	sub	rsp, 536				; 00000218H
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
-	mov	ecx, 126				; 0000007eH
+	mov	ecx, 134				; 00000086H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	mov	rcx, QWORD PTR [rsp+536]
+	mov	rcx, QWORD PTR [rsp+568]
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
@@ -3495,6 +3494,7 @@ $LN8:
 	mov	rax, QWORD PTR [rax+8]
 	mov	QWORD PTR tv73[rbp], rax
 	mov	rax, QWORD PTR user$[rbp]
+	add	rax, 8
 	mov	r8, rax
 	lea	rdx, QWORD PTR credentialsFromDB$[rbp]
 	mov	rcx, QWORD PTR persistentData$[rbp]
@@ -3504,7 +3504,7 @@ $LN8:
 ; 28   :         if (credentialsFromDB.roles[0] == "IT Admin") return std::make_unique<Domain::User::UserManagement>(user);
 
 	xor	edx, edx
-	lea	rcx, QWORD PTR credentialsFromDB$[rbp+80]
+	lea	rcx, QWORD PTR credentialsFromDB$[rbp+88]
 	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 	lea	rdx, OFFSET FLAT:??_C@_08KIJEALLB@IT?5Admin@
 	mov	rcx, rax
@@ -3555,7 +3555,7 @@ $LN1@UseUserMan:
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
 	xor	rcx, rbp
 	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+472]
+	lea	rsp, QWORD PTR [rbp+504]
 	pop	rdi
 	pop	rbp
 	ret	0
@@ -3565,13 +3565,13 @@ _TEXT	ENDS
 text$x	SEGMENT
 persistentData$ = 8
 credentialsFromDB$ = 48
-$T4 = 392
-$T5 = 420
-tv131 = 440
-tv73 = 440
-__$ArrayPad$ = 448
-__$ReturnUdt$ = 496
-user$ = 504
+$T4 = 424
+$T5 = 452
+tv131 = 472
+tv73 = 472
+__$ArrayPad$ = 480
+__$ReturnUdt$ = 528
+user$ = 536
 ?dtor$0@?0??UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::User::UserHandler::UseUserManagement'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -3592,13 +3592,13 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$ = 8
 credentialsFromDB$ = 48
-$T4 = 392
-$T5 = 420
-tv131 = 440
-tv73 = 440
-__$ArrayPad$ = 448
-__$ReturnUdt$ = 496
-user$ = 504
+$T4 = 424
+$T5 = 452
+tv131 = 472
+tv73 = 472
+__$ArrayPad$ = 480
+__$ReturnUdt$ = 528
+user$ = 536
 ?dtor$0@?0??UseUserManagement@UserHandler@User@Domain@@SA?AV?$unique_ptr@VUserHandler@User@Domain@@U?$default_delete@VUserHandler@User@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::User::UserHandler::UseUserManagement'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -3631,14 +3631,19 @@ $LN3:
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
 	mov	rax, QWORD PTR this$[rbp]
-	add	rax, 80					; 00000050H
+	add	rax, 128				; 00000080H
 	mov	rcx, rax
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	mov	rax, QWORD PTR this$[rbp]
-	add	rax, 40					; 00000028H
+	add	rax, 88					; 00000058H
+	mov	rcx, rax
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	mov	rax, QWORD PTR this$[rbp]
+	add	rax, 48					; 00000030H
 	mov	rcx, rax
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	rax, QWORD PTR this$[rbp]
+	add	rax, 8
 	mov	rcx, rax
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	lea	rsp, QWORD PTR [rbp+200]
@@ -3984,7 +3989,7 @@ _TEXT	ENDS
 ;	COMDAT ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Alproxy$ = 8
-$S4$ = 36
+$S3$ = 36
 $T4 = 260
 __$ArrayPad$ = 280
 this$ = 320
@@ -4020,9 +4025,9 @@ $LN3:
 	mov	rcx, QWORD PTR this$[rbp]
 	call	?_Getal@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Getal
 	mov	rdx, rax
-	lea	rcx, QWORD PTR $S4$[rbp]
+	lea	rcx, QWORD PTR $S3$[rbp]
 	call	??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	lea	rax, QWORD PTR $S4$[rbp]
+	lea	rax, QWORD PTR $S3$[rbp]
 	mov	QWORD PTR _Alproxy$[rbp], rax
 
 ; 676  :         _Delete_plain_internal(_Alproxy, _STD exchange(_Mypair._Myval2._Myproxy, nullptr));
@@ -4392,7 +4397,7 @@ _TEXT	ENDS
 ;	COMDAT ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Alproxy$ = 8
-$S12$ = 36
+$S11$ = 36
 _To_delete$ = 72
 __$ArrayPad$ = 280
 this$ = 320
@@ -4428,9 +4433,9 @@ $LN3:
 	mov	rcx, QWORD PTR this$[rbp]
 	call	?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV?$allocator@D@2@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Getal
 	mov	rdx, rax
-	lea	rcx, QWORD PTR $S12$[rbp]
+	lea	rcx, QWORD PTR $S11$[rbp]
 	call	??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><char>
-	lea	rax, QWORD PTR $S12$[rbp]
+	lea	rax, QWORD PTR $S11$[rbp]
 	mov	QWORD PTR _Alproxy$[rbp], rax
 
 ; 2726 :         const auto _To_delete    = _Mypair._Myval2._Myproxy;

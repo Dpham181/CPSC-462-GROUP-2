@@ -10,19 +10,15 @@
 
 namespace TechnicalServices::Persistence
 {
-  // Function argument type definitions
-  struct User
-  {
-    int                       userID;
-    std::string               userName;
-    std::string               userRole;
-  };
+
   struct UserCredentials
   {
+    int                       userID;
     std::string               userName;
     std::string               passPhrase;
     std::vector<std::string>  roles;
     int                       status;
+    std::vector<std::string>  spareTime;
   };
   struct Client
   {
@@ -74,8 +70,7 @@ namespace TechnicalServices::Persistence
        virtual std::vector<Product> CRMInventory() =0 ;
 
        // user
-       virtual std::vector<User> ShowAllUsers() = 0;
-       virtual std::vector<UserCredentials> ShowAllUserProfiles() = 0;
+       virtual std::vector<UserCredentials> ShowAllUsers() = 0;
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair
       // Throws NoSuchProperty

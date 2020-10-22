@@ -144,6 +144,7 @@ PUBLIC	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@s
 PUBLIC	?deallocate@?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAAXQEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_K@Z ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::deallocate
 PUBLIC	?allocate@?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_K@Z ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocate
 PUBLIC	?max_size@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SA_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@Z ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::max_size
+PUBLIC	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	?max_size@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEBA_KXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::max_size
@@ -175,6 +176,8 @@ PUBLIC	??$?0AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@
 PUBLIC	??0?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@AEAV?$allocator@U_Container_proxy@std@@@1@AEAU_Container_base12@1@@Z ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
 PUBLIC	??1?$_Container_proxy_ptr12@V?$allocator@U_Container_proxy@std@@@std@@@std@@QEAA@XZ ; std::_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >::~_Container_proxy_ptr12<std::allocator<std::_Container_proxy> >
 PUBLIC	??$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Range_construct_or_tidy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const *>
+PUBLIC	??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ; std::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1>::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1><>
+PUBLIC	??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z ; std::_Container_base12::_Alloc_proxy<std::allocator<std::_Container_proxy> >
 PUBLIC	??$min@_K@std@@YAAEB_KAEB_K0@Z			; std::min<unsigned __int64>
 PUBLIC	??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><char>
 PUBLIC	??$?0V?$allocator@D@std@@$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@$$QEAV?$allocator@D@1@@Z ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1><std::allocator<char> >
@@ -740,8 +743,8 @@ $pdata$?dtor$2@?0???0SystemDriverUI@UI@@QEAA@XZ@4HA DD imagerel ?dtor$2@?0???0Sy
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?launch@SystemDriverUI@UI@@UEAAXXZ DD imagerel $LN20
-	DD	imagerel $LN20+1003
+$pdata$?launch@SystemDriverUI@UI@@UEAAXXZ DD imagerel $LN21
+	DD	imagerel $LN21+1026
 	DD	imagerel $unwind$?launch@SystemDriverUI@UI@@UEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -770,14 +773,8 @@ $pdata$?dtor$4@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$4@?0?
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+39
-	DD	imagerel $unwind$?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+36
+	DD	imagerel ?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
@@ -789,7 +786,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?dtor$9@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$9@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$9@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel ?dtor$9@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+36
 	DD	imagerel $unwind$?dtor$9@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
@@ -800,14 +797,14 @@ $pdata$?dtor$10@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$10@?
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+57
-	DD	imagerel $unwind$?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+$pdata$?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel ?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+57
 	DD	imagerel $unwind$?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
@@ -819,14 +816,20 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+36
+	DD	imagerel ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+39
 	DD	imagerel $unwind$?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DD	imagerel ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+36
 	DD	imagerel $unwind$?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD imagerel ?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA+39
+	DD	imagerel $unwind$?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -905,6 +908,12 @@ pdata	SEGMENT
 $pdata$?max_size@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SA_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@Z DD imagerel $LN3
 	DD	imagerel $LN3+74
 	DD	imagerel $unwind$?max_size@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SA_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ DD imagerel $LN3
+	DD	imagerel $LN3+160
+	DD	imagerel $unwind$??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -999,7 +1008,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ DD imagerel $LN3
-	DD	imagerel $LN3+105
+	DD	imagerel $LN3+130
 	DD	imagerel $unwind$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -1103,6 +1112,18 @@ pdata	SEGMENT
 $pdata$?dtor$0@?0???$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z@4HA DD imagerel ?dtor$0@?0???$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z@4HA
 	DD	imagerel ?dtor$0@?0???$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z@4HA+36
 	DD	imagerel $unwind$?dtor$0@?0???$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z@4HA
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z DD imagerel $LN3
+	DD	imagerel $LN3+102
+	DD	imagerel $unwind$??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z DD imagerel $LN3
+	DD	imagerel $LN3+156
+	DD	imagerel $unwind$??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2365,6 +2386,33 @@ $unwind$??$min@_K@std@@YAAEB_KAEB_K0@Z DD 025052f19H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z DD 025052f01H
+	DD	01132318H
+	DD	0700c0025H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z DB 060H
+	DD	imagerel $ip2state$??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z DD 025052e19H
+	DD	01122317H
+	DD	0700b001dH
+	DD	0500aH
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?dtor$0@?0???$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
@@ -2963,6 +3011,26 @@ CONST	SEGMENT
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$ip2state$??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ DB 02H
+	DB	00H
+	DB	00H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$cppxdata$??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ DB 060H
+	DD	imagerel $ip2state$??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ DD 025052a19H
+	DD	010e2313H
+	DD	070070025H
+	DD	05006H
+	DD	imagerel __CxxFrameHandler4
+	DD	imagerel $cppxdata$??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $ip2state$?max_size@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SA_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@Z DB 02H
 	DB	00H
 	DB	00H
@@ -3184,6 +3252,12 @@ $unwind$??1SystemDriverUI@UI@@UEAA@XZ DD 025052a19H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
@@ -3208,7 +3282,7 @@ $unwind$?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD 031001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD 031001H
+$unwind$?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -3233,12 +3307,6 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD 031001H
-	DD	0700c4210H
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
@@ -3275,13 +3343,13 @@ $ip2state$?launch@SystemDriverUI@UI@@UEAAXXZ DB '.'
 	DB	02H
 	DB	'*'
 	DB	00H
-	DB	'\'
+	DB	'p'
 	DB	04H
 	DB	'('
 	DB	06H
 	DB	'N'
 	DB	08H
-	DB	0f2H
+	DB	019H, 02H
 	DB	0cH
 	DB	'"'
 	DB	010H
@@ -3330,37 +3398,37 @@ $stateUnwindMap$?launch@SystemDriverUI@UI@@UEAAXXZ DB 028H
 	DB	0aeH
 	DD	imagerel ?dtor$4@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	02eH
-	DD	imagerel ?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	02eH
-	DD	imagerel ?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$8@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	07eH
-	DD	imagerel ?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$8@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	09dH
 	DB	02H
-	DD	imagerel ?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DB	036H
 	DD	imagerel ?dtor$8@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DB	02eH
+	DB	036H
 	DD	imagerel ?dtor$9@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	02eH
 	DD	imagerel ?dtor$10@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DB	07eH
-	DD	imagerel ?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	02eH
+	DD	imagerel ?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DB	07eH
 	DD	imagerel ?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	02eH
 	DD	imagerel ?dtor$14@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	02eH
 	DD	imagerel ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DB	02eH
+	DD	imagerel ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	07eH
-	DD	imagerel ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	0ceH
-	DD	imagerel ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DD	imagerel ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 	DB	0ddH
 	DB	02H
-	DD	imagerel ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
-	DB	036H
 	DD	imagerel ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
+	DB	036H
+	DD	imagerel ?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3372,11 +3440,11 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?launch@SystemDriverUI@UI@@UEAAXXZ DD 025063c19H
 	DD	010f2314H
-	DD	0700800e4H
+	DD	0700800e8H
 	DD	050066007H
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?launch@SystemDriverUI@UI@@UEAAXXZ
-	DD	0712H
+	DD	0732H
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
@@ -6789,6 +6857,106 @@ $LN4@min:
 ??$min@_K@std@@YAAEB_KAEB_K0@Z ENDP			; std::min<unsigned __int64>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z
+_TEXT	SEGMENT
+_New_proxy$ = 8
+$T1 = 232
+this$ = 288
+_Al$ = 296
+??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z PROC ; std::_Container_base12::_Alloc_proxy<std::allocator<std::_Container_proxy> >, COMDAT
+
+; 1101 :     void _Alloc_proxy(_Alloc&& _Al) {
+
+$LN3:
+	mov	QWORD PTR [rsp+16], rdx
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 296				; 00000128H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 74					; 0000004aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+328]
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
+	call	__CheckForDebuggerJustMyCode
+
+; 1102 :         _Container_proxy* const _New_proxy = _Unfancy(_Al.allocate(1));
+
+	mov	edx, 1
+	mov	rcx, QWORD PTR _Al$[rbp]
+	call	?allocate@?$allocator@U_Container_proxy@std@@@std@@QEAAPEAU_Container_proxy@2@_K@Z ; std::allocator<std::_Container_proxy>::allocate
+	mov	rcx, rax
+	call	??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z ; std::_Unfancy<std::_Container_proxy>
+	mov	QWORD PTR _New_proxy$[rbp], rax
+
+; 1103 :         _Construct_in_place(*_New_proxy, this);
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR $T1[rbp], rax
+	lea	rdx, QWORD PTR $T1[rbp]
+	mov	rcx, QWORD PTR _New_proxy$[rbp]
+	call	??$_Construct_in_place@U_Container_proxy@std@@PEAU_Container_base12@2@@std@@YAXAEAU_Container_proxy@0@$$QEAPEAU_Container_base12@0@@Z ; std::_Construct_in_place<std::_Container_proxy,std::_Container_base12 *>
+
+; 1104 :         _Myproxy            = _New_proxy;
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, QWORD PTR _New_proxy$[rbp]
+	mov	QWORD PTR [rax], rcx
+
+; 1105 :         _New_proxy->_Mycont = this;
+
+	mov	rax, QWORD PTR _New_proxy$[rbp]
+	mov	rcx, QWORD PTR this$[rbp]
+	mov	QWORD PTR [rax], rcx
+
+; 1106 :     }
+
+	lea	rsp, QWORD PTR [rbp+264]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z ENDP ; std::_Container_base12::_Alloc_proxy<std::allocator<std::_Container_proxy> >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
+;	COMDAT ??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
+_TEXT	SEGMENT
+this$ = 224
+__formal$ = 232
+??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z PROC ; std::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1>::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1><>, COMDAT
+
+; 1336 :         : _Ty1(), _Myval2(_STD forward<_Other2>(_Val2)...) {}
+
+$LN3:
+	mov	BYTE PTR [rsp+16], dl
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 232				; 000000e8H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 58					; 0000003aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+264]
+	lea	rcx, OFFSET FLAT:__A58979FC_xmemory
+	call	__CheckForDebuggerJustMyCode
+	mov	rcx, QWORD PTR this$[rbp]
+	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
+	mov	rax, QWORD PTR this$[rbp]
+	mov	rcx, rax
+	call	??0?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QEAA@XZ ; std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	mov	rax, QWORD PTR this$[rbp]
+	lea	rsp, QWORD PTR [rbp+200]
+	pop	rdi
+	pop	rbp
+	ret	0
+??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ENDP ; std::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1>::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1><>
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
 ;	COMDAT ??$_Range_construct_or_tidy@PEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0Uforward_iterator_tag@1@@Z
 _TEXT	SEGMENT
@@ -7600,14 +7768,19 @@ $LN3:
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
 	mov	rax, QWORD PTR this$[rbp]
-	add	rax, 80					; 00000050H
+	add	rax, 128				; 00000080H
 	mov	rcx, rax
 	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	mov	rax, QWORD PTR this$[rbp]
-	add	rax, 40					; 00000028H
+	add	rax, 88					; 00000058H
+	mov	rcx, rax
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	mov	rax, QWORD PTR this$[rbp]
+	add	rax, 48					; 00000030H
 	mov	rcx, rax
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	mov	rax, QWORD PTR this$[rbp]
+	add	rax, 8
 	mov	rcx, rax
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	lea	rsp, QWORD PTR [rbp+200]
@@ -8492,6 +8665,60 @@ _Al$ = 528
 ?dtor$0@?0???0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z@4HA ENDP ; `std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
+; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector
+;	COMDAT ??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ
+_TEXT	SEGMENT
+$T1 = 196
+$T2 = 228
+tv83 = 248
+tv69 = 248
+this$ = 288
+??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ PROC ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >, COMDAT
+
+; 445  :     vector() noexcept(is_nothrow_default_constructible_v<_Alty>) : _Mypair(_Zero_then_variadic_args_t{}) {
+
+$LN3:
+	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rdi
+	sub	rsp, 296				; 00000128H
+	lea	rbp, QWORD PTR [rsp+32]
+	mov	rdi, rsp
+	mov	ecx, 74					; 0000004aH
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	mov	rcx, QWORD PTR [rsp+328]
+	lea	rcx, OFFSET FLAT:__BF2A7ACC_vector
+	call	__CheckForDebuggerJustMyCode
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR tv69[rbp], rax
+	movzx	edx, BYTE PTR $T1[rbp]
+	mov	rcx, QWORD PTR tv69[rbp]
+	call	??$?0$$V@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$_Vector_val@U?$_Simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z ; std::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1>::_Compressed_pair<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >,1><>
+
+; 446  :         _Mypair._Myval2._Alloc_proxy(_GET_PROXY_ALLOCATOR(_Alty, _Getal()));
+
+	mov	rax, QWORD PTR this$[rbp]
+	mov	QWORD PTR tv83[rbp], rax
+	mov	rcx, QWORD PTR this$[rbp]
+	call	?_Getal@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Getal
+	mov	rdx, rax
+	lea	rcx, QWORD PTR $T2[rbp]
+	call	??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
+	mov	rdx, rax
+	mov	rcx, QWORD PTR tv83[rbp]
+	call	??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z ; std::_Container_base12::_Alloc_proxy<std::allocator<std::_Container_proxy> >
+
+; 447  :     }
+
+	mov	rax, QWORD PTR this$[rbp]
+	lea	rsp, QWORD PTR [rbp+264]
+	pop	rdi
+	pop	rbp
+	ret	0
+??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory
 ;	COMDAT ?max_size@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SA_KAEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@Z
 _TEXT	SEGMENT
@@ -9085,47 +9312,47 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?launch@SystemDriverUI@UI@@UEAAXXZ PROC			; UI::SystemDriverUI::launch, COMDAT
 
 ; 33   :   {
 
-$LN20:
+$LN21:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
 	push	rsi
 	push	rdi
-	sub	rsp, 1824				; 00000720H
+	sub	rsp, 1856				; 00000740H
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
-	mov	ecx, 456				; 000001c8H
+	mov	ecx, 464				; 000001d0H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	mov	rcx, QWORD PTR [rsp+1864]
+	mov	rcx, QWORD PTR [rsp+1896]
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
@@ -9155,17 +9382,18 @@ $LN20:
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
 ; 36   : 
-; 37   :       auto session  = Domain::Session::SessionHandler::createSession( {"Tom", "CPSC 462 Rocks!", {"Borrower"}} );
+; 37   :       auto session = Domain::Session::SessionHandler::createSession({ 100, "Tom", "CPSC 462 Rocks!", {"Borrower"} });
 
 	mov	edx, 8
 	lea	rcx, QWORD PTR session$6[rbp]
 	call	?__autoclassinit2@?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAAX_K@Z
+	mov	DWORD PTR $T10[rbp], 100		; 00000064H
 	lea	rdx, OFFSET FLAT:??_C@_03JAMCBOB@Tom@
-	lea	rcx, QWORD PTR $T10[rbp]
+	lea	rcx, QWORD PTR $T10[rbp+8]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rdx, OFFSET FLAT:??_C@_0BA@HIONGBMM@CPSC?5462?5Rocks?$CB@
-	lea	rcx, QWORD PTR $T10[rbp+40]
+	lea	rcx, QWORD PTR $T10[rbp+48]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rcx, QWORD PTR $T11[rbp]
@@ -9193,13 +9421,16 @@ $LN20:
 	rep movsb
 	mov	r8, QWORD PTR tv144[rbp]
 	lea	rdx, QWORD PTR $T20[rbp]
-	lea	rcx, QWORD PTR $T10[rbp+80]
+	lea	rcx, QWORD PTR $T10[rbp+88]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-	lea	rax, QWORD PTR $T10[rbp+112]
+	lea	rax, QWORD PTR $T10[rbp+120]
 	mov	rdi, rax
 	xor	eax, eax
 	mov	ecx, 8
 	rep stosb
+	lea	rcx, QWORD PTR $T10[rbp+128]
+	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	npad	1
 	lea	rdx, QWORD PTR $T10[rbp]
 	lea	rcx, QWORD PTR session$6[rbp]
 	call	?createSession@SessionHandler@Session@Domain@@SA?AV?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Session::SessionHandler::createSession
@@ -9220,28 +9451,28 @@ $LN20:
 	call	?__autoclassinit2@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAX_K@Z
 	lea	rcx, QWORD PTR session$6[rbp]
 	call	??C?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBAPEAVSessionHandler@Session@Domain@@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator->
-	mov	QWORD PTR tv159[rbp], rax
-	mov	rax, QWORD PTR tv159[rbp]
+	mov	QWORD PTR tv162[rbp], rax
+	mov	rax, QWORD PTR tv162[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv165[rbp], rax
+	mov	QWORD PTR tv168[rbp], rax
 	lea	rdx, QWORD PTR commands$7[rbp]
-	mov	rcx, QWORD PTR tv159[rbp]
-	call	QWORD PTR tv165[rbp]
+	mov	rcx, QWORD PTR tv162[rbp]
+	call	QWORD PTR tv168[rbp]
 	npad	1
 
 ; 39   :       auto results  = session->executeCommand( "Checkout Book", {"Applied UML and Patterns", "Larman", "0-13-148906-2"} );
 
 	lea	rcx, QWORD PTR session$6[rbp]
 	call	??C?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEBAPEAVSessionHandler@Session@Domain@@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::operator->
-	mov	QWORD PTR tv170[rbp], rax
-	mov	rax, QWORD PTR tv170[rbp]
+	mov	QWORD PTR tv173[rbp], rax
+	mov	rax, QWORD PTR tv173[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+8]
-	mov	QWORD PTR tv213[rbp], rax
+	mov	QWORD PTR tv216[rbp], rax
 	lea	rcx, QWORD PTR $T15[rbp]
 	call	??0?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAA@XZ ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
-	mov	QWORD PTR tv202[rbp], rax
+	mov	QWORD PTR tv205[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BJ@FKDNKJHB@Applied?5UML?5and?5Patterns@
 	lea	rcx, QWORD PTR $T22[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -9270,7 +9501,7 @@ $LN20:
 	mov	rsi, rcx
 	mov	ecx, 16
 	rep movsb
-	mov	r8, QWORD PTR tv202[rbp]
+	mov	r8, QWORD PTR tv205[rbp]
 	lea	rdx, QWORD PTR $T21[rbp]
 	lea	rcx, QWORD PTR $T14[rbp]
 	call	??0?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@V?$initializer_list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
@@ -9282,8 +9513,8 @@ $LN20:
 	lea	r9, QWORD PTR $T14[rbp]
 	lea	r8, QWORD PTR $T18[rbp]
 	lea	rdx, QWORD PTR results$8[rbp]
-	mov	rcx, QWORD PTR tv170[rbp]
-	call	QWORD PTR tv213[rbp]
+	mov	rcx, QWORD PTR tv173[rbp]
+	call	QWORD PTR tv216[rbp]
 	npad	1
 	lea	rcx, QWORD PTR $T18[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -9303,19 +9534,19 @@ $LN20:
 
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+16]
-	mov	QWORD PTR tv229[rbp], rax
+	mov	QWORD PTR tv232[rbp], rax
 	mov	rax, QWORD PTR this$[rbp]
 	mov	rax, QWORD PTR [rax+16]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax]
-	mov	QWORD PTR tv231[rbp], rax
+	mov	QWORD PTR tv234[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0BF@OMEJBECH@Completed?5scenario?51@
 	lea	rcx, QWORD PTR $T19[rbp]
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@QEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 	lea	rdx, QWORD PTR $T19[rbp]
-	mov	rcx, QWORD PTR tv229[rbp]
-	call	QWORD PTR tv231[rbp]
+	mov	rcx, QWORD PTR tv232[rbp]
+	call	QWORD PTR tv234[rbp]
 	npad	1
 	lea	rcx, QWORD PTR $T19[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
@@ -9340,7 +9571,7 @@ $LN20:
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
 	xor	rcx, rbp
 	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+1792]
+	lea	rsp, QWORD PTR [rbp+1824]
 	pop	rdi
 	pop	rsi
 	pop	rbp
@@ -9354,31 +9585,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$0@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9401,31 +9632,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$1@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9433,7 +9664,7 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T10[rbp]
+	lea	rcx, QWORD PTR $T10[rbp+8]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -9448,31 +9679,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$2@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9480,7 +9711,7 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T10[rbp+40]
+	lea	rcx, QWORD PTR $T10[rbp+48]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -9495,31 +9726,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$4@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$4
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9545,32 +9776,32 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
-?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$6
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
+?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -9579,53 +9810,6 @@ this$ = 1824
 	lea	rbp, QWORD PTR [rdx+32]
 	lea	rcx, QWORD PTR $T10[rbp]
 	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$6
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-session$6 = 8
-commands$7 = 40
-results$8 = 112
-$T9 = 776
-$T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
-?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$7
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR session$6[rbp]
-	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -9639,31 +9823,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$8@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$8
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9671,8 +9855,8 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR commands$7[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR session$6[rbp]
+	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -9686,31 +9870,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$9@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$9
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9718,8 +9902,8 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T22[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR commands$7[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -9733,31 +9917,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$10@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$10
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9765,7 +9949,7 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T22[rbp+40]
+	lea	rcx, QWORD PTR $T22[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -9780,32 +9964,79 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
-?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$12
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
+?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$11
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T22[rbp+40]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$11
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+session$6 = 8
+commands$7 = 40
+results$8 = 112
+$T9 = 776
+$T10 = 848
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
+?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$13
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -9821,53 +10052,6 @@ this$ = 1824
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$12
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-session$6 = 8
-commands$7 = 40
-results$8 = 112
-$T9 = 776
-$T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
-?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$13
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T14[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
 ?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$13
 text$x	ENDS
 ;	COMDAT text$x
@@ -9877,31 +10061,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$14@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$14
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9909,8 +10093,8 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T18[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR $T14[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -9924,31 +10108,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -9956,8 +10140,8 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR results$8[rbp]
-	call	??1any@std@@QEAA@XZ			; std::any::~any
+	lea	rcx, QWORD PTR $T18[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -9971,32 +10155,79 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$16
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR results$8[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$16
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+session$6 = 8
+commands$7 = 40
+results$8 = 112
+$T9 = 776
+$T10 = 848
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
+?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$17
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -10009,7 +10240,7 @@ this$ = 1824
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$16
+?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$17
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
@@ -10019,31 +10250,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$0@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10067,31 +10298,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$1@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$1
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10099,7 +10330,7 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T10[rbp]
+	lea	rcx, QWORD PTR $T10[rbp+8]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -10115,31 +10346,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$2@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$2
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10147,7 +10378,7 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T10[rbp+40]
+	lea	rcx, QWORD PTR $T10[rbp+48]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -10163,31 +10394,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$4@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$4
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10214,32 +10445,32 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
-?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$6
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
+?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$7
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -10248,54 +10479,6 @@ this$ = 1824
 	lea	rbp, QWORD PTR [rdx+32]
 	lea	rcx, QWORD PTR $T10[rbp]
 	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
-?dtor$6@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$6
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-session$6 = 8
-commands$7 = 40
-results$8 = 112
-$T9 = 776
-$T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
-?dtor$7@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$7
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR session$6[rbp]
-	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -10310,31 +10493,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$8@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$8
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10342,8 +10525,8 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR commands$7[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
+	lea	rcx, QWORD PTR session$6[rbp]
+	call	??1?$unique_ptr@VSessionHandler@Session@Domain@@U?$default_delete@VSessionHandler@Session@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >::~unique_ptr<Domain::Session::SessionHandler,std::default_delete<Domain::Session::SessionHandler> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -10358,31 +10541,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$9@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$9
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10390,8 +10573,8 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T22[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR commands$7[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -10406,31 +10589,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$10@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$10
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10438,7 +10621,7 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T22[rbp+40]
+	lea	rcx, QWORD PTR $T22[rbp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -10454,32 +10637,80 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
-?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$12
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
+?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$11
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR $T22[rbp+40]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$11@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$11
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+session$6 = 8
+commands$7 = 40
+results$8 = 112
+$T9 = 776
+$T10 = 848
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
+?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$13
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -10495,54 +10726,6 @@ this$ = 1824
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$12@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$12
-text$x	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-;	COMDAT text$x
-text$x	SEGMENT
-session$6 = 8
-commands$7 = 40
-results$8 = 112
-$T9 = 776
-$T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
-?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$13
-	mov	QWORD PTR [rsp+8], rcx
-	mov	QWORD PTR [rsp+16], rdx
-	push	rbp
-	push	rdi
-	sub	rsp, 40					; 00000028H
-	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T14[rbp]
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-	add	rsp, 40					; 00000028H
-	pop	rdi
-	pop	rbp
-	ret	0
 ?dtor$13@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$13
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
@@ -10553,31 +10736,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$14@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$14
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10585,8 +10768,8 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR $T18[rbp]
-	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+	lea	rcx, QWORD PTR $T14[rbp]
+	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -10601,31 +10784,31 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$15@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$15
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -10633,8 +10816,8 @@ this$ = 1824
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR results$8[rbp]
-	call	??1any@std@@QEAA@XZ			; std::any::~any
+	lea	rcx, QWORD PTR $T18[rbp]
+	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
@@ -10649,32 +10832,80 @@ commands$7 = 40
 results$8 = 112
 $T9 = 776
 $T10 = 848
-$T11 = 996
-$T12 = 1032
-$T13 = 1080
-$T14 = 1128
-$T15 = 1188
-$T16 = 1224
-$T17 = 1272
-$T18 = 1320
-$T19 = 1384
-$T20 = 1456
-$T21 = 1504
-$T22 = 1552
-$T23 = 1704
-tv229 = 1752
-tv170 = 1752
-tv159 = 1752
-tv144 = 1752
-tv78 = 1752
-tv231 = 1760
-tv213 = 1760
-tv165 = 1760
-tv80 = 1760
-tv202 = 1768
-__$ArrayPad$ = 1776
-this$ = 1824
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
 ?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$16
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR results$8[rbp]
+	call	??1any@std@@QEAA@XZ			; std::any::~any
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$16
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+session$6 = 8
+commands$7 = 40
+results$8 = 112
+$T9 = 776
+$T10 = 848
+$T11 = 1028
+$T12 = 1064
+$T13 = 1112
+$T14 = 1160
+$T15 = 1220
+$T16 = 1256
+$T17 = 1304
+$T18 = 1352
+$T19 = 1416
+$T20 = 1488
+$T21 = 1536
+$T22 = 1584
+$T23 = 1736
+tv232 = 1784
+tv173 = 1784
+tv162 = 1784
+tv144 = 1784
+tv78 = 1784
+tv234 = 1792
+tv216 = 1792
+tv168 = 1792
+tv80 = 1792
+tv205 = 1800
+__$ArrayPad$ = 1808
+this$ = 1856
+?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA PROC	; `UI::SystemDriverUI::launch'::`1'::dtor$17
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
@@ -10687,7 +10918,7 @@ this$ = 1824
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$16@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$16
+?dtor$17@?0??launch@SystemDriverUI@UI@@UEAAXXZ@4HA ENDP	; `UI::SystemDriverUI::launch'::`1'::dtor$17
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\SystemDriverUI.cpp
