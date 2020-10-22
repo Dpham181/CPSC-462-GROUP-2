@@ -267,10 +267,12 @@ namespace UI
                             _ProductHandler->executeCommandProduct(selectedCommand, {});
                         }
                         else if (selectedCommand == "Add New Product") {
-
-                            std::vector<std::string> parameters(2);
+                          
+                            std::vector<std::string> parameters(3);
                             std::cout << " Enter Name  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[0]);
-                            std::cout << " Enter Price: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+                            std::cout << " Enter Price: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]); 
+                            _ProductHandler->viewCompany();
+                            std::cout << " Enter Company ID(Leave blank for private partner): ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
 
                           auto result =  _ProductHandler->executeCommandProduct(selectedCommand, parameters);
                           if (result.has_value()) {
@@ -313,6 +315,45 @@ namespace UI
 
                 }
             
+            }
+            else if (selectedCommand == "Sale Management") {
+
+            _SaleHandler = Domain::Sale::SaleHandler::UseSaleManagement(credentials);
+
+            if (_SaleHandler != nullptr) {
+
+                do
+                {
+                    auto        commands = _SaleHandler->getCommandsSale();
+                    std::string selectedCommand;
+                    unsigned    menuSelection;
+
+                    do
+                    {
+
+                        for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+                        std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
+
+                        std::cout << "  action (0-" << commands.size() << "): ";
+                        std::cin >> menuSelection;
+                    } while (menuSelection > commands.size());
+
+
+                    if (menuSelection == commands.size()) break;
+                    selectedCommand = commands[menuSelection];
+                    _logger << "Command selected \"" + selectedCommand + '"';
+
+                    if (selectedCommand == "Make Sale") {
+
+                        //TODO
+                        _logger << "under contruction <---------------------------------------------------------------- ";
+
+                    }
+                } while (true);
+            }
+
+            
+
             }
           
 

@@ -40,8 +40,10 @@ __9A4C86E5_stdexcept DB 01H
 __190EFBB8_xtree DB 01H
 __7242C389_ctype@h DB 01H
 __965C11D2_string DB 01H
-__E2683516_MaintainBooksHandler@hpp DB 01H
 __24DC9795_any DB 01H
+__7C949E14_ratio DB 01H
+__8AA3BE86_time@h DB 01H
+__3ACC9D4A_chrono DB 01H
 __102707BA_cmath DB 01H
 __238A5427_xcall_once@h DB 01H
 __3514C702_atomic DB 01H
@@ -8522,7 +8524,7 @@ $LN16:
 
 	mov	rax, QWORD PTR persistantData$[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+40]
+	mov	rax, QWORD PTR [rax+48]
 	mov	QWORD PTR tv77[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0N@GNLLJOEH@Component?4UI@
 	lea	rcx, QWORD PTR $T4[rbp]

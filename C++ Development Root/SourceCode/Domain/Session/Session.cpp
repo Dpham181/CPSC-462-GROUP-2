@@ -1,6 +1,8 @@
 #include "Domain/Session/Session.hpp"
 #include "Domain/Client/Client.hpp"
 #include "Domain/Product/Product.hpp"
+#include "Domain/Sale/Sale.hpp"
+
 #include <string>
 #include <any>
 #include <iomanip>     // setw()
@@ -56,9 +58,8 @@ namespace  // anonymous (private) working area
  std::any AddProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs) 
  {
      int increment = productcontrol._ProductDb.size() + 1;
-     auto newproduct = productcontrol.add(increment, agrs[0], std::atoi(agrs[1].c_str()));
-     std::cout << std::setw(15) << std::to_string(newproduct.id) << std::setw(15) << newproduct.Name << std::setw(15) << std::to_string(newproduct.Price) << std::endl;
-
+     auto newproduct = productcontrol.add(increment, agrs[0], std::atoi(agrs[1].c_str()), std::atoi(agrs[2].c_str()));
+   
      auto inventoryUpdated = productcontrol.save(newproduct);
 
      return inventoryUpdated;
@@ -87,14 +88,77 @@ namespace  // anonymous (private) working area
      return newDBproduct;
 
  }
+ // sale management 
+ STUB(SaleManagement)
+#define STUBS(functionName)  std::any functionName( Domain::Sale::SaleDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+                              { return {}; }  
 
-
+     STUBS(makesale)
 
   
   
 }    // anonymous (private) working area
 
 
+// sale domain implementtation
+namespace Domain::Sale {
+    auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+
+    void line()
+    {
+        for (int i = 1; i < 41; i++)
+            std::cout << "--";
+        std::cout << "\n";
+
+    }
+
+    SaleDomain::SaleDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
+    {
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
+    }
+
+
+    std::vector<std::string> SaleDomain::getCommandsSale()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
+
+    std::any SaleDomain::executeCommandSale(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+
+        auto results = it->second(*this, args);
+
+        return results;
+    }
+    Sale  SaleDomain::MakeSale(const int SaleId, const int CommissionId, const int UserId, const int ClientId, const std::string  DateofSale, const std::vector<Product> purchasedProduct) {
+        //todo
+        return {};
+    }
+    Commission SaleDomain::GenerateCommission(const int CommissionId, const int CommissionRate, const int UserId, const int CompanyId) {
+        //todo
+        return {};
+    }
+    SaleManagement::SaleManagement(const UserCredentials& user) : SaleDomain("Sale Management", user)
+    {
+
+        _commandDispatch = {
+
+                         { "Make Sale", makesale },
+                       
+        };
+    };
+
+}
 // Client domain implementation 
 namespace Domain::Client
 
@@ -242,7 +306,7 @@ namespace Domain::Product
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
         _ProductDb = persistentData.CRMInventory();
-
+        
     }
 
 
@@ -275,19 +339,37 @@ namespace Domain::Product
         line();
         std::cout << std::setw(49) << "Inventory of CRM\n";
         line();
-        std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(15) << "Price\n";
+        std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(15) << "Price" << std::setw(15) << "CompanyID\n";
         line();
 
         for (const auto& p : _ProductDb)
-           std::cout << std::setw(15) << std::to_string(p.id) << std::setw(15) << p.Name << std::setw(15) << std::to_string(p.Price)<< std::endl;
+           std::cout << std::setw(15) << std::to_string(p.id) << std::setw(15) << p.Name << std::setw(15) << std::to_string(p.Price)<< std::setw(15) << std::to_string(p.ProductCommany)<< std::endl;
         line();
     }
-   
-    Product   ProductDomain::add(const int ProductId, const std::string ProductName, const int Price) {
-        Product newProduct = { 0,"",0 };
+    void ProductDomain::viewCompany() {
+
+        line();
+        std::cout << std::setw(49) << "Here is the list of PartnerShips\n";
+        line();
+        std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(25) << "Rate %\n";
+        line();
+
+        for (const auto& c : persistentData.CRMCompanypartnerships())
+            std::cout << std::setw(15) << std::to_string(c.Id) << std::setw(20) << c.Name << std::setw(15) << std::to_string(c.Rate) << std::endl;
+        line();
+    }
+    Product   ProductDomain::add(const int ProductId, const std::string ProductName, const int Price , const int CompanyID) {
+
+        Product newProduct = { 0,"",0, 0 };
         if (ProductId > 0) newProduct.id = ProductId;
         if (ProductName != "") newProduct.Name = ProductName;
         if (Price > 0) newProduct.Price = Price;
+        for (auto const& c : persistentData.CRMCompanypartnerships()) {
+            if (c.Id == CompanyID) newProduct.ProductCommany = CompanyID;
+
+        }
+           
+
         return   newProduct;
     }
     std::vector<Product> ProductDomain::save(const Product& Newproduct) {
@@ -445,8 +527,8 @@ namespace Domain::Session
     _commandDispatch = { 
         
         {"Client Management", ClientManagement},
-        {"Product Management", ProductManagement}
-                         
+        {"Product Management", ProductManagement},
+        {"Sale Management", SaleManagement}
     };
   }
 

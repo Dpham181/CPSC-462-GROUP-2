@@ -22,7 +22,8 @@ namespace Domain::Product
 
       // Operations
         void   view() override;
-        Product   add(const int ProductId, const std::string ProductName, const int Price) override;
+        void   viewCompany() override;
+        Product   add(const int ProductId, const std::string ProductName, const int Price, const int CompanyId) override;
         std::vector<Product>   save(const Product & Product) override;
 
         std::vector<Product>   del(const int ProductId) override;
@@ -62,4 +63,4 @@ namespace Domain::Product
 
  
 
-}  // namespace Domain::Client
+}  // namespace Domain::Product

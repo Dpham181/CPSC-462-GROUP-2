@@ -11,12 +11,15 @@
 namespace TechnicalServices::Persistence
 {
   // Function argument type definitions
+  // User Object
   struct UserCredentials
   {
     std::string               userName;
     std::string               passPhrase;
     std::vector<std::string>  roles;
   };
+
+  // Client object 
   struct Client
   {
     std::string creator;
@@ -30,12 +33,40 @@ namespace TechnicalServices::Persistence
     std::string dob;
     int         income;  
   };
-
+  // product object 
   struct Product
   {
       int         id;
       std::string Name;
       int         Price;
+      int     ProductCommany;
+
+  };
+
+
+  struct ProductCompany {
+      int Id;
+      std::string Name;
+      int Rate;
+  };
+  // Commission object
+
+  struct Commission {
+      int        ID;
+      int        Revenue;
+      int        Commission_Rate;
+      bool       Status; 
+  };
+  struct Sale
+  {
+      int         id;
+      int        Commission_ID;
+      int         UserId;
+      int         ClientId;
+      std::string DateOfSale;
+      std::vector<int> ProductsId; 
+
+
   };
 
   // Persistence Package within the Technical Services Layer Abstract class
@@ -65,6 +96,7 @@ namespace TechnicalServices::Persistence
        virtual std::vector<Client> ShowAllClients() = 0;
        virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
        virtual std::vector<Product> CRMInventory() =0 ;
+       virtual std::vector<ProductCompany> CRMCompanypartnerships() =0;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

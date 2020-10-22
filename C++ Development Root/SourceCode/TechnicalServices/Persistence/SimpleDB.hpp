@@ -27,6 +27,7 @@ namespace TechnicalServices::Persistence
         std::vector<Client> ShowAllClients() override;
         std::vector<Clientprofile> ShowAllClientsProfile() override;
         std::vector<Product> CRMInventory() override;
+        std::vector<ProductCompany> CRMCompanypartnerships() override;
 
      
 
