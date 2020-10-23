@@ -122,9 +122,23 @@ namespace TechnicalServices::Persistence
    {
        return
        {
-           //UserID     Username    Pass phrase   Authorized roles      Status     Spera time
-            { 1,        "Tom",      "CPSC",       { "IT Admin" },       1,         { "Tu", "We" } },
-            { 2,        "Amanda",   "",           { "Salesperson" },    1,         { "We" } }
+           //UserID     Username    Pass phrase   Authorized roles      Status
+            { 1,        "Tom",      "CPSC",       { "IT Admin" },       1 },
+            { 2,        "Amanda",   "",           { "Salesperson" },    1 },
+            { 3,        "Sam",      "1",          { "Assistant" },      1 },
+            { 4,        "Ann",      "2",          { "Sales Manager" },  1 }
+       };
+   }
+
+   std::vector<UserEvents> SimpleDB::ShowAllUserEvents()
+   {
+       return
+       {
+           //UserID     Free time               Events
+           { 1,         { "Tu AM" },            {} },
+           { 2,         { "Tu AM", "We PM" },   {} },
+           { 3,         { "Tu AM" },            {} },
+           { 4,         { "Tu AM", "We PM" },   {} }
        };
    }
 
@@ -142,6 +156,20 @@ namespace TechnicalServices::Persistence
     throw PersistenceHandler::NoSuchUser( message );
   }
 
+  std::vector<std::string> SimpleDB::findOffices()
+  {
+      return { "Office 1", "Office 2", "Office 3" };
+  }
+
+  std::vector<Event> SimpleDB::ShowAllEvents()
+  {
+      return
+      {
+          //EventID    Event name          Event Paticipants    Event time     Event location
+          { 1,         "Office meeting",   {1, 2, 3, 4},        "Fr AM",       "Office 2" }
+      };
+  }
+ 
   // TDUFF
   // Return the user's role
   //std::string UsersRole(UserCredentials user) {

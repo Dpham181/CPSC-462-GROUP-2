@@ -338,7 +338,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ DD imagerel $LN3
-	DD	imagerel $LN3+130
+	DD	imagerel $LN3+109
 	DD	imagerel $unwind$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -1426,11 +1426,11 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DD 025054019H
 	DD	01132318H
-	DD	0700c0043H
+	DD	0700c003fH
 	DD	0500bH
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
-	DD	0202H
+	DD	01e2H
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
@@ -1454,7 +1454,7 @@ CONST	SEGMENT
 	DB	00H
 	ORG $+14
 ?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcVarDesc DD 050H ; Domain::Product::ProductHandler::UseProductManagement
-	DD	0a0H
+	DD	080H
 	DQ	FLAT:?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcName$0
 	ORG $+48
 ?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$rtcFrameData DD 01H ; Domain::Product::ProductHandler::UseProductManagement
@@ -3290,7 +3290,7 @@ $LN8:
 
 ; 2698 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 336				; 00000150H
+	mov	ecx, 304				; 00000130H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
@@ -3340,7 +3340,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 336				; 00000150H
+	mov	edx, 304				; 00000130H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -3366,7 +3366,7 @@ __$ReturnUdt$ = 336
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 336				; 00000150H
+	mov	edx, 304				; 00000130H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -3451,13 +3451,13 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 persistentData$ = 8
 credentialsFromDB$ = 48
-$T4 = 424
-$T5 = 452
-tv131 = 472
-tv73 = 472
-__$ArrayPad$ = 480
-__$ReturnUdt$ = 528
-user$ = 536
+$T4 = 392
+$T5 = 420
+tv131 = 440
+tv73 = 440
+__$ArrayPad$ = 448
+__$ReturnUdt$ = 496
+user$ = 504
 ?UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z PROC ; Domain::Product::ProductHandler::UseProductManagement, COMDAT
 
 ; 20   :     {
@@ -3467,13 +3467,13 @@ $LN8:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
 	push	rdi
-	sub	rsp, 536				; 00000218H
+	sub	rsp, 504				; 000001f8H
 	lea	rbp, QWORD PTR [rsp+32]
 	mov	rdi, rsp
-	mov	ecx, 134				; 00000086H
+	mov	ecx, 126				; 0000007eH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	mov	rcx, QWORD PTR [rsp+568]
+	mov	rcx, QWORD PTR [rsp+536]
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
@@ -3490,7 +3490,7 @@ $LN8:
 
 	mov	rax, QWORD PTR persistentData$[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+8]
+	mov	rax, QWORD PTR [rax+16]
 	mov	QWORD PTR tv73[rbp], rax
 	mov	rax, QWORD PTR user$[rbp]
 	add	rax, 8
@@ -3554,7 +3554,7 @@ $LN1@UseProduct:
 	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
 	xor	rcx, rbp
 	call	__security_check_cookie
-	lea	rsp, QWORD PTR [rbp+504]
+	lea	rsp, QWORD PTR [rbp+472]
 	pop	rdi
 	pop	rbp
 	ret	0
@@ -3564,13 +3564,13 @@ _TEXT	ENDS
 text$x	SEGMENT
 persistentData$ = 8
 credentialsFromDB$ = 48
-$T4 = 424
-$T5 = 452
-tv131 = 472
-tv73 = 472
-__$ArrayPad$ = 480
-__$ReturnUdt$ = 528
-user$ = 536
+$T4 = 392
+$T5 = 420
+tv131 = 440
+tv73 = 440
+__$ArrayPad$ = 448
+__$ReturnUdt$ = 496
+user$ = 504
 ?dtor$0@?0??UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Product::ProductHandler::UseProductManagement'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -3591,13 +3591,13 @@ text$x	ENDS
 text$x	SEGMENT
 persistentData$ = 8
 credentialsFromDB$ = 48
-$T4 = 424
-$T5 = 452
-tv131 = 472
-tv73 = 472
-__$ArrayPad$ = 480
-__$ReturnUdt$ = 528
-user$ = 536
+$T4 = 392
+$T5 = 420
+tv131 = 440
+tv73 = 440
+__$ArrayPad$ = 448
+__$ReturnUdt$ = 496
+user$ = 504
 ?dtor$0@?0??UseProductManagement@ProductHandler@Product@Domain@@SA?AV?$unique_ptr@VProductHandler@Product@Domain@@U?$default_delete@VProductHandler@Product@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Product::ProductHandler::UseProductManagement'::`1'::dtor$0
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
@@ -3629,10 +3629,6 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	mov	rax, QWORD PTR this$[rbp]
-	add	rax, 128				; 00000080H
-	mov	rcx, rax
-	call	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 	mov	rax, QWORD PTR this$[rbp]
 	add	rax, 88					; 00000058H
 	mov	rcx, rax

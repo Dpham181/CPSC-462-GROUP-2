@@ -34,7 +34,6 @@ namespace Domain::User
         virtual void                             viewUserProfiles(const std::vector<UserCredentials>& UsersDB) = 0;         //view users for Security Officer
         virtual UserCredentials                  searchUserId(const int UserId) = 0;
         virtual std::vector<UserCredentials>     addUser(const int UserID, const std::string UserName, const std::string Role) = 0;
-        //virtual std::vector<UserCredentials>     updateUser(const int UserID, const std::string UserName, const std::string PassPhrase, const std::string Role, const int Status, const std::vector<std::string> SpareTime) = 0;
         virtual std::vector<UserCredentials>     updateUser(const UserCredentials& User) = 0;
 
         

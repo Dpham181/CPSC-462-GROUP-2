@@ -2,6 +2,7 @@
 #include "Domain/Client/Client.hpp"
 #include "Domain/Product/Product.hpp"
 #include "Domain/User/User.hpp"
+#include "Domain/Event/Event.hpp"
 #include <string>
 #include <any>
 #include <iomanip>     // setw()
@@ -92,12 +93,8 @@ namespace  // anonymous (private) working area
   
 }    // anonymous (private) working area
 
-
- // IT Admin actions
+// User management
 STUB(UserManagement)
-STUB(BackupDB)
-STUB(Shutdown)
-
 
 std::any AddUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
 {
@@ -109,7 +106,7 @@ std::any AddUser(Domain::User::UserDomain& session, const std::vector<std::strin
 
  std::any UpdateUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
  {
-     auto result = session.updateUser({ std::atoi(agrs[0].c_str()), agrs[1], agrs[2], {agrs[3]}, std::atoi(agrs[4].c_str()), {agrs[5]} });
+     auto result = session.updateUser({ std::atoi(agrs[0].c_str()), agrs[1], agrs[2], {agrs[3]}, std::atoi(agrs[4].c_str()) });
 
      return  result;
  }
@@ -128,6 +125,67 @@ std::any ViewUserProfiles(Domain::User::UserDomain& session, const std::vector<s
     return  "true";
 }
 
+// Office events management
+STUB(EventManagement)
+
+std::any AddEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
+{
+    std::string s1 = agrs[2];
+    std::vector<int> res;
+    while (!s1.empty())
+    {
+        if (s1.find(" ") == std::string::npos) 
+        {
+            res.push_back(stoi(s1));
+            s1.clear();
+            break;
+        }
+        std::string s_temp = s1.substr(0, s1.find(" "));
+        res.push_back(stoi(s_temp));
+        s1.erase(0, s1.find(" ") + 1);
+    }
+    auto result = session.addEvent({ std::atoi(agrs[0].c_str()), agrs[1], res, agrs[3], agrs[4] });
+
+    return  result;
+}
+
+std::any UpdateEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
+{
+    std::string s1 = agrs[2];
+    std::vector<int> res;
+    while (!s1.empty())
+    {
+        if (s1.find(" ") == std::string::npos)
+        {
+            res.push_back(stoi(s1));
+            s1.clear();
+            break;
+        }
+        std::string s_temp = s1.substr(0, s1.find(" "));
+        res.push_back(stoi(s_temp));
+        s1.erase(0, s1.find(" ") + 1);
+    }
+    auto result = session.updateEvent({ std::atoi(agrs[0].c_str()), agrs[1], res, agrs[3], agrs[4] });
+
+    return  result;
+}
+
+std::any ViewEvents(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
+{
+    return  "true";
+}
+
+std::any DeleteEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
+{
+    return "true";
+}
+
+// IT Admin actions
+STUB(BackupDB)
+STUB(Shutdown)
+
+// Assistant actions
+STUB(AskHelp)
 
 // Client domain implementation 
 namespace Domain::Client
@@ -439,7 +497,7 @@ namespace Domain::User
     // ADDING NEW USER TO THE MEMORY DATABASE 
     std::vector<UserCredentials>  UserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
     {
-        UserCredentials newUser = { UserID,  UserName, "123456", {Role}, 1 , {} }; 
+        UserCredentials newUser = { UserID,  UserName, "123456", {Role}, 1 }; 
         _UpdatedUserDB.push_back(newUser); // add new User to list of static User 
 
         return _UpdatedUserDB;
@@ -458,7 +516,6 @@ namespace Domain::User
         return _User;
     }
 
-    //std::vector<UserCredentials> UserDomain::updateUser(const int UserID, const std::string UserName, const std::string PassPhrase, const std::string Role, const int Status, const std::vector<std::string> SpareTime)
     std::vector<UserCredentials> UserDomain::updateUser(const UserCredentials& User)
     {
         _User = searchUserId(User.userID);
@@ -479,10 +536,6 @@ namespace Domain::User
         {
             _User.status = User.status;
         }
-        if (User.spareTime[0] !=  "")
-        {
-            _User.spareTime = User.spareTime;
-        }
 
         _UpdatedUserDB.at(ReplaceIndex) = _User;
 
@@ -498,12 +551,246 @@ namespace Domain::User
                          { "View All Users", ViewUsers },
                          { "View All User Profiles", ViewUserProfiles },
                          { "Update User Profile", UpdateUser },
-                         { "Delete User", DeleteUser },
+                         { "Delete User", DeleteUser }//,
 
         };
     };
 }
 
+//Envent domain implemention
+namespace Domain::Event
+
+{
+    auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+
+    void line()
+    {
+        for (int i = 1; i < 41; i++)
+            std::cout << "--";
+        std::cout << "\n";
+
+    }
+
+    EventDomain::EventDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
+    {
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
+    }
+
+
+    std::vector<std::string> EventDomain::getCommandsEvent()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
+
+    std::any EventDomain::executeCommandEvent(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+
+        auto results = it->second(*this, args);
+
+        return results;
+    }
+
+    // get updating the static data of Events
+    std::vector<Event> EventDomain::EventsDB(const std::vector<Event>& EventsDB)
+    {
+        _UpdatedEventDB = EventsDB;
+        // generating the result in updating table 
+
+        return _UpdatedEventDB;
+    }
+
+    // get updating the static data of UserEvents
+    std::vector<UserEvents> EventDomain::UserEventsDB(const std::vector<UserEvents>& UserEventsDB)
+    {
+        _UpdatedUserEventsDB = UserEventsDB;
+        // generating the result in updating table 
+
+        return _UpdatedUserEventsDB;
+    }
+
+    std::vector<UserCredentials> EventDomain::UsersDB(const std::vector<UserCredentials>& UsersDB)
+    {
+        _UpdatedUserDB = UsersDB;
+        // generating the result in updating table 
+
+        return _UpdatedUserDB;
+    }
+
+    void EventDomain::viewEvents(const std::vector<Event>& EventsDB)
+    {
+        line();
+        std::cout << std::setw(49) << "list of users\n";
+        line();
+        std::cout << std::setw(15) << "Id" << std::setw(20) << "Event" << std::setw(20) << "Time" << std::setw(20) << "Location" << "\n";
+        line();
+
+        for (const auto& c : EventsDB)
+            std::cout << std::setw(15) << std::to_string(c.eventID) << std::setw(20) << c.eventName << std::setw(20) << c.eventTime << std::setw(20) << c.eventLocation << std::endl;
+        line();
+    }
+
+    void EventDomain::viewUserEvents(const std::vector<UserEvents>& UserEventsDB, const std::vector<UserCredentials>& UsersDB)
+    {
+        line();
+        std::cout << std::setw(49) << "list of users and user events\n";
+        line();
+        std::cout << std::setw(15) << "Id" << std::setw(20) << "User Name" << std::setw(20) << "Role" << std::setw(20) << "Free time" << std::setw(20) << "Events" << "\n";
+        line();
+
+        for (const auto& c : UserEventsDB)
+        {
+            std::string userName = "";
+            std::vector<std::string> userRole = {};
+            std::string s1, s2;
+            for (const auto& StoredUser : UsersDB)
+            {
+                if (StoredUser.userID == c.userID)
+                {
+                    userName = StoredUser.userName;
+                    userRole = StoredUser.roles;
+                }
+            }
+            for (const auto& t : c.freeTime)
+            {
+                s1 = s1 + t + ", ";
+            }
+            std::string freeTime = s1.substr(0, s1.size() - 2);
+            for (const auto& e : c.events)
+            {
+                s2 = s2 + e + ", ";
+            }
+            std::string events = s2.substr(0, s2.size() - 2);
+
+            std::cout << std::setw(15) << std::to_string(c.userID) << std::setw(20) << userName << std::setw(20) << userRole[0] << std::setw(20) << freeTime << std::setw(20) << events << std::endl;
+        }
+            
+        line();
+    }
+
+    std::vector<std::string> EventDomain::availableTimes(const std::vector<UserEvents> UserEventsDB, const std::string UserIDs)
+    {
+        std::string s1 = UserIDs;
+        std::vector<int> res;
+        std::vector<std::string> meetingTime;
+        while (!s1.empty())
+        {
+            if (s1.find(" ") == std::string::npos)
+            {
+                res.push_back(stoi(s1));
+                s1.clear();
+                break;
+            }
+            std::string s_temp = s1.substr(0, s1.find(" "));
+            res.push_back(stoi(s_temp));
+            s1.erase(0, s1.find(" ") + 1);
+        }
+        for (const auto& t : UserEventsDB[res[0] - 1].freeTime)
+        {
+            size_t i = 1;
+            int _bool = 0;
+            while (i != res.size())
+            {
+                for (const auto& tmp : UserEventsDB[res[i] - 1].freeTime)
+                {
+                    if (tmp == t) _bool = 1;
+                }
+                if (_bool == 0) break;
+                else ++i;
+            }
+            if (_bool == 1) meetingTime.push_back(t);
+        }
+
+        return meetingTime;
+    }
+
+    std::vector<std::string> EventDomain::availableLocations(const std::vector<Event> EventsDB, std::vector<std::string> OfficeValues, const std::string Time)
+    {
+        std::vector<std::string> locations = OfficeValues;
+        for (const auto& e : EventsDB)
+        {
+            if (e.eventTime == Time)
+            {
+                std::vector<std::string>::iterator it;
+                for (it = locations.begin(); it != locations.end(); )
+                {
+                    if (*it == e.eventLocation) { it = locations.erase(it); }
+                    else { ++it; }
+                }
+            }
+        }
+
+        return locations;
+    }
+
+    // ADDING NEW EVENT TO THE MEMORY DATABASE 
+    std::vector<Event>  EventDomain::addEvent(const Event& Event)
+    {
+        _UpdatedEventDB.push_back(Event); // add new User to list of static User 
+
+        return _UpdatedEventDB;
+    }
+
+    Event   EventDomain::searchEventId(const int EventId)
+    {
+        for (const auto& StoredEvent : _UpdatedEventDB)
+        {
+            if (StoredEvent.eventID == EventId)
+            {
+                _Event = StoredEvent;
+            }
+        }
+
+        return _Event;
+    }
+
+    std::vector<Event> EventDomain::updateEvent(const Event& Event)
+    {
+        _Event = searchEventId(Event.eventID);
+        int ReplaceIndex = Event.eventID - 1;
+        if (Event.eventName != "")
+        {
+            _Event.eventName = Event.eventName;
+        }
+        if (Event.eventUsers[0] != 0)
+        {
+            _Event.eventUsers = Event.eventUsers;
+        }
+        if (Event.eventTime != "")
+        {
+            _Event.eventTime = Event.eventName;
+        }
+        if (Event.eventLocation != "")
+        {
+            _Event.eventLocation = Event.eventLocation;
+        }
+
+        _UpdatedEventDB.at(ReplaceIndex) = _Event;
+
+        return _UpdatedEventDB;
+    }
+
+    EventManagement::EventManagement(const UserCredentials& user) : EventDomain("Event Management", user)
+    {
+        
+        _commandDispatch = {
+
+                         { "Add New Meeting", AddEvent },
+                         { "View All Meetings", ViewEvents },
+                         { "Update Meeting", UpdateEvent },
+                         { "Delete Meeting", DeleteEvent }
+        };
+    };
+}
 
 
 // session domain implementation 
@@ -586,15 +873,11 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Assistant\".";
 
-    //_commandDispatch = {
-    //                     { "Show All Clients", ShowAllClients },
-    //                    {"Add New Client", addNewClient},
-    //                     {"Modify Client",          modifyClient        },
-    //                     {"Ask IT for Help",     askHelp    },
-    //                     {"Schedule Event",   scheduleEvent  },
-    //                     { "Attach Client Document", attachClientDocument },
-    //                     { "Invite Client", inviteClient }//,
-    //};
+    _commandDispatch = {
+                         { "Client Management", ClientManagement },
+                         { "Event Management",  EventManagement },
+                         { "Ask IT for Help",   AskHelp }
+    };
   }
 
 

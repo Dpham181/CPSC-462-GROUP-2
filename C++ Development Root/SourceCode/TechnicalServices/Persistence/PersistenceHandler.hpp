@@ -18,7 +18,12 @@ namespace TechnicalServices::Persistence
     std::string               passPhrase;
     std::vector<std::string>  roles;
     int                       status;
-    std::vector<std::string>  spareTime;
+  };
+  struct UserEvents 
+  {
+    int                       userID;
+    std::vector<std::string>  freeTime;
+    std::vector<std::string>  events;
   };
   struct Client
   {
@@ -41,6 +46,15 @@ namespace TechnicalServices::Persistence
       int         Price;
   };
 
+  struct Event 
+  {
+      int               eventID;
+      std::string       eventName;
+      std::vector<int>  eventUsers;
+      std::string       eventTime;
+      std::string       eventLocation;
+  };
+
   // Persistence Package within the Technical Services Layer Abstract class
   // Singleton Class - only one instance of the DB exists for the entire system
   class PersistenceHandler
@@ -60,6 +74,7 @@ namespace TechnicalServices::Persistence
 
       // Operations
       virtual std::vector<std::string> findRoles()                                       = 0;   // Returns list of all legal roles
+      virtual std::vector<std::string> findOffices()                                     = 0;   // Returns list of all office rooms
       virtual UserCredentials          findCredentialsByName( const std::string & name ) = 0;   // Returns credentials for specified user, throws NoSuchUser if user not found
       
       // client operations
@@ -71,6 +86,8 @@ namespace TechnicalServices::Persistence
 
        // user
        virtual std::vector<UserCredentials> ShowAllUsers() = 0;
+       virtual std::vector<UserEvents> ShowAllUserEvents() = 0;
+       virtual std::vector<Event> ShowAllEvents() = 0;
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair
       // Throws NoSuchProperty

@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\SourceCode\Domain\Client\ClientHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Domain\Event\EventHandler.cpp" />
     <ClCompile Include="..\..\SourceCode\Domain\Product\ProductHandler.cpp" />
     <ClCompile Include="..\..\SourceCode\Domain\Session\Session.cpp" />
     <ClCompile Include="..\..\SourceCode\Domain\Session\SessionHandler.cpp" />
@@ -36,6 +37,8 @@
     <ClInclude Include="..\..\SourceCode\Domain\Client\Client.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Client\ClientHandler.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Client\ClientProfile.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Event\Event.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Event\EventHandler.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Library\Books.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Library\MaintainBooksHandler.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Product\Product.hpp" />

@@ -5,7 +5,8 @@
 #include "Domain/Library/MaintainBooksHandler.hpp"
 #include "Domain/Client/ClientHandler.hpp"
 #include "Domain/Product/ProductHandler.hpp"
-
+#include "Domain/User/UserHandler.hpp"
+#include "Domain/Event/EventHandler.hpp"
 #include "TechnicalServices/Logging/LoggerHandler.hpp"
 #include "TechnicalServices/Persistence/PersistenceHandler.hpp"
 

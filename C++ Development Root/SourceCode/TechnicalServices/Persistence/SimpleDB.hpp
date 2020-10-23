@@ -20,6 +20,7 @@ namespace TechnicalServices::Persistence
 
       // Operations
       std::vector<std::string> findRoles()                                       override;  // Returns list of all legal roles
+      std::vector<std::string> findOffices()                                     override;  // Returns list of all office rooms
       UserCredentials          findCredentialsByName( const std::string & name ) override;  // Returns credentials for specified user, throws NoSuchUser if user not found
 
       //operations for clients 
@@ -30,8 +31,10 @@ namespace TechnicalServices::Persistence
 
         //user
         std::vector<UserCredentials> ShowAllUsers() override;
+        std::vector<UserEvents> ShowAllUserEvents() override;
      
-
+        //event
+        std::vector<Event> ShowAllEvents() override;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

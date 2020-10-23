@@ -8521,7 +8521,7 @@ $LN16:
 
 	mov	rax, QWORD PTR persistantData$[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+48]
+	mov	rax, QWORD PTR [rax+72]
 	mov	QWORD PTR tv77[rbp], rax
 	lea	rdx, OFFSET FLAT:??_C@_0N@GNLLJOEH@Component?4UI@
 	lea	rcx, QWORD PTR $T4[rbp]
