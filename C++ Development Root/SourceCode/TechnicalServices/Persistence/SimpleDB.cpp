@@ -97,6 +97,7 @@ namespace TechnicalServices::Persistence
       
      return { { "A", 1,"D",714000000 }, { "B", 2, "C",714000000 } };
   }
+   ///Client static MOCK DB
    
    std::vector<Clientprofile> SimpleDB::ShowAllClientsProfile ()
    {
@@ -107,6 +108,8 @@ namespace TechnicalServices::Persistence
        
        };
    }
+   ///Product static MOCK DB
+
    std::vector<Product> SimpleDB::CRMInventory()
    {
 
@@ -117,6 +120,7 @@ namespace TechnicalServices::Persistence
 
        };
    }
+   // Company mock DB
    std::vector<ProductCompany> SimpleDB::CRMCompanypartnerships()
    {
 
@@ -127,6 +131,22 @@ namespace TechnicalServices::Persistence
 
        };
    }
+   // Sale  mock DB
+
+   std::vector<Sale> SimpleDB::PurchasedHistory() {
+       return {
+              {1,1,1,1,"10/22/2020", {1,2}},
+              {2,2,2,2,"10/23/2020", {1,2}},
+       };
+   }
+   // Commission Mock Db
+   std::vector<Commission> CommissionHistory() {
+       return {
+            {1, 20000, 80, false },
+            {2, 30000, 90, true },
+       };
+   }
+
   UserCredentials SimpleDB::findCredentialsByName( const std::string & name )
   {
     static std::vector<UserCredentials> storedUsers =

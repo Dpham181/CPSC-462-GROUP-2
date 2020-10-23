@@ -53,9 +53,9 @@ namespace TechnicalServices::Persistence
 
   struct Commission {
       int        ID;
-      int        Revenue;
-      int        Commission_Rate;
-      bool       Status; 
+      int        Revenue=0;
+      int        Commission_Rate =0;
+      bool       Status = false; 
   };
   struct Sale
   {
@@ -97,6 +97,8 @@ namespace TechnicalServices::Persistence
        virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
        virtual std::vector<Product> CRMInventory() =0 ;
        virtual std::vector<ProductCompany> CRMCompanypartnerships() =0;
+       virtual std::vector<Sale> PurchasedHistory() = 0;
+       virtual std::vector<Commission> CommissionHistory() = 0;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

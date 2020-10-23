@@ -10,6 +10,7 @@
 #include <iostream>
 #include <iterator>
 #include <vector>
+#include <sstream>
 
 namespace  // anonymous (private) working area
 {
@@ -93,7 +94,11 @@ namespace  // anonymous (private) working area
 #define STUBS(functionName)  std::any functionName( Domain::Sale::SaleDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  
 
-     STUBS(makesale)
+ std::any makesale(Domain::Sale::SaleDomain& saleto, const std::vector<std::string>& args) {
+    
+     //todo
+     auto onesale = saleto.MakeSale(std::atoi(args[0].c_str()), std::atoi(args[1].c_str()), {});
+ }
 
   
   
@@ -115,6 +120,10 @@ namespace Domain::Sale {
     SaleDomain::SaleDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
+       
+        _ListOfSale = persistentData.PurchasedHistory(); if (_ListOfSale.size() >0)   _logger << "Sale Statis Database in use\"";
+        _ListofCommissions = persistentData.CommissionHistory(); if (_ListofCommissions.size() > 0)   _logger << "Commission  Statis Database in use\"";
+       
     }
 
 
@@ -140,13 +149,35 @@ namespace Domain::Sale {
 
         return results;
     }
-    Sale  SaleDomain::MakeSale(const int SaleId, const int CommissionId, const int UserId, const int ClientId, const std::string  DateofSale, const std::vector<Product> purchasedProduct) {
-        //todo
-        return {};
+    Sale  SaleDomain::MakeSale( const int UserId, const int ClientId, const std::vector<Product> purchasedProduct) {
+       
+        auto now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+
+        _OneSale.id= _ListOfSale.size() + 1;
+
+        _OneSale.ClientId = ClientId;
+
+        _OneSale.UserId = UserId;
+
+        _OneSale.Commission_ID = _ListofCommissions.size() + 1;
+
+
+        std::ostringstream oss;
+        oss << std::put_time(std::localtime(&now), "%Y-%m-%d %X");
+        auto str = oss.str();
+        _OneSale.DateOfSale = str;
+
+
+        for (const auto&  p : purchasedProduct) {
+            _OneSale.ProductsId.push_back(p.id) ;
+        }
+        return  _OneSale;
     }
-    Commission SaleDomain::GenerateCommission(const int CommissionId, const int CommissionRate, const int UserId, const int CompanyId) {
-        //todo
-        return {};
+    Commission SaleDomain::GenerateCommission(const int CommissionId) {
+        _OneComission.ID = CommissionId;
+
+        _ListofCommissions.push_back(_OneComission);
+        return   _OneComission;
     }
     SaleManagement::SaleManagement(const UserCredentials& user) : SaleDomain("Sale Management", user)
     {

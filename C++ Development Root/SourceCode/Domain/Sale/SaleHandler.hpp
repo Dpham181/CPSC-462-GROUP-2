@@ -29,8 +29,8 @@ namespace Domain::Sale
 
    // Operations of management inventory
      // default operations
-       virtual Sale             MakeSale(const int SaleId, const int CommissionId, const int UserId, const int ClientId, const std::string  DateofSale, const std::vector<Product> purchasedProduct) =0;
-       virtual Commission       GenerateCommission(const int CommissionId, const int CommissionRate, const int UserId, const int CompanyId) =0;
+       virtual Sale             MakeSale( const int UserId, const int ClientId, const std::vector<Product> purchasedProduct) =0;
+       virtual Commission       GenerateCommission(const int CommissionId) =0;
 
       virtual ~SaleHandler() noexcept = 0;
 
