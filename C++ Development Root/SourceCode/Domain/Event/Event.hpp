@@ -25,7 +25,7 @@ namespace Domain::Event
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
         std::vector<Event>              EventsDB(const std::vector<Event>& EventsDB) override;
         std::vector<UserEvents>         UserEventsDB(const std::vector<UserEvents>& UserEvents) override;
-        void                            viewEvents(const std::vector<Event>& EventsDB) override;
+        void                            viewEvents(const std::vector<Event>& EventsDB, const std::vector<UserCredentials> UsersDB) override;
         void                            viewUserEvents(const std::vector<UserEvents>& UserEventsDB, const std::vector<UserCredentials>& UsersDB) override;
         std::vector<std::string>        availableTimes(const std::vector<UserEvents> UserEventsDB, const std::string UserIDs) override;
         std::vector<std::string>        availableLocations(const std::vector<Event> EventsDB, std::vector<std::string> OfficeValues, const std::string Time) override;

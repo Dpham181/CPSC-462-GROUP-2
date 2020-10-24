@@ -548,7 +548,7 @@ namespace UI
                                     else { ++it; }
                                 }
                                 std::vector<std::string> newevents = addevent.events;
-                                std::string newevent = "Meeting name: " + parameters[1] + ", Meeting time: " + parameters[3] + ", Meeting location: " + parameters[4];
+                                std::string newevent = parameters[1] + ", " + parameters[3] + ", " + parameters[4];
                                 newevents.push_back(newevent);
                                 UserEventsFromDB[id - 1] = { id, newfreetime, newevents };
                             }
@@ -557,7 +557,7 @@ namespace UI
 
                     else if (selectedCommand == "View All Meetings")
                     {
-                        EventHandler->viewEvents(EventsFromDB);
+                        EventHandler->viewEvents(EventsFromDB, UsersFromDB);
                     }
 
                     else if (selectedCommand == "Update Meeting")

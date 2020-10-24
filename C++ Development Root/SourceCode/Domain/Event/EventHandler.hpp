@@ -34,7 +34,7 @@ namespace Domain::Event
         virtual std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) = 0;
         virtual std::vector<Event>              EventsDB(const std::vector<Event>& EventsDB) = 0;
         virtual std::vector<UserEvents>         UserEventsDB(const std::vector<UserEvents>& UserEvents) = 0;
-        virtual void                            viewEvents(const std::vector<Event>& EventsDB) = 0;
+        virtual void                            viewEvents(const std::vector<Event>& EventsDB, const std::vector<UserCredentials> UsersDB) = 0;
         virtual void                            viewUserEvents(const std::vector<UserEvents>& UserEventsDB, const std::vector<UserCredentials>& UsersDB) = 0;
         virtual std::vector<std::string>        availableTimes(const std::vector<UserEvents> UserEventsDB, const std::string UserIDs) = 0;
         virtual std::vector<std::string>        availableLocations(const std::vector<Event> EventsDB, std::vector<std::string> OfficeValues, const std::string Time) = 0;

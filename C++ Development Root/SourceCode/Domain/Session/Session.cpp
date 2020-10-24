@@ -464,7 +464,7 @@ namespace Domain::User
     void UserDomain::viewUsers(const std::vector<UserCredentials>& UsersDB)
     {
         line();
-        std::cout << std::setw(49) << "list of users\n";
+        std::cout << std::setw(49) << "List of Users\n";
         line();
         std::cout << std::setw(15) << "Id" << std::setw(20) << "Name" << std::setw(20) << "Role" << "\n";
         line();
@@ -565,7 +565,7 @@ namespace Domain::Event
 
     void line()
     {
-        for (int i = 1; i < 41; i++)
+        for (int i = 1; i < 51; i++)
             std::cout << "--";
         std::cout << "\n";
 
@@ -626,25 +626,41 @@ namespace Domain::Event
         return _UpdatedUserDB;
     }
 
-    void EventDomain::viewEvents(const std::vector<Event>& EventsDB)
+    void EventDomain::viewEvents(const std::vector<Event>& EventsDB, const std::vector<UserCredentials> UsersDB)
     {
         line();
-        std::cout << std::setw(49) << "list of users\n";
+        std::cout << std::setw(59) << "List of Events\n";
         line();
-        std::cout << std::setw(15) << "Id" << std::setw(20) << "Event" << std::setw(20) << "Time" << std::setw(20) << "Location" << "\n";
+        std::cout << std::setw(10) << "Id" << std::setw(20) << "Event" << std::setw(35) << "Participants" << std::setw(15) << "Time" << std::setw(15) << "Location" << "\n";
         line();
 
         for (const auto& c : EventsDB)
-            std::cout << std::setw(15) << std::to_string(c.eventID) << std::setw(20) << c.eventName << std::setw(20) << c.eventTime << std::setw(20) << c.eventLocation << std::endl;
+        {
+            std::string participants = "";
+            std::string s1;
+            for (const auto& p : c.eventUsers) 
+            {
+                for (const auto& StoredUser : UsersDB)
+                {
+                    if (StoredUser.userID == p)
+                    {
+                        s1 = s1 + StoredUser.userName + ", ";
+                    }
+                }
+            }
+            participants = s1.substr(0, s1.size() - 2);
+            std::cout << std::setw(10) << std::to_string(c.eventID) << std::setw(20) << c.eventName << std::setw(35) << participants << std::setw(15) << c.eventTime << std::setw(15) << c.eventLocation << std::endl;
+        }
+
         line();
     }
 
     void EventDomain::viewUserEvents(const std::vector<UserEvents>& UserEventsDB, const std::vector<UserCredentials>& UsersDB)
     {
         line();
-        std::cout << std::setw(49) << "list of users and user events\n";
+        std::cout << std::setw(59) << "List of Users and User Events\n";
         line();
-        std::cout << std::setw(15) << "Id" << std::setw(20) << "User Name" << std::setw(20) << "Role" << std::setw(20) << "Free time" << std::setw(20) << "Events" << "\n";
+        std::cout << std::setw(5) << "Id" << std::setw(15) << "User Name" << std::setw(20) << "Role" << std::setw(20) << "Free time" << "     " << "Events" << "\n";
         line();
 
         for (const auto& c : UserEventsDB)
@@ -667,11 +683,11 @@ namespace Domain::Event
             std::string freeTime = s1.substr(0, s1.size() - 2);
             for (const auto& e : c.events)
             {
-                s2 = s2 + e + ", ";
+                s2 = s2 + e + " | ";
             }
             std::string events = s2.substr(0, s2.size() - 2);
 
-            std::cout << std::setw(15) << std::to_string(c.userID) << std::setw(20) << userName << std::setw(20) << userRole[0] << std::setw(20) << freeTime << std::setw(20) << events << std::endl;
+            std::cout << std::setw(5) << std::to_string(c.userID) << std::setw(15) << userName << std::setw(20) << userRole[0] << std::setw(20) << freeTime << "     " << events << std::endl;
         }
             
         line();

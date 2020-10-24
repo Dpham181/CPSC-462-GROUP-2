@@ -135,10 +135,10 @@ namespace TechnicalServices::Persistence
        return
        {
            //UserID     Free time               Events
-           { 1,         { "Tu AM" },            {} },
-           { 2,         { "Tu AM", "We PM" },   {} },
-           { 3,         { "Tu AM" },            {} },
-           { 4,         { "Tu AM", "We PM" },   {} }
+           { 1,         { "Tu AM" },            { "Office meeting, Fr AM, Office 2" } },
+           { 2,         { "Tu AM", "We PM" },   { "Office meeting, Fr AM, Office 2" } },
+           { 3,         { "Tu AM" },            { "Office meeting, Fr AM, Office 2" } },
+           { 4,         { "Tu AM", "We PM" },   { "Office meeting, Fr AM, Office 2" } }
        };
    }
 
