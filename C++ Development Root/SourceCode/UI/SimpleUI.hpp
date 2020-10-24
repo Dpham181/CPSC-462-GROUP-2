@@ -2,11 +2,10 @@
 
 #include <memory>    // std::unique_ptr
 
-#include "Domain/Library/MaintainBooksHandler.hpp"
 #include "Domain/Client/ClientHandler.hpp"
 #include "Domain/Product/ProductHandler.hpp"
-#include "Domain/User/UserHandler.hpp"
-#include "Domain/Event/EventHandler.hpp"
+#include "Domain/Sale/SaleHandler.hpp"
+
 #include "TechnicalServices/Logging/LoggerHandler.hpp"
 #include "TechnicalServices/Persistence/PersistenceHandler.hpp"
 
@@ -32,7 +31,7 @@ namespace UI
 
       // Operations
       void launch() override;
-
+    
 
       // Destructor
       ~SimpleUI() noexcept override;
@@ -40,8 +39,8 @@ namespace UI
 
     private:
       // These smart pointers hold pointers to lower architectural layer's interfaces
-      std::unique_ptr<Domain::Library::MaintainBooksHandler>                _bookHandler;
       std::unique_ptr<Domain::Product::ProductHandler>                _ProductHandler;
+      std::unique_ptr<Domain::Sale::SaleHandler>                       _SaleHandler;
 
       std::unique_ptr<TechnicalServices::Logging::LoggerHandler>            _loggerPtr;
       TechnicalServices::Persistence::PersistenceHandler                  & _persistentData;

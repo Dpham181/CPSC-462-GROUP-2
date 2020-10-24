@@ -8,7 +8,6 @@ c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v1
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\session\sessionhandler.sbr
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\session\sessionhandler.nativecodeanalysis.xml
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\session\session.nativecodeanalysis.xml
-c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\session\session.obj
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\session\session.asm
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\session\sessionhandler.obj
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\session\sessionhandler.asm
@@ -36,6 +35,15 @@ c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v1
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\ui\systemdriverui.asm
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\ui\userinterfacehandler.obj
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\ui\userinterfacehandler.asm
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\client\clienthandler.sbr
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\client\clienthandler.nativecodeanalysis.xml
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\client\clienthandler.obj
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\client\clienthandler.asm
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\product\producthandler.sbr
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\product\producthandler.nativecodeanalysis.xml
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\product\producthandler.obj
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\product\producthandler.asm
+c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\sourcecode\domain\session\session.obj
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\consoleapplication-x64-debug.exe
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\consoleapplication-x64-debug.ilk
 c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\msvc++v16 (2019) solution space\consoleapplication\x64\debug\consoleapplication-x64-debug.map

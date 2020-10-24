@@ -21,12 +21,13 @@ namespace Domain::Product
        std::any                 executeCommandProduct(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
 
       // Operations
-        void   view() override;
-        Product   add(const int ProductId, const std::string ProductName, const int Price) override;
+        std::vector<Product>   view() override;
+        void   viewCompany() override;
+        Product   add(const int ProductId, const std::string ProductName, const int Price, const int CompanyId) override;
         std::vector<Product>   save(const Product & Product) override;
 
         std::vector<Product>   del(const int ProductId) override;
-        std::vector<Product>   modify(const Product CurrentProduct, const std::string ProductName, const int Price) override;
+        std::vector<Product>   modify(const int CurrentProduct, const std::string ProductName, const int Price) override;
 
       ~ProductDomain() noexcept override = 0 ;
   protected:
@@ -50,16 +51,10 @@ namespace Domain::Product
   }; // class Product
 
 
-  /*****************************************************************************
-  ** Inline implementations
-  ******************************************************************************/
-  inline ProductDomain::~ProductDomain() noexcept
-  {
-      _logger << "Session \"" + _name + "\" shutdown successfully";
-
-  }
+  
+ 
   struct ProductManagement : ProductDomain { ProductManagement(const UserCredentials& user); };
 
  
 
-}  // namespace Domain::Client
+}  // namespace Domain::Product

@@ -12,7 +12,7 @@ namespace Domain::Product
     using TechnicalServices::Persistence::Product;
     using TechnicalServices::Persistence::UserCredentials;
 
-  // Client Package within the Domain Layer Abstract class
+  // Product Package within the Domain Layer Abstract class
   class ProductHandler
   {
     public:
@@ -27,13 +27,13 @@ namespace Domain::Product
 
    // Operations of management inventory
      // default operations
-     virtual void   view() =0;
-     virtual  Product   add(const int ProductId, const std::string ProductName, const int Price)=0;
+     virtual std::vector<Product>   view() =0;
+     virtual void   viewCompany() = 0;
+     virtual  Product   add(const int ProductId, const std::string ProductName, const int Price, const int CompanyId)=0;
      virtual  std::vector<Product>   save(const Product & Product) = 0;
 
      virtual  std::vector<Product>   del(const int ProductId)=0;
-     virtual  std::vector<Product>   modify(const Product CurrentProduct, const std::string ProductName, const int Price)=0;
-     //virtual  std::vector<Product>   link()
+     virtual  std::vector<Product>   modify(const int CurrentProduct, const std::string ProductName, const int Price)=0;
 
 
       virtual ~ProductHandler() noexcept = 0;
@@ -45,7 +45,7 @@ namespace Domain::Product
         operator=( const ProductHandler& rhs ) = default;                // copy assignment
           ProductHandler& operator=(ProductHandler&& rhs ) = default;    // move assignment
  
-  };    // class ClientHandler
+  };    // class ProductHandler
 
 
-} // namespace Domain::Client
+} // namespace Domain::Product

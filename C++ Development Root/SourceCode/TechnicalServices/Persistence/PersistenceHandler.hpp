@@ -10,21 +10,16 @@
 
 namespace TechnicalServices::Persistence
 {
-
+  // Function argument type definitions
+  // User Object
   struct UserCredentials
   {
-    int                       userID;
     std::string               userName;
     std::string               passPhrase;
     std::vector<std::string>  roles;
-    int                       status;
   };
-  struct UserEvents 
-  {
-    int                       userID;
-    std::vector<std::string>  freeTime;
-    std::vector<std::string>  events;
-  };
+
+  // Client object 
   struct Client
   {
     std::string creator;
@@ -38,21 +33,40 @@ namespace TechnicalServices::Persistence
     std::string dob;
     int         income;  
   };
-
+  // product object 
   struct Product
   {
       int         id;
       std::string Name;
       int         Price;
+      int     ProductCommany;
+
   };
 
-  struct Event 
+
+  struct ProductCompany {
+      int Id;
+      std::string Name;
+      int Rate;
+  };
+  // Commission object
+
+  struct Commission {
+      int        ID;
+      int        Revenue=0;
+      int        Commission_Rate =0;
+      bool       Status = false; 
+  };
+  struct Sale
   {
-      int               eventID;
-      std::string       eventName;
-      std::vector<int>  eventUsers;
-      std::string       eventTime;
-      std::string       eventLocation;
+      int         id;
+      int        Commission_ID;
+      int         UserId;
+      int         ClientId;
+      std::string DateOfSale;
+      std::vector<int> ProductsId; 
+
+
   };
 
   // Persistence Package within the Technical Services Layer Abstract class
@@ -74,7 +88,6 @@ namespace TechnicalServices::Persistence
 
       // Operations
       virtual std::vector<std::string> findRoles()                                       = 0;   // Returns list of all legal roles
-      virtual std::vector<std::string> findOffices()                                     = 0;   // Returns list of all office rooms
       virtual UserCredentials          findCredentialsByName( const std::string & name ) = 0;   // Returns credentials for specified user, throws NoSuchUser if user not found
       
       // client operations
@@ -83,11 +96,10 @@ namespace TechnicalServices::Persistence
        virtual std::vector<Client> ShowAllClients() = 0;
        virtual std::vector<Clientprofile> ShowAllClientsProfile() = 0;
        virtual std::vector<Product> CRMInventory() =0 ;
+       virtual std::vector<ProductCompany> CRMCompanypartnerships() =0;
+       virtual std::vector<Sale> PurchasedHistory() = 0;
+       virtual std::vector<Commission> CHistory() = 0;
 
-       // user
-       virtual std::vector<UserCredentials> ShowAllUsers() = 0;
-       virtual std::vector<UserEvents> ShowAllUserEvents() = 0;
-       virtual std::vector<Event> ShowAllEvents() = 0;
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair
       // Throws NoSuchProperty

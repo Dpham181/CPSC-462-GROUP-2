@@ -20,21 +20,23 @@ namespace TechnicalServices::Persistence
 
       // Operations
       std::vector<std::string> findRoles()                                       override;  // Returns list of all legal roles
-      std::vector<std::string> findOffices()                                     override;  // Returns list of all office rooms
       UserCredentials          findCredentialsByName( const std::string & name ) override;  // Returns credentials for specified user, throws NoSuchUser if user not found
 
       //operations for clients 
 
         std::vector<Client> ShowAllClients() override;
         std::vector<Clientprofile> ShowAllClientsProfile() override;
-        std::vector<Product> CRMInventory() override;
 
-        //user
-        std::vector<UserCredentials> ShowAllUsers() override;
-        std::vector<UserEvents> ShowAllUserEvents() override;
-     
-        //event
-        std::vector<Event> ShowAllEvents() override;
+        //operations for prodct 
+        std::vector<Product> CRMInventory() override;
+        std::vector<ProductCompany> CRMCompanypartnerships() override;
+
+        //operations for sale 
+
+        std::vector<Sale> PurchasedHistory() override;
+        std::vector<Commission> CHistory() override;
+
+
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair
@@ -44,8 +46,7 @@ namespace TechnicalServices::Persistence
       ~SimpleDB() noexcept override;
 
     private:
-        std::vector<Client> ClientDB;
-        std::vector<UserCredentials> UserDB;
+     
       std::unique_ptr<TechnicalServices::Logging::LoggerHandler> _loggerPtr;
 
       // convenience reference object enabling standard insertion syntax
