@@ -21,7 +21,7 @@ namespace Domain::Product
        std::any                 executeCommandProduct(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
 
       // Operations
-        void   view() override;
+        std::vector<Product>   view() override;
         void   viewCompany() override;
         Product   add(const int ProductId, const std::string ProductName, const int Price, const int CompanyId) override;
         std::vector<Product>   save(const Product & Product) override;
@@ -51,14 +51,8 @@ namespace Domain::Product
   }; // class Product
 
 
-  /*****************************************************************************
-  ** Inline implementations
-  ******************************************************************************/
-  inline ProductDomain::~ProductDomain() noexcept
-  {
-      _logger << "Session \"" + _name + "\" shutdown successfully";
-
-  }
+  
+ 
   struct ProductManagement : ProductDomain { ProductManagement(const UserCredentials& user); };
 
  

@@ -56,6 +56,8 @@ namespace UI
 
         std::vector<TechnicalServices::Persistence::Client> ClientsFromDB = _persistentData.ShowAllClients();
         std::vector<TechnicalServices::Persistence::Clientprofile> ClientsProfileFromDB = _persistentData.ShowAllClientsProfile();
+        std::vector<TechnicalServices::Persistence::Product> InventoryFromDB = _persistentData.CRMInventory();
+        std::vector<TechnicalServices::Persistence::Sale> SaleFromDB = _persistentData.PurchasedHistory();
 
         // 2) Present login screen to user and get username, password, and valid role
         Domain::Session::UserCredentials credentials = { "", "", {""} };// ensures roles[0] exists
@@ -277,6 +279,8 @@ namespace UI
                           auto result =  _ProductHandler->executeCommandProduct(selectedCommand, parameters);
                           if (result.has_value()) {
                               _logger << "Product Already added to Inventory";
+                            
+                             InventoryFromDB = _ProductHandler->view();
                          }
 
                         }
@@ -293,6 +297,7 @@ namespace UI
                             auto result = _ProductHandler->executeCommandProduct(selectedCommand, parameters);
                             if (result.has_value()) {
                                 _logger << "Product Already Modified";
+                                InventoryFromDB = _ProductHandler->view();
                             }
 
                         }
@@ -307,6 +312,7 @@ namespace UI
 
                             if (result.has_value()) {
                                 _logger << "Product Already removed from Inventory";
+                                InventoryFromDB = _ProductHandler->view();
                             }
                         }
 
@@ -320,6 +326,7 @@ namespace UI
 
             _SaleHandler = Domain::Sale::SaleHandler::UseSaleManagement(credentials);
 
+         
             if (_SaleHandler != nullptr) {
 
                 do
@@ -344,10 +351,60 @@ namespace UI
                     _logger << "Command selected \"" + selectedCommand + '"';
 
                     if (selectedCommand == "Make Sale") {
+                        int selectedProduct;
+                        std::vector<int> productsPurchased;
+                        std::vector<std::string> parameters(2);
+                        std::cout << " Enter Your Indetification Id  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[0]);
+                        std::cout << " Enter Your Client Id: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+                        do {
+                            unsigned    menuSelection;
+                            do
+                            {
 
-                        //TODO
-                        _logger << "under contruction <---------------------------------------------------------------- ";
+                                for (unsigned i = 0; i != InventoryFromDB.size(); ++i) std::cout << std::setw(2) << i << " - " << InventoryFromDB[i].Name << '\n';
+                                std::cout << std::setw(2) << InventoryFromDB.size() << " - " << "Process\n";
 
+                                std::cout << "  action (0-" << InventoryFromDB.size() << "): ";
+                                std::cin >> menuSelection;
+
+                                //TODO
+                            } while (menuSelection > InventoryFromDB.size());
+
+                            if (menuSelection == InventoryFromDB.size()) break;
+                            selectedProduct = InventoryFromDB[menuSelection].id;
+
+                            if (selectedProduct >0) {
+
+                                parameters.push_back(std::to_string(selectedProduct));
+                                _logger << "Added product  #\"" + std::to_string(selectedProduct) + '"';
+
+                            }
+
+                        } while (true);
+
+                       auto result=  _SaleHandler->executeCommandSale(selectedCommand, parameters);
+                       if (result.has_value()) {
+                           TechnicalServices::Persistence::Sale salerecord = std::any_cast<const TechnicalServices::Persistence::Sale&>(result);
+                           _SaleHandler->ViewSale(salerecord);
+                            SaleFromDB.push_back(salerecord);
+                            int subtotal = 0;
+                            line();
+                            std::cout << std::setw(49) << "list of Purchased Product\n";
+                            line();
+                            std::cout << std::setw(15) << "Id" << std::setw(15) << "Name" << std::setw(15) << "Price\n";
+                            line();
+                            for (const auto& productid : salerecord.ProductsId) {
+                                for (const auto& productidDB : InventoryFromDB) {
+                                    if (productidDB.id == productid) {
+                                        std::cout << std::setw(15) << std::to_string(productidDB.id) << std::setw(15) << productidDB.Name << std::setw(15) << std::to_string(productidDB.Price) << std::endl;
+                                        subtotal += productidDB.Price;
+                                    }
+                                }
+                            }
+                            line();
+                            std::cout << std::setw(40) << "SubTotal:    " + std::to_string(subtotal) +"$\n" ;
+                            
+                       }
                     }
                 } while (true);
             }

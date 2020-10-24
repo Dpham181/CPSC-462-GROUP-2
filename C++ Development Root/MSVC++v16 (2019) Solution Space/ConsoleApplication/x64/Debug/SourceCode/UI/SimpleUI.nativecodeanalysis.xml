@@ -4,53 +4,11 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>129</LINE>
-      <COLUMN>36</COLUMN>
-    </SFA>
-    <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '89' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
-    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
-    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
-    <FUNCLINE>51</FUNCLINE>
-    <PATH>
-      <SFA>
-        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
-        <FILENAME>SimpleUI.cpp</FILENAME>
-        <LINE>89</LINE>
-        <COLUMN>24</COLUMN>
-      </SFA>
-    </PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
-      <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>130</LINE>
-      <COLUMN>36</COLUMN>
-    </SFA>
-    <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '90' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
-    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
-    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
-    <FUNCLINE>51</FUNCLINE>
-    <PATH>
-      <SFA>
-        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
-        <FILENAME>SimpleUI.cpp</FILENAME>
-        <LINE>90</LINE>
-        <COLUMN>24</COLUMN>
-      </SFA>
-    </PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
-      <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>131</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '91' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '91' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>51</FUNCLINE>
@@ -67,11 +25,11 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>247</LINE>
+      <LINE>132</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '89' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '92' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>51</FUNCLINE>
@@ -79,7 +37,7 @@
       <SFA>
         <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
-        <LINE>89</LINE>
+        <LINE>92</LINE>
         <COLUMN>24</COLUMN>
       </SFA>
     </PATH>
@@ -88,11 +46,11 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>248</LINE>
+      <LINE>133</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '90' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '93' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>51</FUNCLINE>
@@ -100,7 +58,7 @@
       <SFA>
         <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
-        <LINE>90</LINE>
+        <LINE>93</LINE>
         <COLUMN>24</COLUMN>
       </SFA>
     </PATH>
@@ -113,7 +71,7 @@
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '91' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '91' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>51</FUNCLINE>
@@ -130,11 +88,11 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>327</LINE>
-      <COLUMN>32</COLUMN>
+      <LINE>250</LINE>
+      <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '89' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '92' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>51</FUNCLINE>
@@ -142,7 +100,7 @@
       <SFA>
         <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
-        <LINE>89</LINE>
+        <LINE>92</LINE>
         <COLUMN>24</COLUMN>
       </SFA>
     </PATH>
@@ -151,11 +109,11 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>328</LINE>
-      <COLUMN>32</COLUMN>
+      <LINE>251</LINE>
+      <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '90' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '93' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>51</FUNCLINE>
@@ -163,7 +121,7 @@
       <SFA>
         <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
-        <LINE>90</LINE>
+        <LINE>93</LINE>
         <COLUMN>24</COLUMN>
       </SFA>
     </PATH>
@@ -172,11 +130,11 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>329</LINE>
+      <LINE>334</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '91' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '91' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>51</FUNCLINE>
@@ -186,6 +144,69 @@
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>91</LINE>
         <COLUMN>24</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILENAME>SimpleUI.cpp</FILENAME>
+      <LINE>335</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '92' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
+    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILENAME>SimpleUI.cpp</FILENAME>
+        <LINE>92</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILENAME>SimpleUI.cpp</FILENAME>
+      <LINE>336</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '93' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
+    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILENAME>SimpleUI.cpp</FILENAME>
+        <LINE>93</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILENAME>SimpleUI.cpp</FILENAME>
+      <LINE>360</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '336' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-project\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
+    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-Project\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILENAME>SimpleUI.cpp</FILENAME>
+        <LINE>336</LINE>
+        <COLUMN>32</COLUMN>
       </SFA>
     </PATH>
   </DEFECT>

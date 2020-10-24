@@ -98,7 +98,7 @@ namespace TechnicalServices::Persistence
        virtual std::vector<Product> CRMInventory() =0 ;
        virtual std::vector<ProductCompany> CRMCompanypartnerships() =0;
        virtual std::vector<Sale> PurchasedHistory() = 0;
-       virtual std::vector<Commission> CommissionHistory() = 0;
+       virtual std::vector<Commission> CHistory() = 0;
 
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

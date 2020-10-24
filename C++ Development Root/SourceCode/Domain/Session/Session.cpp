@@ -95,9 +95,17 @@ namespace  // anonymous (private) working area
                               { return {}; }  
 
  std::any makesale(Domain::Sale::SaleDomain& saleto, const std::vector<std::string>& args) {
-    
+     std::vector<int> productsId;
+     for (unsigned i = 2; i != args.size(); ++i)
+     {
+         productsId.push_back(std::atoi(args[i].c_str()));
+
+     }
      //todo
-     auto onesale = saleto.MakeSale(std::atoi(args[0].c_str()), std::atoi(args[1].c_str()), {});
+     auto onesale = saleto.MakeSale(std::atoi(args[0].c_str()), std::atoi(args[1].c_str()), productsId);
+
+     saleto.GenerateCommission(onesale.Commission_ID);
+     return onesale;
  }
 
   
@@ -120,9 +128,9 @@ namespace Domain::Sale {
     SaleDomain::SaleDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
-       
+      
         _ListOfSale = persistentData.PurchasedHistory(); if (_ListOfSale.size() >0)   _logger << "Sale Statis Database in use\"";
-        _ListofCommissions = persistentData.CommissionHistory(); if (_ListofCommissions.size() > 0)   _logger << "Commission  Statis Database in use\"";
+        _ListofCommissions = persistentData.CHistory(); if (_ListofCommissions.size() > 0)   _logger << "Commission  Statis Database in use\"";
        
     }
 
@@ -149,7 +157,7 @@ namespace Domain::Sale {
 
         return results;
     }
-    Sale  SaleDomain::MakeSale( const int UserId, const int ClientId, const std::vector<Product> purchasedProduct) {
+    Sale  SaleDomain::MakeSale( const int UserId, const int ClientId, const std::vector<int> purchasedProduct) {
        
         auto now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
 
@@ -169,7 +177,7 @@ namespace Domain::Sale {
 
 
         for (const auto&  p : purchasedProduct) {
-            _OneSale.ProductsId.push_back(p.id) ;
+            _OneSale.ProductsId.push_back(p) ;
         }
         return  _OneSale;
     }
@@ -178,6 +186,18 @@ namespace Domain::Sale {
 
         _ListofCommissions.push_back(_OneComission);
         return   _OneComission;
+    }
+    void SaleDomain::ViewSale(const Sale& sale) {
+
+
+        
+        line();
+        std::cout << std::setw(49) << "Sale Invoice\n";
+        line();
+        std::cout << "Sale Id" << std::setw(15) << "Commission Id" << std::setw(15) << "Sale By" <<   std::setw(15) << "Sale To" << std::setw(25) << "Date Of sale\n"  ;
+        line();
+        std::cout << std::setw(5) << std::to_string(sale.id) << std::setw(15) << std::to_string(sale.Commission_ID) << std::setw(15) << std::to_string(sale.UserId) << std::setw(15) << std::to_string(sale.ClientId) << std::setw(30) << sale.DateOfSale << std::endl;
+        line();
     }
     SaleManagement::SaleManagement(const UserCredentials& user) : SaleDomain("Sale Management", user)
     {
@@ -332,7 +352,12 @@ namespace Domain::Product
         } while (reponse != 'Y' && reponse != 'Q');
 
     }
-   
+    ProductDomain::~ProductDomain() noexcept
+    {
+        _logger << "Session \"" + _name + "\" shutdown successfully";
+       
+
+    }
     ProductDomain::ProductDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
@@ -365,7 +390,7 @@ namespace Domain::Product
     }
 
 
-    void ProductDomain::view() {
+    std::vector<Product> ProductDomain::view() {
 
         line();
         std::cout << std::setw(49) << "Inventory of CRM\n";
@@ -376,6 +401,7 @@ namespace Domain::Product
         for (const auto& p : _ProductDb)
            std::cout << std::setw(15) << std::to_string(p.id) << std::setw(15) << p.Name << std::setw(15) << std::to_string(p.Price)<< std::setw(15) << std::to_string(p.ProductCommany)<< std::endl;
         line();
+        return _ProductDb;
     }
     void ProductDomain::viewCompany() {
 

@@ -34,7 +34,7 @@ namespace TechnicalServices::Persistence
         //operations for sale 
 
         std::vector<Sale> PurchasedHistory() override;
-        std::vector<Commission> CommissionHistory() override;
+        std::vector<Commission> CHistory() override;
 
 
 
@@ -46,7 +46,7 @@ namespace TechnicalServices::Persistence
       ~SimpleDB() noexcept override;
 
     private:
-        std::vector<Client> ClientDB;
+     
       std::unique_ptr<TechnicalServices::Logging::LoggerHandler> _loggerPtr;
 
       // convenience reference object enabling standard insertion syntax

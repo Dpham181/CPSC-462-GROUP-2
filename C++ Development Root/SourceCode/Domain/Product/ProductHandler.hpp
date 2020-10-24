@@ -27,7 +27,7 @@ namespace Domain::Product
 
    // Operations of management inventory
      // default operations
-     virtual void   view() =0;
+     virtual std::vector<Product>   view() =0;
      virtual void   viewCompany() = 0;
      virtual  Product   add(const int ProductId, const std::string ProductName, const int Price, const int CompanyId)=0;
      virtual  std::vector<Product>   save(const Product & Product) = 0;

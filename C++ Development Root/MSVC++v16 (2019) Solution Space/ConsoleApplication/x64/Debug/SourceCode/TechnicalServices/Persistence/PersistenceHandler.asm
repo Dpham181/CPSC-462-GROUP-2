@@ -90,7 +90,7 @@ EXTRN	_Init_thread_epoch:DWORD
 EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
 EXTRN	_tls_index:DWORD
 _BSS	SEGMENT
-?instance@?1??0PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4VSimpleDB@23@A DB 050H DUP (?) ; `TechnicalServices::Persistence::PersistenceHandler::instance'::`2'::instance
+?instance@?1??0PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4VSimpleDB@23@A DB 030H DUP (?) ; `TechnicalServices::Persistence::PersistenceHandler::instance'::`2'::instance
 ?$TSS0@?1??instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV234@XZ@4HA DD 01H DUP (?) ; `TechnicalServices::Persistence::PersistenceHandler::instance'::`2'::$TSS0
 _BSS	ENDS
 ;	COMDAT pdata
@@ -195,6 +195,8 @@ rdata$r	ENDS
 ;	COMDAT ??_7PersistenceHandler@Persistence@TechnicalServices@@6B@
 CONST	SEGMENT
 ??_7PersistenceHandler@Persistence@TechnicalServices@@6B@ DQ FLAT:??_R4PersistenceHandler@Persistence@TechnicalServices@@6B@ ; TechnicalServices::Persistence::PersistenceHandler::`vftable'
+	DQ	FLAT:_purecall
+	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
@@ -480,7 +482,7 @@ $LN5:
 	call	_Init_thread_header
 	cmp	DWORD PTR ?$TSS0@?1??instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV234@XZ@4HA, -1
 	jne	SHORT $LN2@instance
-	mov	edx, 80					; 00000050H
+	mov	edx, 48					; 00000030H
 	lea	rcx, OFFSET FLAT:?instance@?1??0PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4VSimpleDB@23@A
 	call	?__autoclassinit2@SimpleDB@Persistence@TechnicalServices@@QEAAX_K@Z
 	lea	rcx, OFFSET FLAT:?instance@?1??0PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4VSimpleDB@23@A

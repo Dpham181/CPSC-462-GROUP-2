@@ -140,7 +140,7 @@ namespace TechnicalServices::Persistence
        };
    }
    // Commission Mock Db
-   std::vector<Commission> CommissionHistory() {
+   std::vector<Commission> SimpleDB::CHistory() {
        return {
             {1, 20000, 80, false },
             {2, 30000, 90, true },

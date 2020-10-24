@@ -21,9 +21,9 @@ namespace Domain::Sale
        std::any                 executeCommandSale(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
 
       // Operations
-       Sale             MakeSale(const int UserId, const int ClientId, const std::vector<Product> purchasedProduct) override;
+       Sale             MakeSale(const int UserId, const int ClientId, const std::vector<int> purchasedProduct) override;
        Commission       GenerateCommission(const int CommissionId) override;
-
+        void             ViewSale(const Sale &sale) override;
       ~SaleDomain() noexcept override = 0 ;
   protected:
   public:  

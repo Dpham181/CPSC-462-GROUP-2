@@ -696,6 +696,7 @@ CONST	SEGMENT
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
+	DQ	FLAT:_purecall
 CONST	ENDS
 ;	COMDAT ??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe@
 CONST	SEGMENT
@@ -3239,7 +3240,7 @@ $LN5:
 	je	SHORT $LN3@operator
 	mov	rax, QWORD PTR $T1[rbp]
 	mov	rax, QWORD PTR [rax]
-	mov	rax, QWORD PTR [rax+32]
+	mov	rax, QWORD PTR [rax+40]
 	mov	QWORD PTR tv75[rbp], rax
 	mov	edx, 1
 	mov	rcx, QWORD PTR $T1[rbp]
@@ -3422,7 +3423,7 @@ _TEXT	SEGMENT
 this$ = 224
 ??1SaleHandler@Sale@Domain@@UEAA@XZ PROC		; Domain::Sale::SaleHandler::~SaleHandler, COMDAT
 
-; 17   :     SaleHandler::~SaleHandler() noexcept = default;
+; 18   :     SaleHandler::~SaleHandler() noexcept = default;
 
 $LN3:
 	mov	QWORD PTR [rsp+8], rcx
@@ -3461,7 +3462,7 @@ __$ReturnUdt$ = 480
 user$ = 488
 ?UseSaleManagement@SaleHandler@Sale@Domain@@SA?AV?$unique_ptr@VSaleHandler@Sale@Domain@@U?$default_delete@VSaleHandler@Sale@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z PROC ; Domain::Sale::SaleHandler::UseSaleManagement, COMDAT
 
-; 20   :     {
+; 21   :     {
 
 $LN8:
 	mov	QWORD PTR [rsp+16], rdx
@@ -3482,12 +3483,12 @@ $LN8:
 	lea	rcx, OFFSET FLAT:__0AB89935_SaleHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 
-; 21   :         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+; 22   :         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
 
 	call	?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ ; TechnicalServices::Persistence::PersistenceHandler::instance
 	mov	QWORD PTR persistentData$[rbp], rax
 
-; 22   :         UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
+; 23   :         UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
 
 	mov	rax, QWORD PTR persistentData$[rbp]
 	mov	rax, QWORD PTR [rax]
@@ -3500,7 +3501,7 @@ $LN8:
 	call	QWORD PTR tv73[rbp]
 	npad	1
 
-; 23   :         if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::Sale::SaleManagement>(user);
+; 24   :         if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::Sale::SaleManagement>(user);
 
 	xor	edx, edx
 	lea	rcx, QWORD PTR credentialsFromDB$[rbp+80]
@@ -3530,8 +3531,8 @@ $LN8:
 	jmp	SHORT $LN1@UseSaleMan
 $LN2@UseSaleMan:
 
-; 24   : 
-; 25   :         return nullptr;
+; 25   : 
+; 26   :         return nullptr;
 
 	xor	edx, edx
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
@@ -3544,7 +3545,7 @@ $LN2@UseSaleMan:
 	mov	rax, QWORD PTR __$ReturnUdt$[rbp]
 $LN1@UseSaleMan:
 
-; 26   :     }
+; 27   :     }
 
 	mov	rdi, rax
 	lea	rcx, QWORD PTR [rbp-32]
