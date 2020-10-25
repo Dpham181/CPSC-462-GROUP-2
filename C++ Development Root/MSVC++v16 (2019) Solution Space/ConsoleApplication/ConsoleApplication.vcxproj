@@ -19,7 +19,44 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\SourceCode\Domain\Client\ClientHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Domain\Event\EventHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Domain\Product\ProductHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Domain\Sale\SaleHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Domain\Session\Session.cpp" />
+    <ClCompile Include="..\..\SourceCode\Domain\Session\SessionHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Domain\User\UserHandler.cpp" />
     <ClCompile Include="..\..\SourceCode\main.cpp" />
+    <ClCompile Include="..\..\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\TechnicalServices\Persistence\SimpleDB.cpp" />
+    <ClCompile Include="..\..\SourceCode\UI\SimpleUI.cpp" />
+    <ClCompile Include="..\..\SourceCode\UI\SystemDriverUI.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\UI\UserInterfaceHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SourceCode\Domain\Client\Client.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Client\ClientHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Event\Event.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Event\EventHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Product\Product.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Product\ProductHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Sale\Sale.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Sale\SaleHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Session\Session.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Session\SessionHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\User\User.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\User\UserHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\TechnicalServices\Logging\SimpleLogger.hpp" />
+    <ClInclude Include="..\..\SourceCode\TechnicalServices\Persistence\PersistenceHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\TechnicalServices\Persistence\SimpleDB.hpp" />
+    <ClInclude Include="..\..\SourceCode\UI\SimpleUI.hpp" />
+    <ClInclude Include="..\..\SourceCode\UI\SystemDriverUI.hpp" />
+    <ClInclude Include="..\..\SourceCode\UI\UserInterfaceHandler.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
