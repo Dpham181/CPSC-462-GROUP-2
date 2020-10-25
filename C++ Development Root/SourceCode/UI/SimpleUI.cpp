@@ -89,6 +89,30 @@ namespace UI
           
         } while (true);
 
+        // Show upcoming events when user login
+        std::cout << std::endl;
+        std::cout << "[Notice] Upcoming events: ";
+        for (const auto& u1 : UsersFromDB) 
+        {
+            int i = 0;
+            if (credentials.userName == u1.userName) 
+            { 
+                i = u1.userID; 
+            }
+            for (const auto& u2 : UserEventsFromDB) 
+            {
+                if (u2.userID == i) 
+                {
+                    std::vector<std::string> u3 = u2.events;
+                    for (const auto& estr : u3) 
+                    {
+                        std::cout << estr << ". ";
+                    }
+                }
+            }
+        }
+        std::cout << std::endl;
+
 
         // 4) Fetch functionality options for this role
         do
@@ -633,7 +657,7 @@ namespace UI
                                 {
                                     for (size_t i = 0; i < locationVector.size(); ++i) std::cout << " " << i + 1 << ". " << locationVector[i] << std::endl;
                                     int ml;
-                                    std::cout << "Please choos the meeting Location: "; std::cin >> ml;
+                                    std::cout << " Please choos the meeting Location: "; std::cin >> ml;
                                     parameters[4] = locationVector[ml - 1];
                                 }
                             }
@@ -660,6 +684,7 @@ namespace UI
                                 idres.push_back(stoi(s_temp));
                                 s1.erase(0, s1.find(" ") + 1);
                             }
+                            std::cout << " Notification is successfully sent to: ";
                             for (const auto& id : idres)
                             {
                                 auto addevent = UserEventsFromDB[id - 1];
@@ -674,7 +699,12 @@ namespace UI
                                 std::string newevent = parameters[1] + ", " + parameters[3] + ", " + parameters[4];
                                 newevents.push_back(newevent);
                                 UserEventsFromDB[id - 1] = { id, newfreetime, newevents };
+
+                                auto eventuser = UsersFromDB[id - 1];
+                                std::cout << eventuser.userName << "  ";
                             }
+                            std::cout << std::endl;
+                            std::cout << std::endl;
                         }
                     }
 
@@ -685,70 +715,7 @@ namespace UI
 
                     else if (selectedCommand == "Update Meeting")
                     {
-                        /*UserHandler->viewUsers(UsersFromDB);
-                        char response;
-                        int userId;
-                        std::cout << "Please choose Client Id: ";
-                        std::cin >> userId;
-                        do
-                        {
-                            std::cout << "Do you want to continue Update Profile for User with Id # " + std::to_string(userId) + "? (Y/N/Q)";
-                            std::cin >> response;
-                            response = std::toupper(response, std::locale());
-                        } while (response != 'Y' && response != 'Q');
-
-                        if (response == 'Y')
-                        {
-                            std::vector<std::string> parameters(5);
-                            parameters[0] = std::to_string(userId);
-                            std::cout << " Do you want to change the User Name? (Y/N)"; std::cin >> response;
-                            if (response == 'Y')
-                            {
-                                std::cout << " Enter New UserName: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
-                            }
-                            else
-                            {
-                                parameters[1] = "";
-                            }
-                            std::cout << " Do you want to set the User Password to default? (Y/N)"; std::cin >> response;
-                            if (response == 'Y')
-                            {
-                                parameters[2] = "123456";
-                            }
-                            else
-                            {
-                                parameters[2] = "";
-                            }
-                            std::cout << " Do you want to change the User Role? (Y/N)"; std::cin >> response;
-                            if (response == 'Y')
-                            {
-                                std::cout << " Select User Role \n";
-                                for (size_t i = 0; i < roleLegalValues.size(); ++i)
-                                {
-                                    std::cout << " " << i << " " << roleLegalValues[i] << std::endl;
-                                }
-                                int roleChoice;
-                                do
-                                {
-                                    std::cout << "Please Choose 0-4: ";
-                                    std::cin >> roleChoice;
-                                } while (roleChoice < 0 || roleChoice > 4);
-                                parameters[3] = roleLegalValues[roleChoice];
-                            }
-                            else
-                            {
-                                parameters[3] = "";
-                            }
-                            parameters[4] = "-1";
-
-                            auto results = UserHandler->executeCommandUser(selectedCommand, parameters);
-                            if (results.has_value())
-                            {
-                                _logger << "Successfully Updated\n";
-                                UsersFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::UserCredentials>&>(results);
-                            }
-
-                        }*/
+                        //to do
 
                     }
 
