@@ -247,7 +247,7 @@ namespace UI
                             {
                                 Domain::Client::Clientprofile  ProfileofClient = std::any_cast<const TechnicalServices::Persistence::Clientprofile&>(results);
                                 line();
-                                std::cout << std::setw(49) << "Reuslt of Searching\n";
+                                std::cout << std::setw(49) << "Result of Searching\n";
                                 line();
                                 std::cout << std::setw(15) << "Id" << std::setw(15) << "DOB" << std::setw(15) << "Income\n";
 
