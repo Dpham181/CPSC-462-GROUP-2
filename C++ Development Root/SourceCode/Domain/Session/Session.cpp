@@ -1078,7 +1078,8 @@ namespace Domain::Session
     _commandDispatch = { 
         
         {"Client Management", ClientManagement},
-        {"Product Management", ProductManagement}
+        {"Product Management", ProductManagement},
+          {"Sale Management", SaleManagement}
                          
     };
   }

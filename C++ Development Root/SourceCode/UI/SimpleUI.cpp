@@ -383,7 +383,7 @@ namespace UI
                             int selectedProduct;
                             std::vector<int> productsPurchased;
                             std::vector<std::string> parameters(2);
-                            std::cout << " Enter Your Indetification Id  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[0]);
+                            parameters[0] = credentials.userID;
                             std::cout << " Enter Your Client Id: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
                             do {
                                 unsigned    menuSelection;
@@ -437,6 +437,9 @@ namespace UI
                         }
                     } while (true);
                 }
+                else _logger << "Your account got Locked Please contact It Admin for more Infor";
+
+                
 
 
 
@@ -643,7 +646,8 @@ namespace UI
                                 for (size_t i = 0; i < timeVector.size(); ++i) std::cout << " " << i + 1 << ". " << timeVector[i] << std::endl;
                                 int mt;
                                 std::cout << "Please choos the meeting time: "; std::cin >> mt;
-                                parameters[3] = timeVector[mt - 1];
+                                int index = mt - 1;
+                                parameters[3] = locationVector[index];
 
                                 // Meeting location
                                 std::cout << " Available Meeting Location \n";
@@ -656,9 +660,10 @@ namespace UI
                                 else
                                 {
                                     for (size_t i = 0; i < locationVector.size(); ++i) std::cout << " " << i + 1 << ". " << locationVector[i] << std::endl;
-                                    int ml;
+                                    int ml =0;
                                     std::cout << " Please choos the meeting Location: "; std::cin >> ml;
-                                    parameters[4] = locationVector[ml - 1];
+                                    int index = ml - 1; 
+                                    parameters[4] = locationVector[index];
                                 }
                             }
                         } while (timeVector.size() == 0 || locationVector.size() == 0);

@@ -21,7 +21,7 @@ namespace Domain::Sale
     {
         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
         UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
-        if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::Sale::SaleManagement>(user);
+        if (credentialsFromDB.status == 1) return std::make_unique<Domain::Sale::SaleManagement>(user);
 
         return nullptr;
     }
