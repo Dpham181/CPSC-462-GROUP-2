@@ -45,7 +45,7 @@ namespace Domain::Session
       // with many roles combined, I may have to revisit this approach.  But for now, this is good enough.
       if(    credentials.userName   == credentialsFromDB.userName
           && credentials.passPhrase == credentialsFromDB.passPhrase
-          && credentialsFromDB.status == 1
+       
           //&& std::any_of( credentialsFromDB.roles.cbegin(), credentialsFromDB.roles.cend(),
           //                [&]( const std::string & role ) { return credentials.roles.size() > 0 && credentials.roles[0] == role; }
           //              )

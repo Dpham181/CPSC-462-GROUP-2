@@ -1081,6 +1081,7 @@ namespace Domain::Session
         
         {"Client Management", ClientManagement},
         {"Product Management", ProductManagement},
+
         {"Sale Management", SaleManagement}
     };
   }

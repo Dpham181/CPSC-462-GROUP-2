@@ -110,8 +110,8 @@ namespace TechnicalServices::Persistence
    {
 
        return { 
-                {1,"House 1",400000},
-                {2,"House 2",500000},
+                {1,"House 1",400000 ,1},
+                {2,"House 2",500000, 2},
 
 
        };

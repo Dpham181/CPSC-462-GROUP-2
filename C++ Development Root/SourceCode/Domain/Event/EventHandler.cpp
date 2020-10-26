@@ -25,7 +25,7 @@ namespace Domain::Event
     {
         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
         UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
-        if (credentialsFromDB.roles[0] == "Assistant") return std::make_unique<Domain::Event::EventManagement>(user);
+        if (credentialsFromDB.status == 1) return std::make_unique<Domain::Event::EventManagement>(user);
 
         return nullptr;
     }

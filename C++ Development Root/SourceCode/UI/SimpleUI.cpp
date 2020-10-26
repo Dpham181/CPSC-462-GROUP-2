@@ -383,7 +383,7 @@ namespace UI
                             int selectedProduct;
                             std::vector<int> productsPurchased;
                             std::vector<std::string> parameters(2);
-                            std::cout << " Enter Your Indetification Id  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[0]);
+                            parameters[0] = credentials.userID;
                             std::cout << " Enter Your Client Id: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
                             do {
                                 unsigned    menuSelection;
@@ -437,6 +437,9 @@ namespace UI
                         }
                     } while (true);
                 }
+                else _logger << "Your account got Locked Please contact It Admin for more Infor";
+
+                
 
 
 
@@ -527,7 +530,7 @@ namespace UI
                                 std::vector<std::string> parameters(5);
                                 parameters[0] = std::to_string(userId);
                                 std::cout << " Do you want to change the User Name? (Y/N)"; std::cin >> response;
-                                if (response == 'Y')
+                                if (response == 'Y' || response == 'y')
                                 {
                                     std::cout << " Enter New UserName: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
                                 }
@@ -536,7 +539,7 @@ namespace UI
                                     parameters[1] = "";
                                 }
                                 std::cout << " Do you want to set the User Password to default? (Y/N)"; std::cin >> response;
-                                if (response == 'Y')
+                                if (response == 'Y' || response == 'y')
                                 {
                                     parameters[2] = "123456";
                                 }
@@ -545,7 +548,7 @@ namespace UI
                                     parameters[2] = "";
                                 }
                                 std::cout << " Do you want to change the User Role? (Y/N)"; std::cin >> response;
-                                if (response == 'Y')
+                                if (response == 'Y' || response == 'y')
                                 {
                                     std::cout << " Select User Role \n";
                                     for (size_t i = 0; i < roleLegalValues.size(); ++i)
@@ -644,7 +647,11 @@ namespace UI
                                 int mt = 0;
                                 int index1 = mt - 1;
                                 std::cout << "Please choos the meeting time: "; std::cin >> mt;
+
                                 parameters[3] = timeVector[index1];
+
+
+
 
                                 // Meeting location
                                 std::cout << " Available Meeting Location \n";
@@ -657,10 +664,12 @@ namespace UI
                                 else
                                 {
                                     for (size_t i = 0; i < locationVector.size(); ++i) std::cout << " " << i + 1 << ". " << locationVector[i] << std::endl;
+
                                     int ml = 0;
                                     int index2 = ml - 1;
                                     std::cout << " Please choos the meeting Location: "; std::cin >> ml;
                                     parameters[4] = locationVector[index2];
+
                                 }
                             }
                         } while (timeVector.size() == 0 || locationVector.size() == 0);
