@@ -383,7 +383,7 @@ namespace UI
                             int selectedProduct;
                             std::vector<int> productsPurchased;
                             std::vector<std::string> parameters(2);
-                            parameters[0] = credentials.userID;
+                            parameters[0] = std::to_string(_persistentData.findCredentialsByName(credentials.userName).userID);
                             std::cout << " Enter Your Client Id: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
                             do {
                                 unsigned    menuSelection;
