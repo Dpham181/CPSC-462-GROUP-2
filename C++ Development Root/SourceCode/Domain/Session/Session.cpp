@@ -882,13 +882,15 @@ namespace Domain::Event
             res.push_back(stoi(s_temp));
             s1.erase(0, s1.find(" ") + 1);
         }
-        for (const auto& t : UserEventsDB[res[0] - 1].freeTime)
+        int index1 = res[0] - 1;
+        for (const auto& t : UserEventsDB[index1].freeTime)
         {
             size_t i = 1;
             int _bool = 0;
             while (i != res.size())
             {
-                for (const auto& tmp : UserEventsDB[res[i] - 1].freeTime)
+                int index2 = res[i] - 1;
+                for (const auto& tmp : UserEventsDB[index2].freeTime)
                 {
                     if (tmp == t) _bool = 1;
                 }
@@ -1078,8 +1080,8 @@ namespace Domain::Session
     _commandDispatch = { 
         
         {"Client Management", ClientManagement},
-        {"Product Management", ProductManagement}
-                         
+        {"Product Management", ProductManagement},
+        {"Sale Management", SaleManagement}
     };
   }
 

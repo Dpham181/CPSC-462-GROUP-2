@@ -641,9 +641,10 @@ namespace UI
                             else
                             {
                                 for (size_t i = 0; i < timeVector.size(); ++i) std::cout << " " << i + 1 << ". " << timeVector[i] << std::endl;
-                                int mt;
+                                int mt = 0;
+                                int index1 = mt - 1;
                                 std::cout << "Please choos the meeting time: "; std::cin >> mt;
-                                parameters[3] = timeVector[mt - 1];
+                                parameters[3] = timeVector[index1];
 
                                 // Meeting location
                                 std::cout << " Available Meeting Location \n";
@@ -656,9 +657,10 @@ namespace UI
                                 else
                                 {
                                     for (size_t i = 0; i < locationVector.size(); ++i) std::cout << " " << i + 1 << ". " << locationVector[i] << std::endl;
-                                    int ml;
+                                    int ml = 0;
+                                    int index2 = ml - 1;
                                     std::cout << " Please choos the meeting Location: "; std::cin >> ml;
-                                    parameters[4] = locationVector[ml - 1];
+                                    parameters[4] = locationVector[index2];
                                 }
                             }
                         } while (timeVector.size() == 0 || locationVector.size() == 0);
@@ -687,7 +689,8 @@ namespace UI
                             std::cout << " Notification is successfully sent to: ";
                             for (const auto& id : idres)
                             {
-                                auto addevent = UserEventsFromDB[id - 1];
+                                int index = id - 1;
+                                auto addevent = UserEventsFromDB[index];
                                 std::vector<std::string> newfreetime = addevent.freeTime;
                                 std::vector<std::string>::iterator it;
                                 for (it = newfreetime.begin(); it != newfreetime.end(); )
@@ -698,9 +701,9 @@ namespace UI
                                 std::vector<std::string> newevents = addevent.events;
                                 std::string newevent = parameters[1] + ", " + parameters[3] + ", " + parameters[4];
                                 newevents.push_back(newevent);
-                                UserEventsFromDB[id - 1] = { id, newfreetime, newevents };
+                                UserEventsFromDB[index] = { id, newfreetime, newevents };
 
-                                auto eventuser = UsersFromDB[id - 1];
+                                auto eventuser = UsersFromDB[index];
                                 std::cout << eventuser.userName << "  ";
                             }
                             std::cout << std::endl;
