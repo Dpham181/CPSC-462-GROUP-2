@@ -530,7 +530,8 @@ namespace UI
                                 std::vector<std::string> parameters(5);
                                 parameters[0] = std::to_string(userId);
                                 std::cout << " Do you want to change the User Name? (Y/N)"; std::cin >> response;
-                                if (response == 'Y' || response == 'y')
+                                response = std::toupper(response, std::locale());
+                                if (response == 'Y')
                                 {
                                     std::cout << " Enter New UserName: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
                                 }
@@ -539,7 +540,8 @@ namespace UI
                                     parameters[1] = "";
                                 }
                                 std::cout << " Do you want to set the User Password to default? (Y/N)"; std::cin >> response;
-                                if (response == 'Y' || response == 'y')
+                                response = std::toupper(response, std::locale());
+                                if (response == 'Y')
                                 {
                                     parameters[2] = "123456";
                                 }
@@ -548,7 +550,8 @@ namespace UI
                                     parameters[2] = "";
                                 }
                                 std::cout << " Do you want to change the User Role? (Y/N)"; std::cin >> response;
-                                if (response == 'Y' || response == 'y')
+                                response = std::toupper(response, std::locale());
+                                if (response == 'Y')
                                 {
                                     std::cout << " Select User Role \n";
                                     for (size_t i = 0; i < roleLegalValues.size(); ++i)
