@@ -4,3 +4,67 @@ C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Soluti
 C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Solution Space/v16/Browse.VC.db-wal
 C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Solution Space/v16/Browse.VC.db-shm
 C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Solution Space/v16/Browse.VC.db
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/vc142.pdb
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/vc142.idb
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/UserInterfaceHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/UserInterfaceHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/UserInterfaceHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/SystemDriverUI.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/SystemDriverUI.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/SystemDriverUI.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/SimpleUI.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/SimpleUI.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/SimpleUI.nativecodeanalysis.xml
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/UI/SimpleUI.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Persistence/SimpleDB.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Persistence/SimpleDB.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Persistence/SimpleDB.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Persistence/PersistenceHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Persistence/PersistenceHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Persistence/PersistenceHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Logging/LoggerHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Logging/LoggerHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/TechnicalServices/Logging/LoggerHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/main.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/main.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/main.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/User/UserHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/User/UserHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/User/UserHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Session/SessionHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Session/SessionHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Session/SessionHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Session/Session.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Session/Session.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Session/Session.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Sale/SaleHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Sale/SaleHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Sale/SaleHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Product/ProductHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Product/ProductHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Product/ProductHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Event/EventHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Event/EventHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Event/EventHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Client/ClientHandler.sbr
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Client/ClientHandler.obj
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/SourceCode/Domain/Client/ClientHandler.asm
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleApplication.vcxproj.FileListAbsolute.txt
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleApplication.log
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleApplication-x64-Debug.pdb
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleApplication-x64-Debug.map
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleApplication-x64-Debug.ilk
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleApplication-x64-Debug.exe.recipe
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleApplication-x64-Debug.exe
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleApplication-x64-Debug.bsc
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/link.write.1.tlog
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/link.read.1.tlog
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/link.command.1.tlog
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/ConsoleApplication.lastbuildstate
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/CL.write.1.tlog
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/CL.read.1.tlog
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/CL.command.1.tlog
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/bscmake.read.1.tlog
+C++ Development Root/MSVC++v16 (2019) Solution Space/ConsoleApplication/x64/Debug/ConsoleA.DE35C98A.tlog/bscmake.command.1.tlog
+C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Solution Space/v16/Browse.VC.db
+C++ Development Root/MSVC++v16 (2019) Solution Space/.vs/MSVC++v16 (2019) Solution Space/v16/.suo
