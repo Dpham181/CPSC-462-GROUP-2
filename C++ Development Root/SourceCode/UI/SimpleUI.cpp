@@ -645,9 +645,9 @@ namespace UI
                             {
                                 for (size_t i = 0; i < timeVector.size(); ++i) std::cout << " " << i + 1 << ". " << timeVector[i] << std::endl;
                                 int mt = 0;
-                                int index1 = mt - 1;
+                                
                                 std::cout << "Please choos the meeting time: "; std::cin >> mt;
-
+                                int index1 = mt - 1;
                                 parameters[3] = timeVector[index1];
 
 
@@ -666,8 +666,9 @@ namespace UI
                                     for (size_t i = 0; i < locationVector.size(); ++i) std::cout << " " << i + 1 << ". " << locationVector[i] << std::endl;
 
                                     int ml = 0;
-                                    int index2 = ml - 1;
+                                    
                                     std::cout << " Please choos the meeting Location: "; std::cin >> ml;
+                                    int index2 = ml - 1;
                                     parameters[4] = locationVector[index2];
 
                                 }
