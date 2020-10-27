@@ -19,13 +19,20 @@ namespace Domain::Client
 
 
 
-    // returns a specialized object specific to the specified role
-    std::unique_ptr<ClientHandler> ClientHandler::UseClientManagement(const UserCredentials& user)
-    {
-        auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
-        UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
-        if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::Client::ClientManagement>(user);
+        // returns a specialized object specific to the specified role
+        std::unique_ptr<ClientHandler> ClientHandler::UseClientManagement(const UserCredentials & user)
+        {
 
-        return nullptr;
-    }
+            try {
+                auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+                UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
+                if (credentialsFromDB.status == 1) return std::make_unique<Domain::Client::ClientManagement>(user);
+
+                return nullptr;
+            }
+            catch (const TechnicalServices::Persistence::PersistenceHandler::NoSuchUser&) {}
+
+        }
+    
+    
 } // namespace Domain::Session

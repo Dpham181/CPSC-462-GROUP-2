@@ -385,12 +385,13 @@ namespace UI
                             std::vector<std::string> parameters(2);
                             parameters[0] = std::to_string(_persistentData.findCredentialsByName(credentials.userName).userID);
                             std::cout << " Enter Your Client Id: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+                            std::cout << " Please Choose the Product Match with CommandLine then Hit Process!!!\n";
                             do {
                                 unsigned    menuSelection;
                                 do
                                 {
 
-                                    for (unsigned i = 0; i != InventoryFromDB.size(); ++i) std::cout << std::setw(2) << i << " - " << InventoryFromDB[i].Name << '\n';
+                                    for (unsigned i = 0; i != InventoryFromDB.size(); ++i) std::cout << std::setw(2) << i << " - " << InventoryFromDB[i].Name << "->"<< InventoryFromDB[i].Price<<"$" << '\n';
                                     std::cout << std::setw(2) << InventoryFromDB.size() << " - " << "Process\n";
 
                                     std::cout << "  action (0-" << InventoryFromDB.size() << "): ";
@@ -405,7 +406,7 @@ namespace UI
                                 if (selectedProduct > 0) {
 
                                     parameters.push_back(std::to_string(selectedProduct));
-                                    _logger << "Added product  #\"" + std::to_string(selectedProduct) + '"';
+                                    _logger << "Added product  -> \"" + InventoryFromDB[menuSelection].Name + '"';
 
                                 }
 
