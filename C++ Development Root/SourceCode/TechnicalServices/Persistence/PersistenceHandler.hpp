@@ -111,7 +111,7 @@ namespace TechnicalServices::Persistence
       int Id;
       std::string  CCnumber;
       int CVCnumber;
-      bool Paidstatus = false; 
+    
   };
   struct SubscriptionStatus
   {

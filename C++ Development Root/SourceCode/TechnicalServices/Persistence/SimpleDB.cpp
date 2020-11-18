@@ -188,18 +188,11 @@ namespace TechnicalServices::Persistence
        };
 
    }
-   std::vector<Paid> SimpleDB::ValidationPaid() {
-       return {
-           {1, "1234567892222222", 6789, true },
-           {2, "1234567892222222", 6789,true },
-           {3, "1234567892222222", 6789,true }
-       };
-
-   }
+  
    SubscriptionStatus SimpleDB::StacticSubscriptionSatus()
    {
        return
-       { 1, 4, "12/20/2020","Completed", "Ann" };
+       { 1, 4, "12/20/2020","Completed", "ana@gmail.com" };
        
    }
 

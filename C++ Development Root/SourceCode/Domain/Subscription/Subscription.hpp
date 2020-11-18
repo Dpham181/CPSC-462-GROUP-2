@@ -22,9 +22,10 @@ namespace Domain::Subscription
 
       // Operations
         SubscriptionStatus viewSubscriptionStatus() override;
-        PaymentOption selectSubscription(const Subcripstion SelectedId) override;
+        PaymentOption selectSubscription(const Subcripstion & SelectedId) override;
+        bool validationPayment(const std::string CCnumber, const int CVCnumber) override;
         std::string completePayment() override;
-
+        
      ~SubscriptionDomain()  noexcept override = 0;
 
   protected:

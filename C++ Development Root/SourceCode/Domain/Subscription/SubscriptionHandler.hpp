@@ -13,6 +13,7 @@ namespace Domain::Subscription
    using TechnicalServices::Persistence::Subcripstion;
    using TechnicalServices::Persistence::PaymentOption;
    using TechnicalServices::Persistence::SubscriptionStatus;
+   using TechnicalServices::Persistence::Paid;
 
   // Product Package within the Domain Layer Abstract class
   class SubscriptionHandler
@@ -30,9 +31,9 @@ namespace Domain::Subscription
    // Operations of Maintain Subscription
      // default operations
      virtual SubscriptionStatus viewSubscriptionStatus() = 0 ;
-     virtual PaymentOption selectSubscription(const Subcripstion SelectedId) = 0;
+     virtual PaymentOption selectSubscription(const Subcripstion & SelectedId) = 0;
      virtual std::string completePayment() = 0; 
-
+     virtual bool validationPayment( const std::string CCnumber, const int CVCnumber) = 0;
      virtual ~SubscriptionHandler() noexcept = 0;
       protected:
         // Copy assignment operators, protected to prevent mix derived-type assignments

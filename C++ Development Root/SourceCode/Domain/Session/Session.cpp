@@ -589,7 +589,24 @@ namespace Domain::Subscription
 
 {
     auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+    void line()
+    {
+        for (int i = 1; i < 41; i++)
+            std::cout << "--";
+        std::cout << "\n";
 
+    }
+    char reponse;
+    void menu(std::string message) {
+
+        do
+        {
+            std::cout << message + " (Y/N/Q)";
+            std::cin >> reponse;
+            reponse = std::toupper(reponse, std::locale());
+        } while (reponse != 'Y' && reponse != 'Q');
+
+    }
     SubscriptionDomain::SubscriptionDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
@@ -602,12 +619,62 @@ namespace Domain::Subscription
 
 
     }
-   
-    SubscriptionStatus SubscriptionDomain::viewSubscriptionStatus() {
-        // todo
+    std::vector<std::string> SubscriptionDomain::getCommandsSubscription()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
     }
-    PaymentOption SubscriptionDomain::selectSubscription(const Subcripstion SelectedId) {
-        // todo
+
+    std::any SubscriptionDomain::executeCommandSubscription(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+
+        auto results = it->second(*this, args);
+
+        return results;
+    }
+
+
+    SubscriptionStatus SubscriptionDomain::viewSubscriptionStatus() {
+        return persistentData.StacticSubscriptionSatus();
+    }
+    PaymentOption SubscriptionDomain::selectSubscription(const Subcripstion  & SelectedId) {
+     
+
+        for (const auto& s : persistentData.ShowAllSubcripstion()) {
+            if (s.SubsID == SelectedId.SubsID) {
+
+                line();
+                std::cout << std::setw(49) << "Review Your Order\n";
+                line();
+                std::cout << std::setw(15) << "Package" << std::setw(20) << "Price" << std::setw(20) << "Description" << "\n";
+                line();
+                std::cout << std::setw(15) << s.SubsType << std::setw(20) << s.Price << std::setw(20) <<s.Description << std::endl;
+                line();
+                menu("Do you want to continue to pay?");
+                if (reponse == 'Y') {
+                    for (const auto& p : persistentData.ShowAllPaymentOption()) {
+
+                        // todo
+                    }
+                }
+            }
+        }
+
+    }
+    bool validationPayment(const std::string CCnumber, const int CVCnumber) {
+        if (CCnumber.length() == 16 && std::to_string(CVCnumber).length() == 4 ) {
+            return true;
+        }
+        return false;
     }
     std::string SubscriptionDomain::completePayment() {
         // todo
