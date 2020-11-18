@@ -1,4 +1,4 @@
-#include "TechnicalServices/Persistence/SimpleDB.hpp"
+﻿#include "TechnicalServices/Persistence/SimpleDB.hpp"
 
 #include <fstream>    // streamsize
 #include <iomanip>    // quoted()
@@ -167,6 +167,40 @@ namespace TechnicalServices::Persistence
            { 3,         { "Tu AM" },            { "Office meeting, Fr AM, Office 2" } },
            { 4,         { "Tu AM", "We PM" },   { "Office meeting, Fr AM, Office 2" } }
        };
+   }
+
+   // static subscription refs Pricing Summary(Business&Vision)
+   std::vector<Subcripstion> SimpleDB::ShowAllSubcripstion() {
+       return {
+
+           { 1,    "Very Small", "Free", "≤5 " },
+           { 2,     "Small" , "10" ,"≤10 " },
+           { 3,      "Medium"  "20","≤30 " },
+           { 4,       "Large" , "35","≤80"},
+           { 5,       "Super" ,"50","≤80 "}
+       };
+   }
+   std::vector<PaymentOption> SimpleDB::ShowAllPaymentOption() {
+       return {
+           {1, "Debit"},
+           {2, "Credit"},
+           {3, "GateWay"}
+       };
+
+   }
+   std::vector<Paid> SimpleDB::ValidationPaid() {
+       return {
+           {1, "1234567892222222", 6789, true },
+           {2, "1234567892222222", 6789,true },
+           {3, "1234567892222222", 6789,true }
+       };
+
+   }
+   SubscriptionStatus SimpleDB::StacticSubscriptionSatus()
+   {
+       return
+       { 1, 4, "12/20/2020","Completed", "Ann" };
+       
    }
 
   UserCredentials SimpleDB::findCredentialsByName( const std::string & name )

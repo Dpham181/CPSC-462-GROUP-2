@@ -5,6 +5,9 @@
 #include "Domain/Sale/Sale.hpp"
 #include "Domain/User/User.hpp"
 #include "Domain/Event/Event.hpp"
+
+#include "Domain/Subscription/Subscription.hpp"
+
 #include <string>
 #include <any>
 #include <iomanip>     // setw()
@@ -196,6 +199,9 @@ namespace  // anonymous (private) working area
  {
      return "true";
  }
+ // manageSubscription
+ STUB(manageSubscription);
+
 
  // IT Admin actions
  STUB(BackupDB)
@@ -579,7 +585,35 @@ namespace Domain::Product
 
 
 }
+namespace Domain::Subscription
 
+{
+    auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+
+    SubscriptionDomain::SubscriptionDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
+    {
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
+       
+
+    }
+    SubscriptionDomain::~SubscriptionDomain() noexcept
+    {
+        _logger << "Session \"" + _name + "\" shutdown successfully";
+
+
+    }
+   
+    SubscriptionStatus SubscriptionDomain::viewSubscriptionStatus() {
+        // todo
+    }
+    PaymentOption SubscriptionDomain::selectSubscription(const Subcripstion SelectedId) {
+        // todo
+    }
+    std::string SubscriptionDomain::completePayment() {
+        // todo
+    }
+
+}
 // User domain implemention
 namespace Domain::User
 
@@ -1093,8 +1127,8 @@ namespace Domain::Session
   {
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Sales Manager\".";
 
-   // _commandDispatch = { {"Manage Subscription", manageSubscription}//,
-                         //{"Help",       help} 
-    //};
+    _commandDispatch = { {"Manage Subscription", manageSubscription},
+                      
+    };
   }
 }    // namespace Domain::Session

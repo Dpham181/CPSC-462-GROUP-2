@@ -1,1 +1,28 @@
-﻿  ConsoleApplication.vcxproj -> C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe
+﻿  ClientHandler.cpp
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Client\ClientHandler.cpp(35): warning C4715: 'Domain::Client::ClientHandler::UseClientManagement': not all control paths return a value
+  EventHandler.cpp
+  ProductHandler.cpp
+  SaleHandler.cpp
+  Session.cpp
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(58,1): warning C4005: 'STUBC': macro redefinition
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(30): message : see previous definition of 'STUBC'
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(63,58): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(72,104): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(131,88): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(131,47): warning C4100: 'session': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(135,89): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(135,48): warning C4100: 'session': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(140,95): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(140,54): warning C4100: 'session': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(190,91): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(190,50): warning C4100: 'session': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(195,92): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(195,51): warning C4100: 'session': unreferenced formal parameter
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(260,45): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(266,63): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  SessionHandler.cpp
+  Compiling...
+  Generating Code...
+  SubscriptionHandler.cpp
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Subscription\Subscription.hpp(28,7): error C3668: 'Domain::Subscription::SubscriptionDomain::~SubscriptionDomain': method with override specifier 'override' did not override any base class methods
+C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Subscription\SubscriptionHandler.cpp(16,58): error C2600: 'Domain::Subscription::SubscriptionHandler::~SubscriptionHandler': cannot define a compiler-generated special member function (must be declared in the class first)

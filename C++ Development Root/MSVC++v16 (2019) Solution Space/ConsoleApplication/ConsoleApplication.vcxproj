@@ -25,6 +25,7 @@
     <ClCompile Include="..\..\SourceCode\Domain\Sale\SaleHandler.cpp" />
     <ClCompile Include="..\..\SourceCode\Domain\Session\Session.cpp" />
     <ClCompile Include="..\..\SourceCode\Domain\Session\SessionHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Domain\Subscription\SubscriptionHandler.cpp" />
     <ClCompile Include="..\..\SourceCode\Domain\User\UserHandler.cpp" />
     <ClCompile Include="..\..\SourceCode\main.cpp" />
     <ClCompile Include="..\..\SourceCode\TechnicalServices\Logging\LoggerHandler.cpp" />
@@ -48,6 +49,8 @@
     <ClInclude Include="..\..\SourceCode\Domain\Sale\SaleHandler.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Session\Session.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\Session\SessionHandler.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Subscription\Subscription.hpp" />
+    <ClInclude Include="..\..\SourceCode\Domain\Subscription\SubscriptionHandler.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\User\User.hpp" />
     <ClInclude Include="..\..\SourceCode\Domain\User\UserHandler.hpp" />
     <ClInclude Include="..\..\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp" />

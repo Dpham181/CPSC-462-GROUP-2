@@ -72,15 +72,11 @@ PUBLIC	?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ; __empty_global_d
 PUBLIC	?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z ; std::_Adjust_manually_vector_aligned
 PUBLIC	?_Orphan_all@_Container_base12@std@@QEAAXXZ	; std::_Container_base12::_Orphan_all
 PUBLIC	?deallocate@?$allocator@D@std@@QEAAXQEAD_K@Z	; std::allocator<char>::deallocate
-PUBLIC	?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z ; std::_Narrow_char_traits<char,int>::compare
-PUBLIC	?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z ; std::_Narrow_char_traits<char,int>::length
 PUBLIC	?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z ; std::_Narrow_char_traits<char,int>::assign
-PUBLIC	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ ; std::_String_val<std::_Simple_types<char> >::_Myptr
 PUBLIC	?_Large_string_engaged@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBA_NXZ ; std::_String_val<std::_Simple_types<char> >::_Large_string_engaged
 PUBLIC	??1_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ ; std::_String_val<std::_Simple_types<char> >::_Bxty::~_Bxty
 PUBLIC	??1?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ ; std::_String_val<std::_Simple_types<char> >::~_String_val<std::_Simple_types<char> >
 PUBLIC	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-PUBLIC	?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Equal
 PUBLIC	?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
 PUBLIC	?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV?$allocator@D@2@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Getal
 PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAAAEAV?$allocator@D@2@XZ ; std::_Compressed_pair<std::allocator<char>,std::_String_val<std::_Simple_types<char> >,1>::_Get_first
@@ -88,7 +84,6 @@ PUBLIC	??1?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types
 PUBLIC	??_G?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAPEAXI@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::`scalar deleting destructor'
 PUBLIC	?deallocate@?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QEAAXQEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_K@Z ; std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::deallocate
 PUBLIC	??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-PUBLIC	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 PUBLIC	?_Destroy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@0@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Destroy
 PUBLIC	?_Tidy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXXZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Tidy
 PUBLIC	?_Getal@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Getal
@@ -96,7 +91,6 @@ PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@V?$basic_string@DU?$char_trai
 PUBLIC	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ ; TechnicalServices::Persistence::UserCredentials::~UserCredentials
 PUBLIC	?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; Domain::Client::ClientHandler::UseClientManagement
 PUBLIC	??1ClientHandler@Client@Domain@@UEAA@XZ		; Domain::Client::ClientHandler::~ClientHandler
-PUBLIC	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
 PUBLIC	??$make_unique@UClientManagement@Client@Domain@@AEBUUserCredentials@Persistence@TechnicalServices@@$0A@@std@@YA?AV?$unique_ptr@UClientManagement@Client@Domain@@U?$default_delete@UClientManagement@Client@Domain@@@std@@@0@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; std::make_unique<Domain::Client::ClientManagement,TechnicalServices::Persistence::UserCredentials const &,0>
 PUBLIC	??R?$default_delete@UClientManagement@Client@Domain@@@std@@QEBAXPEAUClientManagement@Client@Domain@@@Z ; std::default_delete<Domain::Client::ClientManagement>::operator()
 PUBLIC	??1?$unique_ptr@UClientManagement@Client@Domain@@U?$default_delete@UClientManagement@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientManagement,std::default_delete<Domain::Client::ClientManagement> >::~unique_ptr<Domain::Client::ClientManagement,std::default_delete<Domain::Client::ClientManagement> >
@@ -111,7 +105,6 @@ PUBLIC	??$exchange@PEAU_Container_proxy@std@@$$T@std@@YAPEAU_Container_proxy@0@A
 PUBLIC	??$?0V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 PUBLIC	??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z ; std::allocator<std::_Container_proxy>::allocator<std::_Container_proxy><char>
 PUBLIC	??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z	; std::_Destroy_in_place<char *>
-PUBLIC	??$_Unfancy@D@std@@YAPEADPEAD@Z			; std::_Unfancy<char>
 PUBLIC	??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z	; std::_Deallocate<16,0>
 PUBLIC	??$_Destroy_range@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEAV10@AEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ; std::_Destroy_range<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
 PUBLIC	??$forward@AEBUUserCredentials@Persistence@TechnicalServices@@@std@@YAAEBUUserCredentials@Persistence@TechnicalServices@@AEBU123@@Z ; std::forward<TechnicalServices::Persistence::UserCredentials const &>
@@ -123,7 +116,6 @@ PUBLIC	??$_Deallocate_plain@V?$allocator@U_Container_proxy@std@@@std@@@std@@YAXA
 PUBLIC	??$_Unfancy@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@YAPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PEAV10@@Z ; std::_Unfancy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 PUBLIC	??$destroy@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@?$_Default_allocator_traits@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@SAXAEAV?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@QEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z ; std::_Default_allocator_traits<std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::destroy<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >
 PUBLIC	??$exchange@PEAUClientManagement@Client@Domain@@PEAU123@@std@@YAPEAUClientManagement@Client@Domain@@AEAPEAU123@$$QEAPEAU123@@Z ; std::exchange<Domain::Client::ClientManagement *,Domain::Client::ClientManagement *>
-PUBLIC	??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z ; std::_Traits_equal<std::char_traits<char> >
 PUBLIC	??$?0AEAPEAUClientManagement@Client@Domain@@@?$_Compressed_pair@U?$default_delete@UClientManagement@Client@Domain@@@std@@PEAUClientManagement@Client@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@AEAPEAUClientManagement@Client@Domain@@@Z ; std::_Compressed_pair<std::default_delete<Domain::Client::ClientManagement>,Domain::Client::ClientManagement *,1>::_Compressed_pair<std::default_delete<Domain::Client::ClientManagement>,Domain::Client::ClientManagement *,1><Domain::Client::ClientManagement * &>
 PUBLIC	??$forward@PEAUClientManagement@Client@Domain@@@std@@YA$$QEAPEAUClientManagement@Client@Domain@@AEAPEAU123@@Z ; std::forward<Domain::Client::ClientManagement *>
 PUBLIC	?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z ; std::_Default_allocator_traits<std::allocator<std::_Container_proxy> >::deallocate
@@ -137,12 +129,7 @@ PUBLIC	??_C@_1NC@LBGPBFDE@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$
 PUBLIC	??_C@_1EK@NIFDJFDG@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAA?$AAd?$AAj?$AAu?$AAs?$AAt?$AA_?$AAm?$AAa@ ; `string'
 PUBLIC	??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe@ ; `string'
 PUBLIC	??_7ClientHandler@Client@Domain@@6B@		; Domain::Client::ClientHandler::`vftable'
-PUBLIC	??_C@_0M@FHFJHGNJ@Salesperson@			; `string'
-PUBLIC	??_C@_0BO@PFKOHNJC@vector?5subscript?5out?5of?5range@ ; `string'
-PUBLIC	??_C@_0GI@BDJNFBPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ ; `string'
-PUBLIC	??_C@_1NA@MKDIEAJP@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ ; `string'
-PUBLIC	??_C@_1BME@NCIPHHDN@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAc?$AAl?$AAa@ ; `string'
-PUBLIC	??_C@_1EA@LEKOKFNB@?$AA?$CC?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAs?$AAu?$AAb?$AAs?$AAc?$AAr?$AAi@ ; `string'
+PUBLIC	??_R0?AUNoSuchUser@PersistenceHandler@Persistence@TechnicalServices@@@8 ; TechnicalServices::Persistence::PersistenceHandler::NoSuchUser `RTTI Type Descriptor'
 PUBLIC	??_R4ClientHandler@Client@Domain@@6B@		; Domain::Client::ClientHandler::`RTTI Complete Object Locator'
 PUBLIC	??_R0?AVClientHandler@Client@Domain@@@8		; Domain::Client::ClientHandler `RTTI Type Descriptor'
 PUBLIC	??_R3ClientHandler@Client@Domain@@8		; Domain::Client::ClientHandler::`RTTI Class Hierarchy Descriptor'
@@ -164,7 +151,6 @@ EXTRN	__CheckForDebuggerJustMyCode:PROC
 EXTRN	__CxxFrameHandler4:PROC
 EXTRN	__GSHandlerCheck_EH4:PROC
 EXTRN	__security_check_cookie:PROC
-EXTRN	memcmp:PROC
 EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
 EXTRN	__security_cookie:QWORD
 ;	COMDAT pdata
@@ -211,27 +197,9 @@ $pdata$?deallocate@?$allocator@D@std@@QEAAXQEAD_K@Z DD imagerel $LN3
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z DD imagerel $LN3
-	DD	imagerel $LN3+101
-	DD	imagerel $unwind$?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z DD imagerel $LN4
-	DD	imagerel $LN4+123
-	DD	imagerel $unwind$?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z DD imagerel $LN3
 	DD	imagerel $LN3+88
 	DD	imagerel $unwind$?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ DD imagerel $LN4
-	DD	imagerel $LN4+122
-	DD	imagerel $unwind$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -256,12 +224,6 @@ pdata	SEGMENT
 $pdata$??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ DD imagerel $LN3
 	DD	imagerel $LN3+213
 	DD	imagerel $unwind$??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z DD imagerel $LN3
-	DD	imagerel $LN3+162
-	DD	imagerel $unwind$?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -307,12 +269,6 @@ $pdata$??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z DD imagerel $LN12
-	DD	imagerel $LN12+253
-	DD	imagerel $unwind$??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$?_Destroy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@0@Z DD imagerel $LN3
 	DD	imagerel $LN3+108
 	DD	imagerel $unwind$?_Destroy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@0@Z
@@ -343,8 +299,8 @@ $pdata$??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ DD imagerel $LN
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DD imagerel $LN8
-	DD	imagerel $LN8+361
+$pdata$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DD imagerel $LN14
+	DD	imagerel $LN14+360
 	DD	imagerel $unwind$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -355,15 +311,15 @@ $pdata$?dtor$0@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$uniqu
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??1ClientHandler@Client@Domain@@UEAA@XZ DD imagerel $LN3
-	DD	imagerel $LN3+81
-	DD	imagerel $unwind$??1ClientHandler@Client@Domain@@UEAA@XZ
+$pdata$?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA DD imagerel ?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA
+	DD	imagerel ?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA+35
+	DD	imagerel $unwind$?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z DD imagerel $LN3
-	DD	imagerel $LN3+88
-	DD	imagerel $unwind$??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z
+$pdata$??1ClientHandler@Client@Domain@@UEAA@XZ DD imagerel $LN3
+	DD	imagerel $LN3+81
+	DD	imagerel $unwind$??1ClientHandler@Client@Domain@@UEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -457,12 +413,6 @@ $pdata$??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z DD imagerel $LN3
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$_Unfancy@D@std@@YAPEADPEAD@Z DD imagerel $LN3
-	DD	imagerel $LN3+71
-	DD	imagerel $unwind$??$_Unfancy@D@std@@YAPEADPEAD@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DD imagerel $LN4
 	DD	imagerel $LN4+121
 	DD	imagerel $unwind$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
@@ -526,12 +476,6 @@ pdata	SEGMENT
 $pdata$??$exchange@PEAUClientManagement@Client@Domain@@PEAU123@@std@@YAPEAUClientManagement@Client@Domain@@AEAPEAU123@$$QEAPEAU123@@Z DD imagerel $LN3
 	DD	imagerel $LN3+107
 	DD	imagerel $unwind$??$exchange@PEAUClientManagement@Client@Domain@@PEAU123@@std@@YAPEAUClientManagement@Client@Domain@@AEAPEAU123@$$QEAPEAU123@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z DD imagerel $LN5
-	DD	imagerel $LN5+154
-	DD	imagerel $unwind$??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -602,89 +546,13 @@ rdata$r	SEGMENT
 	DD	imagerel ??_R3ClientHandler@Client@Domain@@8
 	DD	imagerel ??_R4ClientHandler@Client@Domain@@6B@
 rdata$r	ENDS
-;	COMDAT ??_C@_1EA@LEKOKFNB@?$AA?$CC?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAs?$AAu?$AAb?$AAs?$AAc?$AAr?$AAi@
-CONST	SEGMENT
-??_C@_1EA@LEKOKFNB@?$AA?$CC?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAs?$AAu?$AAb?$AAs?$AAc?$AAr?$AAi@ DB '"'
-	DB	00H, 'v', 00H, 'e', 00H, 'c', 00H, 't', 00H, 'o', 00H, 'r', 00H
-	DB	' ', 00H, 's', 00H, 'u', 00H, 'b', 00H, 's', 00H, 'c', 00H, 'r'
-	DB	00H, 'i', 00H, 'p', 00H, 't', 00H, ' ', 00H, 'o', 00H, 'u', 00H
-	DB	't', 00H, ' ', 00H, 'o', 00H, 'f', 00H, ' ', 00H, 'r', 00H, 'a'
-	DB	00H, 'n', 00H, 'g', 00H, 'e', 00H, '"', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BME@NCIPHHDN@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAc?$AAl?$AAa@
-CONST	SEGMENT
-??_C@_1BME@NCIPHHDN@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAc?$AAl?$AAa@ DB 's'
-	DB	00H, 't', 00H, 'd', 00H, ':', 00H, ':', 00H, 'v', 00H, 'e', 00H
-	DB	'c', 00H, 't', 00H, 'o', 00H, 'r', 00H, '<', 00H, 'c', 00H, 'l'
-	DB	00H, 'a', 00H, 's', 00H, 's', 00H, ' ', 00H, 's', 00H, 't', 00H
-	DB	'd', 00H, ':', 00H, ':', 00H, 'b', 00H, 'a', 00H, 's', 00H, 'i'
-	DB	00H, 'c', 00H, '_', 00H, 's', 00H, 't', 00H, 'r', 00H, 'i', 00H
-	DB	'n', 00H, 'g', 00H, '<', 00H, 'c', 00H, 'h', 00H, 'a', 00H, 'r'
-	DB	00H, ',', 00H, 's', 00H, 't', 00H, 'r', 00H, 'u', 00H, 'c', 00H
-	DB	't', 00H, ' ', 00H, 's', 00H, 't', 00H, 'd', 00H, ':', 00H, ':'
-	DB	00H, 'c', 00H, 'h', 00H, 'a', 00H, 'r', 00H, '_', 00H, 't', 00H
-	DB	'r', 00H, 'a', 00H, 'i', 00H, 't', 00H, 's', 00H, '<', 00H, 'c'
-	DB	00H, 'h', 00H, 'a', 00H, 'r', 00H, '>', 00H, ',', 00H, 'c', 00H
-	DB	'l', 00H, 'a', 00H, 's', 00H, 's', 00H, ' ', 00H, 's', 00H, 't'
-	DB	00H, 'd', 00H, ':', 00H, ':', 00H, 'a', 00H, 'l', 00H, 'l', 00H
-	DB	'o', 00H, 'c', 00H, 'a', 00H, 't', 00H, 'o', 00H, 'r', 00H, '<'
-	DB	00H, 'c', 00H, 'h', 00H, 'a', 00H, 'r', 00H, '>', 00H, ' ', 00H
-	DB	'>', 00H, ',', 00H, 'c', 00H, 'l', 00H, 'a', 00H, 's', 00H, 's'
-	DB	00H, ' ', 00H, 's', 00H, 't', 00H, 'd', 00H, ':', 00H, ':', 00H
-	DB	'a', 00H, 'l', 00H, 'l', 00H, 'o', 00H, 'c', 00H, 'a', 00H, 't'
-	DB	00H, 'o', 00H, 'r', 00H, '<', 00H, 'c', 00H, 'l', 00H, 'a', 00H
-	DB	's', 00H, 's', 00H, ' ', 00H, 's', 00H, 't', 00H, 'd', 00H, ':'
-	DB	00H, ':', 00H, 'b', 00H, 'a', 00H, 's', 00H, 'i', 00H, 'c', 00H
-	DB	'_', 00H, 's', 00H, 't', 00H, 'r', 00H, 'i', 00H, 'n', 00H, 'g'
-	DB	00H, '<', 00H, 'c', 00H, 'h', 00H, 'a', 00H, 'r', 00H, ',', 00H
-	DB	's', 00H, 't', 00H, 'r', 00H, 'u', 00H, 'c', 00H, 't', 00H, ' '
-	DB	00H, 's', 00H, 't', 00H, 'd', 00H, ':', 00H, ':', 00H, 'c', 00H
-	DB	'h', 00H, 'a', 00H, 'r', 00H, '_', 00H, 't', 00H, 'r', 00H, 'a'
-	DB	00H, 'i', 00H, 't', 00H, 's', 00H, '<', 00H, 'c', 00H, 'h', 00H
-	DB	'a', 00H, 'r', 00H, '>', 00H, ',', 00H, 'c', 00H, 'l', 00H, 'a'
-	DB	00H, 's', 00H, 's', 00H, ' ', 00H, 's', 00H, 't', 00H, 'd', 00H
-	DB	':', 00H, ':', 00H, 'a', 00H, 'l', 00H, 'l', 00H, 'o', 00H, 'c'
-	DB	00H, 'a', 00H, 't', 00H, 'o', 00H, 'r', 00H, '<', 00H, 'c', 00H
-	DB	'h', 00H, 'a', 00H, 'r', 00H, '>', 00H, ' ', 00H, '>', 00H, ' '
-	DB	00H, '>', 00H, ' ', 00H, '>', 00H, ':', 00H, ':', 00H, 'o', 00H
-	DB	'p', 00H, 'e', 00H, 'r', 00H, 'a', 00H, 't', 00H, 'o', 00H, 'r'
-	DB	00H, ' ', 00H, '[', 00H, ']', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1NA@MKDIEAJP@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
-CONST	SEGMENT
-??_C@_1NA@MKDIEAJP@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@ DB 'C'
-	DB	00H, ':', 00H, '\', 00H, 'P', 00H, 'r', 00H, 'o', 00H, 'g', 00H
-	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'F', 00H, 'i', 00H, 'l'
-	DB	00H, 'e', 00H, 's', 00H, ' ', 00H, '(', 00H, 'x', 00H, '8', 00H
-	DB	'6', 00H, ')', 00H, '\', 00H, 'M', 00H, 'i', 00H, 'c', 00H, 'r'
-	DB	00H, 'o', 00H, 's', 00H, 'o', 00H, 'f', 00H, 't', 00H, ' ', 00H
-	DB	'V', 00H, 'i', 00H, 's', 00H, 'u', 00H, 'a', 00H, 'l', 00H, ' '
-	DB	00H, 'S', 00H, 't', 00H, 'u', 00H, 'd', 00H, 'i', 00H, 'o', 00H
-	DB	'\', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, '\', 00H, 'E'
-	DB	00H, 'n', 00H, 't', 00H, 'e', 00H, 'r', 00H, 'p', 00H, 'r', 00H
-	DB	'i', 00H, 's', 00H, 'e', 00H, '\', 00H, 'V', 00H, 'C', 00H, '\'
-	DB	00H, 'T', 00H, 'o', 00H, 'o', 00H, 'l', 00H, 's', 00H, '\', 00H
-	DB	'M', 00H, 'S', 00H, 'V', 00H, 'C', 00H, '\', 00H, '1', 00H, '4'
-	DB	00H, '.', 00H, '2', 00H, '7', 00H, '.', 00H, '2', 00H, '9', 00H
-	DB	'1', 00H, '1', 00H, '0', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
-	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'v', 00H
-	DB	'e', 00H, 'c', 00H, 't', 00H, 'o', 00H, 'r', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0GI@BDJNFBPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
-CONST	SEGMENT
-??_C@_0GI@BDJNFBPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@ DB 'C:\Pro'
-	DB	'gram Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\T'
-	DB	'ools\MSVC\14.27.29110\include\vector', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BO@PFKOHNJC@vector?5subscript?5out?5of?5range@
-CONST	SEGMENT
-??_C@_0BO@PFKOHNJC@vector?5subscript?5out?5of?5range@ DB 'vector subscrip'
-	DB	't out of range', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0M@FHFJHGNJ@Salesperson@
-CONST	SEGMENT
-??_C@_0M@FHFJHGNJ@Salesperson@ DB 'Salesperson', 00H	; `string'
-CONST	ENDS
+;	COMDAT ??_R0?AUNoSuchUser@PersistenceHandler@Persistence@TechnicalServices@@@8
+data$r	SEGMENT
+??_R0?AUNoSuchUser@PersistenceHandler@Persistence@TechnicalServices@@@8 DQ FLAT:??_7type_info@@6B@ ; TechnicalServices::Persistence::PersistenceHandler::NoSuchUser `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AUNoSuchUser@PersistenceHandler@Persistence@TechnicalS'
+	DB	'ervices@@', 00H
+data$r	ENDS
 ;	COMDAT ??_7ClientHandler@Client@Domain@@6B@
 CONST	SEGMENT
 ??_7ClientHandler@Client@Domain@@6B@ DQ FLAT:??_R4ClientHandler@Client@Domain@@6B@ ; Domain::Client::ClientHandler::`vftable'
@@ -820,26 +688,6 @@ $unwind$??$?0AEAPEAUClientManagement@Client@Domain@@@?$_Compressed_pair@U?$defau
 	DD	0500fH
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$?0AEAPEAUClientManagement@Client@Domain@@@?$_Compressed_pair@U?$default_delete@UClientManagement@Client@Domain@@@std@@PEAUClientManagement@Client@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@AEAPEAUClientManagement@Client@Domain@@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z DB 060H
-	DD	imagerel $ip2state$??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z DD 025053919H
-	DD	011d2322H
-	DD	07016001fH
-	DD	05015H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -1047,26 +895,6 @@ $unwind$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z DD 025052f19H
 	DD	0500bH
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??$_Unfancy@D@std@@YAPEADPEAD@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??$_Unfancy@D@std@@YAPEADPEAD@Z DB 060H
-	DD	imagerel $ip2state$??$_Unfancy@D@std@@YAPEADPEAD@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??$_Unfancy@D@std@@YAPEADPEAD@Z DD 025052a19H
-	DD	010e2313H
-	DD	07007001dH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??$_Unfancy@D@std@@YAPEADPEAD@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -1367,13 +1195,6 @@ $unwind$??$make_unique@UClientManagement@Client@Domain@@AEBUUserCredentials@Pers
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z DD 025052f01H
-	DD	01132318H
-	DD	0700c001dH
-	DD	0500bH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $ip2state$??1ClientHandler@Client@Domain@@UEAA@XZ DB 02H
 	DB	00H
 	DB	00H
@@ -1394,34 +1215,61 @@ $unwind$??1ClientHandler@Client@Domain@@UEAA@XZ DD 025052a19H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA DD 031001H
+	DD	0700c4210H
+	DD	0500bH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?dtor$0@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA DD 031001H
 	DD	0700c4210H
 	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 0aH
+$ip2state$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 0cH
 	DB	00H
 	DB	00H
-	DB	'9', 02H
+	DB	0aeH
 	DB	02H
-	DB	0daH
-	DB	00H
+	DB	098H
+	DB	04H
+	DB	0a4H
+	DB	02H
 	DB	'$'
-	DB	02H
+	DB	04H
 	DB	':'
-	DB	00H
+	DB	02H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$stateUnwindMap$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 02H
+$handlerMap$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 02H
+	DB	03H
+	DB	012H
+	DD	imagerel ??_R0?AUNoSuchUser@PersistenceHandler@Persistence@TechnicalServices@@@8
+	DD	imagerel ?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$tryMap$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 02H
+	DB	00H
+	DB	02H
+	DB	04H
+	DD	imagerel $handlerMap$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$stateUnwindMap$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 06H
+	DB	08H
 	DB	0eH
 	DD	imagerel ?dtor$0@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA
+	DB	038H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$cppxdata$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 028H
+$cppxdata$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z DB 038H
 	DD	imagerel $stateUnwindMap$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
+	DD	imagerel $tryMap$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 	DD	imagerel $ip2state$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 xdata	ENDS
 ;	COMDAT xdata
@@ -1432,7 +1280,7 @@ $unwind$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VCli
 	DD	0500bH
 	DD	imagerel __GSHandlerCheck_EH4
 	DD	imagerel $cppxdata$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
-	DD	01e2H
+	DD	01ebH
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
@@ -1536,26 +1384,6 @@ $unwind$?_Destroy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D
 	DD	0118231dH
 	DD	07011001dH
 	DD	05010H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z DB 060H
-	DD	imagerel $ip2state$??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z DD 035052f19H
-	DD	01133318H
-	DD	0700c0023H
-	DD	0500bH
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -1676,26 +1504,6 @@ $unwind$?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z DB 060H
-	DD	imagerel $ip2state$?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z DD 025052f19H
-	DD	01132318H
-	DD	0700c0021H
-	DD	0500bH
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $ip2state$??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ DB 02H
 	DB	00H
 	DB	00H
@@ -1780,26 +1588,6 @@ $unwind$?_Large_string_engaged@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBA_
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ DB 060H
-	DD	imagerel $ip2state$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ DD 025052a19H
-	DD	010e2313H
-	DD	070070021H
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $ip2state$?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z DB 02H
 	DB	00H
 	DB	00H
@@ -1817,46 +1605,6 @@ $unwind$?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z DD 025052f19H
 	DD	0500bH
 	DD	imagerel __CxxFrameHandler4
 	DD	imagerel $cppxdata$?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z DB 060H
-	DD	imagerel $ip2state$?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z DD 025052a19H
-	DD	010e2313H
-	DD	07007001fH
-	DD	05006H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$ip2state$?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z DB 02H
-	DB	00H
-	DB	00H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$cppxdata$?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z DB 060H
-	DD	imagerel $ip2state$?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z DD 025053419H
-	DD	0118231dH
-	DD	07011001dH
-	DD	05010H
-	DD	imagerel __CxxFrameHandler4
-	DD	imagerel $cppxdata$?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -2147,63 +1895,6 @@ $LN3:
 	pop	rbp
 	ret	0
 ??$?0AEAPEAUClientManagement@Client@Domain@@@?$_Compressed_pair@U?$default_delete@UClientManagement@Client@Domain@@@std@@PEAUClientManagement@Client@Domain@@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@AEAPEAUClientManagement@Client@Domain@@@Z ENDP ; std::_Compressed_pair<std::default_delete<Domain::Client::ClientManagement>,Domain::Client::ClientManagement *,1>::_Compressed_pair<std::default_delete<Domain::Client::ClientManagement>,Domain::Client::ClientManagement *,1><Domain::Client::ClientManagement * &>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
-;	COMDAT ??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z
-_TEXT	SEGMENT
-tv70 = 192
-_Left$ = 240
-_Left_size$ = 248
-_Right$ = 256
-_Right_size$ = 264
-??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z PROC ; std::_Traits_equal<std::char_traits<char> >, COMDAT
-
-; 502  :     _In_reads_(_Right_size) const _Traits_ptr_t<_Traits> _Right, const size_t _Right_size) noexcept {
-
-$LN5:
-	mov	QWORD PTR [rsp+32], r9
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 248				; 000000f8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 62					; 0000003eH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
-	call	__CheckForDebuggerJustMyCode
-
-; 503  :     // compare [_Left, _Left + _Left_size) to [_Right, _Right + _Right_size) for equality using _Traits
-; 504  :     return _Left_size == _Right_size && _Traits::compare(_Left, _Right, _Left_size) == 0;
-
-	mov	rax, QWORD PTR _Right_size$[rbp]
-	cmp	QWORD PTR _Left_size$[rbp], rax
-	jne	SHORT $LN3@Traits_equ
-	mov	r8, QWORD PTR _Left_size$[rbp]
-	mov	rdx, QWORD PTR _Right$[rbp]
-	mov	rcx, QWORD PTR _Left$[rbp]
-	call	?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z ; std::_Narrow_char_traits<char,int>::compare
-	test	eax, eax
-	jne	SHORT $LN3@Traits_equ
-	mov	DWORD PTR tv70[rbp], 1
-	jmp	SHORT $LN4@Traits_equ
-$LN3@Traits_equ:
-	mov	DWORD PTR tv70[rbp], 0
-$LN4@Traits_equ:
-	movzx	eax, BYTE PTR tv70[rbp]
-
-; 505  : }
-
-	lea	rsp, QWORD PTR [rbp+216]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z ENDP ; std::_Traits_equal<std::char_traits<char> >
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\utility
@@ -2686,41 +2377,6 @@ $LN2@Deallocate:
 	pop	rbp
 	ret	0
 ??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z ENDP		; std::_Deallocate<16,0>
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstddef
-;	COMDAT ??$_Unfancy@D@std@@YAPEADPEAD@Z
-_TEXT	SEGMENT
-_Ptr$ = 224
-??$_Unfancy@D@std@@YAPEADPEAD@Z PROC			; std::_Unfancy<char>, COMDAT
-
-; 288  : _NODISCARD constexpr _Ty* _Unfancy(_Ty* _Ptr) noexcept { // do nothing for plain pointers
-
-$LN3:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__911385EF_xstddef
-	call	__CheckForDebuggerJustMyCode
-
-; 289  :     return _Ptr;
-
-	mov	rax, QWORD PTR _Ptr$[rbp]
-
-; 290  : }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$_Unfancy@D@std@@YAPEADPEAD@Z ENDP			; std::_Unfancy<char>
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory
@@ -3378,45 +3034,6 @@ __$ReturnUdt$ = 336
 ?dtor$0@?0???$make_unique@UClientManagement@Client@Domain@@AEBUUserCredentials@Persistence@TechnicalServices@@$0A@@std@@YA?AV?$unique_ptr@UClientManagement@Client@Domain@@U?$default_delete@UClientManagement@Client@Domain@@@std@@@0@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA ENDP ; `std::make_unique<Domain::Client::ClientManagement,TechnicalServices::Persistence::UserCredentials const &,0>'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
-;	COMDAT ??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z
-_TEXT	SEGMENT
-_Left$ = 224
-_Right$ = 232
-??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z PROC ; std::operator==<char,std::char_traits<char>,std::allocator<char> >, COMDAT
-
-; 4480 : _NODISCARD bool operator==(const basic_string<_Elem, _Traits, _Alloc>& _Left, _In_z_ const _Elem* const _Right) {
-
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
-	call	__CheckForDebuggerJustMyCode
-
-; 4481 :     return _Left._Equal(_Right);
-
-	mov	rdx, QWORD PTR _Right$[rbp]
-	mov	rcx, QWORD PTR _Left$[rbp]
-	call	?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Equal
-
-; 4482 : }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ENDP ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Client\ClientHandler.cpp
 ;	COMDAT ??1ClientHandler@Client@Domain@@UEAA@XZ
 _TEXT	SEGMENT
@@ -3451,20 +3068,22 @@ _TEXT	ENDS
 ; File C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Client\ClientHandler.cpp
 ;	COMDAT ?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 _TEXT	SEGMENT
-persistentData$ = 8
-credentialsFromDB$ = 48
-$T4 = 392
-$T5 = 420
-tv131 = 440
+persistentData$4 = 8
+credentialsFromDB$5 = 48
+$T6 = 392
+$T7 = 420
+tv92 = 440
+tv86 = 440
 tv73 = 440
-__$ArrayPad$ = 448
+tv77 = 448
+__$ArrayPad$ = 456
 __$ReturnUdt$ = 496
 user$ = 504
 ?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z PROC ; Domain::Client::ClientHandler::UseClientManagement, COMDAT
 
-; 24   :     {
+; 24   :         {
 
-$LN8:
+$LN14:
 	mov	QWORD PTR [rsp+16], rdx
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
@@ -3479,74 +3098,78 @@ $LN8:
 	mov	rax, QWORD PTR __security_cookie
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
-	mov	DWORD PTR $T5[rbp], 0
+	mov	DWORD PTR $T7[rbp], 0
 	lea	rcx, OFFSET FLAT:__FB3E3826_ClientHandler@cpp
 	call	__CheckForDebuggerJustMyCode
+	npad	1
 
-; 25   :         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+; 25   : 
+; 26   :             try {
+; 27   :                 auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
 
 	call	?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ ; TechnicalServices::Persistence::PersistenceHandler::instance
-	mov	QWORD PTR persistentData$[rbp], rax
+	mov	QWORD PTR tv86[rbp], rax
+	mov	rax, QWORD PTR tv86[rbp]
+	mov	QWORD PTR persistentData$4[rbp], rax
 
-; 26   :         UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
+; 28   :                 UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
 
-	mov	rax, QWORD PTR persistentData$[rbp]
+	mov	rax, QWORD PTR persistentData$4[rbp]
 	mov	rax, QWORD PTR [rax]
 	mov	rax, QWORD PTR [rax+16]
 	mov	QWORD PTR tv73[rbp], rax
 	mov	rax, QWORD PTR user$[rbp]
 	add	rax, 8
 	mov	r8, rax
-	lea	rdx, QWORD PTR credentialsFromDB$[rbp]
-	mov	rcx, QWORD PTR persistentData$[rbp]
+	lea	rdx, QWORD PTR credentialsFromDB$5[rbp]
+	mov	rcx, QWORD PTR persistentData$4[rbp]
 	call	QWORD PTR tv73[rbp]
-	npad	1
+	mov	QWORD PTR tv77[rbp], rax
 
-; 27   :         if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::Client::ClientManagement>(user);
+; 29   :                 if (credentialsFromDB.status == 1) return std::make_unique<Domain::Client::ClientManagement>(user);
 
-	xor	edx, edx
-	lea	rcx, QWORD PTR credentialsFromDB$[rbp+88]
-	call	??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
-	lea	rdx, OFFSET FLAT:??_C@_0M@FHFJHGNJ@Salesperson@
-	mov	rcx, rax
-	call	??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QEBD@Z ; std::operator==<char,std::char_traits<char>,std::allocator<char> >
-	movzx	eax, al
-	test	eax, eax
-	je	SHORT $LN2@UseClientM
+	cmp	DWORD PTR credentialsFromDB$5[rbp+120], 1
+	jne	SHORT $LN3@UseClientM
 	mov	rdx, QWORD PTR user$[rbp]
-	lea	rcx, QWORD PTR $T4[rbp]
+	lea	rcx, QWORD PTR $T6[rbp]
 	call	??$make_unique@UClientManagement@Client@Domain@@AEBUUserCredentials@Persistence@TechnicalServices@@$0A@@std@@YA?AV?$unique_ptr@UClientManagement@Client@Domain@@U?$default_delete@UClientManagement@Client@Domain@@@std@@@0@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ; std::make_unique<Domain::Client::ClientManagement,TechnicalServices::Persistence::UserCredentials const &,0>
-	mov	QWORD PTR tv131[rbp], rax
-	mov	rdx, QWORD PTR tv131[rbp]
+	mov	QWORD PTR tv92[rbp], rax
+	mov	rdx, QWORD PTR tv92[rbp]
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??$?0UClientManagement@Client@Domain@@U?$default_delete@UClientManagement@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@$$QEAV?$unique_ptr@UClientManagement@Client@Domain@@U?$default_delete@UClientManagement@Client@Domain@@@std@@@1@@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> ><Domain::Client::ClientManagement,std::default_delete<Domain::Client::ClientManagement>,0>
-	mov	eax, DWORD PTR $T5[rbp]
+	mov	eax, DWORD PTR $T7[rbp]
 	or	eax, 1
-	mov	DWORD PTR $T5[rbp], eax
-	lea	rcx, QWORD PTR $T4[rbp]
+	mov	DWORD PTR $T7[rbp], eax
+	lea	rcx, QWORD PTR $T6[rbp]
 	call	??1?$unique_ptr@UClientManagement@Client@Domain@@U?$default_delete@UClientManagement@Client@Domain@@@std@@@std@@QEAA@XZ ; std::unique_ptr<Domain::Client::ClientManagement,std::default_delete<Domain::Client::ClientManagement> >::~unique_ptr<Domain::Client::ClientManagement,std::default_delete<Domain::Client::ClientManagement> >
 	npad	1
-	lea	rcx, QWORD PTR credentialsFromDB$[rbp]
+	lea	rcx, QWORD PTR credentialsFromDB$5[rbp]
 	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
 	mov	rax, QWORD PTR __$ReturnUdt$[rbp]
 	jmp	SHORT $LN1@UseClientM
-$LN2@UseClientM:
+$LN3@UseClientM:
 
-; 28   : 
-; 29   :         return nullptr;
+; 30   : 
+; 31   :                 return nullptr;
 
 	xor	edx, edx
 	mov	rcx, QWORD PTR __$ReturnUdt$[rbp]
 	call	??$?0U?$default_delete@VClientHandler@Client@Domain@@@std@@$0A@@?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@QEAA@$$T@Z ; std::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> >::unique_ptr<Domain::Client::ClientHandler,std::default_delete<Domain::Client::ClientHandler> ><std::default_delete<Domain::Client::ClientHandler>,0>
-	mov	eax, DWORD PTR $T5[rbp]
+	mov	eax, DWORD PTR $T7[rbp]
 	or	eax, 1
-	mov	DWORD PTR $T5[rbp], eax
-	lea	rcx, QWORD PTR credentialsFromDB$[rbp]
+	mov	DWORD PTR $T7[rbp], eax
+	lea	rcx, QWORD PTR credentialsFromDB$5[rbp]
 	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
 	mov	rax, QWORD PTR __$ReturnUdt$[rbp]
+	jmp	SHORT $LN1@UseClientM
+	jmp	SHORT $LN1@UseClientM
+$LN12@UseClientM:
 $LN1@UseClientM:
 
-; 30   :     }
+; 32   :             }
+; 33   :             catch (const TechnicalServices::Persistence::PersistenceHandler::NoSuchUser&) {}
+; 34   : 
+; 35   :         }
 
 	mov	rdi, rax
 	lea	rcx, QWORD PTR [rbp-32]
@@ -3560,17 +3183,20 @@ $LN1@UseClientM:
 	pop	rdi
 	pop	rbp
 	ret	0
+	int	3
 ?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z ENDP ; Domain::Client::ClientHandler::UseClientManagement
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
-persistentData$ = 8
-credentialsFromDB$ = 48
-$T4 = 392
-$T5 = 420
-tv131 = 440
+persistentData$4 = 8
+credentialsFromDB$5 = 48
+$T6 = 392
+$T7 = 420
+tv92 = 440
+tv86 = 440
 tv73 = 440
-__$ArrayPad$ = 448
+tv77 = 448
+__$ArrayPad$ = 456
 __$ReturnUdt$ = 496
 user$ = 504
 ?dtor$0@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::dtor$0
@@ -3580,7 +3206,69 @@ user$ = 504
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR credentialsFromDB$[rbp]
+	lea	rcx, QWORD PTR credentialsFromDB$5[rbp]
+	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+?dtor$0@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA ENDP ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::dtor$0
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+persistentData$4 = 8
+credentialsFromDB$5 = 48
+$T6 = 392
+$T7 = 420
+tv92 = 440
+tv86 = 440
+tv73 = 440
+tv77 = 448
+__$ArrayPad$ = 456
+__$ReturnUdt$ = 496
+user$ = 504
+?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::catch$3
+
+; 32   :             }
+; 33   :             catch (const TechnicalServices::Persistence::PersistenceHandler::NoSuchUser&) {}
+
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+__catch$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$0:
+	lea	rax, $LN12@catch$3
+	add	rsp, 40					; 00000028H
+	pop	rdi
+	pop	rbp
+	ret	0
+	int	3
+?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA ENDP ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::catch$3
+text$x	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+;	COMDAT text$x
+text$x	SEGMENT
+persistentData$4 = 8
+credentialsFromDB$5 = 48
+$T6 = 392
+$T7 = 420
+tv92 = 440
+tv86 = 440
+tv73 = 440
+tv77 = 448
+__$ArrayPad$ = 456
+__$ReturnUdt$ = 496
+user$ = 504
+?dtor$0@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::dtor$0
+	mov	QWORD PTR [rsp+8], rcx
+	mov	QWORD PTR [rsp+16], rdx
+	push	rbp
+	push	rdi
+	sub	rsp, 40					; 00000028H
+	lea	rbp, QWORD PTR [rdx+32]
+	lea	rcx, QWORD PTR credentialsFromDB$5[rbp]
 	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
 	add	rsp, 40					; 00000028H
 	pop	rdi
@@ -3591,29 +3279,35 @@ text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT text$x
 text$x	SEGMENT
-persistentData$ = 8
-credentialsFromDB$ = 48
-$T4 = 392
-$T5 = 420
-tv131 = 440
+persistentData$4 = 8
+credentialsFromDB$5 = 48
+$T6 = 392
+$T7 = 420
+tv92 = 440
+tv86 = 440
 tv73 = 440
-__$ArrayPad$ = 448
+tv77 = 448
+__$ArrayPad$ = 456
 __$ReturnUdt$ = 496
 user$ = 504
-?dtor$0@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::dtor$0
+?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA PROC ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::catch$3
+
+; 33   :             catch (const TechnicalServices::Persistence::PersistenceHandler::NoSuchUser&) {}
+
 	mov	QWORD PTR [rsp+8], rcx
 	mov	QWORD PTR [rsp+16], rdx
 	push	rbp
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	lea	rcx, QWORD PTR credentialsFromDB$[rbp]
-	call	??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
+__catch$?UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z$0:
+	lea	rax, $LN12@catch$3
 	add	rsp, 40					; 00000028H
 	pop	rdi
 	pop	rbp
 	ret	0
-?dtor$0@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA ENDP ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::dtor$0
+	int	3
+?catch$3@?0??UseClientManagement@ClientHandler@Client@Domain@@SA?AV?$unique_ptr@VClientHandler@Client@Domain@@U?$default_delete@VClientHandler@Client@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA ENDP ; `Domain::Client::ClientHandler::UseClientManagement'::`1'::catch$3
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ;	COMDAT ??1UserCredentials@Persistence@TechnicalServices@@QEAA@XZ
@@ -3888,98 +3582,6 @@ $LN3:
 	pop	rbp
 	ret	0
 ?_Destroy@?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEAAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@0@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Destroy
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
-;	COMDAT ??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z
-_TEXT	SEGMENT
-_My_data$ = 8
-this$ = 256
-_Pos$ = 264
-??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z PROC ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[], COMDAT
-
-; 1497 :     _NODISCARD _Ty& operator[](const size_type _Pos) noexcept /* strengthened */ {
-
-$LN12:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 280				; 00000118H
-	lea	rbp, QWORD PTR [rsp+48]
-	mov	rdi, rsp
-	mov	ecx, 70					; 00000046H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+312]
-	lea	rcx, OFFSET FLAT:__138CEB20_vector
-	call	__CheckForDebuggerJustMyCode
-
-; 1498 :         auto& _My_data = _Mypair._Myval2;
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	QWORD PTR _My_data$[rbp], rax
-$LN4@operator:
-
-; 1499 : #if _CONTAINER_DEBUG_LEVEL > 0
-; 1500 :         _STL_VERIFY(
-
-	mov	rax, QWORD PTR _My_data$[rbp]
-	mov	rcx, QWORD PTR _My_data$[rbp]
-	mov	rcx, QWORD PTR [rcx+8]
-	mov	rax, QWORD PTR [rax+16]
-	sub	rax, rcx
-	cdq
-	mov	ecx, 40					; 00000028H
-	idiv	rcx
-	cmp	QWORD PTR _Pos$[rbp], rax
-	jae	SHORT $LN7@operator
-	jmp	SHORT $LN9@operator
-$LN7@operator:
-	lea	rax, OFFSET FLAT:??_C@_0BO@PFKOHNJC@vector?5subscript?5out?5of?5range@
-	mov	QWORD PTR [rsp+40], rax
-	lea	rax, OFFSET FLAT:??_C@_02DKCKIIND@?$CFs@
-	mov	QWORD PTR [rsp+32], rax
-	xor	r9d, r9d
-	mov	r8d, 1501				; 000005ddH
-	lea	rdx, OFFSET FLAT:??_C@_0GI@BDJNFBPD@C?3?2Program?5Files?5?$CIx86?$CJ?2Microsof@
-	mov	ecx, 2
-	call	QWORD PTR __imp__CrtDbgReport
-	cmp	eax, 1
-	jne	SHORT $LN11@operator
-	int	3
-	xor	eax, eax
-$LN11@operator:
-	mov	QWORD PTR [rsp+32], 0
-	mov	r9d, 1501				; 000005ddH
-	lea	r8, OFFSET FLAT:??_C@_1NA@MKDIEAJP@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe@
-	lea	rdx, OFFSET FLAT:??_C@_1BME@NCIPHHDN@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAc?$AAl?$AAa@
-	lea	rcx, OFFSET FLAT:??_C@_1EA@LEKOKFNB@?$AA?$CC?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAs?$AAu?$AAb?$AAs?$AAc?$AAr?$AAi@
-	call	QWORD PTR __imp__invalid_parameter
-	xor	eax, eax
-	test	eax, eax
-	jne	SHORT $LN7@operator
-$LN9@operator:
-	xor	eax, eax
-	test	eax, eax
-	jne	$LN4@operator
-
-; 1501 :             _Pos < static_cast<size_type>(_My_data._Mylast - _My_data._Myfirst), "vector subscript out of range");
-; 1502 : #endif // _CONTAINER_DEBUG_LEVEL > 0
-; 1503 : 
-; 1504 :         return _My_data._Myfirst[_Pos];
-
-	imul	rax, QWORD PTR _Pos$[rbp], 40		; 00000028H
-	mov	rcx, QWORD PTR _My_data$[rbp]
-	add	rax, QWORD PTR [rcx+8]
-
-; 1505 :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-??A?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QEAAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@_K@Z ENDP ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::operator[]
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\vector
@@ -4336,61 +3938,6 @@ $LN2@Tidy_deall:
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
-;	COMDAT ?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z
-_TEXT	SEGMENT
-tv83 = 192
-tv81 = 200
-tv79 = 208
-this$ = 256
-_Ptr$ = 264
-?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z PROC ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Equal, COMDAT
-
-; 4095 :     bool _Equal(_In_z_ const _Elem* const _Ptr) const noexcept { // compare [0, size()) with _Ptr for equality
-
-$LN3:
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 264				; 00000108H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 66					; 00000042H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
-	call	__CheckForDebuggerJustMyCode
-
-; 4096 :         return _Traits_equal<_Traits>(_Mypair._Myval2._Myptr(), _Mypair._Myval2._Mysize, _Ptr, _Traits::length(_Ptr));
-
-	mov	rcx, QWORD PTR _Ptr$[rbp]
-	call	?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z ; std::_Narrow_char_traits<char,int>::length
-	mov	QWORD PTR tv83[rbp], rax
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rax, QWORD PTR [rax+24]
-	mov	QWORD PTR tv81[rbp], rax
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, rax
-	call	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ ; std::_String_val<std::_Simple_types<char> >::_Myptr
-	mov	QWORD PTR tv79[rbp], rax
-	mov	r9, QWORD PTR tv83[rbp]
-	mov	r8, QWORD PTR _Ptr$[rbp]
-	mov	rdx, QWORD PTR tv81[rbp]
-	mov	rcx, QWORD PTR tv79[rbp]
-	call	??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQEBD_K01@Z ; std::_Traits_equal<std::char_traits<char> >
-	npad	1
-
-; 4097 :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Equal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_NQEBD@Z ENDP ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Equal
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ
 _TEXT	SEGMENT
 _Alproxy$ = 8
@@ -4572,66 +4119,6 @@ $LN4@Large_stri:
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
-;	COMDAT ?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ
-_TEXT	SEGMENT
-_Result$ = 8
-this$ = 256
-?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ PROC ; std::_String_val<std::_Simple_types<char> >::_Myptr, COMDAT
-
-; 2143 :     const value_type* _Myptr() const noexcept {
-
-$LN4:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 264				; 00000108H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 66					; 00000042H
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+296]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
-	call	__CheckForDebuggerJustMyCode
-
-; 2144 :         const value_type* _Result = _Bx._Buf;
-
-	mov	rax, QWORD PTR this$[rbp]
-	add	rax, 8
-	mov	QWORD PTR _Result$[rbp], rax
-
-; 2145 :         if (_Large_string_engaged()) {
-
-	mov	rcx, QWORD PTR this$[rbp]
-	call	?_Large_string_engaged@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBA_NXZ ; std::_String_val<std::_Simple_types<char> >::_Large_string_engaged
-	movzx	eax, al
-	test	eax, eax
-	je	SHORT $LN2@Myptr
-
-; 2146 :             _Result = _Unfancy(_Bx._Ptr);
-
-	mov	rax, QWORD PTR this$[rbp]
-	mov	rcx, QWORD PTR [rax+8]
-	call	??$_Unfancy@D@std@@YAPEADPEAD@Z		; std::_Unfancy<char>
-	mov	QWORD PTR _Result$[rbp], rax
-$LN2@Myptr:
-
-; 2147 :         }
-; 2148 : 
-; 2149 :         return _Result;
-
-	mov	rax, QWORD PTR _Result$[rbp]
-
-; 2150 :     }
-
-	lea	rsp, QWORD PTR [rbp+232]
-	pop	rdi
-	pop	rbp
-	ret	0
-?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ ENDP ; std::_String_val<std::_Simple_types<char> >::_Myptr
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
 ;	COMDAT ?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z
 _TEXT	SEGMENT
 _Left$ = 224
@@ -4669,123 +4156,6 @@ $LN3:
 	pop	rbp
 	ret	0
 ?assign@?$_Narrow_char_traits@DH@std@@SAXAEADAEBD@Z ENDP ; std::_Narrow_char_traits<char,int>::assign
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
-;	COMDAT ?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z
-_TEXT	SEGMENT
-tv68 = 192
-tv69 = 200
-_First$ = 240
-?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z PROC	; std::_Narrow_char_traits<char,int>::length, COMDAT
-
-; 305  :     _NODISCARD static _CONSTEXPR17 size_t length(_In_z_ const _Elem* const _First) noexcept /* strengthened */ {
-
-$LN4:
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 248				; 000000f8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 62					; 0000003eH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+280]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
-	call	__CheckForDebuggerJustMyCode
-
-; 306  :         // find length of null-terminated string
-; 307  : #if _HAS_CXX17
-; 308  : #ifdef __cpp_char8_t
-; 309  :         if constexpr (is_same_v<_Elem, char8_t>) {
-; 310  : #if _HAS_U8_INTRINSICS
-; 311  :             return __builtin_u8strlen(_First);
-; 312  : #else // ^^^ use u8 intrinsics / no u8 intrinsics vvv
-; 313  :             return _Char_traits<_Elem, _Int_type>::length(_First);
-; 314  : #endif // _HAS_U8_INTRINSICS
-; 315  :         } else
-; 316  : #endif // __cpp_char8_t
-; 317  :         {
-; 318  :             return __builtin_strlen(_First);
-
-	mov	rax, QWORD PTR _First$[rbp]
-	mov	QWORD PTR tv68[rbp], rax
-	mov	QWORD PTR tv69[rbp], -1
-$LL3@length:
-	inc	QWORD PTR tv69[rbp]
-	mov	rax, QWORD PTR tv68[rbp]
-	mov	rcx, QWORD PTR tv69[rbp]
-	cmp	BYTE PTR [rax+rcx], 0
-	jne	SHORT $LL3@length
-	mov	rax, QWORD PTR tv69[rbp]
-
-; 319  :         }
-; 320  : #else // _HAS_CXX17
-; 321  :         return _CSTD strlen(reinterpret_cast<const char*>(_First));
-; 322  : #endif // _HAS_CXX17
-; 323  :     }
-
-	lea	rsp, QWORD PTR [rbp+216]
-	pop	rdi
-	pop	rbp
-	ret	0
-?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z ENDP	; std::_Narrow_char_traits<char,int>::length
-_TEXT	ENDS
-; Function compile flags: /Odtp /RTCsu /ZI
-; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xstring
-;	COMDAT ?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z
-_TEXT	SEGMENT
-_First1$ = 224
-_First2$ = 232
-_Count$ = 240
-?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z PROC ; std::_Narrow_char_traits<char,int>::compare, COMDAT
-
-; 289  :         _In_reads_(_Count) const _Elem* const _First2, const size_t _Count) noexcept /* strengthened */ {
-
-$LN3:
-	mov	QWORD PTR [rsp+24], r8
-	mov	QWORD PTR [rsp+16], rdx
-	mov	QWORD PTR [rsp+8], rcx
-	push	rbp
-	push	rdi
-	sub	rsp, 232				; 000000e8H
-	lea	rbp, QWORD PTR [rsp+32]
-	mov	rdi, rsp
-	mov	ecx, 58					; 0000003aH
-	mov	eax, -858993460				; ccccccccH
-	rep stosd
-	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__784AF7A2_xstring
-	call	__CheckForDebuggerJustMyCode
-
-; 290  :         // compare [_First1, _First1 + _Count) with [_First2, ...)
-; 291  : #if _HAS_CXX17
-; 292  : #if _HAS_U8_INTRINSICS
-; 293  :         if constexpr (is_same_v<_Elem, char8_t>) {
-; 294  :             return __builtin_u8memcmp(_First1, _First2, _Count);
-; 295  :         } else
-; 296  : #endif // _HAS_U8_INTRINSICS
-; 297  :         {
-; 298  :             return __builtin_memcmp(_First1, _First2, _Count);
-
-	mov	r8, QWORD PTR _Count$[rbp]
-	mov	rdx, QWORD PTR _First2$[rbp]
-	mov	rcx, QWORD PTR _First1$[rbp]
-	call	memcmp
-	npad	1
-
-; 299  :         }
-; 300  : #else // _HAS_CXX17
-; 301  :         return _CSTD memcmp(_First1, _First2, _Count);
-; 302  : #endif // _HAS_CXX17
-; 303  :     }
-
-	lea	rsp, QWORD PTR [rbp+200]
-	pop	rdi
-	pop	rbp
-	ret	0
-?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z ENDP ; std::_Narrow_char_traits<char,int>::compare
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.27.29110\include\xmemory

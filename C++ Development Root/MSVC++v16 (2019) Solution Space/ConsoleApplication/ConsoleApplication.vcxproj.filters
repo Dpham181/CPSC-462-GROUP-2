@@ -57,6 +57,9 @@
     <ClCompile Include="..\..\SourceCode\Domain\User\UserHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Domain\Subscription\SubscriptionHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp">
@@ -114,6 +117,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SourceCode\Domain\User\UserHandler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Domain\Subscription\Subscription.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Domain\Subscription\SubscriptionHandler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
