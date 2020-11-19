@@ -277,7 +277,28 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>490</LINE>
+      <LINE>475</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '455' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
+    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
+    <FUNCLINE>52</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILENAME>SimpleUI.cpp</FILENAME>
+        <LINE>455</LINE>
+        <COLUMN>37</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILENAME>SimpleUI.cpp</FILENAME>
+      <LINE>543</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -298,7 +319,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>491</LINE>
+      <LINE>544</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -319,7 +340,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>492</LINE>
+      <LINE>545</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -340,7 +361,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>636</LINE>
+      <LINE>689</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -361,7 +382,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>637</LINE>
+      <LINE>690</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -382,7 +403,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>638</LINE>
+      <LINE>691</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>

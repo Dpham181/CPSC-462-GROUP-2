@@ -173,11 +173,11 @@ namespace TechnicalServices::Persistence
    std::vector<Subcripstion> SimpleDB::ShowAllSubcripstion() {
        return {
 
-           { 1,    "Very Small", "Free", "≤5 " },
-           { 2,     "Small" , "10" ,"≤10 " },
-           { 3,      "Medium"  "20","≤30 " },
+           { 1,    "Very Small", "Free", "≤5" },
+           { 2,     "Small" , "10" , "≤10" },
+           { 3,      "Medium"  ,"20","≤30" },
            { 4,       "Large" , "35","≤80"},
-           { 5,       "Super" ,"50","≤80 "}
+           { 5,       "Super" ,"50","≤80"}
        };
    }
    std::vector<PaymentOption> SimpleDB::ShowAllPaymentOption() {

@@ -466,7 +466,60 @@ namespace UI
                          } while (menuSelection > commands.size());
 
                          if (menuSelection == commands.size()) break;
+                         selectedCommand = commands[menuSelection];
+                         if (selectedCommand == "Upgrade License") {
+                             _logger << "exe 1\"";
+                             // todo 
+                             auto        Subcripstions = _persistentData.ShowAllSubcripstion();
+                             int selectedSubcripstion;
+                             unsigned    menuSelection;
 
+                             do
+                             {
+                                 
+                                 line();
+                                     std::cout << std::setw(49) << "List of Subscription\n";
+                                     line();
+                                     std::cout << std::setw(15) << "Choose" << std::setw(15) << "Package" << std::setw(20) << "Price" << std::setw(20) << "AvalibleUsers" << "\n";
+                                     line();
+
+                                 for (unsigned i = 0; i != Subcripstions.size(); ++i)
+
+                                 
+                                     
+                                     std::cout << std::setw(15) << i << std::setw(15) << Subcripstions[i].SubsType << std::setw(20) << Subcripstions[i].Price << std::setw(20) << Subcripstions[i].Description << std::endl;
+                                    
+                                 
+                                 line();
+                                   
+                                 std::cout << std::setw(2) << Subcripstions.size() << " - " << "Cancel\n";
+                                 std::cout << "  action (0-" << Subcripstions.size() << "): ";
+                                 std::cin >> menuSelection;
+                             } while (menuSelection > Subcripstions.size());
+                                    if (menuSelection == Subcripstions.size()) break; 
+                            selectedSubcripstion = Subcripstions[menuSelection].SubsID;
+                        
+                          
+                            std::vector<std::string> parameter(1);
+                            parameter[0] = std::to_string(selectedSubcripstion);
+                            auto result =  _SubscriptionHandler->executeCommandSubscription(selectedCommand, parameter);
+                            std::string selectedPaymethod;
+                            unsigned    menuPaySelection;
+                            if (result.has_value()) {
+                                std::vector<TechnicalServices::Persistence::PaymentOption>   PayOps = std::any_cast<const std::vector<TechnicalServices::Persistence::PaymentOption>&>(result);
+                                do
+                                {
+
+                                   
+                                    for (unsigned i = 0; i != PayOps.size(); ++i) std::cout << std::setw(2) << i << " - " << PayOps[i].PaymentTypeName << '\n';
+                                    std::cout << std::setw(2) << PayOps.size() << " - " << "Back to Main Menu\n";
+
+                                    std::cout << "  action (0-" << PayOps.size() << "): ";
+                                    std::cin >> menuPaySelection;
+                                } while (menuPaySelection > PayOps.size());
+                                if (menuPaySelection == PayOps.size()) break;
+                            }
+                         }
 
                      } while (true);
                   }
