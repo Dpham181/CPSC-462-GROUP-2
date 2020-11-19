@@ -4,6 +4,8 @@
 
 #include "Domain/Client/ClientHandler.hpp"
 #include "Domain/Product/ProductHandler.hpp"
+#include "Domain/Subscription/SubscriptionHandler.hpp"
+
 #include "Domain/Sale/SaleHandler.hpp"
 #include "Domain/User/UserHandler.hpp"
 #include "Domain/Event/EventHandler.hpp"
@@ -42,7 +44,7 @@ namespace UI
       // These smart pointers hold pointers to lower architectural layer's interfaces
       std::unique_ptr<Domain::Product::ProductHandler>                _ProductHandler;
       std::unique_ptr<Domain::Sale::SaleHandler>                       _SaleHandler;
-
+      std::unique_ptr<Domain::Subscription::SubscriptionHandler>      _SubscriptionHandler;
 
       std::unique_ptr<TechnicalServices::Logging::LoggerHandler>            _loggerPtr;
       TechnicalServices::Persistence::PersistenceHandler                  & _persistentData;

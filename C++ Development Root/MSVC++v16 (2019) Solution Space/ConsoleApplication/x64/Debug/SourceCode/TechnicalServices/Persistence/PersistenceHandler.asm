@@ -209,6 +209,9 @@ CONST	SEGMENT
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
 	DQ	FLAT:_purecall
+	DQ	FLAT:_purecall
+	DQ	FLAT:_purecall
+	DQ	FLAT:_purecall
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT

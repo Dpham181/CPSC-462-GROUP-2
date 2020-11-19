@@ -164,7 +164,7 @@ namespace TechnicalServices::Persistence
        // Subscription
        virtual std::vector<Subcripstion> ShowAllSubcripstion() = 0;
        virtual std::vector<PaymentOption> ShowAllPaymentOption() = 0;
-       virtual std::vector<Paid> ValidationPaid() = 0;
+      
        virtual SubscriptionStatus StacticSubscriptionSatus() = 0;
 
 

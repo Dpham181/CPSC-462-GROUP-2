@@ -201,7 +201,28 @@ namespace  // anonymous (private) working area
  }
  // manageSubscription
  STUB(manageSubscription);
+#define STUBSS(functionName)  std::any functionName( Domain::Subscription::SubscriptionDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+                              { return {}; }  
 
+ //{ "Upgrade License", Upgrade },
+ //{ "UnSubcriptions", UnSub },
+ //{ "Extend License", Extend },
+ std::any Upgrade(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
+ {
+     auto result = sessionSubs.selectSubscription(std::atoi(agrs[0].c_str()));
+
+     return result; 
+ }
+ std::any UnSub(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
+ {
+     //to-do not applicable (External sys) 
+     return "true";
+ }
+ std::any Extend(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
+ {
+     //to-do not applicable  (External sys) 
+     return "true";
+ }
 
  // IT Admin actions
  STUB(BackupDB)
@@ -646,11 +667,11 @@ namespace Domain::Subscription
     SubscriptionStatus SubscriptionDomain::viewSubscriptionStatus() {
         return persistentData.StacticSubscriptionSatus();
     }
-    PaymentOption SubscriptionDomain::selectSubscription(const Subcripstion  & SelectedId) {
+    std::vector<PaymentOption> SubscriptionDomain::selectSubscription(const int SelectedId) {
      
 
         for (const auto& s : persistentData.ShowAllSubcripstion()) {
-            if (s.SubsID == SelectedId.SubsID) {
+            if (s.SubsID == SelectedId) {
 
                 line();
                 std::cout << std::setw(49) << "Review Your Order\n";
@@ -661,24 +682,44 @@ namespace Domain::Subscription
                 line();
                 menu("Do you want to continue to pay?");
                 if (reponse == 'Y') {
-                    for (const auto& p : persistentData.ShowAllPaymentOption()) {
-
-                        // todo
-                    }
+                    return persistentData.ShowAllPaymentOption();
                 }
             }
         }
 
     }
-    bool validationPayment(const std::string CCnumber, const int CVCnumber) {
+    bool SubscriptionDomain::verifyPaymentInformation(const std::string CCnumber, const int CVCnumber) {
         if (CCnumber.length() == 16 && std::to_string(CVCnumber).length() == 4 ) {
             return true;
         }
         return false;
     }
     std::string SubscriptionDomain::completePayment() {
-        // todo
+        // todo (External sys) not applicable
+        return "";
+      
     }
+
+
+    SubcriptionsInUse::SubcriptionsInUse(const UserCredentials& user) : SubscriptionDomain("Subscriptions Management", user)
+    {
+        SubscriptionStatus statisSubs = viewSubscriptionStatus();
+        _logger << " System Responding with:\"";
+        line();
+        std::cout << std::setw(49) << "Subscriptions Status \n";
+        line();
+        std::cout << std::setw(15) << "Users InUse" << std::setw(20) << "EXP" << std::setw(20) << "Paid Status" << std::setw(20) << "Paid By Email" << "\n";
+        line();
+        std::cout << std::setw(15) << statisSubs.UserAcessed << std::setw(20) << statisSubs.EXP << std::setw(20) << statisSubs.PaidStatus<< std::setw(20) << statisSubs.Paidby << std::endl;
+        line();
+        _commandDispatch = {
+
+                         { "Upgrade License", Upgrade },
+                         { "UnSubcriptions", UnSub },
+                         { "Extend License", Extend },
+                         
+        };
+    };
 
 }
 // User domain implemention

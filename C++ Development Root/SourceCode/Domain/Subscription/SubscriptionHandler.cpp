@@ -17,9 +17,9 @@ namespace Domain::Subscription
 
     std::unique_ptr<SubscriptionHandler> SubscriptionHandler::MaintainSubscription(const UserCredentials& user)
     {
-       // auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
-      //  UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
-        //if (credentialsFromDB.status == 1) return std::make_unique<Domain::Product::ProductManagement>(user);
+        auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+       SubscriptionStatus SubscriptionStatusDB = persistentData.StacticSubscriptionSatus();
+        if (SubscriptionStatusDB.SubsctiptionStatusId != NULL) return std::make_unique<Domain::Subscription::SubcriptionsInUse>(user);
 
         return nullptr;
     }

@@ -46,6 +46,7 @@ namespace TechnicalServices::Persistence
         // Subsctiption
         std::vector<Subcripstion> ShowAllSubcripstion() override;
         std::vector<PaymentOption> ShowAllPaymentOption()  override;
+      
         SubscriptionStatus StacticSubscriptionSatus()  override;
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair

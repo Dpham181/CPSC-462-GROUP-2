@@ -31,9 +31,9 @@ namespace Domain::Subscription
    // Operations of Maintain Subscription
      // default operations
      virtual SubscriptionStatus viewSubscriptionStatus() = 0 ;
-     virtual PaymentOption selectSubscription(const Subcripstion & SelectedId) = 0;
+     virtual std::vector<PaymentOption> selectSubscription(const int SelectedId) = 0;
      virtual std::string completePayment() = 0; 
-     virtual bool validationPayment( const std::string CCnumber, const int CVCnumber) = 0;
+     virtual bool verifyPaymentInformation( const std::string CCnumber, const int CVCnumber) = 0;
      virtual ~SubscriptionHandler() noexcept = 0;
       protected:
         // Copy assignment operators, protected to prevent mix derived-type assignments

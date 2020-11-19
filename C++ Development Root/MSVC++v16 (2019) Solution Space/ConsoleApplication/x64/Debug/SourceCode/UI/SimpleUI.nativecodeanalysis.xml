@@ -193,7 +193,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>389</LINE>
+      <LINE>390</LINE>
       <COLUMN>44</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -214,7 +214,70 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>459</LINE>
+      <LINE>453</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
+    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
+    <FUNCLINE>52</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILENAME>SimpleUI.cpp</FILENAME>
+        <LINE>120</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILENAME>SimpleUI.cpp</FILENAME>
+      <LINE>454</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
+    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
+    <FUNCLINE>52</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILENAME>SimpleUI.cpp</FILENAME>
+        <LINE>121</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILENAME>SimpleUI.cpp</FILENAME>
+      <LINE>455</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
+    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
+    <FUNCLINE>52</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILENAME>SimpleUI.cpp</FILENAME>
+        <LINE>122</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILENAME>SimpleUI.cpp</FILENAME>
+      <LINE>490</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -235,7 +298,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>460</LINE>
+      <LINE>491</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -256,7 +319,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>461</LINE>
+      <LINE>492</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -277,7 +340,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>602</LINE>
+      <LINE>636</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -298,7 +361,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>603</LINE>
+      <LINE>637</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -319,7 +382,7 @@
     <SFA>
       <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>604</LINE>
+      <LINE>638</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
@@ -333,27 +396,6 @@
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>122</LINE>
         <COLUMN>24</COLUMN>
-      </SFA>
-    </PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
-      <FILENAME>SimpleUI.cpp</FILENAME>
-      <LINE>665</LINE>
-      <COLUMN>40</COLUMN>
-    </SFA>
-    <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'index' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '649' of 'c:\users\dpham181\desktop\cpsc462\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
-    <FUNCTION>UI::SimpleUI::launch</FUNCTION>
-    <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
-    <FUNCLINE>52</FUNCLINE>
-    <PATH>
-      <SFA>
-        <FILEPATH>C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
-        <FILENAME>SimpleUI.cpp</FILENAME>
-        <LINE>649</LINE>
-        <COLUMN>36</COLUMN>
       </SFA>
     </PATH>
   </DEFECT>

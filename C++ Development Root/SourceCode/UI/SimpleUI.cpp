@@ -445,6 +445,36 @@ namespace UI
 
 
             }
+            else if (selectedCommand == "Manage Subscription") {
+                 _SubscriptionHandler = Domain::Subscription::SubscriptionHandler::MaintainSubscription(credentials);
+                 if (_SubscriptionHandler != nullptr) {
+                     do
+                     {
+                         auto        commands = _SubscriptionHandler->getCommandsSubscription();
+                         std::string selectedCommand;
+                         unsigned    menuSelection;
+
+
+                         do
+                         {
+
+                             for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+                             std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
+
+                             std::cout << "  action (0-" << commands.size() << "): ";
+                             std::cin >> menuSelection;
+                         } while (menuSelection > commands.size());
+
+                         if (menuSelection == commands.size()) break;
+
+
+                     } while (true);
+                  }
+                 
+                 _logger << "Your License Invalid\"";
+                    
+                 
+            }
 
             else if (selectedCommand == "User Management")
             {

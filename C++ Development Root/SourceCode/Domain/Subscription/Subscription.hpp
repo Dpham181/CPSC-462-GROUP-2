@@ -22,8 +22,8 @@ namespace Domain::Subscription
 
       // Operations
         SubscriptionStatus viewSubscriptionStatus() override;
-        PaymentOption selectSubscription(const Subcripstion & SelectedId) override;
-        bool validationPayment(const std::string CCnumber, const int CVCnumber) override;
+        std::vector<PaymentOption> selectSubscription(const int SelectedId) override;
+        bool verifyPaymentInformation(const std::string CCnumber, const int CVCnumber) override;
         std::string completePayment() override;
         
      ~SubscriptionDomain()  noexcept override = 0;
@@ -47,11 +47,7 @@ namespace Domain::Subscription
   }; // class Product
 
 
-  inline SubscriptionDomain::~SubscriptionDomain() noexcept
-  {
-      _logger << "Session \"" + _name + "\" shutdown successfully";
-
-  }
+ 
  
   struct SubcriptionsInUse : SubscriptionDomain { SubcriptionsInUse(const UserCredentials& user); };
 
