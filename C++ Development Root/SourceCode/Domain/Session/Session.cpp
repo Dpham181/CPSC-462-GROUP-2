@@ -739,6 +739,7 @@ namespace Domain::User
     UserDomain::UserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
+        _UpdatedUserDB = persistentData.ShowAllUsers();
     }
 
 
@@ -775,7 +776,7 @@ namespace Domain::User
         return _UpdatedUserDB;
     }
 
-    void UserDomain::viewUsers(const std::vector<UserCredentials>& UsersDB)
+    void UserDomain::viewUsers( )
     {
         line();
         std::cout << std::setw(49) << "List of Users\n";
@@ -783,12 +784,12 @@ namespace Domain::User
         std::cout << std::setw(15) << "Id" << std::setw(20) << "Name" << std::setw(20) << "Role" << "\n";
         line();
 
-        for (const auto& c : UsersDB)
+        for (const auto& c : _UpdatedUserDB)
             std::cout << std::setw(15) << std::to_string(c.userID) << std::setw(20) << c.userName << std::setw(20) << c.roles[0] << std::endl;
         line();
     }
 
-    void UserDomain::viewUserProfiles(const std::vector<UserCredentials>& UsersDB)
+    void UserDomain::viewUserProfiles( )
     {
 
         line();
@@ -797,7 +798,7 @@ namespace Domain::User
         std::cout << std::setw(15) << "User Name" << std::setw(20) << "Pass Phrase" << std::setw(20) << "Role" << std::setw(20) << "Status" << "\n";
         line();
 
-        for (const auto& c : UsersDB)
+        for (const auto& c : _UpdatedUserDB)
         {
             std::string userStatus;
             if (c.status == 1) userStatus = "Access Allowed";
@@ -888,6 +889,9 @@ namespace Domain::Event
     EventDomain::EventDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
+        _UpdatedEventDB = persistentData.ShowAllEvents();
+        _UpdatedUserEventsDB = persistentData.ShowAllUserEvents();
+        _UpdatedUserDB = persistentData.ShowAllUsers();
     }
 
 
@@ -940,7 +944,7 @@ namespace Domain::Event
         return _UpdatedUserDB;
     }
 
-    void EventDomain::viewEvents(const std::vector<Event>& EventsDB, const std::vector<UserCredentials> UsersDB)
+    void EventDomain::viewEvents( )
     {
         line();
         std::cout << std::setw(59) << "List of Events\n";
@@ -948,13 +952,13 @@ namespace Domain::Event
         std::cout << std::setw(10) << "Id" << std::setw(20) << "Event" << std::setw(35) << "Participants" << std::setw(15) << "Time" << std::setw(15) << "Location" << "\n";
         line();
 
-        for (const auto& c : EventsDB)
+        for (const auto& c : _UpdatedEventDB)
         {
             std::string participants = "";
             std::string s1;
             for (const auto& p : c.eventUsers) 
             {
-                for (const auto& StoredUser : UsersDB)
+                for (const auto& StoredUser : _UpdatedUserDB)
                 {
                     if (StoredUser.userID == p)
                     {
@@ -969,7 +973,7 @@ namespace Domain::Event
         line();
     }
 
-    void EventDomain::viewUserEvents(const std::vector<UserEvents>& UserEventsDB, const std::vector<UserCredentials>& UsersDB)
+    void EventDomain::viewUserEvents( )
     {
         line();
         std::cout << std::setw(59) << "List of Users and User Events\n";
@@ -977,12 +981,12 @@ namespace Domain::Event
         std::cout << std::setw(5) << "Id" << std::setw(15) << "User Name" << std::setw(20) << "Role" << std::setw(20) << "Free time" << "     " << "Events" << "\n";
         line();
 
-        for (const auto& c : UserEventsDB)
+        for (const auto& c : _UpdatedUserEventsDB)
         {
             std::string userName = "";
             std::vector<std::string> userRole = {};
             std::string s1, s2;
-            for (const auto& StoredUser : UsersDB)
+            for (const auto& StoredUser : _UpdatedUserDB)
             {
                 if (StoredUser.userID == c.userID)
                 {
@@ -1007,7 +1011,7 @@ namespace Domain::Event
         line();
     }
 
-    std::vector<std::string> EventDomain::availableTimes(const std::vector<UserEvents> UserEventsDB, const std::string UserIDs)
+    std::vector<std::string> EventDomain::availableTimes(const std::string UserIDs)
     {
         std::string s1 = UserIDs;
         std::vector<int> res;
@@ -1025,14 +1029,14 @@ namespace Domain::Event
             s1.erase(0, s1.find(" ") + 1);
         }
         int index1 = res[0] - 1;
-        for (const auto& t : UserEventsDB[index1].freeTime)
+        for (const auto& t : _UpdatedUserEventsDB[index1].freeTime)
         {
             size_t i = 1;
             int _bool = 0;
             while (i != res.size())
             {
                 int index2 = res[i] - 1;
-                for (const auto& tmp : UserEventsDB[index2].freeTime)
+                for (const auto& tmp : _UpdatedUserEventsDB[index2].freeTime)
                 {
                     if (tmp == t) _bool = 1;
                 }
@@ -1045,10 +1049,10 @@ namespace Domain::Event
         return meetingTime;
     }
 
-    std::vector<std::string> EventDomain::availableLocations(const std::vector<Event> EventsDB, std::vector<std::string> OfficeValues, const std::string Time)
+    std::vector<std::string> EventDomain::availableLocations(std::vector<std::string> OfficeValues, const std::string Time)
     {
         std::vector<std::string> locations = OfficeValues;
-        for (const auto& e : EventsDB)
+        for (const auto& e : _UpdatedEventDB)
         {
             if (e.eventTime == Time)
             {
@@ -1109,6 +1113,44 @@ namespace Domain::Event
         _UpdatedEventDB.at(ReplaceIndex) = _Event;
 
         return _UpdatedEventDB;
+    }
+  
+    void EventDomain::sendNotifications(const std::string meetingName, const std::string userIDs, const std::string meetingTime, const std::string meetingLocation)
+    {
+        std::string s1 = userIDs;
+        std::vector<int> idres;
+        while (!s1.empty())
+        {
+            if (s1.find(" ") == std::string::npos)
+            {
+                idres.push_back(stoi(s1));
+                s1.clear();
+                break;
+            }
+            std::string s_temp = s1.substr(0, s1.find(" "));
+            idres.push_back(stoi(s_temp));
+            s1.erase(0, s1.find(" ") + 1);
+        }
+        std::cout << " Notification is successfully sent to: ";
+        for (const auto& id : idres)
+        {
+            int index = id - 1;
+            auto addevent = _UpdatedUserEventsDB[index];
+            std::vector<std::string> newfreetime = addevent.freeTime;
+            std::vector<std::string>::iterator it;
+            for (it = newfreetime.begin(); it != newfreetime.end(); )
+            {
+                if (*it == meetingTime) { it = newfreetime.erase(it); }
+                else { ++it; }
+            }
+            std::vector<std::string> newevents = addevent.events;
+            std::string newevent = meetingName + ", " + meetingTime + ", " + meetingLocation;
+            newevents.push_back(newevent);
+            _UpdatedUserEventsDB[index] = { id, newfreetime, newevents };
+
+            auto eventuser = _UpdatedUserDB[index];
+            std::cout << eventuser.userName << "  ";
+        }
     }
 
     EventManagement::EventManagement(const UserCredentials& user) : EventDomain("Event Management", user)
