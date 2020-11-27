@@ -116,7 +116,7 @@ namespace  // anonymous (private) working area
  // User management
  STUB(UserManagement)
 
-     std::any AddUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
+ std::any AddUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs)
  {
 
      auto result = session.addUser(std::atoi(agrs[0].c_str()), agrs[1], agrs[2]);
@@ -124,26 +124,34 @@ namespace  // anonymous (private) working area
      return  result;
  }
 
- std::any UpdateUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs)
+ std::any UpdateUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs)
  {
      auto result = session.updateUser({ std::atoi(agrs[0].c_str()), agrs[1], agrs[2], {agrs[3]}, std::atoi(agrs[4].c_str()) });
 
      return  result;
  }
 
- std::any ViewUsers(Domain::User::UserDomain& session, const std::vector<std::string>& agrs) {
-
+ std::any ITAdminViewUsers(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs) 
+ {
      return  "true";
  }
- std::any DeleteUser(Domain::User::UserDomain& session, const std::vector<std::string>& agrs) {
 
+ std::any DeleteUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs) 
+ {
      return  "true";
  }
- //not for IT admin
- std::any ViewUserProfiles(Domain::User::UserDomain& session, const std::vector<std::string>& agrs) {
 
+ std::any SecurityOfficerViewUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs) 
+ {
      return  "true";
  }
+
+ std::any BanUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs) 
+ {
+     return  "true";
+ }
+
+ STUB(ViewLogFiles)
 
  // Office events management
  STUB(EventManagement)
@@ -722,6 +730,7 @@ namespace Domain::Subscription
     };
 
 }
+
 // User domain implemention
 namespace Domain::User
 
@@ -736,14 +745,14 @@ namespace Domain::User
 
     }
 
-    UserDomain::UserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
+    ITAdminUserDomain::ITAdminUserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
         _UpdatedUserDB = persistentData.ShowAllUsers();
     }
 
 
-    std::vector<std::string> UserDomain::getCommandsUser()
+    std::vector<std::string> ITAdminUserDomain::getCommandsUser()
     {
         std::vector<std::string> availableCommands;
         availableCommands.reserve(_commandDispatch.size());
@@ -753,7 +762,7 @@ namespace Domain::User
         return availableCommands;
     }
 
-    std::any UserDomain::executeCommandUser(const std::string& command, const std::vector<std::string>& args)
+    std::any ITAdminUserDomain::executeCommandUser(const std::string& command, const std::vector<std::string>& args)
     {
         std::string parameters;
         for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
@@ -768,7 +777,7 @@ namespace Domain::User
 
 
     // get updating the static data of User and UserCredentials
-    std::vector<UserCredentials> UserDomain::UsersDB(const std::vector<UserCredentials>& UsersDB)
+    std::vector<UserCredentials> ITAdminUserDomain::UsersDB(const std::vector<UserCredentials>& UsersDB)
     {
         _UpdatedUserDB = UsersDB;
         // generating the result in updating table 
@@ -776,7 +785,8 @@ namespace Domain::User
         return _UpdatedUserDB;
     }
 
-    void UserDomain::viewUsers( )
+    // view all users for IT Admin
+    void ITAdminUserDomain::viewUsers( )
     {
         line();
         std::cout << std::setw(49) << "List of Users\n";
@@ -789,28 +799,8 @@ namespace Domain::User
         line();
     }
 
-    void UserDomain::viewUserProfiles( )
-    {
-
-        line();
-        std::cout << std::setw(49) << "User profiles\n";
-        line();
-        std::cout << std::setw(15) << "User Name" << std::setw(20) << "Pass Phrase" << std::setw(20) << "Role" << std::setw(20) << "Status" << "\n";
-        line();
-
-        for (const auto& c : _UpdatedUserDB)
-        {
-            std::string userStatus;
-            if (c.status == 1) userStatus = "Access Allowed";
-            else userStatus = "Access Denied";
-            std::cout << std::setw(15) << c.userName << std::setw(20) << c.passPhrase << std::setw(20) << c.roles[0] << std::setw(20) << userStatus << std::endl;
-        }
-
-        line();
-    }
-
     // ADDING NEW USER TO THE MEMORY DATABASE 
-    std::vector<UserCredentials>  UserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
+    std::vector<UserCredentials>  ITAdminUserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
     {
         UserCredentials newUser = { UserID,  UserName, "123456", {Role}, 1 }; 
         _UpdatedUserDB.push_back(newUser); // add new User to list of static User 
@@ -818,7 +808,7 @@ namespace Domain::User
         return _UpdatedUserDB;
     }
 
-    UserCredentials   UserDomain::searchUserId(const int UserId) 
+    UserCredentials  ITAdminUserDomain::searchUserId(const int UserId)
     {
         for (const auto& StoredUser : _UpdatedUserDB)
         {
@@ -831,7 +821,7 @@ namespace Domain::User
         return _User;
     }
 
-    std::vector<UserCredentials> UserDomain::updateUser(const UserCredentials& User)
+    std::vector<UserCredentials> ITAdminUserDomain::updateUser(const UserCredentials& User)
     {
         _User = searchUserId(User.userID);
         int ReplaceIndex = User.userID - 1;
@@ -857,16 +847,135 @@ namespace Domain::User
         return _UpdatedUserDB;
     }
 
-    UserManagement::UserManagement(const UserCredentials& user) : UserDomain("User Management", user)
+    // block a user's access, not allowed for IT admin
+    std::vector<UserCredentials> ITAdminUserDomain::banUser(const int UserID)
+    {
+        std::cout << " IT Admin can not block a user account, please contact your Security Officer. " << std::endl;
+
+        return _UpdatedUserDB;
+    }
+
+    ITAdminUserManagement::ITAdminUserManagement(const UserCredentials& user) : ITAdminUserDomain("User Management", user)
     {
 
         _commandDispatch = {
 
                          { "Add User", AddUser },
-                         { "View All Users", ViewUsers },
-                         { "View All User Profiles", ViewUserProfiles },
+                         { "View All Users", ITAdminViewUsers },
+                         //{ "View All User Profiles", ViewUserProfiles },
                          { "Update User Profile", UpdateUser },
                          { "Delete User", DeleteUser }//,
+
+        };
+    };
+
+    SecurityOfficerUserDomain::SecurityOfficerUserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
+    {
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
+        _UpdatedUserDB = persistentData.ShowAllUsers();
+    }
+
+
+    std::vector<std::string> SecurityOfficerUserDomain::getCommandsUser()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
+
+    std::any SecurityOfficerUserDomain::executeCommandUser(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+
+        auto results = it->second(*this, args);
+
+        return results;
+    }
+
+
+    // get updating the static data of User and UserCredentials
+    std::vector<UserCredentials> SecurityOfficerUserDomain::UsersDB(const std::vector<UserCredentials>& UsersDB)
+    {
+        _UpdatedUserDB = UsersDB;
+        // generating the result in updating table 
+
+        return _UpdatedUserDB;
+    }
+
+    // view all users for Security Officer
+    void SecurityOfficerUserDomain::viewUsers()
+    {
+        line();
+        std::cout << std::setw(49) << "User profiles\n";
+        line();
+        std::cout << std::setw(4) << "Id" << std::setw(15) << "User Name" << std::setw(20) << "Pass Phrase" << std::setw(20) << "Role" << std::setw(20) << "Status" << "\n";
+        line();
+
+        for (const auto& c : _UpdatedUserDB)
+        {
+            std::string userStatus;
+            if (c.status == 1) userStatus = "Access Allowed";
+            else userStatus = "Access Denied";
+            std::cout << std::setw(4) << c.userID << std::setw(15) << c.userName << std::setw(20) << c.passPhrase << std::setw(20) << c.roles[0] << std::setw(20) << userStatus << std::endl;
+        }
+
+        line();
+    }
+
+    // ADDING NEW USER TO THE MEMORY DATABASE, not allowed for Security Officer
+    std::vector<UserCredentials>  SecurityOfficerUserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
+    {
+        std::cout << " Security Officer can not create a new account, please contact your IT Administrator. " << std::endl;
+
+        return _UpdatedUserDB;
+    }
+
+    UserCredentials  SecurityOfficerUserDomain::searchUserId(const int UserId)
+    {
+        for (const auto& StoredUser : _UpdatedUserDB)
+        {
+            if (StoredUser.userID == UserId)
+            {
+                _User = StoredUser;
+            }
+        }
+
+        return _User;
+    }
+
+    // block a user's access
+    std::vector<UserCredentials> SecurityOfficerUserDomain::banUser(const int UserID)
+    {
+        _User = searchUserId(UserID);
+        int ReplaceIndex = _User.userID - 1;
+        _User.status = -1;
+        _UpdatedUserDB.at(ReplaceIndex) = _User;
+
+        return _UpdatedUserDB;
+    }
+
+    // Update user profile, not allowed for Security Officer 
+    std::vector<UserCredentials> SecurityOfficerUserDomain::updateUser(const UserCredentials& User)
+    {
+        std::cout << " Security Officer can not modify account's data, please contact your IT Administrator. " << std::endl;
+
+        return _UpdatedUserDB;
+    }
+
+    SecurityOfficerUserManagement::SecurityOfficerUserManagement(const UserCredentials& user) : SecurityOfficerUserDomain("User Management", user)
+    {
+
+        _commandDispatch = {
+
+                         { "View All Users", SecurityOfficerViewUsers },
+                         { "Block a User", BanUsers }
 
         };
     };
@@ -1280,5 +1389,16 @@ namespace Domain::Session
     _commandDispatch = { {"Manage Subscription", manageSubscription},
                       
     };
+  }
+  
+  
+  SecurityOfficerSession::SecurityOfficerSession(const UserCredentials& credentials) : SessionBase("Security Officer", credentials)
+  {
+      _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Security Officer\".";
+
+      _commandDispatch = { {"User Management",    UserManagement },
+                           {"View Log Files",     ViewLogFiles },
+                           {"Ask IT for Help",    AskHelp }
+      };
   }
 }    // namespace Domain::Session
