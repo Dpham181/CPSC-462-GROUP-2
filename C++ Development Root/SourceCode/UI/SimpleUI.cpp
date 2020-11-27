@@ -92,21 +92,21 @@ namespace UI
         // Show upcoming events when user login
         std::cout << std::endl;
         std::cout << "[Notice] Upcoming events: ";
-        for (const auto& u1 : UsersFromDB) 
+        for (const auto& _user : UsersFromDB) 
         {
             int i = 0;
-            if (credentials.userName == u1.userName) 
+            if (credentials.userName == _user.userName)
             { 
-                i = u1.userID; 
+                i = _user.userID;
             }
-            for (const auto& u2 : UserEventsFromDB) 
+            for (const auto& _userEvent : UserEventsFromDB) 
             {
-                if (u2.userID == i) 
+                if (_userEvent.userID == i)
                 {
-                    std::vector<std::string> u3 = u2.events;
-                    for (const auto& estr : u3) 
+                    std::vector<std::string> _events = _userEvent.events;
+                    for (const auto& _eventStr : _events)
                     {
-                        std::cout << estr << ". ";
+                        std::cout << _eventStr << ". ";
                     }
                 }
             }
@@ -587,17 +587,17 @@ namespace UI
                         else if (selectedCommand == "View All Users")
                         {
 
-                            UserHandler->viewUsers(UsersFromDB);
+                            UserHandler->viewUsers( );
                         }
 
                         else if (selectedCommand == "View All User Profiles")
                         {
-                            UserHandler->viewUserProfiles(UsersFromDB);
+                            UserHandler->viewUserProfiles( );
                         }
 
                         else if (selectedCommand == "Update User Profile")
                         {
-                            UserHandler->viewUsers(UsersFromDB);
+                            UserHandler->viewUsers( );
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";
@@ -613,48 +613,52 @@ namespace UI
                             {
                                 std::vector<std::string> parameters(5);
                                 parameters[0] = std::to_string(userId);
-                                std::cout << " Do you want to change the User Name? (Y/N)"; std::cin >> response;
-                                response = std::toupper(response, std::locale());
-                                if (response == 'Y')
-                                {
-                                    std::cout << " Enter New UserName: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
-                                }
-                                else
-                                {
-                                    parameters[1] = "";
-                                }
-                                std::cout << " Do you want to set the User Password to default? (Y/N)"; std::cin >> response;
-                                response = std::toupper(response, std::locale());
-                                if (response == 'Y')
-                                {
-                                    parameters[2] = "123456";
-                                }
-                                else
-                                {
-                                    parameters[2] = "";
-                                }
-                                std::cout << " Do you want to change the User Role? (Y/N)"; std::cin >> response;
-                                response = std::toupper(response, std::locale());
-                                if (response == 'Y')
-                                {
-                                    std::cout << " Select User Role \n";
-                                    for (size_t i = 0; i < roleLegalValues.size(); ++i)
-                                    {
-                                        std::cout << " " << i << " " << roleLegalValues[i] << std::endl;
-                                    }
-                                    int roleChoice;
-                                    do
-                                    {
-                                        std::cout << "Please Choose 0-4: ";
-                                        std::cin >> roleChoice;
-                                    } while (roleChoice < 0 || roleChoice > 4);
-                                    parameters[3] = roleLegalValues[roleChoice];
-                                }
-                                else
-                                {
-                                    parameters[3] = "";
-                                }
+                                parameters[1] = "";
+                                parameters[2] = "";
+                                parameters[3] = "";
                                 parameters[4] = "-1";
+                                bool isFinish = false;
+                                do
+                                {
+                                    std::cout << " Please choose one option: " << std::endl;
+                                    std::cout << "  1. Change the User Name\n"
+                                              << "  2. Set Password to default\n"
+                                              << "  3. Change the User Role" << std::endl;
+                                    std::cout << " Your selection: ";  std::cin >> response;
+                                    if (response == '1')
+                                    {
+                                        std::cout << " Enter New UserName: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+                                        
+                                    }
+                                    if (response == '2')
+                                    {
+                                        parameters[2] = "123456";
+                                    }
+                                    if (response == '3')
+                                    {
+                                        std::cout << " Select User Role \n";
+                                        for (size_t i = 0; i < roleLegalValues.size(); ++i)
+                                        {
+                                            std::cout << " " << i << " " << roleLegalValues[i] << std::endl;
+                                        }
+                                        int roleChoice;
+                                        do
+                                        {
+                                            std::cout << "Please Choose 0-4: ";
+                                            std::cin >> roleChoice;
+                                        } while (roleChoice < 0 || roleChoice > 4);
+                                        parameters[3] = roleLegalValues[roleChoice];
+                                    }
+
+                                    std::cout << " Do you want to continue change other informations? (Y/N)"; std::cin >> response;
+                                    response = std::toupper(response, std::locale());
+                                    if (response != 'Y')
+                                    {
+                                        isFinish = true;
+                                    }
+                                    std::cout << std::endl;
+
+                                } while (isFinish == false);
 
                                 auto results = UserHandler->executeCommandUser(selectedCommand, parameters);
                                 if (results.has_value()) 
@@ -737,9 +741,6 @@ namespace UI
                                 int index1 = mt - 1;
                                 parameters[3] = timeVector[index1];
 
-
-
-
                                 // Meeting location
                                 std::cout << " Available Meeting Location \n";
                                 locationVector = EventHandler->availableLocations(EventsFromDB, officeValues, parameters[3]);
@@ -767,42 +768,7 @@ namespace UI
                         {
                             _logger << "Successfully Added. ";
                             EventsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Event>&>(results);
-                            //UserEventsFromDB
-                            std::string s1 = parameters[2];
-                            std::vector<int> idres;
-                            //std::vector<std::string> meetingTime;
-                            while (!s1.empty())
-                            {
-                                if (s1.find(" ") == std::string::npos)
-                                {
-                                    idres.push_back(stoi(s1));
-                                    s1.clear();
-                                    break;
-                                }
-                                std::string s_temp = s1.substr(0, s1.find(" "));
-                                idres.push_back(stoi(s_temp));
-                                s1.erase(0, s1.find(" ") + 1);
-                            }
-                            std::cout << " Notification is successfully sent to: ";
-                            for (const auto& id : idres)
-                            {
-                                int index = id - 1;
-                                auto addevent = UserEventsFromDB[index];
-                                std::vector<std::string> newfreetime = addevent.freeTime;
-                                std::vector<std::string>::iterator it;
-                                for (it = newfreetime.begin(); it != newfreetime.end(); )
-                                {
-                                    if (*it == parameters[3]) { it = newfreetime.erase(it); }
-                                    else { ++it; }
-                                }
-                                std::vector<std::string> newevents = addevent.events;
-                                std::string newevent = parameters[1] + ", " + parameters[3] + ", " + parameters[4];
-                                newevents.push_back(newevent);
-                                UserEventsFromDB[index] = { id, newfreetime, newevents };
-
-                                auto eventuser = UsersFromDB[index];
-                                std::cout << eventuser.userName << "  ";
-                            }
+                            EventHandler->sendNotifications(parameters[1], parameters[2], parameters[3], parameters[4]);          // Send notifications and update UserEventsFromDB
                             std::cout << std::endl;
                             std::cout << std::endl;
                         }
@@ -810,7 +776,7 @@ namespace UI
 
                     else if (selectedCommand == "View All Meetings")
                     {
-                        EventHandler->viewEvents(EventsFromDB, UsersFromDB);
+                        EventHandler->viewEvents( );
                     }
 
                     else if (selectedCommand == "Update Meeting")
