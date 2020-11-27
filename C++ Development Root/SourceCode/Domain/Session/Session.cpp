@@ -1390,12 +1390,9 @@ namespace Domain::Session
                       
     };
   }
-<<<<<<< HEAD
 
-=======
   
   
->>>>>>> 0dbc6b4a11f49f5f8c103ff80ea2c765222c469f
   SecurityOfficerSession::SecurityOfficerSession(const UserCredentials& credentials) : SessionBase("Security Officer", credentials)
   {
       _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Security Officer\".";
