@@ -30,19 +30,11 @@ namespace Domain::User
 
         // Operations of User management
         virtual std::vector<UserCredentials>     UsersDB(const std::vector<UserCredentials>& UsersDB) = 0;
-<<<<<<< HEAD
-        virtual void                             viewUsers( ) = 0;
-=======
         virtual void                             viewUsers( ) = 0; 
->>>>>>> 0dbc6b4a11f49f5f8c103ff80ea2c765222c469f
         virtual UserCredentials                  searchUserId(const int UserId) = 0;
         virtual std::vector<UserCredentials>     addUser(const int UserID, const std::string UserName, const std::string Role) = 0;
         virtual std::vector<UserCredentials>     updateUser(const UserCredentials& User) = 0;
         virtual std::vector<UserCredentials>     banUser(const int UserID) = 0;
-<<<<<<< HEAD
-
-=======
->>>>>>> 0dbc6b4a11f49f5f8c103ff80ea2c765222c469f
         
 
 
