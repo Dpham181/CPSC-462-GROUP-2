@@ -23,8 +23,8 @@ namespace Domain::User
 
         // Operations
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
-        void                            viewUsers(const std::vector<UserCredentials>& UsersDB) override;         //view users for IT Admin
-        void                            viewUserProfiles(const std::vector<UserCredentials>& UsersDB) override;         //view users for Security Officer
+        void                            viewUsers( ) override;         //view users for IT Admin
+        void                            viewUserProfiles( ) override;         //view users for Security Officer
         UserCredentials                 searchUserId(const int UserId) override;
         std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
         std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
