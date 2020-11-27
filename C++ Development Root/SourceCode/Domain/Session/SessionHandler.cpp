@@ -56,6 +56,7 @@ namespace Domain::Session
         if( credentialsFromDB.roles[0] == "Salesperson" ) return std::make_unique<Domain::Session::SalespersonSession>( credentials );
         if( credentialsFromDB.roles[0] == "IT Admin" ) return std::make_unique<Domain::Session::ITAdministratorSession>( credentials );
         if( credentialsFromDB.roles[0] == "Sales Manager"    ) return std::make_unique<Domain::Session::SalesManagerSession>   ( credentials );
+        if (credentialsFromDB.roles[0] == "Security Officer") return std::make_unique<Domain::Session::SecurityOfficerSession>(credentials);
 
         throw std::logic_error( "Invalid role requested in function " + std::string(__func__) ); // Oops, should never get here but ...  Throw something
       }
