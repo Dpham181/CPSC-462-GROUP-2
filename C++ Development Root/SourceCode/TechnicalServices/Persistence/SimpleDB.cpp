@@ -149,11 +149,12 @@ namespace TechnicalServices::Persistence
    {
        return
        {
-           //UserID     Username    Pass phrase   Authorized roles      Status
-            { 1,        "Tom",      "CPSC",       { "IT Admin" },       1 },
-            { 2,        "Amanda",   "",           { "Salesperson" },    1 },
-            { 3,        "Sam",      "1",          { "Assistant" },      1 },
-            { 4,        "Ann",      "2",          { "Sales Manager" },  1 }
+           //UserID     Username    Pass phrase   Authorized roles       Status
+            { 1,        "Tom",      "CPSC",       { "IT Admin" },          1 },
+            { 2,        "Amanda",   "",           { "Salesperson" },       1 },
+            { 3,        "Sam",      "Assist",     { "Assistant" },         1 },
+            { 4,        "Ann",      "Manage",     { "Sales Manager" },     1 },
+            { 5,        "Cain",     "Security",   { "Security Officer"},   1 }
        };
    }
 
