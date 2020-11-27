@@ -721,12 +721,12 @@ namespace UI
                         {
                             // Meeting paticipants
                             std::cout << " Select Meeting Participants \n";
-                            EventHandler->viewUserEvents(UserEventsFromDB, UsersFromDB);
+                            EventHandler->viewUserEvents( );
                             std::cout << " Select the User ID(separete with space): "; std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
 
                             // Meeting time
                             std::cout << " Available Meeting Time \n";
-                            timeVector = EventHandler->availableTimes(UserEventsFromDB, parameters[2]);
+                            timeVector = EventHandler->availableTimes(parameters[2]);
                             if (timeVector.size() == 0)
                             {
                                 std::cout << " No available meeting time for selected users " << std::endl;
@@ -743,7 +743,7 @@ namespace UI
 
                                 // Meeting location
                                 std::cout << " Available Meeting Location \n";
-                                locationVector = EventHandler->availableLocations(EventsFromDB, officeValues, parameters[3]);
+                                locationVector = EventHandler->availableLocations(officeValues, parameters[3]);
                                 if (locationVector.size() == 0)
                                 {
                                     std::cout << " No available meeting location for selected time " << std::endl;
