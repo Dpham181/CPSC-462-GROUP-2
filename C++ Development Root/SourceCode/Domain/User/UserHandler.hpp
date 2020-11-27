@@ -34,7 +34,7 @@ namespace Domain::User
         virtual UserCredentials                  searchUserId(const int UserId) = 0;
         virtual std::vector<UserCredentials>     addUser(const int UserID, const std::string UserName, const std::string Role) = 0;
         virtual std::vector<UserCredentials>     updateUser(const UserCredentials& User) = 0;
-
+        virtual std::vector<UserCredentials>     banUser(const int UserID) = 0;
         
 
 
