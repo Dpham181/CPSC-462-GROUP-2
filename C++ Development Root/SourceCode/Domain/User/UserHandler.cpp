@@ -25,7 +25,12 @@ namespace Domain::User
     {
         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
         UserCredentials credentialsFromDB = persistentData.findCredentialsByName(user.userName);
-        if (credentialsFromDB.status == 1) return std::make_unique<Domain::User::UserManagement>(user);
+        if (credentialsFromDB.status == 1)
+        {
+            if (credentialsFromDB.roles[0] == "IT Admin") return std::make_unique<Domain::User::ITAdminUserManagement>(user);
+            if (credentialsFromDB.roles[0] == "Security Officer") return std::make_unique<Domain::User::SecurityOfficerUserManagement>(user);
+        }
+            
         
         return nullptr;
     }

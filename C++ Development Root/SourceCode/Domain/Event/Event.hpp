@@ -25,13 +25,14 @@ namespace Domain::Event
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
         std::vector<Event>              EventsDB(const std::vector<Event>& EventsDB) override;
         std::vector<UserEvents>         UserEventsDB(const std::vector<UserEvents>& UserEvents) override;
-        void                            viewEvents(const std::vector<Event>& EventsDB, const std::vector<UserCredentials> UsersDB) override;
-        void                            viewUserEvents(const std::vector<UserEvents>& UserEventsDB, const std::vector<UserCredentials>& UsersDB) override;
-        std::vector<std::string>        availableTimes(const std::vector<UserEvents> UserEventsDB, const std::string UserIDs) override;
-        std::vector<std::string>        availableLocations(const std::vector<Event> EventsDB, std::vector<std::string> OfficeValues, const std::string Time) override;
+        void                            viewEvents( ) override;
+        void                            viewUserEvents( ) override;
+        std::vector<std::string>        availableTimes(const std::string UserIDs) override;
+        std::vector<std::string>        availableLocations(std::vector<std::string> OfficeValues, const std::string Time) override;
         Event                           searchEventId(const int EventId) override;
         std::vector<Event>              addEvent(const Event& Event) override;
         std::vector<Event>              updateEvent(const Event& Event) override;
+        void                            sendNotifications(const std::string meetingName, const std::string userIDs, const std::string meetingTime, const std::string meetingLocation) override;
 
 
         ~EventDomain() noexcept override = 0;

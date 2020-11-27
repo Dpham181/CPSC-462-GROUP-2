@@ -11,11 +11,11 @@
 namespace Domain::User
 {
 
-    class UserDomain : public UserHandler
+    class ITAdminUserDomain : public UserHandler
     {
     public:
 
-        UserDomain(const std::string& description, const UserCredentials& User);
+        ITAdminUserDomain(const std::string& description, const UserCredentials& User);
 
         //  Operations menu
         std::vector<std::string>        getCommandsUser() override;    // retrieves the list of actions (commands)
@@ -23,18 +23,18 @@ namespace Domain::User
 
         // Operations
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
-        void                            viewUsers(const std::vector<UserCredentials>& UsersDB) override;         //view users for IT Admin
-        void                            viewUserProfiles(const std::vector<UserCredentials>& UsersDB) override;         //view users for Security Officer
+        void                            viewUsers( ) override;         //view users for IT Admin
         UserCredentials                 searchUserId(const int UserId) override;
         std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
         std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
+        std::vector<UserCredentials>    banUser(const int UserID) override;
 
 
-        ~UserDomain() noexcept override = 0;
+        ~ITAdminUserDomain() noexcept override = 0;
 
     protected:
     public:
-        using DispatchTable = std::map<std::string, std::any(*)(Domain::User::UserDomain &, const std::vector<std::string> &)>;
+        using DispatchTable = std::map<std::string, std::any(*)(Domain::User::ITAdminUserDomain &, const std::vector<std::string> &)>;
 
         friend class Policy;
 
@@ -47,22 +47,69 @@ namespace Domain::User
         UserCredentials                                 _User;
         DispatchTable                                   _commandDispatch;
         UserCredentials const                           _Creator;
+        
 
     private:
 
-    };// class User
+    };
 
+    class SecurityOfficerUserDomain : public UserHandler
+    {
+    public:
+
+        SecurityOfficerUserDomain(const std::string& description, const UserCredentials& User);
+
+        //  Operations menu
+        std::vector<std::string>        getCommandsUser() override;    // retrieves the list of actions (commands)
+        std::any                        executeCommandUser(const std::string& command, const std::vector<std::string>& args) override;    // executes one of the actions retrieved
+
+        // Operations
+        std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
+        void                            viewUsers() override;         //view users for Security Officer
+        UserCredentials                 searchUserId(const int UserId) override;
+        std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
+        std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
+        std::vector<UserCredentials>    banUser(const int UserID) override;
+
+
+        ~SecurityOfficerUserDomain() noexcept override = 0;
+
+    protected:
+    public:
+        using DispatchTable = std::map<std::string, std::any(*)(Domain::User::SecurityOfficerUserDomain&, const std::vector<std::string>&)>;
+
+        friend class Policy;
+
+        // Instance Attributes
+        std::unique_ptr<TechnicalServices::Logging::LoggerHandler> _loggerPtr = TechnicalServices::Logging::LoggerHandler::create();
+        TechnicalServices::Logging::LoggerHandler& _logger = *_loggerPtr;
+
+        std::vector<UserCredentials>                    _UpdatedUserDB;
+        std::string     const                           _name = "Undefined";
+        UserCredentials                                 _User;
+        DispatchTable                                   _commandDispatch;
+        UserCredentials const                           _Creator;
+        
+
+    private:
+
+    };
 
     /*****************************************************************************
     ** Inline implementations
     ******************************************************************************/
-    inline UserDomain::~UserDomain() noexcept
+    inline ITAdminUserDomain::~ITAdminUserDomain() noexcept
     {
         _logger << "Session \"" + _name + "\" shutdown successfully";
 
     }
-    struct UserManagement : UserDomain { UserManagement(const UserCredentials& User); };
+    struct ITAdminUserManagement : ITAdminUserDomain { ITAdminUserManagement(const UserCredentials& User); };
 
+    inline SecurityOfficerUserDomain::~SecurityOfficerUserDomain() noexcept
+    {
+        _logger << "Session \"" + _name + "\" shutdown successfully";
 
+    }
+    struct SecurityOfficerUserManagement : SecurityOfficerUserDomain { SecurityOfficerUserManagement(const UserCredentials& User); };
 
 }  // namespace Domain::User

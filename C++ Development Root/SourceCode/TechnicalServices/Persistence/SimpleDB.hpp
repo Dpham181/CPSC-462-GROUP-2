@@ -43,6 +43,11 @@ namespace TechnicalServices::Persistence
         //event
         std::vector<Event> ShowAllEvents() override;
 
+        // Subsctiption
+        std::vector<Subcripstion> ShowAllSubcripstion() override;
+        std::vector<PaymentOption> ShowAllPaymentOption()  override;
+      
+        SubscriptionStatus StacticSubscriptionSatus()  override;
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair
       const std::string & operator[]( const std::string & key ) const override;

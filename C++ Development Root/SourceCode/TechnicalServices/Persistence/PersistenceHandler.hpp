@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 
+#include<cstdint>
 
 
 
@@ -90,6 +91,38 @@ namespace TechnicalServices::Persistence
       std::string       eventLocation;
   };
 
+  // Subscription objects 
+  struct Subcripstion
+  {
+      int               SubsID;
+     std::string       SubsType;
+     std::string  Price; 
+     std::string       Description;
+    
+      
+  };
+  struct PaymentOption
+  {
+      int PaymentTypeID;
+      std::string  PaymentTypeName;
+
+  };
+  struct Paid {
+      int Id;
+      std::string  CCnumber;
+      int CVCnumber;
+    
+  };
+  struct SubscriptionStatus
+  {
+      int SubsctiptionStatusId;
+      int UserAcessed; 
+      std::string EXP;
+      std::string   PaidStatus;
+      std::string Paidby;
+
+  };
+
   // Persistence Package within the Technical Services Layer Abstract class
   // Singleton Class - only one instance of the DB exists for the entire system
   class PersistenceHandler
@@ -127,6 +160,13 @@ namespace TechnicalServices::Persistence
        virtual std::vector<UserCredentials> ShowAllUsers() = 0;
        virtual std::vector<UserEvents> ShowAllUserEvents() = 0;
        virtual std::vector<Event> ShowAllEvents() = 0;
+       
+       // Subscription
+       virtual std::vector<Subcripstion> ShowAllSubcripstion() = 0;
+       virtual std::vector<PaymentOption> ShowAllPaymentOption() = 0;
+      
+       virtual SubscriptionStatus StacticSubscriptionSatus() = 0;
+
 
       // Adaptation Data read only access.  Adaptation data is a Key/Value pair
       // Throws NoSuchProperty
