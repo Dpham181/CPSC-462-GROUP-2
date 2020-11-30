@@ -723,7 +723,7 @@ namespace Domain::Subscription
         _commandDispatch = {
 
                          { "Upgrade License", Upgrade },
-                         { "UnSubcriptions", UnSub },
+                         { "Unsubcribe", UnSub },
                          { "Extend License", Extend },
                          
         };

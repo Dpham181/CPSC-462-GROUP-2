@@ -2,19 +2,19 @@
 <DEFECTS>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>160</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>120</LINE>
         <COLUMN>24</COLUMN>
@@ -23,19 +23,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>161</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>121</LINE>
         <COLUMN>24</COLUMN>
@@ -44,19 +44,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>162</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>122</LINE>
         <COLUMN>24</COLUMN>
@@ -65,19 +65,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>278</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>120</LINE>
         <COLUMN>24</COLUMN>
@@ -86,19 +86,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>279</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>121</LINE>
         <COLUMN>24</COLUMN>
@@ -107,19 +107,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>280</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>122</LINE>
         <COLUMN>24</COLUMN>
@@ -128,19 +128,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>363</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>120</LINE>
         <COLUMN>24</COLUMN>
@@ -149,19 +149,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>364</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>121</LINE>
         <COLUMN>24</COLUMN>
@@ -170,19 +170,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>365</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>122</LINE>
         <COLUMN>24</COLUMN>
@@ -191,19 +191,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>390</LINE>
       <COLUMN>44</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '365' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '365' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>365</LINE>
         <COLUMN>36</COLUMN>
@@ -212,19 +212,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>453</LINE>
       <COLUMN>37</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>120</LINE>
         <COLUMN>24</COLUMN>
@@ -233,19 +233,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>454</LINE>
       <COLUMN>37</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>121</LINE>
         <COLUMN>24</COLUMN>
@@ -254,19 +254,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>455</LINE>
       <COLUMN>37</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>122</LINE>
         <COLUMN>24</COLUMN>
@@ -275,19 +275,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>475</LINE>
       <COLUMN>41</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '455' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '455' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>455</LINE>
         <COLUMN>37</COLUMN>
@@ -296,19 +296,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>543</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>120</LINE>
         <COLUMN>24</COLUMN>
@@ -317,19 +317,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>544</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>121</LINE>
         <COLUMN>24</COLUMN>
@@ -338,19 +338,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>545</LINE>
       <COLUMN>36</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>122</LINE>
         <COLUMN>24</COLUMN>
@@ -359,19 +359,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>708</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'commands' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '120' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>120</LINE>
         <COLUMN>24</COLUMN>
@@ -380,19 +380,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>709</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'selectedCommand' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '121' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>121</LINE>
         <COLUMN>24</COLUMN>
@@ -401,19 +401,19 @@
   </DEFECT>
   <DEFECT>
     <SFA>
-      <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+      <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
       <FILENAME>SimpleUI.cpp</FILENAME>
       <LINE>710</LINE>
       <COLUMN>32</COLUMN>
     </SFA>
     <DEFECTCODE>6246</DEFECTCODE>
-    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\学习在美国\year2\cpsc 462\project\project\cpsc-462-group-2\cpsc-462-group-2-user\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
+    <DESCRIPTION>Local declaration of 'menuSelection' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '122' of 'd:\users\krunk\documents\visual studio 2019\projects\fall 2020\cpsc-462-group-2\c++ development root\sourcecode\ui\simpleui.cpp'.</DESCRIPTION>
     <FUNCTION>UI::SimpleUI::launch</FUNCTION>
     <DECORATED>?launch@SimpleUI@UI@@UEAAXXZ</DECORATED>
     <FUNCLINE>52</FUNCLINE>
     <PATH>
       <SFA>
-        <FILEPATH>D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\UI\</FILEPATH>
+        <FILEPATH>D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\SourceCode\UI\</FILEPATH>
         <FILENAME>SimpleUI.cpp</FILENAME>
         <LINE>122</LINE>
         <COLUMN>24</COLUMN>

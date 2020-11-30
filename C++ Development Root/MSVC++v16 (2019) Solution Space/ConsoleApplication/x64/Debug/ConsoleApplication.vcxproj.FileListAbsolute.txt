@@ -2,3 +2,5 @@ D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROU
 D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.pdb
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe
 C:\Users\dpham181\Desktop\CPSC462\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.pdb
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe
+D:\Users\krunk\Documents\Visual Studio 2019\Projects\Fall 2020\CPSC-462-GROUP-2\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.pdb
