@@ -584,15 +584,14 @@ namespace UI
                             }
                         }
 
-                        else if (selectedCommand == "View All Users")
+                        else if (selectedCommand == "View Users")
                         {
-
-                            UserHandler->viewUsers( );
+                            UserHandler->viewUsers(credentials);
                         }
 
                         else if (selectedCommand == "Block a User")
                         {
-                            UserHandler->viewUsers();
+                            UserHandler->viewUsers(credentials);
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";
@@ -612,7 +611,7 @@ namespace UI
 
                         else if (selectedCommand == "Update User Profile")
                         {
-                            UserHandler->viewUsers( );
+                            UserHandler->viewUsers(credentials);
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";

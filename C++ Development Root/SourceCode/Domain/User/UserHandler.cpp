@@ -28,6 +28,9 @@ namespace Domain::User
         if (credentialsFromDB.status == 1)
         {
             if (credentialsFromDB.roles[0] == "IT Admin") return std::make_unique<Domain::User::ITAdminUserManagement>(user);
+            if (credentialsFromDB.roles[0] == "Assistant") return std::make_unique<Domain::User::AssistantUserManagement>(user);
+            if (credentialsFromDB.roles[0] == "Salesperson") return std::make_unique<Domain::User::SalespersonUserManagement>(user);
+            if (credentialsFromDB.roles[0] == "Sales Manager") return std::make_unique<Domain::User::SalesManagerUserManagement>(user);
             if (credentialsFromDB.roles[0] == "Security Officer") return std::make_unique<Domain::User::SecurityOfficerUserManagement>(user);
         }
             

@@ -151,6 +151,21 @@ namespace  // anonymous (private) working area
      return  "true";
  }
 
+ std::any AssistantViewUsers(Domain::User::AssistantUserDomain& session, const std::vector<std::string>& agrs)
+ {
+     return  "true";
+ }
+
+ std::any SalespersonViewUsers(Domain::User::SalespersonUserDomain& session, const std::vector<std::string>& agrs)
+ {
+     return  "true";
+ }
+
+ std::any SalesManagerViewUsers(Domain::User::SalesManagerUserDomain& session, const std::vector<std::string>& agrs)
+ {
+     return  "true";
+ }
+
  STUB(ViewLogFiles)
 
  // Office events management
@@ -745,6 +760,7 @@ namespace Domain::User
 
     }
 
+    // Function implemetations for IT Admin user domain
     ITAdminUserDomain::ITAdminUserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
@@ -786,7 +802,7 @@ namespace Domain::User
     }
 
     // view all users for IT Admin
-    void ITAdminUserDomain::viewUsers( )
+    void ITAdminUserDomain::viewUsers(const UserCredentials& User)
     {
         line();
         std::cout << std::setw(49) << "List of Users\n";
@@ -852,7 +868,7 @@ namespace Domain::User
     {
         std::cout << " IT Admin can not block a user account, please contact your Security Officer. " << std::endl;
 
-        return _UpdatedUserDB;
+        return {};
     }
 
     ITAdminUserManagement::ITAdminUserManagement(const UserCredentials& user) : ITAdminUserDomain("User Management", user)
@@ -861,14 +877,344 @@ namespace Domain::User
         _commandDispatch = {
 
                          { "Add User", AddUser },
-                         { "View All Users", ITAdminViewUsers },
-                         //{ "View All User Profiles", ViewUserProfiles },
+                         { "View Users", ITAdminViewUsers },
                          { "Update User Profile", UpdateUser },
                          { "Delete User", DeleteUser }//,
 
         };
     };
 
+    // Function implemetations for Assistant user domain
+    AssistantUserDomain::AssistantUserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
+    {
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
+        _UpdatedUserDB = persistentData.ShowAllUsers();
+    }
+
+
+    std::vector<std::string> AssistantUserDomain::getCommandsUser()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
+
+    std::any AssistantUserDomain::executeCommandUser(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+
+        auto results = it->second(*this, args);
+
+        return results;
+    }
+
+
+    // get updating the static data of User and UserCredentials
+    std::vector<UserCredentials> AssistantUserDomain::UsersDB(const std::vector<UserCredentials>& UsersDB)
+    {
+        _UpdatedUserDB = UsersDB;
+        // generating the result in updating table 
+
+        return _UpdatedUserDB;
+    }
+
+    // view all users for Assistant, no permission
+    void AssistantUserDomain::viewUsers(const UserCredentials& User)
+    {
+        std::cout << " Assistant do not have the permission to view all users. " << std::endl;
+        std::cout << " Here is your acount infromation: " << std::endl;
+
+        for (const auto& StoredUser : _UpdatedUserDB)
+        {
+            if (StoredUser.userName == User.userName)
+            {
+                _User = StoredUser;
+            }
+        }
+
+        line();
+        std::cout << std::setw(4) << "Id" << std::setw(15) << "User Name" << std::setw(20) << "Pass Phrase" << std::setw(20) << "Role" << std::setw(20) << "Status" << "\n";
+        std::string userStatus;
+        if (_User.status == 1) userStatus = "Access Allowed";
+        else userStatus = "Access Denied";
+        std::cout << std::setw(4) << _User.userID << std::setw(15) << _User.userName << std::setw(20) << _User.passPhrase << std::setw(20) << _User.roles[0] << std::setw(20) << userStatus << std::endl;
+        line();
+
+    }
+
+    // add user for Assistant, no permission 
+    std::vector<UserCredentials>  AssistantUserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
+    {
+        std::cout << " Assistant do not have the permission to add user. " << std::endl;
+
+        return {};
+    }
+
+    UserCredentials  AssistantUserDomain::searchUserId(const int UserId)
+    {
+        for (const auto& StoredUser : _UpdatedUserDB)
+        {
+            if (StoredUser.userID == UserId)
+            {
+                _User = StoredUser;
+            }
+        }
+
+        return _User;
+    }
+
+    // updata user for Assistant, no permission
+    std::vector<UserCredentials> AssistantUserDomain::updateUser(const UserCredentials& User)
+    {
+        std::cout << " Assistant do not have the permission to modify a user's profile. " << std::endl;
+
+        return {};
+    }
+
+    // block a user's access, not allowed for Assistant
+    std::vector<UserCredentials> AssistantUserDomain::banUser(const int UserID)
+    {
+        std::cout << " Assistant can not block a user account, please contact your Security Officer. " << std::endl;
+
+        return {};
+    }
+
+    AssistantUserManagement::AssistantUserManagement(const UserCredentials& user) : AssistantUserDomain("User Management", user)
+    {
+
+        _commandDispatch = {
+                     { "View Users", AssistantViewUsers }
+        };
+    };
+
+    // Function implemetations for Salesperson user domain
+    SalespersonUserDomain::SalespersonUserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
+    {
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
+        _UpdatedUserDB = persistentData.ShowAllUsers();
+    }
+
+
+    std::vector<std::string> SalespersonUserDomain::getCommandsUser()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
+
+    std::any SalespersonUserDomain::executeCommandUser(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+
+        auto results = it->second(*this, args);
+
+        return results;
+    }
+
+
+    // get updating the static data of User and UserCredentials
+    std::vector<UserCredentials> SalespersonUserDomain::UsersDB(const std::vector<UserCredentials>& UsersDB)
+    {
+        _UpdatedUserDB = UsersDB;
+        // generating the result in updating table 
+
+        return _UpdatedUserDB;
+    }
+
+    // view all users for Salesperson, no permission
+    void SalespersonUserDomain::viewUsers(const UserCredentials& User)
+    {
+        std::cout << " Salesperson do not have the permission to view all users. " << std::endl;
+        std::cout << " Here is your acount infromation: " << std::endl;
+        
+        for (const auto& StoredUser : _UpdatedUserDB)
+        {
+            if (StoredUser.userName == User.userName)
+            {
+                _User = StoredUser;
+            }
+        }
+
+        line();
+        std::cout << std::setw(4) << "Id" << std::setw(15) << "User Name" << std::setw(20) << "Pass Phrase" << std::setw(20) << "Role" << std::setw(20) << "Status" << "\n";
+        std::string userStatus;
+        if (_User.status == 1) userStatus = "Access Allowed";
+        else userStatus = "Access Denied";
+        std::cout << std::setw(4) << _User.userID << std::setw(15) << _User.userName << std::setw(20) << _User.passPhrase << std::setw(20) << _User.roles[0] << std::setw(20) << userStatus << std::endl;
+        line();
+
+    }
+
+    // add user for Salesperson, no permission 
+    std::vector<UserCredentials>  SalespersonUserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
+    {
+        std::cout << " Salesperson do not have the permission to add user. " << std::endl;
+
+        return {};
+    }
+
+    UserCredentials  SalespersonUserDomain::searchUserId(const int UserId)
+    {
+        for (const auto& StoredUser : _UpdatedUserDB)
+        {
+            if (StoredUser.userID == UserId)
+            {
+                _User = StoredUser;
+            }
+        }
+
+        return _User;
+    }
+
+    // updata user for Salesperson, no permission
+    std::vector<UserCredentials> SalespersonUserDomain::updateUser(const UserCredentials& User)
+    {
+        std::cout << " Salesperson do not have the permission to modify a user's profile. " << std::endl;
+
+        return {};
+    }
+
+    // block a user's access, not allowed for Salesperson
+    std::vector<UserCredentials> SalespersonUserDomain::banUser(const int UserID)
+    {
+        std::cout << " Salesperson can not block a user account, please contact your Security Officer. " << std::endl;
+
+        return {};
+    }
+
+    SalespersonUserManagement::SalespersonUserManagement(const UserCredentials& user) : SalespersonUserDomain("User Management", user)
+    {
+
+        _commandDispatch = {
+                { "View Users", SalespersonViewUsers }
+        };
+    };
+
+    // Function implemetations for Sales Manager user domain
+    SalesManagerUserDomain::SalesManagerUserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
+    {
+        _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
+        _UpdatedUserDB = persistentData.ShowAllUsers();
+    }
+
+
+    std::vector<std::string> SalesManagerUserDomain::getCommandsUser()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
+
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
+
+    std::any SalesManagerUserDomain::executeCommandUser(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
+
+        auto it = _commandDispatch.find(command);
+
+        auto results = it->second(*this, args);
+
+        return results;
+    }
+
+
+    // get updating the static data of User and UserCredentials
+    std::vector<UserCredentials> SalesManagerUserDomain::UsersDB(const std::vector<UserCredentials>& UsersDB)
+    {
+        _UpdatedUserDB = UsersDB;
+        // generating the result in updating table 
+
+        return _UpdatedUserDB;
+    }
+
+    // view all users for Sales Manager, no permission
+    void SalesManagerUserDomain::viewUsers(const UserCredentials& User)
+    {
+        std::cout << " Sales Manager do not have the permission to view all users. " << std::endl;
+        std::cout << " Here is your acount infromation: " << std::endl;
+        
+        for (const auto& StoredUser : _UpdatedUserDB)
+        {
+            if (StoredUser.userName == User.userName)
+            {
+                _User = StoredUser;
+            }
+        }
+
+        line();
+        std::cout << std::setw(4) << "Id" << std::setw(15) << "User Name" << std::setw(20) << "Pass Phrase" << std::setw(20) << "Role" << std::setw(20) << "Status" << "\n";
+        std::string userStatus;
+        if (_User.status == 1) userStatus = "Access Allowed";
+        else userStatus = "Access Denied";
+        std::cout << std::setw(4) << _User.userID << std::setw(15) << _User.userName << std::setw(20) << _User.passPhrase << std::setw(20) << _User.roles[0] << std::setw(20) << userStatus << std::endl;
+        line();
+
+    }
+
+    // add user for Sales Manager, no permission 
+    std::vector<UserCredentials> SalesManagerUserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
+    {
+        std::cout << " Sales Manager do not have the permission to add user. " << std::endl;
+
+        return {};
+    }
+
+    UserCredentials  SalesManagerUserDomain::searchUserId(const int UserId)
+    {
+        for (const auto& StoredUser : _UpdatedUserDB)
+        {
+            if (StoredUser.userID == UserId)
+            {
+                _User = StoredUser;
+            }
+        }
+
+        return _User;
+    }
+
+    // updata user for Sales Manager, no permission
+    std::vector<UserCredentials> SalesManagerUserDomain::updateUser(const UserCredentials& User)
+    {
+        std::cout << " Sales Manager do not have the permission to modify a user's profile. " << std::endl;
+
+        return {};
+    }
+
+    // block a user's access, not allowed for Sales Manager
+    std::vector<UserCredentials> SalesManagerUserDomain::banUser(const int UserID)
+    {
+        std::cout << " Sales Manager can not block a user account, please contact your Security Officer. " << std::endl;
+
+        return {};
+    }
+
+    SalesManagerUserManagement::SalesManagerUserManagement(const UserCredentials& user) : SalesManagerUserDomain("User Management", user)
+    {
+
+        _commandDispatch = {
+                    { "View Users", SalesManagerViewUsers }
+        };
+    };
+
+    // Function implemetations for Security Officer user domain
     SecurityOfficerUserDomain::SecurityOfficerUserDomain(const std::string& description, const UserCredentials& user) : _name(description), _Creator(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Creator.userName;
@@ -910,7 +1256,7 @@ namespace Domain::User
     }
 
     // view all users for Security Officer
-    void SecurityOfficerUserDomain::viewUsers()
+    void SecurityOfficerUserDomain::viewUsers(const UserCredentials& User)
     {
         line();
         std::cout << std::setw(49) << "User profiles\n";
@@ -934,7 +1280,7 @@ namespace Domain::User
     {
         std::cout << " Security Officer can not create a new account, please contact your IT Administrator. " << std::endl;
 
-        return _UpdatedUserDB;
+        return {};
     }
 
     UserCredentials  SecurityOfficerUserDomain::searchUserId(const int UserId)
@@ -974,7 +1320,7 @@ namespace Domain::User
 
         _commandDispatch = {
 
-                         { "View All Users", SecurityOfficerViewUsers },
+                         { "View Users", SecurityOfficerViewUsers },
                          { "Block a User", BanUsers }
 
         };
@@ -1359,7 +1705,8 @@ namespace Domain::Session
     _commandDispatch = {
                          { "Client Management", ClientManagement },
                          { "Event Management",  EventManagement },
-                         { "Ask IT for Help",   AskHelp }
+                         { "Ask IT for Help",   AskHelp },
+                         { "User Management",    UserManagement }
     };
   }
 
@@ -1374,8 +1721,8 @@ namespace Domain::Session
         
         {"Client Management", ClientManagement},
         {"Product Management", ProductManagement},
-
-        {"Sale Management", SaleManagement}
+        {"Sale Management", SaleManagement},
+        {"User Management",    UserManagement }
     };
   }
 
@@ -1387,6 +1734,7 @@ namespace Domain::Session
     _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Sales Manager\".";
 
     _commandDispatch = { {"Manage Subscription", manageSubscription},
+                         {"User Management",    UserManagement },
                       
     };
   }
