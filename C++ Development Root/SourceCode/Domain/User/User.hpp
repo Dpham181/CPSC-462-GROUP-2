@@ -24,7 +24,7 @@ namespace Domain::User
 
         // Operations
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
-        void                            viewUsers(const UserCredentials& User) override;         //view users for IT Admin
+        void                            viewUsers(const std::string UserName) override;         //view users for IT Admin
         UserCredentials                 searchUserId(const int UserId) override;
         std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
         std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
@@ -67,7 +67,7 @@ namespace Domain::User
 
         // Operations
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
-        void                            viewUsers(const UserCredentials& User) override;         //view users for IT Admin
+        void                            viewUsers(const std::string UserName) override;         //view users for IT Admin
         UserCredentials                 searchUserId(const int UserId) override;
         std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
         std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
@@ -110,7 +110,7 @@ namespace Domain::User
 
         // Operations
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
-        void                            viewUsers(const UserCredentials& User) override;         //view users for IT Admin
+        void                            viewUsers(const std::string UserName) override;         //view users for IT Admin
         UserCredentials                 searchUserId(const int UserId) override;
         std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
         std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
@@ -152,7 +152,7 @@ namespace Domain::User
 
         // Operations
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
-        void                            viewUsers(const UserCredentials& User) override;         //view users for IT Admin
+        void                            viewUsers(const std::string UserName) override;         //view users for IT Admin
         UserCredentials                 searchUserId(const int UserId) override;
         std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
         std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
@@ -194,7 +194,7 @@ namespace Domain::User
 
         // Operations
         std::vector<UserCredentials>    UsersDB(const std::vector<UserCredentials>& UsersDB) override;
-        void                            viewUsers(const UserCredentials& User) override;         //view users for Security Officer
+        void                            viewUsers(const std::string UserName) override;         //view users for Security Officer
         UserCredentials                 searchUserId(const int UserId) override;
         std::vector<UserCredentials>    addUser(const int UserID, const std::string UserName, const std::string Role) override;
         std::vector<UserCredentials>    updateUser(const UserCredentials& User) override;
