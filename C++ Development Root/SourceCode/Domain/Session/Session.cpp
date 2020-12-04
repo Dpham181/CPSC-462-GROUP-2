@@ -133,6 +133,7 @@ namespace  // anonymous (private) working area
 
  std::any ITAdminViewUsers(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs) 
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -143,6 +144,7 @@ namespace  // anonymous (private) working area
 
  std::any SecurityOfficerViewUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs) 
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -153,16 +155,19 @@ namespace  // anonymous (private) working area
 
  std::any AssistantViewUsers(Domain::User::AssistantUserDomain& session, const std::vector<std::string>& agrs)
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
  std::any SalespersonViewUsers(Domain::User::SalespersonUserDomain& session, const std::vector<std::string>& agrs)
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
  std::any SalesManagerViewUsers(Domain::User::SalesManagerUserDomain& session, const std::vector<std::string>& agrs)
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -215,6 +220,7 @@ namespace  // anonymous (private) working area
 
  std::any ViewEvents(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
  {
+     session.viewEvents();
      return  "true";
  }
 

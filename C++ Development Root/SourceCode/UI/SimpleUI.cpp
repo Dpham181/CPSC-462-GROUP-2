@@ -586,7 +586,7 @@ namespace UI
 
                         else if (selectedCommand == "View Users")
                         {
-                            UserHandler->viewUsers(credentials.userName);
+                            UserHandler->executeCommandUser(selectedCommand, { credentials.userName });
                         }
 
                         else if (selectedCommand == "Block a User")
@@ -790,7 +790,7 @@ namespace UI
 
                     else if (selectedCommand == "View All Meetings")
                     {
-                        EventHandler->viewEvents( );
+                        EventHandler->executeCommandEvent(selectedCommand, {});
                     }
 
                     else if (selectedCommand == "Update Meeting")

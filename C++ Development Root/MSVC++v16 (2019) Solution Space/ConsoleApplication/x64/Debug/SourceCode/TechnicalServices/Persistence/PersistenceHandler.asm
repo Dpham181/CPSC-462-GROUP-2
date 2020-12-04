@@ -49,9 +49,9 @@ __0E648B51_xlocale DB 01H
 __1597A171_xiosbase DB 01H
 __90E3ED46_xlocnum DB 01H
 __165C22CB_ios DB 01H
-__2CA97190_LoggerHandler@hpp DB 01H
+__84881B57_LoggerHandler@hpp DB 01H
 __03665793_xtree DB 01H
-__32A572FE_PersistenceHandler@cpp DB 01H
+__33AD01A7_PersistenceHandler@cpp DB 01H
 __7EA464AF_istream DB 01H
 __1D745195_ostream DB 01H
 __6FFBAAB7_streambuf DB 01H
@@ -420,7 +420,7 @@ $LN3:
 ?__autoclassinit2@SimpleDB@Persistence@TechnicalServices@@QEAAX_K@Z ENDP ; TechnicalServices::Persistence::SimpleDB::__autoclassinit2
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ??1PersistenceHandler@Persistence@TechnicalServices@@UEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -439,7 +439,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__32A572FE_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__33AD01A7_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7PersistenceHandler@Persistence@TechnicalServices@@6B@
@@ -451,7 +451,7 @@ $LN3:
 ??1PersistenceHandler@Persistence@TechnicalServices@@UEAA@XZ ENDP ; TechnicalServices::Persistence::PersistenceHandler::~PersistenceHandler
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ
 _TEXT	SEGMENT
 ?instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ PROC ; TechnicalServices::Persistence::PersistenceHandler::instance, COMDAT
@@ -467,7 +467,7 @@ $LN5:
 	mov	ecx, 58					; 0000003aH
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
-	lea	rcx, OFFSET FLAT:__32A572FE_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__33AD01A7_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 13   :     // Can't read the DB component preference from the database because the DB has not yet been created. So choosing the database
@@ -555,7 +555,7 @@ text$x	SEGMENT
 ?dtor$0@?0??instance@PersistenceHandler@Persistence@TechnicalServices@@SAAEAV123@XZ@4HA ENDP ; `TechnicalServices::Persistence::PersistenceHandler::instance'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -576,7 +576,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__32A572FE_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__33AD01A7_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -586,7 +586,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -605,7 +605,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__32A572FE_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__33AD01A7_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -615,7 +615,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -634,7 +634,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__32A572FE_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__33AD01A7_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -644,7 +644,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\TechnicalServices\Persistence\PersistenceHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -661,7 +661,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__32A572FE_PersistenceHandler@cpp
+	lea	rcx, OFFSET FLAT:__33AD01A7_PersistenceHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]

@@ -55,9 +55,9 @@ __0E648B51_xlocale DB 01H
 __1597A171_xiosbase DB 01H
 __90E3ED46_xlocnum DB 01H
 __165C22CB_ios DB 01H
-__2CA97190_LoggerHandler@hpp DB 01H
-__36B4D0B3_Sale@hpp DB 01H
-__09583F51_SaleHandler@cpp DB 01H
+__84881B57_LoggerHandler@hpp DB 01H
+__D1BB2AE0_Sale@hpp DB 01H
+__66941854_SaleHandler@cpp DB 01H
 __BF2A7ACC_vector DB 01H
 __7EA464AF_istream DB 01H
 __1D745195_ostream DB 01H
@@ -2992,7 +2992,7 @@ __$ReturnUdt$ = 336
 ?dtor$0@?0???$make_unique@USaleManagement@Sale@Domain@@AEBUUserCredentials@Persistence@TechnicalServices@@$0A@@std@@YA?AV?$unique_ptr@USaleManagement@Sale@Domain@@U?$default_delete@USaleManagement@Sale@Domain@@@std@@@0@AEBUUserCredentials@Persistence@TechnicalServices@@@Z@4HA ENDP ; `std::make_unique<Domain::Sale::SaleManagement,TechnicalServices::Persistence::UserCredentials const &,0>'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
 ;	COMDAT ??1SaleHandler@Sale@Domain@@UEAA@XZ
 _TEXT	SEGMENT
 this$ = 224
@@ -3011,7 +3011,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__09583F51_SaleHandler@cpp
+	lea	rcx, OFFSET FLAT:__66941854_SaleHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	mov	rax, QWORD PTR this$[rbp]
 	lea	rcx, OFFSET FLAT:??_7SaleHandler@Sale@Domain@@6B@
@@ -3023,7 +3023,7 @@ $LN3:
 ??1SaleHandler@Sale@Domain@@UEAA@XZ ENDP		; Domain::Sale::SaleHandler::~SaleHandler
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
 ;	COMDAT ?UseSaleManagement@SaleHandler@Sale@Domain@@SA?AV?$unique_ptr@VSaleHandler@Sale@Domain@@U?$default_delete@VSaleHandler@Sale@Domain@@@std@@@std@@AEBUUserCredentials@Persistence@TechnicalServices@@@Z
 _TEXT	SEGMENT
 persistentData$ = 8
@@ -3055,7 +3055,7 @@ $LN8:
 	xor	rax, rbp
 	mov	QWORD PTR __$ArrayPad$[rbp], rax
 	mov	DWORD PTR $T5[rbp], 0
-	lea	rcx, OFFSET FLAT:__09583F51_SaleHandler@cpp
+	lea	rcx, OFFSET FLAT:__66941854_SaleHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 
 ; 22   :         auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
@@ -4350,7 +4350,7 @@ $LN17@Adjust_man:
 ?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z ENDP ; std::_Adjust_manually_vector_aligned
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -4371,7 +4371,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__09583F51_SaleHandler@cpp
+	lea	rcx, OFFSET FLAT:__66941854_SaleHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -4381,7 +4381,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_KW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -4400,7 +4400,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__09583F51_SaleHandler@cpp
+	lea	rcx, OFFSET FLAT:__66941854_SaleHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -4410,7 +4410,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAXW4align_val_t@std@@@Z ENDP ; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -4429,7 +4429,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__09583F51_SaleHandler@cpp
+	lea	rcx, OFFSET FLAT:__66941854_SaleHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
@@ -4439,7 +4439,7 @@ $LN3:
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu /ZI
-; File D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
+; File D:\1\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\SourceCode\Domain\Sale\SaleHandler.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
 __formal$ = 224
@@ -4456,7 +4456,7 @@ $LN3:
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	rcx, QWORD PTR [rsp+264]
-	lea	rcx, OFFSET FLAT:__09583F51_SaleHandler@cpp
+	lea	rcx, OFFSET FLAT:__66941854_SaleHandler@cpp
 	call	__CheckForDebuggerJustMyCode
 	npad	1
 	lea	rsp, QWORD PTR [rbp+200]
