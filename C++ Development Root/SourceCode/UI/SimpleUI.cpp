@@ -503,29 +503,15 @@ namespace UI
                             std::vector<std::string> parameter(1);
                             parameter[0] = std::to_string(selectedSubcripstion);
                             auto result =  _SubscriptionHandler->executeCommandSubscription(selectedCommand, parameter);
-                            std::string selectedPaymethod;
-                            unsigned    menuPaySelection;
+                           
                             if (result.has_value()) {
-                                std::vector<TechnicalServices::Persistence::PaymentOption>   PayOps = std::any_cast<const std::vector<TechnicalServices::Persistence::PaymentOption>&>(result);
-                                do
-                                {
-
-                                   
-                                    for (unsigned i = 0; i != PayOps.size(); ++i) std::cout << std::setw(2) << i << " - " << PayOps[i].PaymentTypeName << '\n';
-                                    std::cout << std::setw(2) << PayOps.size() << " - " << "Back to Main Menu\n";
-
-                                    std::cout << "  action (0-" << PayOps.size() << "): ";
-                                    std::cin >> menuPaySelection;
-                                } while (menuPaySelection > PayOps.size());
-                                if (menuPaySelection == PayOps.size()) break;
-
-                                selectedPaymethod = PayOps[menuPaySelection].PaymentTypeName;
-                                std::cout << "111111111111111" + selectedPaymethod;
-
+                            // test payment
+                                std::string testpay = "";
                                 std::unique_ptr< TechnicalServices::External::PaymentHandlerInterface> Paymentcontrol;
                                 Paymentcontrol = TechnicalServices::External::PaymentHandlerInterface::PaySystemFactory();
-                                Paymentcontrol->PayMethod(selectedPaymethod);
-
+                                std::unique_ptr< TechnicalServices::External::Payment> PaymentMethod;
+                                PaymentMethod =  Paymentcontrol->PayMethod(testpay);
+                                PaymentMethod->Requestpayinfor();
 
                             }
                          }
@@ -595,12 +581,12 @@ namespace UI
 
                         else if (selectedCommand == "View Users")
                         {
-                            UserHandler->executeCommandUser(selectedCommand, { credentials.userName });
+                            UserHandler->viewUsers(credentials);
                         }
 
                         else if (selectedCommand == "Block a User")
                         {
-                            UserHandler->viewUsers(credentials.userName);
+                            UserHandler->viewUsers(credentials);
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";
@@ -620,7 +606,7 @@ namespace UI
 
                         else if (selectedCommand == "Update User Profile")
                         {
-                            UserHandler->viewUsers(credentials.userName);
+                            UserHandler->viewUsers(credentials);
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";
@@ -799,7 +785,7 @@ namespace UI
 
                     else if (selectedCommand == "View All Meetings")
                     {
-                        EventHandler->executeCommandEvent(selectedCommand, {});
+                        EventHandler->viewEvents( );
                     }
 
                     else if (selectedCommand == "Update Meeting")

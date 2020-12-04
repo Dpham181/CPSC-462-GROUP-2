@@ -137,7 +137,6 @@ namespace  // anonymous (private) working area
 
  std::any ITAdminViewUsers(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs) 
  {
-     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -148,7 +147,6 @@ namespace  // anonymous (private) working area
 
  std::any SecurityOfficerViewUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs) 
  {
-     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -159,19 +157,16 @@ namespace  // anonymous (private) working area
 
  std::any AssistantViewUsers(Domain::User::AssistantUserDomain& session, const std::vector<std::string>& agrs)
  {
-     session.viewUsers(agrs[0]);
      return  "true";
  }
 
  std::any SalespersonViewUsers(Domain::User::SalespersonUserDomain& session, const std::vector<std::string>& agrs)
  {
-     session.viewUsers(agrs[0]);
      return  "true";
  }
 
  std::any SalesManagerViewUsers(Domain::User::SalesManagerUserDomain& session, const std::vector<std::string>& agrs)
  {
-     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -224,7 +219,6 @@ namespace  // anonymous (private) working area
 
  std::any ViewEvents(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
  {
-     session.viewEvents();
      return  "true";
  }
 
@@ -812,7 +806,7 @@ namespace Domain::User
     }
 
     // view all users for IT Admin
-    void ITAdminUserDomain::viewUsers(const std::string UserName)
+    void ITAdminUserDomain::viewUsers(const UserCredentials& User)
     {
         line();
         std::cout << std::setw(49) << "List of Users\n";
@@ -936,14 +930,14 @@ namespace Domain::User
     }
 
     // view all users for Assistant, no permission
-    void AssistantUserDomain::viewUsers(const std::string UserName)
+    void AssistantUserDomain::viewUsers(const UserCredentials& User)
     {
         std::cout << " Assistant do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
 
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == UserName)
+            if (StoredUser.userName == User.userName)
             {
                 _User = StoredUser;
             }
@@ -1046,14 +1040,14 @@ namespace Domain::User
     }
 
     // view all users for Salesperson, no permission
-    void SalespersonUserDomain::viewUsers(const std::string UserName)
+    void SalespersonUserDomain::viewUsers(const UserCredentials& User)
     {
         std::cout << " Salesperson do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
         
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == UserName)
+            if (StoredUser.userName == User.userName)
             {
                 _User = StoredUser;
             }
@@ -1156,14 +1150,14 @@ namespace Domain::User
     }
 
     // view all users for Sales Manager, no permission
-    void SalesManagerUserDomain::viewUsers(const std::string UserName)
+    void SalesManagerUserDomain::viewUsers(const UserCredentials& User)
     {
         std::cout << " Sales Manager do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
         
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == UserName)
+            if (StoredUser.userName == User.userName)
             {
                 _User = StoredUser;
             }
@@ -1266,7 +1260,7 @@ namespace Domain::User
     }
 
     // view all users for Security Officer
-    void SecurityOfficerUserDomain::viewUsers(const std::string UserName)
+    void SecurityOfficerUserDomain::viewUsers(const UserCredentials& User)
     {
         line();
         std::cout << std::setw(49) << "User profiles\n";
@@ -1767,13 +1761,13 @@ namespace Domain::Session
 namespace  TechnicalServices::External
 {
     Payment::Payment( std::string &paymentType) : _paymentType(paymentType) {
-        std::cout << " Connect Payment Method"; 
+        _logger <<" Connecting Payment System";
    
     };
 
    
-    Payment::~Payment() {
-
+    Payment::~Payment() noexcept {
+        _logger << "Shutdown Payment System"; 
     }
 
     /// Credit payment implementation 
@@ -1781,10 +1775,10 @@ namespace  TechnicalServices::External
     {
     }
     Credit::Credit(std::string & paymentType) : Payment(paymentType) {
-        std::cout << "test credit payment";
+        _logger << "Acess Credit PayMethod";
     }; 
     void Credit::Requestpayinfor() {
-        std::cout << "Credit request information"; 
+        _logger << "Request Card Number and CVS code";
     }
     std::unique_ptr <TechnicalServices::External::Payment> CreditPayment::PayMethod( std::string  &PaymentType) {
         return   std::make_unique<TechnicalServices::External::Credit>(PaymentType);
@@ -1795,10 +1789,10 @@ namespace  TechnicalServices::External
     {
     }
     Debit::Debit(std::string& paymentType) : Payment(paymentType) {
-        std::cout << paymentType;
+        _logger << "Acess Debit PayMethod";
     };
     void Debit::Requestpayinfor() {
-        std::cout << "Credit Debit information";
+        _logger << "Request Card Number, CVS code, and Electronic Signature ";
     }
     std::unique_ptr <TechnicalServices::External::Payment> DebitPayment::PayMethod(std::string& PaymentType) {
         return   std::make_unique<TechnicalServices::External::Debit>(PaymentType);
@@ -1809,10 +1803,10 @@ namespace  TechnicalServices::External
     {
     }
     GateWay::GateWay(std::string& paymentType) : Payment(paymentType) {
-        std::cout << "test Debit payment";
+        _logger << "Acess GateWay PayMethod";
     };
     void GateWay::Requestpayinfor() {
-        std::cout << "Credit Debit information";
+        _logger << "Request:  AmanzonPay || ApplePay || Paypal ";
     }
     std::unique_ptr <TechnicalServices::External::Payment> GatewayPayment::PayMethod(std::string& PaymentType) {
         return   std::make_unique<TechnicalServices::External::GateWay>(PaymentType);
