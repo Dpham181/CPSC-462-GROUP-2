@@ -10,6 +10,8 @@
 #include <locale>       // touuper(), locale()
 
 #include "Domain/Session/SessionHandler.hpp"
+
+#include "TechnicalServices/External/PaymentHandlerInterface.hpp"
 #include "Domain/Client/Client.hpp"   
 #include "Domain/User/User.hpp"
 #include "Domain/Event/Event.hpp"
@@ -468,8 +470,6 @@ namespace UI
                          if (menuSelection == commands.size()) break;
                          selectedCommand = commands[menuSelection];
                          if (selectedCommand == "Upgrade License") {
-                             _logger << "exe 1\"";
-                             // todo 
                              auto        Subcripstions = _persistentData.ShowAllSubcripstion();
                              int selectedSubcripstion;
                              unsigned    menuSelection;
@@ -518,6 +518,15 @@ namespace UI
                                     std::cin >> menuPaySelection;
                                 } while (menuPaySelection > PayOps.size());
                                 if (menuPaySelection == PayOps.size()) break;
+
+                                selectedPaymethod = PayOps[menuPaySelection].PaymentTypeName;
+                                std::cout << "111111111111111" + selectedPaymethod;
+
+                                std::unique_ptr< TechnicalServices::External::PaymentHandlerInterface> Paymentcontrol;
+                                Paymentcontrol = TechnicalServices::External::PaymentHandlerInterface::PaySystemFactory();
+                                Paymentcontrol->PayMethod(selectedPaymethod);
+
+
                             }
                          }
 
@@ -586,12 +595,12 @@ namespace UI
 
                         else if (selectedCommand == "View Users")
                         {
-                            UserHandler->executeCommandUser(selectedCommand, { credentials.userName });
+                            UserHandler->viewUsers(credentials);
                         }
 
                         else if (selectedCommand == "Block a User")
                         {
-                            UserHandler->viewUsers(credentials.userName);
+                            UserHandler->viewUsers(credentials);
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";
@@ -611,7 +620,7 @@ namespace UI
 
                         else if (selectedCommand == "Update User Profile")
                         {
-                            UserHandler->viewUsers(credentials.userName);
+                            UserHandler->viewUsers(credentials);
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";
@@ -790,7 +799,7 @@ namespace UI
 
                     else if (selectedCommand == "View All Meetings")
                     {
-                        EventHandler->executeCommandEvent(selectedCommand, {});
+                        EventHandler->viewEvents( );
                     }
 
                     else if (selectedCommand == "Update Meeting")
