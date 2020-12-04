@@ -60,6 +60,9 @@
     <ClCompile Include="..\..\SourceCode\Domain\Subscription\SubscriptionHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\SourceCode\TechnicalServices\External\PaymentHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\SourceCode\TechnicalServices\Logging\LoggerHandler.hpp">
@@ -123,6 +126,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\SourceCode\Domain\Subscription\SubscriptionHandler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\TechnicalServices\External\Payment.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\TechnicalServices\External\PaymentHandlerConcrete.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\TechnicalServices\External\PaymentHandlerInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\TechnicalServices\External\PaymentMethod.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

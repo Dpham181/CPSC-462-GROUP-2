@@ -137,6 +137,7 @@ namespace  // anonymous (private) working area
 
  std::any ITAdminViewUsers(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs) 
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -147,6 +148,7 @@ namespace  // anonymous (private) working area
 
  std::any SecurityOfficerViewUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs) 
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -157,16 +159,19 @@ namespace  // anonymous (private) working area
 
  std::any AssistantViewUsers(Domain::User::AssistantUserDomain& session, const std::vector<std::string>& agrs)
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
  std::any SalespersonViewUsers(Domain::User::SalespersonUserDomain& session, const std::vector<std::string>& agrs)
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
  std::any SalesManagerViewUsers(Domain::User::SalesManagerUserDomain& session, const std::vector<std::string>& agrs)
  {
+     session.viewUsers(agrs[0]);
      return  "true";
  }
 
@@ -219,6 +224,7 @@ namespace  // anonymous (private) working area
 
  std::any ViewEvents(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
  {
+     session.viewEvents();
      return  "true";
  }
 
@@ -806,7 +812,7 @@ namespace Domain::User
     }
 
     // view all users for IT Admin
-    void ITAdminUserDomain::viewUsers(const UserCredentials& User)
+    void ITAdminUserDomain::viewUsers(const std::string UserName)
     {
         line();
         std::cout << std::setw(49) << "List of Users\n";
@@ -930,14 +936,14 @@ namespace Domain::User
     }
 
     // view all users for Assistant, no permission
-    void AssistantUserDomain::viewUsers(const UserCredentials& User)
+    void AssistantUserDomain::viewUsers(const std::string UserName)
     {
         std::cout << " Assistant do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
 
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == User.userName)
+            if (StoredUser.userName == UserName)
             {
                 _User = StoredUser;
             }
@@ -1040,14 +1046,14 @@ namespace Domain::User
     }
 
     // view all users for Salesperson, no permission
-    void SalespersonUserDomain::viewUsers(const UserCredentials& User)
+    void SalespersonUserDomain::viewUsers(const std::string UserName)
     {
         std::cout << " Salesperson do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
         
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == User.userName)
+            if (StoredUser.userName == UserName)
             {
                 _User = StoredUser;
             }
@@ -1150,14 +1156,14 @@ namespace Domain::User
     }
 
     // view all users for Sales Manager, no permission
-    void SalesManagerUserDomain::viewUsers(const UserCredentials& User)
+    void SalesManagerUserDomain::viewUsers(const std::string UserName)
     {
         std::cout << " Sales Manager do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
         
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == User.userName)
+            if (StoredUser.userName == UserName)
             {
                 _User = StoredUser;
             }
@@ -1260,7 +1266,7 @@ namespace Domain::User
     }
 
     // view all users for Security Officer
-    void SecurityOfficerUserDomain::viewUsers(const UserCredentials& User)
+    void SecurityOfficerUserDomain::viewUsers(const std::string UserName)
     {
         line();
         std::cout << std::setw(49) << "User profiles\n";
