@@ -1,1 +1,90 @@
-﻿  ConsoleApplication.vcxproj -> D:\学习在美国\year2\CPSC 462\project\project\CPSC-462-GROUP-2\CPSC-462-GROUP-2-user\C++ Development Root\MSVC++v16 (2019) Solution Space\ConsoleApplication\x64\Debug\ConsoleApplication-x64-Debug.exe
+﻿  Session.cpp
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(65,1): warning C4005: 'STUBC': macro redefinition
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(37): message : see previous definition of 'STUBC'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(70,58): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(79,104): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(138,102): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(138,61): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(143,96): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(143,55): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(148,118): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(148,77): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(153,102): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(153,61): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(158,106): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(158,65): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(163,110): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(163,69): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(168,112): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(168,71): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(220,91): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(220,50): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(225,92): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(225,51): warning C4100: 'session': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(243,104): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(243,59): warning C4100: 'sessionSubs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(248,105): warning C4100: 'agrs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(248,60): warning C4100: 'sessionSubs': unreferenced formal parameter
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(314,45): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(320,63): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(810,5): error C2511: 'void Domain::User::ITAdminUserDomain::viewUsers(const TechnicalServices::Persistence::UserCredentials &)': overloaded member function not found in 'Domain::User::ITAdminUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(15): message : see declaration of 'Domain::User::ITAdminUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(817,30): error C2597: illegal reference to non-static member 'Domain::User::ITAdminUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(46): message : see declaration of 'Domain::User::ITAdminUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(817,30): error C3535: cannot deduce type for 'auto &&' from 'unknown'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(817,44): error C2440: 'initializing': cannot convert from 'unknown' to 'int &&'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(817,44): message : Reason: cannot convert from 'unknown' to 'int'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(817,30): message : There is no context in which this conversion is possible
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(817,44): error C3536: '<begin>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(817,44): error C3536: '<end>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(817,44): error C2100: illegal indirection
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(934,5): error C2511: 'void Domain::User::AssistantUserDomain::viewUsers(const TechnicalServices::Persistence::UserCredentials &)': overloaded member function not found in 'Domain::User::AssistantUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(58): message : see declaration of 'Domain::User::AssistantUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(938,39): error C2597: illegal reference to non-static member 'Domain::User::AssistantUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(89): message : see declaration of 'Domain::User::AssistantUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(938,39): error C3535: cannot deduce type for 'auto &&' from 'unknown'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(938,53): error C2440: 'initializing': cannot convert from 'unknown' to 'int &&'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(938,53): message : Reason: cannot convert from 'unknown' to 'int'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(938,39): message : There is no context in which this conversion is possible
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(938,53): error C3536: '<begin>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(938,53): error C3536: '<end>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(938,53): error C2100: illegal indirection
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(942,17): error C2597: illegal reference to non-static member 'Domain::User::AssistantUserDomain::_User'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(91): message : see declaration of 'Domain::User::AssistantUserDomain::_User'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1044,5): error C2511: 'void Domain::User::SalespersonUserDomain::viewUsers(const TechnicalServices::Persistence::UserCredentials &)': overloaded member function not found in 'Domain::User::SalespersonUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(101): message : see declaration of 'Domain::User::SalespersonUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1048,39): error C2597: illegal reference to non-static member 'Domain::User::SalespersonUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(131): message : see declaration of 'Domain::User::SalespersonUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1048,39): error C3535: cannot deduce type for 'auto &&' from 'unknown'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1048,53): error C2440: 'initializing': cannot convert from 'unknown' to 'int &&'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1048,53): message : Reason: cannot convert from 'unknown' to 'int'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1048,39): message : There is no context in which this conversion is possible
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1048,53): error C3536: '<begin>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1048,53): error C3536: '<end>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1048,53): error C2100: illegal indirection
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1052,17): error C2597: illegal reference to non-static member 'Domain::User::SalespersonUserDomain::_User'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(133): message : see declaration of 'Domain::User::SalespersonUserDomain::_User'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1154,5): error C2511: 'void Domain::User::SalesManagerUserDomain::viewUsers(const TechnicalServices::Persistence::UserCredentials &)': overloaded member function not found in 'Domain::User::SalesManagerUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(143): message : see declaration of 'Domain::User::SalesManagerUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1158,39): error C2597: illegal reference to non-static member 'Domain::User::SalesManagerUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(173): message : see declaration of 'Domain::User::SalesManagerUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1158,39): error C3535: cannot deduce type for 'auto &&' from 'unknown'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1158,53): error C2440: 'initializing': cannot convert from 'unknown' to 'int &&'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1158,53): message : Reason: cannot convert from 'unknown' to 'int'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1158,39): message : There is no context in which this conversion is possible
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1158,53): error C3536: '<begin>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1158,53): error C3536: '<end>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1158,53): error C2100: illegal indirection
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1162,17): error C2597: illegal reference to non-static member 'Domain::User::SalesManagerUserDomain::_User'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(175): message : see declaration of 'Domain::User::SalesManagerUserDomain::_User'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1264,5): error C2511: 'void Domain::User::SecurityOfficerUserDomain::viewUsers(const TechnicalServices::Persistence::UserCredentials &)': overloaded member function not found in 'Domain::User::SecurityOfficerUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(185): message : see declaration of 'Domain::User::SecurityOfficerUserDomain'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1271,30): error C2597: illegal reference to non-static member 'Domain::User::SecurityOfficerUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\User\User.hpp(216): message : see declaration of 'Domain::User::SecurityOfficerUserDomain::_UpdatedUserDB'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1271,30): error C3535: cannot deduce type for 'auto &&' from 'unknown'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1271,44): error C2440: 'initializing': cannot convert from 'unknown' to 'int &&'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1271,44): message : Reason: cannot convert from 'unknown' to 'int'
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1271,30): message : There is no context in which this conversion is possible
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1271,44): error C3536: '<begin>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1271,44): error C3536: '<end>$L0': cannot be used before it is initialized
+C:\Users\danhp\Documents\GitHub\CPSC-462-GROUP-2\C++ Development Root\SourceCode\Domain\Session\Session.cpp(1271,44): error C2100: illegal indirection
