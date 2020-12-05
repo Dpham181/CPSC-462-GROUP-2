@@ -23,243 +23,249 @@
 
 namespace  // anonymous (private) working area
 {
-  auto & persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
+    auto& persistentData = TechnicalServices::Persistence::PersistenceHandler::instance();
 
-  // 1)  First define all system events (commands, actions, requests, etc.)
-  #define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
+    // 1)  First define all system events (commands, actions, requests, etc.)
+#define STUB(functionName)  std::any functionName( Domain::Session::SessionBase & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
-  
- 
-  
+
+
+
 // Client management  
  //---------------------------------------------------------------------------------
- #define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+#define STUBC(functionName)  std::any functionName( Domain::Client::ClientDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  // Stubbed for now
 
- STUB(ClientManagement)
- STUBC(View)
- 
- std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+    STUB(ClientManagement)
+        STUBC(View)
 
-     auto result = session.addClient({ agrs[0],std::atoi(agrs[1].c_str()),agrs[2],std::atoi(agrs[3].c_str()) });
+        std::any Add(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
 
-     return  result;
- }
-  std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-      auto newClientProfilebyId = session.UpdateClientProfile(std::atoi(agrs[0].c_str()), agrs[1], std::atoi(agrs[2].c_str()));
-     
-      return  newClientProfilebyId;
-  }
-  std::any ViewClientProfile(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
-      auto ClientProfilebyId = session.SearchClientId(std::atoi(agrs[0].c_str()));
+        auto result = session.addClient({ agrs[0],std::atoi(agrs[1].c_str()),agrs[2],std::atoi(agrs[3].c_str()) });
 
-      return  ClientProfilebyId;
-  }
-// product management 
- //---------------------------------------------------------------------------------
-   //{ "Add New Product", AddProduct },
-       //{"View Inventory", ViewProducts},
-       //{ "Modify Product", ModifyProduct },
-       //{ "Del product", Delproduct }//,
- #define STUBC(functionName)  std::any functionName( Domain::Product::ProductDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
+        return  result;
+    }
+    std::any Update(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+        auto newClientProfilebyId = session.UpdateClientProfile(std::atoi(agrs[0].c_str()), agrs[1], std::atoi(agrs[2].c_str()));
+
+        return  newClientProfilebyId;
+    }
+    std::any ViewClientProfile(Domain::Client::ClientDomain& session, const std::vector<std::string>& agrs) {
+        auto ClientProfilebyId = session.SearchClientId(std::atoi(agrs[0].c_str()));
+
+        return  ClientProfilebyId;
+    }
+    // product management 
+     //---------------------------------------------------------------------------------
+       //{ "Add New Product", AddProduct },
+           //{"View Inventory", ViewProducts},
+           //{ "Modify Product", ModifyProduct },
+           //{ "Del product", Delproduct }//,
+#define STUBC(functionName)  std::any functionName( Domain::Product::ProductDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  
- STUB(ProductManagement)
- 
- std::any AddProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
- {
-     int increment = productcontrol._ProductDb.size() + 1;
-     auto newproduct = productcontrol.add(increment, agrs[0], std::atoi(agrs[1].c_str()), std::atoi(agrs[2].c_str()));
+    STUB(ProductManagement)
 
-     auto inventoryUpdated = productcontrol.save(newproduct);
+        std::any AddProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
+    {
+        int increment = productcontrol._ProductDb.size() + 1;
+        auto newproduct = productcontrol.add(increment, agrs[0], std::atoi(agrs[1].c_str()), std::atoi(agrs[2].c_str()));
 
-     return inventoryUpdated;
+        auto inventoryUpdated = productcontrol.save(newproduct);
 
- }
-     
- std::any ViewProducts(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
- {
-     productcontrol.view();
+        return inventoryUpdated;
 
-     return {};
+    }
 
- }
- std::any ModifyProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
- {
-     productcontrol.view();
-     auto newDBproduct = productcontrol.modify(std::atoi(agrs[0].c_str()), agrs[1], std::atoi(agrs[2].c_str()));
-     return newDBproduct;
+    std::any ViewProducts(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
+    {
+        productcontrol.view();
 
- }
- std::any Delproduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
- {
-     productcontrol.view();
-     auto newDBproduct = productcontrol.del(std::atoi(agrs[0].c_str()));
+        return {};
 
-     return newDBproduct;
+    }
+    std::any ModifyProduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
+    {
+        productcontrol.view();
+        auto newDBproduct = productcontrol.modify(std::atoi(agrs[0].c_str()), agrs[1], std::atoi(agrs[2].c_str()));
+        return newDBproduct;
 
- }
- // sale management 
- STUB(SaleManagement)
+    }
+    std::any Delproduct(Domain::Product::ProductDomain& productcontrol, const std::vector<std::string>& agrs)
+    {
+        productcontrol.view();
+        auto newDBproduct = productcontrol.del(std::atoi(agrs[0].c_str()));
+
+        return newDBproduct;
+
+    }
+    // sale management 
+    STUB(SaleManagement)
 #define STUBS(functionName)  std::any functionName( Domain::Sale::SaleDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  
 
-     std::any makesale(Domain::Sale::SaleDomain& saleto, const std::vector<std::string>& args) {
-     std::vector<int> productsId;
-     for (unsigned i = 2; i != args.size(); ++i)
-     {
-         productsId.push_back(std::atoi(args[i].c_str()));
+        std::any makesale(Domain::Sale::SaleDomain& saleto, const std::vector<std::string>& args) {
+        std::vector<int> productsId;
+        for (unsigned i = 2; i != args.size(); ++i)
+        {
+            productsId.push_back(std::atoi(args[i].c_str()));
 
-     }
-     //todo
-     auto onesale = saleto.MakeSale(std::atoi(args[0].c_str()), std::atoi(args[1].c_str()), productsId);
+        }
+        //todo
+        auto onesale = saleto.MakeSale(std::atoi(args[0].c_str()), std::atoi(args[1].c_str()), productsId);
 
-     saleto.GenerateCommission(onesale.Commission_ID);
-     return onesale;
- }
+        saleto.GenerateCommission(onesale.Commission_ID);
+        return onesale;
+    }
 
- // User management
- STUB(UserManagement)
+    // User management
+    STUB(UserManagement)
 
- std::any AddUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs)
- {
+        std::any AddUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs)
+    {
 
-     auto result = session.addUser(std::atoi(agrs[0].c_str()), agrs[1], agrs[2]);
+        auto result = session.addUser(std::atoi(agrs[0].c_str()), agrs[1], agrs[2]);
 
-     return  result;
- }
+        return  result;
+    }
 
- std::any UpdateUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs)
- {
-     auto result = session.updateUser({ std::atoi(agrs[0].c_str()), agrs[1], agrs[2], {agrs[3]}, std::atoi(agrs[4].c_str()) });
+    std::any UpdateUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs)
+    {
+        auto result = session.updateUser({ std::atoi(agrs[0].c_str()), agrs[1], agrs[2], {agrs[3]}, std::atoi(agrs[4].c_str()) });
 
-     return  result;
- }
+        return  result;
+    }
 
- std::any ITAdminViewUsers(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs) 
- {
-     return  "true";
- }
+    std::any ITAdminViewUsers(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs)
+    {
+        session.viewUsers(agrs[0]);
+        return  "true";
+    }
 
- std::any DeleteUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs) 
- {
-     return  "true";
- }
+    std::any DeleteUser(Domain::User::ITAdminUserDomain& session, const std::vector<std::string>& agrs)
+    {
+        return  "true";
+    }
 
- std::any SecurityOfficerViewUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs) 
- {
-     return  "true";
- }
+    std::any SecurityOfficerViewUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs)
+    {
+        session.viewUsers(agrs[0]);
+        return  "true";
+    }
 
- std::any BanUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs) 
- {
-     return  "true";
- }
+    std::any BanUsers(Domain::User::SecurityOfficerUserDomain& session, const std::vector<std::string>& agrs)
+    {
+        return  "true";
+    }
 
- std::any AssistantViewUsers(Domain::User::AssistantUserDomain& session, const std::vector<std::string>& agrs)
- {
-     return  "true";
- }
+    std::any AssistantViewUsers(Domain::User::AssistantUserDomain& session, const std::vector<std::string>& agrs)
+    {
+        session.viewUsers(agrs[0]);
+        return  "true";
+    }
 
- std::any SalespersonViewUsers(Domain::User::SalespersonUserDomain& session, const std::vector<std::string>& agrs)
- {
-     return  "true";
- }
+    std::any SalespersonViewUsers(Domain::User::SalespersonUserDomain& session, const std::vector<std::string>& agrs)
+    {
+        session.viewUsers(agrs[0]);
+        return  "true";
+    }
 
- std::any SalesManagerViewUsers(Domain::User::SalesManagerUserDomain& session, const std::vector<std::string>& agrs)
- {
-     return  "true";
- }
+    std::any SalesManagerViewUsers(Domain::User::SalesManagerUserDomain& session, const std::vector<std::string>& agrs)
+    {
+        session.viewUsers(agrs[0]);
+        return  "true";
+    }
 
- STUB(ViewLogFiles)
+    STUB(ViewLogFiles)
 
- // Office events management
- STUB(EventManagement)
+        // Office events management
+        STUB(EventManagement)
 
- std::any AddEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
- {
-     std::string s1 = agrs[2];
-     std::vector<int> res;
-     while (!s1.empty())
-     {
-         if (s1.find(" ") == std::string::npos)
-         {
-             res.push_back(stoi(s1));
-             s1.clear();
-             break;
-         }
-         std::string s_temp = s1.substr(0, s1.find(" "));
-         res.push_back(stoi(s_temp));
-         s1.erase(0, s1.find(" ") + 1);
-     }
-     auto result = session.addEvent({ std::atoi(agrs[0].c_str()), agrs[1], res, agrs[3], agrs[4] });
+        std::any AddEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
+    {
+        std::string s1 = agrs[2];
+        std::vector<int> res;
+        while (!s1.empty())
+        {
+            if (s1.find(" ") == std::string::npos)
+            {
+                res.push_back(stoi(s1));
+                s1.clear();
+                break;
+            }
+            std::string s_temp = s1.substr(0, s1.find(" "));
+            res.push_back(stoi(s_temp));
+            s1.erase(0, s1.find(" ") + 1);
+        }
+        auto result = session.addEvent({ std::atoi(agrs[0].c_str()), agrs[1], res, agrs[3], agrs[4] });
 
-     return  result;
- }
+        return  result;
+    }
 
- std::any UpdateEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
- {
-     std::string s1 = agrs[2];
-     std::vector<int> res;
-     while (!s1.empty())
-     {
-         if (s1.find(" ") == std::string::npos)
-         {
-             res.push_back(stoi(s1));
-             s1.clear();
-             break;
-         }
-         std::string s_temp = s1.substr(0, s1.find(" "));
-         res.push_back(stoi(s_temp));
-         s1.erase(0, s1.find(" ") + 1);
-     }
-     auto result = session.updateEvent({ std::atoi(agrs[0].c_str()), agrs[1], res, agrs[3], agrs[4] });
+    std::any UpdateEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
+    {
+        std::string s1 = agrs[2];
+        std::vector<int> res;
+        while (!s1.empty())
+        {
+            if (s1.find(" ") == std::string::npos)
+            {
+                res.push_back(stoi(s1));
+                s1.clear();
+                break;
+            }
+            std::string s_temp = s1.substr(0, s1.find(" "));
+            res.push_back(stoi(s_temp));
+            s1.erase(0, s1.find(" ") + 1);
+        }
+        auto result = session.updateEvent({ std::atoi(agrs[0].c_str()), agrs[1], res, agrs[3], agrs[4] });
 
-     return  result;
- }
+        return  result;
+    }
 
- std::any ViewEvents(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
- {
-     return  "true";
- }
+    std::any ViewEvents(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
+    {
+        session.viewEvents();
+        return  "true";
+    }
 
- std::any DeleteEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
- {
-     return "true";
- }
- // manageSubscription
- STUB(manageSubscription);
+    std::any DeleteEvent(Domain::Event::EventDomain& session, const std::vector<std::string>& agrs)
+    {
+        return "true";
+    }
+    // manageSubscription
+    STUB(manageSubscription);
 #define STUBSS(functionName)  std::any functionName( Domain::Subscription::SubscriptionDomain & /*session*/, const std::vector<std::string> & /*args*/ ) \
                               { return {}; }  
 
- //{ "Upgrade License", Upgrade },
- //{ "UnSubcriptions", UnSub },
- //{ "Extend License", Extend },
- std::any Upgrade(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
- {
-     auto result = sessionSubs.selectSubscription(std::atoi(agrs[0].c_str()));
+    //{ "Upgrade License", Upgrade },
+    //{ "UnSubcriptions", UnSub },
+    //{ "Extend License", Extend },
+    std::any Upgrade(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
+    {
+        auto result = sessionSubs.selectSubscription(std::atoi(agrs[0].c_str()));
 
-     return result; 
- }
- std::any UnSub(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
- {
-     //to-do not applicable (External sys) 
-     return "true";
- }
- std::any Extend(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
- {
-     //to-do not applicable  (External sys) 
-     return "true";
- }
+        return result;
+    }
+    std::any UnSub(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
+    {
+        //to-do not applicable (External sys) 
+        return "true";
+    }
+    std::any Extend(Domain::Subscription::SubscriptionDomain& sessionSubs, const std::vector<std::string>& agrs)
+    {
+        //to-do not applicable  (External sys) 
+        return "true";
+    }
 
- // IT Admin actions
- STUB(BackupDB)
-     STUB(Shutdown)
+    // IT Admin actions
+    STUB(BackupDB)
+        STUB(Shutdown)
 
-     // Assistant actions
-     STUB(AskHelp)
+        // Assistant actions
+        STUB(AskHelp)
 
-  
-  
+
+
 }    // anonymous (private) working area
 
 
@@ -658,7 +664,7 @@ namespace Domain::Subscription
     SubscriptionDomain::SubscriptionDomain(const std::string& description, const UserCredentials& user) : _name(description), _Usedby(user)
     {
         _logger << "Acess to  \"" + _name + "\" being used by " + _Usedby.userName;
-       
+
 
     }
     SubscriptionDomain::~SubscriptionDomain() noexcept
@@ -695,7 +701,7 @@ namespace Domain::Subscription
         return persistentData.StacticSubscriptionSatus();
     }
     std::vector<PaymentOption> SubscriptionDomain::selectSubscription(const int SelectedId) {
-     
+
 
         for (const auto& s : persistentData.ShowAllSubcripstion()) {
             if (s.SubsID == SelectedId) {
@@ -705,7 +711,7 @@ namespace Domain::Subscription
                 line();
                 std::cout << std::setw(15) << "Package" << std::setw(20) << "Price" << std::setw(20) << "Description" << "\n";
                 line();
-                std::cout << std::setw(15) << s.SubsType << std::setw(20) << s.Price << std::setw(20) <<s.Description << std::endl;
+                std::cout << std::setw(15) << s.SubsType << std::setw(20) << s.Price << std::setw(20) << s.Description << std::endl;
                 line();
                 menu("Do you want to continue to pay?");
                 if (reponse == 'Y') {
@@ -716,7 +722,7 @@ namespace Domain::Subscription
 
     }
     bool SubscriptionDomain::verifyPaymentInformation(const std::string CCnumber, const int CVCnumber) {
-        if (CCnumber.length() == 16 && std::to_string(CVCnumber).length() == 4 ) {
+        if (CCnumber.length() == 16 && std::to_string(CVCnumber).length() == 4) {
             return true;
         }
         return false;
@@ -724,7 +730,7 @@ namespace Domain::Subscription
     std::string SubscriptionDomain::completePayment() {
         // todo (External sys) not applicable
         return "";
-      
+
     }
 
 
@@ -737,14 +743,14 @@ namespace Domain::Subscription
         line();
         std::cout << std::setw(15) << "Users InUse" << std::setw(20) << "EXP" << std::setw(20) << "Paid Status" << std::setw(20) << "Paid By Email" << "\n";
         line();
-        std::cout << std::setw(15) << statisSubs.UserAcessed << std::setw(20) << statisSubs.EXP << std::setw(20) << statisSubs.PaidStatus<< std::setw(20) << statisSubs.Paidby << std::endl;
+        std::cout << std::setw(15) << statisSubs.UserAcessed << std::setw(20) << statisSubs.EXP << std::setw(20) << statisSubs.PaidStatus << std::setw(20) << statisSubs.Paidby << std::endl;
         line();
         _commandDispatch = {
 
                          { "Upgrade License", Upgrade },
                          { "Unsubcribe", UnSub },
                          { "Extend License", Extend },
-                         
+
         };
     };
 
@@ -806,7 +812,7 @@ namespace Domain::User
     }
 
     // view all users for IT Admin
-    void ITAdminUserDomain::viewUsers(const UserCredentials& User)
+    void ITAdminUserDomain::viewUsers(const std::string UserName)
     {
         line();
         std::cout << std::setw(49) << "List of Users\n";
@@ -822,7 +828,7 @@ namespace Domain::User
     // ADDING NEW USER TO THE MEMORY DATABASE 
     std::vector<UserCredentials>  ITAdminUserDomain::addUser(const int UserID, const std::string UserName, const std::string Role)
     {
-        UserCredentials newUser = { UserID,  UserName, "123456", {Role}, 1 }; 
+        UserCredentials newUser = { UserID,  UserName, "123456", {Role}, 1 };
         _UpdatedUserDB.push_back(newUser); // add new User to list of static User 
 
         return _UpdatedUserDB;
@@ -845,11 +851,11 @@ namespace Domain::User
     {
         _User = searchUserId(User.userID);
         int ReplaceIndex = User.userID - 1;
-        if (User.userName != "") 
+        if (User.userName != "")
         {
             _User.userName = User.userName;
         }
-        if (User.passPhrase != "") 
+        if (User.passPhrase != "")
         {
             _User.passPhrase = User.passPhrase;
         }
@@ -857,7 +863,7 @@ namespace Domain::User
         {
             _User.roles = User.roles;
         }
-        if (User.status != -1) 
+        if (User.status != -1)
         {
             _User.status = User.status;
         }
@@ -930,15 +936,14 @@ namespace Domain::User
     }
 
     // view all users for Assistant, no permission
-    void AssistantUserDomain::viewUsers(const std::string & username)
+    void AssistantUserDomain::viewUsers(const std::string UserName)
     {
         std::cout << " Assistant do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
 
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == User.userName)
-
+            if (StoredUser.userName == UserName)
             {
                 _User = StoredUser;
             }
@@ -1041,14 +1046,14 @@ namespace Domain::User
     }
 
     // view all users for Salesperson, no permission
-    void SalespersonUserDomain::viewUsers(const UserCredentials& User)
+    void SalespersonUserDomain::viewUsers(const std::string UserName)
     {
         std::cout << " Salesperson do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
-        
+
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == User.userName)
+            if (StoredUser.userName == UserName)
             {
                 _User = StoredUser;
             }
@@ -1151,14 +1156,14 @@ namespace Domain::User
     }
 
     // view all users for Sales Manager, no permission
-    void SalesManagerUserDomain::viewUsers(const UserCredentials& User)
+    void SalesManagerUserDomain::viewUsers(const std::string UserName)
     {
         std::cout << " Sales Manager do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
-        
+
         for (const auto& StoredUser : _UpdatedUserDB)
         {
-            if (StoredUser.userName == User.userName)
+            if (StoredUser.userName == UserName)
             {
                 _User = StoredUser;
             }
@@ -1261,7 +1266,7 @@ namespace Domain::User
     }
 
     // view all users for Security Officer
-    void SecurityOfficerUserDomain::viewUsers(const UserCredentials& User)
+    void SecurityOfficerUserDomain::viewUsers(const std::string UserName)
     {
         line();
         std::cout << std::setw(49) << "User profiles\n";
@@ -1404,7 +1409,7 @@ namespace Domain::Event
         return _UpdatedUserDB;
     }
 
-    void EventDomain::viewEvents( )
+    void EventDomain::viewEvents()
     {
         line();
         std::cout << std::setw(59) << "List of Events\n";
@@ -1416,7 +1421,7 @@ namespace Domain::Event
         {
             std::string participants = "";
             std::string s1;
-            for (const auto& p : c.eventUsers) 
+            for (const auto& p : c.eventUsers)
             {
                 for (const auto& StoredUser : _UpdatedUserDB)
                 {
@@ -1433,7 +1438,7 @@ namespace Domain::Event
         line();
     }
 
-    void EventDomain::viewUserEvents( )
+    void EventDomain::viewUserEvents()
     {
         line();
         std::cout << std::setw(59) << "List of Users and User Events\n";
@@ -1467,7 +1472,7 @@ namespace Domain::Event
 
             std::cout << std::setw(5) << std::to_string(c.userID) << std::setw(15) << userName << std::setw(20) << userRole[0] << std::setw(20) << freeTime << "     " << events << std::endl;
         }
-            
+
         line();
     }
 
@@ -1574,7 +1579,7 @@ namespace Domain::Event
 
         return _UpdatedEventDB;
     }
-  
+
     void EventDomain::sendNotifications(const std::string meetingName, const std::string userIDs, const std::string meetingTime, const std::string meetingLocation)
     {
         std::string s1 = userIDs;
@@ -1615,7 +1620,7 @@ namespace Domain::Event
 
     EventManagement::EventManagement(const UserCredentials& user) : EventDomain("Event Management", user)
     {
-        
+
         _commandDispatch = {
 
                          { "Add New Meeting", AddEvent },
@@ -1630,133 +1635,132 @@ namespace Domain::Event
 // session domain implementation 
 namespace Domain::Session
 {
-  SessionBase::SessionBase( const std::string & description, const UserCredentials & credentials ) : _credentials( credentials ), _name( description )
-  {
-    _logger << "Session \"" + _name + "\" being used and has been successfully initialized";
-  }
-
-
- 
-
-  SessionBase::~SessionBase() noexcept
-  {
-    _logger << "Session \"" + _name + "\" shutdown successfully";
-  }
-
-
-
-
-  std::vector<std::string> SessionBase::getCommands()
-  {
-    std::vector<std::string> availableCommands;
-    availableCommands.reserve( _commandDispatch.size() );
-
-    for( const auto & [command, function] : _commandDispatch ) availableCommands.emplace_back( command );
-
-    return availableCommands;
-  }
-
-
-
-
-  std::any SessionBase::executeCommand( const std::string & command, const std::vector<std::string> & args )
-  {
-    std::string parameters;
-    for( const auto & arg : args )  parameters += '"' + arg + "\"  ";
-    _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
-
-    auto it = _commandDispatch.find( command );
-    if( it == _commandDispatch.end() )
+    SessionBase::SessionBase(const std::string& description, const UserCredentials& credentials) : _credentials(credentials), _name(description)
     {
-      std::string message = __func__;
-      message += " attempt to execute \"" + command + "\" failed, no such command";
-
-      _logger << message;
-      throw BadCommand( message );
+        _logger << "Session \"" + _name + "\" being used and has been successfully initialized";
     }
 
-    auto results = it->second( *this, args);
 
-    if( results.has_value() )
+
+
+    SessionBase::~SessionBase() noexcept
     {
-      // The type of result depends on function called.  Let's assume strings for now ...
-      _logger << "Responding with: \"" + std::any_cast<const std::string &>( results ) + '"';
+        _logger << "Session \"" + _name + "\" shutdown successfully";
     }
 
-    return results;
-  }
 
 
 
-  // 2) Now map the above system events to roles authorized to make such a request.  Many roles can request the same event, and many
-  //    events can be requested by a single role.
-  ITAdministratorSession::ITAdministratorSession( const UserCredentials & credentials ) : SessionBase( "IT Admin", credentials )
-  {
-    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"IT Admin\".";
+    std::vector<std::string> SessionBase::getCommands()
+    {
+        std::vector<std::string> availableCommands;
+        availableCommands.reserve(_commandDispatch.size());
 
-    _commandDispatch = { {"User Management",    UserManagement },
-                         {"Back-up Database",   BackupDB },
-                         {"Shutdown System",    Shutdown }
-    };
-  }
+        for (const auto& [command, function] : _commandDispatch) availableCommands.emplace_back(command);
+
+        return availableCommands;
+    }
 
 
 
 
-  AssistantSession::AssistantSession( const UserCredentials & credentials ) : SessionBase( "Assistant", credentials )
-  {
-    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Assistant\".";
+    std::any SessionBase::executeCommand(const std::string& command, const std::vector<std::string>& args)
+    {
+        std::string parameters;
+        for (const auto& arg : args)  parameters += '"' + arg + "\"  ";
+        _logger << "Responding to \"" + command + "\" request with parameters: " + parameters;
 
-    _commandDispatch = {
-                         { "Client Management", ClientManagement },
-                         { "Event Management",  EventManagement },
-                         { "Ask IT for Help",   AskHelp },
-                         { "User Management",    UserManagement }
-    };
-  }
+        auto it = _commandDispatch.find(command);
+        if (it == _commandDispatch.end())
+        {
+            std::string message = __func__;
+            message += " attempt to execute \"" + command + "\" failed, no such command";
 
+            _logger << message;
+            throw BadCommand(message);
+        }
 
+        auto results = it->second(*this, args);
 
+        if (results.has_value())
+        {
+            // The type of result depends on function called.  Let's assume strings for now ...
+            _logger << "Responding with: \"" + std::any_cast<const std::string&>(results) + '"';
+        }
 
-  SalespersonSession::SalespersonSession( const UserCredentials & credentials ) : SessionBase( "Salesperson", credentials )
-  {
-    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Salesperson\".";
-
-    _commandDispatch = { 
-        
-        {"Client Management", ClientManagement},
-        {"Product Management", ProductManagement},
-        {"Sale Management", SaleManagement},
-        {"User Management",    UserManagement }
-    };
-  }
-
+        return results;
+    }
 
 
 
-  SalesManagerSession::SalesManagerSession( const UserCredentials & credentials ) : SessionBase( "Sales Manager", credentials )
-  {
-    _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Sales Manager\".";
+    // 2) Now map the above system events to roles authorized to make such a request.  Many roles can request the same event, and many
+    //    events can be requested by a single role.
+    ITAdministratorSession::ITAdministratorSession(const UserCredentials& credentials) : SessionBase("IT Admin", credentials)
+    {
+        _logger << "Login Successful for \"" + credentials.userName + "\" as role \"IT Admin\".";
 
-    _commandDispatch = { {"Manage Subscription", manageSubscription},
-                         {"User Management",    UserManagement },
-                      
-    };
-  }
+        _commandDispatch = { {"User Management",    UserManagement },
+                             {"Back-up Database",   BackupDB },
+                             {"Shutdown System",    Shutdown }
+        };
+    }
 
-  
-  
-  SecurityOfficerSession::SecurityOfficerSession(const UserCredentials& credentials) : SessionBase("Security Officer", credentials)
-  {
-      _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Security Officer\".";
 
-      _commandDispatch = { {"User Management",    UserManagement },
-                           {"View Log Files",     ViewLogFiles },
-                           {"Ask IT for Help",    AskHelp }
-      };
-  }
+
+
+    AssistantSession::AssistantSession(const UserCredentials& credentials) : SessionBase("Assistant", credentials)
+    {
+        _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Assistant\".";
+
+        _commandDispatch = {
+                             { "Client Management", ClientManagement },
+                             { "Event Management",  EventManagement },
+                             { "Ask IT for Help",   AskHelp },
+                             { "User Management",    UserManagement }
+        };
+    }
+
+
+
+
+    SalespersonSession::SalespersonSession(const UserCredentials& credentials) : SessionBase("Salesperson", credentials)
+    {
+        _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Salesperson\".";
+
+        _commandDispatch = {
+
+            {"Client Management", ClientManagement},
+            {"Product Management", ProductManagement},
+            {"Sale Management", SaleManagement},
+            {"User Management",    UserManagement }
+        };
+    }
+
+
+
+
+    SalesManagerSession::SalesManagerSession(const UserCredentials& credentials) : SessionBase("Sales Manager", credentials)
+    {
+        _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Sales Manager\".";
+
+        _commandDispatch = { {"Manage Subscription", manageSubscription},
+                             {"User Management",    UserManagement },
+
+        };
+    }
+
+
+
+    SecurityOfficerSession::SecurityOfficerSession(const UserCredentials& credentials) : SessionBase("Security Officer", credentials)
+    {
+        _logger << "Login Successful for \"" + credentials.userName + "\" as role \"Security Officer\".";
+
+        _commandDispatch = { {"User Management",    UserManagement },
+                             {"View Log Files",     ViewLogFiles },
+                             {"Ask IT for Help",    AskHelp }
+        };
+    }
 }    // namespace Domain::Session
-
 
 
 namespace  TechnicalServices::External
@@ -1779,7 +1783,8 @@ namespace  TechnicalServices::External
         _logger << "Acess Credit PayMethod";
     }; 
     void Credit::Requestpayinfor() {
-        _logger << "Request Card Number and CVS code";
+        _logger << "Request Card Number, CVS code, and Electronic Signature ";
+
     }
     std::unique_ptr <TechnicalServices::External::Payment> CreditPayment::PayMethod( std::string  &PaymentType) {
         return   std::make_unique<TechnicalServices::External::Credit>(PaymentType);
@@ -1793,7 +1798,7 @@ namespace  TechnicalServices::External
         _logger << "Acess Debit PayMethod";
     };
     void Debit::Requestpayinfor() {
-        _logger << "Request Card Number, CVS code, and Electronic Signature ";
+        _logger << "Request Card Number and CVS code";
     }
     std::unique_ptr <TechnicalServices::External::Payment> DebitPayment::PayMethod(std::string& PaymentType) {
         return   std::make_unique<TechnicalServices::External::Debit>(PaymentType);

@@ -68,7 +68,7 @@ namespace UI
 
         // 2) Present login screen to user and get username, password, and valid role
         Domain::Session::UserCredentials credentials = { 0, "", "", {""}, 0 };// ensures roles[0] exists
-       
+
 
 
         std::unique_ptr<Domain::Session::SessionHandler> sessionControl;
@@ -88,20 +88,20 @@ namespace UI
             {
                 break;
             }
-          
+
         } while (true);
 
         // Show upcoming events when user login
         std::cout << std::endl;
         std::cout << "[Notice] Upcoming events: ";
-        for (const auto& _user : UsersFromDB) 
+        for (const auto& _user : UsersFromDB)
         {
             int i = 0;
             if (credentials.userName == _user.userName)
-            { 
+            {
                 i = _user.userID;
             }
-            for (const auto& _userEvent : UserEventsFromDB) 
+            for (const auto& _userEvent : UserEventsFromDB)
             {
                 if (_userEvent.userID == i)
                 {
@@ -144,7 +144,7 @@ namespace UI
             **     no coupling. This can be achieved in a variety of ways, but one common way is to pass strings instead of strong typed
             **     parameters.
             ******************************************************************************************************************************/
-          
+
             if (selectedCommand == "Client Management")
             {
                 // call client handler 
@@ -393,7 +393,7 @@ namespace UI
                                 do
                                 {
 
-                                    for (unsigned i = 0; i != InventoryFromDB.size(); ++i) std::cout << std::setw(2) << i << " - " << InventoryFromDB[i].Name << "->"<< InventoryFromDB[i].Price<<"$" << '\n';
+                                    for (unsigned i = 0; i != InventoryFromDB.size(); ++i) std::cout << std::setw(2) << i << " - " << InventoryFromDB[i].Name << "->" << InventoryFromDB[i].Price << "$" << '\n';
                                     std::cout << std::setw(2) << InventoryFromDB.size() << " - " << "Process\n";
 
                                     std::cout << "  action (0-" << InventoryFromDB.size() << "): ";
@@ -442,86 +442,88 @@ namespace UI
                 }
                 else _logger << "Your account got Locked Please contact It Admin for more Infor";
 
-                
+
 
 
 
             }
             else if (selectedCommand == "Manage Subscription") {
-                 _SubscriptionHandler = Domain::Subscription::SubscriptionHandler::MaintainSubscription(credentials);
-                 if (_SubscriptionHandler != nullptr) {
-                     do
-                     {
-                         auto        commands = _SubscriptionHandler->getCommandsSubscription();
-                         std::string selectedCommand;
-                         unsigned    menuSelection;
+                _SubscriptionHandler = Domain::Subscription::SubscriptionHandler::MaintainSubscription(credentials);
+                if (_SubscriptionHandler != nullptr) {
+                    do
+                    {
+                        auto        commands = _SubscriptionHandler->getCommandsSubscription();
+                        std::string selectedCommand;
+                        unsigned    menuSelection;
 
 
-                         do
-                         {
+                        do
+                        {
 
-                             for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
-                             std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
+                            for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+                            std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
 
-                             std::cout << "  action (0-" << commands.size() << "): ";
-                             std::cin >> menuSelection;
-                         } while (menuSelection > commands.size());
+                            std::cout << "  action (0-" << commands.size() << "): ";
+                            std::cin >> menuSelection;
+                        } while (menuSelection > commands.size());
 
-                         if (menuSelection == commands.size()) break;
-                         selectedCommand = commands[menuSelection];
-                         if (selectedCommand == "Upgrade License") {
-                             auto        Subcripstions = _persistentData.ShowAllSubcripstion();
-                             int selectedSubcripstion;
-                             unsigned    menuSelection;
+                        if (menuSelection == commands.size()) break;
+                        selectedCommand = commands[menuSelection];
+                        if (selectedCommand == "Upgrade License") {
+                            auto        Subcripstions = _persistentData.ShowAllSubcripstion();
+                            int selectedSubcripstion;
+                            unsigned    menuSelection;
 
-                             do
-                             {
-                                 
-                                 line();
-                                     std::cout << std::setw(49) << "List of Subscription\n";
-                                     line();
-                                     std::cout << std::setw(15) << "Choose" << std::setw(15) << "Package" << std::setw(20) << "Price" << std::setw(20) << "AvalibleUsers" << "\n";
-                                     line();
+                            do
+                            {
 
-                                 for (unsigned i = 0; i != Subcripstions.size(); ++i)
+                                line();
+                                std::cout << std::setw(49) << "List of Subscription\n";
+                                line();
+                                std::cout << std::setw(15) << "Choose" << std::setw(15) << "Package" << std::setw(20) << "Price" << std::setw(20) << "AvalibleUsers" << "\n";
+                                line();
 
-                                 
-                                     
-                                     std::cout << std::setw(15) << i << std::setw(15) << Subcripstions[i].SubsType << std::setw(20) << Subcripstions[i].Price << std::setw(20) << Subcripstions[i].Description << std::endl;
-                                    
-                                 
-                                 line();
-                                   
-                                 std::cout << std::setw(2) << Subcripstions.size() << " - " << "Cancel\n";
-                                 std::cout << "  action (0-" << Subcripstions.size() << "): ";
-                                 std::cin >> menuSelection;
-                             } while (menuSelection > Subcripstions.size());
-                                    if (menuSelection == Subcripstions.size()) break; 
+                                for (unsigned i = 0; i != Subcripstions.size(); ++i)
+
+
+
+                                    std::cout << std::setw(15) << i << std::setw(15) << Subcripstions[i].SubsType << std::setw(20) << Subcripstions[i].Price << std::setw(20) << Subcripstions[i].Description << std::endl;
+
+
+                                line();
+
+                                std::cout << std::setw(2) << Subcripstions.size() << " - " << "Cancel\n";
+                                std::cout << "  action (0-" << Subcripstions.size() << "): ";
+                                std::cin >> menuSelection;
+                            } while (menuSelection > Subcripstions.size());
+                            if (menuSelection == Subcripstions.size()) break;
                             selectedSubcripstion = Subcripstions[menuSelection].SubsID;
-                        
-                          
+
+
                             std::vector<std::string> parameter(1);
                             parameter[0] = std::to_string(selectedSubcripstion);
-                            auto result =  _SubscriptionHandler->executeCommandSubscription(selectedCommand, parameter);
-                           
+                            auto result = _SubscriptionHandler->executeCommandSubscription(selectedCommand, parameter);
+                            std::string selectedPaymethod;
+                            unsigned    menuPaySelection;
                             if (result.has_value()) {
-                            // test payment
+                                // test payment
                                 std::string testpay = "";
                                 std::unique_ptr< TechnicalServices::External::PaymentHandlerInterface> Paymentcontrol;
                                 Paymentcontrol = TechnicalServices::External::PaymentHandlerInterface::PaySystemFactory();
                                 std::unique_ptr< TechnicalServices::External::Payment> PaymentMethod;
-                                PaymentMethod =  Paymentcontrol->PayMethod(testpay);
+                                PaymentMethod = Paymentcontrol->PayMethod(testpay);
                                 PaymentMethod->Requestpayinfor();
 
-                            }
-                         }
 
-                     } while (true);
-                  }
-                 
-                 _logger << "Your License Invalid\"";
-                    
-                 
+                            }
+                        }
+
+                    } while (true);
+                }
+
+                _logger << "Your License Invalid\"";
+
+
             }
 
             else if (selectedCommand == "User Management")
@@ -581,12 +583,12 @@ namespace UI
 
                         else if (selectedCommand == "View Users")
                         {
-                            UserHandler->viewUsers(credentials);
+                            UserHandler->executeCommandUser(selectedCommand, { credentials.userName });
                         }
 
                         else if (selectedCommand == "Block a User")
                         {
-                            UserHandler->viewUsers(credentials);
+                            UserHandler->viewUsers(credentials.userName);
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";
@@ -606,7 +608,7 @@ namespace UI
 
                         else if (selectedCommand == "Update User Profile")
                         {
-                            UserHandler->viewUsers(credentials);
+                            UserHandler->viewUsers(credentials.userName);
                             char response;
                             int userId;
                             std::cout << "Please choose Client Id: ";
@@ -618,7 +620,7 @@ namespace UI
                                 response = std::toupper(response, std::locale());
                             } while (response != 'Y' && response != 'Q');
 
-                            if (response == 'Y') 
+                            if (response == 'Y')
                             {
                                 std::vector<std::string> parameters(5);
                                 parameters[0] = std::to_string(userId);
@@ -631,13 +633,13 @@ namespace UI
                                 {
                                     std::cout << " Please choose one option: " << std::endl;
                                     std::cout << "  1. Change the User Name\n"
-                                              << "  2. Set Password to default\n"
-                                              << "  3. Change the User Role" << std::endl;
+                                        << "  2. Set Password to default\n"
+                                        << "  3. Change the User Role" << std::endl;
                                     std::cout << " Your selection: ";  std::cin >> response;
                                     if (response == '1')
                                     {
                                         std::cout << " Enter New UserName: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
-                                        
+
                                     }
                                     if (response == '2')
                                     {
@@ -670,12 +672,12 @@ namespace UI
                                 } while (isFinish == false);
 
                                 auto results = UserHandler->executeCommandUser(selectedCommand, parameters);
-                                if (results.has_value()) 
+                                if (results.has_value())
                                 {
                                     _logger << "Successfully Updated\n";
                                     UsersFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::UserCredentials>&>(results);
                                 }
-                                
+
                             }
 
                         }
@@ -688,118 +690,118 @@ namespace UI
 
             else if (selectedCommand == "Event Management")
             {
-            std::unique_ptr<Domain::Event::EventHandler> EventHandler; // call event domain 
-            EventHandler = Domain::Event::EventHandler::UseEventManagement(credentials);
-            if (EventHandler != nullptr)
-            {
-                EventsFromDB = EventHandler->EventsDB(EventsFromDB);
-                UserEventsFromDB = EventHandler->UserEventsDB(UserEventsFromDB); 
-                UsersFromDB = EventHandler->UsersDB(UsersFromDB);
-
-                do
+                std::unique_ptr<Domain::Event::EventHandler> EventHandler; // call event domain 
+                EventHandler = Domain::Event::EventHandler::UseEventManagement(credentials);
+                if (EventHandler != nullptr)
                 {
-
-                    auto        commands = EventHandler->getCommandsEvent();
-                    std::string selectedCommand;
-                    unsigned    menuSelection;
+                    EventsFromDB = EventHandler->EventsDB(EventsFromDB);
+                    UserEventsFromDB = EventHandler->UserEventsDB(UserEventsFromDB);
+                    UsersFromDB = EventHandler->UsersDB(UsersFromDB);
 
                     do
                     {
 
-                        for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
-                        std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
+                        auto        commands = EventHandler->getCommandsEvent();
+                        std::string selectedCommand;
+                        unsigned    menuSelection;
 
-                        std::cout << "  action (0-" << commands.size() << "): ";
-                        std::cin >> menuSelection;
-                    } while (menuSelection > commands.size());
-
-                    if (menuSelection == commands.size()) break;
-                    selectedCommand = commands[menuSelection];
-                    _logger << "Command selected \"" + selectedCommand + '"';
-                    if (selectedCommand == "Add New Meeting")
-                    {
-                        std::vector<std::string> parameters(5);
-                        parameters[0] = std::to_string(EventsFromDB.size() + 1);
-
-                        // Meeting name
-                        std::cout << " Enter Meeting Name: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
-
-                        std::vector<std::string> timeVector = {};
-                        std::vector<std::string> locationVector = {};
                         do
                         {
-                            // Meeting paticipants
-                            std::cout << " Select Meeting Participants \n";
-                            EventHandler->viewUserEvents( );
-                            std::cout << " Select the User ID(separete with space): "; std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
 
-                            // Meeting time
-                            std::cout << " Available Meeting Time \n";
-                            timeVector = EventHandler->availableTimes(parameters[2]);
-                            if (timeVector.size() == 0)
-                            {
-                                std::cout << " No available meeting time for selected users " << std::endl;
-                                std::cout << " Please choose meeting participants again" << std::endl;
-                            }
-                            else
-                            {
-                                for (size_t i = 0; i < timeVector.size(); ++i) std::cout << " " << i + 1 << ". " << timeVector[i] << std::endl;
-                                int mt = 0;
-                                
-                                std::cout << "Please choos the meeting time: "; std::cin >> mt;
-                                int index1 = mt - 1;
-                                parameters[3] = timeVector[index1];
+                            for (unsigned i = 0; i != commands.size(); ++i) std::cout << std::setw(2) << i << " - " << commands[i] << '\n';
+                            std::cout << std::setw(2) << commands.size() << " - " << "Back to Main Menu\n";
 
-                                // Meeting location
-                                std::cout << " Available Meeting Location \n";
-                                locationVector = EventHandler->availableLocations(officeValues, parameters[3]);
-                                if (locationVector.size() == 0)
+                            std::cout << "  action (0-" << commands.size() << "): ";
+                            std::cin >> menuSelection;
+                        } while (menuSelection > commands.size());
+
+                        if (menuSelection == commands.size()) break;
+                        selectedCommand = commands[menuSelection];
+                        _logger << "Command selected \"" + selectedCommand + '"';
+                        if (selectedCommand == "Add New Meeting")
+                        {
+                            std::vector<std::string> parameters(5);
+                            parameters[0] = std::to_string(EventsFromDB.size() + 1);
+
+                            // Meeting name
+                            std::cout << " Enter Meeting Name: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
+
+                            std::vector<std::string> timeVector = {};
+                            std::vector<std::string> locationVector = {};
+                            do
+                            {
+                                // Meeting paticipants
+                                std::cout << " Select Meeting Participants \n";
+                                EventHandler->viewUserEvents();
+                                std::cout << " Select the User ID(separete with space): "; std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
+
+                                // Meeting time
+                                std::cout << " Available Meeting Time \n";
+                                timeVector = EventHandler->availableTimes(parameters[2]);
+                                if (timeVector.size() == 0)
                                 {
-                                    std::cout << " No available meeting location for selected time " << std::endl;
+                                    std::cout << " No available meeting time for selected users " << std::endl;
                                     std::cout << " Please choose meeting participants again" << std::endl;
                                 }
                                 else
                                 {
-                                    for (size_t i = 0; i < locationVector.size(); ++i) std::cout << " " << i + 1 << ". " << locationVector[i] << std::endl;
+                                    for (size_t i = 0; i < timeVector.size(); ++i) std::cout << " " << i + 1 << ". " << timeVector[i] << std::endl;
+                                    int mt = 0;
 
-                                    int ml = 0;
-                                    
-                                    std::cout << " Please choos the meeting Location: "; std::cin >> ml;
-                                    int index2 = ml - 1;
-                                    parameters[4] = locationVector[index2];
+                                    std::cout << "Please choos the meeting time: "; std::cin >> mt;
+                                    int index1 = mt - 1;
+                                    parameters[3] = timeVector[index1];
 
+                                    // Meeting location
+                                    std::cout << " Available Meeting Location \n";
+                                    locationVector = EventHandler->availableLocations(officeValues, parameters[3]);
+                                    if (locationVector.size() == 0)
+                                    {
+                                        std::cout << " No available meeting location for selected time " << std::endl;
+                                        std::cout << " Please choose meeting participants again" << std::endl;
+                                    }
+                                    else
+                                    {
+                                        for (size_t i = 0; i < locationVector.size(); ++i) std::cout << " " << i + 1 << ". " << locationVector[i] << std::endl;
+
+                                        int ml = 0;
+
+                                        std::cout << " Please choos the meeting Location: "; std::cin >> ml;
+                                        int index2 = ml - 1;
+                                        parameters[4] = locationVector[index2];
+
+                                    }
                                 }
+                            } while (timeVector.size() == 0 || locationVector.size() == 0);
+
+                            auto results = EventHandler->executeCommandEvent(selectedCommand, parameters);
+                            if (results.has_value())
+                            {
+                                _logger << "Successfully Added. ";
+                                EventsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Event>&>(results);
+                                EventHandler->sendNotifications(parameters[1], parameters[2], parameters[3], parameters[4]);          // Send notifications and update UserEventsFromDB
+                                std::cout << std::endl;
+                                std::cout << std::endl;
                             }
-                        } while (timeVector.size() == 0 || locationVector.size() == 0);
-
-                        auto results = EventHandler->executeCommandEvent(selectedCommand, parameters);
-                        if (results.has_value())
-                        {
-                            _logger << "Successfully Added. ";
-                            EventsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Event>&>(results);
-                            EventHandler->sendNotifications(parameters[1], parameters[2], parameters[3], parameters[4]);          // Send notifications and update UserEventsFromDB
-                            std::cout << std::endl;
-                            std::cout << std::endl;
                         }
-                    }
 
-                    else if (selectedCommand == "View All Meetings")
-                    {
-                        EventHandler->viewEvents( );
-                    }
+                        else if (selectedCommand == "View All Meetings")
+                        {
+                            EventHandler->executeCommandEvent(selectedCommand, {});
+                        }
 
-                    else if (selectedCommand == "Update Meeting")
-                    {
-                        //to do
+                        else if (selectedCommand == "Update Meeting")
+                        {
+                            //to do
 
-                    }
+                        }
 
-                } while (true);
+                    } while (true);
+
+                }
 
             }
 
-            }
-          
 
             _logger << "Ending session and terminating";
         } while (true);
