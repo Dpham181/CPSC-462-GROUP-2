@@ -930,7 +930,7 @@ namespace Domain::User
     }
 
     // view all users for Assistant, no permission
-    void AssistantUserDomain::viewUsers(const UserCredentials& User)
+    void AssistantUserDomain::viewUsers(const std::string & username)
     {
         std::cout << " Assistant do not have the permission to view all users. " << std::endl;
         std::cout << " Here is your acount infromation: " << std::endl;
@@ -938,6 +938,7 @@ namespace Domain::User
         for (const auto& StoredUser : _UpdatedUserDB)
         {
             if (StoredUser.userName == User.userName)
+
             {
                 _User = StoredUser;
             }
