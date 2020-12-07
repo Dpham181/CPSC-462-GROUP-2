@@ -7070,12 +7070,12 @@ $LN8:
 
 ; 2833 :     return unique_ptr<_Ty>(new _Ty(_STD forward<_Types>(_Args)...));
 
-	mov	ecx, 56					; 00000038H
+	mov	ecx, 64					; 00000040H
 	call	??2@YAPEAX_K@Z				; operator new
 	mov	QWORD PTR $T2[rbp], rax
 	cmp	QWORD PTR $T2[rbp], 0
 	je	SHORT $LN3@make_uniqu
-	mov	edx, 56					; 00000038H
+	mov	edx, 64					; 00000040H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	?__autoclassinit2@SimpleUI@UI@@QEAAX_K@Z
 	mov	rcx, QWORD PTR $T2[rbp]
@@ -7117,7 +7117,7 @@ __$ReturnUdt$ = 320
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 56					; 00000038H
+	mov	edx, 64					; 00000040H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H
@@ -7141,7 +7141,7 @@ __$ReturnUdt$ = 320
 	push	rdi
 	sub	rsp, 40					; 00000028H
 	lea	rbp, QWORD PTR [rdx+32]
-	mov	edx, 56					; 00000038H
+	mov	edx, 64					; 00000040H
 	mov	rcx, QWORD PTR $T2[rbp]
 	call	??3@YAXPEAX_K@Z				; operator delete
 	add	rsp, 40					; 00000028H

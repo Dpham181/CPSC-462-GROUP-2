@@ -45,7 +45,7 @@ namespace UI
       std::unique_ptr<Domain::Product::ProductHandler>                _ProductHandler;
       std::unique_ptr<Domain::Sale::SaleHandler>                       _SaleHandler;
       std::unique_ptr<Domain::Subscription::SubscriptionHandler>      _SubscriptionHandler;
-
+      std::unique_ptr<Domain::Client::ClientHandler>                    _ClientHandler;
       std::unique_ptr<TechnicalServices::Logging::LoggerHandler>            _loggerPtr;
       TechnicalServices::Persistence::PersistenceHandler                  & _persistentData;
 

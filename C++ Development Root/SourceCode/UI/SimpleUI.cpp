@@ -148,18 +148,17 @@ namespace UI
             if (selectedCommand == "Client Management")
             {
                 // call client handler 
-                std::unique_ptr<Domain::Client::ClientHandler> ClientHandler;
                 // checking if user role is correct for using client management 
-                ClientHandler = Domain::Client::ClientHandler::UseClientManagement(credentials);
+                _ClientHandler = Domain::Client::ClientHandler::UseClientManagement(credentials);
 
                 // return the client management session ortherwise not allow to access
-                if (ClientHandler != nullptr) {
-                    ClientsFromDB = ClientHandler->ClientsDB(ClientsFromDB);
+                if (_ClientHandler != nullptr) {
+                    ClientsFromDB = _ClientHandler->ClientsDB(ClientsFromDB);
 
                     do
                     {
                         // list all the command avaliable in client management 
-                        auto        commands = ClientHandler->getCommandsClient();
+                        auto        commands = _ClientHandler->getCommandsClient();
                         std::string selectedCommand;
                         unsigned    menuSelection;
 
@@ -185,7 +184,7 @@ namespace UI
                             std::cout << " Enter Name  ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
                             std::cout << " Enter Phone: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[3]);
 
-                            auto results = ClientHandler->executeCommandClient(selectedCommand, parameters);
+                            auto results = _ClientHandler->executeCommandClient(selectedCommand, parameters);
                             if (results.has_value()) {
                                 _logger << "Successfully Added \" ";
                                 ClientsFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Client>&>(results);
@@ -197,12 +196,12 @@ namespace UI
                         // view all the current clients include static in database 
                         else if (selectedCommand == "View All Clients") {
 
-                            ClientHandler->ViewClients(ClientsFromDB);
+                            _ClientHandler->ViewClients(ClientsFromDB);
                         }
                         // select to update the profile of client.
                         else if (selectedCommand == "Update Client Profile") {
-                            ClientHandler->ClientsPDB(ClientsProfileFromDB);
-                            ClientHandler->ViewClients(ClientsFromDB);
+                            _ClientHandler->ClientsPDB(ClientsProfileFromDB);
+                            _ClientHandler->ViewClients(ClientsFromDB);
 
                             char response;
                             int clientId = 0;
@@ -223,7 +222,7 @@ namespace UI
                                 std::cout << " Enter DOB: ";  std::cin >> std::ws;  std::getline(std::cin, parameters[1]);
                                 std::cout << " Enter Income:   ";  std::cin >> std::ws;  std::getline(std::cin, parameters[2]);
 
-                                auto results = ClientHandler->executeCommandClient(selectedCommand, parameters);
+                                auto results = _ClientHandler->executeCommandClient(selectedCommand, parameters);
                                 if (results.has_value()) {
                                     _logger << "Successfully Updated\n";
                                     ClientsProfileFromDB = std::any_cast<const std::vector<TechnicalServices::Persistence::Clientprofile>&>(results);
@@ -235,14 +234,14 @@ namespace UI
 
                         }
                         else if (selectedCommand == "View Client Profile") {
-                            ClientHandler->ClientsPDB(ClientsProfileFromDB);
-                            ClientHandler->ViewClients(ClientsFromDB);
+                            _ClientHandler->ClientsPDB(ClientsProfileFromDB);
+                            _ClientHandler->ViewClients(ClientsFromDB);
                             int clientId = 0;
                             std::cout << "Please choose Client Id: ";
                             std::cin >> clientId;
                             std::vector<std::string> parameter(1);
                             parameter[0] = std::to_string(clientId);
-                            auto results = ClientHandler->executeCommandClient(selectedCommand, parameter);
+                            auto results = _ClientHandler->executeCommandClient(selectedCommand, parameter);
 
 
                             if (results.has_value())
