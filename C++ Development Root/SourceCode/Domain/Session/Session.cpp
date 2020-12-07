@@ -1783,7 +1783,8 @@ namespace  TechnicalServices::External
         _logger << "Acess Credit PayMethod";
     }; 
     void Credit::Requestpayinfor() {
-        _logger << "Request Card Number, CVS code, and Electronic Signature ";
+        _paymentType = "Request Card Number, CVS code, and Electronic Signature ";
+        _logger << _paymentType;
 
     }
     std::unique_ptr <TechnicalServices::External::Payment> CreditPayment::PayMethod( std::string  &PaymentType) {
@@ -1798,7 +1799,8 @@ namespace  TechnicalServices::External
         _logger << "Acess Debit PayMethod";
     };
     void Debit::Requestpayinfor() {
-        _logger << "Request Card Number and CVS code";
+        _paymentType = "Request Card Number and CVS code";
+        _logger << _paymentType;
     }
     std::unique_ptr <TechnicalServices::External::Payment> DebitPayment::PayMethod(std::string& PaymentType) {
         return   std::make_unique<TechnicalServices::External::Debit>(PaymentType);
@@ -1812,7 +1814,8 @@ namespace  TechnicalServices::External
         _logger << "Acess GateWay PayMethod";
     };
     void GateWay::Requestpayinfor() {
-        _logger << "Request:  AmanzonPay || ApplePay || Paypal ";
+        _paymentType = "Request:  AmanzonPay || ApplePay || Paypal ";
+        _logger << _paymentType;
     }
     std::unique_ptr <TechnicalServices::External::Payment> GatewayPayment::PayMethod(std::string& PaymentType) {
         return   std::make_unique<TechnicalServices::External::GateWay>(PaymentType);
